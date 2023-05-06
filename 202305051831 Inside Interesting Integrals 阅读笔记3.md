@@ -170,6 +170,8 @@ $$
 $$
 I(a) = \int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x 
 $$
+
+my
 $$
 \frac{dI}{da} = \int_{0}^{\infty} \frac{-x\sin(ax)}{x^{2}+b^{2}} \, \mathrm{d}x 
 $$
@@ -182,3 +184,254 @@ I(a) = \frac{1}{a} \int_{0}^{\infty} \frac{2x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \ma
 $$
 
 %%todo!%%
+book
+$$
+I = \int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x 
+$$
+integrate-by-parts
+$$
+I = \int_{0}^{\infty} \frac{1}{x^{2}+b^{2}} \, \mathrm{d} \left( \frac{1}{a} \sin(ax) \right)
+$$
+$$
+I = \frac{1}{x^{2}+b^{2}} \frac{1}{a} \sin(ax) \Bigg|_{0}^{\infty} - 
+\int_{0}^{\infty} \frac{1}{a} \sin(ax) \frac{-2x}{(x^{2}+b^{2})^{2}}  \, \mathrm{d}x 
+$$
+
+$$
+I = \frac{2}{a} \int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+
+$$
+aI = 2\int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+$$
+a\frac{dI}{da} + I =
+2\int_{0}^{\infty} \frac{x^{2}\cos(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+$$
+a\frac{dI}{da} + I =
+2\int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x -
+2\int_{0}^{\infty} \frac{b^{2}\cos(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+
+$$
+a\frac{dI}{da} + I =
+2I - 2\int_{0}^{\infty} \frac{b^{2}\cos(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+$$
+a\frac{dI}{da} - I =
+ - 2\int_{0}^{\infty} \frac{b^{2}\cos(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+$$
+a \frac{d^{2}I}{da^{2}} + \frac{dI}{da} - \frac{dI}{da} =
+-2b^{2}\int_{0}^{\infty} \frac{-x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+
+$$
+a \frac{d^{2}I}{da^{2}} = 2b^{2}\int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+
+because 
+$$
+I = \frac{2}{a} \int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
+$$
+
+$$
+a \frac{d^{2}I}{da^{2}} = 2b^{2} \frac{a}{2} I
+$$
+$$
+\frac{d^{2}I}{da^{2}} - b^{2} I = 0
+$$
+solve is $C_{1}e^{ba}+C_{2}e^{-ba}$
+$$
+I(0) = \int_{0}^{\infty} \frac{1}{x^{2}+b^{2}} \, \mathrm{d}x = \frac{1}{b}\arctan \frac{x}{b}\bigg|_{0}^{\infty} = \frac{\pi}{2b}
+$$
+$$
+I(\infty) = \frac{2}{a} \int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x = 0
+$$
+
+$$
+C_{1}+C_{2}=\frac{\pi}{2b}, C_{1}\times \infty=0
+$$
+$$
+I(a) = \frac{\pi}{2b}e^{-ab}
+$$
+
+$$
+\int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x = \frac{\pi}{2b}e^{-ab}
+$$
+
+### ex 2 -app
+
+$$
+\int_{-\infty}^{\infty} e^{-\frac{x^{2}}{2}} \, \mathrm{d}x 
+= \sqrt{ 2\pi }
+$$
+
+$$
+\int_{0}^{1} \frac{1}{\sqrt{ -\ln x }} \, \mathrm{d}x = \sqrt{ \pi }
+$$
+
+
+## 3.2 An Amazing integral
+
+$$
+g(y) = \int_{0}^{\infty} e^{-xy} \frac{\sin(ax)}{x} \, \mathrm{d}x , y>0
+$$
+
+$$
+\frac{dg}{dy} 
+= \int_{0}^{\infty} -xe^{-xy} \frac{\sin(ax)}{x} \, \mathrm{d}x 
+= -\int_{0}^{\infty} e^{-xy}\sin(ax) \, \mathrm{d}x 
+$$
+integrated-by-parts twice
+$$
+\frac{dg}{dy} = -\frac{a}{a^{2}+y^{2}}
+$$
+
+---
+
+$$
+\frac{dg}{dy} 
+= -\int_{0}^{\infty} e^{-xy}\sin(ax) \, \mathrm{d}x 
+$$
+$$
+\frac{dg}{dy} =
+\frac{1}{a}\cos(ax)e^{-xy}\bigg|_{0}^{\infty} -
+\frac{1}{a}\int_{0}^{\infty} \cos(ax)(-y)e^{-xy} \, \mathrm{d}x 
+$$
+$$
+\frac{dg}{dy} =
+-\frac{1}{a} 
++\frac{1}{a}\left( \frac{y}{a}\sin(ax)e^{-xy}\bigg|_{0}^{\infty} 
+-\frac{y}{a}\int_{0}^{\infty} \sin(ax)(-y)e^{-xy} \, \mathrm{d}x 
+\right)
+$$
+$$
+I = -\frac{1}{a} - \frac{y^{2}}{a^{2}}I
+$$
+$$
+I = \frac{-a}{a^{2}+y^{2}}
+$$
+---
+
+$$
+g(y) = C - \arctan\left( \frac{y}{a} \right)
+$$
+
+$$
+\int_{0}^{\infty} \frac{\sin(ax)}{x} \, \mathrm{d}x =
+\left\{  
+\begin{array}{rl}
+\frac{\pi}{2} & \text{if } a>0 \\
+0 & \text{if } a=0 \\
+-\frac{\pi}{2} & \text{if } a<0 \\
+\end{array}
+\right.
+$$
+
+## 3.3 Frullani's Integral
+
+$$
+I(a,b) = \int_{0}^{\infty} \frac{\arctan(ax)-\arctan(bx)}{x} \, \mathrm{d}x 
+$$
+$I(a,a)=0$
+$$
+\frac{ \partial I }{ \partial a } =
+\int_{0}^{\infty} \frac{1}{x} \frac{x}{1+(ax)^{2}} \, \mathrm{d}x 
+$$
+$$
+\frac{ \partial I }{ \partial a } = \int_{0}^{\infty} \frac{1}{1+(ax)^{2}} \, \mathrm{d}x = \frac{1}{a} \arctan\left( \frac{x}{a} \right) \bigg|_{0}^{\infty} = \frac{\pi}{2a}
+$$
+
+$$
+I(a,b) = \frac{\pi}{2} \ln(a) - \frac{\pi}{2}\ln(b)
+=\frac{\pi}{2}\ln\left( \frac{a}{b} \right)
+$$
+
+If $a=\pi,b=1$  Frullani's integral special case
+$$
+I(\pi,1) = \int_{0}^{\infty} \frac{\arctan(\pi x)-\arctan(x)}{x} \, \mathrm{d}x = \frac{\pi}{2}\ln \pi
+$$
+
+
+function $f$, with ${f(0), f(\infty)}$ exists
+$$
+U = \int_{0}^{h /a} \frac{f(ax)-f(0)}{x}  \, \mathrm{d}x 
+$$
+h is a finite constant, and we'll let $h\to \infty$ latter
+
+$a\to b$
+$$
+U = \int_{0}^{h /b} \frac{f(bx)-f(0)}{x}  \, \mathrm{d}x 
+$$
+
+$$
+\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x  = U + f(0) \int_{0}^{h /a} \frac{1}{x}  \, \mathrm{d}x 
+$$
+$$
+\int_{0}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x  = U + f(0) \int_{0}^{h /b} \frac{1}{x}  \, \mathrm{d}x 
+$$
+
+$$
+\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x -
+\int_{0}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x =
+f(0)
+\left[
+\int_{0}^{h /a} \frac{1}{x} \, \mathrm{d}x  -
+\int_{0}^{h /b} \frac{1}{x} \, \mathrm{d}x  
+\right] 
+$$
+$$
+f(0)\int_{h /b }^{h /a} \frac{1}{x} \, \mathrm{d}x  =
+f(0)\ln\left( \frac{b}{a} \right)
+$$
+
+$$
+\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x -
+\int_{0}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x -
+\int_{h /b}^{h /a} \frac{f(bx)}{x}  \, \mathrm{d}x +
+\int_{h /b}^{h /a} \frac{f(bx)}{x}  \, \mathrm{d}x =
+f(0) \ln\left( \frac{b}{a} \right)
+$$
+combine second and third integral
+$$
+\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x -
+\int_{0}^{h /a} \frac{f(bx)}{x}  \, \mathrm{d}x +
+\int_{h /b}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x =
+f(0) \ln\left( \frac{b}{a} \right)
+$$
+
+$$
+\int_{0}^{h /a} \frac{f(ax) - f(bx)}{x}  \, \mathrm{d}x +
+\int_{h /b}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x =
+f(0) \ln\left( \frac{b}{a} \right)
+$$
+
+$$
+\lim_{ h \to \infty } \int_{h /a}^{h /b} \frac{f(bx)}{x} \, \mathrm{d}x = 
+\lim_{ h \to \infty } f(\infty) \int_{h /a}^{h /b} \frac{1}{x} \, \mathrm{d}x =
+f(\infty) \ln\left( \frac{b}{a} \right)
+$$
+
+$$
+\int_{0}^{\infty} \frac{f(ax)-f(bx)}{x} \, \mathrm{d}x = \left\{ f(\infty) - f(0) \right\} \ln\left( \frac{a}{b} \right)
+$$
+
+
+### ex1
+$$
+\int_{0}^{\infty} \frac{e^{-ax}-e^{-bx}}{x} \, \mathrm{d}x = (0-1)\ln\left( \frac{a}{b} \right) = \ln\left( \frac{b}{a} \right), a,b>0
+$$
+
+### ex2 
+$$
+\int_{0}^{\infty} \frac{\cos{ax}-\cos{bx}}{x} \, \mathrm{d}x 
+$$
+$f(0)=1,f(\infty)$ doesn't exist!!
+
+'inverse' of Feynman's trick
+$$
+\int_{0}^{\infty} e^{-tx}\left\{ \frac{\cos{ax}-\cos{bx}}{x} \right\}  \, \mathrm{d}x 
+$$
+and let $t\to 0$
