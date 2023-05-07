@@ -796,3 +796,392 @@ $$
 $$
 I(b) = \int_{0}^{\pi} \ln(1+b\cos x) \, \mathrm{d}x= \pi \ln \left(\frac{ 1 + \sqrt{ 1 - b^{2} }}{2} \right) 
 $$
+
+
+## 3.5 combining two tricks
+
+<font color="#ff0000">recursion trick</font>
+
+$$
+I_{n} = \int_{0}^{\frac{\pi}{2}} 
+\frac{1}
+{\left\{ a\cos ^{2}(x) + b \sin ^{2}(x) \right\}^{n} }  
+\, \mathrm{d}x , n=1,2,3,\dots
+$$
+
+differentiate with respect to a and b
+
+$$
+\frac{ \partial I_{n} }{ \partial a } =
+-n \int_{0}^{\frac{\pi}{2}} \frac{\cos ^{2}x}
+{\left\{ a\cos ^{2}(x) + b \sin ^{2}(x) \right\}^{n+1} }
+\, \mathrm{d}x 
+$$
+
+$$
+\frac{ \partial I_{n} }{ \partial b } =
+-n \int_{0}^{\frac{\pi}{2}} \frac{\sin ^{2}x}
+{\left\{ a\cos ^{2}(x) + b \sin ^{2}(x) \right\}^{n+1} }
+\, \mathrm{d}x 
+$$
+
+$$
+\frac{ \partial I_{n} }{ \partial a } +
+\frac{ \partial I_{n} }{ \partial b } =
+-n I_{n+1}
+$$
+
+$$
+I_{n} = -\frac{1}{n-1}\left[ 
+\frac{ \partial I_{n-1} }{ \partial a } +
+\frac{ \partial I_{n-1} }{ \partial b } 
+\right] 
+$$
+
+we already know that $I_{1}$
+
+---
+for $n=1$
+$$
+I_{0} = \int_{0}^{\frac{\pi}{2}}  \, \mathrm{d}x = \frac{\pi}{2}
+$$
+the recursion becomes useless
+
+---
+
+$$
+I_{1} = \int_{0}^{\frac{\pi}{2}} \frac{1}{a\cos ^{2}x+b\sin ^{2}x} \, \mathrm{d}x 
+$$
+$$
+I_{1} = \int_{0}^{\frac{\pi}{2}} \frac{1}{a+b\tan ^{2}x}sec^{2}x  \, \mathrm{d}x 
+$$
+$$
+I_{1}=\int_{0}^{\infty} \frac{1}{a+by^{2}} \, \mathrm{d}y 
+= \frac{1}{\sqrt{ ab }}\int_{0}^{\infty} \frac{1}{1+\left( \sqrt{ \frac{b}{a} }y \right)^{2}} \, \mathrm{d}\sqrt{ \frac{b}{a} }y 
+$$
+
+$$
+I_{1} = \frac{1}{\sqrt{ ab }}\arctan\left( \sqrt{ \frac{b}{a} }y \right)\Bigg|_{0}^{\infty} = \frac{\pi}{2\sqrt{ ab }}
+$$
+$$
+\boxed{
+\int_{0}^{\frac{\pi}{2}} \frac{1}{a\cos ^{2}x+b\sin ^{2}x} \, \mathrm{d}x 
+= \frac{\pi}{2\sqrt{ ab }}
+}
+$$
+
+To find $I_{2}$
+$$
+\frac{ \partial I_{1} }{ \partial a } = \frac{\pi}{2\sqrt{ b }} \frac{-1}{2} \frac{1}{a\sqrt{ a }} = -\frac{\pi}{4a\sqrt{ ab }}
+$$
+$$
+\frac{ \partial I_{1} }{ \partial b } = -\frac{\pi}{4b\sqrt{ ab }}
+$$
+
+$$
+I_{2} 
+= \int_{0}^{\frac{\pi}{2}} \frac{1}{\left\{ a\cos ^{2}x + b\sin ^{2}x \right\}^{2} }  \, \mathrm{d}x 
+= - \frac{1}{(2-1)} \left( -\frac{\pi}{4a\sqrt{ ab }} -\frac{\pi}{4b\sqrt{ ab }} \right) 
+$$
+$$
+\boxed{
+I_{2} 
+= \int_{0}^{\frac{\pi}{2}} \frac{1}{\left\{ a\cos ^{2}x + b\sin ^{2}x \right\}^{2} }  \, \mathrm{d}x 
+= \frac{\pi}{4\sqrt{ ab }}\left( \frac{1}{a} + \frac{1}{b} \right) 
+}
+$$
+
+
+$$
+\frac{ \partial I_{2} }{ \partial a } 
+= \frac{\pi}{4}
+\left(
+-\frac{3}{2}\frac{1}{\sqrt{ a^{5}b }} 
+-\frac{1}{2}\frac{1}{\sqrt{ a^{3}b^{3} }} 
+\right)
+= -\frac{\pi}{8\sqrt{ ab }} \frac{1}{a} \left( \frac{3}{a} + \frac{1}{b} \right)
+$$
+$$
+\frac{ \partial I_{2} }{ \partial b } 
+= \frac{\pi}{4}
+\left(
+-\frac{1}{2}\frac{1}{\sqrt{ a^{3}b^{3} }} 
+-\frac{3}{2}\frac{1}{\sqrt{ a    b^{5} }} 
+\right)
+= -\frac{\pi}{8\sqrt{ ab }} \frac{1}{b} \left( \frac{1}{a} + \frac{3}{b} \right)
+$$
+
+$$
+I_{3} = -\frac{1}{2} \left( -\frac{\pi}{8\sqrt{ ab }} \frac{1}{a} \left( \frac{3}{a} + \frac{1}{b} \right)
+-\frac{\pi}{8\sqrt{ ab }} \frac{1}{b} \left( \frac{1}{a} + \frac{3}{b} \right)
+\right) 
+$$
+$$
+I_{3} = \left( \frac{\pi}{16\sqrt{ ab }} \right)\left( \frac{3}{a^{2}}+\frac{3}{b^{2}}+\frac{2}{ab} \right)
+$$
+
+###  1/(x^2+a^2)^n
+
+$$
+I_{n}(y) = 
+\int_{0}^{y}
+\frac{1}{(x^{2}+a^{2})^{n}}
+\, \mathrm{d}x 
+$$
+
+special case $y=\infty$
+use **recursion**, combined with **integration by parts**
+$$
+u=\frac{1}{(x^{2}+a^{2})^{n}}, dv=1
+$$
+$$
+I_{n} = 
+\frac{x}{(x^{2}+a^{2})^{n}}\bigg|_{0}^{y} -
+(-n)\int_{0}^{y} x\frac{2x}{(x^{2}+a^{2})^{n+1}} \, \mathrm{d}x 
+$$
+$$
+I_{n} = \frac{y}{(y^{2}+a^{2})^{n}} + 
+2n \int_{0}^{y} \frac{x^{2}+a^{2}-a^{2}}{(x^{2}+a^{2})^{n+1}} \, \mathrm{d}x 
+$$
+$$
+I_{n} = \frac{y}{(y^{2}+a^{2})^{n}} + 
+2n I_{n} - 2na^{2}I_{n+1}
+$$
+
+$$
+\boxed{
+I_{n+1}(y) = \frac{y}{2na^{2}(y^{2}+a^{2})^{n}}
++ \frac{2n-1}{2na^{2}}I_{n}(y)
+}
+$$
+
+and 
+$$
+I_{1}(y) = \int_{0}^{y} \frac{1}{x^{2}+a^{2}} \, \mathrm{d}x = \frac{1}{a}\arctan\left( \frac{y}{a} \right)
+$$
+$y=\infty,I_{1}(y)=\frac{\pi}{2a}$
+$$
+I_{n+1}(\infty) = \frac{2n-1}{2na^{2}}I_{n}(\infty)
+$$
+
+$$
+I_{2}(\infty) = \frac{1}{2a^{2}}I_{1}(\infty) = \frac{\pi}{4a^{3}}
+$$
+
+$$
+I_{3}(\infty) = \frac{3}{4a^{2}}I_{2}(\infty) = \frac{3\pi}{16a^{5}}
+$$
+
+$$
+I_{n}(\infty) = \frac{(2n-1)!!}{(2n-1)!!} \frac{\pi}{2a^{2n-1}}
+$$
+
+
+## 3.6 Uhler's Integral and Symbolic Integration
+
+AMM 1914.10  Uhler
+
+$$
+I = \int_{0}^{a} (a^{2}-x^{2})x \, \mathrm{d}x 
+\int_{a-x}^{a+x} \frac{e^{-cy}}{y} \, \mathrm{d}y 
+$$
+
+$$
+\frac{dI}{dc} 
+= \int_{0}^{a} (a^{2}-x^{2})x \, \mathrm{d}x 
+\int_{a-x}^{a+x} e^{-cy} \, \mathrm{d}y 
+$$
+
+$$
+\frac{dI}{dc} = 
+\int_{0}^{a} (a^{2}-x^{2})x \frac{1}{-c} \left[ e^{-cy} \right] \bigg|_{a-x}^{a+x}  \, \mathrm{d}x 
+$$
+
+$$
+\frac{dI}{dc} = 
+\frac{e^{-ca}}{c}\int_{0}^{a} (a^{2}-x^{2})x  (e^{cx}-e^{-cx})  \, \mathrm{d}x 
+$$
+
+$$
+\frac{dI}{dc} = 
+\frac{e^{-ca}}{c^{2}} \left[ 
+(e^{cx}+e^{-cx})(a^{2}-x^{2})x\Big|_{0}^{a}  - 
+\int_{0}^{a} (e^{cx}+e^{-cx})(a^{2}-3x^{2}) \, \mathrm{d}x 
+\right]
+$$
+
+$$
+\frac{dI}{dc} = 
+\frac{-e^{-ca}}{c^{3}} \left[ 
+(e^{cx}-e^{-cx})(a^{2}-3x^{2}) \Big|_{0}^{a} - 
+\int_{0}^{a} (e^{cx}-e^{-cx})(-6x) \, \mathrm{d}x 
+\right] 
+$$
+
+$$
+\frac{dI}{dc} = 
+\frac{2a^{2}e^{-ca}}{c^{3}}(e^{ca}-e^{-ca}) + 
+\frac{-6e^{-ca}}{c^{3}} \int_{0}^{a} (e^{cx}-e^{-cx})x \, \mathrm{d}x 
+$$
+$$
+\frac{dI}{dc} = 
+\frac{2a^{2}e^{-ca}}{c^{3}}(e^{ca}-e^{-ca}) -
+\frac{6e^{-ca}}{c^{4}} \left[ 
+(e^{cx}+e^{-cx})x \Big|_{0}^{a} - 
+\int_{0}^{a} (e^{cx}+e^{-cx}) \, \mathrm{d}x 
+\right] 
+$$
+$$
+\frac{dI}{dc} = 
+\frac{2a^{2}}{c^{3}} 
+-\frac{2a^{2}e^{-2ca}}{c^{3}} 
+-\frac{6a}{c^{4}} 
+-\frac{6ae^{-2ca}}{c^{4}} 
++\frac{6}{c^{5}} 
+-\frac{6e^{-2ca}}{c^{5}} 
+$$
+
+$$
+\frac{dI}{dc} = 
+\frac{2a^{2}}{c^{3}} 
+-\frac{6a}{c^{4}} 
++\frac{6}{c^{5}} -
+\left( 
+\frac{2a^{2}}{c^{3}} 
++\frac{6a}{c^{4}} 
++\frac{6}{c^{5}} 
+\right)e^{-2ca}
+$$
+
+$$
+I=-\frac{2 a^2 c^2+a c \left(-2 e^{-2 a c}-4\right)-3 e^{-2 a c}+3}{2 c^4}
+$$
+
+
+### 1/(1+e^(ax))
+
+$$
+\int_{0}^{\infty} \frac{1}{1+e^{ax}} \, \mathrm{d}x = \frac{\ln 2}{a}
+$$
+differentiating with respect to the parameter a
+$$
+\int_{0}^{\infty} \frac{xe^{ax}}{(1+e^{ax})^{2}} \, \mathrm{d}x = \frac{\ln 2}{a^{2}}
+$$
+
+$t=e^{ax}$, $x=\frac{\ln t}{a}$
+$$
+\int_{1}^{\infty} \frac{1}{a} \frac{t\ln t}{(1+t)^{2}} \frac{1}{at}\, \mathrm{d}t = \frac{\ln 2}{a^{2}} 
+$$
+
+$a=1$
+$$
+\int_{1}^{\infty} \frac{\ln x}{(1+x)^{2}}  \, \mathrm{d}x = \ln 2
+$$
+
+### sq{(1+x)/(1-x)}
+
+$$
+\int_{-1}^{1} \sqrt{ \frac{1+x}{1-x} } \, \mathrm{d}x = \pi 
+$$
+
+
+## 3.7 the probability integral revisited
+
+$$
+\int_{-\infty}^{\infty} e^{-\frac{x^{2}}{2}} \, \mathrm{d}x 
+$$
+
+
+$$
+I = \int_{0}^{\infty} e^{-x^{2}} \, \mathrm{d}x 
+$$
+$$
+f(x) = \left( \int_{0}^{x} e^{-t^{2}} \, \mathrm{d}t  \right)^{2} 
+$$
+$$
+g(x) = \int_{0}^{1} \frac{e^{-x^{2}(1+t^{2})}}{1+t^{2}} \, \mathrm{d}t 
+$$
+
+Then
+$$
+\frac{df}{dx} = 2e^{-x^{2}}\int_{0}^{x} e^{-t^{2}} \, \mathrm{d}t 
+$$
+$$
+\begin{align}
+\frac{dg}{dx} 
+& = \int_{0}^{1} \frac{-2x(1+t^{2})e^{-x^{2}(1+t^{2})}}{1+t^{2}} \, \mathrm{d}t  \\
+& = -2x \int_{0}^{1} e^{-x^{2}(1+t^{2})} \, \mathrm{d}t  \\
+& = -2xe^{-x^{2}} \int_{0}^{1} e^{-x^{2}t^{2}} \, \mathrm{d}t 
+\end{align}
+$$
+let $u=tx,du=xdt$
+$$
+\frac{dg}{dx} = -2xe^{-x^{2}} \int_{0}^{x} e^{-u^{2}} \frac{1}{x} \, \mathrm{d}u 
+$$
+
+$$
+\frac{dg}{dx} = -2e^{-x^{2}} \int_{0}^{x} e^{-u^{2}} \, \mathrm{d}u = -\frac{df}{dx} 
+$$
+So
+$$
+\frac{df}{dx} + \frac{dg}{dx} = 0
+$$
+${f+g = C}$
+
+${f(0)=0,g(0)=\frac{\pi}{4}}$
+$$
+f(x) + g(x) = \frac{\pi}{4}
+$$
+${f(\infty)+g(\infty)=\frac{\pi}{4}}$, since $f(\infty)=I^{2},g(\infty)=0$
+$$
+I = \frac{\sqrt{ \pi }}{2}
+$$
+$$
+\int_{-\infty}^{\infty} e^{-x^{2}} \, \mathrm{d}x = \sqrt{ \pi }
+$$
+
+$$
+\int_{-\infty}^{\infty} e^{\frac{-x^{2}}{2}} \, \mathrm{d}x = \sqrt{ 2\pi }
+$$
+
+### 
+$$
+\int_{0}^{\infty} e^{-ax^{2}- \frac{b}{x^{2}}} \, \mathrm{d}x 
+$$
+$t=\sqrt{ a }x$
+$$
+I = \frac{1}{\sqrt{ a }}\int_{0}^{\infty} e^{-t^{2}- \frac{ab}{t^{2}} } \, \mathrm{d}t 
+= \frac{1}{\sqrt{ a }}I_{2}
+$$
+
+$y=\frac{\sqrt{ ab }}{t}$ 
+
+$$
+I_{2} = -\sqrt{ ab } \int^{0}_{\infty} e^{-\frac{ab}{y^{2}}-y^{2}} \frac{1}{y^{2}} \, \mathrm{d}y
+$$
+$$
+2I_{2} 
+= \int_{0}^{\infty} e^{-t^{2}- \frac{ab}{t^{2}}} \, \mathrm{d}t 
++ \sqrt{ ab } \int_{0}^{\infty} e^{-t^{2}- \frac{ab}{t^{2}}} \frac{1}{t^{2}} \, \mathrm{d}t
+$$
+$$
+2I_{2} = 
+\int_{0}^{\infty} 
+e^{-t^{2}- \frac{ab}{t^{2}}} \left( 1+\frac{\sqrt{ ab }}{t^{2}} \right) 
+\, \mathrm{d}t 
+$$
+let ${s = t - \frac{\sqrt{ ab }}{t}}$ 
+$$
+ds = \left( 1 + \frac{\sqrt{ ab }}{t^{2}} \right)dt
+$$
+$$
+2I_{2} = \int_{-\infty}^{\infty} e^{-s^{2}-2\sqrt{ ab }} \left( 1+\frac{\sqrt{ ab }}{t^{2}} \right) \frac{1}{1+\frac{\sqrt{ ab }}{t^{2}}} \, \mathrm{d}s 
+$$
+
+$$
+I = \frac{1}{\sqrt{ a }}I_{2} = \frac{1}{2\sqrt{ a }} e^{-2\sqrt{ ab }} \sqrt{ \pi }
+$$
+$$
+I = \frac{1}{2} \sqrt{ \frac{\pi}{a} } e^{-2\sqrt{ ab }}
+$$
+
