@@ -1,4 +1,4 @@
- 3
+# 3
 
 ## 3.1 Leibniz’s Formula
 
@@ -1185,3 +1185,134 @@ $$
 I = \frac{1}{2} \sqrt{ \frac{\pi}{a} } e^{-2\sqrt{ ab }}
 $$
 
+
+## 3.8 Dini's Integral
+
+$$
+I(\alpha) = \int_{0}^{\pi} \ln(1-2\alpha \cos x + \alpha^{2}) \, \mathrm{d}x 
+$$
+
+$$
+\frac{ \partial I(\alpha) }{ \partial \alpha } =
+\int_{0}^{\pi} \frac{-2\cos x+2\alpha}{1-2\alpha \cos x+\alpha^{2}} \, \mathrm{d}x 
+$$
+$$
+\frac{ \partial I }{ \partial \alpha } = \frac{\pi}{\alpha} - \frac{1}{\alpha}\int_{0}^{\pi} \frac{1-\alpha^{2}}{1-2\alpha \cos x+\alpha^{2}} \, \mathrm{d}x 
+$$
+let $t=\tan \frac{x}{2}$
+$$
+\frac{ \partial I }{ \partial \alpha } = \frac{\pi}{\alpha} - \frac{1}{\alpha} \int_{0}^{\infty} \frac{1-\alpha^{2}}{1+\alpha^{2}-2\left( \frac{1-t^{2}}{1+t^{2}} \right)} \frac{2}{1+t^{2}}\, \mathrm{d}t 
+$$
+$$
+\frac{ \partial I }{ \partial \alpha } = \frac{\pi}{\alpha}
+- \frac{2}{\alpha}\int_{0}^{\infty} \frac{1}{1+ \left( \frac{1+\alpha}{1-\alpha}t \right)^{2}} \, \frac{1+\alpha}{1-\alpha} \mathrm{d}t 
+$$
+$$
+\frac{ \partial I }{ \partial \alpha } = \frac{\pi}{\alpha} - \frac{2}{\alpha} \arctan\left( \frac{1+\alpha}{1-\alpha} \right)t\Bigg|_{0}^{\infty} 
+$$
+when $\alpha>1$, 
+$$
+\frac{ \partial I }{ \partial \alpha }=\frac{2\pi}{a}
+$$
+$$
+I=2\pi \ln \alpha+C
+$$
+when $0<\alpha<1$
+$$
+\frac{ \partial I }{ \partial \alpha } =0
+$$
+since $I(0)=\int_{0}^{\pi} \ln {1} \, \mathrm{d}\alpha=0$
+
+$$
+\boxed{
+\int_{0}^{\pi} \ln(1-2\alpha \cos x + \alpha^{2}) \, \mathrm{d}x =
+\left\{  
+\begin{array}{ll}
+0 &, \alpha^{2}<1 \\
+\pi \ln(\alpha^{2}) &, \alpha^{2}>1
+\end{array}
+\right.
+}
+$$
+
+## 3.9 Feynman's Favorite Trick Solves a Physics Equation
+
+$$
+V^{2}(\phi) = V^{2}(0) + 2(\cos \phi-\mu \sin \phi) - 2\mu \int_{0}^{\phi} V^{2}(x) \, \mathrm{d}x
+$$
+
+$\mu\geq 0$, $V^{2}(0)$ is constant
+
+$$
+\frac{d V^{2}(\phi)}{d \phi} = 2(-\sin \phi-\mu \cos \phi) - 2\mu V^{2}(\phi)
+$$
+$$
+\frac{d V^{2}(\phi)}{d \phi} 
++2\mu V^{2}(\phi) 
+= 2(-\sin \phi-\mu \cos \phi) 
+$$
+$$
+\frac{d V^{2}(\phi)}{d \phi} e^{2\mu \phi}
++2\mu V^{2}(\phi) e^{2\mu \phi}
+= 2(-\sin \phi-\mu \cos \phi) e^{2\mu \phi}
+$$
+$$
+\int_{0}^{\phi} \frac{d}{dx} (V^{2}(x)e^{2\mu x}) \, \mathrm{d}x = -
+2\int_{0}^{\phi} (\sin x + \mu \cos x) e^{2\mu x} \, \mathrm{d}x 
+$$
+left-side
+$$
+\int_{0}^{\phi} \frac{d}{dx} (V^{2}(x)e^{2\mu x}) \, \mathrm{d}x = 
+V^{2}(\phi)e^{2\mu \phi} - V^{2}(0)
+$$
+
+$$
+V^{2}(\phi) = e^{-2\mu \phi} V^{2}(0) - 2 e^{-2\mu \phi} 
+\int_{0}^{\phi} (\sin x + \mu \cos x)e^{2\mu x} \, \mathrm{d}x 
+$$
+
+$$
+V^{2}(\phi) = e^{-2\mu \phi}V^{2}(0) - 2e^{-2\mu \phi}
+\left(
+\frac{e^{2 \mu  \phi } (2 \mu  \sin (\phi )-\cos (\phi ))+1}{4 \mu ^{2}+1} +
+\mu \frac{e^{2 \mu  \phi } (2 \mu  \cos (\phi )+\sin (\phi ))-2 \mu }{4 \mu ^{2}+1}
+\right) 
+$$
+
+$$
+V^{2}(\phi) = e^{-2\mu \phi}V^{2}(0) - 2e^{-2\mu \phi} \left( \frac{e^{2 \mu  \phi } \left(\left(2 \mu ^2-1\right) \cos (\phi )+3 \mu  \sin (\phi )\right)-2 \mu ^{2}+1}{4 \mu ^{2}+1} \right) 
+$$
+$$
+V^{2}(\phi) = 
+e^{-2\mu \phi}\left( V^{2}(0) + \frac{2(2\mu^{2}-1)}{4\mu^{2}+1} \right) - 
+\frac{2}{4\mu^{2}+1}((2\mu^{2}-1)\cos \phi + 3\mu \sin \phi)
+$$
+
+
+## 3.10
+### C3.1
+$$
+\int_{0}^{\infty} \frac{\ln (1+a^{2}x^{2})}{b^{2}+x^{2}} \, \mathrm{d}x 
+$$
+special case $a=b=1$ 
+$$
+\int_{0}^{\infty} \frac{\ln(1+x^{2})}{1+x^{2}} \, \mathrm{d}x 
+$$
+
+$$
+\frac{ \partial I }{ \partial a } = 
+\int_{0}^{\infty} \frac{2 a x^{2}}{(b^{2} + x^{2}) (1 + a^{2} x^{2})} \, \mathrm{d}x 
+$$
+$$
+\frac{ \partial I }{ \partial a } = 
+\frac{\pi}{1 + a b}, \Re[a]>0,\Re[b]>0
+$$
+$$
+I=\frac{\pi}{b}\ln(1+ab)
+$$
+
+
+### C3.2 Cauchy Principle Value of
+$$
+\int_{-\infty}^{\infty} \frac{\cos ax}{b^{2}-x^{2}} \, \mathrm{d}x ,a>0,b>0
+$$
