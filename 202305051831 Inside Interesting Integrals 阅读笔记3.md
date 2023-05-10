@@ -166,24 +166,36 @@ $$
 \cos(s)\int_{-\infty}^{\infty} e^{- \frac{x^{2}}{2}} \cos(tx) \, \mathrm{d}x = \sqrt{ 2\pi }e^{- \frac{t^{2}}{2}}\cos(s)
 $$
 
-### ex4
+### ex4  \frac{\cos(ax)}{x^{2}+b^{2}} 
 $$
 I(a) = \int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x 
 $$
 
-my
+my solve
 $$
 \frac{dI}{da} = \int_{0}^{\infty} \frac{-x\sin(ax)}{x^{2}+b^{2}} \, \mathrm{d}x 
 $$
+integrate in part, can get
 
 $$
 I(a) = \frac{1}{a} \frac{\sin(ax)}{x^{2}+b^{2}} \bigg| _{0}^{\infty} - \frac{1}{a} \int_{0}^{\infty} \frac{-2x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
 $$
+
 $$
 I(a) = \frac{1}{a} \int_{0}^{\infty} \frac{2x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
 $$
+$$
+\frac{ \partial I }{ \partial a } = - \int_{0}^{\infty} \frac{x\sin ax}{x^{2}+b^{2}} \, \mathrm{d}x 
+$$
+$$
+\frac{ \partial^{2} I }{ \partial a^{2} } = - \int_{0}^{\infty} \frac{x^{2}\cos ax}{x^{2}+b^{2}} \, \mathrm{d}x 
+$$
+$$
+\frac{ \partial^{2} I }{ \partial a^{2} } +b^{2}I = -\int_{0}^{\infty} \cos ax \, \mathrm{d}x =0 (?)
+$$
 
-%%todo!%%
+---
+
 book
 $$
 I = \int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x 
@@ -231,11 +243,7 @@ $$
 a \frac{d^{2}I}{da^{2}} = 2b^{2}\int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
 $$
 
-because 
-$$
-I = \frac{2}{a} \int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x 
-$$
-
+${\because }$ $I = \frac{2}{a} \int_{0}^{\infty} \frac{x\sin(ax)}{(x^{2}+b^{2})^{2}} \, \mathrm{d}x$  
 $$
 a \frac{d^{2}I}{da^{2}} = 2b^{2} \frac{a}{2} I
 $$
@@ -258,8 +266,12 @@ I(a) = \frac{\pi}{2b}e^{-ab}
 $$
 
 $$
+\boxed{
 \int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x = \frac{\pi}{2b}e^{-ab}
+}
 $$
+
+---
 
 ### ex 2 -app
 
@@ -319,6 +331,7 @@ $$
 g(y) = C - \arctan\left( \frac{y}{a} \right)
 $$
 
+<font color="#ff0000">Dirichlet’s integral</font> 
 $$
 \int_{0}^{\infty} \frac{\sin(ax)}{x} \, \mathrm{d}x =
 \left\{  
@@ -1311,8 +1324,147 @@ $$
 I=\frac{\pi}{b}\ln(1+ab)
 $$
 
+solve by mathematica
+$$
+\fbox{$\frac{1}{2} \pi  \sqrt{\frac{1}{b^2}} \left(\log \left(1-a^2 b^2\right)+2 \tanh ^{-1}\left(\frac{| a| }{\sqrt{\frac{1}{b^2}}}\right)\right)\text{ if }\left(\Re\left(b^2\right)\geq 0\lor b^2\notin \mathbb{R}\right)\land a^2>0$}
+$$
 
-### C3.2 Cauchy Principle Value of
+### C3.2 Cauchy Principle Value 
 $$
 \int_{-\infty}^{\infty} \frac{\cos ax}{b^{2}-x^{2}} \, \mathrm{d}x ,a>0,b>0
 $$
+Hint: recal **Dirichlet's integral**
+
+----
+mathematica
+$$
+\frac{-\cos (a b) \text{Ci}(a (x-b))+\cos (a b) \text{Ci}(a (b+x))+\sin (a b) (\text{Si}(a (b+x))-\text{Si}(a (b-x)))}{2 b}
+$$
+其中 Si 为 SinIntegral， Ci 为 CosIntegral
+$$
+\mathrm{Si}(z) = \int_{0}^{z} \frac{\sin(t)}{t} \, \mathrm{d}t,
+\mathrm{Ci}(z) = \int_{0}^{z} \frac{\cos(t)}{t} \, \mathrm{d}t,
+$$
+
+$$
+\frac{\sin (a b) (\text{Si}(a \infty )-\text{Si}(a (-\infty )))}{ b}
+$$
+
+---
+
+$$
+I = \int_{-\infty}^{\infty} \frac{\cos ax}{b^{2}-x^{2}} \, \mathrm{d}x 
+$$
+$\because \frac{1}{b^{2}-x^{2}} = \frac{1}{2b}\left( \frac{1}{b+x}+\frac{1}{b-x} \right)$
+$$
+I = \frac{1}{2b}\int_{-\infty}^{\infty} \frac{\cos ax}{b+x}+\frac{\cos ax}{b-x} \, \mathrm{d}x 
+$$
+$$
+I=
+\frac{1}{2b} \int_{-\infty}^{\infty} \frac{\cos a(t-b)}{t} \, \mathrm{d}t +  
+\frac{1}{2b} \int_{\infty}^{-\infty} \frac{\cos a(b-t)}{t} \, (-1)\mathrm{d}t +
+$$
+$$
+I=
+\frac{1}{b}\int_{-\infty}^{\infty}  \frac{\cos ab\cos at+\sin ab\sin at}{t} \, \mathrm{d}t 
+$$
+根据奇偶性
+$$
+I = 
+\frac{\cos ab}{b}\int_{-\infty}^{\infty} \frac{\cos at}{t} \, \mathrm{d}t +
+\frac{\sin ab}{b}\int_{-\infty}^{\infty} \frac{\sin at}{t} \, \mathrm{d}t =
+\frac{\sin ab}{b}\int_{-\infty}^{\infty} \frac{\sin at}{t} \, \mathrm{d}t 
+$$
+$$
+I=\frac{2\sin ab}{b} \int_{0}^{\infty} \frac{\sin at}{t} \, \mathrm{d}t 
+$$
+化为 Dirichlet 积分
+$$
+I = \left\{  
+\begin{array}{cl}
+\frac{\pi\sin ab}{b} & \text{if } a>0 \\
+0 & \text{if } a=0 \\
+-\frac{\pi\sin ab}{b} & \text{if } a<0 \\
+\end{array}
+\right.
+$$
+
+### C3.3 
+
+In (3.1.7) we found that
+$$
+\int_{0}^{\infty} \frac{\cos ax}{x^{2}+b^{2}} \, \mathrm{d}x = \frac{\pi}{2b}e^{-ab}
+$$
+
+combine that result with C3.2 to calculate
+$$
+\int_{-\infty}^{\infty} \frac{\cos ax}{b^{4}-x^{4}} \, \mathrm{d}x 
+$$
+
+$$
+I = 
+\int_{-\infty}^{\infty} \frac{\cos ax}{b^{4}-x^{4}} \, \mathrm{d}x 
+$$
+
+${\because \frac{1}{b^{4}-x^{4}}=\frac{1}{2b^{2}} \left( \frac{1}{b^{2}+x^{2}} + \frac{1}{b^{2}-x^{2}} \right)}$ 
+$$
+I = \frac{1}{2b^{2}} \left( 
+\int_{-\infty}^{\infty} \frac{\cos ax}{b^{2}+x^{2}} \, \mathrm{d}x +
+\int_{-\infty}^{\infty} \frac{\cos ax}{b^{2}-x^{2}} \, \mathrm{d}x 
+\right)
+$$
+
+$$
+I = \frac{1}{b^{2}} \int_{0}^{\infty} \frac{\cos ax}{b^{2}+x^{2}} \, \mathrm{d}x 
++ \frac{1}{2b^{2}} \int_{-\infty}^{\infty} \frac{\cos ax}{b^{2}-x^{2}} \, \mathrm{d}x 
+$$
+$$
+I = \frac{1}{b^{2}} \frac{\pi}{2b}e^{-ab} + 
+\frac{1}{2b^{2}}\left\{  
+\begin{array}{cl}
+\frac{\pi\sin ab}{b} & \text{if } a>0 \\
+0 & \text{if } a=0 \\
+-\frac{\pi\sin ab}{b} & \text{if } a<0 \\
+\end{array}
+\right.
+$$
+$$
+I = 
+\left\{  
+\begin{array}{cl}
+\frac{\pi}{2b^{3}}e^{-ab} + \frac{\pi\sin ab}{2b^{3}} & \text{if } a>0 \\
+\frac{\pi}{2b^{3}}e^{-ab}  & \text{if } a=0 \\
+\frac{\pi}{2b^{3}}e^{-ab} -\frac{\pi\sin ab}{b^{3}} & \text{if } a<0 \\
+\end{array}
+\right.
+$$
+
+### C3.4 Cauchy Principal Value
+
+$$
+\int_{0}^{\infty} \frac{x\sin ax}{x^{2}-b^{2}} \, \mathrm{d}x = \frac{\pi}{2} \cos ab
+$$
+don’t forget Dirichlet’s integral.
+
+$$
+I = \int_{0}^{\infty} \frac{1}{2} \left( \frac{\sin ax}{x-b} + \frac{\sin ax}{x+b} \right) \, \mathrm{d}x 
+$$
+$$
+I = \frac{1}{2}
+\left(
+\int_{-b}^{\infty}  \frac{\sin a(t+b)}{t}  \, \mathrm{d}t +
+\int_{b}^{\infty}  \frac{\sin a(t-b)}{t}  \, \mathrm{d}t  
+\right)
+$$
+$$
+I = \frac{1}{2}\left( 
+\int_{-b}^{b} \frac{\sin at\cos ab+\cos at\sin ab}{t} \, \mathrm{d}t +
+\int_{b}^{\infty} \frac{\sin at\cos ab+\cos at\sin ab}{t} \, \mathrm{d}t +
+\int_{b}^{\infty} \frac{\sin at\cos ab-\cos at\sin ab}{t} \, \mathrm{d}t  
+ \right)
+$$
+$$
+I = \cos ab \int_{0}^{b} \frac{\sin at}{t} \, \mathrm{d}t +\cos ab\int_{b}^{\infty} \frac{\sin at}{t} \, \mathrm{d}t = 
+\cos ab \int_{0}^{\infty} \frac{\sin at}{t} \, \mathrm{d}t 
+$$
+cosab 乘以 Dirichlet 积分

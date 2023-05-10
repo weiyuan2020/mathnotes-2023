@@ -1,0 +1,11 @@
+#mathematica  #希腊字母
+
+
+Wolfram 语言允许在符号名称、字符串和图形中使用希腊字母——可以通过面板或键盘快捷键来输入. Wolfram 语言所提供的标准字体中包括普通和变化形式的希腊字符.
+
+### 小写希腊字母
+
+### 大写希腊字母
+
+Wolfram 语言的符号 π (可以输入 ![](https://reference.wolframcloud.com/language/guide/Files/GreekLetters.zh/49.png)p![](https://reference.wolframcloud.com/language/guide/Files/GreekLetters.zh/52.png))
+两个esc之间夹读音即可
