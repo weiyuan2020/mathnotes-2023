@@ -265,6 +265,7 @@ $$
 I(a) = \frac{\pi}{2b}e^{-ab}
 $$
 
+(3:1:7) an important result
 $$
 \boxed{
 \int_{0}^{\infty} \frac{\cos(ax)}{x^{2}+b^{2}} \, \mathrm{d}x = \frac{\pi}{2b}e^{-ab}

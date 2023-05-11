@@ -222,9 +222,20 @@ usually okay if f(x,y) is "well-behaved"
 
 ${a=c=0,b=d=1,f(x,y)=\frac{x-y}{(x+y)^{3}}}$ 
 
-integrate x->y ${I=\infty+1}$
+integrate x->y ${I=-\frac{1}{2}}$
 integrate y->x ${I=\frac{1}{2}}$
  why they aren’t equal?
+ 
+[[202305111101 极限 微分 积分次序交换]]
+这里
+$$
+F(x) = \int_{0}^{1} \frac{x-y}{(x+y)^{3}} \, \mathrm{d}y = \frac{1}{(1+x)^{2}}
+$$
+$$
+G(y) = \int_{0}^{1} \frac{x-y}{(x+y)^{3}} \, \mathrm{d}x = -\frac{1}{(1+y)^{2}}
+$$
+
+ 因为积分不是绝对值可积的，从不同方向积分， 正无穷和负无穷的速度抵消的速度不一样。 例如这个函数关于 x = y 反对称， 所以分别沿着 x = y 和 x = -y 两个方向做二重积分， 结果为零。 也就是 $\int \int f(x,y) d({x-y}) d({x+y} )= 0$ 
 
 ### C3.8
 $$
@@ -275,3 +286,102 @@ $$
 \frac{dI}{db} = -\frac{1}{2} e^{\frac{1}{4}}\sqrt{ \pi }
 $$
 
+
+### C3.9
+
+$$
+\int_{0}^{\infty} \frac{\sin mx}{x(x^{2}+a^{2})} \, \mathrm{d}x 
+= \frac{\pi}{2}\left( \frac{1-e^{-am}}{a^{2}} \right)
+, a>0,m>0
+$$
+
+
+$$
+I = 
+\int_{0}^{\infty} \frac{\sin mx}{x(x^{2}+a^{2})} \, \mathrm{d}x 
+$$
+
+$$
+\frac{ \partial I }{ \partial m }  = 
+\int_{0}^{\infty} \frac{\cos mx}{x^{2}+a^{2}} \, \mathrm{d}x 
+= \frac{\pi}{2a} e^{-am}
+$$
+[[202305051831 Inside Interesting Integrals 阅读笔记3#ex4 frac{ cos(ax)}{x {2}+b {2}}]]
+
+
+$$
+I = -\frac{\pi}{2a^{2}}e^{-am} + C
+$$
+${m=0,I(0)=0}$
+$$
+I = \frac{\pi}{2} \left( \frac{1-e^{-am}}{a^{2}} \right)
+$$
+
+
+### C3.10
+Space-Time Approach to Quantum Electro-dynamics,
+$$
+\frac{1}{ab} = \int_{0}^{1} \frac{1}{(ax+b(1-x))^{2}} \, \mathrm{d}x 
+$$
+
+additional identities could be easily derived from this integral
+such as
+$$
+\frac{1}{2a^{2}b} = \int_{0}^{1} \frac{x}{(ax+b(1-x))^{3}} \, \mathrm{d}x 
+$$
+
+$$
+I = \int_{0}^{1} \frac{1}{((a-b)x+b)^{2}} \, \mathrm{d}x 
+$$
+let ${t=(a-b)x+b}$
+$$
+I = \int_{b}^{a} \frac{1}{a-b} \frac{1}{t^{2}} \, \mathrm{d}t =
+\frac{1}{a-b}\left( \frac{1}{b}-\frac{1}{a} \right) = 
+\frac{1}{ab}
+$$
+$$
+\frac{ \partial I }{ \partial a } = -\frac{1}{a^{2}b}
+$$
+and 
+$$
+\frac{ \partial I }{ \partial a } = 
+\int_{0}^{1} -\frac{2x}{(ax+b(1-x))^{3}} \, \mathrm{d}x 
+$$
+we get
+$$
+\int_{0}^{1} \frac{x}{(ax+b(1-x))^{3}} \, \mathrm{d}x =
+\frac{1}{2a^{2}b}
+$$
+
+
+### C3.11
+$$
+\int_{0}^ {\frac{\pi}{2}} \cos(m \tan\theta)    \, \mathrm{d}\theta
+$$
+make change of variable ${x=\tan\theta}$
+
+$$
+I = \int_{0}^{\infty} \frac{\cos mx}{1+x^{2}} \, \mathrm{d}x
+= \frac{\pi}{2} e^{-m}
+$$
+by (3:1:7)
+
+
+### C3.12
+${\int_{1}^{\infty} \frac{1}{x^{2}} \, \mathrm{d}x}$ and ${\int_{1}^{\infty} \frac{1}{y^{2}} \, \mathrm{d}y}$ are clearly exist, both equal to 1
+does this imply that the double integral 
+$$
+\int_{1}^{\infty} \int_{1}^{\infty} \frac{1}{x^{2}+y^{2}} \, \mathrm{d}x  \, \mathrm{d}y 
+$$
+also exists?
+
+$$
+I = 
+\int_{1}^{\infty} \int_{1}^{\infty} \frac{1}{x^{2}+y^{2}} \, \mathrm{d}x  \, \mathrm{d}y 
+$$
+$$
+\int_{1}^{\infty} \frac{y}{1+\left( \frac{x}{y} \right)^{2}} \, \mathrm{d} \frac{x}{y} =
+y\arctan\left( \frac{x}{y} \right)\Bigg|_{1}^{\infty}  = 
+y\left( \frac{\pi}{2} - \arctan \frac{1}{y} \right)
+$$
+%% todo %%
