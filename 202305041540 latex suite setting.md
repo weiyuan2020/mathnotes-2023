@@ -1,3 +1,6 @@
+latex suite
+quick latex for obsidian
+
 ```json
 [    
     // Math mode
@@ -236,6 +239,7 @@
     {trigger: "\\\\bra{(.+)}([^ ]+)>", replacement: "\\braket{ [[0]] | $0 ", options: "rmA", description: "Convert bra into braket (alternate)"},
     {trigger: "outp", replacement: "\\ket{${0:\\psi}} \\bra{${0:\\psi}} $1", options: "mA"},
     {trigger: "big|", replacement: "\\Bigg|_{${0:0}}^{${1:\\infty}} ", options: "mA"},
+    {trigger: "box", replacement: "\\boxed{$0} ", options: "mA"},
 
 
     // Chemistry
