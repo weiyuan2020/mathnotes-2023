@@ -158,13 +158,59 @@ ${f(\infty)+g(\infty)=\frac{\pi}{4}}$, since $f(\infty)=I^{2},g(\infty)=0$
 $$
 I = \frac{\sqrt{ \pi }}{2}
 $$
+3:7:1 
 $$
-\int_{-\infty}^{\infty} e^{-x^{2}} \, \mathrm{d}x = \sqrt{ \pi }
+\boxed{\int_{-\infty}^{\infty} e^{-x^{2}} \, \mathrm{d}x = \sqrt{ \pi }}
 $$
 
 $$
 \int_{-\infty}^{\infty} e^{\frac{-x^{2}}{2}} \, \mathrm{d}x = \sqrt{ 2\pi }
 $$
+
+---
+Cauchy-Schlömilch transformation 
+3:7:2
+$$
+\boxed{
+\int_{-\infty}^{\infty} f\left( x-\frac{1}{x} \right) \, \mathrm{d}x = 
+\int_{-\infty}^{\infty} f(x) \, \mathrm{d}x 
+}
+$$
+
+$$
+I = 
+\int_{-\infty}^{\infty} f\left( x-\frac{1}{x} \right) \, \mathrm{d}x = 
+\int_{-\infty}^{0} f\left( x-\frac{1}{x} \right) \, \mathrm{d}x + 
+\int_{0}^{\infty} f\left( x-\frac{1}{x} \right) \, \mathrm{d}x
+$$
+${x=-e^{-u}, dx = e^{-u}du}$
+$$
+I_{1} = 
+\int_{-\infty}^{0} f\left( x-\frac{1}{x} \right) \, \mathrm{d}x  =
+\int_{-\infty}^{\infty} f(-e^{-u} + e^{u}) e^{-u} \, \mathrm{d}u 
+$$
+${x=e^{u},dx=e^{u}du}$
+$$
+I_{2} = 
+\int_{0}^{\infty} f\left( x-\frac{1}{x} \right) \, \mathrm{d}x = 
+\int_{-\infty}^{\infty} f(e^{u}-e^{-u})e^{u} \, \mathrm{d}u 
+$$
+
+$$
+I_{1} + I_{2} = 
+\int_{-\infty}^{\infty} f(-e^{-u} + e^{u}) e^{-u} \, \mathrm{d}u +
+\int_{-\infty}^{\infty} f(e^{u}-e^{-u})e^{u} \, \mathrm{d}u 
+$$
+$$
+I = \int_{-\infty}^{\infty} f(e^{u}-e^{-u})(e^{u}+e^{-u}) \, \mathrm{d}x 
+$$
+let ${y=e^{u}-e^{-u}, dy = (e^{u}+e^{-u})du}$ 
+$$
+I = \int_{-\infty}^{\infty} f(y) \, \mathrm{d}y 
+$$
+
+---
+
 
 ### 
 $$

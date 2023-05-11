@@ -1,7 +1,7 @@
 ```json
 [    
     // Math mode
-    {trigger: "mk", replacement: "$$0$", options: "tA"},
+    {trigger: "mk", replacement: "${$0}$", options: "tA"},
     {trigger: "dm", replacement: "$$\n$0\n$$", options: "tAw"},
     {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
 
@@ -235,7 +235,7 @@
     {trigger: "\\\\bra{([^|]+)\\|", replacement: "\\braket{ [[0]] | $0 ", options: "rmA", description: "Convert bra into braket"},
     {trigger: "\\\\bra{(.+)}([^ ]+)>", replacement: "\\braket{ [[0]] | $0 ", options: "rmA", description: "Convert bra into braket (alternate)"},
     {trigger: "outp", replacement: "\\ket{${0:\\psi}} \\bra{${0:\\psi}} $1", options: "mA"},
-
+    {trigger: "big|", replacement: "\\Bigg|_{${0:0}}^{${1:\\infty}} ", options: "mA"},
 
 
     // Chemistry
