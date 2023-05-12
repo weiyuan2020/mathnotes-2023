@@ -207,3 +207,38 @@ $$
 $$
 
 %% todo%%  pp 125
+
+#### sq{sin x}
+let ${u=\sin ^{2}x, \sin x=u^{1/2},\cos x=(1-u)^{1/2}}$ 
+${x = \arcsin u^{1/2}}$
+${dx = \frac{1}{2}(1-u)^{-1/2}u^{-1/2}}$ 
+$$
+\boxed{
+\int_{0}^{\pi/2} \sqrt{ \sin x } \, \mathrm{d}x =  
+\int_{0}^{\pi/2} \sqrt{ \cos x } \, \mathrm{d}x =  
+\frac{1}{2}B\left( \frac{3}{4}, \frac{1}{2} \right) = 
+\frac{{\Gamma\left( \frac{3}{4} \right)\Gamma\left( \frac{1}{2} \right)}}{2\Gamma\left( \frac{5}{4} \right)}
+} 
+$$
+
+
+$$
+\boxed{ 
+\int_{0}^{\pi/2} \frac{1}{\sqrt{ \sin x\cos x }} \, \mathrm{d}x 
+= \frac{\Gamma^{2}\left( \frac{1}{4} \right)}{2\Gamma\left( \frac{1}{2} \right)}
+= \frac{\Gamma^{2}\left( \frac{1}{4} \right)}{2\sqrt{ \pi }}
+}
+$$
+
+$$
+\int_{0}^{\pi/2} \frac{1}{\sqrt{ \sin x }} \, \mathrm{d}x =
+\frac{\Gamma\left( \frac{1}{4} \right)\Gamma\left( \frac{1}{2} \right)}{2\Gamma\left( \frac{3}{4} \right)} 
+$$
+$$
+\boxed{
+\int_{0}^{\pi/2} \frac{1}{\sqrt{ \sin x }} \, \mathrm{d}x =
+\int_{0}^{\pi/2} \frac{1}{\sqrt{ \cos x }} \, \mathrm{d}x =
+= \frac{\Gamma^{2}\left( \frac{1}{4} \right)}{2\sqrt{ 2\pi }}
+} 
+$$
+%% todo %% pp127
