@@ -241,4 +241,119 @@ $$
 = \frac{\Gamma^{2}\left( \frac{1}{4} \right)}{2\sqrt{ 2\pi }}
 } 
 $$
-%% todo %% pp127
+%% todo %% pp127 v1
+
+### x=y/(1+y)
+4:2:1
+$$
+B(m,n) = \int_{0}^{1} x^{m-1}(1-x)^{n-1} \, \mathrm{d}x
+, m>0, n>0
+$$
+
+make the change of vaiable 
+${x=\frac{y}{1+y}}$ and so ${1-x = \frac{1}{1+y}}$
+${dx = \frac{1}{(1+y)^{2}}dy}$
+$$
+B(m,n) 
+= \int_{0}^{\infty} \left( \frac{y}{1+y} \right)^{m-1} \left( \frac{1}{1+y} \right)^{m-1} \frac{1}{(1+y)^{2}} \, \mathrm{d}y
+= \int_{0}^{\infty} \frac{y^{m-1}}{(1+y)^{m+n}} \, \mathrm{d}y 
+$$
+
+setting ${n=1-m}$ 
+$$
+\int_{0}^{\infty} \frac{y^{m-1}}{1+y} \, \mathrm{d}x =
+B(m,1-m) = \Gamma(m)\Gamma(1-m)
+$$
+
+using contour integration 8:7:9
+$$
+\int_{0}^{\infty} \frac{y^{m-1}}{1+y} \, \mathrm{d}y 
+= \frac{\pi}{\sin(m \pi)}
+$$
+
+and so 
+$$
+\boxed{
+\Gamma(m)\Gamma(1-m) = \frac{\pi}{\sin (m\pi)}
+} 
+$$
+*reflection formula* for the gamma function, discovered by Euler in 1771.
+
+
+### pp160 v2
+from 4:2:5
+$$
+B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}
+= \frac{(m-1)!(n-1)!}{(m+n-1)!}
+$$
+
+from which it follows that
+$$
+B(m+1,n+1) = \frac{m!n!}{(m+n+1)!}
+$$
+let ${m=n=z}$, we have
+$$
+B(z+1,z+1) = 
+\frac{z!z!}{(2z+1)!}
+$$
+by def
+$$
+B(z+1,z+1) = 
+\int_{0}^{1} x^{z}(1-x)^{z} \, \mathrm{d}x 
+$$
+
+$$
+\frac{z!z!}{(2z+1)!} = 
+\int_{0}^{1} x^{z}(1-x)^{z} \, \mathrm{d}x 
+$$
+
+${x=\frac{1+s}{2}, 1-x = \frac{1-s}{2}, dx = \frac{1}{2}ds}$
+$$
+\frac{z!z!}{(2z+1)!} = 
+\int_{-1}^{1} \left( \frac{1+s}{2} \right)^{z}\left( \frac{1-s}{2} \right)^{z} \frac{1}{2}\, \mathrm{d}s
+= 2^{-2z-1} \int_{-1}^{1} (1-s^{2})^{z}  \, \mathrm{d}s 
+$$
+
+since the integrand is even
+$$
+\frac{z!z!}{(2z+1)!} = 
+2^{-2z}\int_{0}^{1} (1-s^{2})^{z} \, \mathrm{d}s 
+$$
+let ${u=s^{2}, ds = \frac{1}{2\sqrt{ u }}du}$
+$$
+\frac{z!z!}{(2z+1)!} = 
+2^{-2z}\int_{0}^{1} (1-u)^{z} \frac{1}{2\sqrt{ u }}  \, \mathrm{d}u 
+$$
+
+the last integral from 4:2:1
+$$
+B\left( \frac{1}{2}, z+1 \right) = 
+\frac{\Gamma\left( \frac{1}{2} \right)\Gamma(z+1)}{\Gamma\left( z+\frac{3}{2} \right)}
+= \frac{{\left( -\frac{1}{2} \right)!z!}}{\left( z+\frac{1}{2} \right)!}
+$$
+
+recalling from 4:2:11 ${\left( -\frac{1}{2} \right)! = \sqrt{ \pi }}$
+$$
+\frac{z!z!}{(2z+1)!} = 
+2^{-2z-1} \frac{z!\sqrt{ \pi }}{\left( z+\frac{1}{2} \right)!}
+$$
+
+4:2:17
+$$
+z!\left( z+\frac{1}{2} \right)! = 2^{-2z-1}\sqrt{ \pi } (2z+1)!
+$$
+
+and since
+${\left( z+\frac{1}{2} \right)! = \left( z+\frac{1}{2} \right) \left( z-\frac{1}{2} \right)! = \left( \frac{2z+1}{2} \right) \left( z-\frac{1}{2} \right)!}$
+${(2z+1)! = (2z+1)(2z)!}$
+
+4:2:18
+$$
+z!\left( z-\frac{1}{2} \right)! = 
+2^{-2z}\sqrt{ \pi } (2z)!
+$$
+
+
+
+
+
