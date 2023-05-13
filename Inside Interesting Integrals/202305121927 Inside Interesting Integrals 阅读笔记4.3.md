@@ -9,7 +9,7 @@ $$
 \sin(bx) y^{p-1} e^{-xy}
 \, \mathrm{d}x  \, \mathrm{d}y 
 $$
-
+#### 4:3:1
 $$
 \int_{0}^{\infty} \sin(bx) 
 \left( 
@@ -84,7 +84,7 @@ $$
 This result reproduces Dirichlet’s integral if $b = 1$ and $p=1$ (that’s good, of
 course!)
 
-%% todopp 164 v2 %%
+%% pp 164 v2 %%
 $$
 \int_{0}^{\infty} \frac{\sin(x^{q})}{x^{q}} \, \mathrm{d}x 
 $$
@@ -110,7 +110,7 @@ $$
 \int_{0}^{\infty} \frac{\sin (x^{q})}{x^{q}} \, \mathrm{d}x =
 \frac{1}{q} \left( \frac{\pi}{2\Gamma\left( 2-\frac{1}{q} \right)\sin\left( \frac{\pi}{2}\left( 2-\frac{1}{q} \right) \right)} \right)
 $$
-4:3:3
+#### 4:3:3
 $$
 \int_{0}^{\infty} \frac{\sin (x^{q})}{x^{q}} \, \mathrm{d}x =
 \frac{\pi}{2q\Gamma\left( 2-\frac{1}{q} \right)\sin\left( \frac{\pi}{2q} \right)}
@@ -136,7 +136,7 @@ $$
 \left( -\frac{1}{q} \right)! = 
 \frac{\frac{\pi}{q}}{\left( \frac{1}{q} \right)!\sin\left( \frac{\pi}{q} \right)}
 $$
-4:3:6
+#### 4:3:6
 $$
 \int_{0}^{\infty} \frac{\sin (x^{q})}{x^{q}} \, \mathrm{d}x =
 \frac{\pi}{2(q-1)\sin\left( \frac{\pi}{2q} \right)} 
@@ -148,7 +148,7 @@ $$
 \frac{\left( \frac{1}{q} \right)!}{\frac{1}{q}} = \left( \frac{1}{q} -1\right)! = \Gamma\left( \frac{1}{q} \right)
 $$
 
-4:3:7
+#### 4:3:7
 $$
 \boxed{
 \int_{0}^{\infty} \frac{\sin (x^{q})}{x^{q}} \, \mathrm{d}x =
@@ -209,7 +209,7 @@ $$
 $$
 \Gamma(p) \int_{0}^{\infty} \frac{\cos(bx)}{x^{p}} \, \mathrm{d}x 
 $$
-4:3:9
+#### 4:3:9
 $$
 \boxed{
 \int_{0}^{\infty} \frac{\cos(bx)}{x^{p}} \, \mathrm{d}x =
@@ -217,6 +217,109 @@ $$
 }
 $$
 
-%% skip pp 168- %%
+%% pp 168 %%
 
+$$
+\int_{0}^{\infty} \frac{\sin bu}{u^{p}} \, \mathrm{d}u = 
+\frac{b^{p-1}\pi}{2\Gamma(p)\sin \frac{p\pi}{2}}
+$$
+let ${p=1-\frac{1}{k}}$
+$$
+\int_{0}^{\infty} \frac{\sin bu}{u^{1-1/k}} \, \mathrm{d}u =
+\frac{b^{-1/k}\pi}{2\Gamma\left( 1-\frac{1}{k} \right)\sin\left( \frac{\left( 1-\frac{1}{k} \right)\pi}{2} \right)}
+$$
+let ${u=x^{k}, du=kx^{k-1}dx}$
+$$
+\int_{0}^{\infty} \frac{\sin bx^{k}}{x^{k-1}} kx^{k-1} \, \mathrm{d}x =
+k\int_{0}^{\infty} \sin (bx^{k}) \, \mathrm{d}x 
+$$
 
+because ${\Gamma\left( \frac{1}{k} \right)\Gamma\left( 1-\frac{1}{k} \right) = \frac{\pi}{\sin\left( \frac{\pi}{k} \right)}}$
+$$
+\int_{0}^{\infty} \sin(bx^{k}) \, \mathrm{d}x =
+\frac{\pi}{2kb^{1/k} \frac{\pi}{\sin\left( \frac{\pi}{k} \right)\Gamma\left( \frac{1}{k} \right)} \sin\left( \frac{\pi}{2} - \frac{\pi}{2k} \right) }
+$$
+$$
+\int_{0}^{\infty} \sin(bx^{k}) \, \mathrm{d}x =
+\frac{\pi\Gamma\left( \frac{1}{k} \right)2\sin\left( \frac{\pi}{2k} \right)\cos\left( \frac{\pi}{2k} \right)}{2kb^{1/k}\pi \cos\left( \frac{\pi}{2k} \right)}
+= \frac{\Gamma\left( \frac{1}{k} \right)\sin\left( \frac{\pi}{2k} \right)}{kb^{1/k}}
+$$
+
+#### 4:3:10 
+$$
+\boxed{
+\int_{0}^{\infty} \sin(bx^{k}) \, \mathrm{d}x =
+\frac{\Gamma\left( \frac{1}{k} \right)\sin\left( \frac{\pi}{2k} \right)}{kb^{1/k}}
+, b>0,k>1.
+} 
+$$
+
+for cos
+$$
+\int_{0}^{\infty} \frac{\cos bu}{u^{p}} \, \mathrm{d}u =
+\frac{b^{p-1}\pi}{2\Gamma(p)\cos\left( \frac{p\pi}{2} \right)}
+$$
+let ${p=1-\frac{1}{k},u=x^{k},du=kx^{k-1}dx}$
+$$
+k\int_{0}^{\infty} \cos (bx^{k}) \, \mathrm{d}x =
+\frac{\pi}{2b^{1/k}\Gamma\left( 1-\frac{1}{k} \right)\cos\left( \frac{\pi}{2} - \frac{\pi}{2k} \right)}
+$$
+
+#### 4:3:11
+$$
+\boxed{
+\int_{0}^{\infty} \cos(bx^{k}) \, \mathrm{d}x = 
+\frac{\Gamma\left( \frac{1}{k} \right)\cos\left( \frac{\pi}{2k} \right)}{kb^{1/k}}
+, b>0,k>1.
+} 
+$$
+
+### reversal of double integration order trick
+
+recall 4:3:9
+$$
+\int_{0}^{\infty} \cos(bx)e^{-xy} \, \mathrm{d}x =
+\frac{y}{b^{2}+y^{2}}
+$$
+integrate both sides with respect to y from 0 to $c\geq 0$
+$$
+\int_{0}^{c} \int_{0}^{\infty} \cos(bx)e^{-xy} \, \mathrm{d}x   \, \mathrm{d}y = \int_{0}^{c} \frac{y}{b^{2}+y^{2}} \, \mathrm{d}y 
+$$
+reverse the order of integration on the left
+$$
+\int_{0}^{\infty} \cos(bx) \left( \int_{0}^{c} e^{-xy} \, \mathrm{d}y \right)  \, \mathrm{d}x =
+\frac{1}{2} \ln\left( \frac{b^{2}+c^{2}}{b^{2}} \right)
+$$
+$$
+\int_{0}^{\infty} \cos(bx) \left( \frac{1-e^{-cx}}{x} \right) \, \mathrm{d}x 
+$$
+
+let ${b=p,c=r}$
+$$
+\int_{0}^{\infty} \left( \frac{1-e^{-rx}}{x} \right) \cos(px) \, \mathrm{d}x 
+=\frac{1}{2} \ln\left( \frac{p^{2}+r^{2}}{p^{2}} \right)
+$$
+let ${b=q,c=s}$
+$$
+\int_{0}^{\infty} \left( \frac{1-e^{-sx}}{x} \right) \cos(qx) \, \mathrm{d}x 
+=\frac{1}{2} \ln\left( \frac{q^{2}+s^{2}}{q^{2}} \right)
+$$
+
+两式相减
+$$
+\int_{0}^{\infty} \frac{\cos(qx)-\cos(px)}{x} \, \mathrm{d}x +
+\int_{0}^{\infty} \frac{e^{-rx}\cos(px) - e^{-sx}\cos(qx)}{x} \, \mathrm{d}x 
+=\frac{1}{2} \ln\left( \frac{p^{2}+r^{2}}{p^{2}} \right)
+- \frac{1}{2} \ln\left( \frac{q^{2}+s^{2}}{q^{2}} \right)
+$$
+
+and 
+$$
+\int_{0}^{\infty} \frac{\cos(qx)-\cos(px)}{x} \, \mathrm{d}x =
+\ln\left( \frac{q}{p} \right)
+$$
+
+$$
+\int_{0}^{\infty} \frac{e^{-rx}\cos(px) - e^{-sx}\cos(qx)}{x} \, \mathrm{d}x = 
+\frac{1}{2} \ln\left( \frac{q^{2}+s^{2}}{p^{2}+r^{2}} \right)
+$$

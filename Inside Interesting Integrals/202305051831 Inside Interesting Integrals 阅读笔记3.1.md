@@ -6,6 +6,7 @@ $$
 I(x,\alpha) = \int_{a(\alpha)}^{b(\alpha)} f(x,\alpha) \, \mathrm{d}x 
 $$
 <font color="#ff0000">conclusion:</font>
+#### 3:1:1
 $$
 \frac{dI}{d\alpha} = 
 \int_{a}^{b} \frac{ \partial f }{ \partial \alpha }  \, \mathrm{d}x +
@@ -22,6 +23,8 @@ $$
 $$
 \int_{0}^{\infty} \frac{-2a}{(x^{2}+a^{2})^{2}} \, \mathrm{d}x = \frac{-\pi}{2a^{2}}
 $$
+#### 3:1:2
+
 $$
 \int_{0}^{\infty} \frac{1}{(x^{2}+a^{2})^{2}} \, \mathrm{d}x 
 = \frac{\pi}{4a^{3}}
@@ -32,6 +35,9 @@ $$
 \int_{0}^{\infty} \frac{-2\times 2a}{(x^{2}+a^{2})^{3}} \, \mathrm{d}x =
 \frac{-3\pi}{4a^{4}}
 $$
+
+#### 3:1:3
+
 $$
 \int_{0}^{\infty} \frac{1}{(x^{2}+a^{2})^{3}} \, \mathrm{d}x = 
 \frac{3\pi}{15a^{5}}
@@ -104,6 +110,8 @@ $$
 g(t) = \frac{\pi}{2} - 2\int_{0}^{1} \frac{e^{-\frac{(1+y^{2})t^{2}}{2}}}{1+y^{2}} \, \mathrm{d}y
 $$
 
+#### 3:1:4
+
 let $t\to \infty$, $g(\infty)=\frac{\pi}{2}$ 
 $$
 \int_{-\infty}^{\infty} e^{\frac{-x^{2}}{2}} \, \mathrm{d}x = 2\sqrt{ \frac{\pi}{2} } = \sqrt{ 2\pi }
@@ -159,12 +167,24 @@ $$
 \sin(s)\int_{-\infty}^{\infty} e^{- \frac{x^{2}}{2}} \sin(tx) \, \mathrm{d}x 
 $$
 
+#### 3:1:5
+$$
+\int_{0}^{\infty} e^{- \frac{x^{2}}{2}} \cos(s+tx) \, \mathrm{d}x 
+= \sqrt{ \frac{\pi}{2} }e^{- \frac{t^{2}}{2}}\cos(s)
+$$
+
 the last integral on the right is zero because its integrand is odd,
 
 $$
 \int_{-\infty}^{\infty} e^{- \frac{x^{2}}{2}} \cos(s+tx) \, \mathrm{d}x =
 \cos(s)\int_{-\infty}^{\infty} e^{- \frac{x^{2}}{2}} \cos(tx) \, \mathrm{d}x = \sqrt{ 2\pi }e^{- \frac{t^{2}}{2}}\cos(s)
 $$
+
+#### 3:1:6
+$$
+\int_{-\infty}^{\infty} e^{- \frac{x^{2}}{2}} \cos(s+tx) \, \mathrm{d}x = \sqrt{ 2\pi }e^{- \frac{t^{2}}{2}}\cos(s)
+$$
+
 
 ### ex4  \frac{\cos(ax)}{x^{2}+b^{2}} 
 $$
@@ -265,6 +285,7 @@ $$
 I(a) = \frac{\pi}{2b}e^{-ab}
 $$
 
+#### 3:1:7
 (3:1:7) an important result
 $$
 \boxed{
@@ -280,174 +301,9 @@ $$
 \int_{-\infty}^{\infty} e^{-\frac{x^{2}}{2}} \, \mathrm{d}x 
 = \sqrt{ 2\pi }
 $$
-
+#### 3:1:8 
 $$
 \int_{0}^{1} \frac{1}{\sqrt{ -\ln x }} \, \mathrm{d}x = \sqrt{ \pi }
 $$
-
-
-## 3.2 An Amazing integral
-
-$$
-g(y) = \int_{0}^{\infty} e^{-xy} \frac{\sin(ax)}{x} \, \mathrm{d}x , y>0
-$$
-
-$$
-\frac{dg}{dy} 
-= \int_{0}^{\infty} -xe^{-xy} \frac{\sin(ax)}{x} \, \mathrm{d}x 
-= -\int_{0}^{\infty} e^{-xy}\sin(ax) \, \mathrm{d}x 
-$$
-integrated-by-parts twice
-$$
-\frac{dg}{dy} = -\frac{a}{a^{2}+y^{2}}
-$$
-
----
-
-$$
-\frac{dg}{dy} 
-= -\int_{0}^{\infty} e^{-xy}\sin(ax) \, \mathrm{d}x 
-$$
-$$
-\frac{dg}{dy} =
-\frac{1}{a}\cos(ax)e^{-xy}\bigg|_{0}^{\infty} -
-\frac{1}{a}\int_{0}^{\infty} \cos(ax)(-y)e^{-xy} \, \mathrm{d}x 
-$$
-$$
-\frac{dg}{dy} =
--\frac{1}{a} 
-+\frac{1}{a}\left( \frac{y}{a}\sin(ax)e^{-xy}\bigg|_{0}^{\infty} 
--\frac{y}{a}\int_{0}^{\infty} \sin(ax)(-y)e^{-xy} \, \mathrm{d}x 
-\right)
-$$
-$$
-I = -\frac{1}{a} - \frac{y^{2}}{a^{2}}I
-$$
-$$
-I = \frac{-a}{a^{2}+y^{2}}
-$$
----
-
-$$
-g(y) = C - \arctan\left( \frac{y}{a} \right)
-$$
-
-<font color="#ff0000">Dirichlet’s integral</font> 
-$$
-\int_{0}^{\infty} \frac{\sin(ax)}{x} \, \mathrm{d}x =
-\left\{  
-\begin{array}{rl}
-\frac{\pi}{2} & \text{if } a>0 \\
-0 & \text{if } a=0 \\
--\frac{\pi}{2} & \text{if } a<0 \\
-\end{array}
-\right.
-$$
-
-## 3.3 Frullani's Integral
-
-$$
-I(a,b) = \int_{0}^{\infty} \frac{\arctan(ax)-\arctan(bx)}{x} \, \mathrm{d}x 
-$$
-$I(a,a)=0$
-$$
-\frac{ \partial I }{ \partial a } =
-\int_{0}^{\infty} \frac{1}{x} \frac{x}{1+(ax)^{2}} \, \mathrm{d}x 
-$$
-$$
-\frac{ \partial I }{ \partial a } = \int_{0}^{\infty} \frac{1}{1+(ax)^{2}} \, \mathrm{d}x = \frac{1}{a} \arctan\left( \frac{x}{a} \right) \bigg|_{0}^{\infty} = \frac{\pi}{2a}
-$$
-
-$$
-I(a,b) = \frac{\pi}{2} \ln(a) - \frac{\pi}{2}\ln(b)
-=\frac{\pi}{2}\ln\left( \frac{a}{b} \right)
-$$
-
-If $a=\pi,b=1$  Frullani's integral special case
-$$
-I(\pi,1) = \int_{0}^{\infty} \frac{\arctan(\pi x)-\arctan(x)}{x} \, \mathrm{d}x = \frac{\pi}{2}\ln \pi
-$$
-
-
-function $f$, with ${f(0), f(\infty)}$ exists
-$$
-U = \int_{0}^{h /a} \frac{f(ax)-f(0)}{x}  \, \mathrm{d}x 
-$$
-h is a finite constant, and we'll let $h\to \infty$ latter
-
-$a\to b$
-$$
-U = \int_{0}^{h /b} \frac{f(bx)-f(0)}{x}  \, \mathrm{d}x 
-$$
-
-$$
-\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x  = U + f(0) \int_{0}^{h /a} \frac{1}{x}  \, \mathrm{d}x 
-$$
-$$
-\int_{0}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x  = U + f(0) \int_{0}^{h /b} \frac{1}{x}  \, \mathrm{d}x 
-$$
-
-$$
-\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x -
-\int_{0}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x =
-f(0)
-\left[
-\int_{0}^{h /a} \frac{1}{x} \, \mathrm{d}x  -
-\int_{0}^{h /b} \frac{1}{x} \, \mathrm{d}x  
-\right] 
-$$
-$$
-f(0)\int_{h /b }^{h /a} \frac{1}{x} \, \mathrm{d}x  =
-f(0)\ln\left( \frac{b}{a} \right)
-$$
-
-$$
-\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x -
-\int_{0}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x -
-\int_{h /b}^{h /a} \frac{f(bx)}{x}  \, \mathrm{d}x +
-\int_{h /b}^{h /a} \frac{f(bx)}{x}  \, \mathrm{d}x =
-f(0) \ln\left( \frac{b}{a} \right)
-$$
-combine second and third integral
-$$
-\int_{0}^{h /a} \frac{f(ax)}{x}  \, \mathrm{d}x -
-\int_{0}^{h /a} \frac{f(bx)}{x}  \, \mathrm{d}x +
-\int_{h /b}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x =
-f(0) \ln\left( \frac{b}{a} \right)
-$$
-
-$$
-\int_{0}^{h /a} \frac{f(ax) - f(bx)}{x}  \, \mathrm{d}x +
-\int_{h /b}^{h /b} \frac{f(bx)}{x}  \, \mathrm{d}x =
-f(0) \ln\left( \frac{b}{a} \right)
-$$
-
-$$
-\lim_{ h \to \infty } \int_{h /a}^{h /b} \frac{f(bx)}{x} \, \mathrm{d}x = 
-\lim_{ h \to \infty } f(\infty) \int_{h /a}^{h /b} \frac{1}{x} \, \mathrm{d}x =
-f(\infty) \ln\left( \frac{b}{a} \right)
-$$
-
-$$
-\int_{0}^{\infty} \frac{f(ax)-f(bx)}{x} \, \mathrm{d}x = \left\{ f(\infty) - f(0) \right\} \ln\left( \frac{a}{b} \right)
-$$
-
-
-### ex1
-$$
-\int_{0}^{\infty} \frac{e^{-ax}-e^{-bx}}{x} \, \mathrm{d}x = (0-1)\ln\left( \frac{a}{b} \right) = \ln\left( \frac{b}{a} \right), a,b>0
-$$
-
-### ex2 
-$$
-\int_{0}^{\infty} \frac{\cos{ax}-\cos{bx}}{x} \, \mathrm{d}x 
-$$
-$f(0)=1,f(\infty)$ doesn't exist!!
-
-'inverse' of Feynman's trick
-$$
-\int_{0}^{\infty} e^{-tx}\left\{ \frac{\cos{ax}-\cos{bx}}{x} \right\}  \, \mathrm{d}x 
-$$
-and let $t\to 0$
 
 

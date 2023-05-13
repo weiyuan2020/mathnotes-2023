@@ -1,12 +1,12 @@
 
-Gamma function 4:1:1
+#### 4:1:1 Gamma function 
 $$
 \boxed{
 \Gamma(n) = \int_{0}^{\infty} e^{-x}x^{n-1} \, \mathrm{d}x
 }
 $$
 
-beta function 4:2:1
+#### 4:2:1 beta function 
 $$
 \boxed{
 B(m,n) = \int_{0}^{1} x^{m-1}(1-x)^{n-1} \, \mathrm{d}x ,
@@ -20,12 +20,12 @@ B(m,n) = 2\int_{0}^{\frac{\pi}{2}} \cos ^{2m-1}(\theta) \sin ^{2n-1}(\theta)  \,
 } 
 $$
 
-4:2:5
+#### 4:2:5
 $$
 \boxed{B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}} 
 $$
 
-4:2:12
+#### 4:2:12
 EllipticK 第一类完全椭圆积分
 $$
 \boxed{
@@ -36,7 +36,7 @@ $$
 } 
 $$
 
-4:2:14
+#### 4:2:14
 $$
 \boxed{
 \int_{0}^{\pi/2} \frac{1}{\sqrt{ \sin x }} \, \mathrm{d}x =
@@ -45,6 +45,14 @@ $$
 } 
 $$
 
+#### 4:2:15
+$$
+\boxed {
+B(m,n) = \int_{0}^{\infty} 
+\frac{y^{m-1}}{(1+y)^{m+n}}
+\, \mathrm{d}y 
+} 
+$$
 
 **contour integration** in chap 8
 
@@ -55,7 +63,24 @@ $$
 } 
 $$
 
-4:3:7
+#### 4:3:2  ${0<p<2}$
+$$
+\boxed{
+\int_{0}^{\infty} \frac{\sin(bx)}{x^{p}} \, \mathrm{d}x =
+\frac{b^{p-1}\pi}{2\Gamma(p)\sin \frac{p\pi}{2}}
+}
+$$
+
+$$
+\int_{0}^{\infty} \sin(bx)e^{-xy} \, \mathrm{d}x = \frac{b}{b^{2}+y^{2}}
+$$
+$$
+\int_{0}^{\infty} \cos(bx)e^{-xy} \, \mathrm{d}x = \frac{y}{b^{2}+y^{2}}
+$$
+
+
+
+#### 4:3:7
 $$
 \boxed{
 \int_{0}^{\infty} \frac{\sin (x^{q})}{x^{q}} \, \mathrm{d}x =
@@ -63,13 +88,14 @@ $$
 } 
 $$
 
-4:3:9
+#### 4:3:9
 $$
 \boxed{
 \int_{0}^{\infty} \frac{\cos(bx)}{x^{p}} \, \mathrm{d}x =
 \frac{b^{p-1}\pi}{2\Gamma(p)\cos \frac{p\pi}{2}}
 }
 $$
+
 
 
 $$

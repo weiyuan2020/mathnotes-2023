@@ -1,45 +1,3 @@
-## 4.1 Gamma function
-Gamma function 4:1:1
-$$
-\boxed{
-\Gamma(n) = \int_{0}^{\infty} e^{-x}x^{n-1} \, \mathrm{d}x
-}
-$$
-
-$$
-\Gamma(1) = \int_{0}^{\infty} e^{-x} \, \mathrm{d}x = 1 
-$$
-
-$$
-\Gamma(n+1) = \int_{0}^{\infty} e^{-x}x^{n} \, \mathrm{d}x 
-$$
-$$
-\Gamma(n+1) = -e^{-x}x^{n} \Big|_{0}^{\infty} + \int_{0}^{\infty} e^{-x}nx^{n-1} \, \mathrm{d}x 
-$$
-$$
-\Gamma(n+1) = n\Gamma(n)
-$$
-
-
-### 
-$$
-\int_{0}^{\infty} e^{-x^{3}} \, \mathrm{d}x 
-$$
-$$
-y = x^{3} , dx = \frac{1}{3} y^{-\frac{2}{3}} dy
-$$
-
-$$
-I = \int_{0}^{\infty} e^{-y} \frac{1}{3}y^{- \frac{2}{3}} \, \mathrm{d}y =
-\frac{1}{3} \Gamma\left( \frac{1}{3} \right) = \Gamma\left( \frac{4}{3} \right)
-$$
-
-$$
-\boxed{
-\int_{0}^{\infty} e^{-x^{3}} \, \mathrm{d}x = \Gamma\left( \frac{4}{3} \right)
-}
-$$
-
 ## 4.2 Wallis’ Integral and the Beta Function
 
 Wallis integral
@@ -56,7 +14,7 @@ I(2) = \frac{1}{30}
 \end{array}
 $$
 
-beta function 4:2:1
+#### 4:2:1 beta function 
 $$
 \boxed{
 B(m,n) = \int_{0}^{1} x^{m-1}(1-x)^{n-1} \, \mathrm{d}x ,
@@ -66,14 +24,18 @@ $$
 
 The beta function is intimately related to the gamma function.
 
-4.1.1 ${x=y^{2},dx = 2ydy}$
+let  ${x=y^{2},dx = 2ydy}$ in 4.1.1
 $$
 \Gamma(n) = \int_{0}^{\infty} e^{-y^{2}} y^{2n-2}2y \, \mathrm{d}y =
 2\int_{0}^{\infty} e^{-y^{2}}y^{2n-1} \, \mathrm{d}y 
 $$
+
+#### 4:2:2
 $$
 \Gamma(m) = \int_{0}^{\infty} e^{-x^{2}} x^{2m-1} \, \mathrm{d}x 
 $$
+
+
 $$
 \begin{align}
 \Gamma(m)\Gamma(n) & = 4 \int_{0}^{\infty} e^{-x^{2}}x^{2m-1} \, \mathrm{d}x \int_{0}^{\infty} e^{-y^{2}}y^{2n-1} \, \mathrm{d}y  \\
@@ -88,6 +50,8 @@ $$
 \Gamma(m)\Gamma(n) =
 4\int_{0}^{\frac{\pi}{2}} \int_{0}^{\infty} e^{-r^{2}} r^{2m+2n-2}\cos ^{2m-1}(\theta) \sin ^{2n-1}(\theta)  r\, \mathrm{d}r   \, \mathrm{d}\theta
 $$
+
+#### 4:2:3
 $$
 \Gamma(m)\Gamma(n) =
 \left[ 2\int_{0}^{\infty} e^{-r^{2}}r^{2(m+n)-1} \, \mathrm{d}r \right] 
@@ -114,7 +78,7 @@ $$
 $$
 \boxed{\Gamma(m)\Gamma(n) = \Gamma(m+n)B(m,n)} 
 $$
-4:2:5
+#### 4:2:5
 $$
 \boxed{B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}} 
 $$
@@ -131,7 +95,7 @@ $$
 I(k) = \frac{(k!)^{2}}{(2k+1)!}
 $$
 
-4:2:6
+#### 4:2:6
 $$
 \boxed{
 I(n) = \int_{0}^{1} (x-x^{2})^{n} \, \mathrm{d}x =
@@ -168,7 +132,7 @@ $$
 \Gamma(n) = (n-1)!
 $$
 
-4:2:8
+#### 4:2:8
 $$
 \boxed{
 \int_{0}^{\infty} e^{-x}\sqrt{ x } \, \mathrm{d}x = \frac{1}{2}\sqrt{ \pi }
@@ -185,11 +149,16 @@ $$
 \int_{\infty}^{0} \sqrt{ y } (-e^{-y}) \, \mathrm{d}y =
 \int_{0}^{\infty} e^{-y}\sqrt{ y } \, \mathrm{d}y 
 $$
+
+#### 4:2:9
 $$
 \boxed{\int_{0}^{1} \sqrt{ -\ln x } \, \mathrm{d}x =
 \frac{1}{2}\sqrt{ \pi }
 } 
 $$
+
+#### 4:2:10
+
 $$
 \boxed{
 \int_{0}^{\infty} e^{-x}x^{-1/2} \, \mathrm{d}x =\sqrt{ \pi }
@@ -202,6 +171,8 @@ $$
 \Gamma\left( \frac{1}{2} \right) = 
 \Gamma(1)B(1,2) = \Gamma(1) \left[ 2\int_{0}^{\pi/2}  \, \mathrm{d}\theta \right] = \pi
 $$
+
+#### 4:2:11
 $$
 \Gamma\left( \frac{1}{2} \right) = \sqrt{ \pi }
 $$
@@ -213,7 +184,7 @@ let ${u=\sin ^{2}x, \sin x=u^{1/2},\cos x=(1-u)^{1/2}}$
 ${x = \arcsin u^{1/2}}$
 ${dx = \frac{1}{2}(1-u)^{-1/2}u^{-1/2}}$ 
 
-4:2:12
+#### 4:2:12
 $$
 \boxed{
 \int_{0}^{\pi/2} \sqrt{ \sin x } \, \mathrm{d}x =  
@@ -223,6 +194,7 @@ $$
 } 
 $$
 
+#### 4:2:13
 
 $$
 \boxed{ 
@@ -237,7 +209,7 @@ $$
 \frac{\Gamma\left( \frac{1}{4} \right)\Gamma\left( \frac{1}{2} \right)}{2\Gamma\left( \frac{3}{4} \right)} 
 $$
 
-4:2:14
+#### 4:2:14
 $$
 \boxed{
 \int_{0}^{\pi/2} \frac{1}{\sqrt{ \sin x }} \, \mathrm{d}x =
@@ -264,6 +236,8 @@ B(m,n)
 $$
 
 setting ${n=1-m}$ 
+#### 4:2:15
+
 $$
 \int_{0}^{\infty} \frac{y^{m-1}}{1+y} \, \mathrm{d}x =
 B(m,1-m) = \Gamma(m)\Gamma(1-m)
@@ -276,6 +250,7 @@ $$
 $$
 
 and so 
+#### 4:2:16 
 $$
 \boxed{
 \Gamma(m)\Gamma(1-m) = \frac{\pi}{\sin (m\pi)}
@@ -342,7 +317,7 @@ $$
 2^{-2z-1} \frac{z!\sqrt{ \pi }}{\left( z+\frac{1}{2} \right)!}
 $$
 
-4:2:17
+#### 4:2:17
 $$
 z!\left( z+\frac{1}{2} \right)! = 2^{-2z-1}\sqrt{ \pi } (2z+1)!
 $$
@@ -351,7 +326,7 @@ and since
 ${\left( z+\frac{1}{2} \right)! = \left( z+\frac{1}{2} \right) \left( z-\frac{1}{2} \right)! = \left( \frac{2z+1}{2} \right) \left( z-\frac{1}{2} \right)!}$
 ${(2z+1)! = (2z+1)(2z)!}$
 
-4:2:18
+#### 4:2:18
 $$
 z!\left( z-\frac{1}{2} \right)! = 
 2^{-2z}\sqrt{ \pi } (2z)!

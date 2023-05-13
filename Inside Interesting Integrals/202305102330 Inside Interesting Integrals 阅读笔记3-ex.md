@@ -306,7 +306,7 @@ $$
 \int_{0}^{\infty} \frac{\cos mx}{x^{2}+a^{2}} \, \mathrm{d}x 
 = \frac{\pi}{2a} e^{-am}
 $$
-[[202305051831 Inside Interesting Integrals 阅读笔记3#ex4 frac{ cos(ax)}{x {2}+b {2}}]]
+[[202305051831 Inside Interesting Integrals 阅读笔记3.1#ex4 frac{ cos(ax)}{x {2}+b {2}}]]
 
 
 $$
