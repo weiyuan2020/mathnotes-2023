@@ -219,3 +219,125 @@ hint 3:1:8
 
 %% todo %%
 
+
+### C4.8 
+How does the gamma function behave at the negative integers? Hint: use the
+reflection formula in (4.2.16).
+
+$$
+\boxed{
+\Gamma(m)\Gamma(1-m) = \frac{\pi}{\sin (m\pi)}
+} 
+$$
+
+for ${m<0,1-m>0}$ 
+$$
+\Gamma(m) = \frac{\pi}{\Gamma(1-m)\sin(m\pi)}
+$$
+
+
+### C4.9
+$$
+\int_{0}^{\infty} \frac{\sin(x^{2})}{\sqrt{ x }} \, \mathrm{d}x = \frac{\pi}{4\Gamma\left( \frac{3}{4} \right)\sin\left( \frac{3\pi}{8} \right)}
+$$
+$$
+\int_{0}^{\infty} \frac{\cos(x^{2})}{\sqrt{ x }} \, \mathrm{d}x = \frac{\pi}{4\Gamma\left( \frac{3}{4} \right)\cos\left( \frac{3\pi}{8} \right)}
+$$
+
+hint (4:3:2)  (4:3:9) set ${b=1}$ make the substitution ${x=y^{2}}$
+
+$$
+\boxed{
+\int_{0}^{\infty} \frac{\sin(bx)}{x^{p}} \, \mathrm{d}x =
+\frac{b^{p-1}\pi}{2\Gamma(p)\sin \frac{p\pi}{2}}
+}
+$$
+
+let ${b=1,x=y^{2},dx=2ydy}$
+$$
+\int_{0}^{\infty} \frac{\sin(y^{2})}{y^{2p}} 2y \, \mathrm{d}y = 
+2\int_{0}^{\infty} \frac{\sin(y^{2})}{y^{2p-1}} \, \mathrm{d}y = 
+\frac{\pi}{2\Gamma(p)\sin \frac{p\pi}{2}}
+$$
+${p=\frac{3}{4}}$ 
+$$
+\int_{0}^{\infty} \frac{\sin(x^{2})}{\sqrt{ x }} \, \mathrm{d}x = 
+\frac{\pi}{4\Gamma\left( \frac{3}{4} \right)\sin\left( \frac{3\pi}{8} \right)}
+$$
+
+$$
+\int_{0}^{\infty} \frac{\cos(x^{2})}{\sqrt{ x }} \, \mathrm{d}x = 
+\frac{\pi}{4\Gamma\left( \frac{3}{4} \right)\cos\left( \frac{3\pi}{8} \right)}
+$$
+
+### C4.10 
+$$
+\int_{0}^{\infty} e^{-x^{n}} \, \mathrm{d}x = 
+\Gamma\left( \frac{n+1}{n} \right)
+$$
+
+let ${y=x^{n}, dx = \frac{1}{n}y^{1/n - 1}dy}$
+$$
+\int_{0}^{\infty} e^{-y} \frac{1}{n}y^{1/n-1} \, \mathrm{d}y 
+=\frac{1}{n} \Gamma\left( \frac{1}{n} \right) = \Gamma\left( 1+\frac{1}{n} \right)
+$$
+
+### C4.11
+$$
+\int_{0}^{\infty} (e^{-ax}-e^{-bx})x^{n-1} \, \mathrm{d}x = 
+\left( \frac{1}{a^{n}} - \frac{1}{b^{n}} \right)\Gamma(n)
+$$
+
+$$
+\int_{0}^{\infty} e^{-ax}x^{n-1} \, \mathrm{d}x 
+$$
+let ${y=ax,dx=\frac{1}{a}dy}$
+
+$$
+\int_{0}^{\infty} e^{-ax}x^{n-1} \, \mathrm{d}x 
+= \int_{0}^{\infty} e^{-y} \left( \frac{y}{a} \right)^{n-1} \frac{1}{a} \, \mathrm{d}y
+= \frac{1}{a^{n}} \int_{0}^{\infty} e^{-y}y^{n-1} \, \mathrm{d}y 
+= \frac{1}{a^{n}} \Gamma(n)
+$$
+similarly
+$$
+\int_{0}^{\infty} e^{-bx}x^{n-1} \, \mathrm{d}x 
+= \frac{1}{b^{n}} \Gamma(n)
+$$
+
+$$
+\int_{0}^{\infty} (e^{-ax} - e^{-bx})x^{n-1} \, \mathrm{d}x =
+\left( \frac{1}{a^{n}} - \frac{1}{b^{n}} \right)\Gamma(n)
+$$
+
+### C4.12
+$$
+I_{2k} = \int_{-\infty}^{\infty} 
+x^{2k} e^{-x^{2}}
+\, \mathrm{d}x 
+$$
+
+by making the change of variable ${y=x^{2}}$
+$$
+I_{2k} = \Gamma\left( k+\frac{1}{2} \right)
+$$
+
+hint 4:1:1
+Compare with (2.3.9)—does this give you a formula for ${\Gamma\left( k+\frac{1}{2} \right)}$ 
+
+
+solve
+$$
+I_{2k} = 2\int_{0}^{\infty} x^{2k} e^{-x^{2}} \, \mathrm{d}x
+$$
+let ${y=x^{2},dx = \frac{1}{2}y^{-1/2}dy}$
+
+$$
+I_{2k} = 2\int_{0}^{\infty} y^{k}e^{-y} \frac{1}{2} y^{-1/2} \, \mathrm{d}y
+$$
+$$
+I_{2k} = \int_{0}^{\infty} e^{-y} y^{k+1/2 - 1} \, \mathrm{d}y 
+$$
+$$
+I_{2k} = \Gamma\left( k+\frac{1}{2} \right)
+$$
