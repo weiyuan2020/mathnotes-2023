@@ -212,6 +212,8 @@ $$
 let ${u=\sin ^{2}x, \sin x=u^{1/2},\cos x=(1-u)^{1/2}}$ 
 ${x = \arcsin u^{1/2}}$
 ${dx = \frac{1}{2}(1-u)^{-1/2}u^{-1/2}}$ 
+
+4:2:12
 $$
 \boxed{
 \int_{0}^{\pi/2} \sqrt{ \sin x } \, \mathrm{d}x =  
@@ -234,6 +236,8 @@ $$
 \int_{0}^{\pi/2} \frac{1}{\sqrt{ \sin x }} \, \mathrm{d}x =
 \frac{\Gamma\left( \frac{1}{4} \right)\Gamma\left( \frac{1}{2} \right)}{2\Gamma\left( \frac{3}{4} \right)} 
 $$
+
+4:2:14
 $$
 \boxed{
 \int_{0}^{\pi/2} \frac{1}{\sqrt{ \sin x }} \, \mathrm{d}x =
