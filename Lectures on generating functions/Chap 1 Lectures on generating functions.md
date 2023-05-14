@@ -8,6 +8,7 @@ Publisher: American Mathematical Society, Year: 2003
 
 ISBN: 0-8218-3481-9,9780821834817
 
+#Reading-notes 
 
 # preface
 
@@ -73,14 +74,23 @@ The product $A_3(s)A_3(\frac{1}{s})$ also is a Laurent polynomial.
 ## 1.7 problems
 1.2 Find an expression for the number of 2r-figure lucky tickets in the number system to the base q
 
-1.3 
+### 1.3 
 a $\sin^2 s + \cos^2s=1$
 $$
+\sin s = s - \frac{s^3}{3!}+\cdots+(-1)^{n}\frac{s^{2n+1}}{(2n+1)!}
+$$
+$$
+\sin^2 s= \Big(s - \frac{s^3}{3!}+\cdots+(-1)^{n}\frac{s^{2n+1}}{(2n+1)!}\Big)^2 
+$$
+$$
+\cos s = 1 - \frac{s^2}{2!}+\cdots+(-1)^{n}\frac{s^{2n}}{(2n)!}
+$$
+$$
+\cos^2 s= \Big(s - \frac{s^2}{2!}+\cdots+(-1)^{n}\frac{s^{2n}}{(2n)!}\Big)^2
+$$
+$$
 \begin{align}
-\sin s &= s - \frac{s^3}{3!}+\cdots+(-1)^{n}\frac{s^{2n+1}}{(2n+1)!}\\
-\sin^2 s&= \Big(s - \frac{s^3}{3!}+\cdots+(-1)^{n}\frac{s^{2n+1}}{(2n+1)!}\Big)^2\\
-\cos s &= 1 - \frac{s^2}{2!}+\cdots+(-1)^{n}\frac{s^{2n}}{(2n)!}\\
-\cos^2 s&= \Big(s - \frac{s^2}{2!}+\cdots+(-1)^{n}\frac{s^{2n}}{(2n)!}\Big)^2\\
+
 [s^{2n}]\sin^2s+\cos^2s&= (-1)^{n-1} \sum_{k=0}^{n-1} \frac{1}{(2k+1)!}\frac{1}{(2n-2k-1)!}\\
 &+(-1)^{n} \sum_{k=0}^{n} \frac{1}{(2k)!}\frac{1}{(2n-2k)!}\\
 &=(-1)^n\frac{1}{(2n)!} \sum_{k=0}^{2n}\binom{2n}{k}(-1)^k\\
@@ -93,13 +103,22 @@ $\therefore\sin^2s+\cos^2s=1$
 b $(1+s)^\alpha+(1+s)^\beta = (1+s)^{\alpha+\beta}$
 
 $$
-\begin{align}
-(1+s)^\alpha &= 1+\binom{\alpha}{1}s+\binom{\alpha}{2}s^2+\cdots\\
-(1+s)^\beta  &= 1+\binom{\beta }{1}s+\binom{\beta }{2}s^2+\cdots\\
-(1+s)^\alpha(1+s)^\beta  &= (1+\binom{\alpha}{1}s+\binom{\alpha}{2}s^2+\cdots) (1+\binom{\beta }{1}s+\binom{\beta }{2}s^2+\cdots)\\
-&=1+(\binom{\alpha}{1}+\binom{\beta}{1})s+(\binom{\alpha}{2}+\binom{\alpha}{1}\binom{\beta}{1}+\binom{\beta}{2})s^2+\cdots\\
-\text{while }  (1+s)^{\alpha+\beta}&= 1+\binom{\alpha+\beta}{1}s+\binom{\alpha+\beta}{2}s^2
-\end{align}
+(1+s)^\alpha = 1+\binom{\alpha}{1}s+\binom{\alpha}{2}s^2+\cdots
+$$
+$$
+(1+s)^\beta  = 1+\binom{\beta }{1}s+\binom{\beta }{2}s^2+\cdots
+$$
+$$
+$$
+$$
+(1+s)^\alpha(1+s)^\beta  = (1+\binom{\alpha}{1}s+\binom{\alpha}{2}s^2+\cdots) (1+\binom{\beta }{1}s+\binom{\beta }{2}s^2+\cdots)
+$$
+$$
+(1+s)^\alpha(1+s)^\beta 
+=1+(\binom{\alpha}{1}+\binom{\beta}{1})s+(\binom{\alpha}{2}+\binom{\alpha}{1}\binom{\beta}{1}+\binom{\beta}{2})s^2+\cdots
+$$
+$$
+\text{while }  (1+s)^{\alpha+\beta} = 1+\binom{\alpha+\beta}{1}s+\binom{\alpha+\beta}{2}s^2
 $$
 $\because \binom{a+b}{n}=\sum_{k=1}^n\binom{a}{k}\binom{b}{n-k}$
 $\therefore (1+s)^\alpha+(1+s)^\beta = (1+s)^{\alpha+\beta}$
@@ -107,21 +126,29 @@ $\therefore (1+s)^\alpha+(1+s)^\beta = (1+s)^{\alpha+\beta}$
 c $\exp(\ln((1-s)^{-1})) = (1-s)^{-1}$
 
 $$
+(1-s)^{-1}=1+s+s^2+s^3+\cdots
+$$
+$$
+\ln((1-s)^{-1})=s+\frac{s^2}{2}+\frac{s^3}{3}+\cdots
+$$
+$$
+\exp(s)=1+s+\frac{s^2}{2!}+\frac{s^3}{3!}+\cdots
+$$
+$$
 \begin{align}
-(1-s)^{-1}&=1+s+s^2+s^3+\cdots\\
-\ln((1-s)^{-1})&=s+\frac{s^2}{2}+\frac{s^3}{3}+\cdots\\
-\exp(s)&=1+s+\frac{s^2}{2!}+\frac{s^3}{3!}+\cdots\\
+
 \exp(\ln((1-s)^{-1}))&=1+(s+\frac{s^2}{2}+\frac{s^3}{3}+\cdots)+\frac{1}{2!}(s+\frac{s^2}{2}+\frac{s^3}{3}+\cdots)^2+\cdots\\
 &=1+s+(\frac{1}{2}+\frac{1}{2!}(1))+(\frac{1}{3}+ \frac{1}{2!}(1\times\frac{1}{2}+\frac{1}{2}\times 1)+ \frac{1}{3!})s^2 +\cdots\\
 &=1+s+s^2+\cdots
 \end{align}
 $$
-1.4. Suppose a function $B = B(s) = b_1s + b_2s^2 + b_3s^3 +\cdots$ is such
+### 1.4. 
+Suppose a function $B = B(s) = b_1s + b_2s^2 + b_3s^3 +\cdots$ is such
 that $b_1\neq 0$. Prove that the left inverse function $A(t)$ and the right
 inverse function $C(t)$ to it coincide. This common inverse function is
 denoted by $B^{−1}(t)$.
 
-$A(B(t))=t,B(C(u))=u$
+$$A(B(t))=t,B(C(u))=u$$
 suppose$A(t)=a_0+a_1t+a_2t^2+\cdots, C(t)=c_0+c_1t,c_2t^2+\cdots$
 $A(B(t))=a_0+a_1(b_1s + b_2s^2 + b_3s^3 +\cdots)+a_2(b_1s + b_2s^2 + b_3s^3 +\cdots)^2+\dots$
 $A(B(t))=a_0+a_1b_1s+(a_1b_2+a_2b_1)s^2+\cdots=t$
@@ -136,29 +163,30 @@ $b_1c_2+b_2c_1=0, c_2=-b_2/b_1^2$
 
 $\therefore A(t)=C(t)=B^{-1}(t)$
 
-1.6 Prove there is no power series $A(s)$ satisfying the question $sA(s)=1$.
+### 1.6 
+Prove there is no power series $A(s)$ satisfying the question $sA(s)=1$.
 $A(s)=a_0+a_1s+a_2s^2+\cdots$
 $sA(s)=a_0s+a_1s^2+a_2s^3+\cdots\neq 1$
 
-1.7
+### 1.7
 $A(s)=a_0+a_1s+a_2s^2+\cdots\neq0$
 $B(s)=b_0+b_1s+b_2s^2+\cdots\neq 0$
 $A(s)B(s)=(a_0+a_1s+a_2s^2+\cdots)(b_0+b_1s+b_2s^2+\cdots)\neq0$
 
-1.8
+### 1.8
 $A(s)=1+s+s^2+\dots=\frac{1}{1-s}$
 $\frac{1}{A(s)}=1-s$
 
 $B(B^{-1}(s))=s$
 $B(s)=s, B^{-1}(s)=s$
 
-1.9
-a $\frac{1}{(1-z)^2}$
-b $\frac{2}{(1-z)^3}$
-c $\frac{1+z}{(1-z)^3}$
+### 1.9
+a $$\frac{1}{(1-z)^2}$$
+b $$\frac{2}{(1-z)^3}$$
+c $$\frac{1+z}{(1-z)^3}$$
 
 
-1.10 
+### 1.10 
 $$
 (\int A)(B(t)) = \int(A(B(t))B'(t))
 $$
@@ -170,7 +198,7 @@ $$
 \end{align}
 $$
 
-1.11 Prvoe the Newton-Leibniz identity
+### 1.11 Prvoe the Newton-Leibniz identity
 $$
 (A(s)B(s))' = A'(s)B(s) + A(s)B'(s)
 $$
@@ -184,7 +212,7 @@ $$
 \end{align}
 $$
 
-1.12 Prove the integration by parts formula
+### 1.12 Prove the integration by parts formula
 $$
 \int (A(s)B'(s)+A'(s)B(s)) = A(s)B(s) - A(0)B(0)
 $$
@@ -199,5 +227,5 @@ $$
 \end{align}
 $$
 
-1.13
+### 1.13
 I don't know
