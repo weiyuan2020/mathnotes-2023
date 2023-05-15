@@ -4,7 +4,7 @@ ${G = 0.9159655\dots}$
 the power series expansion of ${\arctan x, |x|\leq 1}$
 
 $$
-\int_{0}^{x} \frac{1}{x+y^{2}} \, \mathrm{d}y = 
+\int_{0}^{x} \frac{1}{1+y^{2}} \, \mathrm{d}y = 
 \arctan y\Bigg|_{0}^{x} =
 \arctan x
 $$
@@ -116,3 +116,49 @@ $$
 $$
 
 %% todo pp184 %%
+
+$$
+I = \int_{0}^{\pi} \frac{\theta \sin\theta}{a+b\cos ^{2}\theta} \, \mathrm{d}\theta , \quad a>b>0
+$$
+
+由几何级数求和
+$$
+1+x+x^{2}+x^{3} + \dots + x^{n} = \frac{1-x^{n+1}}{1-x}
+$$
+可以推得
+$$
+\frac{1}{1-x} = 1 + x + x^{2} + x^{3} + \dots, \quad |x|<1
+$$
+
+$$
+I = \frac{1}{a} \int_{0}^{\pi} \theta \sin\theta \left( 1 + \left( - \frac{b\cos ^{2}\theta}{a} \right) + \left( - \frac{b\cos ^{2}\theta}{a} \right)^{2} + \left( - \frac{b\cos ^{2}\theta}{a} \right)^{3} + \dots \right) \, \mathrm{d}\theta 
+$$
+$$
+I = \frac{1}{a} \left[ 
+\int_{0}^{\pi} \theta \sin\theta \, \mathrm{d}\theta - 
+\left( \frac{b}{a} \right) \int_{0}^{\infty} \theta \sin\theta \cos ^{2}\theta \, \mathrm{d}\theta + 
+\left( \frac{b}{a} \right)^{2} \int_{0}^{\infty} \theta \sin\theta \cos ^{4}\theta \, \mathrm{d}\theta -
+\dots
+\right] 
+$$
+
+for ${n=0,1,2,\dots}$ 
+$$
+\int_{0}^{\pi} \theta \sin\theta \cos ^{2n}\theta \, \mathrm{d}\theta  
+= -\frac{\theta \cos ^{2n+1}\theta}{2n+1}\Bigg|_{0}^{\pi} + 
+\frac{1}{2n+1} \int_{0}^{\pi} \cos ^{2n+1}\theta \, \mathrm{d}\theta = \frac{\pi}{2n+1} 
+$$
+
+$$
+I = \frac{\pi}{a} \left[ 1 - \frac{1}{3}\left( \frac{b}{a} \right) + \frac{1}{5}\left( \frac{b}{a} \right)^{2} - \dots \right] 
+$$
+$$
+I = \frac{\pi}{\sqrt{ ab }} \left[ \left( \frac{b}{a} \right)^{1/2} - \frac{1}{3}\left( \frac{b}{a} \right)^{3/2} + \frac{1}{5}\left( \frac{b}{a} \right)^{5/2} - \dots \right] 
+$$
+
+#### 5.1.4
+$$
+\int_{0}^{\pi} \frac{\theta \sin\theta}{a+b\cos ^{2}\theta} \, \mathrm{d}\theta = 
+\frac{\pi}{\sqrt{ ab }} \arctan\left( \sqrt{ \frac{b}{a} } \right), a>b>0
+$$
+
