@@ -255,3 +255,26 @@ ref Dr. Euler’s Fabulous Formula
 
 %% todo pp192%%
 some talk about 5.2.6
+
+two additional comments 
+First
+$$
+\int_{0}^{\infty} \frac{(\ln x)^{2}}{1+x^{2}} \, \mathrm{d}x =
+2 \int_{0}^{1} \frac{(\ln x)^{2}}{1+x^{2}} \, \mathrm{d}x = 
+\frac{\pi^{3}}{8}
+$$
+
+Second
+a seemingly unrelated integral
+$$
+\int_{0}^{\pi/2} [\ln(\tan(\theta))]^{2}  \, \mathrm{d}\theta 
+$$
+let ${x=\tan\theta}$
+$$
+I = \int_{0}^{\infty} \frac{(\ln x)^{2}}{1+x^{2}} \, \mathrm{d}x = \frac{\pi^{3}}{8}
+$$
+#### 5.27
+$$
+\int_{0}^{\pi/2} [\ln(\tan(\theta))]^{2}  \, \mathrm{d}\theta 
+= \frac{\pi^{3}}{8}
+$$
