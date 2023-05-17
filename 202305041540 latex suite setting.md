@@ -81,7 +81,8 @@ quick latex for obsidian
     {trigger: "conj", replacement: "^{*}", options: "mA"},
     {trigger: "trace", replacement: "\\mathrm{Tr}", options: "mA"},
     {trigger: "det", replacement: "\\det", options: "mA"},
-
+	{trigger: "binom", replacement: "\\binom{$0}{$1}$2", options: "mA"},
+	{trigger: "quad", replacement: "\\quad ", options: "mA"},
 
 
     {trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
@@ -121,7 +122,9 @@ quick latex for obsidian
 
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
-    {trigger: "sum", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
+    // {trigger: "sum", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
+    {trigger: "sumn", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
+    {trigger: "sumj", replacement: "\\sum_{${0:k} = ${1:1}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "prod", replacement: "\\prod_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
     {trigger: "pm", replacement: "\\pm", options: "m"},
