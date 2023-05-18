@@ -115,7 +115,6 @@ $$
 \frac{\pi}{4} \ln 2 + G
 $$
 
-%% todo pp184 %%
 
 $$
 I = \int_{0}^{\pi} \frac{\theta \sin\theta}{a+b\cos ^{2}\theta} \, \mathrm{d}\theta , \quad a>b>0

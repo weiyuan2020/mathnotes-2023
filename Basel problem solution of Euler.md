@@ -63,7 +63,6 @@ $$
 $$
 
 
-# %%todo%%
 
 **证明2：一个初等的证明**  
 以下证明第一次来自Ioannis Papadimitriou于1973年在American Math Monthly 80(4):424-425页发表的。Apostol在同一份杂志425-430发表了用这个方法计算$\zeta(2n)$的方法。

@@ -177,7 +177,6 @@ $$
 \Gamma\left( \frac{1}{2} \right) = \sqrt{ \pi }
 $$
 
-%% todo%%  pp 125
 
 #### sq{sin x}
 let ${u=\sin ^{2}x, \sin x=u^{1/2},\cos x=(1-u)^{1/2}}$ 
@@ -217,7 +216,6 @@ $$
 = \frac{\Gamma^{2}\left( \frac{1}{4} \right)}{2\sqrt{ 2\pi }}
 } 
 $$
-%% todo %% pp127 v1
 
 ### x=y/(1+y)
 4:2:1

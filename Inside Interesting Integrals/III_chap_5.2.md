@@ -253,7 +253,6 @@ $$
 ???
 ref Dr. Euler’s Fabulous Formula
 
-%% todo pp192%%
 some talk about 5.2.6
 
 two additional comments 

@@ -122,9 +122,9 @@ quick latex for obsidian
 
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
-    // {trigger: "sum", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
-    {trigger: "sumn", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
-    {trigger: "sumj", replacement: "\\sum_{${0:k} = ${1:1}}^{${2:\\infty}} $3", options: "mA"},
+    {trigger: "sum", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
+//    {trigger: "sumn", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
+//    {trigger: "sumj", replacement: "\\sum_{${0:k} = ${1:1}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "prod", replacement: "\\prod_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
     {trigger: "pm", replacement: "\\pm", options: "m"},

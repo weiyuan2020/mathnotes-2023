@@ -384,7 +384,6 @@ $$
 y\arctan\left( \frac{x}{y} \right)\Bigg|_{1}^{\infty}  = 
 y\left( \frac{\pi}{2} - \arctan \frac{1}{y} \right)
 $$
-%% todo %%
 
 let ${x-1=r\cos\theta,y-1=r\sin \theta}$
 $$
