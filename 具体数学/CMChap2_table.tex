@@ -1,0 +1,52 @@
+\input{mydef.tex}
+\begin{document}
+	\begin{table}[htbp]
+		\centering
+		\small
+		\caption{有限微积分和无限微积分中的运算对比}
+		\begin{tabular}{l|l}
+			\toprule
+			无限微积分 & 有限微积分 \\
+			\midrule
+			D逆运算$ \int $ (积分算子，逆微分算子) & $ \Delta $逆运算 $ \sum $ (求和算子，逆差分算子) \\
+			微积分基本定理 & \\
+			$ g(x)=Df(x)\iff\int g(x)dx=f(x)+C $ & $ g(x)=\Delta f(x)\iff\sum g(x)\delta(x)=f(x)+C $ \\
+			定积分 & 和式 \\
+			若$ g(x)=Df(x) $ 那么 & 若$ g(x)=\Delta f(x) $ 那么 \\ 
+			$ \int_{a}^{b}g(x)dx=f(x)|_{a}^b=f(b)-f(a) $ & 
+			$ \sum_{a}^{b}g(x)\delta x=f(x)|_{a}^b=f(b)-f(a) $ \\
+			$ \int_{b}^{a}g(x)dx = -\int_{a}^{b}g(x)dx $  &
+			$ \sum_{b}^{a}g(x)\delta x = -\sum_{a}^{b}g(x)\delta x $ \\
+			$ \int_{a}^{b}+\int_{b}^{c}=\int_{a}^{c} $ &
+			$ \sum_{a}^{b}+\sum_{b}^{c}=\sum_{a}^{c} $ \\
+			& \\
+			$ \int_{0}^{n}x^m=\cfrac{x^{m+1}}{m+1}\Big|_0^n=\cfrac{n^{m+1}}{m+1} $, $ m\neq -1 $  &
+			$ \sum_{0}^{n}k\fallingfactorial{m} = \cfrac{k\fallingfactorial{m+1}}{m+1}\Big|_0^n =\cfrac{n\fallingfactorial{m+1}}{m+1} $,$ m\neq-1 $ \\ 
+			& $ \sum_{0}^{n}k\risingfactorial{m} = \cfrac{k\risingfactorial{m+1}}{m+1}\Big|_0^n =\cfrac{n\risingfactorial{m+1}}{m+1} $,$ m\neq-1 $ \\ 
+			& \\
+			$ (x+y)^2=x^2+2xy+y^2  $ 
+			& $ (x+y)\fallingfactorial{2}=x\fallingfactorial{2}+2x\fallingfactorial{2}y\fallingfactorial{1}+y\fallingfactorial{2} $ \\
+			& $ (x+y)\risingfactorial{2}=x\risingfactorial{2}+2x\risingfactorial{1}y\risingfactorial{1}+y\risingfactorial{2} $ \\
+			& \\
+			{\color{red}$ m=-1,\int_{a}^{b}x^{-1}=\ln{x}\Big|_a^b $ } &
+			{\color{red}$ m=-1,\sum_{a}^{b}k\fallingfactorial{-1}=H_{k}\Big|_a^b $ }\\
+			$ \int_{a}^{b}x^m=\begin{array}{l}
+				\cfrac{x^{m+1}}{m+1}\Big|_a^b, \; m\neq -1 \\
+				\ln{n}\Big|_a^b, \; m= -1 \\
+			\end{array} $ &
+			$ \sum_a^b k\fallingfactorial{m} = \begin{array}{l}
+				\cfrac{k\fallingfactorial{m+1}}{m+1}\Big|_a^b,\; m\neq-1 \\
+				H_k\Big|_a^b,\; m=-1 \\
+			\end{array}$ \\ 
+			& $ \sum_a^b k\risingfactorial{m} = \begin{array}{l}
+				\cfrac{k\risingfactorial{m+1}}{m+1}\Big|_a^b ,\;m\neq-1\\
+				H_{(k+1)}\Big|_a^b ,\;m\neq-1 \\ % {\color{red}(??)}\\
+			\end{array} $ \\ 
+			连续性问题的解中会出现自然对数 & 快速排序这样的问题中会出现调和数的原因 \\
+			& \\
+			$ e^{x} $, 性质 $ De^x = e^x $  & $ \Delta f(x)=f(x), f(x)=2^x $ 离散指数函数 \\
+			\bottomrule
+		\end{tabular}%
+		\label{tab:ContiAndDis002}%
+	\end{table}%
+\end{document}
