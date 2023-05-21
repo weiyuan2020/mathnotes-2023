@@ -6,8 +6,8 @@
 finite set ${\left\{ p_{1},\dots ,p_{r} \right\}}$ of primes
 consider ${n=p_{1}p_{2}\dots p_{r}+1}$  
 
-1. n has a prime divisor p not in this set
-2. n is a prime not in this set
+1. $n$ has a prime divisor $p$ not in this set
+2. $n$ is a prime not in this set
 
 
 #### Fermat numbers 
@@ -31,9 +31,9 @@ $$
 \prod_{k=0}^{n-1} F_{k} = F_{n} - 2, \qquad (n\geq 1)
 $$
 
-if m is a divisor of,
-say, Fk and Fn (k < n), then m divides 2, and hence m = 1 or 2. But
-m = 2 is impossible since all Fermat numbers are odd.
+if $m$ is a divisor of,
+say, $F_{k}$ and $F_{n}$ ($k < n$), then $m$ divides $2$, and hence $m = 1$ or $2$. But
+$m = 2$ is impossible since all Fermat numbers are odd.
 
 $n=1$ ${F_{0}=3,F_{1}-2=3}$
 
