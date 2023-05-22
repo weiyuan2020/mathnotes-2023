@@ -82,8 +82,6 @@ quick latex for obsidian
     {trigger: "trace", replacement: "\\mathrm{Tr}", options: "mA"},
     {trigger: "det", replacement: "\\det", options: "mA"},
 	{trigger: "binom", replacement: "\\binom{$0}{$1}$2", options: "mA"},
-	{trigger: "quad", replacement: "\\quad ", options: "mA"},
-	{trigger: "foral", replacement: "\\forall ", options: "mA"},
 
 
     {trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
@@ -124,8 +122,6 @@ quick latex for obsidian
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
     {trigger: "sum", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
-//    {trigger: "sumn", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
-//    {trigger: "sumj", replacement: "\\sum_{${0:k} = ${1:1}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "prod", replacement: "\\prod_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
     {trigger: "pm", replacement: "\\pm", options: "m"},
@@ -164,7 +160,9 @@ quick latex for obsidian
     {trigger: "cong", replacement: "\\cong", options: "mA"},
     {trigger: "circ", replacement: "\\circ", options: "mA"},
     {trigger: "wedg", replacement: "\\wedge ", options: "mA"},
-
+	{trigger: "quad", replacement: "\\quad", options: "mA"},
+	{trigger: "foral", replacement: "\\forall", options: "mA"},
+    
     {trigger: "xnn", replacement: "x_{n}", options: "mA"},
     {trigger: "xii", replacement: "x_{i}", options: "mA"},
     {trigger: "xjj", replacement: "x_{j}", options: "mA"},
@@ -293,4 +291,4 @@ quick latex for obsidian
     // Misc
     {trigger: "tayl", replacement: "${0:f}(${1:x} + ${2:h}) = ${0:f}(${1:x}) + ${0:f}'(${1:x})${2:h} + ${0:f}''(${1:x}) \\frac{${2:h}^{2}}{2!} + \\dots$3", options: "mA"},
 ]
-```
+
