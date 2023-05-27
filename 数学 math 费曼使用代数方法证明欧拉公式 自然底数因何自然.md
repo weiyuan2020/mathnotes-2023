@@ -1,0 +1,45 @@
+#数学 
+
+
+每天数量增长一倍的细菌
+$$
+N_T= 2^T, T = 0,1,2,\dots
+$$
+转换为函数形式
+$$
+N(t) = 2^t, t\in[0,\infty]
+$$
+其导数为
+$$
+\frac{d(2^t)}{dt} = \lim_{\Delta t \rightarrow 0}\frac{2^{t+\Delta t}-2^t}{\Delta t} = 2^t \lim_{\Delta t \rightarrow 0}\frac{2^{\Delta t}-1}{\Delta t}
+$$
+$t = 0$时$2^t$的导数趋近于0.693($\ln 2$)而不是1
+
+
+在具体数学中定义的 有限微积分 finite calculus 中的差分方法
+$$
+\Delta 2^n = 2^{(n+1)}-2^n = 2^n
+$$
+在有限微积分方法中的差分对应(无限)微积分中的微分方法
+有限微积分的 $2^x$ 对应无限微积分的 $e^x$ 
+$2^x$的微分结果不是它自身,但差分结果是它自己
+
+e的定义
+$$
+\lim_{\Delta t\rightarrow 0}\frac{e^{\Delta t}-1}{\Delta t} = 1
+$$
+
+变换上式的形式
+$$
+\lim_{\Delta t\rightarrow 0}e^{\Delta t} = \lim_{\Delta t \rightarrow 0} {\Delta t + 1}
+$$
+
+用1/N代替$\Delta t$, $N\rightarrow +\infty$, 得到
+$$
+\lim_{N\rightarrow +\infty}e^{\frac{1}{N}} = \lim_{N \rightarrow +\infty} {\frac{1}{N} + 1}
+$$
+等式两边同时取N次方
+$$
+\lim_{N\rightarrow +\infty}e = \lim_{N \rightarrow +\infty} (\frac{1}{N} + 1)^N
+$$
+
