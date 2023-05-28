@@ -539,5 +539,81 @@ ${f(x_{2}) = \frac{1}{2}(7-5\sqrt{ 2 })}$ 为极小值
 完成后分析部分
 
 ## 4 "加工转化" 的意识 
-转化是解题的重要环节,转化的基本原则主要有简单化原则、
-熟悉化原则、具体化原则、和谐化原则等
+
+转化是解题的重要环节, 
+转化的基本原则主要有
+简单化原则、
+熟悉化原则、
+具体化原则、
+和谐化原则等
+
+### 例13 
+已知 ${y = \frac{\sin^{2}x\cos 2x}{\sin 3x - \sin x}}$ 求 ${y'}$.
+
+见题就动笔进行具体的计算往往会导致复杂化.
+而在可能的情况下，对所给的对象适当改造加工往往会使解答简捷，
+达到事半功倍的效果.
+为此，先对所给的函数表达式作恒等变形，将其化为
+较简单的形式.
+
+#### 解
+$$
+\begin{align}
+y & = \frac{\sin^{2}x\cos 2x}{\sin 3x - \sin x} = \frac{\sin^{2}x\cos 2x}{2\cos 2x \sin x} = \frac{\sin x}{2}, \\
+y' & = \frac{\cos x}{2}.
+\end{align}
+$$
+解毕
+
+### 例14
+已知 ${y = \arctan \frac{\sqrt{ x^{2} + 2 }}{x} + \ln \sqrt{ \frac{\sqrt{ x^{2} + 2 } - x}{\sqrt{ x^{2} + 2 } + x} }}$, 求 ${y'}$. 
+
+#### 解 
+my
+$$
+\begin{align}
+y & = \arctan \frac{\sqrt{ x^{2} + 2 }}{x} + \ln \sqrt{ \frac{\sqrt{ x^{2} + 2 } - x}{\sqrt{ x^{2} + 2 } + x} } \\
+& = \arctan \frac{\sqrt{ x^{2} + 2 }}{x} + \ln \frac{\sqrt{ 2 }}{\sqrt{ x^{2} + 2 } + x} \\
+\end{align}
+$$
+$$
+\begin{align}
+y' & = \frac{1}{1 + \left( \frac{\sqrt{ x^{2} + 2 }}{x} \right)^{2}} \frac{\frac{x}{\sqrt{ x^{2}+2 }} x - \sqrt{ x^{2} + 2 } }{x^{2}} - \frac{1}{\sqrt{ x^{2} + 2 }} \\
+  & = \frac{1}{\sqrt{ x^{2}+2 }} \left( -\frac{1}{x^{2} + 1} - 1 \right) \\
+  & = - \frac{\sqrt{ x^{2} + 2 }}{x^{2} + 1}
+\end{align}
+$$
+
+解毕
+
+#### 解
+令 ${u = \frac{\sqrt{ x^{2} + 2 }}{x}}$, 则
+$$
+\begin{align}
+y & = \arctan u + \frac{1}{2} \ln\left( \frac{u - 1}{u + 1} \right) \\
+  & = \arctan u + \frac{1}{2} \left[ \ln \left| u-1 \right|  - \ln \left| u+1 \right| \right].
+\end{align}
+$$
+因为 ${\frac{dy}{dx} = \frac{dy}{du}\cdot \frac{du}{dx}}$, 且 ${\frac{du}{dx} = \frac{-2}{x^{2}\sqrt{ x^{2} + 2 }}}$,
+$$
+\begin{align}
+\frac{dy}{du} & = \frac{1}{1+u^{2}} + \frac{1}{2} \left( \frac{1}{u-1} - \frac{1}{u+1} \right)  \\
+  & = \frac{2u^{2}}{u^{4} - 1} = \frac{x^{2}(x^{2} + 2)}{2(x^{2} + 1)}.
+\end{align}
+$$
+所以
+$$
+\begin{align}
+\frac{dy}{dx} & = \frac{dy}{du}\cdot \frac{du}{dx} \\
+  & = \frac{x^{2}(x^{2} + 2)}{2(x^{2} + 1)} \cdot \frac{-2}{x^{2}\sqrt{ x^{2}+2 }} = \frac{-\sqrt{ x^{2}+2 }}{x^{2} + 1}.
+\end{align}
+$$
+解毕
+
+一般用链导法求复合函数的导数的习题和例题都是针对单项
+表示的复合函数，此时只要就其所给形式按自然程序逐层求导下
+去.而对于由几项之和形式给出的函数且可以设出共同中间变量
+的习题甚少, 所以类似例 14 的做法值得重视.
+
+### 例 15
+求 ${\lim_{ t \to 0 }\left( \frac{\arcsin t}{t} \right)^{\frac{1}{t^{2}}}}$.  
