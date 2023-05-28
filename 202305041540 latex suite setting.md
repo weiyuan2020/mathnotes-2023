@@ -30,6 +30,7 @@ quick latex for obsidian
     {trigger: "@E", replacement: "\\epsilon", options: "mA"},
     {trigger: ":e", replacement: "\\varepsilon", options: "mA"},
     {trigger: ":E", replacement: "\\varepsilon", options: "mA"},
+    {trigger: ":f", replacement: "\\varphi", options: "mA"},
     {trigger: "@z", replacement: "\\zeta", options: "mA"},
     {trigger: "@Z", replacement: "\\zeta", options: "mA"},
     {trigger: "@t", replacement: "\\theta", options: "mA"},
