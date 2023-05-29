@@ -617,3 +617,145 @@ $$
 
 ### 例 15
 求 ${\lim_{ t \to 0 }\left( \frac{\arcsin t}{t} \right)^{\frac{1}{t^{2}}}}$.  
+
+#### 解 
+令 ${x = \arcsin t}$.
+$$
+I = \lim_{ t \to 0 } \left( \frac{\arcsin t}{t} \right)^{\frac{1}{t^{2}}}
+= \lim_{ x \to 0 } \left( \frac{x}{\sin x} \right)^{\frac{1}{\sin ^{2}x}}
+= \exp\left( {\lim_{ x \to 0 } \frac{1}{\sin^{2}x} \ln \frac{x}{\sin x}} \right)
+$$
+
+${x\to 0, \sin ^{2}x \sim x, \ln \frac{x}{\sin x}\sim \frac{x}{\sin x} - 1}$,
+
+$$
+\begin{align}
+\lim_{ x \to 0 } \frac{1}{\sin ^{2}x} \ln \frac{x}{\sin x}  & = \lim_{ x \to 0 } \frac{\frac{x}{\sin x} - 1}{x^{2}} = \lim_{ x \to 0 } \frac{x - \sin x}{x^{3}} \\
+  & = \lim_{ x \to 0 } \frac{1 - \cos x}{3x^{2}} = \lim_{ x \to 0 } \frac{\sin x}{6x} = \frac{1}{6}.
+\end{align}
+$$
+
+所以
+$$
+I = e^{1/6}.
+$$
+解毕
+
+引入新变量 $x$ ,以及将幂指函数转化成以e为底的指数函数的目的，
+就是将生疏问题转化成比较熟悉的问题，以便充分利用我们已有的知识和经验. 
+
+下面再举一个这方面的例.
+
+### 例16
+求 ${\lim_{ n \to \infty } \frac{1}{n} \sqrt[n]{ n(n+1)(n+2)\dots(2n-1) }}$. 
+
+#### 解
+记 ${A_{n} = \frac{1}{n} \sqrt[n]{ n(n+1)(n+2)\dots(2n-1) } }$
+
+$$
+A_{n} = \sqrt[n]{ \frac{n}{n}\cdot \frac{n+1}{n}\cdot \frac{n+2}{n}\dots \frac{n+ n-1}{n} }
+$$
+$$
+\ln A_{n} = 
+\frac{1}{n} \sum_{k = 0}^{n-1} \ln\left( 1+\frac{k}{n} \right)
+$$
+
+由定积分定义
+$$
+\begin{align}
+\lim_{ n \to \infty } \ln A_{n} & = \lim_{ n \to \infty } \frac{1}{n} \sum_{k = 0}^{n-1} \ln\left( 1 + \frac{k}{n} \right) \\
+  & = \int_{0}^{1} \ln(1+x) \, \mathrm{d}x = 2\ln 2 - 1 = \ln \frac{4}{e}.
+\end{align}
+$$
+原极限为
+$$
+\lim_{ n \to \infty } A_{n} = \lim_{ n \to \infty } e^{\ln A_{n}} = \frac{4}{e}.
+$$
+解毕
+
+定积分是由特定形式的和式极限来定义的，这一构造性定义
+虽然为我们提供了计算定积分的一种办法，但这一方法无疑是非
+常困难的.计算定积分我们有牛顿-莱布尼兹公式来解决.既然由
+和式的极限求定积分是繁复困难的.反之，将某些和式的极限的
+计算转化为相应的定积分，再由牛顿二莱布尼兹公式去求出它，则
+是化难为易的捷径.
+
+### 例 17
+求 ${\lim_{ n \to \infty } \sum_{k = 1}^{n} \frac{1}{k(k+1)(k+2)\dots(k+l)}}$, 其中 ${l}$ 为自然数
+
+为更好理解问题, 从简单的具体情况开始讨论
+${l=1}$
+$$
+\frac{1}{k(k+1)} = \frac{1}{k} - \frac{1}{k+1}.
+$$
+$$
+\begin{align}
+\sum_{k = 0}^{n} \frac{1}{k(k+1)}  
+  & = 1 - \frac{1}{2} + \frac{1}{2} - \frac{1}{3} + \dots + \frac{1}{n} - \frac{1}{n+1} \\
+  & = 1 - \frac{1}{n+1}. \\
+\end{align}
+$$
+$$
+\lim_{ n \to \infty } \sum_{k = 0}^{n} \frac{1}{k(k+1)} = 
+\lim_{ n \to \infty } \left( 1 - \frac{1}{n+1} \right) = 1 .
+$$
+
+对 ${l=2}$ 使用与 ${l=1}$ 类似的裂项相消的方法
+$$
+\frac{1}{k(k+1)(k+2)} = \frac{1}{2} \left[ \frac{1}{k(k+1) - \frac{1}{(k+1)(k+2)}} \right]
+$$
+$$
+\begin{align}
+\sum_{k = 1}^{n} \frac{1}{k(k+1)(k+2)} & = \frac{1}{2} \sum_{k = 1}^{n} \left[ \frac{1}{k(k+1) - \frac{1}{(k+1)(k+2)}} \right] \\
+  & = \frac{1}{2} \left[ \frac{1}{2} - \frac{1}{(n+1)(n+2)} \right]
+\end{align}
+$$
+
+$$
+\begin{align}
+\lim_{ n \to \infty } \sum_{k = 1}^{n} \frac{1}{k(k+1)(k+2)} & = \lim_{ n \to \infty }  \frac{1}{2} \left[ \frac{1}{2} - \frac{1}{(n+1)(n+2)} \right] \\
+  & = \frac{1}{2\cdot 2!}.
+\end{align}
+$$
+
+#### 解
+和式一般项可化为
+$$
+\begin{align}
+\frac{1}{k(k+1)\dots(k+l)} & = 
+\frac{1}{(k+1)\dots(k+l-1)} \cdot \frac{1}{k(k+l)} \\
+  & = \frac{1}{l} \left[ \frac{1}{k(k+1)\dots(k+l-1)} - \frac{1}{(k+1)\dots(k+l)} \right],
+\end{align}
+$$
+因此
+$$
+\begin{align}
+\sum_{k = 1}^{n} \frac{1}{k(k+1)\dots(k+l)} & = \frac{1}{l} \left[ \frac{1}{l!} - \frac{1}{(n+1)\dots(n+l)} \right] \\
+\lim_{ n \to \infty } \sum_{k = 1}^{n} \frac{1}{k(k+1)\dots(k+l)} & = \frac{1}{l} \left[ \frac{1}{l!} - \frac{1}{(n+1)\dots(n+l)} \right] \\
+  & = \frac{1}{l\cdot l!}.
+\end{align}
+$$
+解毕
+
+和谐化是指将问题的表达方式更为符合数形内部固有的和谐
+统一的特点，以便突出问题涉及的各种对象间的本质联系，进而
+促使问题完美解决.
+
+### 例18
+求三重积分 ${I = \iiint_{\Omega} (x^{2} + xy) \mathrm{d}v}$, 
+其中 ${\Omega}$ 由 ${z = \frac{1}{2} (x^{2}+y^{2}), z = 1, z = 2}$ 所围成.
+
+
+将原积分由奇偶性转化为 ${\iiint_{\Omega} x^{2}\mathrm{d}v}$ 
+进而将区域 ${\Omega}$ 划分
+
+#### 解2
+$$
+\begin{align}
+I & = \frac{1}{2} \int_{1}^{2}  \, \mathrm{d}x \iint_{D_{z}} (x^{2} + y^{2}) \mathrm{d}x\mathrm{d}y  \\
+  & = \frac{1}{2} \int_{1}^{2}  \, \mathrm{d}z \int_{0}^{2\pi}  \, \mathrm{d}\theta \int_{0}^{\sqrt{ 2z }} r^{3} \, \mathrm{d}r \\
+  & = \pi \int_{1}^{2} z^{2} \, \mathrm{d}z = \frac{7\pi}{3}.   
+\end{align}
+$$
+解毕
+
