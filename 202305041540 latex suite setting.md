@@ -163,6 +163,8 @@ quick latex for obsidian
     {trigger: "wedg", replacement: "\\wedge ", options: "mA"},
 	{trigger: "quad", replacement: "\\quad", options: "mA"},
 	{trigger: "foral", replacement: "\\forall", options: "mA"},
+	{trigger: "angle", replacement: "\\angle", options: "mA"},
+	{trigger: "triangl", replacement: "\\triangle", options: "mA"},	
     
     {trigger: "xnn", replacement: "x_{n}", options: "mA"},
     {trigger: "xii", replacement: "x_{i}", options: "mA"},
