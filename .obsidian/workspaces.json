@@ -1,0 +1,117 @@
+{
+  "workspaces": {
+    "阅读文献": {
+      "main": {
+        "id": "cc9494f070fab05e",
+        "type": "split",
+        "children": [
+          {
+            "id": "8cbcf448aeb05948",
+            "type": "leaf",
+            "dimension": 68.79251700680273,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "kim/Formulation and Validation of High-Order Mathematical Models of Helicopter Flight Dynamics.pdf"
+              }
+            }
+          },
+          {
+            "id": "b80cefbeaf9c1394",
+            "type": "leaf",
+            "dimension": 31.207482993197278,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kim/阅读笔记.md",
+                "mode": "source"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9b9a4d8a164eb398",
+        "type": "split",
+        "children": [
+          {
+            "id": "bce8770816c977dd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1b1394d4a801bfc0",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f71692a4d7b53dfe",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "bc7fb5cc8137acb4",
+        "type": "split",
+        "children": [
+          {
+            "id": "83af49c8cf97c01f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1efff08fc9a7887e",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "kim/阅读笔记.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "4bbd128521382272",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "kim/阅读笔记.md"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "active": "b80cefbeaf9c1394"
+    }
+  },
+  "active": "阅读文献"
+}

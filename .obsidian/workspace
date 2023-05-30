@@ -1,0 +1,113 @@
+{
+  "main": {
+    "id": "cc9494f070fab05e",
+    "type": "split",
+    "children": [
+      {
+        "id": "51d8be00467de045",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Lectures on generating functions/疫情以来新词大事纪.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9b9a4d8a164eb398",
+    "type": "split",
+    "children": [
+      {
+        "id": "bce8770816c977dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1b1394d4a801bfc0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f71692a4d7b53dfe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bc7fb5cc8137acb4",
+    "type": "split",
+    "children": [
+      {
+        "id": "83af49c8cf97c01f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1efff08fc9a7887e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lectures on generating functions/疫情以来新词大事纪.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4bbd128521382272",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Lectures on generating functions/疫情以来新词大事纪.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "51d8be00467de045",
+  "lastOpenFiles": [
+    "Lectures on generating functions/(Reading notes) Chap 2 Lectures on generating functions.md",
+    "Lectures on generating functions/(Reading notes) Chap 1 Lectures on generating functions.md",
+    "LMI linear matrix inequality.md",
+    "怎样解题 - wiki -G.Polya.md",
+    "不推荐阅读的书.md",
+    "不推荐阅读的书 (2).md",
+    "weiboReading/俄罗斯大学数学教学掠影.md",
+    "weiboReading/普林斯顿数学指南与齐民友.md",
+    "weiboReading/打草稿的方法.md",
+    "The Napkin project (v1.5) by Evan Chen/reading notes 22.01.14.md"
+  ]
+}
