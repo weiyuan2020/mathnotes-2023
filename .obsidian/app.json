@@ -1,0 +1,10 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "attachments",
+  "showLineNumber": true,
+  "foldIndent": false,
+  "showIndentGuide": false,
+  "readableLineLength": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "attachments"
+}

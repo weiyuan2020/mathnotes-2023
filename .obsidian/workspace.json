@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "4cf04fa8b62975c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f098138e3d48a84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae7e3be203b44898",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "202305041540 latex suite setting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "776c702208f7fb5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "qianchangben_calculus/qianchangben_calculus_003.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b97e2ce692c05ab3",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8414a78d9f601f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ee8522b89541f45",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "latex",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b92f09b65dcb2e9d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 213.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "1e4e6f8c85937a0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "92311116b117b1d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0690d9fab30401d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "qianchangben_calculus/qianchangben_calculus_003.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9ac2e765ad0a9ac3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "qianchangben_calculus/qianchangben_calculus_003.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 233.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "zk-prefixer:创建时间戳笔记": false
+    }
+  },
+  "active": "776c702208f7fb5f",
+  "lastOpenFiles": [
+    "qianchangben_calculus/attachments/qianchangben_calculus_003--4.png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003-.png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003-4.png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003--5.png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003- (2).png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003--3.png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003--2.png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003--1.png",
+    "attachments/qianchangben_calculus_003--4.png",
+    "attachments/qianchangben_calculus_003--3.png",
+    "attachments/qianchangben_calculus_003--2.png",
+    "qianchangben_calculus/qianchangben_calculus_002.md",
+    "qianchangben_calculus/qianchangben_calculus_003.md",
+    "202305041540 latex suite setting.md",
+    "未命名.md",
+    "Pasted image 20230528105729.png.md",
+    "qianchangben_calculus/qianchangben_calculus_001.md",
+    "怎样解题 - wiki -G.Polya.md",
+    "数学 math 费曼求解复杂导数的方法.md",
+    "qianchangben_calculus",
+    "于品 数学分析讲义 阅读笔记.md",
+    "202305172040 严镇军 复变函数 题目.md",
+    "具体数学/repertoire.pdf",
+    "具体数学/CMChap2_table.tex",
+    "具体数学/CMChap2_table.pdf",
+    "具体数学/CMChap2Ex.md",
+    "具体数学/CMChap2.md",
+    "具体数学/CMChap1_repertoiremethod.md",
+    "具体数学/CMChap1Ex.md",
+    "具体数学/CMChap1.md",
+    "mathematica/III 5.4.nb",
+    "Inside Interesting Integrals/III_chap_5.4.md",
+    "巴塞尔问题(Basel problem)的多种解法.md",
+    "~WRL0002.tmp",
+    "~WRD0001.tmp",
+    "~WRD0000.tmp",
+    "~$伯努利数(Bernoulli Numbers) - 知乎2.docx",
+    "~WRL0005.tmp",
+    "浅谈伯努利数(Bernoulli Numbers) - 知乎2.md",
+    "images0.cnblogs.com/blog/601002/201401/241310013197.png.md",
+    "Inside Interesting Integrals/III_chap_5.3.md",
+    "202305171116 王竹溪 特殊函数概论 ex.md",
+    "202305171009 王竹溪 特殊函数概论阅读笔记.md",
+    "latex 定义与定理共享编号.md",
+    "my-notes2020-2021/20-08-07.md",
+    "202305011403 sinx x integrate.md"
+  ]
+}
