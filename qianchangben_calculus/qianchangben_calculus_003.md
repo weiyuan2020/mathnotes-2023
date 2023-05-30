@@ -437,7 +437,7 @@ $$
 假设四边形ABCD是所求解.
 则$AB+BC+CD=24$ 且其面积$S_\text{ABCD}$最大（无法再扩大了！）
 
-![[qianchangben_calculus_003--4.png]]
+![[qianchangben_calculus_003--4.png]] 
 见图3-5,将 ${\triangle ACD}$ 固定（即定下点A, C, D, 从而边 AC 和 CD 为定长）时,
 ${S_{\triangle ABC}}$ 应该是不可扩大的.
 因为 ${AC}$ 为定长，因此点 B 是距 AC 边的最远点,考虑到
@@ -493,3 +493,15 @@ $$
 面，容易使人养成机械、呆板的解决
 问题的习惯，从而妨碍人们充分发挥
 自己的能力去灵活思考和解决问题.
+
+### 例25
+求 ${I = \iint_{D} (x+y) \mathrm{d}\sigma}$, 其中 ${D: x^{2} +y^{2} \leq 2(x+y)}$. 
+
+![[qianchangben_calculus_003--5.png]]
+
+#### 解1
+
+用极坐标，${D}$ 的边界方程可化为
+$$
+r = 2(\cos\theta + \sin\theta).
+$$
