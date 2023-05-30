@@ -505,3 +505,506 @@ $$
 $$
 r = 2(\cos\theta + \sin\theta).
 $$
+闭域 ${D}$ 可表示为
+$$
+0 \leq r \leq 2(\cos\theta + \sin\theta), \quad  -\frac{\pi}{4} \leq \theta \leq \frac{\pi}{4}.
+$$
+
+$$
+\begin{align}
+I & = \int_{-\frac{\pi}{4}}^{\frac{3\pi}{4}}  \, \mathrm{d}\theta \int_{0}^{2(\cos\theta + \sin\theta)} (r\cos\theta + r\sin\theta) r \, \mathrm{d}r  \\
+  & = \frac{8}{3} \int_{-\frac{\pi}{4}}^{\frac{3\pi}{4}} (\cos\theta + \sin\theta)^{4} \, \mathrm{d}\theta  \\
+  & = \frac{8}{3} \int_{-\frac{\pi}{4}}^{\frac{3\pi}{4}} \left( \sqrt{ 2 } \sin\left( \theta + \frac{\pi}{4} \right) \right)^{4}  \, \mathrm{d}\theta  \\
+  & = \frac{32}{3} \int_{0}^{\pi} \sin ^{4}x \, \mathrm{d}x  \\
+  & = 4\pi.
+\end{align}
+$$
+解毕
+
+#### 解2
+变换 ${x = 1 +r\cos\theta, y = 1+r\sin\theta}$.
+${D}$ 的边界 ${r^{2} =2}$, ${D}$ 域化为 
+$$
+0 \leq r^{2} \leq \sqrt{ 2 }, 0 \leq \theta \leq 2\pi.
+$$
+雅可比式为
+$$
+J(r,\theta) = \frac{ \partial (x,y) }{ \partial (r.\theta) } = r.
+$$
+从而有
+$$
+\begin{align}
+I & = \int_{0}^{2\pi}  \, \mathrm{d}\theta \int_{0}^{\sqrt{ 2 }} (2 + r\cos\theta + r\sin\theta)r \, \mathrm{d}r \\
+  & = \int_{0}^{2\pi} \left[ 2 + \frac{8}{3} (\cos\theta + \sin\theta) \right]  \, \mathrm{d}\theta = 4 \pi. 
+\end{align}
+$$
+解毕
+
+以上两种解法都是对套路的执行.现让我们仔细审视题目，认
+识和理解题目包含的各种信息，揣摸它们对解答问题可能起到的
+作用.
+
+首先，我们意识到积分域D可化为
+$$
+D: (x-1)^{2} + (y-1)^{2} \leq 2,
+$$
+是以点 ${C(1,1)}$ 为圆心，以 ${r = \sqrt{ 2 }}$ 为半径的圆域.
+
+其次, ${I = \iint_{D} (x+y)\mathrm{d}\sigma = \iint_{D} x\mathrm{d}\sigma + \iint_{D}y \mathrm{d}\sigma}$. 
+
+这能使人联想到什么呢?好似见过，
+是积分应用中求均匀薄片重心坐标公式中的静
+力矩！
+
+关于平面薄片的重心，若平面薄片占有${xoy}$ 平面上的闭域 ${D}$,
+当薄片均匀，面密度 ${\rho = 1}$ 时，薄片重心坐标为（也即 $D$ 的形心坐
+标）
+$$
+\bar{x} = \frac{1}{A} \iint_{D} x \mathrm{d}\sigma, \quad 
+\bar{y} = \frac{1}{A} \iint_{D} y \mathrm{d}\sigma.
+$$
+其中 ${A = \iint_{D} \mathrm{d}\sigma}$ 为区域 ${D}$ 的面积. 
+于是，有
+$$
+\iint_{D} x \mathrm{d}\sigma = \bar{x} \cdot A, \quad 
+\iint_{D} y \mathrm{d}\sigma = \bar{y} \cdot A.
+$$
+
+即当平面图形的面积和形心坐标已知时，我们可以由此去计算一
+个简单积分
+$$
+\iint_{D} x \mathrm{d}\sigma \text{ or }
+\iint_{D} y \mathrm{d}\sigma 
+$$
+经以上的审题、识别、联想和转化这一系列的思维活动，一
+个新的解法得到了
+
+#### 解3
+积分域可化为 ${D: (x-1)^{2} + (y-1)^{2} \leq 2}$. 
+视 $D$ 为面密度为$1$的薄片，其重心为 $C(1,1)$. 
+因为薄片面积$A=7 \pi r^2 = 2 \pi$, 
+由重心公式知
+$$
+\begin{align}
+\iint_{D} x \mathrm{d}\sigma = \bar{x} \cdot A = 1 \times 2\pi = 2\pi, \\
+\iint_{D} y \mathrm{d}\sigma = \bar{y} \cdot A = 1 \times 2\pi = 2\pi.
+\end{align}
+$$
+于是
+$$
+I = 
+\iint_{D} (x + y) \mathrm{d}\sigma = 4\pi.
+$$
+解毕
+
+例25的解3产生过程中，必须克服两种思维定势的消极影
+响：第一，在学习高等数学的过程中，我们注重的是应用微积分
+的有关知识及方法去解决几何学、物理学中的问题.而对于反过
+来的问题较为忽视.所以，从习惯思路是难以产生解3的方案.第
+二，一提到重心计算，就会联想起有关的公式(记面密度为1)
+$$
+\bar{x} = \frac{\iint_{D}x\mathrm{d}\sigma}{\iint_{D}\mathrm{d}\sigma}, \quad 
+\bar{y} = \frac{\iint_{D}y\mathrm{d}\sigma}{\iint_{D}\mathrm{d}\sigma}.
+$$
+反之，接触到这两公式，就自然反映出“其作用”是求重心.这
+样一种关联在头脑中产生的印象是根深蒂固的，它引起的思路闭
+塞和智力枯竭直接影响了解答的发现.
+
+应用对于不同学科之间的沟通来说，它是相互的，双向的.对
+于式子“ ${a = \frac{b}{c}}$ ”来说，在 $a,b,c$ 中，任意已知两个时都可求出其中
+的第三个.
+人对某些事习以为常，而对于此事“反过来的一面''总
+会感到不自然而难以接受.有人锻炼身体时采用“倒走”和“倒
+跑"，目的是要锻炼一下“正着走、跑”锻炼不到的身体部位.思维
+训练也一样，必须加强反思维定势的训练，不应仅满足“封闭、求
+同、单向、直观、超稳定和亚节奏''的传统思维模式,而应该再去追
+求思维的“流畅性、变通性和创造性”.
+
+下面给出类同例25的两个问题.
+
+### 例26
+求 ${I = \oint_{L} (2x^2 + 3y^2)\mathrm{d} s}$, 其中 ${L: x^{2}+y^{2}=2(x+y)}$.
+
+常规解法
+#### 解1
+将 ${L}$ 表为参数方程
+$$
+\left\{ 
+\begin{array}{l}
+x = 1 + \sqrt{ 2 }\cos t \\
+y = 1 + \sqrt{ 2 }\sin t \\
+\end{array}\right. (0 \leq t \leq 2\pi)
+$$
+于是
+$$
+\begin{align}
+2x^{2} + 3y^{2} & = 2(1+\sqrt{ 2 }\cos t)^{2} + 3(1 + \sqrt{ 2 }\sin t)^{2} \\
+  & = 5 + 2\sqrt{ 2 }(2\cos t + 3\sin t) + 4\cos ^{2}t + 6 \sin ^{2}t \\
+  & = 10 + 2\sqrt{ 2 }(2\cos t + 3\sin t) - \cos 2t,
+\end{align}
+$$
+弧长计算公式
+$$
+\mathrm{d}s = \sqrt{ x'^{2}(t) + y'^{2}(t) } \mathrm{d}t
+= \sqrt{ 2 } \mathrm{d} t,
+$$
+$$
+\begin{align}
+I & = \int_{0}^{2\pi} \left[ 10 + 2\sqrt{ 2 }(2\cos t + 3\sin t) - \cos 2t \right]  \, \mathrm{d}t  \\
+  & = \int_{0}^{2\pi} 10\sqrt{ 2 } \, \mathrm{d}t = 20\sqrt{ 2 } \pi. 
+\end{align}
+$$
+解毕
+
+#### 解2
+
+因为对弧长的曲线积分的值仅与被积函数（指法
+则）和积分域有关，所以
+$$
+\oint_{L} x^{2} \mathrm{d}s = 
+\oint_{L} y^{2} \mathrm{d}s = 
+\frac{1}{2}\oint_{L} (x^{2} + y^{2}) \mathrm{d}s,
+$$
+$$
+\oint_{L} x \mathrm{d}s = 
+\oint_{L} y \mathrm{d}s = 
+\frac{1}{2}\oint_{L} (x + y) \mathrm{d}s,
+$$
+视曲线 $L$ 均匀分布有质量,线密度 $\rho=1$ , 
+因为 ${L}$ 的质心为 ${(1,1)}$ , 所以
+$$
+\oint_{L} x \mathrm{d}s = \bar{x} \cdot \oint_{L} \mathrm{d}s = 1 \cdot 2\pi \sqrt{ 2 } = 2\sqrt{ 2 } \pi.
+$$
+于是
+$$
+\begin{align}
+I & = \oint_{L} (2x^2 + 3y^2)\mathrm{d} s = 5 \oint_{L}  x^{2} \mathrm{d} s = \frac{5}{2} \oint_{L} (x^2 + y^2)\mathrm{d} s \\
+  & = 5 \oint_{L} (x + y)\mathrm{d} s = 10 \oint_{L} x \mathrm{d} s = 20 \sqrt{ 2 } \pi.
+\end{align}
+$$
+解毕
+myQ
+<font color="#ff0000">第一行最后到第二行是怎么得到的？</font>
+
+
+
+以 ${L: x^{2}+y^{2}=1}$ 为例 
+分别计算
+$$
+\oint_{L} x \mathrm{d}s, 
+\oint_{L} x^{2} \mathrm{d}s.
+$$
+前者
+$$
+\oint_{L} x \mathrm{d}s = \int_{0}^{2\pi} \cos\theta \, \mathrm{d}\theta = 0 = \bar{x} \oint_{L} \mathrm{d}s = 0 \cdot 2\pi = 0,
+$$
+后者
+$$
+\oint_{L} x^{2} \mathrm{d}s = 
+\frac{1}{2} \oint_{L} (x^{2}+y^{2}) \mathrm{d}s = 
+\frac{1}{2} \oint_{L} 1 \mathrm{d}s = \frac{1}{2} \cdot 2\pi = \pi \neq 0
+$$
+
+
+<font color="#ff0000">懂了，代入L方程！！</font>
+
+### 例27
+求 ${I = ∯_{\Sigma} (3x^{2} + y^{2} + 2z^{2}) \mathrm{d}S}$ 
+其中 ${\Sigma: (x-1)^{2} + (y-1)^{2} + (z-1)^{2} = 3}$. 
+
+#### 解1
+
+$$
+\begin{align}
+I & = ∯_{\Sigma} (3x^{2} + y^{2} + 2z^{2}) \mathrm{d}S  \\
+  & = ∯_{\Sigma} (x^{2} + y^{2}) \mathrm{d}S + ∯_{\Sigma} 2(x^{2} + z^{2}) \mathrm{d}S ,
+\end{align}
+$$
+
+平面 ${z=1}$ 将 ${\Sigma}$ 分为上下两个半球面
+$$
+\begin{align}
+\Sigma _\text{上} : (x-1)^{2} + (y-1)^{2} + (z-1)^{2} = 3, z \geq 1; \\
+\Sigma _\text{下} : (x-1)^{2} + (y-1)^{2} + (z-1)^{2} = 3, z \leq 1. 
+\end{align}
+$$
+因为 ${\Sigma_{上}, \Sigma_{下}}$ 关于 ${z=1}$ 对称 
+且 ${(x^{2} + y^{2})}$ 与 ${z}$ 无关，
+由第一型曲面积分定义知
+$$
+I_{1} = ∯_{\Sigma} (x^{2} + y^{2}) \mathrm{d}S = 2∯_{\Sigma _\text{上}} (x^{2} + y^{2}) \mathrm{d}S
+$$
+记 ${\Sigma _\text{上}}$ 在 xoy 平面投影域 ${D_{xy} : (x-1)^{2} + (y-1)^{2} \leq 3}$ .
+对 ${\Sigma _\text{上}}$ 而言, 法线方向 ${\mathbf{n} = \{ x-1,y-1,z-1 \}}$, 
+从而 ${\mathbf{n}}$ 与 ${z}$ 轴夹角 ${\gamma}$ 的余弦为 
+$$
+\cos\gamma = \frac{z-1}{\sqrt{ 3 }} = \frac{1}{\sqrt{ 3 }} \sqrt{ 3 - (x-1)^{2} - (y-1)^{2} },
+$$
+
+---
+
+关于法向量与余弦的计算
+曲面 ${f(x,y,z) \equiv 0}$.
+法向量 ${\mathbf{n} = \{ f_{x}, f_{y}, f_{z} \}}$
+
+两个向量夹角${\theta}$ 的余弦 ${\cos\theta}$ 可以根据内积计算
+$$
+\mathbf{a\cdot b} = \left| \mathbf{a} \right| \left| \mathbf{b} \right| \cos\theta
+$$
+
+---
+
+
+于是
+$$
+I_{1} = 2 \iint_{D_{xy}} \frac{\sqrt{ 3 }(x^{2}+y^{2})}{\sqrt{ 3 - (x-1)^{2} - (y-1)^{2} }} \mathrm{d}x \mathrm{d}y.
+$$
+令
+$$
+\left\{ 
+\begin{array}{l}
+x = 1 + r\cos \theta \\
+y = 1 + r\sin \theta \\
+\end{array}\right.
+$$
+${D_{xy}: 0\leq r\leq \sqrt{ 3 }, 0 \leq\theta \leq 2\pi}$.
+雅可比式 ${J(r,\theta) = \frac{ \partial (x,y) }{ \partial (r,\theta) } = r}$
+
+$$
+\begin{align}
+I_{1}  & = 2\int_{0}^{2\pi}  \, \mathrm{d}\theta \int_{0}^{\sqrt{ 3 }} \frac{\sqrt{ 3 } \left[ (1+r\cos\theta)^{2} + (1+\sin\theta)^{2} \right]  }{\sqrt{ 3 - r^{2} }} \cdot r \, \mathrm{d}r \\
+  & = 2\sqrt{ 3 } \int_{0}^{2\pi}  \, \mathrm{d}\theta \int_{0}^{\sqrt{ 3 }} \frac{(2+r^{2})r + 2r^{2}(\cos\theta + \sin\theta)}{\sqrt{ 3-r^{2} }}  \, \mathrm{d}r
+  & = 2\sqrt{ 3 } \int_{0}^{2\pi}  \, \mathrm{d}\theta \int_{0}^{\sqrt{ 3 }} \frac{(2+r^{2})r}{\sqrt{ 3-r^{2} }}  \, \mathrm{d}r \\
+  & = 4\sqrt{ 3 }\pi \int_{0}^{\sqrt{ 3 }} [(3-r^{2}) - 5] \, \mathrm{d} \sqrt{ 3-r^{2} } = 48\pi.
+\end{align}
+$$
+同理 ${I_{2} = ∯_{\Sigma}(x^{2}+z^{2})\mathrm{d}S = 48 \pi}$. 
+所以 ${I = I_{1} + 2I_{2} = 144\pi}$. 
+解毕
+
+#### 解2
+因为对面积的曲面积分的值仅与被积函数(指法
+则)和积分域有关，所以
+$$
+∯_{\Sigma} x^{2} \mathrm{d}S = 
+∯_{\Sigma} y^{2} \mathrm{d}S = 
+∯_{\Sigma} z^{2} \mathrm{d}S ,
+$$
+$$
+∯_{\Sigma} x \mathrm{d}S = 
+∯_{\Sigma} y \mathrm{d}S = 
+∯_{\Sigma} z \mathrm{d}S .
+$$
+视曲面 $\Sigma$ 均匀分布有质量, 面密度 $\rho=1$ , 
+因为 ${\Sigma}$ 的质心为 ${(1,1,1)}$ , 所以
+$$
+∯_{\Sigma} x \mathrm{d}S = \bar{x} ∯_{\Sigma} \mathrm{d}S 
+= 1 \cdot 4\pi (\sqrt{ 3 })^{2} = 12\pi.
+$$
+于是
+$$
+\begin{align}
+I & = ∯_{\Sigma} (3x^{2} + y^{2} + 2z^{2}) \mathrm{d}S = 2∯_{\Sigma}(x^{2} + y^{2} + z^{2}) \mathrm{d}S \\
+  & = 4 ∯_{\Sigma} (x+y+z)\mathrm{d}S = 12∯_{\Sigma}x\mathrm{d}S = 144\pi.
+\end{align}
+$$
+解毕
+
+## 5. 一个重积分例的解答
+
+### 例28
+求 ${I = \iiint_{\Omega} (x + 2y + 3z) \mathrm{d} v}$,
+其中 ${\Omega}$ 为圆锥体，它顶
+点在原点（0,0,0）；底为平面 $x+y+z=3$上以点（1,1,1）
+为圆心，1为半径的圆.
+
+题中积分域虽简单，但其位置却使我们为难,无论是在直角坐
+标系中.，还是在柱面及球面坐标系中，按常规的套路去求解并非易
+事!我们只得放弃一般的处理程序，另求它法.
+
+首先，引起我们注意的是积分域有对称轴（即直线 $x=y=z$ ）,
+积分域对 $x,y,z$ 有轮换对称性,考虑到重积分的值仅与积分域
+及被积函数有关,于是有
+
+$$
+\iiint_{\Omega} x\mathrm{d}v = 
+\iiint_{\Omega} y\mathrm{d}v = 
+\iiint_{\Omega} z\mathrm{d}v = 
+\frac{1}{3}\iiint_{\Omega} (x + y + z)\mathrm{d}v .
+$$
+
+因此原积分可化为
+$$
+I = \iiint_{\Omega}(x+2y+3z) \mathrm{d}v 
+= 6\iiint_{\Omega}x\mathrm{d}v
+= 2\iiint_{\Omega}(x + y + z)\mathrm{d}v
+$$
+（3）式结果是否有用？解答困难所在是“积分域的位置”，能不
+能将积分转化为某个与“具体位置”无关的量呢？
+（3）式结果中被
+枳函数是积分变量的一次式.这使我们联想到静力矩.
+
+将方程 ${x+y+z=3}$ 化为法式方程，有
+$$
+\frac{x+y+z-3}{\sqrt{ 3 }} = 0,
+$$
+
+从而知，当视锥体均匀分布有质量且密度$\rho=1$时，锥体${\Omega}$对底面
+$\prod : x+y+z=3$的静力矩为
+$$
+M_{\prod} = \iiint_{\Omega} \frac{3 - (x+y+z)}{\sqrt{ 3 }} \mathrm{d}v.
+$$
+由此，得
+$$
+M_{\prod} = \sqrt{ 3 } \iiint_{\Omega} \mathrm{d}v - \frac{1}{\sqrt{ 3 }} \iiint_{\Omega} (x+y+z)\mathrm{d}v.
+$$
+回代得到
+$$
+I = 6 \iiint_{\Omega} \mathrm{d}v - 2\sqrt{ 3 } M_{\prod} = 6V - 2\sqrt{ 3 }M_{\prod}.
+$$
+
+上式中的V为锥体体积，${M_{\prod}}$为锥体对底平面${\prod}$的静力矩:
+显然V和 ${M_{\prod}}$ 都与“锥的具体摆放的位置”无关，我们完全可以从有
+利的情境去计算这些量.
+
+#### 解1
+锥体底面半径${r = 1}$ 高
+$$
+h = \sqrt{ 1^{2} + 1^{2} + 1^{2} } = \sqrt{ 3 },
+$$
+不妨设圆锥体 ${\Omega'}$ 由 ${z^{2} = 3(x^{2} + y^{2})}$ 与 ${z = \sqrt{ 3 }}$ 围成
+体积 V 
+$$
+V = \frac{1}{3} S\cdot h = \frac{1}{3} (\pi \cdot 1^{2}) \cdot \sqrt{ 3 } = \frac{\sqrt{ 3 }\pi}{3},
+$$
+对底面静力矩为 ${M_{z=\sqrt{ 3 }}}$.
+$$
+\begin{align}
+M_{z=\sqrt{ 3 }} & = \iiint(\sqrt{ 3 } - z) \mathrm{d} v \\
+  & = \int_{0}^{\sqrt{ 3 }}  \, \mathrm{d}z \iint_{D_{z}}  (\sqrt{ 3 } - z) \mathrm{d}x\mathrm{d}y \\
+  & = \int_{0}^{\sqrt{ 3 }} \frac{\pi}{3} z^{2}(\sqrt{ 3 } - z) \, \mathrm{d}z = \frac{\pi}{4}. 
+\end{align}
+$$
+
+$$
+M_{\prod} = M_{z=\sqrt{ 3 }} 
+$$
+
+于是
+$$
+I = 6V - 2\sqrt{ 3 } M_{\prod} = \frac{3\sqrt{ 3 }\pi}{2}.
+$$
+解毕
+上述解法中的关键步骤是将原积分转化为求锥体对底面的静
+力矩
+而${M_{\prod}}$是与位置无关的不变量.解答中计算虽不复杂，但
+转化为计算${M_{\prod}}$的思路是不容易想到的.
+
+
+下面，我们再从其它角度
+去考虑求解.
+%% todo %%
+
+## 6.抓住问题的本质
+
+### 例29 
+求 ${f(x,y) = \frac{x\cos y - y\cos x}{1 + \sin x + \sin y}}$ 在点 ${(0,0)}$ 处得偏导数.
+
+#### 解1
+把 ${y}$ 看作常量, 得
+$$
+\begin{align}
+\frac{ \partial f }{ \partial x }  & = \frac{(\cos y+ y\sin x)(1+\sin x+\sin y)}{(1+\sin x+\sin y)^{2}}  \\
+  & - \frac{(x\cos y - y\cos x)\cos x}{(1+\sin x+\sin y)^{2}};
+\end{align}
+$$
+把 ${x}$ 看作常量, 得
+$$
+\begin{align}
+\frac{ \partial f }{ \partial y }  & = \frac{(-x\sin y - \cos x)(1+\sin x+\sin y)}{(1+\sin x+\sin y)^{2}}  \\
+  & - \frac{(x\cos y - y\cos x)\cos y}{(1+\sin x+\sin y)^{2}};
+\end{align}
+$$
+将 ${(0,0)}$ 代入上面得结果，得到
+$$
+f_{x}(0,0) = 1, \quad 
+f_{y}(0,0) = -1, 
+$$
+对于类似的问题，所见教材大都遵循同样的程序：先求出偏
+导函数，再求偏导函数在某点处的函数值.几乎无一例外.而求
+某点处的偏导数的计算在众多的场合会遇到，譬如：求函数在某
+点的全微分；求曲面在某点的切平面；求曲线在某点的切线；求
+函数在某点沿某方向的方向导数；求函数在某点的梯度；将二元
+函数展为麦克劳林级数；求向量场在某点处的散度和旋度，等等.
+实际上例29并没有要求计算偏导函数，而解答也完全可以不求偏
+导函数.因为由偏导数定义，有
+
+$$
+\begin{align}
+f_{x}(x_{0},y_{0}) & = \lim_{ \Delta x \to 0 } \frac{f(x_{0}+\Delta x,y_{0}) - f(x_{0},y_{0})}{\Delta x} \\
+  & = \frac{\mathrm{d}}{\mathrm{d}x} [f(x,y_{0})] |_{x=x_{0}}; \\
+f_{y}(x_{0},y_{0}) & = \lim_{ \Delta y \to 0 } \frac{f(x_{0},y_{0}+\Delta y) - f(x_{0},y_{0})}{\Delta y} \\
+  & = \frac{\mathrm{d}}{\mathrm{d}y} [f(x_{0},y)] |_{y=y_{0}}.
+\end{align}
+$$
+从中可见偏导数的本质是一元函数的导数，从这点出发可另解如
+下.
+
+#### 解2
+$$
+f(x,0) = \frac{x}{1+\sin x}
+$$
+对 ${x}$ 求导，得
+$$
+\frac{\mathrm{d}}{\mathrm{d}x}[f(x,0)] = \frac{1 + \sin x - x\cos x}{(1+\sin x)^{2}}
+$$
+代入 ${x = 0}$, 得 ${f_{x}(0,0) = 1}$.
+类似地有 ${f(0,y) = \frac{-y}{1+\sin y}}$
+利用上面结果可知 
+$$
+f_{y}(0,0) = -f_{x}(0,0) = -1.
+$$
+解毕
+
+### 例30
+设
+$$
+f(x,y,z) = \sqrt[z]{ \frac{x}{y} }
+$$
+求 ${\mathrm{d}f(1,1,1)}$.
+
+#### myans
+
+$$
+f = e^{(\ln x - \ln y)/z}
+$$
+$$
+\mathrm{d}f = e^{(\ln x - \ln y)/z} \left( \frac{1}{xz}\mathrm{d}x - \frac{1}{yz}\mathrm{d}y - \frac{\ln x-\ln y}{z^{2}}\mathrm{d}z \right)
+$$
+代入 ${(1,1,1)}$ 得
+$$
+\mathrm{d}f = \mathrm{d}x - \mathrm{d}y
+$$
+
+#### 解
+$$
+\begin{align}
+f_{x}(x,1,1) & = \frac{\mathrm{d}}{\mathrm{d}x}[f(x,1,1)] = \frac{\mathrm{d}x}{\mathrm{d}x} = 1; \\
+f_{y}(1,y,1) & = \frac{\mathrm{d}}{\mathrm{d}y}[f(1,y,1)] = \frac{\mathrm{d}}{\mathrm{d}y}\left( \frac{1}{y} \right) = -\frac{1}{y^{2}}; \\
+f_{z}(1,1,z) & = \frac{\mathrm{d}}{\mathrm{d}z}[f(1,1,z)] = \frac{\mathrm{d}}{\mathrm{d}z}(1) = 0.
+\end{align}
+$$
+因为偏导数在点 ${(1,1,1)}$ 处连续， 又因为
+$$
+f_{x}(1,1,1) = 1,
+f_{y}(1,1,1) = -1,
+f_{z}(1,1,1) = 0.
+$$
+所以
+$$
+\mathrm{d}f(1,1,1) = \mathrm{d}x - \mathrm{d}x
+$$
+解毕
+
+%% todo 例31 %%
+
