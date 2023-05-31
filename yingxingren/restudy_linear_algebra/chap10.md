@@ -13,7 +13,7 @@
 实践中的数据总有些误差，方程的参数微小的变动，竟让计算结果面目全非，这确实让人始料不及。这样不稳定的计算结果在应用上毫无价值。问题在于，这个差异并非是计算误差造成的，将它们代入方程验证都精确无误.
 这就无从计算上来改善了。这种对参数微小变动敏感的系统称为是病态的（ill-conditioned），这是数学模型的问题。这个例子，在几何图像上不难看到原因。每个方程在空间确定一条直线，方程的解是这两条直线的交点。这两个方程确定的直线近于平行，所以位置略有变化（红线和绿线），它们的交点（红点和绿点）的位置就差得很远。
 
-![一个病态系统的例子](pic/1612386nrnueyrye6k8kq4.png)
+![一个病态系统的例子](1612386nrnueyrye6k8kq4.png)
 
 在数值分析中，条件数（condition number）用来描述数学模型系统的微扰对计算结果的影响。
 大致说来，对条件数$κ$，$\log_{10}\kappa$是你在计算可能要丢掉的数字位数$(\log_{10}\|Δx/x\|\leq \log_{10}κ+ \log_{10}\|\delta b/b\|)$，
@@ -76,8 +76,8 @@ $$P=\begin{bmatrix} 0&1\\1&0\end{bmatrix},\;PA=\begin{bmatrix} 1&1\\0.0001&1 \en
 
 在$n$维线性空间中，满足内积$\langle \mathbf{z},\mathbf{a}\rangle = b$的向量$\mathbf{z}$，构成$n$维几何空间中的一个$n-1$维平面，将向量扩充到$n+1$维空间，令$\mathbf{x}=(1,\mathbf{z}^T)^T, w=(-b,\mathbf{a}^T)^T$，这个内积可以表示为$\langle \mathbf{x},\mathbf{w}\rangle= 0$.
 
-![image](pic/161238petg2epyqhslbulz.png){width="0.49\\linewidth"}
-![image](pic/161239i3870x2cvwmclc09.png){width="0.49\\linewidth"}
+![image](161238petg2epyqhslbulz.png){width="0.49\\linewidth"}
+![image](161239i3870x2cvwmclc09.png){width="0.49\\linewidth"}
 
 **线性回归（linear regression）**：在线性回归的数学模型中，假定有足够多描述事物的属性，表示为函数的变量，归纳了经验的数值公式是这些属性变量的线性函数，我们尽可能应用大量的实验数据，来统计出误差最小的模型的系数。具体计算如下。
 

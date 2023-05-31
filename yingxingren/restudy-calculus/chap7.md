@@ -48,7 +48,7 @@ $$m^*( \bigcup _{n=1}^\infty  E_n) \le \sum _{n=1}^\infty m^*(E_n),\;\; E_i\cap 
 
 Koch曲线是这样构造的。对单位线段，中间1/3用等边三角形的两边来代替，得到四条边的曲线k=1，对这四条边做同样的替换，得到k=2曲线，如此无限重复这个替代过程，它趋向Koch曲线。（见图，图像抄自网络）
 
-![分形曲线](pic/151409kzeswb2kzreg87zm.png){#fig:151409kzeswb2kzreg87zm
+![分形曲线](151409kzeswb2kzreg87zm.png){#fig:151409kzeswb2kzreg87zm
 width="0.7\\linewidth"}
 
 可以把这个k序列看作测量尺度变小的过程，计算不同k时计算的曲线长度$L(K)=(4/3)^{K}$，所以Koch曲线的长度是无穷大。

@@ -138,7 +138,7 @@ Garding说："现在不熟悉线性代数的概念，以这样
   -0.40210 + 0.00000i                                               
                                                                     
   Octave:3$>$ plot(x,'r\*')                                         
-  ![image](pic/163122zo5tmql5otmldxtf.jpg){width=".4\\textwidth"}   
+  ![image](163122zo5tmql5otmldxtf.jpg){width=".4\\textwidth"}   
   就画出这5个根在复平面的位置。                                     
   ----------------------------------------------------------------- --
 :::

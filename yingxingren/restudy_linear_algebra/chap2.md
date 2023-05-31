@@ -14,7 +14,7 @@
 竖排着坐标值的一组数，称为列向量，或统称为向量；
 数组中每个数称为它的分量。
 
-![向量示意图](pic/153404gr2s818g3sg3g1h9.png){#fig:153404gr2s818g3sg3g1h9
+![向量示意图](153404gr2s818g3sg3g1h9.png){#fig:153404gr2s818g3sg3g1h9
 width="0.7\\linewidth"}
 
 列向量相加等于对应的分量相加；
@@ -182,12 +182,12 @@ https://www.gnu.org/software/octave/
 | A =                              |                                  |
 |                                  | $>>$plot(t,sin(t));              |
 | 1 1 0                            |                                  |
-|                                  | ![image](pic/154012hzzaaow33s7a  |
+|                                  | ![image](154012hzzaaow33s7a  |
 | 1 1 2                            |  |
 |                                  |                                  |
 | 1 2 2                            | $>>$plot3(sin(t),cos(t),t);      |
 |                                  |                                  |
-| $>>$ b = \[3; 9; 11\]            | ![image|200](pic/154013uf11jfijj1nivsjn.jpg)  |
+| $>>$ b = \[3; 9; 11\]            | ![image|200](154013uf11jfijj1nivsjn.jpg)  |
 | %赋值列向量 b                    |  |
 |                                  |                                  |
 | b =                              |                                  |

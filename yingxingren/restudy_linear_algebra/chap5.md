@@ -41,7 +41,7 @@ $\mathrm{Ker}(f)$是$X$中被$f$映射为0的向量构成的子空间，也称�
 而$\mathrm{Im}(f)$是$X$中所有向量被$f$映射到$Y$的像构成的子空间，也称为算子的值域。对这些子空间的维数有**秩-零度定理**:
 $$\dim(\mathrm{Ker}(f))+\dim (\mathrm{Im}(f))=\dim(X)$$，它是线性代数的一个基本定理。
 
-![秩-零度定理|500](pic/160449rx8lvzcxlgan88va.png)
+![秩-零度定理|500](160449rx8lvzcxlgan88va.png)
 
 维数$\dim(\mathrm{Im}(f))$叫做线性算子f的**秩**，记为$\mathrm{rank} f$，
 $\dim(\mathrm{Ker}(f))$叫做线性算子$f$的**零度**，记为$\mathrm{nullity} f$。
@@ -81,7 +81,7 @@ $\dim(\mathrm{Im}(A)) = k$。
 算子与它的对偶算子有相同的秩，所以算子与它的对偶算子的零度分别是：
 $\dim(\mathrm{Ker}(A)) = n-k,\quad \dim(\mathrm{Ker}(A^T)) = m-k$.
 
-![线性代数基本定理](pic/1604494yzy1do1yro41gva.png)
+![线性代数基本定理](1604494yzy1do1yro41gva.png)
 
 算子$A$将核空间$\mathrm{Ker}(A)$中的向量映射为零向量，即矩阵中的行向量与它正交，
 而矩阵中的行向量张成转置矩阵的像空间$\mathrm{Im}(A^T)$。
