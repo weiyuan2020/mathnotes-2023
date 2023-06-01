@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conway/conway_tbn-md/chap10Part004.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_005.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 213.5,
+    "collapsed": true
   },
   "right": {
     "id": "1e4e6f8c85937a0f",
@@ -90,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conway/conway_tbn-md/chap10Part004.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_005.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conway/conway_tbn-md/chap10Part004.md"
+                "file": "qianchangben_calculus/qianchangben_calculus_005.md"
               }
             }
           }
@@ -129,6 +130,7 @@
   },
   "active": "ae7e3be203b44898",
   "lastOpenFiles": [
+    "conway/conway_tbn-md/chap10Part004.md",
     "conway/conway_tbn-md/chap11.md",
     "conway/conway_tbn-md/chap01.md",
     "conway/conway_tbn-md/chap00.md",
@@ -154,7 +156,6 @@
     "rudin/bbr/chap11sec03.md",
     "rudin/bbr/chap11sec04.md",
     "rudin/bbr/chap11sec05.md",
-    "rudin/bbr/chap11sec06.md",
     "rudin/bbr/mydefbook.tex",
     "rudin/bbr/listofspecialsymbols-.tex",
     "rudin/bbr/chap01sec07-.tex",
