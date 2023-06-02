@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "7f2642147bc78424",
+            "id": "2ffc14721fa2a3b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202306021524 知乎的一道不等式证明题.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_006.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202306021524 知乎的一道不等式证明题.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_006.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202306021524 知乎的一道不等式证明题.md"
+                "file": "qianchangben_calculus/qianchangben_calculus_006.md"
               }
             }
           }
@@ -129,8 +129,9 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "7f2642147bc78424",
+  "active": "2ffc14721fa2a3b4",
   "lastOpenFiles": [
+    "202306021524 知乎的一道不等式证明题.md",
     "qianchangben_calculus/qianchangben_calculus_001.md",
     "202306021538 平均数不等式.md",
     "算术几何平均值不等式.md",
@@ -138,7 +139,6 @@
     "202306021542 算术-几何平均值不等式.md",
     "202305041540 latex suite setting.md",
     "attachments/202306021542 平均数不等式.md",
-    "202306021524 知乎的一道不等式证明题.md",
     "202306010958 怎么计算这个积分数列极限.md",
     "attachments/算术几何平均值不等式.md",
     "attachments/平均数不等式.md",
