@@ -544,7 +544,7 @@ $$
 ### 例4
 
 设函数 ${f(x)}$ 在 ${[0,1]}$ 上有连续导数, 且 ${f(0) = f(1) = 0}$. 
-求证: ${\left| \int_{0}^{1} f(x) \, \mathrm{d}x \leq \frac{1}{4} \max_{x \in [0,1]} \{ \left| f'(x) \right| \} \right|}$. 
+求证: ${\left| \int_{0}^{1} f(x) \, \mathrm{d}x \right| \leq \frac{1}{4} \max_{x \in [0,1]} \{ \left| f'(x) \right| \} }$. 
 
 首先, 让我们逐一分析题目给出的各种信息；然后, 再画出反
 映这些信息的一张草图.

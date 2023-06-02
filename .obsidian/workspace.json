@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_005.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_006.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,6 +26,18 @@
               "type": "markdown",
               "state": {
                 "file": "202305041540 latex suite setting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7f2642147bc78424",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "qianchangben_calculus/qianchangben_calculus_001.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_005.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_006.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_005.md"
+                "file": "qianchangben_calculus/qianchangben_calculus_006.md"
               }
             }
           }
@@ -130,6 +142,10 @@
   },
   "active": "ae7e3be203b44898",
   "lastOpenFiles": [
+    "qianchangben_calculus/qianchangben_calculus_001.md",
+    "qianchangben_calculus/attachments/qianchangben_calculus_001-.png",
+    "qianchangben_calculus/qianchangben_calculus_006.md",
+    "qianchangben_calculus/qianchangben_calculus_005.md",
     "attachments/qianchangben_calculus_005--4.png",
     "attachments/qianchangben_calculus_005--3.png",
     "conway/conway_tbn-md/chap10Part004.md",
@@ -140,8 +156,6 @@
     "conway/conway_ong-md/Part2_sec002_appendix.md",
     "conway/conway_ong-md/Part2_sec001_epilogue.md",
     "conway/conway_ong-md/Part_prologue.md",
-    "qianchangben_calculus/qianchangben_calculus_005.md",
-    "qianchangben_calculus/qianchangben_calculus_001.md",
     "rudin/bbr/chap09exercise.md",
     "rudin/bbr/chap09.md",
     "rudin/bbr/chap10.md",
@@ -156,7 +170,6 @@
     "rudin/bbr/chap11sec01.md",
     "rudin/bbr/chap11sec02.md",
     "rudin/bbr/chap11sec03.md",
-    "rudin/bbr/chap11sec04.md",
     "rudin/bbr/mydefbook.tex",
     "rudin/bbr/listofspecialsymbols-.tex",
     "rudin/bbr/chap01sec07-.tex",
@@ -173,8 +186,6 @@
     "rudin/bbr/pic/Part0_chap00-.svg",
     "attachments/qianchangben_calculus_005--2.png",
     "attachments/qianchangben_calculus_005--1.png",
-    "attachments/qianchangben_calculus_005-.png",
-    "attachments/qianchangben_calculus_004--5.png",
-    "attachments/qianchangben_calculus_004--4.png"
+    "attachments/qianchangben_calculus_005-.png"
   ]
 }
