@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "2ffc14721fa2a3b4",
+            "id": "cf930d31a68ace2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "latex",
+                "query": "拉格朗日乘数",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5,
+    "width": 299.5,
     "collapsed": true
   },
   "right": {
@@ -112,6 +112,14 @@
                 "file": "qianchangben_calculus/qianchangben_calculus_006.md"
               }
             }
+          },
+          {
+            "id": "f118d3b0b699906a",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 1
@@ -129,13 +137,35 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "2ffc14721fa2a3b4",
+  "active": "cf930d31a68ace2a",
   "lastOpenFiles": [
-    "attachments/qianchangben_calculus_006-.png",
-    "202305041540 latex suite setting.md",
-    "qianchangben_calculus/qianchangben_calculus_006.md",
-    "202306021524 知乎的一道不等式证明题.md",
+    "qianchangben_calculus/qianchangben_calculus_007.md",
     "qianchangben_calculus/qianchangben_calculus_001.md",
+    "qianchangben_calculus/qianchangben_calculus_005.md",
+    "qianchangben_calculus/qianchangben_calculus_003.md",
+    "qianchangben_calculus/qianchangben_calculus_006.md",
+    "具体数学/CMChap3.md",
+    "具体数学/attachements/CMChap3-.png",
+    "具体数学/attachements",
+    "202305041540 latex suite setting.md",
+    "qianchangben_calculus/attachments/qianchangben_calculus_006--1.png",
+    "具体数学/CMChap2.md",
+    "未命名.md",
+    "具体数学/CMChap1.md",
+    "具体数学/CMChap2_table.tex",
+    "具体数学/attachements/CMChap2_table-P1.png",
+    "具体数学/CMChap2_table.pdf",
+    "具体数学/CMChap1Ex.md",
+    "具体数学/attachements/repertoire.pdf",
+    "具体数学/Concrete Mathematics - knuth.pdf",
+    "qianchangben_calculus/qianchangben_calculus_002.md",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003-.png",
+    "qianchangben_calculus/attachments/qianchangben_calculus_003-7.png",
+    "qianchangben_calculus/qianchangben_calculus_004.md",
+    "attachments/qianchangben_calculus_004--4.png",
+    "attachments/202306031501 点到直线的距离公式.md",
+    "attachments/qianchangben_calculus_006-.png",
+    "202306021524 知乎的一道不等式证明题.md",
     "202306021538 平均数不等式.md",
     "算术几何平均值不等式.md",
     "平均数不等式.md",
@@ -147,35 +177,13 @@
     "attachments/202306021538 平均数不等式.md",
     "attachments/202306021524 知乎的一道不等式证明题.md",
     "qianchangben_calculus/attachments/qianchangben_calculus_001-.png",
-    "qianchangben_calculus/qianchangben_calculus_005.md",
     "attachments/qianchangben_calculus_005--4.png",
     "attachments/qianchangben_calculus_005--3.png",
     "conway/conway_tbn-md/chap10Part004.md",
-    "conway/conway_tbn-md/chap11.md",
-    "conway/conway_tbn-md/chap01.md",
-    "conway/conway_tbn-md/chap00.md",
-    "conway/conway_ong-md/Part2_sec003_reference.md",
-    "conway/conway_ong-md/Part2_sec002_appendix.md",
-    "conway/conway_ong-md/Part2_sec001_epilogue.md",
-    "conway/conway_ong-md/Part_prologue.md",
-    "rudin/bbr/chap09exercise.md",
-    "rudin/bbr/chap09.md",
     "rudin/bbr/mydefbook.tex",
     "rudin/bbr/listofspecialsymbols-.tex",
     "rudin/bbr/chap01sec07-.tex",
     "rudin/bbr/pic/chap01sec02_proof11.pdf",
-    "rudin/bbr/pic/Part0_chap00-.pdf",
-    "rudin/bbr/pic/function-mapping.pdf",
-    "rudin/bbr/pic/Part0_chap00-.pdf",
-    "rudin/bbr/pic/Part0_chap00-.svg",
-    "rudin/bbr/pic/Part0_chap00--3.pdf",
-    "rudin/bbr/pic/Part0_chap00--2.pdf",
-    "rudin/bbr/pic/svg2pdf.bat",
-    "rudin/bbr/pic/StandardTori701.svg",
-    "rudin/bbr/pic/Part0_chap00-.svg",
-    "rudin/bbr/pic/Part0_chap00-.svg",
-    "attachments/qianchangben_calculus_005--2.png",
-    "attachments/qianchangben_calculus_005--1.png",
-    "attachments/qianchangben_calculus_005-.png"
+    "rudin/bbr/pic/Part0_chap00-.pdf"
   ]
 }

@@ -1,10 +1,11 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "attachments",
+  "attachmentFolderPath": "./attachments",
   "showLineNumber": true,
   "foldIndent": false,
   "showIndentGuide": false,
-  "readableLineLength": false,
-  "newFileLocation": "folder",
-  "newFileFolderPath": "attachments"
+  "readableLineLength": true,
+  "newFileLocation": "current",
+  "newFileFolderPath": "attachments",
+  "promptDelete": false
 }

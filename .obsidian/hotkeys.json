@@ -60,5 +60,13 @@
       ],
       "key": "6"
     }
+  ],
+  "app:delete-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Delete"
+    }
   ]
 }

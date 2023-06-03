@@ -258,7 +258,7 @@ quick latex for obsidian
     {trigger: "pu", replacement: "\\pu{ $0 }", options: "mA"},
     {trigger: "msun", replacement: "M_{\\odot}", options: "mA"},
     {trigger: "solm", replacement: "M_{\\odot}", options: "mA"},
-    {trigger: "ce", replacement: "\\ce{ $0 }", options: "mA"},
+    //{trigger: "ce", replacement: "\\ce{ $0 }", options: "mA"},
     {trigger: "iso", replacement: "{}^{${0:4}}_{${1:2}}${2:He}", options: "mA"},
     {trigger: "hel4", replacement: "{}^{4}_{2}He ", options: "mA"},
     {trigger: "hel3", replacement: "{}^{3}_{2}He ", options: "mA"},
@@ -293,6 +293,8 @@ quick latex for obsidian
     {trigger: "lr{", replacement: "\\left\\{ $0 \\right\\} $1", options: "mA"},
     {trigger: "lr[", replacement: "\\left[ $0 \\right] $1", options: "mA"},
     {trigger: "lra", replacement: "\\left< $0 \\right> $1", options: "mA"},
+    {trigger: "ceiling", replacement: "\\lceil $0 \\rceil $1", options: "mA"},
+    {trigger: "floor", replacement: "\\lfloor $0 \\rfloor $1", options: "mA"},
 
 
 
