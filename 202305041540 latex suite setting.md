@@ -62,6 +62,7 @@ quick latex for obsidian
     {trigger: "\\\\(${GREEK}|${SYMBOL}) bar", replacement: "\\bar{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) vec", replacement: "\\vec{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) und", replacement: "\\underline{\\[[0]]}", options: "rmA"},
+    {trigger: "\\\\(${GREEK}|${SYMBOL}) ove", replacement: "\\overline{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK}),\\.", replacement: "\\boldsymbol{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK})\\.,", replacement: "\\boldsymbol{\\[[0]]}", options: "rmA"},
 
@@ -98,12 +99,14 @@ quick latex for obsidian
     {trigger: "([a-zA-Z])ddot", replacement: "\\ddot{[[0]]}", options: "rmA", priority: 1},
     {trigger: "([a-zA-Z])vec", replacement: "\\vec{[[0]]}", options: "rmA"},
     {trigger: "([a-zA-Z])und", replacement: "\\underline{[[0]]}", options: "rmA"},
+    {trigger: "([a-zA-Z])ove", replacement: "\\overline{[[0]]}", options: "rmA"},
     {trigger: "bar", replacement: "\\bar{$0}$1", options: "mA"},
     {trigger: "hat", replacement: "\\hat{$0}$1", options: "mA"},
     {trigger: "dot", replacement: "\\dot{$0}$1", options: "mA"},
     {trigger: "ddot", replacement: "\\ddot{$0}$1", options: "mA", priority: 2},
     {trigger: "vec", replacement: "\\vec{$0}$1", options: "mA"},
     {trigger: "und", replacement: "\\underline{$0}$1", options: "mA"},
+    {trigger: "ove", replacement: "\\overline{$0}$1", options: "mA"},
 
     {trigger: "([^\\\\])(arcsin|arccos|arctan|arccot|arccsc|arcsec|sin|cos|tan|cot|csc)", replacement: "[[0]]\\[[1]]", options: "rmA"},
     {trigger: "\\\\(arcsin|arccos|arctan|arccot|arccsc|arcsec|sin|cos|tan|cot|csc)([A-Za-gi-z])", replacement: "\\[[0]] [[1]]", options: "rmA"}, // Insert space after trig funcs. Skips letter "h" to allow sinh, cosh, etc.
@@ -122,8 +125,10 @@ quick latex for obsidian
 
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
-    {trigger: "sum", replacement: "\\sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
-    {trigger: "prod", replacement: "\\prod_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
+    {trigger: "sum", replacement: "\\sum $0", options: "mA"},
+    {trigger: "\sum m", replacement: "sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
+    {trigger: "prod", replacement: "\\prod $0", options: "mA"},
+    {trigger: "\prod d", replacement: "prod_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
     {trigger: "pm", replacement: "\\pm", options: "m"},
     {trigger: "mp", replacement: "\\mp", options: "m"},

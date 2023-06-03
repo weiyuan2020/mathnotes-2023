@@ -492,7 +492,338 @@ $$
 \ln\left( \frac{x_{1} + x_{2}}{2} \right) \geq \frac{1}{2}(\ln x_{1} + \ln x_{2}) = \ln \sqrt{ x_{1}x_{2} },
 $$
 $$
-\frac{x_{1} + x_{2}}{2} \geq \sqrt{ x_{1}x_{2} },
+\sqrt{ x_{1}x_{2} } \leq
+\frac{x_{1} + x_{2}}{2} 
+,
 (x_{1}>0,x_{2}>0)
 $$
-%% todo pp114
+可以推广为
+$$
+\sqrt[n]{ x_{1}x_{2}\dots x_{n} } \leq
+\frac{1}{n}(x_{1}+x_{2}+\dots+x_{n}) .
+(x_{i} > 0, i=1,2,\dots, n)
+$$
+
+${y = x^{k} (x \geq 0, k \in \mathbb{N}, k \geq 2)}$, 是凸函数 
+$$
+\left( \frac{x_{1}+x_{2}}{2} \right)^{k} \leq
+\frac{x_{1}^{k}+x_{2}^{k}}{2}, 
+(x_{1} \geq 0, x_{2} \geq 0)
+$$
+类比上面${\ln x}$的推广
+$$
+\left( \frac{x_{1}+x_{2}+\dots+x_{n}}{n} \right)^{k} \leq
+\frac{x_{1}^{k}+x_{2}^{k}+\dots+x_{n}^{k}}{n},
+(x_{i} \geq 0, i=1,2,\dots, n)
+$$
+
+${y = e^{x}}$ 是凸函数
+$$
+\exp\left( \frac{x_{1}+x_{2}}{2} \right) \leq
+\frac{\exp(x_{1})+\exp(x_{2})}{2}.
+$$
+可推广为
+$$
+\exp\left( \frac{x_{1}+x_{2}+\dots+x_{n}}{n} \right) \leq
+\frac{1}{n}(\exp(x_{1}) + \exp(x_{2}) + \dots + \exp(x_{n})).
+$$
+
+这三个推广均可通过数学归纳法证明
+
+类比之下，不禁让人猜想，这些逐一的重复推广是否可以抽象为统一意义下的一个有价值的推广呢？
+
+### 例59
+设连续函数 ${f(x)}$ 是区间 ${I}$ 上的凸函数。试证对 ${I}$ 上的任意 ${n}$ 个数 ${x_{1},x_{2},x\dots, x_{n}}$ 及任意和为 ${1}$ 的 ${n}$ 个正数 ${\alpha_{1},\alpha_{2},\dots,\alpha_{n}}$， 有
+$$
+f(\alpha_{1}x_{1}+\alpha_{2}x_{2} + \dots + \alpha_{n}a_{n}) \geq
+\alpha_{1}f(x_{1}) + \alpha_{2}f(x_{2}) + \dots + \alpha_{n}f(x_{n}).
+$$
+
+#### 证1
+数学归纳法
+${n=1}$ 时 ${\alpha=1}$.
+$$
+f(\alpha x) = f(x) = \alpha f(x)
+$$
+结论成立
+${n=2}$ 时， 由凸函数定义
+$$
+f(\alpha_{1} x_{1} + \alpha_{2} x_{2}) \geq
+\alpha_{1} f(x_{1}) + \alpha_{2} f(x_{2}),
+$$
+结论成立
+
+假设 ${n\geq 2}$ 时结论成立，考虑 ${n+1}$ 的情况
+因为 ${n=2}$ 时结论成立，故有
+$$
+\begin{array}{l}
+(\alpha_{n} + \alpha_{n+1}) f\left( \frac{\alpha_{n}}{\alpha_{n} + \alpha_{n+1}}x_{n} + \frac{\alpha_{n+1}}{\alpha_{n} + \alpha_{n+1}}x_{n+1} \right)  \\
+\geq (\alpha_{n} + \alpha_{n+1})  \left[ \frac{\alpha_{n}}{\alpha_{n} + \alpha_{n+1}} f(x_{n})  + \frac{\alpha_{n+1}}{\alpha_{n} + \alpha_{n+1}} f(x_{n+1})  \right] \\
+= \alpha_{n}f(x_{n}) + \alpha_{n+1}f(x_{n+1}).
+\end{array}
+$$
+根据假设，不等式对${k=n}$成立
+$$
+\begin{array}{l}
+f(\alpha_{1}x_{1}+\alpha_{2}x_{2}+\dots+\alpha_{n}x_{n} + \alpha_{n+1}x_{n+1}) \\
+= f\left[ \alpha_{1}x_{1}+\alpha_{2}x_{2}+\dots+(\alpha_{n} + \alpha_{n+1}) \left( \frac{\alpha_{n}}{\alpha_{n} + \alpha_{n+1}}x_{n} + \frac{\alpha_{n+1}}{\alpha_{n} + \alpha_{n+1}}x_{n+1} \right) \right] \\
+\geq \alpha_{1}f(x_{1}) + \alpha_{2}f(x_{2}) + \dots + (\alpha_{n} + \alpha_{n+1}) f\left( \frac{\alpha_{n}}{\alpha_{n} + \alpha_{n+1}}x_{n} + \frac{\alpha_{n+1}}{\alpha_{n} + \alpha_{n+1}}x_{n+1} \right)  \\
+\geq \alpha_{1}f(x_{1}) + \alpha_{2}f(x_{2}) + \dots + \alpha_{n} f(x_{n}) + \alpha_{n+1}f(x_{n+1}).
+\end{array}
+$$
+由数学归纳法知对任意自然数$n$，凸函数不等式均成立。
+证毕
+
+#### 证2
+当${n=1,2}$ 时，不等式显然成立
+假设对某自然数${n \geq 2}$时不等式成立
+考虑${n+1}$
+
+对 ${x_{1},x_{2},\dots,x_{n},x_{n+1}}$ 和正数 ${\alpha_{1},\alpha_{2},\dots,\alpha_{n},\alpha_{n+1}}$, ${(\alpha_{1}+\alpha_{2}+\dots+\alpha_{n}+\alpha_{n+1} = 1)}$
+令
+$$
+\begin{array}{l}
+\alpha = \alpha_{1} + \alpha_{2} + \dots + \alpha_{n}, \\
+\beta = \alpha_{n+1}, \\
+\overline{\alpha}_{i} = \frac{\alpha_{i}}{\alpha}, (i = 1,2,\dots,n), \\
+\overline{x}_{1} = \overline{\alpha}_{1}x_{1} + \overline{\alpha}_{2}x_{2} + \dots \overline{\alpha}_{n}x_{n}, \\
+\overline{x}_{2} = x_{n+1}.
+\end{array}
+$$
+由${n=2}$时凸性不等式成立知
+$$
+\begin{array}{l}
+f(\alpha_{1}x_{1}+\alpha_{2}x_{2}+\dots+\alpha_{n}x_{n}+\alpha_{n+1}x_{n+1}) \\
+= f(\alpha \overline{x}_{1} + \beta \overline{x}_{2})  
+\geq \alpha f(\overline{x}_{1}) + \beta f(\overline{x}_{2}),
+\end{array}
+$$
+其中 ${\beta f(\overline{x}_{2}) = \alpha_{n+1}f(x_{n+1})}$,
+由假设知
+$$
+\begin{align}
+\alpha f(\overline{x}_{1}) & = \alpha f(\overline{\alpha}_{1}x_{1} + \overline{\alpha}_{2}x_{2} + \dots + \overline{\alpha}_{n}x_{n}) \\
+  & \geq \alpha[\overline{\alpha}_{1}f(x_{1}) + \overline{\alpha}_{2}f(x_{2}) + \dots + \overline{\alpha}_{n}f(x_{n})] \\
+  & = \alpha_{1}f(x_{1}) + \alpha_{2}f(x_{2}) + \dots + \alpha_{n}f(x_{n}),
+\end{align}
+$$
+即有
+$$
+\begin{array}{l}
+f(\alpha_{1}x_{1}+\alpha_{2}x_{2}+\dots+\alpha_{n}x_{n} + \alpha_{n+1}x_{n+1}) \\
+\geq \alpha_{1}f(x_{1}) + \alpha_{2}f(x_{2}) + \dots + \alpha_{n} f(x_{n}) + \alpha_{n+1}f(x_{n+1}).
+\end{array}
+$$
+成立，由数学归纳法知，对任意自然数${n}$,（12）式都成立.
+证毕
+
+显然,若函数 ${f(x)}$ 是凸（凹）的，则函数${-f(x)}$是凹（凸）的, 反之亦然.
+所以${f(x)}$为凹函数时，对“${g(x) = -f(x)}$”用（12）式，立即可得
+$$
+\begin{array}{l}
+g(\alpha_{1}x_{1}+\alpha_{2}x_{2}+\dots+\alpha_{n}x_{n} + \alpha_{n+1}x_{n+1}) \\
+\leq \alpha_{1}g(x_{1}) + \alpha_{2}g(x_{2}) + \dots + \alpha_{n} g(x_{n}) + \alpha_{n+1}g(x_{n+1}).
+\end{array}
+$$
+
+对于凸性不等式(Jensen 不等式)
+只需对${\alpha_{i}}$的取法或${f(x)}$的含义赋予
+具体的规定，则立即可以收缩得到许多有用的结果.
+
+### 例60
+设 ${x_{i}>0,\alpha_{i}>0(i = 1,2,\dots,n)}$ 且 ${\sum_{i = 1}^{n}\alpha_{i} = 1}$，试证明
+$$
+\alpha_{1}x_{1} + \alpha_{2}x_{2} + \dots + \alpha_{n}x_{n} \geq
+x_{1}^{\alpha_{1}}\cdot x_{2}^{\alpha_{2}}\dots x_{n}^{\alpha_{n}}.
+$$
+
+#### 证
+设辅助函数 ${y = \ln x. (x>0)}$ . 
+因为 ${y'' = -\frac{1}{x^{2}}<0}$, 所以 ${y  = \ln x}$ 是凸的，
+$$
+\begin{array}{l}
+\ln (\alpha_{1}x_{1} + \alpha_{2}x_{2} + \dots + \alpha_{n}x_{n} ) \\
+\geq \alpha_{1} \ln(x_{1}) + \alpha_{2} \ln(x_{2}) + \dots \alpha_{n} \ln x_{n} \\
+= \ln (x_{1}^{\alpha_{1}}\cdot x_{2}^{\alpha_{2}}\dots x_{n}^{\alpha_{n}})
+\end{array}
+$$
+由此得
+$$
+\alpha_{1}x_{1} + \alpha_{2}x_{2} + \dots + \alpha_{n}x_{n} \geq
+x_{1}^{\alpha_{1}}\cdot x_{2}^{\alpha_{2}}\dots x_{n}^{\alpha_{n}}.
+$$
+证毕
+
+对上例结论， 令 ${\alpha_{i} = \frac{1}{n} (i = 1,2,\dots,n)}$ 时，有
+$$
+\frac{x_{1}+x_{2}+\dots+x_{n}}{n} \geq
+\sqrt[n]{ x_{1}x_{2}\dots x_{n} }.
+(x_{i}>0,i=1,2,\dots,n)
+$$
+
+为了符合实际中的使用，对于凸（凹）函数在使用（12）.（13）式时的规定
+${\sum_{i = 1}^{n}\alpha_{i} = 1}$, 往往感到不方便而希望能给以改进.
+为此,
+对任意$n$个正数$a_{i}(i=1,2,\dots)$, 令
+$$
+\alpha_{i} = \frac{a_{i}}{a_{1}+a_{2}+\dots+a_{n}}, (i=1,2,\dots,n)
+$$
+将上式代入（12）、（13）时，就可得到更为一般的结果.
+当${f(x)}$为凸函数时，有
+$$
+f\left( \frac{\sum a_{i}x_{i}}{\sum a_{i}} \right) \geq
+\frac{\sum a_{i} f(x_{i})}{\sum a_{i}},
+$$
+当${f(x)}$为凹函数时，有
+$$
+f\left( \frac{\sum a_{i}x_{i}}{\sum a_{i}} \right) \leq
+\frac{\sum a_{i} f(x_{i})}{\sum a_{i}},
+$$
+
+### 例61 
+证明 柯西-赫勒德尔不等式 
+$$
+\sum a_{i}b_{i} \leq \left( \sum a_{i}^{k} \right)^{1/k} \left( \sum b_{i}^{k/(k-1)} \right)^{(k-1)/k}.
+$$
+其中 ${a_{i}>0,b_{i}>0,k>1}$
+#Cauchy-Holder
+#Cauchy-Holder不等式
+
+#### 证
+设辅助函数 ${y = x^{k}, (x>0,k>1)}$. 因为
+$$
+y'' = k(k-1)x^{k-2} > 0,
+$$
+故 ${y = x^{k}(x>0,k>1)}$ 为凹函数。
+$$
+\left( \frac{\sum c_{i}x_{i}}{\sum c_{i}}  \right)^{k} \leq
+\frac{\sum c_{i}x_{i}^{k}}{\sum c_{i}}  
+\quad (c_{i} > 0)
+$$
+即
+$$
+\left( \sum c_{i}x_{i}  \right)^{k} \leq
+\left( \sum c_{i} \right)^{k-1} \sum c_{i}x_{i}^{k}
+$$
+令
+$$
+c_{i} = b_{i}^{k/(k-1)},
+x_{i} = \frac{a_{i}}{b_{i}^{1/(k-1)}},
+$$
+则有
+$$
+\left( \sum a_{i}b_{i} \right)^{k} \leq
+\left( \sum b_{i}^{k/(k-1)} \right)^{k-1} \sum a_{i}^{k},
+$$
+$$
+\sum a_{i}b_{i} \leq \left( \sum a_{i}^{k} \right)^{1/k} \left( \sum b_{i}^{k/(k-1)} \right)^{(k-1)/k}.
+$$
+证毕
+
+上例中令 ${k=2}$，就有
+$$
+a_{1}b_{1}+a_{2}b_{2}+\dots a_{n}b_{n} \leq \sqrt{ (a_{1}^{2}+a_{2}^{2}+\dots +a_{n}^{2})(b_{1}^{2}+b_{2}^{2}+\dots+b_{n}^{2}) }
+$$
+其中 ${a_{i}>0,b_{i}>0(i=1,2,\dots,n)}$
+等号成立当且仅当对应项成比例
+$$
+\frac{a_{1}}{b_{1}} = \frac{a_{2}}{b_{2}} = \dots=\frac{a_{n}}{b_{n}}
+$$
+${n=3}$ 
+$$
+\mathbf{a} = \{ a_{1},a_{2},a_{3} \},
+\mathbf{b} = \{ b_{1},b_{2},b_{3} \}
+$$
+不等式左边为数量积 ${\mathbf{a\cdot b}}$
+右边为 ${\mathbf{a}, \mathbf{b}}$ 模得乘积 ${\left| \mathbf{a} \right| \left| \mathbf{b} \right|}$
+由于
+$$
+\mathbf{a}\cdot \mathbf{b} = |\mathbf{a}| |\mathbf{b}|
+\cos(\mathbf{a},\mathbf{b}),
+$$
+其中 ${\cos(\mathbf{a},\mathbf{b}) \leq 1}$ 
+${n=3}$ 时该式有明显几何意义。
+
+## 3. 情境的推广
+
+### 例62
+
+平面上重叠放有两个边长为 $1$ 的正方形 $S_{1}$ 和 ${S_{2}}$，
+现将 ${S_{2}}$ 平移得到正方形 ${S_{t}}$. 记 ${S_{t}}$ 的中心点为点 ${t}$
+如果 $S_{1}$ 与 ${St}$ 公共部分 ${\left( S_{1} \bigcap S_{t} \right)}$ 重叠的面积不小于 ${\frac{1}{2}}$ ,
+求动点 ${t}$ 变动范围的面积.
+
+![[qianchangben_calculus_006-.png]]
+#### 解
+取坐标系，使原点在 $S_{1}$ 中心且ox轴平行于${S_{1}}$的一组对边.
+由于$S_{1}$关于ox轴、oy轴对称,
+故只须讨论点方在第一象限的情况.
+设点$t$坐标为${(x,y)}$, 则 $S_{1}$ 与$S_{2}$重叠部分的面积为
+$$
+(1-x)(1-y).
+$$
+故 ${t(x,y)}$ 应满足
+$$
+(1-x)(1-y) \geq \frac{1}{2}.
+$$
+从而知点${t}$在第一象限活动范围的边界为双曲线
+$$
+y = 1 - \frac{1}{2(1-x)},
+$$
+它与两坐标轴交于 ${\left( \frac{1}{2}, 0 \right), \left( 0, \frac{1}{2} \right)}$，且曲线为凸，参见图6-1.
+由对称性知所求面积为
+$$
+A = 4 \int_{0}^{1/2} \left[ 1- \frac{1}{2(1-x)} \right] \, \mathrm{d}x = 2 - \ln 4.
+$$
+所以动点 ${t}$ 活动范围是
+$$
+(1-|x|)(1-|y|) \geq \frac{1}{2}
+$$
+其所占的面积为${2 - \ln 4}$.
+解毕
+
+推广到三维空间
+
+### 例63
+设${V_{1}}$是中心在坐标原点且各个面分别平行于坐标面的单位正方体.
+${V_{t}}$是由原处在${V_{1}}$位置，后平移为中心至点${t}$的单位正方体.
+如果${V_{1}}$与${V_{t}}$公共部分的体积恒等于常数${a(0<a<1)}$,
+求${V_{t}}$的中心点$t$的轨迹方程及该轨迹所围成立体的体积.
+
+#### 解
+由对称性知，只需讨论动点${t}$在第一卦限内的情况,
+令点$t$坐标为${(x,y,z)}$，其中${0\leq x,y,z < 1}$,
+易见, ${V_{t}}$ 与 ${V_{1}}$ 的公共部分为一个长方体,其三棱分别为${(1-x),(1-y),(1-z)}$,故动点 $t$ 的坐标应满足方程
+$$
+(1-x)(1-y)(1-z) = a
+$$
+于是点上的轨迹为曲面
+$$
+(1-|x|)(1-|y|)(1-|z|) = a.
+$$
+它在第一卦限部分的方程为
+$$
+z = 1 - \frac{a}{(1-x)(1-y)},
+$$
+且在xoy平面的投影域 $D$ 的边界由 ${y = 1-\frac{a}{1-x}}$ 与 ${x}$ 轴及 ${y}$ 轴
+所围成，参见图6-2.由对称性知动点 $t$ 的轨迹所围立体的体积为
+
+$$
+\begin{align}
+V(a) & = 8 \iint_{D} z \mathrm{d}x\mathrm{d}y \\
+  & = 8 \int_{0}^{1-a}  \, \mathrm{d}x \int_{0}^{1-a/(1-x)} \left[ 1- \frac{a}{(1-x)(1-y)} \right] \, \mathrm{d}y  \\
+  & = 8 - 8a + 8a \ln a - 4a \ln^{2}a.
+\end{align}
+$$
+解毕
+
+单位正方形”改为“平行四边形”，则推广得到下面的问题.
+
+### 例64
+
+  
+  
+
+对某些问题的推广往往要依赖于问题的解法
+
+### 例65
