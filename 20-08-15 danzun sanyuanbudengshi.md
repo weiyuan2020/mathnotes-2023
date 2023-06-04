@@ -1,23 +1,37 @@
-$a,b,c > 0$ $$\begin{gathered}
-    a^2+b+c=11 \label{01}\\
-    abc=3\label{02}\end{gathered}$$ 证明 $$\begin{gathered}
+$a,b,c > 0$ 
+$$
+\begin{gathered}
+    a^2+b+c=11 \\
+    % \label{01}\\
+    abc=3
+    % \label{02}
+\end{gathered}
+$$
+ 证明 
+$$
+\begin{gathered}
         \sqrt{a+b}+\sqrt{a+c}+\sqrt{b+c} \ge 4+\sqrt{2}
-        \label{key-3}
-    \end{gathered}$$ 解： $a=3,b=c=1$，此时
-(\[\[key-3\]](#key-3){reference-type="ref" reference="key-3"})中等号成立
+        % \label{key-3}
+    \end{gathered}
+$$
+解： $a=3,b=c=1$，此时3式中等号成立
 
 仍用枚举法
 
-已知$a\le 3$（否则(\[\[01\]](#01){reference-type="ref"
-reference="01"}),(\[\[02\]](#02){reference-type="ref"
-reference="02"})不能同时成立）--\> why?
+已知$a\le 3$（否则1,2不能同时成立）--\> why?
 
-1\. 若$a\le 1$ 则 $$\begin{gathered}
+1\. 若$a\le 1$ 则 
+$$
+\begin{gathered}
     b+c = 11 - a^2 \ge 10\\
     (\sqrt{a+b}+\sqrt{a+c})^2 =2a+b+c+2\sqrt{a+b}\sqrt{a+c}>b+c \ge 10 \\
-    \sqrt{a+b} + \sqrt{a+c}+\sqrt{b+c}\ge \sqrt{10}+\sqrt{10} = 2\sqrt{10}>4+\sqrt{2}\end{gathered}$$
+    \sqrt{a+b} + \sqrt{a+c}+\sqrt{b+c}\ge \sqrt{10}+\sqrt{10} = 2\sqrt{10}>4+\sqrt{2}\end{gathered}
+$$
 
-2\. 若$1<a\le 3$， 则 $$\begin{gathered}
+
+2\. 若$1<a\le 3$， 则 
+$$
+\begin{gathered}
     b+c = 11-a^2 \ge 2, \quad  bc = \frac{3}{a}\ge 1\\
     \text{let} x=a+b, y=a+c\\
     x+y = 2a+b+c = 2a+11-a^2\\
@@ -26,4 +40,6 @@ reference="02"})不能同时成立）--\> why?
     \therefore \sqrt{x}+\sqrt{y} = \sqrt{(\sqrt{x}+\sqrt{y})^2}\ge \sqrt{2a+11-a^2+2(a+1)}\\
     \sqrt{2a+11-a^2+2(a+1)} = \sqrt{13-a^2+4a} = \sqrt{17-(a-2)^2}\\
     -1<a-2\le 1\quad (a-2)^2 \le 1 \quad 17-(a-2)^2 \ge 16 \therefore \sqrt{x}+\sqrt{y}\ge 4\\
-    \therefore  \sqrt{a+b}+\sqrt{a+c}+\sqrt{b+c} \ge 4+\sqrt{2}\end{gathered}$$
+    \therefore  \sqrt{a+b}+\sqrt{a+c}+\sqrt{b+c} \ge 4+\sqrt{2}\end{gathered}
+$$
+

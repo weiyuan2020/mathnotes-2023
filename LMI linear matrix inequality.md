@@ -1,42 +1,78 @@
 LMI, 全称 Linear Matrix Inequality。指的是一种矩阵线性不等式的形式。可以写成：
+
 $$
+
 LMI(y)=A_0+A_1y_1+A_2y_2+A_3y_3+\dots\geqslant 0
+
 $$
+
  
 
 首先，LMI 需要跟Lyapunov稳定判据联系起来：在Lyapunov 稳定判据里，假设一个正定的 Lyapunov functional candidate是  V>0, 如果能找到$\dot{V}<0$, 则可以证明该系统的稳定性. 举一个简单的例子, 假设一个线性状态空间的动态系统可以描述为:
-$$
-\dot{x}=Ax+Bu
+
 $$
 
-假设一个反馈控制：
+\dot{x}=Ax+Bu
+
 $$
-u=-Kx$$
+
+
+假设一个反馈控制：
+
+$$
+
+u=-Kx
+$$
+
  又假设一个Lyapunov functional candidate 为:
-$$V(x)=x^TPx$$
+
+$$
+V(x)=x^TPx
+$$
+
  其中P正定且对称：$P\succ 0$ (P的所有的特征根大于零)$P=P^T$
  
 
 
 则Lyapunov functional candidate的导数为：
-$$ \dot{V}(x) =x^TP\dot{x}+\dot{x}^TPx=x^TP(A-BK)x+x^T(A-BK)^TPx=-x^TQx $$
+
+$$
+ \dot{V}(x) =x^TP\dot{x}+\dot{x}^TPx=x^TP(A-BK)x+x^T(A-BK)^TPx=-x^TQx 
+$$
+
  
-其中:$$Q=-(A^TP+PA-PBK-K^TB^TP$$
+其中:
+$$
+Q=-(A^TP+PA-PBK-K^TB^TP
+$$
+
 
 为了证明该系统稳定，需要满足：
 $\dot{V} (x)<0 $, 也可以说如果能证明 $Q\succ0$, 能说明系统渐进稳定（A.S.）。
  
 
 如果考虑最优控制器(此处省略了Optimal Control里的LQR Linear Quadratic Regulator的ARE Algebraic Ricatti Equation，详细请参考。相应的，一般会假定前提矩阵R满足：$R=R^T\succ 0$ 并且$R^{-1}$存在且有界, 也即
-$$K=-\frac{1}{2}R^{-1}B^TP$$
-原式子则可以写成： $$A^TP+PA+PBR^{-1}B^TP<0$$
-而此时引入LMI的目的在于可以通过一个矩阵的形式来对这个复杂的不等式进行判定。通过一些不等式等价引理，可以化解成一个相对简洁的线性矩阵不等式的形式。对于上述不等式，可以使用Schur Complement 对其进行化简，得到：$$
+
+$$
+K=-\frac{1}{2}R^{-1}B^TP
+$$
+
+原式子则可以写成： 
+$$
+A^TP+PA+PBR^{-1}B^TP<0
+$$
+
+而此时引入LMI的目的在于可以通过一个矩阵的形式来对这个复杂的不等式进行判定。通过一些不等式等价引理，可以化解成一个相对简洁的线性矩阵不等式的形式。对于上述不等式，可以使用Schur Complement 对其进行化简，得到：
+$$
+
  
   \left[ {\begin{array}{cc}
     -A^TP-PA & PB \\
     B^TP & R \\
   \end{array} } \right]>0
+
 $$
+
 而左边的矩阵可以写成线性的形式，可以很方便的通过软件包进行数值求解。
 
 ---

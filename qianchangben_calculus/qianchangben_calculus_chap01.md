@@ -6,15 +6,18 @@
 达到一个不易即时到达的目标，然而，这样一条通向目标的路又
 该如何去寻找?让我们从具体问题谈起.
 
-::: example
+example
 有没有自然数$n$使得式子$(2+\sqrt{2})^n$的值的小数部分大于
 $0.\underbrace{99\cdots 9}_{100\text{个}9}$ 的使用 使下大括号对齐
 
-$$\begin{aligned}
+
+$$
+\begin{aligned}
     0=    \underbrace{\vphantom{\frac{a}{b}}a\times b}_{ab} & +\underbrace{\vphantom{\frac{a}{b}}\frac{a}{b}}_{a/b}\\
     0=    \underbrace{a\times b}_{ab} & +\underbrace{\vphantom{\frac{a}{b}}\frac{a}{b}}_{a/b}\\
-  \end{aligned}$$
-:::
+  \end{aligned}
+$$
+
 
 【分析问题】
 
@@ -36,11 +39,15 @@ $(2+\sqrt{2})^n$ 的值从小的方向非常接近某一整数?\"
 分，从中考察找出熟悉的、可能有用的部分，自然会想到二项式
 展开定理，让我们不妨试试看
 
-$$\begin{aligned}
+
+$$
+\begin{aligned}
     (2+\sqrt{2})^2
         &= \sum_{i=0}^{n}C_n^i 2^{n-i} (\sqrt{2})^i\\
         &=2^n+n2^{n-1}\sqrt{2} + \frac{1}{2}n(n-1)2^{n-2}(\sqrt{2})^2\\
-        &\quad\; +\dots+ (\sqrt{2})^n,\end{aligned}$$
+        &\quad\; +\dots+ (\sqrt{2})^n,\end{aligned}
+$$
+
 
 观察展开式发现:第奇数项(即 $i$ 取 $0$ 或偶数时的对应项)皆为整 数;
 而其余项皆为非整数.
@@ -48,7 +55,11 @@ $$\begin{aligned}
 我们将展开式中所有整数项的和记为 $A_n$ ,而将所有非整数的 项的和记为
 $B_n$ , 于是
 
-$$(2+\sqrt{2})^n = A_n+B_n$$
+
+$$
+(2+\sqrt{2})^n = A_n+B_n
+$$
+
 
 的小数部分就是 $B_n$ 的小数部分.这点使人想到\"欲使 $(2+\sqrt{2})^n$
 的值非常接近某整数,只需使 $B_n$ 的值非常接近另一个整数.\" 但
@@ -58,55 +69,89 @@ $$(2+\sqrt{2})^n = A_n+B_n$$
 重新编码考虑,可能会想到\" $A_n$ 是整数, $B_n$ 非常接近某整数,则 $A_n$ 与
 $B_n$ 之差就一定非常接近另一个整数.\" 为此,考察 $A_n-B_n$ 有
 
-$$A_n - B_n = \sum_{i=0}^{n}C_n^i 2^{n-i} (-\sqrt{2})^i = (2-\sqrt{2})^n >0.$$
+
+$$
+A_n - B_n = \sum_{i=0}^{n}C_n^i 2^{n-i} (-\sqrt{2})^i = (2-\sqrt{2})^n >0.
+$$
+
 
 从而知 $A_n > B_n$ .又因 $0<2-\sqrt{2}<1$ ,故 $n$ 增大时,
 $(2-\sqrt{2})^n$ 变小,并有
 
-$$\lim_{n \to \infty} (2-\sqrt{2})^n = 
-  \lim_{n \to \infty} (A_n - B_n) = 0.$$
+
+$$
+\lim_{n \to \infty} (2-\sqrt{2})^n = 
+  \lim_{n \to \infty} (A_n - B_n) = 0.
+$$
+
 
 到此，我们碰到了好运气!因为上式告诉了如下的事实:当\"增 大时, $B_n$
 可以接近 $A_n$ 并且可以达到任意指定的接近程度!于是，
 可以断言必定存在自然数 $n$ 使
 
-$$0<A_n - B_n<10^{-100}.$$
+
+$$
+0<A_n - B_n<10^{-100}.
+$$
+
 
 经以上的分析，把握了问题的本质，为具体求解过程的实现 奠定了基础.
 
 记 $(2+\sqrt{2})^n$ 展开式中所有值为整数的项之和为 $A_n$
 剩余所有项之和为 $B_n$ ,于是
 
-$$(2+\sqrt{2})^n = A_n + B_n$$
 
-因为 $0<(2-\sqrt{2})^n = A_n - B_n$ ,故 $$\label{eq:001}
-  A_n>B_n>0$$ 又因为 $0<2-\sqrt{2}<0.6$ ,故有
+$$
+(2+\sqrt{2})^n = A_n + B_n
+$$
 
-$$\lim_{n \to \infty} (A_n-B_n) = 
-  \lim_{n \to \infty} (2-\sqrt{2})^n = 0$$
+
+因为 $0<(2-\sqrt{2})^n = A_n - B_n$ ,故 
+$$
+% \label{eq:001}
+  A_n>B_n>0
+$$
+ 又因为 $0<2-\sqrt{2}<0.6$ ,故有
+
+
+$$
+\lim_{n \to \infty} (A_n-B_n) = 
+  \lim_{n \to \infty} (2-\sqrt{2})^n = 0
+$$
+
 
 由极限定义知,对 $\varepsilon=10^{-100}$ 必存在自然数 $N$ , 当 $n>N$
 时,有
 
-$$\label{eq:002}
-  A_n-B_n<10^{-100}$$
 
-因为 $A_n$ 为整数,考虑到[\[eq:001\]](#eq:001){reference-type="ref"
-reference="eq:001"},[\[eq:002\]](#eq:002){reference-type="ref"
-reference="eq:002"}两式就有
+$$
+% \label{eq:002}
+  A_n-B_n<10^{-100}
+$$
 
-$$=A_n-1$$
+
+因为 $A_n$ 为整数,考虑到1,2两式就有
+
+
+$$
+=A_n-1
+$$
+
 
 (符号$[\quad]$表示取整运算，即$[x]$表示不大于$x$的最大整数.) 于是,当
 $n>N$ 时，有
 
+
 $$
+
 \begin{array}{l}
 (2+\sqrt{2})^n \text{小数部分的值}&=(A_n+B_n)-[A_n+B_n]\\
 &= B_n-[B_n] = B_n - (A_n-1)\\
 &= 1-(A_n-B_n)>1-10^{-100}\\
 &=0.\underbrace{99\cdots 9}_{100\text{个}9}\end{array}
+
 $$
+
 
 从而知,存在自然数，使$(2+\sqrt{2})^n$的小数部分大于
 
@@ -127,33 +172,52 @@ $k,m$ 满足 $0<k-\sqrt{m}<1$ .
 
 让我们遵照例1解答的程序再做几个题.
 
-#### ::: example
+#### example
 讨论数列 $\sqrt{7},\sqrt{7-\sqrt{7}},\sqrt{7-\sqrt{7+\sqrt{7}}},$
 $\sqrt{7-\sqrt{7+\sqrt{7-\sqrt{7}}}},\dots$的极限
-:::
 
 为讨论方便，不妨记数列为 $\{a_n\}$ ,观察所给的数列，易见当$n\geqslant 3$
 时有递推式
 
-$$a_n = \sqrt{7-\sqrt{7+a_{n-2}}}.$$
+
+$$
+a_n = \sqrt{7-\sqrt{7+a_{n-2}}}.
+$$
+
 
 该式反映了数列的结构，它对求解必有重用. 回想以往是否做过类似题目,有,譬如
 "讨论数列$\sqrt{2},\sqrt{2+\sqrt{2}},$
 $\sqrt{2+\sqrt{2+\sqrt{2}}},\dots$，的极限." 我们是这样解答 的:
 "记数列为 $\{b_n\}$ 有 $b_{n+1}=\sqrt{2+b_n}$ . 因为 $b_1 = \sqrt{2}<2$
-,且假若 $b_n<2$,则必有 $$b_{n+1}=\sqrt{2+b_n}<\sqrt{2+2}=2.$$ 故 $b_n<2$
+,且假若 $b_n<2$,则必有 
+$$
+b_{n+1}=\sqrt{2+b_n}<\sqrt{2+2}=2.
+$$
+ 故 $b_n<2$
 ,即$\{b_n\}$有界.又因为 $0 <b_n< 2$ , 故有
 
-$$b_{n+1}=\sqrt{2+b_n}>\sqrt{b_n+b_n}=\sqrt{2b_n}>\sqrt{b_n^2}=b_n,$$
+
+$$
+b_{n+1}=\sqrt{2+b_n}>\sqrt{b_n+b_n}=\sqrt{2b_n}>\sqrt{b_n^2}=b_n,
+$$
+
 
 即 $\{b_n\}$ 单调增. 由单调有界必有极限知 $\{b_n\}$ 有极限存在,设其为
 $B$. 对 $b_{n+1} = \sqrt{2+b_n}$ 两边取 $n\rightarrow \infty$
 时的极限,有
 
-$$B = \sqrt{2+B}.$$
+
+$$
+B = \sqrt{2+B}.
+$$
+
 
 解之得 $B=2$ . 故 $\{b_n\}$ 极限为2.\"
 
 例2能否摹仿上述解法呢? 易见 $\{a_n\}$ 是有界的，因为
-$$0< a_1 \leqslant \sqrt{7}, 
-  0< a_2 \leqslant \sqrt{7}$$
+
+$$
+0< a_1 \leqslant \sqrt{7}, 
+  0< a_2 \leqslant \sqrt{7}
+$$
+

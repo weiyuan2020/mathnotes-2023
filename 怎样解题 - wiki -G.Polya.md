@@ -2,8 +2,6 @@
 
 维基百科，自由的百科全书
 
-[跳到导航](https://zh.wikipedia.org/wiki/%E6%80%8E%E6%A0%B7%E8%A7%A3%E9%A2%98#mw-head)[跳到搜索](https://zh.wikipedia.org/wiki/%E6%80%8E%E6%A0%B7%E8%A7%A3%E9%A2%98#searchInput)
-
 **《怎样解题》**（英文：_How to Solve It_）是由[匈牙利](https://zh.wikipedia.org/wiki/%E5%8C%88%E7%89%99%E5%88%A9 "匈牙利")数学[乔治·波利亚](https://zh.wikipedia.org/wiki/%E4%B9%94%E6%B2%BB%C2%B7%E6%B3%A2%E5%88%A9%E4%BA%9A "乔治·波利亚")写的一本解题手册，其中有很多[解决问题](https://zh.wikipedia.org/wiki/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98 "解决问题")的方法。[[1]](https://zh.wikipedia.org/wiki/%E6%80%8E%E6%A0%B7%E8%A7%A3%E9%A2%98#cite_note-P%C3%B3lya,1945-1)
 
 ## 目录

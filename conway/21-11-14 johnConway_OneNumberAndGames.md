@@ -11,58 +11,81 @@ All numbers are constructed in this way.\
 
 If $x\in\{L|R\}$ we write $x^L$ for the typical member of L, and $x^R$
 for the typical member of $\mathbb{R}$. For $x$ itself we then write
-$\{x^L|x^R\}$ $$\begin{gathered}
-    x = \{ a,b,c,\dots | d,e,f,\dots \}\end{gathered}$$ means that
+$\{x^L|x^R\}$ 
+$$
+\begin{gathered}
+    x = \{ a,b,c,\dots | d,e,f,\dots \}\end{gathered}
+$$
+ means that
 $x\in \{L|R\}$, where $a,b,c,\dots$ are the typical members of $L$, and
 $d,e,f,\dots$ the typical members of $R$\
 
 ## Definitions
 
-::: myDef
-**Definition 1.1**. *$x \ge y, x \le y$\
-$$\begin{gathered}
-        x \ge y \quad \iff \text{no } x^R \le y \text{ and } x \le \text{ no } y^L\\
-    \end{gathered}$$ and $x\le y \iff y\ge x$ We write $x\ngeq y$ to
-mean that $x \le y$ does not hold*
-:::
 
-::: myDef
+**Definition 1.1**. *$x \ge y, x \le y$\
+
+$$
+\begin{gathered}
+        x \ge y \quad \iff \text{no } x^R \le y \text{ and } x \le \text{ no } y^L\\
+    \end{gathered}
+$$
+ and $x\le y \iff y\ge x$ We write $x\ngeq y$ to
+mean that $x \le y$ does not hold
+
+
 **Definition 1.2**. *$x=y, x>y, x<y$\
-$$\begin{gathered}
+
+$$
+\begin{gathered}
         x = y \iff x\ge y \quad\text{and}\quad y \ge x\\
         x > y \iff x\ge y \quad\text{and}\quad y \ngeq x\\
         x < y \iff y>x\\        
-    \end{gathered}$$*
-:::
+    \end{gathered}
+$$
 
-::: myDef
+
+
 **Definition 1.3**. *$x+y$\
-$$\begin{gathered}
+
+$$
+\begin{gathered}
         x+y = \{x^L+y , x+y^L | x^R+y, x+y^R\}
-    \end{gathered}$$*
-:::
+    \end{gathered}
+$$
 
-::: myDef
+
+
 **Definition 1.4**. *$-x$\
-$$\begin{gathered}
-            -x = \{ -x^R | -x^L \}
-        \end{gathered}$$*
-:::
 
-::: myDef
+$$
+\begin{gathered}
+            -x = \{ -x^R | -x^L \}
+        \end{gathered}
+$$
+
+
+
 **Definition 1.5**. *$x\cdot y$\
-$$\begin{gathered}
+
+$$
+\begin{gathered}
             x\cdot y = \{x^L+y+xy^L-x^Ly^L, x^Ry+xy^R-x^Ry^R|\\
             \qquad\quad x^Ly+xy^R-x^Ly^R, x^Ry+xy^L-x^Ry^L\}
-        \end{gathered}$$*
-:::
+        \end{gathered}
+$$
 
-::: proof
-*Proof.* $$\begin{gathered}
+
+
+*Proof.* 
+$$
+\begin{gathered}
             xy>x^Ly+xy^L-x^Ly^L\\
             \because    (x-x^L)(y-y^L)>0
-        \end{gathered}$$ ◻
-:::
+        \end{gathered}
+$$
+ ◻
+
 
 We now comment on definitions. A most importatn comment whose logical
 effects will be discussed later is that *the notion if equality is a
@@ -119,7 +142,11 @@ the left) and $-x^L$(on the right), which suffice to define $-x$.
 It is not nearly so easy to find exactly what we \"already\" know about
 $xy$. It might seem, for instance, that we know that $xy$ lies between
 $x^Ly$ and $xy^L$(on the left) and $x^Ry$ and $xy^R$ (on the right),
-which would yeild the definition $$xy=\{x^L,y, xy^L| x^Ry,xy^R\}.$$
+which would yeild the definition 
+$$
+xy=\{x^L,y, xy^L| x^Ry,xy^R\}.
+$$
+
 
 But this fails in two ways. Firstly what we \"knew\" here is sometimes
 false(consider negative numbers), and secondly, even when it is true it
@@ -205,9 +232,9 @@ no $y^L$, then $x \ge y$ holds vacuously.
 
 We forgot to check that $1 \ge 1$. Why not do this yourself.
 
-::: proof
+
 *Proof.* Is $1 \ge 1$? This will happen unless there is $1^R \le 1$ or
 $1^L \le 1$. By the definition, 1 = {0\|}, so $1^L = 0$ and
 $1^R = \emptyset$. $1^R \le 1$ is $\emptyset le 1$(there is),
 $1^L \le 1$ is $0 \le 1$(there is). So we have $1 \ge 1$. ◻
-:::
+

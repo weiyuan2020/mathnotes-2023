@@ -105,5 +105,5 @@ Otherwise $A \neq B$.
 <!-- ::: mydef -->
 []{#mydef:1.4 label="mydef:1.4"} Throughout Chap.
 \[\[chap:01\]](#chap:01){reference-type="ref" reference="chap:01"}, the
-set of all rational numbers will be denoted by $\Q$.
+set of all rational numbers will be denoted by $\mathbb Q$.
 <!-- ::: -->

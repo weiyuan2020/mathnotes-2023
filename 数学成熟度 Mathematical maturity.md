@@ -2,7 +2,6 @@
 
 维基百科，自由的百科全书
 
-[跳转到导航](https://en.wikipedia.org/wiki/Mathematical_maturity#mw-head) [跳转到搜索](https://en.wikipedia.org/wiki/Mathematical_maturity#searchInput)
 
 在数学中， **数学成熟度** 是一个 [非正式的术语](https://en.wikipedia.org/wiki/Mathematical_jargon "数学术语") ，通常用于指对 [数学家](https://en.wikipedia.org/wiki/Mathematician "数学家") 操作和交流方式的一般理解和掌握的质量。 它涉及无法直接教授的数学经验和洞察力的混合物。 相反，它来自反复接触数学概念。 它是衡量数学学生在 [数学结构](https://en.wikipedia.org/wiki/Mathematical_structure "数学结构") 和方法方面的博学程度，可以与数学直觉和数学能力等其他相关概念重叠。 这个话题有时也会在文学作品中单独提及。 [[1]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-1) [[2]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:0-2)
 
