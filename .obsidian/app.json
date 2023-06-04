@@ -7,5 +7,7 @@
   "readableLineLength": true,
   "newFileLocation": "current",
   "newFileFolderPath": "attachments",
-  "promptDelete": false
+  "promptDelete": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }
