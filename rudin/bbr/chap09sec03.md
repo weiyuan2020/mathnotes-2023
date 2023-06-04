@@ -4,8 +4,9 @@ We now interrupt our discussion of differentiation to insert a fixed
 point theorem that is valid in arbitrary complete metric spaces. It will
 be used in the proof of the inverse function theorem.
 
-<!-- ::: mydef -->
-[]{#mydef:9.22 label="mydef:9.22"} Let $X$ be a metric space, with
+
+### mydef:9.22 
+ Let $X$ be a metric space, with
 metric $d$. If $\phi$ maps $X$ into $X$ and if there is a number $c < 1$
 such that 
 \label{eq:9.43}
@@ -16,10 +17,11 @@ $$
 $$
  for all $x, y \in X$, then
 $\phi$ is said to be a contraction of $X$ into $X$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.23 label="thm:9.23"} If $X$ is a complete metric space, and if
+
+
+### thm:9.23 
+ If $X$ is a complete metric space, and if
 $\phi$ is a contraction of $X$ into $X$, then there exists one and only
 one $x \in X$ such that $\phi(x) = x$.
-<!-- ::: -->
+

@@ -1,35 +1,40 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:9.1 label="ex:9.1"} If $S$ is a nonempty subset of a vector space
+
+### ex:9.1 
+ If $S$ is a nonempty subset of a vector space
 $X$, prove (as asserted in Sec.
 \[\[mydef:9.1\]](#mydef:9.1){reference-type="ref" reference="mydef:9.1"})
 that the span of $S$ is a vector space.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.2 label="ex:9.2"} Prove (as asserted in Sec.
+
+
+### ex:9.2 
+ Prove (as asserted in Sec.
 \[\[mydef:9.6\]](#mydef:9.6){reference-type="ref" reference="mydef:9.6"})
 that $BA$ is linear if $A$ and $B$ are linear transformations.
 
 Prove also that $A^{- 1}$ is linear and invertible.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.3 label="ex:9.3"} Assume $A \in  L(X, Y)$ and
+
+
+### ex:9.3 
+ Assume $A \in  L(X, Y)$ and
 $A\mathbf{x}= \mathbf{0}$ only when $\mathbf{x}= \mathbf{0}$. Prove that
 $A$ is then 1-1.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.4 label="ex:9.4"} Prove (as asserted in Sec.
+
+
+### ex:9.4 
+ Prove (as asserted in Sec.
 \[\[mydef:9.30\]](#mydef:9.30){reference-type="ref"
 reference="mydef:9.30"}) that null spaces and ranges of linear
 transformations are vector spaces.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.5 label="ex:9.5"} Prove that to every $A \in L(\mathbb{R}^n, \mathbb{R}^1)$
+
+
+### ex:9.5 
+ Prove that to every $A \in L(\mathbb{R}^n, \mathbb{R}^1)$
 corresponds a unique $\mathbf{y} \in \mathbb{R}^n$ such that
 $A\mathbf{x = x \cdot y}$.
 
@@ -37,10 +42,11 @@ Prove also that $\left\| A \right\| = \left| \mathbf{y} \right|$.
 
 *Hint:* Under certain conditions, equality holds in the Schwarz
 inequality.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.6 label="ex:9.6"} If $f (0, 0) = 0$ and
+
+
+### ex:9.6 
+ If $f (0, 0) = 0$ and
 
 $$
 f(x, y) = \frac{xy}{x^2 + y^2} \quad\text{if } (x, y) \neq (0, 0),
@@ -48,33 +54,37 @@ $$
 
 prove that $(D_1f)(x, y)$ and $(D_2f)(x, y)$ exist at every point of
 $\mathbb{R}^2$, although $f$ is not continuous at $(0, 0)$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.7 label="ex:9.7"} Suppose that $f$ is a real-valued function
+
+
+### ex:9.7 
+ Suppose that $f$ is a real-valued function
 defined in an open set $E \subset \mathbb{R}^n$, and that the partial
 derivatives $D_1f, \dots , D_nf$ are bounded in $E$. Prove that $f$ is
 continuous in $E$.
 
 *Hint:* Proceed as in the proof of Theorem
 \[\[thm:9.21\]](#thm:9.21){reference-type="ref" reference="thm:9.21"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.8 label="ex:9.8"} Suppose that $f$ is a differentiable real
+
+
+### ex:9.8 
+ Suppose that $f$ is a differentiable real
 function in an open set $E \subset \mathbb{R}^n$, and that $f$ has a local
 maximum at a point $\mathbf{x} \in E$. Prove that $f'(\mathbf{x}) = 0$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.9 label="ex:9.9"} If $\mathbf{f}$ is a differentiable mapping
+
+
+### ex:9.9 
+ If $\mathbf{f}$ is a differentiable mapping
 of a open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$, and if
 $\mathbf{f}'(\mathbf{x}) = 0$ for every $\mathbf{x} \in E$, prove that
 $\mathbf{f}$ is constant in $E$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.10 label="ex:9.10"} If $f$ is a real function defined in a
+
+
+### ex:9.10 
+ If $f$ is a real function defined in a
 convex open set $E \subset \mathbb{R}^n$, such that $(D_1f)(\mathbf{x}) = 0$ for
 every $\mathbf{x} \in E$, prove that $f(\mathbf{x})$ depends only on
 $x_2, ... , x_n$.
@@ -82,10 +92,11 @@ $x_2, ... , x_n$.
 Show that the convexity of E can be replaced by a weaker condition, but
 that some condition is required. For example, if $n = 2$ and $E$ is
 shaped like a horseshoe, the statement may be false.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.11 label="ex:9.11"} If $f$ and $g$ are differentiable real
+
+
+### ex:9.11 
+ If $f$ and $g$ are differentiable real
 functions in $\mathbb{R}^n$, prove that 
 $$
 \nabla (fg) = 
@@ -94,23 +105,24 @@ $$
 $$
  and that $\nabla (1/f)=-f^{-2}\nabla f$ wherever
 $f \neq 0$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.12 label="ex:9.12"} Fix two real numbers $a$ and $b$,
+
+
+### ex:9.12 
+ Fix two real numbers $a$ and $b$,
 $0 <a< b$. Define a mapping $\mathbf{f} = (f_1,f_2,f_3)$of $\mathbb{R}^2$ into
 $\mathbb{R}^3$ by 
 $$
 \begin{aligned}
-        f_1(s,t)&=(b+a\cos s)\cos t \\
-        f_2(s,t)&=(b+a\cos s)\sin t \\
+        f_1(s,t)&=(b+a\cos s)\cos t \\ 
+        f_2(s,t)&=(b+a\cos s)\sin t \\ 
         f_3(s,t)&=a\sin s.
     \end{aligned}
 $$
  Describe the range $K$ of $\mathbf{f}$. (It is a
 certain compact subset of $\mathbb{R}^3$.)
 
-<!-- ::: asparaenum -->
+
 Show that there are exactly 4 points $\mathbf{p} \in K$ such that
 
 $$
@@ -142,19 +154,21 @@ $$
             a^2 + \lambda^2(b + a \cos t)^2 .
 $$
 
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.13 label="ex:9.13"} Suppose $\mathbf{f}$ is a differentiable
+
+
+
+### ex:9.13 
+ Suppose $\mathbf{f}$ is a differentiable
 mapping of $\mathbb{R}^1$ into $\mathbb{R}^3$ such that $|\mathbf{f}(t)|=1$ for every
 $t$. Prove that $\mathbf{f}'(t) \cdot \mathbf{f}(t) = 0$.
 
 Interpret this result geometrically.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.14 label="ex:9.14"} Define $f(0, 0) = 0$ and
+
+
+### ex:9.14 
+ Define $f(0, 0) = 0$ and
 
 $$
 f(x, y) = \frac{x^3}{x^2+y^2}
@@ -162,7 +176,7 @@ f(x, y) = \frac{x^3}{x^2+y^2}
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that $D_1 f$ and $D_2 g$ are bounded functions in $\mathbb{R}^2$. (Hence
 $f$ is continuous.)
 
@@ -178,14 +192,15 @@ and prove that $g$ is differentiable for every $t \in \mathbb{R}^1$.
 If $\gamma \in \mathscr{C}'$, prove that $g \in \mathscr{C}'$.
 
 In spite of this, prove that $f$ is not differentiable at $(0, 0)$.
-<!-- ::: -->
+
 
 *Hint:* Formula (\[\[eq:8.40\]](#eq:8.40){reference-type="ref"
 reference="eq:8.40"}) fails.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.15 label="ex:9.15"} Define $f(0, 0) = 0$, and put
+
+
+### ex:9.15 
+ Define $f(0, 0) = 0$, and put
 
 $$
 f(x,y)=x^2+y^2-2x^2y-\frac{4x^6y^2}{(x^4+y^2)^2}
@@ -193,7 +208,7 @@ $$
  if
 $(x,y)\neq (0,0)$.
 
-<!-- ::: asparaenum -->
+
 Prove, for all $(x, y) \in \mathbb{R}^2$ , that 
 $$
 4x^3y^2 \leq (x^4+y^2)^2.
@@ -215,11 +230,12 @@ a strict local minimum at $(0, 0)$.
 
 Show that $(0, 0)$ is nevertheless not a local minimum for $f$, since
 $f(x, x^2) = -x^4$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.16 label="ex:9.16"} Show that the continuity of $\mathbf{f}'$
+
+
+
+### ex:9.16 
+ Show that the continuity of $\mathbf{f}'$
 at the point $\mathbf{a}$ is needed in the inverse function theorem,
 even in the case $n = 1$ : If
 
@@ -229,10 +245,11 @@ $$
  for $t \neq 0$, and
 $f(0) = 0$, then $f'(0) = 1$, $f'$ is bounded in $(-1, 1)$, but $f$ is
 not one-to-one in any neighborhood of 0.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.17 label="ex:9.17"} Let $f = (f_1,f_2)$ be the mapping of
+
+
+### ex:9.17 
+ Let $f = (f_1,f_2)$ be the mapping of
 $\mathbb{R}^2$ into $\mathbb{R}^2$ given by 
 $$
 f_1(x,y) = e^x \cos y, 
@@ -256,10 +273,11 @@ $$
 
 (d) What are the images under $\mathbf{f}$ of lines parallel to the
     coordinate axes?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.18 label="ex:9.18"} Answer analogous questions for the mapping
+
+
+### ex:9.18 
+ Answer analogous questions for the mapping
 defined by 
 $$
 u = x^2-y^2, 
@@ -267,46 +285,49 @@ u = x^2-y^2,
         v = 2xy.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.19 label="ex:9.19"} Show that the system of equations
+
+
+### ex:9.19 
+ Show that the system of equations
 
 $$
 \begin{aligned}
-        3x +  y -  z +  u^2 &= 0 \\
-         x -  y + 2z +  u   &= 0 \\
+        3x +  y -  z +  u^2 &= 0 \\ 
+         x -  y + 2z +  u   &= 0 \\ 
         2x + 2y - 3z + 2u   &= 0 
     \end{aligned}
 $$
  can be solved for $x, y, u$ in terms of $z$; for
 $x, z, u$ in terms of $y$; for $y, z, u$ in terms of $x$; but not for
 $x, y, z$ in terms of $u$.
-<!-- ::: -->
+
 
 
 $$
 \begin{pmatrix}
-        3 &  1 & -1 \\
-        1 & -1 &  2 \\
-        2 &  2 & -3 \\
+        3 &  1 & -1 \\ 
+        1 & -1 &  2 \\ 
+        2 &  2 & -3 \\ 
     \end{pmatrix}
     \begin{pmatrix}
-        x \\ y \\ z \\
+        x \\ y \\ z \\ 
     \end{pmatrix} = 
     \begin{pmatrix}
-        -u^2 \\ u \\ 2u \\
+        -u^2 \\ u \\ 2u \\ 
     \end{pmatrix}
 $$
 
 
-<!-- ::: myexercise -->
-[]{#ex:9.20 label="ex:9.20"} Take $n = m = 1$ in the implicit function
-theorem, and interpret the theorem (as well as its proof) graphically.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.21 label="ex:9.21"} Define $f$ in $\mathbb{R}^2$ by
+### ex:9.20 
+ Take $n = m = 1$ in the implicit function
+theorem, and interpret the theorem (as well as its proof) graphically.
+
+
+
+### ex:9.21 
+ Define $f$ in $\mathbb{R}^2$ by
 
 $$
 f(x,y) = 2x^3-3x^2+2y^3+3y^2.
@@ -321,19 +342,21 @@ $$
     Find those points of $S$ that have no neighborhoods in which the
     equation $f(x, y) = 0$ can be solved for $y$ in terms of $x$ (or for
     $x$ in terms of $y$). Describe $S$ as precisely as you can.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.22 label="ex:9.22"} Give a similar discussion for
+
+
+### ex:9.22 
+ Give a similar discussion for
 
 $$
 f(x,y)=2x^3+6xy^2-3x^2+3y^2.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.23 label="ex:9.23"} Define $f$ in $\mathbb{R}^3$ by
+
+
+### ex:9.23 
+ Define $f$ in $\mathbb{R}^3$ by
 
 $$
 f(x,y_1,y_2) = x^2 y_1 + e^x + y_2 .
@@ -347,10 +370,11 @@ f(g(y_1, y_2), y_1, y_2) = 0.
 $$
  Find
 $(D_1 g)(1, -1)$ and $(D_2 g)(1, -1)$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.24 label="ex:9.24"} For $(x, y) \neq (0, 0)$, define
+
+
+### ex:9.24 
+ For $(x, y) \neq (0, 0)$, define
 $\mathbf{f} = (f_1,f_2)$ by 
 $$
 f_1(x,y) = \frac{x^2-y^2}{x^2+y^2}, 
@@ -359,10 +383,11 @@ f_1(x,y) = \frac{x^2-y^2}{x^2+y^2},
 $$
  Compute the rank of
 $\mathbf{f}'(x, y)$, and find the range of $\mathbf{f}$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.25 label="ex:9.25"} Suppose $A \in L(\mathbb{R}^n, \mathbb{R}^m)$, let $r$ be
+
+
+### ex:9.25 
+ Suppose $A \in L(\mathbb{R}^n, \mathbb{R}^m)$, let $r$ be
 the rank of $A$.
 
 (a) Define $S$ as in the proof of Theorem
@@ -379,16 +404,18 @@ $$
 \dim \mathscr{N}(A) + \dim \mathscr{R}(A) = n.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.26 label="ex:9.26"} Show that the existence (and even the
+
+
+### ex:9.26 
+ Show that the existence (and even the
 continuity) of $D_{12}f$ does not imply the existence of $D_1 f$. For
 example, let $f(x, y) = g(x)$, where $g$ is nowhere differentiable.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.27 label="ex:9.27"} Put $f(0,0)=0$, and
+
+
+### ex:9.27 
+ Put $f(0,0)=0$, and
 
 $$
 f(x,y) = \frac{xy(x^2-y^2)}{x^2+y^2}
@@ -402,16 +429,17 @@ that
     continuous except at $(0, 0)$;
 
 (c) $(D_{12}f)(0,0)=1$, and $(D_{21}f)(0,0)=-1$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.28 label="ex:9.28"} For $t \geq 0$, put 
+
+
+### ex:9.28 
+ For $t \geq 0$, put 
 $$
 \phi(x,t) = \left\{ 
             \begin{array}{ll}
-                x & (0 \leq x \leq \sqrt{t}) \\
-                -x+2\sqrt{t} & (\sqrt{t} \leq x \leq \sqrt{t}) \\
-                0 & (\text{otherwise}), \\
+                x & (0 \leq x \leq \sqrt{t}) \\ 
+                -x+2\sqrt{t} & (\sqrt{t} \leq x \leq \sqrt{t}) \\ 
+                0 & (\text{otherwise}), \\ 
             \end{array}
          \right.
 $$
@@ -433,10 +461,11 @@ $$
 f'(0) \neq \int_{-1}^{1} (D_2 \phi) (x,0) \mathrm{d} x.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.29 label="ex:9.29"} Let $E$ be an open set in $\mathbb{R}^n$. The
+
+
+### ex:9.29 
+ Let $E$ be an open set in $\mathbb{R}^n$. The
 classes $\mathscr{C}'(E)$ and $\mathscr{C}''(E)$ are defined in the
 text. By induction, $\mathscr{C}^{(k)} (E)$ can be defined as follows,
 for all positive integers $k$: To say that $f \in \mathscr{C}^{(k)} (E)$
@@ -459,10 +488,11 @@ D_{1213} f = D_{3112} f
 $$
  for every
 $f \in \mathscr{C}^{(4)}$,
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.30 label="ex:9.30"} Let $f \in \mathscr{C}^{(m)} (E)$, where
+
+
+### ex:9.30 
+ Let $f \in \mathscr{C}^{(m)} (E)$, where
 $E$ is an open subset of $\mathbb{R}^n$. Fix $\mathbf{a} \in E$, and suppose
 $x \in \mathbb{R}^n$ is so close to $\mathbf{0}$ that the points
 
@@ -477,7 +507,7 @@ $$
  for all
 $t \in \mathbb{R}^1$ for which $\mathbf{p}(t) \in E$.
 
-<!-- ::: asparaenum -->
+
 For $1 \leq k \leq m$, show (by repeated application of the chain rule)
 that 
 $$
@@ -538,11 +568,12 @@ $$
  Here the summation extends
 over all ordered $n$-tuples $(s_1, ... , s_n)$ such that each $s$, is a
 nonnegative integer, and $s_1 + \cdots + s_n \leq m - 1$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:9.31 label="ex:9.31"} Suppose $f \in \mathscr{C}^{(3)}$ in some
+
+
+
+### ex:9.31 
+ Suppose $f \in \mathscr{C}^{(3)}$ in some
 neighborhood of a point $\mathbf{a} \in \mathbb{R}^2$, the gradient of $f$ is
 $\mathbf{0}$ at $\mathbf{a}$, but not all second-order derivatives of
 $f$ are 0 at $\mathbf{a}$. Show how one can then determine from the
@@ -551,4 +582,4 @@ local maximum, or a local minimum, or neither, at the point
 $\mathbf{a}$.
 
 Extend this to $\mathbb{R}^n$ in place of $\mathbb{R}^2$.
-<!-- ::: -->
+

@@ -6,8 +6,9 @@ special cases of theorems about differential forms, but are usually
 stated in different terminology. We are thus faced with the job of
 translating from one language to another.
 
-<!-- ::: mydef -->
-[]{#mydef:10.42 label="mydef:10.42"} Let 
+
+### mydef:10.42 
+ Let 
 $$\mathbf{F} = 
     F_1 \mathbf{e}_1 + 
     F_2 \mathbf{e}_2 + 
@@ -73,15 +74,16 @@ $$
         D_3 F_3 .
 $$
 
-<!-- ::: -->
+
 
 These quantities have various physical interpretations. We refer to the
 book by O. D. Kellogg[@KELLOGG1940] for more details.
 
 Here are some relations between gradients, curls, and divergences.
 
-<!-- ::: thm -->
-[]{#thm:10.43 label="thm:10.43"} Suppose $E$ is an open set in $\mathbb{R}^3$,
+
+### thm:10.43 
+ Suppose $E$ is an open set in $\mathbb{R}^3$,
 $u \in \mathscr{C}''(E)$, and $\mathbf{G}$ is a vector field in $E$, of
 class $\mathscr{C}''$.
 
@@ -101,10 +103,11 @@ vector field in $E$, of class $\mathscr{C}'$:
 2.  If $\mathbf{n}abla \times \mathbf{F} = 0$, then
     $\mathbf{F} = \mathbf{n}abla \times \mathbf{G}$ for some vector
     field $\mathscr{G}$. in $E$, of class $\mathscr{C}''$
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.44 label="mydef:10.44"} The $k$-form
+
+
+### mydef:10.44 
+ The $k$-form
 
 $$
 \mathrm{d} x_1 \wedge \cdots \wedge \mathrm{d} x_k
@@ -140,7 +143,7 @@ $$
 \[\[eq:10.35\]](#eq:10.35){reference-type="eqref" reference="eq:10.35"}
 and Theorem \[\[thm:10.9\]](#thm:10.9){reference-type="ref"
 reference="thm:10.9"}.
-<!-- ::: -->
+
 
 In particular, when $f= 1$,
 \[\[eq:10.126\]](#eq:10.126){reference-type="eqref"
@@ -148,8 +151,9 @@ reference="eq:10.126"} defines the volume of $\Phi$. We already saw a
 special case of this in \[\[eq:10.36\]](#eq:10.36){reference-type="eqref"
 reference="eq:10.36"}. The usual notation for $\mathrm{d} V_2$ is $\mathrm{d} A$.
 
-<!-- ::: mydef -->
-[]{#mydef:10.45 label="mydef:10.45"} Suppose $E$ is an open set in
+
+### mydef:10.45 
+ Suppose $E$ is an open set in
 $\mathbb{R}^2$, $\alpha \in  \mathscr{C}'(E)$, $\beta \in  \mathscr{C}'(E)$, and
 $Q$ is a closed subset of $E$, with positively oriented boundary
 $\partial \Omega$, as described in Sec.
@@ -168,7 +172,7 @@ $$
             \right) \mathrm{d} A .
 $$
 
-<!-- ::: -->
+
 
 
 \label{eq:10.128}
@@ -181,8 +185,9 @@ $$
 $$
  the area of $\Omega$.
 
-<!-- ::: mydef -->
-[]{#mydef:10.46 label="mydef:10.46"} Let $\Phi$ be a 2-surface in
+
+### mydef:10.46 
+ Let $\Phi$ be a 2-surface in
 $\mathbb{R}^3$, of class $\mathscr{C}'$, with parameter domain $D \subset \mathbb{R}^2$.
 Associate with each point $(u, v) \in D$ the vector 
 \label{eq:10.129}
@@ -365,10 +370,11 @@ one can justify \[\[eq:10.131\]](#eq:10.131){reference-type="eqref"
 reference="eq:10.131"} from
 \[\[eq:10.132\]](#eq:10.132){reference-type="eqref"
 reference="eq:10.132"} by approximating $f$ by step functions.
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:10.47 label="newexample:10.47"} Let $0 <a< b$ be fixed.
+
+
+### newexample:10.47 
+ Let $0 <a< b$ be fixed.
 Let $K$ be the 3-cell determined by 
 $$
 0 \leq t \leq a , \quad
@@ -381,9 +387,9 @@ $$
 $$
 
         \begin{array}{l}
-            x = t \cos u \\
-            y = (b + t \sin u) \cos v \\
-            z = (b + t \sin u) \sin v \\
+            x = t \cos u \\ 
+            y = (b + t \sin u) \cos v \\ 
+            z = (b + t \sin u) \sin v \\ 
         \end{array}
 $$
  describe a mapping $\Psi$ of $\mathbb{R}^3$ into $\mathbb{R}^3$
@@ -452,10 +458,11 @@ This is so because $\mathbf{J}_{\Psi} > 0$ when $t = a$.
 For example, take $u = v = \pi/2$, $t = a$. This gives the largest value
 of $z$ on $\Psi(K)$, and $\mathbf{N} = a(b + a)\mathbf{e}_3$ points
 "upward" for this choice of $(u, v)$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.48 label="mydef:10.48"} Let $\gamma$ be a
+
+
+### mydef:10.48 
+ Let $\gamma$ be a
 $\mathscr{C}'$-curve in an open set $E \subset \mathbb{R}^3$, with parameter
 interval $[0, 1]$, let $\mathbf{F}$ be a vector field in $E$, as in Sec.
 \[\[mydef:10.42\]](#mydef:10.42){reference-type="ref"
@@ -489,8 +496,8 @@ $$
 
         \begin{aligned}
             \int_{\gamma} \lambda_{\mathbf{F}}
-            &= \sum_{i=1}^{3} \int_{0}^{1} F_i (\gamma(u)) \gamma'_i(u) \mathrm{d} u \\
-            &= \int_{0}^{1} \mathbf{F} (\gamma(u)) \cdot \gamma'(u) \mathrm{d} u \\
+            &= \sum_{i=1}^{3} \int_{0}^{1} F_i (\gamma(u)) \gamma'_i(u) \mathrm{d} u \\ 
+            &= \int_{0}^{1} \mathbf{F} (\gamma(u)) \cdot \gamma'(u) \mathrm{d} u \\ 
             &= \int_{0}^{1} \mathbf{F} (\gamma(u)) \cdot \mathbf{t}(u) \left| \gamma'(u) \right| \mathrm{d} u .
         \end{aligned}
 $$
@@ -521,10 +528,11 @@ range of $\gamma$, but $\mathbf{t}$ is defined on $[0, 1]$; thus
 $\mathbf{F \cdot t}$ has to be properly interpreted. Of course, when
 $\gamma$ is one-to-one, then $\mathbf{t}(u)$ can be replaced by
 $\mathbf{t}(y(u))$, and this difficulty disappears.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.49 label="mydef:10.49"} Let $\Phi$ be a 2-surface in an
+
+
+### mydef:10.49 
+ Let $\Phi$ be a 2-surface in an
 open set $E \subset \mathbb{R}^3$, of class $\mathscr{C}'$, with parameter
 domain $D \subset \mathbb{R}^2$. Let $\mathbf{F}$ be a vector field in $E$, and
 define $\omega_{\mathbf{F}}$ by
@@ -544,12 +552,12 @@ $$
             F_1 \mathrm{d} y \wedge \mathrm{d} z + 
             F_2 \mathrm{d} z \wedge \mathrm{d} x + 
             F_3 \mathrm{d} x \wedge \mathrm{d} y  
-            \right) \\
+            \right) \\ 
         &= \int_{D} \left\{ 
             (F_1 \circ \Phi) \frac{\partial (y,z)}{\partial (u,v)} + 
             (F_2 \circ \Phi) \frac{\partial (z,x)}{\partial (u,v)} + 
             (F_3 \circ \Phi) \frac{\partial (x,y)}{\partial (u,v)} 
-         \right\} \mathrm{d} u \mathrm{d} v \\
+         \right\} \mathrm{d} u \mathrm{d} v \\ 
         &= \int_{D} \mathbf{F}(\Phi(u,v))\cdot \mathbf{N}(u,v) \mathrm{d} u \mathrm{d} v .
     \end{aligned}
 $$
@@ -578,12 +586,13 @@ $$
 meaning of $\mathbf{F \cdot n}$, the remark made at the end of Sec.
 \[\[mydef:10.48\]](#mydef:10.48){reference-type="ref"
 reference="mydef:10.48"} applies here as well.
-<!-- ::: -->
+
 
 We can now state the original form of Stokes' theorem.
 
-<!-- ::: thm -->
-[]{#thm:10.50 label="thm:10.50"} If $\mathbf{F}$ is a vector field of
+
+### thm:10.50 
+ If $\mathbf{F}$ is a vector field of
 class $\mathscr{C}'$ in an open set $E \subset \mathbb{R}^3$, and if $\Phi$ is a
 2-surface of class $\mathscr{C}''$ in $E$, then 
 \label{eq:10.145}
@@ -594,9 +603,9 @@ $$
         \int_{\partial \Phi} \left( \mathbf{F \cdot t} \right)  \mathrm{d} s
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Put $\mathbf{H} = \nabla \times \mathbf{F}$. Then, as in the
 proof of Theorem \[\[thm:10.43\]](#thm:10.43){reference-type="ref"
 reference="thm:10.43"}, we have 
@@ -612,7 +621,7 @@ $$
 \begin{aligned}
         \int_{\Phi} (\nabla \times \mathbf{F}) \cdot \mathbf{n} \mathrm{d} A 
         &= \int_{\Phi} (\mathbf{H \cdot n}) \mathrm{d} A 
-        = \int_{\Phi} \omega_{\mathbf{H}} \\
+        = \int_{\Phi} \omega_{\mathbf{H}} \\ 
         &= \int_{\Phi} \mathrm{d} \lambda_{\mathbf{F}} 
         = \int_{\partial \Phi} \lambda_{\mathbf{F}} 
         = \int_{\partial \Phi} (\mathbf{F \cdot t}) \mathrm{d} s .
@@ -627,10 +636,11 @@ reference="eq:10.146"}, then-the main step-Theorem
 and finally \[\[eq:10.143\]](#eq:10.143){reference-type="eqref"
 reference="eq:10.143"}, extended in the obvious way from curves to
 1-chains. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.51 label="thm:10.51"} If $\mathbf{F}$ is a vector field of
+
+
+### thm:10.51 
+ If $\mathbf{F}$ is a vector field of
 class $\mathscr{C}'$ in an open set $E \subset \mathbb{R}^3$, and if $\Omega$ is
 a closed subset of $E$ with positively oriented boundary
 $\partial \Omega$ (as described in Sec.
@@ -644,9 +654,9 @@ $$
         \int_{\partial \Omega} \left( \mathbf{F} \cdot \mathbf{n} \right) \mathrm{d} A .
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* By \[\[eq:10.125\]](#eq:10.125){reference-type="eqref"
 reference="eq:10.125"} 
 $$
@@ -667,4 +677,4 @@ Theorem \[\[thm:10.33\]](#thm:10.33){reference-type="ref"
 reference="thm:10.33"}, applied to the 2-form $\omega_{\mathbf{F}}$, and
 \[\[eq:10.144\]](#eq:10.144){reference-type="eqref"
 reference="eq:10.144"}. ◻
-<!-- ::: -->
+

@@ -1,6 +1,6 @@
 # Differentiation of vector-valued functions
 
-<!-- ::: myremark -->
+
 Definition \[\[mydef:5.1\]](#mydef:5.1){reference-type="ref"
 reference="mydef:5.1"} applies without any change to complex functions
 $f$ defined on $[a, b]$, and Theorems
@@ -22,7 +22,7 @@ $$
 $$
  also, $f$ is differentiable at
 $x$ if and only if both $f_1$ and $f_2$ are differentiable at $x$.
-<!-- ::: -->
+
 
 Passing to vector-valued functions in general, i.e., to functions
 $\mathbf{f}$ which map $[a, b]$ into some $\mathbb{R}^k$, we may still apply
@@ -67,7 +67,7 @@ however, and to one of its consequences, namely, L'Hospital's rule, the
 situation changes. The next two examples will show that each of these.
 results fails to be true for complex-valued functions.
 
-<!-- ::: newexample -->
+
 Define, for real $x$, 
 \label{eq:5.32}
 
@@ -94,9 +94,9 @@ $\left| f'(x) \right| = 1$ for all real $x$.
 
 Thus Theorem \[\[thm:5.10\]](#thm:5.10){reference-type="ref"
 reference="thm:5.10"} fails to hold in this case.
-<!-- ::: -->
 
-<!-- ::: newexample -->
+
+
 On the segment $(0, 1)$, define $f(x) = x$ and
 
 $$
@@ -164,10 +164,11 @@ $$
         (b-a) \sup_{a < x < b} \left| f'(x) \right| .
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:5.19 label="thm:5.19"} Suppose $\mathbf{f}$ is a continuous
+
+
+### thm:5.19 
+ Suppose $\mathbf{f}$ is a continuous
 mapping of $[a, b]$ into $\mathbb{R}^k$ and $\mathbf{f}$ is differentiable in
 $(a, b)$. Then there exists $x \in (a, b)$ such that
 
@@ -176,12 +177,12 @@ $$
         (b-a) \left| \mathbf{f}'(x) \right| .
 $$
 
-<!-- ::: -->
+
 
 V. P. Havin translated the second edition of this book into Russian and
 added this proof to the original one.
 
-<!-- ::: proof -->
+
 *Proof.* Put $\mathbf{z} = \mathbf{f}(b) - \mathbf{f}(a)$, and define
 
 $$
@@ -215,4 +216,4 @@ $$
 
 Hence $\left| \mathbf{z} \right| \leq (b - a) \left| f'(x) \right|$,
 which is the desired conclusion. ◻
-<!-- ::: -->
+

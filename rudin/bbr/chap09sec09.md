@@ -27,10 +27,11 @@ $$
  Thus $\phi^t$ is, for each $t$, a
 function of one variable.
 
-<!-- ::: thm -->
-[]{#thm:9.42 label="thm:9.42"} Suppose
 
-<!-- ::: asparaenum -->
+### thm:9.42 
+ Suppose
+
+
 $\phi(x,t)$ is defined for $a \leq x \leq b,x \leq t \leq d$;
 
 $\alpha$ is an increasing function on $[a,b]$;
@@ -44,7 +45,7 @@ $$
 $$
 
 for all $x \in [a,b]$ and for all $t \in (s-\delta, s+\delta)$.
-<!-- ::: -->
+
 
 Define 
 \label{eq:9.100}
@@ -65,16 +66,16 @@ $$
         f'(s) = \int_{a}^{b} (D_2 \phi)(x,s) \mathrm{d} \alpha(x).
 $$
 
-<!-- ::: -->
+
 
 Note that (c) simply asserts the existence of the integrals
 (\[\[eq:9.100\]](#eq:9.100){reference-type="ref" reference="eq:9.100"})
 for all $t \in [c, d]$. Note also that (d) certainly holds whenever
 $D_2 \phi$ is continuous on the rectangle on which $\phi$ is defined.
 
-<!-- ::: newexample -->
+
 One can of course prove analogues of Theorem
 \[\[thm:9.42\]](#thm:9.42){reference-type="ref" reference="thm:9.42"}
 with $(- \infty , \infty )$ in place of $[a, b]$. Instead of doing this,
 let us simply look at an example.
-<!-- ::: -->
+

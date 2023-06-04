@@ -1,38 +1,40 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:8.1 label="ex:8.1"} Define 
+
+### ex:8.1 
+ Define 
 $$
 f(x) = \left\{
         \begin{array}{ll}
-            e^{-1/x^2} & (x \neq 0) , \\
-            0          & (x = 0) .    \\
+            e^{-1/x^2} & (x \neq 0) , \\ 
+            0          & (x = 0) .    \\ 
         \end{array}
         \right.
 $$
  Prove that $f$ has derivatives of all orders at $x=0$,
 and that $f^{(n)}(0)=0$ for $n=1,2,3,...$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.2 label="ex:8.2"} Let $a_{ij}$ be the number in the $i$th row
+
+
+### ex:8.2 
+ Let $a_{ij}$ be the number in the $i$th row
 and $j$th column of the array 
 $$
 \begin{array}{ccccc}
-            -1          & 0           & 0           & 0     & \dots \\
-            \frac{1}{2} & -1          & 0           & 0     & \dots \\
-            \frac{1}{4} & \frac{1}{2} & -1          & 0     & \dots \\
-            \frac{1}{8} & \frac{1}{4} & \frac{1}{2} & -1    & \dots \\
-            \dots       & \dots       & \dots       & \dots & \dots \\
+            -1          & 0           & 0           & 0     & \dots \\ 
+            \frac{1}{2} & -1          & 0           & 0     & \dots \\ 
+            \frac{1}{4} & \frac{1}{2} & -1          & 0     & \dots \\ 
+            \frac{1}{8} & \frac{1}{4} & \frac{1}{2} & -1    & \dots \\ 
+            \dots       & \dots       & \dots       & \dots & \dots \\ 
         \end{array}
 $$
  so that 
 $$
 a_{ij} = \left\{
         \begin{array}{ll}
-            0       & (i<j), \\
-            1       & (i=j), \\
-            2^{j-i} & (i>j). \\
+            0       & (i<j), \\ 
+            1       & (i=j), \\ 
+            2^{j-i} & (i>j). \\ 
         \end{array}
         \right.
 $$
@@ -42,20 +44,22 @@ $$
         \sum_j \sum_i a_{ij} = 0.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.3 label="ex:8.3"} Prove that 
+
+
+### ex:8.3 
+ Prove that 
 $$
 \sum_i \sum_j a_{ij} =
         \sum_j \sum_i a_{ij}
 $$
  if $a_{ij} \geq 0$ for all $i$ and $j$
 (the case $+\infty=+\infty$ may occur).
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.4 label="ex:8.4"} Prove the following limit relations:
+
+
+### ex:8.4 
+ Prove the following limit relations:
 
 (a) $\lim_{x \to 0} \frac{b^x-1}{x}=\log b$ $(b>0)$.
 
@@ -64,10 +68,11 @@ $$
 (c) $\lim_{x \to 0} (1+x)^{1/x}=e$.
 
 (d) $\lim_{n \to \infty} \left( 1+\frac{x}{n} \right)^n=e^x$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.5 label="ex:8.5"} Find the following limits
+
+
+### ex:8.5 
+ Find the following limits
 
 (a) $\lim_{x \to 0} \frac{e-(1+x)^{1/x}}{x}$.
 
@@ -76,13 +81,14 @@ $$
 (c) $\lim_{x \to 0} \frac{\tan x-x}{x(1-\cos x)}$.
 
 (d) $\lim_{x \to 0} \frac{x-\sin x}{\tan x-x}$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.6 label="ex:8.6"} Suppose $f(x) f(y) = f(x + y)$ for all real
+
+
+### ex:8.6 
+ Suppose $f(x) f(y) = f(x + y)$ for all real
 $x$ and $y$.
 
-<!-- ::: asparaenum -->
+
 Assuming that $f$ is differentiable and not zero, prove that
 
 $$
@@ -91,20 +97,22 @@ $$
  where $c$ is a constant.
 
 Prove the same thing, assuming only that $f$ is continuous.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.7 label="ex:8.7"} If $0<x<\frac{\pi}{2}$, prove that
+
+
+
+### ex:8.7 
+ If $0<x<\frac{\pi}{2}$, prove that
 
 $$
 \frac{2}{\pi}<\frac{\sin x}{x}<1.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.8 label="ex:8.8"} For $n=0,1,2,\dots$, and $x$ real, prove that
+
+
+### ex:8.8 
+ For $n=0,1,2,\dots$, and $x$ real, prove that
 
 $$
 \left| \sin nx \right| \leq
@@ -118,12 +126,13 @@ $$
         \frac{1}{2}\left| \sin \pi \right| .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.9 label="ex:8.9"}
 
-<!-- ::: asparaenum -->
+
+### ex:8.9 
+
+
+
 Put $s_N=1+\left( \frac{1}{2} \right)+\cdots+\left( 1/N \right)$. Prove
 that 
 $$
@@ -135,11 +144,12 @@ numerical value is $0.5772\dots$. It is not known whether $\gamma$ is
 rational or not.)
 
 Roughly how large must $m$ be so that $N=10^m$ satisfies $s_N>100$?
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.10 label="ex:8.10"} Prove that $\sum 1/p$ diverges; the sum
+
+
+
+### ex:8.10 
+ Prove that $\sum 1/p$ diverges; the sum
 extends over all primes.
 
 (This shows that the primes form a fairly substantial subset of the
@@ -150,8 +160,8 @@ least one integer $\leq N$. Then
 $$
 \begin{aligned}
         \sum_{n=1}^{N}\frac{1}{n}
-         & \leq \prod_{j=1}^{k} \left( 1+\frac{1}{p_j}+\frac{1}{p_j^2}+\cdots \right) \\
-         & = \prod_{j=1}^{k} \left( 1-\frac{1}{p_j} \right)^{-1}                      \\
+         & \leq \prod_{j=1}^{k} \left( 1+\frac{1}{p_j}+\frac{1}{p_j^2}+\cdots \right) \\ 
+         & = \prod_{j=1}^{k} \left( 1-\frac{1}{p_j} \right)^{-1}                      \\ 
          & \leq \exp \sum_{j=1}^{k} \frac{2}{p_j} .
     \end{aligned}
 $$
@@ -165,10 +175,11 @@ $$
 (There are many proofs of this result. See, for instance, the article by
 I. Niven in *Amer. Math. Monthly*, vol. 78, 1971, pp. 272-273, and the
 one by R. Bellman in *Amer. Math. Monthly*, vol. 50, 1943, pp. 318-319.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.11 label="ex:8.11"} Suppose $f \in \mathscr{R}$ on $[0,A]$ for
+
+
+### ex:8.11 
+ Suppose $f \in \mathscr{R}$ on $[0,A]$ for
 all $A<\infty$, and $f(x) \rightarrow 1$ as $x \rightarrow +\infty$.
 Prove that 
 $$
@@ -177,14 +188,15 @@ $$
         (t>0).
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.12 label="ex:8.12"} Suppose $0 < \delta < \pi$, $f(x) = 1$ if
+
+
+### ex:8.12 
+ Suppose $0 < \delta < \pi$, $f(x) = 1$ if
 $|x | \leq \delta$, $f(x) = 0$ if $\delta < |x | \leq \pi$, and
 $f(x + 2\pi) = f(x)$ for all $x$.
 
-<!-- ::: asparaenum -->
+
 Compute the Fourier coefficients of $f$.
 
 Conclude that
@@ -211,21 +223,23 @@ $$
 
 
 Put $\delta = \pi/2$ in (c). What do you get?
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.13 label="ex:8.13"} Put $f(x) = x$ if $0 \leq x < 2\pi$, and
+
+
+
+### ex:8.13 
+ Put $f(x) = x$ if $0 \leq x < 2\pi$, and
 apply Parseval's theorem to conclude that
 
 $$
 \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.14 label="ex:8.14"} If $f(x) = (\pi - |x|)^2$ on $[-\pi, \pi]$,
+
+
+### ex:8.14 
+ If $f(x) = (\pi - |x|)^2$ on $[-\pi, \pi]$,
 prove that
 
 $$
@@ -242,10 +256,11 @@ $$
 recent article by E. L. Stark contains many references to series of the
 form $\sum n^{-s}$, where $s$ is a positive integer. See *Math. Mag.*,
 vol. 47, 1974, pp. 197-202.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.15 label="ex:8.15"} With $D_n$ as defined in
+
+
+### ex:8.15 
+ With $D_n$ as defined in
 (\[\[eq:8.77\]](#eq:8.77){reference-type="ref" reference="eq:8.77"}), put
 
 $$
@@ -284,10 +299,11 @@ $\sigma_N(f;x)\rightarrow f(x)$ uniformly on $[-\pi,\pi]$.*
 
 *Hint:* Use properties (a), (b), (c) to proceed as in Theorem
 \[\[thm:7.26\]](#thm:7.26){reference-type="ref" reference="thm:7.26"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.16 label="ex:8.16"} Prove a pointwise version of Fejér's
+
+
+### ex:8.16 
+ Prove a pointwise version of Fejér's
 theorem:
 
 *If $f \in \mathscr{R}$ and $f(x+)$, $f(x-)$ exist for some $x$, then*
@@ -296,14 +312,15 @@ $$
 \lim_{N \to \infty} \sigma_N (f;x) = \frac{1}{2}\left[ f(x+)-f(x-) \right].
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.17 label="ex:8.17"} Assume $f$ is bounded and monotonic on
+
+
+### ex:8.17 
+ Assume $f$ is bounded and monotonic on
 $[-\pi, \pi)$, with Fourier coefficients $c_n$, as given by
 (\[\[eq:8.62\]](#eq:8.62){reference-type="ref" reference="eq:8.62"}).
 
-<!-- ::: asparaenum -->
+
 Use Exercise \[\[ex:6.17\]](#ex:6.17){reference-type="ref"
 reference="ex:6.17"} to prove that $\{nc_n\}$ is a bounded sequence.
 
@@ -321,26 +338,28 @@ for every $x$.
 Assume only that $f \in \mathscr{R}$ on $[-\pi,\pi]$ and that $f$ is
 monotonic in some segment $(\alpha, \beta) \in  [-\pi, \pi]$. Prove that
 the conclusion of (b) holds for every $x \in (\alpha, \beta)$.
-<!-- ::: -->
+
 
 (This is an application of the localization theorem.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.18 label="ex:8.18"} Define 
+
+
+### ex:8.18 
+ Define 
 $$
 \begin{aligned}
-        f(x) & = x^3 - \sin^2 x \tan x      \\
+        f(x) & = x^3 - \sin^2 x \tan x      \\ 
         g(x) & = 2x^2 - \sin^2 x - x\tan x.
     \end{aligned}
 $$
  Find out, for each of these two functions, whether
 it is positive or negative for all $x \in (0, \pi/2)$, or whether it
 changes sign. Prove your answer.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.19 label="ex:8.19"} Suppose $f$ is a continuous function on
+
+
+### ex:8.19 
+ Suppose $f$ is a continuous function on
 $\mathbb{R}^1$, $f(x + 2\pi) = f(x)$, and $\alpha/\pi$ is irrational. Prove that
 
 $$
@@ -350,10 +369,11 @@ $$
 for every $x$.
 
 *Hint:* Do it first for $f(x) = e^{ikx}$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.20 label="ex:8.20"} The following simple computation yields a
+
+
+### ex:8.20 
+ The following simple computation yields a
 good approximation to Stirling's formula.
 
 For $m=1,2,3,\dots$, define 
@@ -367,7 +387,7 @@ g(x) = \frac{x}{m} - 1 + \log m
 $$
 
 if $m-\frac{1}{2} \leq x \leq m+\frac{1}{2}$. Draw the graphs of $f$ and
-$g$. Note that $f(x) \leq \log{x} \leq g(x)$\
+$g$. Note that $f(x) \leq \log{x} \leq g(x)$ 
 if $x \geq 1$ and that 
 $$
 \int_{1}^{n} f(x) \mathrm{d} x =
@@ -387,10 +407,11 @@ $$
 e^{7/8}<\frac{n!}{(n/e)^n\sqrt{n}}<e.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.21 label="ex:8.21"} Let
+
+
+### ex:8.21 
+ Let
 
 $$
 L_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| D_n(t) \right| \mathrm{d} t
@@ -410,10 +431,11 @@ $$
 \left\{ L_n - \frac{4}{\pi^2}\log n \right\}
 $$
  is bounded.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.22 label="ex:8.22"} If $\alpha$ is real and $-1 < x < 1$, prove
+
+
+### ex:8.22 
+ If $\alpha$ is real and $-1 < x < 1$, prove
 Newton's binomial theorem
 
 $$
@@ -435,10 +457,11 @@ $$
 $$
 
 if $-1<x<1$ and $\alpha>0$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.23 label="ex:8.23"} Let $\gamma$ be a continuously
+
+
+### ex:8.23 
+ Let $\gamma$ be a continuously
 differentiable curve in the complex plane, with parameter interval
 $[a, b]$, and assume that $\gamma(t) \neq 0$ for every $t \in [a, b]$.
 Define the of $\gamma$ to be 
@@ -458,10 +481,11 @@ $\varphi(b)=2\pi i \Ind (\gamma)$.
 Compute $\Ind (\gamma)$ when $\gamma(t)=e^{int}$,$a=0$,$b=2\pi$.
 
 Explain why $\Ind (\gamma)$ is often called the of $\gamma$ around 0.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.24 label="ex:8.24"} Let $\gamma$ be as in Exercise
+
+
+### ex:8.24 
+ Let $\gamma$ be as in Exercise
 \[\[ex:8.23\]](#ex:8.23){reference-type="ref" reference="ex:8.23"}, and
 assume in addition that the range of $\gamma$ does not intersect the
 negative real axis. Prove that $\Ind  (\gamma) = 0$.
@@ -469,10 +493,11 @@ negative real axis. Prove that $\Ind  (\gamma) = 0$.
 *Hint:* For $0 \leq c < \infty$ , $\Ind  (\gamma + c)$ is a continuous
 integer-valued function of $c$. Also, $\Ind  (\gamma + c) \rightarrow 0$
 as $c \rightarrow \infty$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.25 label="ex:8.25"} Suppose $\gamma_1$ and $\gamma_2$ are
+
+
+### ex:8.25 
+ Suppose $\gamma_1$ and $\gamma_2$ are
 curves as in Exercise \[\[ex:8.23\]](#ex:8.23){reference-type="ref"
 reference="ex:8.23"}, and
 
@@ -494,10 +519,11 @@ $$
         \frac{\gamma'_1}{\gamma_1} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.26 label="ex:8.26"} Let $\gamma$ be a closed curve in the
+
+
+### ex:8.26 
+ Let $\gamma$ be a closed curve in the
 complex plane (not necessarily differentiable) with parameter interval
 $[0, 2\pi]$, such that $\gamma(t) \neq 0$ for every $t \in [0, 2\pi]$.
 
@@ -520,10 +546,11 @@ Prove that the statements of Exercises
 \[\[ex:8.24\]](#ex:8.24){reference-type="ref" reference="ex:8.24"} and
 \[\[ex:8.25\]](#ex:8.25){reference-type="ref" reference="ex:8.25"} hold
 without any differentiability assumption.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.27 label="ex:8.27"} Let $f$ be a continuous complex function
+
+
+### ex:8.27 
+ Let $f$ be a continuous complex function
 defined in the complex plane. Suppose there is a positive integer $n$
 and a complex number $c \neq 0$ such that
 
@@ -555,10 +582,11 @@ curves $\gamma_r$:
 \[\[ex:8.26\]](#ex:8.26){reference-type="ref" reference="ex:8.26"}.\]
 
 Show that (a), (b), and (c) are contradictory, since $n > 0$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.28 label="ex:8.28"} Let $\overline{D}$ be the closed unit disc
+
+
+### ex:8.28 
+ Let $\overline{D}$ be the closed unit disc
 in the complex plane. (Thus $z \in \overline{D}$ if and only if
 $| z | \leq 1$.) Let $g$ be a continuous mapping of $\overline{D}$ into
 the unit circle $T$. (Thus, $|g(z)| = 1$ for every
@@ -579,10 +607,11 @@ $t \in [0, 2\pi]$. Hence $\Ind  (\psi) = 0$, by Exercises
 follows that $\Ind  (\gamma_1) = 1$. But $\Ind  (\gamma_0)= 0$. Derive a
 contradiction, as in Exercise
 \[\[ex:8.27\]](#ex:8.27){reference-type="ref" reference="ex:8.27"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.29 label="ex:8.29"} Prove that every continuous mapping $f$ of
+
+
+### ex:8.29 
+ Prove that every continuous mapping $f$ of
 $\overline{D}$ into $\overline{D}$ has a fixed point in $\overline{D}$.
 
 (This is the 2-dimensional case of Brouwer's fixed-point theorem.)
@@ -599,20 +628,22 @@ $$
 nonnegative root of a certain quadratic equation whose coefficients are
 continuous functions of $f$ and $z$. Apply Exercise
 \[\[ex:8.28\]](#ex:8.28){reference-type="ref" reference="ex:8.28"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.30 label="ex:8.30"} Use Stirling's formula to prove that
+
+
+### ex:8.30 
+ Use Stirling's formula to prove that
 
 $$
 \lim_{x \to \infty} \frac{\Gamma(x+c)}{x^c \Gamma(x)} = 1
 $$
  for every
 real constant $c$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:8.31 label="ex:8.31"} In the proof of Theorem
+
+
+### ex:8.31 
+ In the proof of Theorem
 \[\[thm:7.26\]](#thm:7.26){reference-type="ref" reference="thm:7.26"} it
 was shown that 
 $$
@@ -628,4 +659,4 @@ $$
 \lim_{n \to \infty} \sqrt{n} \int_{-1}^{1} (1-x^2)^n \mathrm{d} x = \sqrt{\pi} .
 $$
 
-<!-- ::: -->
+

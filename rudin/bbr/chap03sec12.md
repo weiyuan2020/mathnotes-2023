@@ -3,12 +3,13 @@
 The series $\sum a_n$ i said to *converge absolutely* if the series
 $\sum |a_n|$ converges.
 
-<!-- ::: thm -->
-[]{#thm:3.45 label="thm:3.45"} if $\sum a_n$ converges absolutely, then
-$\sum a_n$ converges.
-<!-- ::: -->
 
-<!-- ::: proof -->
+### thm:3.45 
+ if $\sum a_n$ converges absolutely, then
+$\sum a_n$ converges.
+
+
+
 *Proof.* The assertion follow from the inequality
 
 $$
@@ -16,10 +17,11 @@ $$
         \leq \sum_{k=n}^{m} |a_k|,
 $$
  plus the Cauchy criterion. ◻
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:3.46 label="myremark:3.46"} For series of positive terms,
+
+
+### myremark:3.46 
+ For series of positive terms,
 absolute convergence is the same as convergence.
 
 If $\sum a_n$ converges, but $\sum |a_n|$ diverges, we say that
@@ -43,4 +45,4 @@ change the order in which the additions are carried out, without
 affecting the sum of series. But for nonabsolutely convergent series
 this is no longer true, and more care has to be taken when dealing with
 them.
-<!-- ::: -->
+

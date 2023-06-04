@@ -1,7 +1,8 @@
 # Discussion of main problem
 
-<!-- ::: mydef -->
-[]{#mydef:7.1 label="mydef:7.1"} Suppose $\{f_n\}$,
+
+### mydef:7.1 
+ Suppose $\{f_n\}$,
 $n = 1,2,3,\dots,$ is a sequence of functions defined on a set $E$, and
 suppose that the sequence of numbers $\{f_n\{x\}\}$ converges for
 every $x \in E$. We can then define a function $f$ by 
@@ -74,9 +75,9 @@ Afterward, we shall prove that under certain conditions the order in
 which limit operations are carried out is immaterial.
 
 Our first example, and the simplest one, concerns a "double sequence."
-<!-- ::: -->
 
-<!-- ::: newexample -->
+
+
 For $m = 1,2,3,\dots,n = 1,2,3,...$, let 
 $$
 s_{m,n} = \frac{m}{m+n}.
@@ -108,9 +109,9 @@ $$
         \lim_{m \to \infty} \lim_{n \to \infty} s_{m,n} = 0.
 $$
 
-<!-- ::: -->
 
-<!-- ::: newexample -->
+
+
 Let 
 $$
 f_n (x) = \frac{x^2}{(1+x^2)^n}
@@ -139,16 +140,16 @@ $$
 
         f(x) = \left\{
         \begin{array}{ll}
-            0       & (x \neq 0) \\
-            1 + x^2 & (x =    0) \\
+            0       & (x \neq 0) \\ 
+            1 + x^2 & (x =    0) \\ 
         \end{array}
         \right.
 $$
  so that a convergent series of continuous functions
 may have a discontinuous sum.
-<!-- ::: -->
 
-<!-- ::: newexample -->
+
+
 For $m = 1,2,3,\dots$, put
 
 $$
@@ -171,7 +172,7 @@ $$
         \lim_{m \to \infty} \lim_{n \to \infty} (\cos m!\pi x)^{2n} =
         \left\{
         \begin{array}{ll}
-            0 & (x \text{irrational}), \\
+            0 & (x \text{irrational}), \\ 
             1 & (x \text{rational}).
         \end{array}
         \right.
@@ -179,10 +180,11 @@ $$
  We have thus obtained an everywhere discontinuous
 limit function, which is not Riemann-integrable (Exercise
 \[\[ex:6.4\]](#ex:6.4){reference-type="ref" reference="ex:6.4"}).
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:7.5 label="newexample:7.5"} Let 
+
+
+### newexample:7.5 
+ Let 
 \label{eq:7.9}
 
 $$
@@ -209,10 +211,11 @@ f'_n(0) = \sqrt{n} \rightarrow +\infty
 $$
  as $n \rightarrow \infty$,
 whereas $f'(0) = 0$.
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:7.6 label="newexample:7.6"} Let 
+
+
+### newexample:7.6 
+ Let 
 \label{eq:7.10}
 
 $$
@@ -268,7 +271,7 @@ $$
 
 Thus the limit of the integral need not be equal to the integral of the
 limit, even if both are finite.
-<!-- ::: -->
+
 
 After these examples, which show what can go wrong if limit processes
 are interchanged carelessly, we now define a new mode of convergence,

@@ -1,16 +1,18 @@
 # Compact sets
 
-<!-- ::: mydef -->
-[]{#mydef:2.31 label="mydef:2.31"} By an *open cover* of a set $E$ in a
+
+### mydef:2.31 
+ By an *open cover* of a set $E$ in a
 metric space $X$ we mean a collection $\{G_{\alpha}\}$ of open
 subsets of $X$ such that $E \subset \cup_{\alpha} G_{\alpha}$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:2.32 label="mydef:2.32"} A subset $K$ of a metric space $X$ is
+
+
+### mydef:2.32 
+ A subset $K$ of a metric space $X$ is
 said to be *compact* if every open cover of $K$ contains a *finite*
 subcover.
-<!-- ::: -->
+
 
 More explicitly, the requirement is that if $\{G_{\alpha}\}$ is
 an open cover of $K$, then there are finitely many indices
@@ -37,11 +39,12 @@ Compactness, however, behaves better, as we shall now see. To formulate
 the next theorem, let us say, temporarily, that $K$ is compact relative
 to $X$ if the requirements of Definition 2.32 are met.
 
-<!-- ::: thm -->
-[]{#thm:2.33 label="thm:2.33"} Suppose $K \subset Y \subset X$. Then $K$
+
+### thm:2.33 
+ Suppose $K \subset Y \subset X$. Then $K$
 is compact relative to $X$ if and only if $K$ is compact relative to
 $Y$.
-<!-- ::: -->
+
 
 By virtue of this theorem we are able, in many situations, to regard
 compact sets as metric spaces in their own right, without paying any
@@ -50,7 +53,7 @@ little sense to talk of *open* spaces, or of *closed* spaces (every
 metric space $X$ is an open subset of itself, and is a closed subset of
 itself), it does make sense to talk of *compact* metric spaces.
 
-<!-- ::: proof -->
+
 *Proof.* Suppose $K$ is compact relative to $X$, and let
 $\{V_\alpha\}$ be a collection of sets, open relative to $Y$,
 such that $K \subset \cup_\alpha V_\alpha$ theorem 2.30, there are sets
@@ -86,14 +89,15 @@ reference="eq:2.23"} implies
 \[\[eq:2.22\]](#eq:2.22){reference-type="ref" reference="eq:2.22"}.
 
 This completes the proof. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:2.34 label="thm:2.34"} Compact subsets of metric spaces are
+
+
+### thm:2.34 
+ Compact subsets of metric spaces are
 closed.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $K$ be a compact subset of a metric space $X$. We shall
 prove that the complement of $K$ is an open subset of $X$.
 
@@ -113,14 +117,15 @@ $$
 If $V=V_{q_1} \cap \cdots \cap V_{q_1}$, then $V$ is a neighborhood of
 $p$ which does not intersect $W$. Hence $V \subset K^c$, so that $p$ is
 an interior point of $K^c$. The theorem follows. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:2.35 label="thm:2.35"} Closed subsets of compact sets are
+
+
+### thm:2.35 
+ Closed subsets of compact sets are
 compact.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Suppose $F \subset K \subset X$, $F$ is closed (relative to
 $X$), and $K$ is compact. Let $\{V_\alpha\}$ be an open cover of
 $F$. If $F^c$ is adjoined to $\{V_\alpha\}$, we obtain an open
@@ -129,29 +134,30 @@ subcollection $\Phi$ of $\Omega$ which covers $K$, and hence $F$. If
 $F^c$ is a member of $\Phi$, we may remove it from $\Phi$ and still
 retain an open cover of $F$. We have thus shown that a finite
 subcollection of $\{V_\alpha\}$ covers $F$. ◻
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If $F$ is closed and $K$ is compact, then $F \cap K$ is compact.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Theorems \[\[thm:2.24\]](#thm:2.24){reference-type="ref"
 reference="thm:2.24"}(b) and
 \[\[thm:2.34\]](#thm:2.34){reference-type="ref" reference="thm:2.34"}
 show that $F \cap K$ is closed; since $F \cap K \subset K$, Theorem
 \[\[thm:2.35\]](#thm:2.35){reference-type="ref" reference="thm:2.35"}
 shows that $F \cap K$ is compact. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:2.36 label="thm:2.36"} If $\{K_\alpha\}$ is a collection
+
+
+### thm:2.36 
+ If $\{K_\alpha\}$ is a collection
 of compact subsets of a metric space $X$ such that the intersection of
 every finite subcollection of $\{K_\alpha\}$ is nonempty, then
 $\cap K_\alpha$ is nonempty.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Fix a member $K_1$ of $\{K_\alpha\}$ and put
 $G_\alpha = K^c_\alpha$. Assume that no point of $K_1$ belongs to every
 $K_\alpha$. Then the sets $G_\alpha$ form an open cover of $K_1$; and
@@ -166,34 +172,36 @@ K_1 \cap
         K_{\alpha_n}
 $$
  is empty, in contradiction to our hypothesis. ◻
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If $\{K_\alpha\}$ is a sequence of nonempty compact sets such
 that $K_n \supset K_{n+1} (n=1,2,3,...)$, then $\cap_1^\infty K_n$ is
 not empty.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:2.37 label="thm:2.37"} If $E$ is an infinite subset of a compact
+
+
+### thm:2.37 
+ If $E$ is an infinite subset of a compact
 set $K$, then $E$ has a limit point in $K$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* If no point of $K$ were a limit point of $E$, then each
 $q \in K$ would have a neighborhood $V_q$ which contains at most one
 point of $E$ (namely, $q$, if $q \in E$). It is clear that no finite
 subcollection of $\{V_q\}$ can cover $E$; and the same is true of
 $K$, since $E \subset K$. This contradicts the compactness of $K$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:2.38 label="thm:2.38"} If $\{I_n\}$ is a sequence of
+
+
+### thm:2.38 
+ If $\{I_n\}$ is a sequence of
 intervals in $\mathbb{R}^1$, such that $I_n \supset I_{n+1}, (n=1,2,3,...)$,
 then $\cap_1^\infty I_n$ is not empty.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* If $I_n = [a_n, b_n]$, let $E$ be the set of all $a_n$. Then
 $E$ is nonempty and bounded above (by $b_1$). Let $x$ be the sup of $E$.
 If $m$ and $n$ are positive integers, then 
@@ -205,16 +213,17 @@ a_{n} \leq
 $$
  so that $x \leq b_m$ for each $m$. Since it is obvious
 that $a_m \leq x$, we see that $x \in I_m$ for $m = 1, 2, 3, ...$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:2.39 label="thm:2.39"} Let $k$ be a positive integer. If ${I_n}$
+
+
+### thm:2.39 
+ Let $k$ be a positive integer. If ${I_n}$
 is a sequence of $k$-cells such that
 $I_n \supset I_{n+1}, (n=1,2,3,...)$, then $\cap_1^\infty I_n$ is not
 empty.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $I_n$ consist of all points $\mathbf{x} = (x_1,...,x_k)$
 such that 
 $$
@@ -240,13 +249,14 @@ $$
  Setting
 $\mathbf{x}* = (x_1^*, ... , x_k^*)$, we see that $\mathbf{x}^* \in I_n$
 for $n = 1, 2, 3, ...$. The theorem follows. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:2.40 label="thm:2.40"} Every $k$-cell is compact.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+### thm:2.40 
+ Every $k$-cell is compact.
+
+
+
 *Proof.* Let $I$ be a $k$-cell, consisting of all points
 $\mathbf{x} = (x_1, \dots, x_k)$ such that
 $a_j \leq x_j \leq  b_j (1 \leq j \leq k)$. Put 
@@ -285,13 +295,14 @@ positive integers $n$, which is absurd since $\mathbb{R}$ is archimedean), then
 (c) implies that $I_n \subset G_\alpha$, which contradicts (b).
 
 This completes the proof. ◻
-<!-- ::: -->
+
 
 The equivalence of (a) and (b) in the next theorem is known as the
 Heine-Borel theorem.
 
-<!-- ::: thm -->
-[]{#thm:2.41 label="thm:2.41"} If a set $E$ in $\mathbb{R}^k$ has one of the
+
+### thm:2.41 
+ If a set $E$ in $\mathbb{R}^k$ has one of the
 following three properties, then it has the other two:
 
 (a) $E$ is closed and bounded.
@@ -299,9 +310,9 @@ following three properties, then it has the other two:
 (b) $E$ is compact.
 
 (c) Every infinite subset of $E$ has a limit point in $E$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* If (a) holds, then $E \subset I$ for some $k$-cell $I$, and (b)
 follows from Theorems \[\[thm:2.40\]](#thm:2.40){reference-type="ref"
 reference="thm:2.40"} and \[\[thm:2.35\]](#thm:2.35){reference-type="ref"
@@ -335,7 +346,7 @@ $$
         \left| \mathbf{x}_n - \mathbf{y} \right|
          & \geq
         \left| \mathbf{x}_0 - \mathbf{y} \right| -
-        \left| \mathbf{x}_n - \mathbf{x}_n \right| \\
+        \left| \mathbf{x}_n - \mathbf{x}_n \right| \\ 
          & \geq
         \left| \mathbf{x}_0 - \mathbf{y} \right| - \frac{1}{n}
         \geq \frac{1}{2}
@@ -348,7 +359,7 @@ $\mathbf{y}$ is not a limit point of $S$ (Theorem
 
 Thus $S$ has no limit point in $E$; hence $E$ must be closed if (c)
 holds. ◻
-<!-- ::: -->
+
 
 We should remark, at this point, that (b) and (c) are equivalent in any
 metric space (Exercise \[\[ex:2.26\]](#ex:2.26){reference-type="ref"
@@ -358,15 +369,16 @@ reference="ex:2.26"}) but that (a) does not, in general, imply (b) and
 the space $\mathscr{C}^2$ , which is discussed in Chap.
 \[\[chap:11\]](#chap:11){reference-type="ref" reference="chap:11"}.
 
-<!-- ::: thm -->
-(Weierstrass) []{#thm:2.42 label="thm:2.42"} Every bounded infinite
-subset of $\mathbb{R}^k$ has a limit point in $\mathbb{R}^k$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+(Weierstrass) ### thm:2.42 
+ Every bounded infinite
+subset of $\mathbb{R}^k$ has a limit point in $\mathbb{R}^k$.
+
+
+
 *Proof.* Being bounded, the set $E$ in question is a subset of a
 $k$-cell $I\subset \mathbb{R}^k$. By Theorem
 \[\[thm:2.40\]](#thm:2.40){reference-type="ref" reference="thm:2.40"},
 $I$ is compact, and so $E$ has a limit point in $I$, by Theorem
 \[\[thm:2.37\]](#thm:2.37){reference-type="ref" reference="thm:2.37"}. ◻
-<!-- ::: -->
+

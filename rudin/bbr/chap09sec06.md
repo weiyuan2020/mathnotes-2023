@@ -10,8 +10,9 @@ $\mathbf{F'(x)}$.
 Before stating it, we need a few more facts about linear
 transformations.
 
-<!-- ::: mydef -->
-[]{#mydef:9.30 label="mydef:9.30"} Suppose $X$ and $Y$ are vector
+
+### mydef:9.30 
+ Suppose $X$ and $Y$ are vector
 spaces, and $A \in L( X, Y)$, as in Definition 9.6. The *null space* of
 $A$, $\mathscr{N}(A)$, is the set of all $\mathbf{x} \in X$ at which
 $A \mathbf{x = 0}$. It is clear that $\mathscr{N}(A)$ is a vector space
@@ -31,21 +32,22 @@ $x \in A$, hence $\mathscr{N}(A) = X$.
 
 In this connection, see Exercise
 \[\[ex:9.25\]](#ex:9.25){reference-type="ref" reference="ex:9.25"}.
-<!-- ::: -->
 
-<!-- ::: mydef -->
+
+
 Let $X$ be a vector space. An operator $P\in L(X)$ is said to be a
 *projection* in $X$ if $P^2 = P$.
 
 More explicitly, the requirement is that
 $P(P \mathbf{x}) = P \mathbf{x}$ for every $\mathbf{x} \in X$. In other
 words, $P$ fixes every vector in its range $\mathscr{R}(P)$.
-<!-- ::: -->
+
 
 Here are some elementary properties of projections:
 
-<!-- ::: thm -->
-[]{#thm:9.32 label="thm:9.32"} Suppose $m, n, r$ are nonnegative
+
+### thm:9.32 
+ Suppose $m, n, r$ are nonnegative
 integers, $m \geq r, n \geq r$, $\mathbf{F}$ is a $\mathscr{C}'$-mapping
 of an open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$, and $\mathbf{F'(x)}$ has
 rank $r$ for every $\mathbf{x} \in E$.
@@ -69,7 +71,7 @@ $$
 $$
  where $q$, is a $\mathscr{C'}$-mapping of
 the open set $A(V) \subset Y_1$ into $Y_2$.
-<!-- ::: -->
+
 
 After the proof we shall give a more geometric description of the
 information that (\[\[eq:9.66\]](#eq:9.66){reference-type="ref"

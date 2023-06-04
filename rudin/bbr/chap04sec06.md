@@ -3,17 +3,19 @@
 We shall now study those functions which never decrease (or never
 increase) on a given segment.
 
-<!-- ::: mydef -->
-[]{#mydef:4.28 label="mydef:4.28"} Let $f$ be real on $(a, b)$. Then $f$
+
+### mydef:4.28 
+ Let $f$ be real on $(a, b)$. Then $f$
 is said to be *monotonically increasing* on $(a, b)$ if $a< x < y < b$
 implies $f(x) \leq f(y)$. If the last inequality is reversed, we obtain
 the definition of a *monotonically decreasing* function. The class of
 monotonic functions consists of both the increasing and the decreasing
 functions.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.29 label="thm:4.29"} Let f be monotonically increasing on
+
+
+### thm:4.29 
+ Let f be monotonically increasing on
 $(a, b)$. Then $f(x+)$ and $f(x-)$ exist at every point of $x$ of
 $(a, b)$. More precisely, 
 \label{eq:4.25}
@@ -33,11 +35,11 @@ $$
         f(x+) \leq f(y-).
 $$
 
-<!-- ::: -->
+
 
 Analogous results evidently hold for monotonically decreasing functions.
 
-<!-- ::: proof -->
+
 *Proof.* By hypothesis, the set of numbers $f(t)$, where $a< t < x$, is
 bounded above by the number $f(x)$, and therefore has a least upper
 bound which we shall denote by $A$. Evidently $A \leq f(x)$. We have to
@@ -107,11 +109,11 @@ $$
 (\[\[eq:4.30\]](#eq:4.30){reference-type="ref" reference="eq:4.30"})
 gives (\[\[eq:4.26\]](#eq:4.26){reference-type="ref"
 reference="eq:4.26"}). ◻
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 Monotonic functions have no discontinuities of the second kind.
-<!-- ::: -->
+
 
 This corollary implies that every monotonic function is discontinuous at
 a countable set of points at most. Instead of appealing to the general
@@ -119,14 +121,16 @@ theorem whose proof is sketched in Exercise
 \[\[ex:4.17\]](#ex:4.17){reference-type="ref" reference="ex:4.17"}, we
 give here a simple proof which is applicable to monotonic functions.
 
-<!-- ::: thm -->
-[]{#thm:4.30 label="thm:4.30"} Let $f$ be monotonic on $(a, b)$. Then
+
+### thm:4.30 
+ Let $f$ be monotonic on $(a, b)$. Then
 the set of points of $(a, b)$ at which $f$ is discontinuous is at most
 countable.
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:4.31 label="myremark:4.31"} It should be noted that the
+
+
+### myremark:4.31 
+ It should be noted that the
 discontinuities of a monotonic function need not be isolated. In fact,
 given any countable subset $E$ of $(a, b)$, which may even be dense, we
 can construct a function $f$, monotonic on $(a, b)$, discontinuous at
@@ -151,9 +155,9 @@ define it to be zero. Since
 (\[\[eq:4.31\]](#eq:4.31){reference-type="ref" reference="eq:4.31"})
 converges absolutely, the order in which the terms are arranged is
 immaterial.
-<!-- ::: -->
 
-<!-- ::: asparaenum -->
+
+
 $f$ is monotonically increasing on $(a, b)$;
 
 $f$ is discontinuous at every point of $E$; in fact,
@@ -164,7 +168,7 @@ $$
 
 
 $f$ is continuous at every other point of $(a, b)$.
-<!-- ::: -->
+
 
 Moreover, it is not hard to see that $f(x-) =f(x)$ at all points of
 $(a, b)$. If a function satisfies this condition, we say that $f$ is

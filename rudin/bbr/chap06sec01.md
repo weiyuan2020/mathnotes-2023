@@ -1,7 +1,8 @@
 # mydefinition and existence of the integral
 
-<!-- ::: mydef -->
-[]{#mydef:6.1 label="mydef:6.1"} Let $[a, b]$ be a given interval. By a
+
+### mydef:6.1 
+ Let $[a, b]$ be a given interval. By a
 *partition* $P$ of $[a, b]$ we mean a finite set of points
 $x_0, x_1, ... , x_n$, where
 
@@ -19,9 +20,9 @@ function defined on $[a, b ]$. Corresponding to each partition $P$ of
 $[a, b]$ we put 
 $$
 \begin{aligned}
-        M_i &= \sup f(x) \quad (x_{i-1} \leq x \leq x_i), \\
-        m_i &= \inf f(x) \quad (x_{i-1} \leq x \leq x_i), \\
-        U(P,f) &= \sum_{i=1}^{n} M_i \Delta x_i,\\
+        M_i &= \sup f(x) \quad (x_{i-1} \leq x \leq x_i), \\ 
+        m_i &= \inf f(x) \quad (x_{i-1} \leq x \leq x_i), \\ 
+        U(P,f) &= \sum_{i=1}^{n} M_i \Delta x_i,\\ 
         L(P,f) &= \sum_{i=1}^{n} m_i \Delta x_i,
     \end{aligned}
 $$
@@ -29,7 +30,7 @@ $$
 $$
 \begin{aligned}
         \label{eq:6.1}
-        \overline{\int_{a}^{b}} f \mathrm{d} x &= \inf U(P, f), \\
+        \overline{\int_{a}^{b}} f \mathrm{d} x &= \inf U(P, f), \\ 
         \label{eq:6.2}
         \underline{\int_{a}^{b}} f \mathrm{d} x &= \sup L(P, f),
     \end{aligned}
@@ -78,10 +79,11 @@ question of their equality, and hence the question of the integrability
 of $f$, is a more delicate one. Instead of investigating it separately
 for the Riemann integral, we shall immediately consider a more general
 situation.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:6.2 label="mydef:6.2"} Let $\alpha$ be a monotonically
+
+
+### mydef:6.2 
+ Let $\alpha$ be a monotonically
 increasing function on $[a, b]$ (since $\alpha (a)$ and $\alpha (b)$ are
 finite, it follows that $\alpha$ is bounded on $[a, b]$). Corresponding
 to each partition $P$ of $[a, b]$, we write
@@ -94,7 +96,7 @@ that $\Delta \alpha \geq 0$. For any real function $f$ which is bounded
 on $[a, b]$ we put 
 $$
 \begin{aligned}
-        U(P, f, \alpha) &= \sum_{i=1}^{n} M_1 \Delta \alpha_i, \\
+        U(P, f, \alpha) &= \sum_{i=1}^{n} M_1 \Delta \alpha_i, \\ 
         L(P, f, \alpha) &= \sum_{i=1}^{n} m_1 \Delta \alpha_i. 
     \end{aligned}
 $$
@@ -104,7 +106,7 @@ reference="mydef:6.1"}, and we define
 $$
 \begin{aligned}
         \label{eq:6.5}
-        \overline{\int_{a}^{b}} f \mathrm{d} \alpha &= \inf U(P, f, \alpha), \\
+        \overline{\int_{a}^{b}} f \mathrm{d} \alpha &= \inf U(P, f, \alpha), \\ 
         \label{eq:6.6}
         \underline{\int_{a}^{b}} f \mathrm{d} \alpha &= \sup L(P, f, \alpha),
     \end{aligned}
@@ -178,17 +180,19 @@ We shall now investigate the existence of the integral
 Without saying so every time, $f$ will be assumed real and bounded, and
 $\alpha$ monotonically increasing on $[a, b]$; and, when there can be no
 misunderstanding, we shall write $\int$ in place of $\int_{a}^{b}$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:6.3 label="mydef:6.3"} We say that the partition $P^*$ is a
+
+
+### mydef:6.3 
+ We say that the partition $P^*$ is a
 *refinement* of $P$ if $P^* \supset P$ (that is, if every point of $P$
 is a point of $P^*$). Given two partitions, $P_1$ and $P_2$ , we say
 that $P^*$ is their common refinement if $P^* = P_1 \cup P_2$ .
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.4 label="thm:6.4"} If $P^*$ is a refinement of $P$. then
+
+
+### thm:6.4 
+ If $P^*$ is a refinement of $P$. then
 
 \label{eq:6.9}
 
@@ -206,9 +210,9 @@ $$
         U(P,   f, \alpha) .
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* To prove (\[\[eq:6.9\]](#eq:6.9){reference-type="ref"
 reference="eq:6.9"}), suppose first that $P^*$ contains just one point
 more than $P$. Let this extra point be $x^*$, and suppose
@@ -216,7 +220,7 @@ $x_{i-1} < x^{*} < x_{i}$, where $x_{i-1}$ and $x_{i}$, are two
 consecutive points of $P$. Put 
 $$
 \begin{aligned}
-        w_1 &= \inf f(x) \quad (x_{i-1} \leq x \leq x^{*}) \\
+        w_1 &= \inf f(x) \quad (x_{i-1} \leq x \leq x^{*}) \\ 
         w_2 &= \inf f(x) \quad (x^{*} \leq x \leq x_{i})        
     \end{aligned}
 $$
@@ -232,7 +236,7 @@ $$
         L(P^*,f, \alpha ) - L(P,f, \alpha )
         &= w_1[\alpha (x^*) - \alpha (x_{i-1})] 
          + w_2[\alpha (x_i) - \alpha (x^*)] 
-         - m_i[\alpha (x_i) - \alpha (x_{i-1})] \\
+         - m_i[\alpha (x_i) - \alpha (x_{i-1})] \\ 
         &= (w_1 - m_i)[\alpha (x^*) - \alpha (x_{i-1})] 
          + (w_2 - m_i)[\alpha (x_i) - \alpha (x*)] \geq 0.
     \end{aligned}
@@ -244,14 +248,15 @@ times, and arrive at (\[\[eq:6.9\]](#eq:6.9){reference-type="ref"
 reference="eq:6.9"}). The proof of
 (\[\[eq:6.10\]](#eq:6.10){reference-type="ref" reference="eq:6.10"}) is
 analogous. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.5 label="thm:6.5"} $\underline{\int_{a}^{b}} f \mathrm{d} \alpha \leq
+
+
+### thm:6.5 
+ $\underline{\int_{a}^{b}} f \mathrm{d} \alpha \leq
     \overline{\int_{a}^{b}} f \mathrm{d} \alpha .$
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $P^*$ be the common refinement of two partitions $P_1$ and
 $P_2$. By Theorem \[\[thm:6.4\]](#thm:6.4){reference-type="ref"
 reference="thm:6.4"}, 
@@ -282,10 +287,11 @@ $$
  The theorem follows by taking the inf over
 all $P_2$ in (\[\[eq:6.12\]](#eq:6.12){reference-type="ref"
 reference="eq:6.12"}) ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.6 label="thm:6.6"} $f \in \mathscr{R} (\alpha)$ on $[a, b]$ if
+
+
+### thm:6.6 
+ $f \in \mathscr{R} (\alpha)$ on $[a, b]$ if
 and only if for every $\varepsilon > 0$ there exists a partition $P$
 such that 
 \label{eq:6.13}
@@ -296,9 +302,9 @@ $$
         L(P, f, \alpha) < \varepsilon.
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* For every $P$ we have 
 $$
 L(P, f, \alpha)  \leq
@@ -332,7 +338,7 @@ $\varepsilon > 0$, Then there exist partition $P_1$ and $P_2$ such that
 $$
 \begin{aligned}
         \label{eq:6.14}
-        U(P_2, f, \alpha) - \int f \mathrm{d} \alpha &< \frac{\varepsilon}{2}, \\
+        U(P_2, f, \alpha) - \int f \mathrm{d} \alpha &< \frac{\varepsilon}{2}, \\ 
         \label{eq:6.15}
         \int f \mathrm{d} \alpha - L(P_1, f, \alpha) &< \frac{\varepsilon}{2}.
     \end{aligned}
@@ -346,16 +352,17 @@ shows that
 
 so that (\[\[eq:6.13\]](#eq:6.13){reference-type="ref"
 reference="eq:6.13"}) holds for this partition $P$. ◻
-<!-- ::: -->
+
 
 Theorem \[\[thm:6.6\]](#thm:6.6){reference-type="ref"
 reference="thm:6.6"} furnishes a convenient criterion for integrability.
 Before we apply it, we state some closely related facts.
 
-<!-- ::: thm -->
-[]{#thm:6.7 label="thm:6.7"}
 
-<!-- ::: asparaenum -->
+### thm:6.7 
+
+
+
 If (\[\[eq:6.13\]](#eq:6.13){reference-type="ref" reference="eq:6.13"})
 holds for some $P$ and some $\varepsilon$, then
 (\[\[eq:6.13\]](#eq:6.13){reference-type="ref" reference="eq:6.13"})
@@ -378,10 +385,10 @@ $$
             < \varepsilon.
 $$
 
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
+
 *Proof.* Theorem \[\[thm:6.4\]](#thm:6.4){reference-type="ref"
 reference="thm:6.4"} implies (a). Under the assumptions made in (b),
 both $f(s_i)$ and $f(t_i)$ lie in $[m_i, M_i]$, so that
@@ -406,14 +413,15 @@ L(P, f, \alpha) \leq
         U(P, f, \alpha)
 $$
  prove (c). ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.8 label="thm:6.8"} If $f$ is continuous on $[a, b]$ then
+
+
+### thm:6.8 
+ If $f$ is continuous on $[a, b]$ then
 $f \in \mathscr{R}(\alpha)$ on $[a, b]$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $\varepsilon > 0$ be given. Choose $\eta > 0$ so that
 
 $$
@@ -447,7 +455,7 @@ $$
 $$
 \begin{aligned}
         U(P, f, \alpha) - L(P, f, \alpha)
-        &= \sum_{i=1}^{n} \left( M_i - m_i \right) \Delta \alpha_i \\
+        &= \sum_{i=1}^{n} \left( M_i - m_i \right) \Delta \alpha_i \\ 
         \leq \eta \sum_{i=1}^{n} \Delta \alpha_i 
         &= \eta \left[ \alpha (b) - \alpha (a) \right] < \varepsilon.
     \end{aligned}
@@ -455,27 +463,30 @@ $$
  By Theorem
 \[\[thm:6.6\]](#thm:6.6){reference-type="ref" reference="thm:6.6"},
 $f \in \mathscr{R}(\alpha)$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.9 label="thm:6.9"} If $f$ is monotonic on $[a, b]$, and if
+
+
+### thm:6.9 
+ If $f$ is monotonic on $[a, b]$, and if
 $\alpha$ is continuous on $[a, b]$, then $f \in \mathscr{R}(\alpha)$.
 (We still assume, of course, that $\alpha$ is monotonic.)
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.10 label="thm:6.10"} Suppose $f$ is bounded on $[a, b]$, $f$
+
+
+### thm:6.10 
+ Suppose $f$ is bounded on $[a, b]$, $f$
 has only finitely many points of discontinuity on $[a, b]$, and $\alpha$
 is continuous at every point at which $f$ is discontinuous. Then
 $f \in \mathscr{R}(\alpha)$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.11 label="thm:6.11"} Suppose $f \in \mathscr{R}(\alpha)$ on
+
+
+### thm:6.11 
+ Suppose $f \in \mathscr{R}(\alpha)$ on
 $[a, b]$, $m \leq f \leq M$, $\phi$ is continuous on $[m, M]$, and
 $h(x) = \phi(f(x))$ on $[a, b]$. Then $h \in \mathscr{R}(\alpha)$ on
 $[a, b]$.
-<!-- ::: -->
+
 
 *Remark:* This theorem suggests the question: Just what functions are
 Riemann-integrable? The answer is given by Theorem 11.33(b).

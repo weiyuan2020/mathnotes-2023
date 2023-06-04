@@ -35,8 +35,9 @@ said to be expanded in a power series about the point $x = a$. As a
 matter of convenience, we shall often take $a = 0$ without any loss of
 generality.
 
-<!-- ::: thm -->
-[]{#thm:8.1 label="thm:8.1"} Suppose the series 
+
+### thm:8.1 
+ Suppose the series 
 \label{eq:8.3}
 
 $$
@@ -70,9 +71,9 @@ $$
         (\left| x \right| < R).
 $$
 
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 Under the hypotheses of Theorem
 \[\[thm:8.1\]](#thm:8.1){reference-type="ref" reference="thm:8.1"}, $f$
 has derivatives of all orders in $(-R, R)$, which are given by
@@ -97,10 +98,11 @@ $$
 $$
  (Here $f^{(0)}$ means $f$, and $f^{(k)}$ is
 the $k$th derivatives of $f$, for $k = 1,2,3,\dots$).
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.2 label="thm:8.2"} Suppose $\sum c_n$ converges. Put
+
+
+### thm:8.2 
+ Suppose $\sum c_n$ converges. Put
 
 $$
 f(x) = \sum_{n=0}^{\infty} c_n x^n 
@@ -115,10 +117,11 @@ $$
         \sum_{n=0}^{\infty} c_n.
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.3 label="thm:8.3"} Given a double sequence
+
+
+### thm:8.3 
+ Given a double sequence
 $\{a_{ij}\}$, $i = 1, 2, 3, ...$, $j = 1, 2, 3, ...$, suppose
 that 
 \label{eq:8.12}
@@ -140,10 +143,11 @@ $$
         \sum_{i=1}^{\infty} a_{ij} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.4 label="thm:8.4"} Suppose
+
+
+### thm:8.4 
+ Suppose
 
 $$
 f(x) = \sum_{n=0}^{\infty} c_n x^n ,
@@ -165,10 +169,11 @@ $$
  This is an
 extension of Theorem \[\[thm:5.15\]](#thm:5.15){reference-type="ref"
 reference="thm:5.15"} and is also known as *Taylor's theorem*.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.5 label="thm:8.5"} Suppose the series $\sum a_n x^n$ and
+
+
+### thm:8.5 
+ Suppose the series $\sum a_n x^n$ and
 $\sum b_n x^n$ converge in the segment $S = (-R, R)$. Let $E$ be the set
 of all $x \in S$ at which 
 \label{eq:8.20}
@@ -182,4 +187,4 @@ $$
 then $a_n = b_n$ for $n = 0, 1, 2, ...$. Hence
 (\[\[eq:8.20\]](#eq:8.20){reference-type="ref" reference="eq:8.20"})
 holds for all $x \in S$.
-<!-- ::: -->
+

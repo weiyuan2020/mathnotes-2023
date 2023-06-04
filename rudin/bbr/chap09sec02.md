@@ -1,6 +1,6 @@
 # Differentiation
 
-<!-- ::: mydef -->
+
 In order to arrive at a definition of the derivative of a function whose
 domain is $\mathbb{R}^n$ (or an open subset of $\mathbb{R}^n$), let us take another look
 at the familiar case $n = 1$, and let us see how to interpret the
@@ -97,10 +97,11 @@ $$
 
 
 We are now ready for the case $n > 1$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:9.11 label="mydef:9.11"} Suppose $E$ is an open set in $\mathbb{R}^n$,
+
+
+### mydef:9.11 
+ Suppose $E$ is an open set in $\mathbb{R}^n$,
 $f$ maps $E$ into $\mathbb{R}^m$, and $x \in E$. If there exists a linear
 transformation $A$ of $\mathbb{R}^n$ into $\mathbb{R}^m$ such that 
 \label{eq:9.14}
@@ -120,7 +121,7 @@ $$
 $$
  If $\mathbf{f}$ is differentiable
 at every $x \in E$, we say that $\mathbf{f}$ is *differentiable in* $E$.
-<!-- ::: -->
+
 
 It is of course understood in
 (\[\[eq:9.14\]](#eq:9.14){reference-type="ref" reference="eq:9.14"}) that
@@ -140,18 +141,20 @@ $\mathbb{R}^n$-norm of $\mathbf{h}$.
 There is an obvious uniqueness problem which has to be settled before we
 go any further.
 
-<!-- ::: thm -->
-[]{#thm:9.12 label="thm:9.12"} Suppose $E$ and $\mathbf{f}$ are as in
+
+### thm:9.12 
+ Suppose $E$ and $\mathbf{f}$ are as in
 Definition \[\[mydef:9.11\]](#mydef:9.11){reference-type="ref"
 reference="mydef:9.11"}, $\mathbf{x} \in E$, and
 (\[\[eq:9.14\]](#eq:9.14){reference-type="ref" reference="eq:9.14"})
 holds with $A = A_1$ and with $A = A_2$. Then $A_1 = A_2$.
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:9.13 label="myremark:9.13"}
 
-<!-- ::: asparaenum -->
+
+### myremark:9.13 
+
+
+
 The relation (\[\[eq:9.14\]](#eq:9.14){reference-type="ref"
 reference="eq:9.14"}) can be rewritten in the form 
 \label{eq:9.17}
@@ -195,11 +198,12 @@ reference="eq:9.17"}) is often called the *differential* of $\mathbf{f}$
 at $\mathbf{x}$, or the *total derivative* of $\mathbf{f}$ at
 $\mathbf{x}$, to distinguish it from the partial derivatives that will
 occur later.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:9.14 label="newexample:9.14"} We have defined derivatives
+
+
+
+### newexample:9.14 
+ We have defined derivatives
 of functions carrying $\mathbb{R}^n$ to $\mathbb{R}^m$ to be linear transformations of
 $\mathbb{R}^n$ into $\mathbb{R}^m$. What is the derivative of such a linear
 transformation? The answer is very simple.
@@ -234,14 +238,15 @@ linearity of $A$. With $\mathbf{f(x)} = A \mathbf{x}$, the numerator in
 thus 0 for every $\mathbf{h} \in \mathbb{R}^n$. In
 (\[\[eq:9.17\]](#eq:9.17){reference-type="ref" reference="eq:9.17"}),
 $\mathbf{r(h)} = \mathbf{0}$ .
-<!-- ::: -->
+
 
 We now extend the chain rule (Theorem
 \[\[thm:5.5\]](#thm:5.5){reference-type="ref" reference="thm:5.5"}) to
 the present situation.
 
-<!-- ::: thm -->
-[]{#thm:9.15 label="thm:9.15"} Suppose $E$ is an open set in $\mathbb{R}^n$,
+
+### thm:9.15 
+ Suppose $E$ is an open set in $\mathbb{R}^n$,
 $\mathbf{f}$ maps $E$ into $\mathbb{R}^m$, $\mathbf{f}$ is differentiable at
 $\mathbf{x}_0 \in E$, $\mathbf{g}$ maps an open set containing
 $\mathbf{f}(E)$ into $\mathbb{R}^k$, and $\mathbf{g}$ is differentiable at
@@ -259,14 +264,15 @@ $$
         \mathbf{F'(x_0)} = \mathbf{g'(f(x_0)) f'(x_0)}.
 $$
 
-<!-- ::: -->
+
 
 On the right side of (\[\[eq:9.21\]](#eq:9.21){reference-type="ref"
 reference="eq:9.21"}), we have the product of two linear
 transformations, as defined in Sec. 9.6.
 
-<!-- ::: mydef -->
-[]{#mydef:9.16 label="mydef:9.16"} We again consider a function
+
+### mydef:9.16 
+ We again consider a function
 $\mathbf{f}$ that maps an open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$. Let
 $\{\mathbf{e}_1, \dots, \mathbf{e}_n\}$ and
 $\{\mathbf{u}_1, \dots, \mathbf{u}_m\}$ be the standard bases of $\mathbb{R}^n$
@@ -306,7 +312,7 @@ $$
 $$
  is therefore often used in
 place of $D_j f_i$, and $D_j f_i$ is called a *partial derivative*.
-<!-- ::: -->
+
 
 In many cases where the existence of a derivative is sufficient when
 dealing with functions of one variable, continuity or at least
@@ -327,8 +333,9 @@ However, if $\mathbf{f}$ is known to be differentiable at a point
 $\mathbf{x}$, then its partial derivatives exist at $\mathbf{x}$, and
 they determine the linear transformation $\mathbf{f'(x)}$ completely:
 
-<!-- ::: thm -->
-[]{#thm:9.17 label="thm:9.17"} Suppose $\mathbf{f}$ maps an open set
+
+### thm:9.17 
+ Suppose $\mathbf{f}$ maps an open set
 $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$, and $\mathbf{f}$ is differentiable at a
 point $\mathbf{x} \in E$. Then the partial derivatives
 $(D_j f_i)(\mathbf{x})$ exist, and 
@@ -342,17 +349,18 @@ $$
         (1 \leq j \leq n).
 $$
 
-<!-- ::: -->
+
 
 Here, as in Sec. 9.16, $\{\mathbf{e}_1, \dots , \mathbf{e}_n\}$ and
 $\{\mathbf{u}_1, \dots , \mathbf{u}_m\}$ are the standard bases of
 $\mathbb{R}^n$ and $\mathbb{R}^m$.
 
-<!-- ::: newexample -->
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.19 label="thm:9.19"} Suppose $\mathbf{f}$ maps a convex open
+
+
+
+### thm:9.19 
+ Suppose $\mathbf{f}$ maps a convex open
 set $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$, $\mathbf{f}$ is differentiable in $E$,
 and there is a real number $M$ such that
 
@@ -367,25 +375,27 @@ $$
 $$
  for all
 $\mathbf{a} \in E, \mathbf{b} \in E$.
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If, in addition, $\mathbf{f'(x) = 0}$ for all $\mathbf{x} \in E$, then
 $\mathbf{f}$ is constant.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* To prove this, note that the hypotheses of the theorem hold now
 with $M =0$. ◻
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:9.20 label="mydef:9.20"} *continuously differentiable*
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.21 label="thm:9.21"} Suppose $\mathbf{f}$ maps an open set
+
+### mydef:9.20 
+ *continuously differentiable*
+
+
+
+### thm:9.21 
+ Suppose $\mathbf{f}$ maps an open set
 $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$. Then $\mathbf{f} \in \mathscr{C}'(E)$ if
 and only if the partial derivatives $D_j f_i$ exist and are continuous
 on $E$ for $1 \leq i \leq m$,$1 \leq j \leq n$.
-<!-- ::: -->
+

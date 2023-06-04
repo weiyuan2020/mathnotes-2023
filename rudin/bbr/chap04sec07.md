@@ -8,15 +8,17 @@ by reformulating it in terms of neighborhoods.
 For any real number $x$, we have already defined a neighborhood of $x$
 to be any segment $(x - \delta, x + \delta)$.
 
-<!-- ::: mydef -->
-[]{#mydef:4.32 label="mydef:4.32"} For any real $c$, the set of real
+
+### mydef:4.32 
+ For any real $c$, the set of real
 numbers $x$ such that $x > c$ is called a neighborhood of $+\infty$ and
 is written $(c, +\infty)$. Similarly, the set $(-\infty , c)$ is a
 neighborhood of $-\infty$ .
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:4.33 label="mydef:4.33"} Let $f$ be a real function defined on
+
+
+### mydef:4.33 
+ Let $f$ be a real function defined on
 $E \subset R$. We say that
 
 $$
@@ -33,10 +35,11 @@ when $A$ and $x$ are real. The analogue of Theorem
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"} is
 still true, and the proof offers nothing new. We state it, for the sake
 of completeness.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.34 label="thm:4.34"} Let $f$ and $g$ be defined on $E \in \R$.
+
+
+### thm:4.34 
+ Let $f$ and $g$ be defined on $E \in \R$.
 Suppose 
 $$
 f(t) \rightarrow A, \quad
@@ -54,7 +57,7 @@ $$
 (d) $(f /g)(t) \rightarrow A/B$,
 
 provided the right members of (b), (c), and (d) are defined.
-<!-- ::: -->
+
 
 Note that $\infty  - \infty$ , $0 \cdot \infty$ , $\infty /\infty$ ,
 $A/0$ are not defined (see Definition 1.23).

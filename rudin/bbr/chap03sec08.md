@@ -1,11 +1,12 @@
 # The number $e$
 
-<!-- ::: mydef -->
-[]{#mydef:3.30 label="mydef:3.30"}
+
+### mydef:3.30 
+
 $e = \sum_{n=0}^{\infty}\frac{1}{n!}.$
 
 Here $n! = 1 \cdot 2 \cdot 3 \cdots n$ if $n \geq 1$ , and $0! = 1$.
-<!-- ::: -->
+
 
 Since 
 $$
@@ -15,7 +16,7 @@ $$
     + \frac{1}{1 \cdot 2}
     + \frac{1}{1 \cdot 2 \cdot 3}
     + \cdots
-    + \frac{1}{1 \cdot 2 \cdots n} \\
+    + \frac{1}{1 \cdot 2 \cdots n} \\ 
      & < 1 + 1
     + \frac{1}{2}
     + \frac{1}{2^2}
@@ -31,11 +32,12 @@ It is of interest to note that $e$ can also be difined by means of
 another limit process; the proof provides a good illustration of
 operations with limits:
 
-<!-- ::: thm -->
-[]{#thm:3.31 label="thm:3.31"} $\lim_{n \to \infty} (1+1/n)^n = e.$
-<!-- ::: -->
 
-<!-- ::: proof -->
+### thm:3.31 
+ $\lim_{n \to \infty} (1+1/n)^n = e.$
+
+
+
 *Proof.* Let 
 $$
 s_n = \sum_{k=0}^{n} \frac{1}{k!}, \quad
@@ -48,7 +50,7 @@ $$
         t_n & = 1 + 1
         + \frac{1}{2!}\left(1 - \frac{1}{n}\right)
         + \frac{1}{3!}\left(1 - \frac{1}{n}\right)\left(1 - \frac{2}{n}\right)
-        + \cdots                                                                                                        \\
+        + \cdots                                                                                                        \\ 
             & + \frac{1}{n!}\left(1 - \frac{1}{n}\right)\left(1 - \frac{2}{n}\right)\cdots\left(1-\frac{n-1}{n}\right).
     \end{aligned}
 $$
@@ -99,7 +101,7 @@ $$
 The Theorem follows from (\[\[eq:3.14\]](#eq:3.14){reference-type="ref"
 reference="eq:3.14"}) and (\[\[eq:3.15\]](#eq:3.15){reference-type="ref"
 reference="eq:3.15"}). ◻
-<!-- ::: -->
+
 
 The rapidly with which the series $\sum 1/n!$ converges can be estimated
 as follows: If $s_n$ has the same meaning as above, we have
@@ -110,7 +112,7 @@ $$
      & = \frac{1}{(n+1)!}
     + \frac{1}{(n+2)!}
     + \frac{1}{(n+3)!}
-    + \cdots                     \\
+    + \cdots                     \\ 
      & < \frac{1}{(n+1)!}\left\{
     1
     + \frac{1}{n+1}
@@ -131,11 +133,12 @@ approximates $e$ with an error less than $10^{-7}$. The inequality
 of theoretical interest as well, since it enables us to prove the
 irrationality of $e$ very easily.
 
-<!-- ::: thm -->
-[]{#thm:3.32 label="thm:3.32"} $e$ is irrational.
-<!-- ::: -->
 
-<!-- ::: proof -->
+### thm:3.32 
+ $e$ is irrational.
+
+
+
 *Proof.* Suppose $e$ is rational. Then $e = p/q$, where $p$ and $q$ are
 positive integers. By (\[\[eq:3.16\]](#eq:3.16){reference-type="ref"
 reference="eq:3.16"}), 
@@ -158,7 +161,7 @@ $$
 Since $q \geq 1$, (\[\[eq:3.17\]](#eq:3.17){reference-type="ref"
 reference="eq:3.17"}) implies the existence of an integer between $0$
 and $1$. We have thus reached a contradiction. ◻
-<!-- ::: -->
+
 
 Actually, $e$ is not even an algebraic number. For a simple proof of
 this, see page 25 of Niven's[@NIVEN1956] book, or page 176 of

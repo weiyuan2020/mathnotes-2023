@@ -1,7 +1,8 @@
 # Primitive mappings
 
-<!-- ::: mydef -->
-[]{#mydef:10.5 label="mydef:10.5"} If $\mathbf{G}$ maps an open set
+
+### mydef:10.5 
+ If $\mathbf{G}$ maps an open set
 $E \subset \mathbb{R}^n$ into $\mathbb{R}^n$, and if there is an integer $m$ and a real
 function $g$ with domain $E$ such that 
 \label{eq:10.9}
@@ -49,10 +50,11 @@ $$
  and we see (by Theorem
 \[\[thm:9.36\]](#thm:9.36){reference-type="ref" reference="thm:9.36"})
 that $\mathbf{G'(a)}$ is $(D_m g)(\mathbf{a}) \neq 0$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.6 label="mydef:10.6"} A linear operator $B$ on $\mathbb{R}^n$ that
+
+
+### mydef:10.6 
+ A linear operator $B$ on $\mathbb{R}^n$ that
 interchanges some pair of members of the standard basis and leaves the
 others fixed will be called a .
 
@@ -102,10 +104,11 @@ $$
 projection whose range and null space are spanned by
 $\{\mathbf{e_1,...,e_m}\}$ and $\{\mathbf{e_{m+1},...,e_n}\}$,
 respectively.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.7 label="thm:10.7"} Suppose $\mathbf{F}$ is a
+
+
+### thm:10.7 
+ Suppose $\mathbf{F}$ is a
 $\mathscr{C}'$-mapping of an open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^n$,
 $\mathbf{0} \in E$, $\mathbf{F(0) = 0}$, and $\mathbf{F'(0)}$ is
 invertible.
@@ -126,7 +129,7 @@ reference="eq:10.16"}), each $\mathbf{G}_i$ is a primitive
 $\mathscr{C}'$-mapping in some neighborhood of $\mathbf{0}$;
 $\mathbf{G}_i(\mathbf{0})=\mathbf{0}$, $\mathbf{G}'_i(\mathbf{0})$ is
 invertible, and each $B_i$ is either a flip or the identity operator.
-<!-- ::: -->
+
 
 Briefly, (\[\[eq:10.16\]](#eq:10.16){reference-type="ref"
 reference="eq:10.16"}) represents $\mathbf{F}$ locally as a composition

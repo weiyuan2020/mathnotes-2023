@@ -1,7 +1,8 @@
 # Convergent sequences
 
-<!-- ::: mydef -->
-[]{#mydef:3.1 label="mydef:3.1"} A sequences $\{p_n\}$ in metric space
+
+### mydef:3.1 
+ A sequences $\{p_n\}$ in metric space
 $X$ is said to converge if there is a point $p \in X$ with the following
 property:
 
@@ -20,7 +21,7 @@ $$
 
 
 if $\{p_n\}$ does not converge, it is said to diverge.
-<!-- ::: -->
+
 
 our definition of "convergent sequence" depends not only on $\{p_n\}$
 but also on $X$. For instance, the sequence $\{1/n\}$ converges in
@@ -52,8 +53,9 @@ is, $X = \mathbb{R}^2$):
 (e) If $s_n = 1(n=1,2,3,...)$, then $\{s_n\}$ converges to $1$, is
     bounded, and has finite range.
 
-<!-- ::: thm -->
-[]{#thm:3.2 label="thm:3.2"} Let$\{p_n\}$ be a sequence in a metric
+
+### thm:3.2 
+ Let$\{p_n\}$ be a sequence in a metric
 space $X$.
 
 (a) $\{p_n\}$ converges to $p \in X$ if and only if every neighborhood
@@ -66,17 +68,18 @@ space $X$.
 
 (d) If $E \subset X$ and if $p$ is a limit point of $E$, then there is a
     sequence$\{p_n\}$ in $E$ such that $p = \lim_{n \to \infty} p_n$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* (d) For each positive integer $n$, there is a point $p_n \in E$
 such that $d(p_n,p) <1/n$. Given $\varepsilon > 0$, choose $N$ so that
 $N \varepsilon >1$. If $n>N$, it follows that $d(p_n, p) <\varepsilon$.
 Hence $p_n \rightarrow p$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.3 label="thm:3.3"} Suppose $\{s_n\}, \{t_n\}$ are complex
+
+
+### thm:3.3 
+ Suppose $\{s_n\}, \{t_n\}$ are complex
 sequences, and $\lim_{n \to \infty} s_n = s$,
 $\lim_{n \to \infty} t_n = t$. Then
 
@@ -89,9 +92,9 @@ $\lim_{n \to \infty} t_n = t$. Then
 
 (d) $\lim_{n \to \infty} \frac{1}{s_n} = \frac{1}{s}$, provided
     $s_n \neq 0(n = 1,2,3,\dots)$, and $s \neq 0$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* 
 \label{eq:3.1}
 
@@ -100,12 +103,13 @@ $$
         s_n t_n - st = (s_n - s)(t_n - t) + s(t_n - t) + t(s_n - s).
 $$
  ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.4 label="thm:3.4"}
 
-<!-- ::: asparaenum -->
+
+### thm:3.4 
+
+
+
 Suppose $\mathbf{x}_n \in R^k (n = 1,2,3,\dots)$ and 
 $$
 \mathbf{x_n} = (
@@ -132,5 +136,5 @@ $$
         \lim_{n \to \infty} \beta_n \mathbf{x_n} = \beta \mathbf{x}.
 $$
 
-<!-- ::: -->
-<!-- ::: -->
+
+

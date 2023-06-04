@@ -1,7 +1,8 @@
 # Integration of vector-valued functions
 
-<!-- ::: mydef -->
-[]{#mydef:6.23 label="mydef:6.23"} Let $f_1,\dots,f_k$ be real functions
+
+### mydef:6.23 
+ Let $f_1,\dots,f_k$ be real functions
 on $[a, b]$, and let $\mathbf{f} = (f_1,\dots,f_k)$ be the corresponding
 mapping of $[a, b]$ into $\mathbb{R}^k$. If $\alpha$ increases monotonically on
 $[a, b]$, to say that $\mathbf{f} \in \mathscr{R}(\alpha)$ means that
@@ -27,10 +28,11 @@ results to each coordinate. The same is true of Theorems
 and \[\[thm:6.21\]](#thm:6.21){reference-type="ref"
 reference="thm:6.21"}. To illustrate, we state the analogue of Theorem
 \[\[thm:6.21\]](#thm:6.21){reference-type="ref" reference="thm:6.21"}.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.24 label="thm:6.24"} If $\mathbf{f}$ and $\mathbf{F}$ map
+
+
+### thm:6.24 
+ If $\mathbf{f}$ and $\mathbf{F}$ map
 $[a, b]$ into $\mathbb{R}^k$ , if $\mathbf{f} \in \mathscr{R}$ on $[a, b]$, and
 if $\mathbf{F}' = \mathbf{f}$, then
 
@@ -38,14 +40,15 @@ $$
 \int_{a}^{b} \mathbf{f}(t) \mathrm{d} t = \mathbf{F}(b) - \mathbf{F}(a).
 $$
 
-<!-- ::: -->
+
 
 The analogue of Theorem \[\[thm:6.13\]](#thm:6.13){reference-type="ref"
 reference="thm:6.13"}(b) offers some new features, however, at least in
 its proof.
 
-<!-- ::: thm -->
-[]{#thm:6.25 label="thm:6.25"} If $\mathbf{f}$ maps $[a, b]$ into $\mathbb{R}^k$
+
+### thm:6.25 
+ If $\mathbf{f}$ maps $[a, b]$ into $\mathbb{R}^k$
 and if $\mathbf{f} \in \mathscr{R}(\alpha)$ for some monotonically
 increasing function $\alpha$ on $[a, b]$, then
 $\left| \mathbf{f} \right| \in \mathscr{R}(\alpha)$, and
@@ -58,9 +61,9 @@ $$
         \int_{a}^{b} \left| \mathbf{f} \right| \mathrm{d} \alpha .
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* If $f_1,\dots,f_k$ are the components of $\mathbf{f}$, then
 
 \label{eq:6.41}
@@ -119,4 +122,4 @@ reference="eq:6.40"}) is trivial. If $\mathbf{y \neq 0}$, division of
 (\[\[eq:6.43\]](#eq:6.43){reference-type="ref" reference="eq:6.43"})
 gives (\[\[eq:6.40\]](#eq:6.40){reference-type="ref"
 reference="eq:6.40"}). ◻
-<!-- ::: -->
+

@@ -5,13 +5,14 @@ continuously differentiable mapping $\mathbf{f}$ is invertible in a
 neighborhood of any point $\mathbf{x}$ at which the linear
 transformation $\mathbf{f'(x)}$ is invertible:
 
-<!-- ::: thm -->
-[]{#thm:9.24 label="thm:9.24"} Suppose $\mathbf{f}$ is a
+
+### thm:9.24 
+ Suppose $\mathbf{f}$ is a
 $\mathscr{C}'$-mapping of an open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^n$,
 $\mathbf{f'(a)}$ is invertible for some $\mathbf{a} \in E$, and
 $\mathbf{b = f(a)}$. Then
 
-<!-- ::: asparaenum -->
+
 there exist open sets $U$ and $V$ in $\mathbb{R}^n$ such that
 $\mathbf{a} \in U$, $\mathbf{b} \in V$, $\mathbf{f}$ is one-to-one on
 $U$, and $\mathbf{f}(U) = V$;
@@ -24,8 +25,8 @@ $$
             (\mathbf{x} \in U),
 $$
  then $\mathbf{g} \in \mathscr{C}'(V)$.
-<!-- ::: -->
-<!-- ::: -->
+
+
 
 Writing the equation $\mathbf{y = f(x)}$ in component form, we arrive at
 the following interpretation of the conclusion of the theorem: The
@@ -138,13 +139,14 @@ $$
 $$
 
 
-<!-- ::: thm -->
-[]{#thm:9.25 label="thm:9.25"} If $\mathbf{f}$ is a
+
+### thm:9.25 
+ If $\mathbf{f}$ is a
 $\mathscr{C}'$-mapping of an open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^n$ and
 if $\mathbf{f'(x)}$ is invertible for every $\mathbf{x} \in E$, then
 $\mathbf{f}(W)$ is an open subset of $\mathbb{R}^n$ for every open set
 $W \subset E$
-<!-- ::: -->
+
 
 In other words, $\mathbf{f}$ is an *open mapping* of $E$ into $\mathbb{R}^n$
 

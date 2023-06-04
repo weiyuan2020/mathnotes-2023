@@ -1,7 +1,8 @@
 # Fourier series
 
-<!-- ::: mydef -->
-[]{#mydef:8.9 label="mydef:8.9"} A *trigonomeric polynomial* isa finite
+
+### mydef:8.9 
+ A *trigonomeric polynomial* isa finite
 sum of the from 
 \label{eq:8.59}
 
@@ -11,7 +12,7 @@ $$
         \quad (x \text{ real}),
 $$
 
-<!-- ::: -->
+
 
 where $a_0,\dots,a_N$, $b_0,\dots,b_N$ are complex numbers. On account
 of the identities (\[\[eq:8.46\]](#eq:8.46){reference-type="ref"
@@ -37,8 +38,8 @@ $$
     \frac{1}{2\pi}\int_{-\pi}^{\pi}e^{inx} \mathrm{d} x  =
     \left\{ 
         \begin{array}{ll}
-            1 & (\text{if } n = 0), \\
-            0 & (\text{if } n = \pm 1, \pm 2, \dots). \\
+            1 & (\text{if } n = 0), \\ 
+            0 & (\text{if } n = \pm 1, \pm 2, \dots). \\ 
         \end{array}
      \right.
 $$
@@ -64,8 +65,9 @@ $$
 $$
 
 
-<!-- ::: mydef -->
-[]{#mydef:8.10 label="mydef:8.10"} Let $\{\phi_n\}$
+
+### mydef:8.10 
+ Let $\{\phi_n\}$
 $(n = 1,2,3,\dots)$ be a sequence of complex functions on $[a,b]$ , such
 that 
 \label{eq:8.64}
@@ -127,10 +129,11 @@ The following theorems show that the partial sums of the Fourier series
 of $f$ have a certain minimum property. We shall assume here and in the
 rest of this chapter that $f \in \mathscr{R}$, although this hypothesis
 can be weakened.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.11 label="thm:8.11"} Let $\{\phi_n\}$ be orthonormal on
+
+
+### thm:8.11 
+ Let $\{\phi_n\}$ be orthonormal on
 $[a,b]$. Let 
 \label{eq:8.68}
 
@@ -166,7 +169,7 @@ $$
         (m=1,\dots,n).
 $$
 
-<!-- ::: -->
+
 
 That is to say, among all functions $t_n$, $s_n$ gives the best possible
 mean square approximation to $f$.
@@ -183,8 +186,9 @@ $$
  since
 $\int \left| f-t_n \right|^2 \geq 0$.
 
-<!-- ::: thm -->
-[]{#thm:8.12 label="thm:8.12"} If $\{\phi_n\}$ is orthonormal on
+
+### thm:8.12 
+ If $\{\phi_n\}$ is orthonormal on
 $[a,b]$, and if 
 $$
 f(x) \sim \sum_{n=1}^{\infty} c_n \phi_n (x),
@@ -207,17 +211,18 @@ $$
         \lim_{n \to \infty} c_n = 0 .
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Letting $n \rightarrow \infty$ in
 (\[\[eq:8.72\]](#eq:8.72){reference-type="ref" reference="eq:8.72"}), we
 obtain (\[\[eq:8.73\]](#eq:8.73){reference-type="ref"
 reference="eq:8.73"}), the so-called "Bessel inequality." ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.13 label="thm:8.13"} From now on we shall deal only with the
+
+
+### thm:8.13 
+ From now on we shall deal only with the
 trigonometric system. We shall consider functions $f$ that have period
 $2\pi$ and that are Riemann-integrable on $[-\pi, \pi]$ (and hence on
 every bounded interval). The Fourier series of $f$ is then the series
@@ -269,7 +274,7 @@ we have
 $$
 \begin{aligned}
         s_N(f;x) 
-        &= \sum_{-N}^{N} \frac{1}{2\pi} \int_{-\pi}^{\pi} f(t) e^{-int} \mathrm{d} t e^{inx} \\
+        &= \sum_{-N}^{N} \frac{1}{2\pi} \int_{-\pi}^{\pi} f(t) e^{-int} \mathrm{d} t e^{inx} \\ 
         &= \frac{1}{2\pi} \int_{-\pi}^{\pi} f(t) \sum_{-N}^{N} e^{in(x-t)} \mathrm{d} t ,
     \end{aligned}
 $$
@@ -289,10 +294,11 @@ reference="eq:8.78"}) are equal.
 
 We shall prove just one theorem about the pointwise convergence of
 Fourier series.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.14 label="thm:8.14"} If, for some $x$, there are constants
+
+
+### thm:8.14 
+ If, for some $x$, there are constants
 $\delta > 0$ and $M < \infty$ such that 
 \label{eq:8.79}
 
@@ -309,9 +315,9 @@ $$
         \lim_{N \to \infty} s_N(f;x) = f(x).
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Define 
 \label{eq:8.81}
 
@@ -332,8 +338,8 @@ shows that
 $$
 \begin{aligned}
         s_N(f;x)-f(x)
-        &= \frac{1}{2\pi} \int_{-\pi}^{\pi} g(t) \sin \left( N+\frac{1}{2} \right) t \mathrm{d} t \\
-        &= \frac{1}{2\pi} \int_{-\pi}^{\pi} \left[ g(t)\cos \frac{t}{2} \right] \sin N t \mathrm{d} t \\
+        &= \frac{1}{2\pi} \int_{-\pi}^{\pi} g(t) \sin \left( N+\frac{1}{2} \right) t \mathrm{d} t \\ 
+        &= \frac{1}{2\pi} \int_{-\pi}^{\pi} \left[ g(t)\cos \frac{t}{2} \right] \sin N t \mathrm{d} t \\ 
         &+ \frac{1}{2\pi} \int_{-\pi}^{\pi} \left[ g(t)\sin \frac{t}{2} \right] \cos N t \mathrm{d} t .
     \end{aligned}
 $$
@@ -344,12 +350,12 @@ bounded. The last two integrals thus tend to $0$ as $N > \infty$, by
 (\[\[eq:8.74\]](#eq:8.74){reference-type="ref" reference="eq:8.74"}).
 This proves (\[\[eq:8.80\]](#eq:8.80){reference-type="ref"
 reference="eq:8.80"}). ◻
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If $f(x) = 0$ for all $x$ in some segment $J$, then $\lim s_N(f; x) = 0$
 for every $x \in J$.
-<!-- ::: -->
+
 
 Here is another formulation of this corollary: If $f (t) = g(t)$ for all
 $t$ in some neighborhood of $x$, then
@@ -371,17 +377,18 @@ very striking contrast between Fourier series and power series (Theorem
 
 We conclude with two other approximation theorems.
 
-<!-- ::: thm -->
-[]{#thm:8.15 label="thm:8.15"} If $f$ is continuous (with period $2\pi$)
+
+### thm:8.15 
+ If $f$ is continuous (with period $2\pi$)
 and if $\varepsilon > 0$, then there is a trigonometric polynomial $P$
 such that 
 $$
 |P(x) - f(x) | < e
 $$
  for all real $x$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* If we identify $x$ and $x + 2\pi$, we may regard the
 $2n$-periodic functions on $\mathbb{R}^1$ as functions on the unit circle $T$,
 by means of the mapping $x \rightarrow e^{ix}$. The trigonometric
@@ -392,13 +399,14 @@ $T$, and which vanishes at no point of $T$. Since $T$ is compact,
 Theorem \[\[thm:7.33\]](#thm:7.33){reference-type="ref"
 reference="thm:7.33"} tells us that $\mathscr{A}$ is dense in
 $\mathscr{C}(T)$. This is exactly what the theorem asserts. ◻
-<!-- ::: -->
+
 
 A more precise form of this theorem appears in Exercise
 \[\[ex:8.15\]](#ex:8.15){reference-type="ref" reference="ex:8.15"}.
 
-<!-- ::: thm -->
-[]{#thm:8.16 label="thm:8.16"} Suppose $f$ and $g$ are
+
+### thm:8.16 
+ Suppose $f$ and $g$ are
 Riemann-integrable functions with period $2\pi$, and 
 \label{eq:8.82}
 
@@ -412,15 +420,15 @@ $$
 
 $$
 \begin{aligned}
-        \lim_{N \to \infty} \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| f(x)-s_N(f;x) \right|^2 \mathrm{d} x &= 0, \label{eq:8.83} \\
-        \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x)\overline{g(x)} \mathrm{d} x &= \sum_{-\infty}^{\infty} c_n \bar{\gamma}_n , \label{eq:8.84} \\
+        \lim_{N \to \infty} \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| f(x)-s_N(f;x) \right|^2 \mathrm{d} x &= 0, \label{eq:8.83} \\ 
+        \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x)\overline{g(x)} \mathrm{d} x &= \sum_{-\infty}^{\infty} c_n \bar{\gamma}_n , \label{eq:8.84} \\ 
         \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| f(x) \right|^2 \mathrm{d} x &= \sum_{-\infty}^{\infty} \left| c_n \right|^2 . \label{eq:8.85}
     \end{aligned}
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* 
 \label{eq:8.86}
 
@@ -494,4 +502,4 @@ $$
         \left\{ \int \left| f-s_N \right|^2 \int \left| g \right|^2 \right\}^{1/2} ,
 $$
  ◻
-<!-- ::: -->
+

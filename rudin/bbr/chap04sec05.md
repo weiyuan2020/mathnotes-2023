@@ -8,8 +8,9 @@ two types. Before giving this classification, we have to define the
 right-hand and the left-hand limits of $f$ at $x$, which we denote by
 $f(x+)$ and $f(x-)$, respectively.
 
-<!-- ::: mydef -->
-[]{#mydef:4.25 label="mydef:4.25"} Let $f$ be defined on $(a, b)$.
+
+### mydef:4.25 
+ Let $f$ be defined on $(a, b)$.
 Consider any point $x$ such that $a \leq x < b$. We write 
 $$
 f(x+) = q
@@ -25,10 +26,11 @@ $$
 f(x+) = f(x-) = \lim_{t \to x} f(t).
 $$
 
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:4.26 label="mydef:4.26"} Let $f$ be defined on $(a, b)$. If
+
+
+### mydef:4.26 
+ Let $f$ be defined on $(a, b)$. If
 $f$ is discontinuous at a point $x$, and if $f(x +)$ and $f (x-)$ exist,
 then $f$ is said to have a discontinuity of the *first kind*, or a
 *simple discontinuity*, at $x$. Otherwise the discontinuity is said to
@@ -37,15 +39,15 @@ be of the *second kind*.
 There are two ways in which a function can have a simple discontinuity:
 either $f(x+) \neq f(x-)$ \[in which case the value $f(x)$ is
 immaterial\], or $f(x+) = f(x-) \neq f(x)$.
-<!-- ::: -->
 
-<!-- ::: newexample -->
-<!-- ::: asparaenum -->
+
+
+
 Define 
 $$
 f(x) = \left\{
             \begin{array}{lc}
-                1 & (x \text{ rational}),\\
+                1 & (x \text{ rational}),\\ 
                 0 & (x \text{ irrational}).
             \end{array}
         \right.
@@ -57,7 +59,7 @@ Define
 $$
 f(x) = \left\{
             \begin{array}{lc}
-                x & (x \text{ rational}),\\
+                x & (x \text{ rational}),\\ 
                 0 & (x \text{ irrational}).
             \end{array}
         \right.
@@ -69,8 +71,8 @@ Define
 $$
 f(x) = \left\{
             \begin{array}{lc}
-                 x + 2  & (-3 <    x < -2),\\
-                -x - 2  & (-2 \leq x <  0),\\
+                 x + 2  & (-3 <    x < -2),\\ 
+                -x - 2  & (-2 \leq x <  0),\\ 
                  x + 2  & ( 0 \leq x <  1).
             \end{array}
         \right.
@@ -82,7 +84,7 @@ Define
 $$
 f(x) = \left\{
             \begin{array}{lc}
-                \sin \frac{1}{x} & (x \neq 0),\\
+                \sin \frac{1}{x} & (x \neq 0),\\ 
                 0 & (x = 0).
             \end{array}
         \right.
@@ -93,5 +95,5 @@ $\sin x$ is a continuous function. If we assume this result for the
 moment, Theorem \[\[thm:4.7\]](#thm:4.7){reference-type="ref"
 reference="thm:4.7"} implies that $f$ is continuous at every point
 $x \neq 0$.
-<!-- ::: -->
-<!-- ::: -->
+
+

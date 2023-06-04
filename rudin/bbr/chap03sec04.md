@@ -1,7 +1,8 @@
 # Upper and lower limits
 
-<!-- ::: mydef -->
-[]{#mydef:3.15 label="mydef:3.15"} Let $\{s_n\}$ be a sequence of
+
+### mydef:3.15 
+ Let $\{s_n\}$ be a sequence of
 real numbers with the following property: For every real $M$ there is an
 integer $N$ such that $n > N$ implies $s_n \geq M$. We then write
 
@@ -15,15 +16,16 @@ $$
 s_n \rightarrow -\infty.
 $$
 
-<!-- ::: -->
+
 
 It should be noted that we now use the symbol $rightarrow$ (introduced
 in Definition 3.1) for certain types of divergent sequences, as well as
 for convergent sequences, but that the definitions of convergence and of
 limit, given in Definition 3.1, are in no way changed.
 
-<!-- ::: mydef -->
-[]{#mydef:3.16 label="mydef:3.16"} Let $\{s_n\}$ be a sequence of
+
+### mydef:3.16 
+ Let $\{s_n\}$ be a sequence of
 real numbers. Let $E$ be the set of numbers $x$ (in the extended real
 number system) such that $s_n rightarrow x$ for some subsequence
 $\{s_n\}$. This set $E$ contains all subsequential limits as
@@ -43,10 +45,11 @@ $$
 \limsup_{n \rightarrow \infty} s_n = s^{*},\quad \liminf_{n \rightarrow \infty} s_n = s_{*}.
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.17 label="thm:3.17"} Let $\{s_n\}$ be a sequence of
+
+
+### thm:3.17 
+ Let $\{s_n\}$ be a sequence of
 real numbers. Let $E$ and $s^*$ have the same meaning as in Definition
 3.16. Then $s*$ has the following two properties:
 
@@ -56,11 +59,11 @@ real numbers. Let $E$ and $s^*$ have the same meaning as in Definition
 $s_n < x$.
 
 Moreover, $s^*$ is the only number with the properties (a) and (b).
-<!-- ::: -->
+
 
 Of course, an analogous result is true for $s_*$.
 
-<!-- ::: newexample -->
+
 \(a\) Let $\{s_n\}$ be a sequence containing all rationals. Then
 every real number is a subsequential limit, and
 
@@ -86,16 +89,17 @@ $$
     \liminf_{n\rightarrow\infty} = s.
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.19 label="thm:3.19"} If $s_n \leq t_n$ for $n \geq N$ , where
+
+
+### thm:3.19 
+ If $s_n \leq t_n$ for $n \geq N$ , where
 $N$ is fixed, then 
 $$
 \begin{aligned}
-        \liminf_{n \rightarrow \infty} s_n \leq \liminf_{n \rightarrow \infty} t_n,\\
+        \liminf_{n \rightarrow \infty} s_n \leq \liminf_{n \rightarrow \infty} t_n,\\ 
         \limsup_{n \rightarrow \infty} s_n \leq \limsup_{n \rightarrow \infty} t_n.
     \end{aligned}
 $$
 
-<!-- ::: -->
+

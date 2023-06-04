@@ -1,7 +1,8 @@
 # Derivatives of higher order
 
-<!-- ::: mydef -->
-[]{#mydef:9.39 label="mydef:9.39"} Suppose $f$ is a real function
+
+### mydef:9.39 
+ Suppose $f$ is a real function
 defined in an open set $E \subset \mathbb{R}^n$, with partial derivatives
 $D_1 f, \dots , D_n f$. If the functions $D_1 f$ are themselves
 differentiable, then the *second-order partial derivatives* of $f$ are
@@ -28,10 +29,11 @@ derivatives are continuous.
 For simplicity (and without loss of generality) we state our next two
 theorems for real functions of two variables. The first one is a mean
 value theorem.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.40 label="thm:9.40"} Suppose $f$ is defined in an open set
+
+
+### thm:9.40 
+ Suppose $f$ is defined in an open set
 $E \subset \mathbb{R}^2$ , and $D_{1}f$ and $D_{21}f$ exist at every point of
 $E$. Suppose $Q \subset E$ is a closed rectangle with sides parallel to
 the coordinate axes, having $(a, b)$ and $(a +h, b + k)$ as opposite
@@ -51,14 +53,14 @@ $$
         \Delta (f, Q) = hk(D_{21}f)(x, y).
 $$
 
-<!-- ::: -->
+
 
 Note the analogy between (\[\[eq:9.95\]](#eq:9.95){reference-type="ref"
 reference="eq:9.95"}) and Theorem
 \[\[thm:5.10\]](#thm:5.10){reference-type="ref" reference="thm:5.10"};
 the area of $Q$ is $hk$.
 
-<!-- ::: proof -->
+
 *Proof.* Put $u(t) = f(t, b+k) - f(t, b)$. Two applications of Theorem
 \[\[thm:5.10\]](#thm:5.10){reference-type="ref" reference="thm:5.10"}
 show that there is an $x$ between $a$ and $a+h$, and that there is a $y$
@@ -66,17 +68,18 @@ between $b$ and $b+k$, such that
 $$
 \begin{aligned}
         \Delta(f, Q)
-         & = u(a+h) - u(a)                                    \\
-         & = h u'(x)                                          \\
-         & = h \left[ (D_1 f)(x, b+k) - (D_1 f)(x, b) \right] \\
+         & = u(a+h) - u(a)                                    \\ 
+         & = h u'(x)                                          \\ 
+         & = h \left[ (D_1 f)(x, b+k) - (D_1 f)(x, b) \right] \\ 
          & = hk (D_{21} f)(x, y) .
     \end{aligned}
 $$
  ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.41 label="thm:9.41"} Suppose $f$ is defined in an open set
+
+
+### thm:9.41 
+ Suppose $f$ is defined in an open set
 $E \subset \mathbb{R}^2$, suppose that $D_1 f$, $D_{21} f$, and $D_2 f$ exist at
 every point of $E$, and $D_{21} f$ is continuous at some point
 $(a,b) \in E$.
@@ -90,13 +93,13 @@ $$
         (D_{21} f)(a,b)
 $$
 
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 $D_{21} f = D_{12} f$ if $f \in \mathscr{C}''(E)$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Put $A = (D_{21} f)(a,b)$. Choose $\varepsilon > 0$. If $Q$ is
 a rectangle as in Theorem \[\[thm:9.40\]](#thm:9.40){reference-type="ref"
 reference="thm:9.40"}, and of $h$ and $k$ are sufficiently small, we
@@ -127,4 +130,4 @@ and since (\[\[eq:9.97\]](#eq:9.97){reference-type="ref"
 reference="eq:9.97"}) holds for all sufficiently small $h \neq 0$, it
 follows that $(D_{12} f)(a, b) = A$. This gives
 (\[\[eq:9.96\]](#eq:9.96){reference-type="ref" reference="eq:9.96"}). ◻
-<!-- ::: -->
+

@@ -1,7 +1,8 @@
 # Limits of functions
 
-<!-- ::: mydef -->
-[]{#mydef:4.1 label="mydef:4.1"} Let $X$ and $Y$ be metric spaces;
+
+### mydef:4.1 
+ Let $X$ and $Y$ be metric spaces;
 suppose $E \subset X$, $f$ maps $E$ into $Y$, and $p$ is a limit point
 of $E$. We write $f(x) \rightarrow q$ as $x \rightarrow p$, or
 
@@ -30,7 +31,7 @@ $$
 $$
  The symbols $d_X$ and $d_Y$ refer to
 the distances in $X$ and $Y$, respectively.
-<!-- ::: -->
+
 
 If $X$ and/or $Y$ are replaced by the real line, the complex plane, or
 by some euclidean space $\mathbb{R}^{k}$, the distances $d_X$, $d_Y$ are of
@@ -43,8 +44,9 @@ well have $f(p) \neq \lim_{x \to p} f(x)$ ➔ .
 
 We can recast this definition in terms of limits of sequences:
 
-<!-- ::: thm -->
-[]{#thm:4.2 label="thm:4.2"} Let $X,Y,E,f$ , and $p$ be as in Definition
+
+### thm:4.2 
+ Let $X,Y,E,f$ , and $p$ be as in Definition
 4.1. Then 
 \label{eq:4.4}
 
@@ -69,9 +71,9 @@ $$
         \lim_{n \to \infty} p_n = p.
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Suppose (\[\[eq:4.4\]](#eq:4.4){reference-type="ref"
 reference="eq:4.4"}) holds. Choose $\{p_n\}$ in $E$ satisfying
 (\[\[eq:4.6\]](#eq:4.6){reference-type="ref" reference="eq:4.6"}). Let
@@ -91,14 +93,15 @@ we thus find a sequence in $E$ satisfying
 (\[\[eq:4.6\]](#eq:4.6){reference-type="ref" reference="eq:4.6"}) for
 which (\[\[eq:4.5\]](#eq:4.5){reference-type="ref" reference="eq:4.5"})
 is false. ◻
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If $f$ has a limit at $p$, this limit is unique.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:4.3 label="mydef:4.3"} Suppose we have two complex functions,
+
+
+### mydef:4.3 
+ Suppose we have two complex functions,
 $f$ and $g$, both defined on $E$. By $f + g$ we mean the function which
 assigns to each point $x$ of $E$ the number $f(x) + g(x)$. Similarly we
 define the difference $f - g$, the product $fg$, and the quotient $f/g$
@@ -122,28 +125,29 @@ $$
 $$
  and if $\lambda$ is a real number,
 $(\lambda \mathbf{f})(x) = \lambda \mathbf{f}(x)$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.4 label="thm:4.4"} Suppose $E \subset X$, a metric space, $p$
+
+
+### thm:4.4 
+ Suppose $E \subset X$, a metric space, $p$
 is a limit point of $E$, $f$ and $g$ are complex functions on $E$, and
 
 $$
 \lim_{x \to p} f(x) = A, \quad
         \lim_{x \to p} g(x) = B.
 $$
- Then\
-(a) $\lim_{x \to p} (f + g)(x) = A + B$;\
-(b) $\lim_{x \to p} (f   g)(x) = A   B$;\
-(b) $\lim_{x \to p} (\frac{f}{g})(x) = \frac{A}{B}$, if $B \neq 0$.\
-<!-- ::: -->
+ Then 
+(a) $\lim_{x \to p} (f + g)(x) = A + B$; 
+(b) $\lim_{x \to p} (f   g)(x) = A   B$; 
+(b) $\lim_{x \to p} (\frac{f}{g})(x) = \frac{A}{B}$, if $B \neq 0$. 
 
-<!-- ::: proof -->
+
+
 *Proof.* In view of Theorem \[\[thm:4.2\]](#thm:4.2){reference-type="ref"
 reference="thm:4.2"}, these assertions follow immediately from the
 analogous properties of sequences (Theorem
 \[\[thm:3.3\]](#thm:3.3){reference-type="ref" reference="thm:3.3"}). ◻
-<!-- ::: -->
+
 
 Remark: If $f$ and $g$ map $E$ into $\mathbb{R}^{k}$, then (a) remains true, and
 (b) becomes (b')

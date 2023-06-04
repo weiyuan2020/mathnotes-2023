@@ -1,7 +1,8 @@
 # Rearrangements
 
-<!-- ::: mydef -->
-[]{#mydef:3.52 label="mydef:3.52"} Let $\{k_n\}, n=1,2,3,\dots,$
+
+### mydef:3.52 
+ Let $\{k_n\}, n=1,2,3,\dots,$
 be a sequence in which every positive integer appears once and only once
 (that is, $\{k_n\}$ is a 1-1 function from $J$ onto $J$, in the
 notation of Definition \[\[mydef:2.2\]](#mydef:2.2){reference-type="ref"
@@ -12,7 +13,7 @@ a'_n = a_{k_n} \quad (n = 1,2,3,\dots),
 $$
  we say that $\sum a'_n$ is a
 rearrangements of $\sum a_n$.
-<!-- ::: -->
+
 
 If $\{s_n}$ , $\sequence{s'_n\}$ are the sequences of partial
 sums of $\{a_n}$ , $\sequence{a'_n\}$ , it is easily seen that,
@@ -21,7 +22,7 @@ We are thus led to the problem of determining under what conditions all
 rearrangements of a convergent series will converge and whether the sums
 are necessarily the same.
 
-<!-- ::: newexample -->
+
 Consider the convergent series 
 \label{eq:3.22}
 
@@ -67,7 +68,7 @@ $$
 $$
  for $k \geq 1$ , we see that
 $s'_3 < s'_6 < s'_9 < \cdots$ , where $s'_n$ is $n$th partial sum of
-(\[\[eq:3.23\]](#eq:3.23){reference-type="ref" reference="eq:3.23"}).\
+(\[\[eq:3.23\]](#eq:3.23){reference-type="ref" reference="eq:3.23"}). 
 Hence 
 $$
 \limsup_{n \to \infty} s'_n > s'_3 = \frac{5}{6},
@@ -82,11 +83,11 @@ $$
         \frac{1}{4k-3} + 
         \frac{1}{4k-1} - 
         \frac{1}{2k} 
-        &= \frac{(4k-3) + (4k-1)}{(4k-3)(4k-1)} - \frac{1}{2k} \\
-        &= \frac{(8k-4)}{(4k-3)(4k-1)} - \frac{1}{2k} \\
-        &= \frac{(8k-4)2k - (4k-3)(4k-1)}{(4k-3)(4k-1)2k} \\
-        &= \frac{8k-3}{(4k-3)(4k-1)2k} \\
-        &< \frac{4}{(4k-3)(4k-1)} \\
+        &= \frac{(4k-3) + (4k-1)}{(4k-3)(4k-1)} - \frac{1}{2k} \\ 
+        &= \frac{(8k-4)}{(4k-3)(4k-1)} - \frac{1}{2k} \\ 
+        &= \frac{(8k-4)2k - (4k-3)(4k-1)}{(4k-3)(4k-1)2k} \\ 
+        &= \frac{8k-3}{(4k-3)(4k-1)2k} \\ 
+        &< \frac{4}{(4k-3)(4k-1)} \\ 
         &< \frac{4}{(4(k-1))^2}
         = \frac{}{4(k-1)^2}
     \end{aligned}
@@ -94,12 +95,13 @@ $$
  because $\sum 1/n^2$ converge,
 (\[\[eq:3.23\]](#eq:3.23){reference-type="ref" reference="eq:3.23"})
 converge.
-<!-- ::: -->
+
 
 This example illustrates the following theorem, due to Riemann.
 
-<!-- ::: thm -->
-[]{#thm:3.54 label="thm:3.54"} Let $\sum a_n$ be a series of real
+
+### thm:3.54 
+ Let $\sum a_n$ be a series of real
 numbers which converges, but not absolutely. Suppose 
 $$
 \begin{aligned}
@@ -119,9 +121,9 @@ $$
         \limsup_{n \to \infty} s'_n = \beta.
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let 
 $$
 p_n = \frac{\left| a_n \right| + a_n}{2}, \quad
@@ -165,7 +167,7 @@ $$
 
         \begin{aligned}
             P_1 
-            &+ \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} \\
+            &+ \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} \\ 
             &+ P_{m_1 + 1} + \cdots + P_{m_2} - Q_{k_1 + 1} - \cdots - Q_{k_2} + \cdots,
         \end{aligned}
 $$
@@ -180,7 +182,7 @@ $\alpha_n < \beta_n$ , $\beta_1 > 0$.
 Let $m_1, k_1$ be the smallest integers such that 
 $$
 \begin{aligned}
-        &P_1 + \cdots + P_{m_1} > \beta_1,\\
+        &P_1 + \cdots + P_{m_1} > \beta_1,\\ 
         &P_1 + \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} < \alpha_1;
     \end{aligned}
 $$
@@ -188,7 +190,7 @@ $$
 
 $$
 \begin{aligned}
-        &P_1 + \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} + P_{m_1 + 1} + \cdots + P_{m_2} > \beta_2,\\
+        &P_1 + \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} + P_{m_1 + 1} + \cdots + P_{m_2} > \beta_2,\\ 
         &P_1 + \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} + P_{m_1 + 1} + \cdots + P_{m_2} - Q_{k_1 + 1} - \cdots - Q_{k_2} < \alpha_2;
     \end{aligned}
 $$
@@ -210,15 +212,16 @@ we see that $x_n \rightarrow \beta, y_n \rightarrow \alpha$ .
 Finally, it is clearly that no number less than $\alpha$ or greater than
 $\beta$ can be a subsequential limit of the partial sums of
 (\[\[eq:3.25\]](#eq:3.25){reference-type="ref" reference="eq:3.25"}). ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.55 label="thm:3.55"} If $\sum a_n$ is a series of complex
+
+
+### thm:3.55 
+ If $\sum a_n$ is a series of complex
 numbers which converges absolutely, then every rearrangement of
 $\sum a_n$ converges, and they all converge to the same sum.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $\sum a'_n$ be a rearrangement, with partial sums
 $\sum s'_n$ . Given $\varepsilon > 0$ , there exists an integer $N$ such
 that $m \geq n \geq N$ implies 
@@ -237,4 +240,4 @@ $a_1, a_2, \dots, a_N$ will cancel in the difference $s_n - s'_n$ , so
 that $\left| s_n - s'_n \right| \leq \varepsilon$ , by
 (\[\[eq:3.26\]](#eq:3.26){reference-type="ref" reference="eq:3.26"}).
 Hence $\{s'_n}$ converges to the same sum as $\sequence{s_n\}.$ ◻
-<!-- ::: -->
+

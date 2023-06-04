@@ -18,7 +18,7 @@ Accordingly, we first prove Theorem
 the linear version of Theorem
 \[\[thm:9.28\]](#thm:9.28){reference-type="ref" reference="thm:9.28"}.
 
-<!-- ::: myNotation -->
+
 If $\mathbf{x} = (x_1 , \dots , x_n) e \mathbb{R}^n$ and
 $\mathbf{y} = (y_1 , \dots , y_m) e \mathbb{R}^m$, let us write
 $\mathbf{(x, y)}$ for the point (or vector) In what follows, the first
@@ -45,10 +45,11 @@ $$
 $$
  The linear
 version of the implicit function theorem is now almost obvious.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.27 label="thm:9.27"} If $A \in L(\mathbb{R}^{n+m}, \mathbb{R}^n)$ and if $A_x$
+
+
+### thm:9.27 
+ If $A \in L(\mathbb{R}^{n+m}, \mathbb{R}^n)$ and if $A_x$
 is invertible, then there corresponds to every $\mathbf{k} \in \mathbb{R}^m$ a
 unique $\mathbf{h} \in \mathbb{R}^n$ such that $A(\mathbf{h, k}) = 0$. This
 $\mathbf{h}$ can be computed from $\mathbf{k}$ by the formula
@@ -60,10 +61,11 @@ $$
         \mathbf{h} = -(A_x)^{-1} A_y \mathbf{k}
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.28 label="thm:9.28"} Let $\mathbf{f}$ be a
+
+
+### thm:9.28 
+ Let $\mathbf{f}$ be a
 $\mathscr{C}'$-mapping of an open set $E \subset \mathbb{R}^{n+m}$ into $\mathbb{R}^n$,
 such that $\mathbf{f(a, b) = 0}$ for some point $(\mathbf{a, b}) \in E$.
 
@@ -104,7 +106,7 @@ $$
         \mathbf{g'(b)} = -(A_x)^{-1} A_y .
 $$
 
-<!-- ::: -->
+
 
 The function g is "implicitly" defined by
 (\[\[eq:9.57\]](#eq:9.57){reference-type="ref" reference="eq:9.57"}).
@@ -117,10 +119,10 @@ equations in $n+m$ variables:
 $$
 
     \begin{aligned}
-        f_1(x_1,\dots,x_n,y_1,\dots,y_m) = 0 \\
-        % \hdotsfor{1}\\
-        \cdots \cdots \cdots \\
-        f_n(x_1,\dots,x_n,y_1,\dots,y_m) = 0 \\
+        f_1(x_1,\dots,x_n,y_1,\dots,y_m) = 0 \\ 
+        % \hdotsfor{1}\\ 
+        \cdots \cdots \cdots \\ 
+        f_n(x_1,\dots,x_n,y_1,\dots,y_m) = 0 \\ 
     \end{aligned}
 $$
 
@@ -129,9 +131,9 @@ The assumption that $A_x$ is invertible means that the $n$ by $n$ matrix
 
 $$
 \begin{pmatrix}
-        D_1 f_1 & \cdots & D_n f_1 \\
-        \cdots  & \cdots & \cdots  \\
-        D_1 f_n & \cdots & D_n f_n \\
+        D_1 f_1 & \cdots & D_n f_1 \\ 
+        \cdots  & \cdots & \cdots  \\ 
+        D_1 f_n & \cdots & D_n f_n \\ 
     \end{pmatrix}
 $$
  evaluated at $\mathbf{(a, b)}$ defines an invertible
@@ -147,15 +149,15 @@ $y_1, ... , y_m$, for every $\mathbf{y}$ near $\mathbf{b}$, and that
 these solutions are continuously differentiable functions of
 $\mathbf{y}$.
 
-<!-- ::: newexample -->
+
 Take $n = 2, m = 3$, and consider the mapping $f = (f1, f2)$ of $\mathbb{R}^5$
 into $\mathbb{R}^2$ given by 
 $$
 \begin{aligned}
-        f_1(x_1, x_2, y_1, y_2, y_3) &= 2 e^{x1} + x_2 y_1 - 4 y_2 + 3 \\
+        f_1(x_1, x_2, y_1, y_2, y_3) &= 2 e^{x1} + x_2 y_1 - 4 y_2 + 3 \\ 
         f_2(x_1, x_2, y_1, y_2, y_3) &= x_2 \cos x_1 - 6 x_1 + 2 y_1 - y_3.
     \end{aligned}
 $$
  If $\mathbf{a} = (0, 1)$ and
 $\mathbf{b} = (3, 2, 7)$, then $\mathbf{f(a, b)} = 0$.
-<!-- ::: -->
+

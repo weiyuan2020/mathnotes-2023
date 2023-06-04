@@ -1,27 +1,30 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:3.1 label="ex:3.1"} Prove that convergence of $\{s_n\}$ implies
-convergence of $\{|s_n|\}$. Is the converse true?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.2 label="ex:3.2"} Calculate
+### ex:3.1 
+ Prove that convergence of $\{s_n\}$ implies
+convergence of $\{|s_n|\}$. Is the converse true?
+
+
+
+### ex:3.2 
+ Calculate
 $\lim_{n \to \infty} (\sqrt{n^2+n}-n)$
-<!-- ::: -->
+
 
 
 $$
 \begin{aligned}
     \lim_{n \to \infty} n\left( \sqrt{1+\frac{1}{n}}-1 \right) 
-    &= \lim_{n \to \infty} \frac{ \sqrt{1+\frac{1}{n}}-1 }{\frac{1}{n}} \\
-    &= \lim_{n \to \infty} \frac{1+\frac{1}{2}\frac{1}{n}-1}{\frac{1}{n}} \\
+    &= \lim_{n \to \infty} \frac{ \sqrt{1+\frac{1}{n}}-1 }{\frac{1}{n}} \\ 
+    &= \lim_{n \to \infty} \frac{1+\frac{1}{2}\frac{1}{n}-1}{\frac{1}{n}} \\ 
     &= \frac{1}{2} .\end{aligned}
 $$
 
 
-<!-- ::: myexercise -->
-[]{#ex:3.3 label="ex:3.3"} If $s_1 = \sqrt{2}$ , and
+
+### ex:3.3 
+ If $s_1 = \sqrt{2}$ , and
 
 $$
 s_{n+1} = \sqrt{2+\sqrt{s_n}} 
@@ -30,10 +33,11 @@ s_{n+1} = \sqrt{2+\sqrt{s_n}}
 $$
  prove that $\{s_n\}$ converges, and that
 $s_n < 2$ for $n=1,2,3,...$ .
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.4 label="ex:3.4"} Find the upper and lower limits of the
+
+
+### ex:3.4 
+ Find the upper and lower limits of the
 sequences $\{s_n\}$ defined by 
 $$
 s_1 = 0; \quad 
@@ -41,10 +45,11 @@ s_1 = 0; \quad
         s_{2m+1} = \frac{1}{2} + s_{2m} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.5 label="ex:3.5"} For any two real sequences $\{a_n\}$,
+
+
+### ex:3.5 
+ For any two real sequences $\{a_n\}$,
 $\{b_n\}$, prove that 
 $$
 \limsup_{n \to \infty} (a_n + b_n) \leq
@@ -53,10 +58,11 @@ $$
 $$
  provided the sum on the right is
 not of the form $\infty - \infty$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.6 label="ex:3.6"} Investigate the behavior (convergence or
+
+
+### ex:3.6 
+ Investigate the behavior (convergence or
 divergence) of $\sum a_n$ if
 
 (a) $a_n = \sqrt{n+1} - \sqrt{n}$ ;
@@ -66,25 +72,28 @@ divergence) of $\sum a_n$ if
 (c) $a_n = (\sqrt[n]{n} - 1)^n$ ;
 
 (d) $a_n = \frac{1}{1+z^n}$ , for complex values of $z$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.7 label="ex:3.7"} Prove that the convergence of $\sum a_n$
+
+
+### ex:3.7 
+ Prove that the convergence of $\sum a_n$
 implies the convergence of 
 $$
 \sum \frac{\sqrt{a_n}}{n},
 $$
  if
 $a_n \geq 0$ .
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.8 label="ex:3.8"} If $\sum a_n$ converges, and if $\{b_n\}$ is
+
+
+### ex:3.8 
+ If $\sum a_n$ converges, and if $\{b_n\}$ is
 monotonic and bounded, prove that $\sum a_n b_n$ converges.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.9 label="ex:3.9"} Find the radius of convergence of each of the
+
+
+### ex:3.9 
+ Find the radius of convergence of each of the
 following power series:
 
 (a) $\sum n^3z^n$ ,
@@ -94,7 +103,7 @@ following power series:
 (c) $\sum \frac{2^n}{n^2}z^n$ ,
 
 (d) $\sum \frac{n^3}{3^n}z^n$ ,
-<!-- ::: -->
+
 
 1.  $\lim_{n \to \infty} \frac{1}{(1+1/n)^3} = 1$, $R = 1$.
 
@@ -106,17 +115,19 @@ following power series:
 4.  $\lim_{n \to \infty} \frac{3}{\left( 1+\frac{1}{n} \right)^3} = 3$,
     $R = 3$.
 
-<!-- ::: myexercise -->
-[]{#ex:3.10 label="ex:3.10"} Suppose that the coefficients of the power
+
+### ex:3.10 
+ Suppose that the coefficients of the power
 series $\sum a_n z^n$ are integers, infinitely many of which are
 distinct from zero. Prove that the radius of convergence is at most 1.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.11 label="ex:3.11"} Suppose $a_n > 0$, $s_n = a_1 + ... + a_n$
+
+
+### ex:3.11 
+ Suppose $a_n > 0$, $s_n = a_1 + ... + a_n$
 and $\sum a_n$ diverges.
 
-<!-- ::: asparaenum -->
+
 Prove that $\sum \frac{a_n}{1+a_n}$ diverges.
 
 Prove that 
@@ -142,18 +153,19 @@ $$
             \sum \frac{a_n}{1+n^2a_n}
 $$
 
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.12 label="ex:3.12"} Suppose $a_n > 0$ and $\sum a_n$ converges.
+
+
+
+### ex:3.12 
+ Suppose $a_n > 0$ and $\sum a_n$ converges.
 Put 
 $$
 r_n = \sum_{m=n}^{\infty} a_m .
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that 
 $$
 \frac{a_m}{r_m} + \cdots +
@@ -170,16 +182,18 @@ $$
 $$
  and deduce
 that $\sum \frac{a_n}{\sqrt{r_n}}$ converges.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.13 label="ex:3.13"} Prove that the Cauchy product of two
+
+
+
+### ex:3.13 
+ Prove that the Cauchy product of two
 absolutely convergent series converges absolutely.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.14 label="ex:3.14"} If $\{s_n\}$ is a complex sequence, define
+
+
+### ex:3.14 
+ If $\{s_n\}$ is a complex sequence, define
 its arithmetic means $\sigma_n$ by
 
 $$
@@ -189,7 +203,7 @@ $$
 $$
 
 
-<!-- ::: asparaenum -->
+
 If $\lim s_n = s$, prove that $\lim \sigma_n = s$.
 
 Construct a sequence $\{s_n\}$ which does not converge, although
@@ -242,11 +256,12 @@ $$
 $$
 
 Since $\varepsilon$ was arbitrary, $\lim s_n = \sigma$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.15 label="ex:3.15"} Definition
+
+
+
+### ex:3.15 
+ Definition
 \[\[mydef:3.21\]](#mydef:3.21){reference-type="ref"
 reference="mydef:3.21"} can be extended to the case in which the $a_n$
 lie in some fixed $\mathbb{R}^k$. Absolute convergence is defined as convergence
@@ -263,10 +278,11 @@ reference="thm:3.34 ratio test"},
 and \[\[thm:3.55\]](#thm:3.55){reference-type="ref" reference="thm:3.55"}
 are true in this more general setting. (Only slight modifications are
 required in any of the proofs.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.16 label="ex:3.16"} Fix a positive number $\alpha$. Choose
+
+
+### ex:3.16 
+ Fix a positive number $\alpha$. Choose
 $x_1 > \sqrt{\alpha}$, and define $x_2, x_3, x_4, ...$ , by the
 recursion formula
 
@@ -275,7 +291,7 @@ x_{n+1} = \frac{1}{2}\left( x_n + \frac{\alpha}{x_n} \right).
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that $\{x_n\}$ decreases monotonically and that
 $\lim x_n = \sqrt{\alpha}$.
 
@@ -307,11 +323,12 @@ $$
             \varepsilon_6 < 4 \cdot 10^{-32}
 $$
 
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.17 label="ex:3.17"} Fix $\alpha > 1$. Take
+
+
+
+### ex:3.17 
+ Fix $\alpha > 1$. Take
 $x_1 > \sqrt{\alpha}$, and define
 
 $$
@@ -328,10 +345,11 @@ $$
 (d) Compare the rapidity of convergence of this process with the one
     described in Exercise \[\[ex:3.16\]](#ex:3.16){reference-type="ref"
     reference="ex:3.16"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.18 label="ex:3.18"} Replace the recursion formula of Exercise
+
+
+### ex:3.18 
+ Replace the recursion formula of Exercise
 \[\[ex:3.16\]](#ex:3.16){reference-type="ref" reference="ex:3.16"} by
 
 $$
@@ -340,10 +358,11 @@ $$
  where $p$ is
 a fixed positive integer, and describe the behavior of the resulting
 sequences $\{x_n\}$ .
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.19 label="ex:3.19"} Associate to each sequence
+
+
+### ex:3.19 
+ Associate to each sequence
 $a = \{\alpha_n\}$, in which $\alpha_n$ is 0 or 2, the real number
 
 $$
@@ -353,17 +372,19 @@ $$
 of all $x(a)$ is precisely the Cantor set described in Sec.
 \[\[mydef:2.44\]](#mydef:2.44){reference-type="ref"
 reference="mydef:2.44"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.20 label="ex:3.20"} Suppose $\{p_n\}$ is a Cauchy sequence in a
+
+
+### ex:3.20 
+ Suppose $\{p_n\}$ is a Cauchy sequence in a
 metric space $X$, and some subsequence $\{p_{n_i}\}$ converges to a
 point $p \in X$ . Prove that the full sequence $\{p_n\}$ converges to
 $p$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.21 label="ex:3.21"} Prove the following analogue of Theorem
+
+
+### ex:3.21 
+ Prove the following analogue of Theorem
 \[\[thm:3.10\]](#thm:3.10){reference-type="ref" reference="thm:3.10"}(b):
 If $\{E_n\}$ is a sequence of closed nonempty and bounded sets in a
 *complete* metric space $X$, if $E_n \supset E_{n+1}$, and if $\diam$
@@ -373,10 +394,11 @@ $$
 $$
  then $\cap_1^{\infty} E_n$
 consists of exactly one point.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.22 label="ex:3.22"} Suppose $X$ is a nonempty complete metric
+
+
+### ex:3.22 
+ Suppose $X$ is a nonempty complete metric
 space, and $\{G_n\}$ is a sequence of dense open subsets of $X$. Prove
 Baire's theorem, namely, that $\cap_1^{\infty} G_n$ is not empty. (In
 fact, it is dense in $X$.)
@@ -384,10 +406,11 @@ fact, it is dense in $X$.)
 *Hint:* Find a shrinking sequence of neighborhoods $E_n$ such that
 $\overline{E} \subset G_n$, and apply Exercise
 \[\[ex:3.21\]](#ex:3.21){reference-type="ref" reference="ex:3.21"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.23 label="ex:3.23"} Suppose $\{p_n\}$ and $\{q_n\}$ are Cauchy
+
+
+### ex:3.23 
+ Suppose $\{p_n\}$ and $\{q_n\}$ are Cauchy
 sequences in a metric space $X$. Show that the sequence
 $\{d(p_n, q_n)\}$ converges.
 
@@ -403,12 +426,13 @@ $$
 $$
  is small if
 $m$ and $n$ are large.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.24 label="ex:3.24"} Let $X$ be a metric space.
 
-<!-- ::: asparaenum -->
+
+### ex:3.24 
+ Let $X$ be a metric space.
+
+
 Call two Cauchy sequences $\{p_n\}$, $\{q_n\}$ in $X$ *equivalent* if
 
 $$
@@ -445,12 +469,13 @@ Prove that $\phi(X)$ is dense in $X^*$, and that $\phi(X) = X^*$ if $X$
 is complete. By (d), we may identify $X$ and $\phi(X)$ and thus regard
 $X$ as embedded in the complete metric space $X^*$. We call $X^*$ the
 *completion* of $X$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:3.25 label="ex:3.25"} Let $X$ be the metric space whose points
+
+
+
+### ex:3.25 
+ Let $X$ be the metric space whose points
 are the rational numbers, with the metric $d(x, y) =|x - y|$, What is
 the completion of this space? (Compare Exercise
 \[\[ex:3.24\]](#ex:3.24){reference-type="ref" reference="ex:3.24"}.)
-<!-- ::: -->
+

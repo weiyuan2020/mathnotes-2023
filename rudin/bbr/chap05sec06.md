@@ -1,7 +1,8 @@
 # Taylor's theorem
 
-<!-- ::: thm -->
-[]{#thm:5.15 label="thm:5.15"} Suppose $f$ is a real function on
+
+### thm:5.15 
+ Suppose $f$ is a real function on
 $[a, b]$, $n$ is a positive integer, $f^{(n-1)}$ is continuous on
 $[a, b]$, $f^{(n)}(t)$ exists for every $t \in (a, b)$. Let
 $\alpha, \beta$ be distinct points of $[a, b]$, and define
@@ -23,7 +24,7 @@ $$
         + \frac{f^{(n)}(x)}{n!}\left( \beta - \alpha \right)^n.
 $$
 
-<!-- ::: -->
+
 
 For $n = 1$, this is just the mean value theorem. In general, the
 theorem shows that $f$ can be approximated by a polynomial of degree
@@ -31,7 +32,7 @@ $n - 1$, and that (\[\[eq:5.24\]](#eq:5.24){reference-type="ref"
 reference="eq:5.24"}) allows us to estimate the error, if we know bounds
 on $\left| f^{(n)}(X) \right|$.
 
-<!-- ::: proof -->
+
 *Proof.* Let $M$ be the number defined by 
 \label{eq:5.25}
 
@@ -79,4 +80,4 @@ $g'(\alpha) = 0$, we conclude similarly that $g''(x_2) = 0$ for some
 $x_2$ between $\alpha$ and $x_1$. After $n$ steps we arrive at the
 conclusion that $g^{(n)}(x_n) = 0$ for some $x_n$ between $\alpha$ and
 $x_{n-1}$, that is, between $\alpha$ and $\beta$. ◻
-<!-- ::: -->
+

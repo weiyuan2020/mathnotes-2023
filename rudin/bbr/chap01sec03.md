@@ -1,7 +1,8 @@
 # Fields
 
-<!-- ::: mydef -->
-[]{#mydef:1.12 label="mydef:1.12"}
+
+### mydef:1.12 
+
 
 \(A\) Axioms for addition
 
@@ -51,10 +52,11 @@ $$
 
 
 holds for all $x, y, z \in F$.
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:1.13 label="myremark:1.13"}
+
+
+### myremark:1.13 
+
 
 (a) Our usual writes (in any filed) $x-y = x+(-y)$, $x/y=x\cdot (1/y)$.
 
@@ -67,10 +69,11 @@ holds for all $x, y, z \in F$.
     familiar properties of $\mathbb{Q}$ are consequences of the field axioms;
     once we do this, we will [not need to do it]{.underline} again for
     the real numbers and for the complex numbers.
-<!-- ::: -->
 
-<!-- ::: myProposition -->
-[]{#myProposition:1.14 label="myProposition:1.14"} The axioms for
+
+
+### myProposition:1.14 
+ The axioms for
 addition imply the following statements.
 
 (a) If $x+y=x+z$ then $y=z$.
@@ -80,18 +83,18 @@ addition imply the following statements.
 (c) If $x+y=0$ then $y= -x$.
 
 (d) $-(-x)=x$.
-<!-- ::: -->
+
 
 Statement (a) is a cancellation law. Note that (b) asserts the
 uniqueness of the element whose existence is assumed in (A4), and that
 (c) does the same for (A5).
 
-<!-- ::: proof -->
+
 *Proof.* Proof(rudin) If $x + y =x + z$, the axioms (A) give
 
 $$
 \begin{aligned}
-        y =0+y&=(-x+x)+y=-x+(x+y)\\
+        y =0+y&=(-x+x)+y=-x+(x+y)\\ 
         &=-x+(x+z)=(-x+x)+z=0+z=z
     \end{aligned}
 $$
@@ -100,10 +103,11 @@ $$
 This proves (a). Take $z = 0$ in (a) to obtain (b). Take $z= -x$ in (a)
 to obtain (c). Since $-x + x = 0$, (c) (with $-x$ in place of $x$) gives
 (d). ◻
-<!-- ::: -->
 
-<!-- ::: myProposition -->
-[]{#myProposition:1.15 label="myProposition:1.15"} The axioms for
+
+
+### myProposition:1.15 
+ The axioms for
 multiplication imply the following statements.
 
 (a) If $x\neq0$ and $xy=xz$ then $y=z$.
@@ -113,20 +117,20 @@ multiplication imply the following statements.
 (c) If $x\neq0$ and $xy=1$ then $y=1/x$.
 
 (d) If $x\neq0$ then $1/(1/x) = x$.
-<!-- ::: -->
+
 
 The proof is so similar to that of Proposition
 \[\[myProposition:1.14\]](#myProposition:1.14){reference-type="ref"
 reference="myProposition:1.14"} that we omit it.
 
-<!-- ::: proof -->
+
 *Proof.*
 
-<!-- ::: asparaenum -->
+
 , 
 $$
 \begin{aligned}
-            y&=1\cdot y=\left(\frac{1}{x}\cdot x\right)y =\frac{1}{x}\left( xy \right)\\
+            y&=1\cdot y=\left(\frac{1}{x}\cdot x\right)y =\frac{1}{x}\left( xy \right)\\ 
             &=\frac{1}{x}(xz) =\left(\frac{1}{x}x\right)z = z
         \end{aligned}
 $$
@@ -137,13 +141,14 @@ $$
 (a)Let $z=\frac{1}{x}$. $y=z=\frac{1}{x}$.
 
 (c)Let $x=\frac{1}{x'}$. $y=1/(1/x')$.
-<!-- ::: -->
+
 
  ◻
-<!-- ::: -->
 
-<!-- ::: myProposition -->
-[]{#Proposition:1.16 label="Proposition:1.16"} The field axioms imply
+
+
+### Proposition:1.16 
+ The field axioms imply
 the following statements, for any $x, y, z \in F$.
 
 (a) $0x=0$.
@@ -153,9 +158,9 @@ the following statements, for any $x, y, z \in F$.
 (c) $(-x)y=-(xy)=x(-y)$.
 
 (d) $(-x)(-y)=xy$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* $0x+0x=(0+0)x=0x$. Hence
 \[\[myProposition:1.14\]](#myProposition:1.14){reference-type="ref"
 reference="myProposition:1.14"}(b) implies that $0x=0$, and (a) holds.
@@ -179,7 +184,7 @@ $$
 combined with
 \[\[myProposition:1.14\]](#myProposition:1.14){reference-type="ref"
 reference="myProposition:1.14"}(c); the other half of (c) is proved in
-the same way.\
+the same way. 
 Finally, 
 $$
 (-x)(-y)=-[x(-y)]=-[-(xy)]=xy
@@ -187,16 +192,17 @@ $$
  by (c) and
 \[\[myProposition:1.14\]](#myProposition:1.14){reference-type="ref"
 reference="myProposition:1.14"}(d). ◻
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:1.17 label="mydef:1.17"} An ordered field is a field $F$ which
+
+
+### mydef:1.17 
+ An ordered field is a field $F$ which
 is also an ordered set, such that
 
 (i) $x+y<x+z$ if $x,y,z\in F$ and $y<z$,
 
 (ii) $xy>0$ if $x\in F$, $y\in F$, $x>0$, and $y>0$.
-<!-- ::: -->
+
 
 If $x > 0$, we call $x$ positive;
 
@@ -209,8 +215,9 @@ ordered field: Multiplication by positive \[negative\] quantities
 preserves \[reverses\] inequalities, no square is negative, etc. The
 following proposition lists some of these.
 
-<!-- ::: myProposition -->
-[]{#myProposition:1.18 label="myProposition:1.18"} The following
+
+### myProposition:1.18 
+ The following
 statements are true in every ordered field.
 
 (a) If $x>0$ then $-x <0$, and vice versa.
@@ -222,17 +229,17 @@ statements are true in every ordered field.
 (d) If $x \neq 0$ then $x^2 > 0$. In particular, $1 > 0$.
 
 (e) If $0<x<y$ then $0<l/y<l/x$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.*
 
-<!-- ::: asparaenum -->
+
 $x>0$, $-x<0$. 
 $$
 \begin{aligned}
-        x   &> 0=(x+-x)\\
-        x+0 &> x+(-x)\\
+        x   &> 0=(x+-x)\\ 
+        x+0 &> x+(-x)\\ 
         (-x)&<0
     \end{aligned}
 $$
@@ -241,9 +248,9 @@ $$
 $x>0$, $y<z$, $xy<xz$. 
 $$
 \begin{aligned}
-        y<z, z-y&>y-y=0\\
-        x(z-y)&>0\\
-        x(z-y)+xy&>0+xy\\
+        y<z, z-y&>y-y=0\\ 
+        x(z-y)&>0\\ 
+        x(z-y)+xy&>0+xy\\ 
         xz&>xy
     \end{aligned}
 $$
@@ -252,9 +259,9 @@ $$
 
 $$
 \begin{aligned}
-        (z-y) &>y-y=0\\
-        x<0,(-x)>0.\mathbb{Q}uad (-x)(z-y)&>0 \\
-        x(z-y) &<0\\
+        (z-y) &>y-y=0\\ 
+        x<0,(-x)>0.\mathbb{Q}uad (-x)(z-y)&>0 \\ 
+        x(z-y) &<0\\ 
         xz<xy    
     \end{aligned}
 $$
@@ -263,7 +270,7 @@ $$
 
 $$
 \begin{aligned}
-        x>0  && x^2    >0  \\
+        x>0  && x^2    >0  \\ 
         x<0  &&(-x)^2 >0, (-x)^2 = -[x(-x)] = -(-(x\cdot x)) =x^2, x^2>0
     \end{aligned}
 $$
@@ -273,7 +280,7 @@ If $y>0$ and $v \leq 0$, then $yv \leq 0$. But $y \cdot (1/y)=1>0$.
 Hence $1/y > 0$. Likewise, $1/x > 0$. If we multiply both sides of the
 inequality $x <y$ by the positive quantity $(1/x)(1/y)$, we obtain
 $1/y <1/x$.
-<!-- ::: -->
+
 
  ◻
-<!-- ::: -->
+

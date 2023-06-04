@@ -1,7 +1,8 @@
 # Uniform convergence
 
-<!-- ::: mydef -->
-[]{#mydef:7.7 label="mydef:7.7"} We say that a sequence of functions
+
+### mydef:7.7 
+ We say that a sequence of functions
 $\{f_n\}$, $n = 1, 2, 3,...$, converges *uniformly* on $E$ to a
 function $f$ if for every $\varepsilon > 0$ there is an integer $N$ such
 that $n \geq N$ implies 
@@ -33,10 +34,11 @@ $$
  converges uniformly on $E$.
 
 The Cauchy criterion for uniform convergence is as follows.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:7.8 label="thm:7.8"} The sequence of functions $\{f_n\}$,
+
+
+### thm:7.8 
+ The sequence of functions $\{f_n\}$,
 defined on $E$, converges uniformly on $E$ if and only if for every
 $\varepsilon > 0$ there exists an integer $N$ such that $n \geq N$,
 $x \in E$ implies 
@@ -47,10 +49,11 @@ $$
         \left| f_n (x) - f_m (x) \right| \leq \varepsilon.
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:7.9 label="thm:7.9"} Suppose
+
+
+### thm:7.9 
+ Suppose
 
 $$
 \lim_{n \to \infty} f_n (x) = f(x)
@@ -65,7 +68,7 @@ $$
  Then
 $f_n \rightarrow f$ uniformly on $E$ if and only if $M_n \rightarrow 0$
 as $n \rightarrow \infty$.
-<!-- ::: -->
+
 
 Since this is an immediate consequence of Definition
 \[\[mydef:7.7\]](#mydef:7.7){reference-type="ref" reference="mydef:7.7"},
@@ -74,8 +77,9 @@ we omit the details of the proof.
 For series, there is a very convenient test for uniform convergence, due
 to Weierstrass.
 
-<!-- ::: thm -->
-[]{#thm:7.10 label="thm:7.10"} Suppose $\{f_n\}$ is a sequence of
+
+### thm:7.10 
+ Suppose $\{f_n\}$ is a sequence of
 functions defined on $E$, and suppose 
 $$
 \left| f_n (x) \right| \leq M_n
@@ -84,12 +88,13 @@ $$
 $$
  Then $\sum f_n$ converges
 uniformly on $E$ if $\sum M_n$ converges.
-<!-- ::: -->
+
 
 Note that the converse is not asserted (and is, in fact, not true).
 
-<!-- ::: thm -->
-[]{#thm:7.11 label="thm:7.11"} Suppose $f_n \rightarrow f$ uniformly on
+
+### thm:7.11 
+ Suppose $f_n \rightarrow f$ uniformly on
 a set $E$ in a metric space. Let $x$ be a limit point of $E$, and
 suppose that 
 \label{eq:7.15}
@@ -119,13 +124,14 @@ $$
         \lim_{n \to \infty} \lim_{t \to x} f_n (t).
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:7.12 label="thm:7.12"} If $\{f_n\}$ is a sequence of
+
+
+### thm:7.12 
+ If $\{f_n\}$ is a sequence of
 continuous functions on $E$, and if $f_n \rightarrow f$ uniformly on
 $E$, then $f$ is continuous on $E$.
-<!-- ::: -->
+
 
 This very important result is an immediate corollary of Theorem
 \[\[thm:7.11\]](#thm:7.11){reference-type="ref" reference="thm:7.11"}.
@@ -138,8 +144,9 @@ reference="newexample:7.6"} is of this kind (to see this, apply Theorem
 \[\[thm:7.9\]](#thm:7.9){reference-type="ref" reference="thm:7.9"}). But
 there is a case in which we can assert the converse.
 
-<!-- ::: thm -->
-[]{#thm:7.13 label="thm:7.13"} Suppose $K$ is compact, and
+
+### thm:7.13 
+ Suppose $K$ is compact, and
 
 1.  ${f_n}$ is a sequence of continuous functions on $K$,
 
@@ -149,10 +156,11 @@ there is a case in which we can assert the converse.
     $n = 1, 2, 3, ...$.
 
 Then $f_n \rightarrow f$ uniformly on $K$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:7.14 label="mydef:7.14"} If $X$ is a metric space,
+
+
+### mydef:7.14 
+ If $X$ is a metric space,
 $\mathscr{C}(X)$ will denote the set of all complex-valued, continuous,
 bounded functions with domain $X$.
 
@@ -200,9 +208,10 @@ Accordingly, closed subsets of $\mathscr{C}(X)$ are sometimes called
 *uniformly closed*, the closure of a set
 $\mathscr{A} \subset \mathscr{C}(X)$ is called its *uniform closure*,
 and so on.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:7.15 label="thm:7.15"} The above metric makes $\mathscr{C}(X)$
+
+
+### thm:7.15 
+ The above metric makes $\mathscr{C}(X)$
 into a complete metric space.
-<!-- ::: -->
+

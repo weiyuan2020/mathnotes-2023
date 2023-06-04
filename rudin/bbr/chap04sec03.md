@@ -1,18 +1,20 @@
 # Continuity and compactness
 
-<!-- ::: mydef -->
-[]{#mydef:4.13 label="mydef:4.13"} A mapping $\mathbf{f}$ of a set $E$
+
+### mydef:4.13 
+ A mapping $\mathbf{f}$ of a set $E$
 into $\mathbb{R}^{k}$ is said to be *bounded* if there is a real number $M$ such
 that $\left| f(x) \right| \leq M$ for all $x \in E$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.14 label="thm:4.14"} Suppose $f$ is a continuous mapping of a
+
+
+### thm:4.14 
+ Suppose $f$ is a continuous mapping of a
 compact metric space $X$ into a metric space $Y$. Then $f(X)$ is
 compact.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $\{V_\alpha\}$ be an open cover of $f(X)$. Since $f$
 is continuous, Theorem \[\[thm:4.8\]](#thm:4.8){reference-type="ref"
 reference="thm:4.8"} shows that each of the sets $f^{-1}(V_{\alpha})$ is
@@ -42,7 +44,7 @@ $$
 
 
 This completes the proof ◻
-<!-- ::: -->
+
 
 Note: We have used the relation $f(f^{- 1}(E)) \subset E$, valid for
 $E \subset Y$. If $E \subset X$, then $f^{- 1}(f(E)) \supset E$;
@@ -51,18 +53,20 @@ equality need not hold in either case.
 We shall now deduce some consequences of Theorem
 \[\[thm:4.14\]](#thm:4.14){reference-type="ref" reference="thm:4.14"}
 
-<!-- ::: thm -->
-[]{#thm:4.15 label="thm:4.15"} If $\mathbf{f}$ is a continuous mapping
+
+### thm:4.15 
+ If $\mathbf{f}$ is a continuous mapping
 of a compact metric space $X$ into $\mathbb{R}^{k}$, then $\mathbf{f}(X)$ is
 closed and bounded. Thus, $\mathbf{f}$ is bounded.
-<!-- ::: -->
+
 
 This follows from Theorem \[\[thm:2.41\]](#thm:2.41){reference-type="ref"
 reference="thm:2.41"}. The result is particularly important when $f$ is
 real:
 
-<!-- ::: thm -->
-[]{#thm:4.16 label="thm:4.16"} Suppose $f$ is a continuous real function
+
+### thm:4.16 
+ Suppose $f$ is a continuous real function
 on a compact metric space $X$, and 
 \label{eq:4.14}
 
@@ -73,7 +77,7 @@ $$
 $$
  Then there exist points $p, q \in X$
 such that $f(p) = M$ and $f(q) = m$.
-<!-- ::: -->
+
 
 The notation in (\[\[eq:4.14\]](#eq:4.14){reference-type="ref"
 reference="eq:4.14"}) means that $M$ is the least upper bound of the set
@@ -84,7 +88,7 @@ The conclusion may also be stated as follows: *There exist points $p$
 and $q$ in $X$ such that $f(q) \leq f(x) \leq f(p)$ for all $x \in X$;*
 that is, $f$ attains its maximum (at $p$) and its minimum (at $q$).
 
-<!-- ::: proof -->
+
 *Proof.* By Theorem \[\[thm:4.15\]](#thm:4.15){reference-type="ref"
 reference="thm:4.15"}, $f(X)$ is a closed and bounded set of real
 numbers; hence $f(X)$ contains 
@@ -94,10 +98,11 @@ M = \sup f(X), \quad
 $$
  By Theorem
 \[\[thm:2.28\]](#thm:2.28){reference-type="ref" reference="thm:2.28"} ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.17 label="thm:4.17"} Suppose $f$ is a continuous 1-1 mapping
+
+
+### thm:4.17 
+ Suppose $f$ is a continuous 1-1 mapping
 of a compact metric space $X$ onto a metric space $Y$. Then the inverse
 mapping 1-1 defined on $Y$ by 
 $$
@@ -105,10 +110,11 @@ f^{-1}(f(x)) = x \quad
         (x \in X)
 $$
  is a continuous mapping of $Y$ onto $X$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:4.18 label="mydef:4.18"} Let $f$ be a mapping of a metric
+
+
+### mydef:4.18 
+ Let $f$ be a mapping of a metric
 space $X$ into a metric space $Y$. We say that $f$ is *uniformly
 continuous* on $X$ if for every $\varepsilon > 0$ there exists
 $\delta > 0$ such that 
@@ -120,7 +126,7 @@ $$
 $$
  for all $p$ and $q$ in $X$ for
 which $d_X(p, q) < \delta$.
-<!-- ::: -->
+
 
 Let us consider the differences between the concepts of continuity and
 of uniform continuity. First, uniform continuity is a property of a
@@ -139,13 +145,14 @@ Evidently, every uniformly continuous function is continuous. That the
 two concepts are equivalent on compact sets follows from the next
 theorem.
 
-<!-- ::: thm -->
-[]{#thm:4.19 label="thm:4.19"} Let $f$ be a continuous mapping of a
+
+### thm:4.19 
+ Let $f$ be a continuous mapping of a
 compact metric space $X$ into a metric space $Y$. Then $f$ is uniformly
 continuous on $X$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $\varepsilon > 0$ be given. Since $f$ is continuous, we can
 associate to each point $p \in X$ a positive number $\phi(p)$ such that
 
@@ -217,7 +224,7 @@ d_Y(f(p), f(q)) \leq
         \varepsilon .
 $$
  This complete the proof. ◻
-<!-- ::: -->
+
 
 An alternative proof is sketched in Exercise
 \[\[ex:4.10\]](#ex:4.10){reference-type="ref" reference="ex:4.10"}.
@@ -229,21 +236,22 @@ reference="thm:4.15"}, \[\[thm:4.16\]](#thm:4.16){reference-type="ref"
 reference="thm:4.16"}, and
 \[\[thm:4.19\]](#thm:4.19){reference-type="ref" reference="thm:4.19"}.
 
-<!-- ::: thm -->
-[]{#thm:4.20 label="thm:4.20"} Let $E$ be a noncompact set in $\mathbb{R}^{1}$
+
+### thm:4.20 
+ Let $E$ be a noncompact set in $\mathbb{R}^{1}$
 Then
 
 (a) there exists a continuous function on $E$ which is not bounded,
 
 (b) there exists a continuous and bounded function on $E$ which has no
-    maximum.\
+    maximum. 
     If, in addition, $E$ is bounded, then
 
 (c) there exists a continuous function on $E$ which is not uniformly
     continuous.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Suppose first that $E$ is bounded, so that there exists a limit
 point $x_0$ of $E$ which is not a point of $E$. Consider
 
@@ -306,13 +314,13 @@ defined on $E$ is uniformly continuous on $E$. To see this, we need
 merely take $\delta < 1$ in Definition
 \[\[mydef:4.18\]](#mydef:4.18){reference-type="ref"
 reference="mydef:4.18"}. ◻
-<!-- ::: -->
+
 
 We conclude this section by showing that compactness is also essential
 in Theorem \[\[thm:4.17\]](#thm:4.17){reference-type="ref"
 reference="thm:4.17"}.
 
-<!-- ::: newexample -->
+
 Let $X$ be the half-open interval $[0, 2\pi)$ on the real line, and let
 $f$ be the mapping of $X$ onto the circle $Y$ consisting of all points
 whose distance from the origin is $1$, given by 
@@ -335,4 +343,4 @@ onto) fails to be continuous at the point $(1, 0) = \mathbf{f}(0)$. Of
 course, $X$ is not compact in this example. (It may be of interest to
 observe that $\mathbf{f}^{-1}$ fails to be continuous in spite of the
 fact that $Y$ *is* compact!)
-<!-- ::: -->
+

@@ -1,26 +1,29 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:6.1 label="ex:6.1"} Suppose $\alpha$ increases on $[a, b]$,
+
+### ex:6.1 
+ Suppose $\alpha$ increases on $[a, b]$,
 $a \leq x_0 \leq b$, $\alpha$ is continuous at $x_0$, $f(x_0) = 1$, and
 $f(x) = 0$ if $x \neq x_0$. Prove that $f \in \mathscr{R}(\alpha)$ and
 that $\int f \mathrm{d} \alpha = 0$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.2 label="ex:6.2"} Suppose $f \geq 0$, $f$ is continuous on
+
+
+### ex:6.2 
+ Suppose $f \geq 0$, $f$ is continuous on
 $[a, b]$, and $\int_{a}^{b} \mathrm{d} x = 0$. Prove that $f(x) = 0$ for all
 $x \in [a, b]$. (Compare this with Exercise
 \[\[ex:6.1\]](#ex:6.1){reference-type="ref" reference="ex:6.1"}.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.3 label="ex:6.3"} Define three functions $\beta_1$, $\beta_2$,
+
+
+### ex:6.3 
+ Define three functions $\beta_1$, $\beta_2$,
 $\beta_3$ as follows: $\beta_j(x) = 0$ if $x < 0$, $\beta_j(x) = 1$ if
 $x > 0$ for $j = 1, 2, 3$; and $\beta_1(0) = 0$, $\beta_2(0) =1$,
 $\beta_3(0) = \frac{1}{2}$. Let $f$ be a bounded function on $[-1,1]$.
 
-<!-- ::: asparaenum -->
+
 Prove that $f \in \mathscr{R}(\beta_1)$ if and only if $f(0+) = f(0)$
 and that then 
 $$
@@ -40,24 +43,27 @@ $$
             \int f \mathrm{d} \beta_3 = f(0).
 $$
 
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.4 label="ex:6.4"} If $f(x) = 0$ for all irrational $x$,
+
+
+
+### ex:6.4 
+ If $f(x) = 0$ for all irrational $x$,
 $f(x) = 1$ for all rational $x$, prove that $f \in \mathscr{R}$ on
 $[a, b]$ for any $a < b$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.5 label="ex:6.5"} Suppose $f$ is a bounded real function on
+
+
+### ex:6.5 
+ Suppose $f$ is a bounded real function on
 $[a, b]$, and $f^2 \in \mathscr{R}$ on $[a, b]$. Does it follow that
 $f \in \mathscr{R}$? Does the answer change if we assume that
 $f^3 \in \mathscr{R}$?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.6 label="ex:6.6"} Let $P$ be the Cantor set constructed in Sec.
+
+
+### ex:6.6 
+ Let $P$ be the Cantor set constructed in Sec.
 \[\[mydef:2.44\]](#mydef:2.44){reference-type="ref"
 reference="mydef:2.44"}. Let $f$ be a bounded real function on $[0, 1]$
 which is continuous at every point outside $P$. Prove that
@@ -66,10 +72,11 @@ $f \in \mathscr{R}$ on $[0, 1]$.
 *Hint:* $P$ can be covered by finitely many segments whose total length
 can be made as small as desired. Proceed as in Theorem
 \[\[thm:6.10\]](#thm:6.10){reference-type="ref" reference="thm:6.10"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.7 label="ex:6.7"} Suppose $f$ is a real function on $(0, 1]$
+
+
+### ex:6.7 
+ Suppose $f$ is a real function on $(0, 1]$
 and $f \in \mathscr{R}$ on $[c, 1]$ for every $c > 0$. Define
 
 $$
@@ -84,10 +91,11 @@ $$
 
 (b) Construct a function $f$ such that the above limit exists, although
     it fails to exist with $|f|$ in place of $f$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.8 label="ex:6.8"} Suppose $f \in \mathscr{R}$ on $[a, b]$ for
+
+
+### ex:6.8 
+ Suppose $f \in \mathscr{R}$ on $[a, b]$ for
 every $b > a$ where $a$ is fixed. Define
 
 $$
@@ -111,10 +119,11 @@ $$
 $$
  converges. (This is the
 so-called "integral test" for convergence of series.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.9 label="ex:6.9"} Show that integration by parts can sometimes
+
+
+### ex:6.9 
+ Show that integration by parts can sometimes
 be applied to the "improper" integrals defined in Exercises
 \[\[ex:6.7\]](#ex:6.7){reference-type="ref" reference="ex:6.7"} and
 \[\[ex:6.8\]](#ex:6.8){reference-type="ref" reference="ex:6.8"}. (State
@@ -126,10 +135,11 @@ $$
 $$
  Show that one
 of these integrals converges , but that the other does not.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.10 label="ex:6.10"} Let $p$ and $q$ be positive real numbers
+
+
+### ex:6.10 
+ Let $p$ and $q$ be positive real numbers
 such that 
 $$
 \frac{1}{p} + \frac{1}{q} = 1 .
@@ -137,7 +147,7 @@ $$
  Prove the following
 statements.
 
-<!-- ::: asparaenum -->
+
 If $u \geq 0$ and $v \geq 0$, then
 
 $$
@@ -175,11 +185,12 @@ Show that Hölder's inequality is also true fir the "proper" integrals
 described in Exercises \[\[ex:6.7\]](#ex:6.7){reference-type="ref"
 reference="ex:6.7"} and \[\[ex:6.8\]](#ex:6.8){reference-type="ref"
 reference="ex:6.8"}
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.11 label="ex:6.11"} Let $\alpha$ be a fixed increasing function
+
+
+
+### ex:6.11 
+ Let $\alpha$ be a fixed increasing function
 on $[a, b]$. For $u \in \mathscr{R}(\alpha)$, define
 
 $$
@@ -196,10 +207,11 @@ $$
  as a consequence of the Schwarz
 inequality, as in the proof of Theorem
 \[\[thm:1.37\]](#thm:1.37){reference-type="ref" reference="thm:1.37"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.12 label="ex:6.12"} With the notations of Exercise
+
+
+### ex:6.12 
+ With the notations of Exercise
 \[\[ex:6.11\]](#ex:6.11){reference-type="ref" reference="ex:6.11"},
 suppose $f \in \mathscr{R}(\alpha)$ and $\varepsilon > 0$. Prove that
 there exists a continuous function $g$ on $[a, b]$ such that
@@ -213,17 +225,18 @@ g(t) =
         \frac{t-x_{i-1}}{\Delta x_i} f(x_{i})
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.13 label="ex:6.13"} Define
+
+
+### ex:6.13 
+ Define
 
 $$
 f(x) = \int_{x}^{x+1} \sin (t^2) \mathrm{d} t.
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that $\left| f(x) \right| < 1/x$ if x\>0. *Hint:* Put $t^2 = u$
 and integrate by parts, to show that $f(x)$ is equal to
 
@@ -243,11 +256,12 @@ $\left| r(x) \right| < c/x$ and $c$ is a constant.
 Find the upper and lower limits of $x f(x)$, as $x \rightarrow \infty$.
 
 Does $\int_{0}^{\infty} \sin (t^2) \mathrm{d} t$ converge?
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.14 label="ex:6.14"} Deal similarly with
+
+
+
+### ex:6.14 
+ Deal similarly with
 
 $$
 f(x) = \int_{x}^{x+1} \sin (e^t) \mathrm{d} t .
@@ -264,10 +278,11 @@ e^x f(x) = \cos (e^x) - e^{-1} \cos (e^{x+1}) + r(x),
 $$
  where
 $\left| r(x) \right| < C e^{-x}$, for some constant $C$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.15 label="ex:6.15"} Suppose $f$ is a real, continuously
+
+
+### ex:6.15 
+ Suppose $f$ is a real, continuously
 differentiable function on $[a, b]$,$f(a) =f(b) = 0$, and
 
 $$
@@ -286,10 +301,11 @@ $$
         \frac{1}{4} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.16 label="ex:6.16"} For $1<s<\infty$ , define
+
+
+### ex:6.16 
+ For $1<s<\infty$ , define
 
 $$
 \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^2} .
@@ -298,21 +314,22 @@ $$
 zeta function, of great importance in the study of the distribution of
 prime numbers.) Prove that
 
-<!-- ::: asparaenum -->
+
 $\zeta(s) = s \int_{1}^{\infty} \frac{[x]}{x^{s+1}}\mathrm{d} x$ and that
 
 $\zeta(s) = \frac{s}{s-1} - s \int_{1}^{\infty} \frac{x - [x]}{x^{s+1}} \mathrm{d} x$
 , where $[x]$ denotes the greatest integer $\leq x$.
-<!-- ::: -->
+
 
 Prove that the integral in (b) converges for all $s>0$.
 
 *Hint:* To prove (a), compute the difference between the integral over
 $[1,N]$ and the $N$th partial sum of the series that defines $\zeta(s)$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.17 label="ex:6.17"} Suppose $\alpha$ increases monotonically on
+
+
+### ex:6.17 
+ Suppose $\alpha$ increases monotonically on
 $[a, b]$, $g$ is continuous, and $g(x) = G'(x)$ for $a \leq x \leq b$.
 Prove that 
 $$
@@ -330,10 +347,11 @@ $$
         G(b)\alpha(b) - G(a)\alpha(a) - \sum_{i=1}^{n}G(x_{i-1}) \Delta \alpha_i .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.18 label="ex:6.18"} Let $\gamma_1, \gamma_2, \gamma_3$ be
+
+
+### ex:6.18 
+ Let $\gamma_1, \gamma_2, \gamma_3$ be
 curves in the complex plane, defined on $[0, 2\pi]$ by
 
 $$
@@ -345,13 +363,14 @@ $$
 curves have the same range, that $\gamma_1$ and $\gamma_2$ are
 rectifiable, that the length of $\gamma_1$ is $2\pi$, that the length of
 $\gamma_2$ is $4\pi$, and that $\gamma_3$ is not rectifiable.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:6.19 label="ex:6.19"} Let $\gamma_1$ be a curve in $\mathbb{R}^k$,
+
+
+### ex:6.19 
+ Let $\gamma_1$ be a curve in $\mathbb{R}^k$,
 defined on $[a, b]$; let $\phi$ be a continuous 1-1 mapping of $[c, d]$
 onto $[a, b]$, such that $\phi(c) = a$; and define
 $\gamma_2(s) = \gamma_1(\phi(s))$. Prove that $\gamma_2$ is an arc, a
 closed curve, or a rectifiable curve if and only if the same is true of
 $\gamma_1$. Prove that $\gamma_2$ and $\gamma_1$ have the same length.
-<!-- ::: -->
+

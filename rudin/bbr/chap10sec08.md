@@ -1,6 +1,6 @@
 # Closed forms and exact forms
 
-<!-- ::: mydef -->
+
 Let $\omega$ be a $k$-form in an open set $E \subset \mathbb{R}^n$. If there is
 a $(k - 1)$- form $\lambda$ in $E$ such that $\omega = \mathrm{d} \lambda$, then
 $\omega$ is said to be exact in $E$.
@@ -23,14 +23,16 @@ reference="newexample:10.36"} and
 \[\[newexample:10.37\]](#newexample:10.37){reference-type="ref"
 reference="newexample:10.37"} will exhibit closed forms that are not
 exact.
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:10.35 label="myremark:10.35"}
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:10.36 label="newexample:10.36"} Let
+
+### myremark:10.35 
+
+
+
+
+### newexample:10.36 
+ Let
 $E = \mathbb{R}^2 - \{\mathbf{0}\}$, the plane with the origin removed. The
 1-form 
 \label{eq:10.110}
@@ -87,10 +89,11 @@ $\mathbb{R}^2 - \{\mathbf{0}\}$ ( of class $\mathscr{C}''$), for otherwise the
 fact that $\eta$ is closed would force the integral
 \[\[eq:10.113\]](#eq:10.113){reference-type="eqref"
 reference="eq:10.113"} to be 0.
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:10.37 label="newexample:10.37"} Let
+
+
+### newexample:10.37 
+ Let
 $E = \mathbb{R}^3 - \{\mathbf{0}\}$, 3-space with the origin removed. Define
 
 \label{eq:10.114}
@@ -135,10 +138,11 @@ $\mathscr{C}''$), although $\partial \sum = 0$.
 
 The following result will be used in the proof of Theorem
 \[\[thm:10.39\]](#thm:10.39){reference-type="ref" reference="thm:10.39"}.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.38 label="thm:10.38"} Suppose $E$ is a convex open set in
+
+
+### thm:10.38 
+ Suppose $E$ is a convex open set in
 $\mathbb{R}^n$, $f \in \mathscr{C}'(E)$, $p$ is an integer, $1 \leq p \leq n$,
 and 
 \label{eq:10.116}
@@ -151,23 +155,25 @@ $$
 $$
  Then there exists an
 $F \in \mathscr{C}'(E)$ such that
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.39 label="thm:10.39"} If $E \in \mathbb{R}^n$ is convex and open, if
+
+
+### thm:10.39 
+ If $E \in \mathbb{R}^n$ is convex and open, if
 $k \geq 1$, if $\omega$ is a $k$-form of class $\mathscr{C}'$ in $E$, a
 nd if $\mathrm{d} \omega = 0$, then there is a $(k - 1)$-form $\lambda$ in $E$
 such that $\omega = \mathrm{d} \lambda$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.40 label="thm:10.40"} Fix $k$, $1 \leq k \leq n$. Let
+
+
+### thm:10.40 
+ Fix $k$, $1 \leq k \leq n$. Let
 $E \subset \mathbb{R}^n$ be an open set in which every closed $k$-form is exact.
 Let $T$ be a 1-1 $\mathscr{C}''$-mapping of $E$ onto an open set
 $U \subset \mathbb{R}^n$ whose inverse $S$ is also of class $\mathscr{C}''$.
 
 Then every closed $k$-form in $V$ is exact in $V$.
-<!-- ::: -->
+
 
 Note that every convex open set $E$ satisfies the present hypothesis, by
 Theorem \[\[thm:10.39\]](#thm:10.39){reference-type="ref"
@@ -177,6 +183,7 @@ expressed by saying that they are $\mathscr{C}''$-*equivalent*.
 *Thus every closed form is exact in any set which is
 $\mathscr{C}''$-equivalent to a convex open set.*
 
-<!-- ::: myremark -->
-[]{#myremark:10.40 label="myremark:10.40"}
-<!-- ::: -->
+
+### myremark:10.40 
+
+

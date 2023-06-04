@@ -5,7 +5,7 @@ elements $x$ such that $x \in A, x \not\in B$. The notation $A - B$ does
 not imply that $B \subset A$. We denote the empty set by 0, and say that
 $A$ and $B$ are disjoint if $A \cap B = 0$.
 
-<!-- ::: mydef -->
+
 A family $\mathscr{R}$ of sets is called a ring if A e $\mathscr{R}$ and
 Be $\mathscr{R}$ implies 
 \label{eq:11.1}
@@ -39,10 +39,11 @@ $$
 $$
  if $\mathscr{R}$ is a
 $\sigma$-ring.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:11.2 label="mydef:11.2"} We say that $\phi$ is a set function
+
+
+### mydef:11.2 
+ We say that $\phi$ is a set function
 defined on $\mathscr{R}$ if $\phi$ assigns to every $A \in \mathscr{R}$
 a number $@f(A)$ of the extended real number system. $\phi$ is
 *additive* if $A \cap B = 0$ implies 
@@ -81,7 +82,7 @@ If $\phi$ is additive, the following properties are easily verified:
 
 $$
 \begin{aligned}
-        \phi(0) & = 0 \label{eq:11.5}                              \\
+        \phi(0) & = 0 \label{eq:11.5}                              \\ 
         \phi \left( A_1 \cup \cdots \cup A_n \right)
                 & = \phi(A_1) + \cdots + \phi(A_n) \label{eq:11.6}
     \end{aligned}
@@ -121,10 +122,11 @@ $$
 $$
  if $B \subset A$, and
 $\left| \left( \phi B \right) \right| < +\infty$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.3 label="thm:11.3"} Suppose $\phi$ is countably additive on a
+
+
+### thm:11.3 
+ Suppose $\phi$ is countably additive on a
 ring $\mathscr{R}$. Suppose $A_n \in \mathscr{R} (n = 1,2,3,\dots)$,
 $A_1 \subset A_2 \subset A_3 \subset \cdots$, $A \in \mathscr{R}$, and
 
@@ -137,4 +139,4 @@ $$
 \phi(A_n) \rightarrow \phi(A) .
 $$
 
-<!-- ::: -->
+

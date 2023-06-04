@@ -115,8 +115,9 @@ $$
 $$
 
 
-<!-- ::: thm -->
-[]{#thm:8.7 label="thm:8.7"}
+
+### thm:8.7 
+
 
 (a) The function $E$ is periodic, with period $2 \pi i$.
 
@@ -126,7 +127,7 @@ $$
 
 (d) If $z$ is a complex number with $\left| z \right| = 1$, there is a
     unique $t$ in $[0, 2\pi)$ such that $E(it) = z$.
-<!-- ::: -->
+
 
 It follows from (d) and (\[\[eq:8.48\]](#eq:8.48){reference-type="ref"
 reference="eq:8.48"}) that the curve $\gamma$ defined by

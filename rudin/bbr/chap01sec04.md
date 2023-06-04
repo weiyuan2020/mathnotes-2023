@@ -2,12 +2,13 @@
 
 We now state the which is the core of this chapter.
 
-<!-- ::: thm -->
-[]{#thm:1.19 label="thm:1.19"} There exists an $\mathbb{R}$ which has the
+
+### thm:1.19 
+ There exists an $\mathbb{R}$ which has the
 least-upper-bound property.
 
 Moreover, $\mathbb{R}$ contains $\mathbb{Q}$ as a .
-<!-- ::: -->
+
 
 The second statement means that $\mathbb{Q} \subset \mathbb{R}$ and that the operations
 of addition and multiplication in $\mathbb{R}$, when applied to members of $\mathbb{Q}$,
@@ -27,8 +28,9 @@ little extra effort. However, we prefer to derive it from Theorem
 since this provides a good illustration of what one can do with the
 least-upper-bound property.
 
-<!-- ::: thm -->
-[]{#thm:1.20 label="thm:1.20"} (a) If $x \in \mathbb{R}$, $y \in \mathbb{R}$, and
+
+### thm:1.20 
+ (a) If $x \in \mathbb{R}$, $y \in \mathbb{R}$, and
 $x > 0$, then there is a positive integer $n$ such that 
 $$
 nx > y
@@ -37,12 +39,12 @@ $$
 
 \(b\) If $x \in \mathbb{R}$, $y \in \mathbb{R}$, and $x < y$, then there exists a
 $p \in Q$ such that $x < p < y$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.*
 
-<!-- ::: asparaenum -->
+
 Let $A$ be the set of all $nx$, where $n$ runs through the positive
 integers. If (a) were false, then $y$ would be an upper bound of $A$.
 But then $A$ has a *least* upper bound in $\mathbb{R}$. Put $\alpha = \sup A$.
@@ -51,7 +53,7 @@ bound of $A$. Hence $\alpha - x < mx$ for some positive integer $m$. But
 then $\alpha < (m + l)x \in A$, which is impossible, since $\alpha$ is
 an upper bound of $A$.
 
-Since $x < y$, we have $y - x >$`<!-- -->`{=html}0, and (a) furnishes a
+Since $x < y$, we have $y - x >$`
 positive integer $n$ such that 
 $$
 n(y - x) > 1.
@@ -81,23 +83,24 @@ x < \frac{m}{n} < y.
 $$
  This proves (b), with
 $p = m/n$.
-<!-- ::: -->
+
 
  ◻
-<!-- ::: -->
+
 
 We shall now prove the existence of nth roots of positive reals. This
 proof will show how the difficulty pointed out in the Introduction
 (irrationality of $\sqrt{2}$) can be handled in $\mathbb{R}$.
 
-<!-- ::: thm -->
-[]{#thm:1.21 label="thm:1.21"} For every real $x > 0$ and every integer
+
+### thm:1.21 
+ For every real $x > 0$ and every integer
 $n> 0$ there is one and only one positive real $y$ such that $y^n = x$.
-<!-- ::: -->
+
 
 This number $y$ is written $\sqrt[n]{x}$ or $x^{1/n}$.
 
-<!-- ::: proof -->
+
 *Proof.* That there is at most one such $y$ is clear, since
 $0 < y_1 < y_2$ implies $y_1^n < y_2^n$.
 
@@ -160,18 +163,19 @@ $$
 that $y - k$ is an upper bound of $E$. But $y - k < y$, which
 contradicts the fact that $y$ is the least upper bound of $E$. Hence
 $y^{n} = x$, and the proof is complete. ◻
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If $a$ and $b$ are positive real numbers and $n$ is a positive integer,
 then 
 $$
 (ab)^{1/n}= a^{1/n}b^{1/n}.
 $$
 
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:1.22 label="mydef:1.22"} We conclude this section by pointing
+
+
+### mydef:1.22 
+ We conclude this section by pointing
 out the relation between real numbers and decimals.
-<!-- ::: -->
+

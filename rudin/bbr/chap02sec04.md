@@ -1,11 +1,12 @@
 # Perfect sets
 
-<!-- ::: thm -->
-[]{#thm:2.43 label="thm:2.43"} Let $P$ be a nonempty perfect set in
-$\mathbb{R}^k$. Then P is uncountable.
-<!-- ::: -->
 
-<!-- ::: proof -->
+### thm:2.43 
+ Let $P$ be a nonempty perfect set in
+$\mathbb{R}^k$. Then P is uncountable.
+
+
+
 *Proof.* Since $P$ has limit points, $P$ must be infinite. Suppose $P$
 is countable, and denote the points of $P$ by
 $\mathbf{x}_{1}, \mathbf{x}_{2}, \mathbf{x}_{3},\dots$. We shall
@@ -21,13 +22,13 @@ Suppose $V_n$ has been constructed, so that $V_n \cap P$ is not empty.
 Since every point of $P$ is a limit point of $P$, there is a
 neighborhood $V_{n+1}$ such that
 
-<!-- ::: inparaenum -->
+
 $\overline{V}_{n+1} \subset V_n$,
 
 $x_n \not\in \overline{V}_{n+1}$,
 
 $V_{n+1} \cap P$ is not empty.
-<!-- ::: -->
+
 
 By (iii), $V_{n+1}$ satisfies our induction hypothesis, and the
 construction can proceed.
@@ -39,18 +40,19 @@ implies that $\cap_1^{\infty} K_n$ is empty. But each $K_n$ is nonempty,
 by (iii), and $K_n \supset K_{n+1}$, by (i); this contradicts the
 Corollary to Theorem \[\[thm:2.36\]](#thm:2.36){reference-type="ref"
 reference="thm:2.36"}. ◻
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 Every interval $[a, b] (a <b)$ is uncountable. In particular, the set
 all real numbers is uncountable.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:2.44 label="mydef:2.44"} The set which we are now going to
+
+
+### mydef:2.44 
+ The set which we are now going to
 construct shows that there exist perfect sets in $\mathbb{R}^{1}$ which contain
 no segment.
-<!-- ::: -->
+
 
 Let $E_0$ be the interval $[0, 1]$. Remove the segment
 $(\frac{1}{3}, \frac{2}{3})$, and let $E_1$ be the union of the

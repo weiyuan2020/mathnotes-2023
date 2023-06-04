@@ -6,10 +6,11 @@ change to finite-dimensional vector spaces over any field of scalars.
 However, for our purposes it is quite sufficient to stay within the
 familiar framework provided by the euclidean spaces.
 
-<!-- ::: mydef -->
-[]{#mydef:9.1 label="mydef:9.1"}
 
-<!-- ::: asparaenum -->
+### mydef:9.1 
+
+
+
 A nonempty set $X \subset \mathbb{R}^n$ is a *vector space* if
 $\mathbf{x + y} \in X$ and $c \mathbf{x} \in X$ for all $x \in X$,
 $y \in X$, and for all scalars $c$.
@@ -65,27 +66,29 @@ $$
 $$
  the *standard basis* of
 $\mathbb{R}^n$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.2 label="thm:9.2"} Let $r$ be a positive integer. If a vector
+
+
+
+### thm:9.2 
+ Let $r$ be a positive integer. If a vector
 space $X$ is spanned by a set of $r$ vectors, then $\dim X \leq r$.
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 $\dim \mathbb{R}^n = n$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Since $\{\mathbf{e}_1, \dots , \mathbf{e}_n\}$ spans $\mathbb{R}^n$,
 the theorem shows that $\dim \mathbb{R}^n \leq n$. Since
 $\{\mathbf{e}_1, \dots , \mathbf{e}_n\}$ is independent,
 $\dim \mathbb{R}^n \geq n$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.3 label="thm:9.3"} Suppose $X$ is a vector space, and
+
+
+### thm:9.3 
+ Suppose $X$ is a vector space, and
 $\dim X = n$.
 
 (a) A set $E$ pf $n$ vectors in $X$ spans $X$ if and only if $E$ is
@@ -96,9 +99,9 @@ $\dim X = n$.
 (c) If $1 \leq r \leq n$ and $\{\mathbf{y}_1, \dots , \mathbf{y}_r\}$ is
     an independent set in $X$, then $X$ has a basis containing
     $\{\mathbf{y}_1, \dots , \mathbf{y}_r\}$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
+
+
 A mapping $A$ of a vector space $X$ into a vector space $Y$ is said to
 be a *linear transformation* if 
 $$
@@ -134,33 +137,35 @@ $$
 Linear transformations of $X$ into $X$ are often called *linear
 operators* on $X$. If $A$ is a linear operator on $X$ which
 
-<!-- ::: inparaenum -->
+
 is one-to-one and
 
 maps $X$ onto $X$,
-<!-- ::: -->
+
 
 we say that $A$ is *invertible*. In this case we can define an operator
 $A^{-1}$ on $X$ by requiring that $A^{-1}(A \mathbf{x}) = \mathbf{x}$
 for all $\mathbf{x} \in X$. It is trivial to verify that we then also
 have $A(A^{-1}\mathbf{x}) = \mathbf{x}$, for all $\mathbf{x} \in X$, and
 that $A^{-1}$ is linear.
-<!-- ::: -->
+
 
 An important fact about linear operators on finite-dimensional vector
 spaces is that each of the above conditions (i) and (ii) implies the
 other:
 
-<!-- ::: thm -->
-[]{#thm:9.5 label="thm:9.5"} A linear operator $A$ on a
+
+### thm:9.5 
+ A linear operator $A$ on a
 finite-dimensional vector space $X$ is one-to-one if and only if the
 range of $A$ is all of $X$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:9.6 label="mydef:9.6"}
 
-<!-- ::: asparaenum -->
+
+### mydef:9.6 
+
+
+
 Let $L(X,Y)$ be the set of all linear transformations of the vector
 space $X$ into the vector space $Y$. Instead of $L(X, X)$, we shall
 simply write $L(X)$. If $A_1, A_2 \in L(X, Y)$ and if $c_1, c_2$ are
@@ -202,13 +207,14 @@ $$
 $\mathbf{x} \in \mathbb{R}^n$. Also, if $\lambda$ is such that
 $\left| A \left| x \right| \right| \leq \lambda \left| \mathbf{x} \right|$
 for all $\mathbf{x} \in \mathbb{R}^n$, then $\left\| A \right\| \leq \lambda$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:9.7 label="thm:9.7"}
 
-<!-- ::: asparaenum -->
+
+
+### thm:9.7 
+
+
+
 If $A \in L(\mathbb{R}^n, \mathbb{R}^m)$, then $\left\| A \right\| < \infty$ and $A$ is
 a uniformly continuous mapping of $\mathbb{R}^n$ into $\mathbb{R}^m$.
 
@@ -230,18 +236,19 @@ $$
 \left\| BA \right\| \leq \left\| B \right\| \left\| A \right\| .
 $$
 
-<!-- ::: -->
-<!-- ::: -->
+
+
 
 Since we now have metrics in the spaces $L(\mathbb{R}^n, \mathbb{R}^m)$, the concepts of
 open set, continuity, etc., make sense for these spaces. Our next
 theorem utilizes these concepts.
 
-<!-- ::: thm -->
-[]{#thm:9.8 label="thm:9.8"} Let $\Omega$ be the set of all invertible
+
+### thm:9.8 
+ Let $\Omega$ be the set of all invertible
 linear operators on $\mathbb{R}^n$.
 
-<!-- ::: asparaenum -->
+
 If $A \in \Omega, B \in L(\mathbb{R}^n)$, and
 
 $$
@@ -252,13 +259,13 @@ $B \in \Omega$.
 
 $\Omega$ is an open subset of $L(\mathbb{R}^n)$, and the mapping
 $A \rightarrow A^{-1}$ is continuous on $\Omega$.
-<!-- ::: -->
+
 
 (This mapping is also obviously a 1-1 mapping of $\Omega$ onto $\Omega$,
 which is its own inverse.)
-<!-- ::: -->
 
-<!-- ::: mydef -->
+
+
 Suppose $\{\mathbf{x}_1, \dots , \mathbf{x}_n\}$ and
 $\{\mathbf{y}_1, \dots , \mathbf{y}_n\}$ are bases if vector spaces $X$
 and $Y$, respectively. Then every $A \in L(X, Y)$ determines a set of
@@ -278,10 +285,10 @@ in a rectangular array of $m$ rows and $n$ columns, called an $m$ by $n$
 $$
 \left[ A \right] = 
         \begin{bmatrix}
-            a_{11} & a_{12} & \cdots & a_{1n} \\
-            a_{21} & a_{22} & \cdots & a_{2n} \\
-            \cdots & \cdots & \cdots & \cdots \\
-            a_{m1} & a_{m2} & \cdots & a_{mn} \\
+            a_{11} & a_{12} & \cdots & a_{1n} \\ 
+            a_{21} & a_{22} & \cdots & a_{2n} \\ 
+            \cdots & \cdots & \cdots & \cdots \\ 
+            a_{m1} & a_{m2} & \cdots & a_{mn} \\ 
         \end{bmatrix}
 $$
  Observe that the coordinates $a_{ij}$ of the
@@ -335,7 +342,7 @@ $$
 \begin{aligned}
         B(A \mathbf{x}_j)
         &= B \sum_i a_{ij} \mathbf{y}_i 
-        = \sum_i a_{ij} B \mathbf{y}_i \\
+        = \sum_i a_{ij} B \mathbf{y}_i \\ 
         &= \sum a_{ij} \sum_k b_{ki} \mathbf{z}_k 
         = \sum_k \left( \sum_i b_{ki} a_{ij} \right) \mathbf{z}_k,
     \end{aligned}
@@ -382,7 +389,7 @@ reference="eq:9.6"}) to $B - A$ in place of $A$, where
 $A, B \in L(\mathbb{R}^n, \mathbb{R}^m)$, we see that if the matrix elements $a_{ij}$
 are continuous functions of a parameter, then the same is true of $A$.
 More precisely:
-<!-- ::: -->
+
 
 *If $S$ is a metric space, if $\{a_{11}, \dots, a_{mn}\}$ are real
 continuous functions on $S$, and if, for each $p \in S$, $A_P$ is the

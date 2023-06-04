@@ -1,7 +1,8 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:10.1 label="ex:10.1"} Let $H$ be a compact convex set in $\mathbb{R}^k$,
+
+### ex:10.1 
+ Let $H$ be a compact convex set in $\mathbb{R}^k$,
 with nonempty interior. Let $f \in \mathscr{C}(H)$, put
 $f(\mathbf{x}) = 0$ in the complement of $H$, and define $\int_H f$ as
 in Definition \[\[mydef:10.3\]](#mydef:10.3){reference-type="ref"
@@ -14,10 +15,11 @@ integrations are carried out.
 whose supports are in $H$, as was done in Example
 \[\[newexample:10.47\]](#newexample:10.47){reference-type="ref"
 reference="newexample:10.47"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.2 label="ex:10.2"} For $i = 1, 2, 3, ...$ , let
+
+
+### ex:10.2 
+ For $i = 1, 2, 3, ...$ , let
 $\phi_i \in \mathscr{C}(\mathbb{R}^1)$ have support in $(2^{-i} , 2^{1-i})$,
 such that $\int \phi_i = 1$. Put 
 $$
@@ -37,12 +39,13 @@ $$
 $$
  Observe that $f$ is unbounded
 in every neighborhood of $(0, 0)$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.3 label="ex:10.3"}
 
-<!-- ::: asparaenum -->
+
+### ex:10.3 
+
+
+
 If $F$ is as in Theorem \[\[thm:10.7\]](#thm:10.7){reference-type="ref"
 reference="thm:10.7"}, put $\mathbf{A} = \mathbf{F}'(0)$,
 $\mathbf{F_{1}(x)} = \mathbf{A^{-1}F(x)}$. Then $\mathbf{F'_1(0)}=I$.
@@ -67,11 +70,12 @@ the composition of any two primitive mappings, in any neighborhood of
 the origin. (This shows that the flips $B_1$ cannot be omitted from the
 statement of Theorem \[\[thm:10.7\]](#thm:10.7){reference-type="ref"
 reference="thm:10.7"}.)
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.4 label="ex:10.4"} For $(x,y) \in \mathbb{R}^2$, define
+
+
+
+### ex:10.4 
+ For $(x,y) \in \mathbb{R}^2$, define
 
 $$
 \mathbf{F}(x,y) = (e^x \cos y - 1, e^x \sin y).
@@ -80,7 +84,7 @@ $$
 $\mathbf{F = G_2 \circ G_1}$, where 
 $$
 \begin{aligned}
-        \mathbf{G}_1 (x,y) & = (e^x \cos y - 1, y) \\
+        \mathbf{G}_1 (x,y) & = (e^x \cos y - 1, y) \\ 
         \mathbf{G}_2 (u,v) & = (u, (1 + u) \tan v)
     \end{aligned}
 $$
@@ -98,38 +102,42 @@ $$
 $$
  so that
 $\mathbf{F = H_1 \circ H_2}$ is some neighborhood of $(0,0)$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.5 label="ex:10.5"} Formulate and prove an analogue of Theorem
+
+
+### ex:10.5 
+ Formulate and prove an analogue of Theorem
 \[\[thm:10.8\]](#thm:10.8){reference-type="ref" reference="thm:10.8"}, in
 which $K$ is a compact subset of an arbitrary metric space. (Replace the
 functions $\phi_i$ that occur in the proof of Theorem
 \[\[thm:10.8\]](#thm:10.8){reference-type="ref" reference="thm:10.8"} by
 functions of the type constructed in Exercise
 \[\[ex:4.22\]](#ex:4.22){reference-type="ref" reference="ex:4.22"})
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.6 label="ex:10.6"} Strengthen the conclusion of Theorem
+
+
+### ex:10.6 
+ Strengthen the conclusion of Theorem
 \[\[thm:10.8\]](#thm:10.8){reference-type="ref" reference="thm:10.8"} by
 showing that the functions $\psi_i$ can be made differentiable, and even
 infinitely differentiable. (Use Exercise
 \[\[ex:8.1\]](#ex:8.1){reference-type="ref" reference="ex:8.1"} in the
 construction of the auxiliary functions $\phi_i$.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.7 label="ex:10.7"}
+
+
+### ex:10.7 
+
 
 (a) Show that the simplex $Q^k$ is the smallest convex subset of $\mathbb{R}^k$
     that contains $\mathbf{0},\mathbf{e}_1,\dots,\mathbf{e}_k$.
 
 (b) Show that affine mappings take convex sets to convex sets.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.8 label="ex:10.8"} Let $H$ be the parallelogram in $\mathbb{R}^2$
+
+
+### ex:10.8 
+ Let $H$ be the parallelogram in $\mathbb{R}^2$
 whose vertices are $(1, 1), (3, 2), (4, 5), (2, 4)$. Find the affine map
 $T$ which sends $(0, 0)$ to $(1, 1)$, $(1, 0)$ to $(3, 2)$, $(0, 1)$ to
 $(2, 4)$. Show that $J_T = 5$. Use $T$ to convert the integral
@@ -139,10 +147,11 @@ $$
 $$
  to an integral over $I^2$ and thus
 compute $\alpha$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.9 label="ex:10.9"} Define $(x, y) = T(r, \theta)$ on the
+
+
+### ex:10.9 
+ Define $(x, y) = T(r, \theta)$ on the
 rectangle 
 $$
 0 \leq r \leq a,
@@ -172,10 +181,11 @@ applies to continuous functions $f$ whose support lies in $D_0$. To
 remove this restriction, proceed as in Example
 \[\[newexample:10.4\]](#newexample:10.4){reference-type="ref"
 reference="newexample:10.4"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.10 label="ex:10.10"} Let $a \rightarrow \infty$ in
+
+
+### ex:10.10 
+ Let $a \rightarrow \infty$ in
 \[\[ex:11.9\]](#ex:11.9){reference-type="ref" reference="ex:11.9"} and
 prove that 
 $$
@@ -191,10 +201,11 @@ f(x, y) = \exp (-x^2 - y^2)
 $$
  to derive formula
 \[\[eq:8.101\]](#eq:8.101){reference-type="eqref" reference="eq:8.101"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.11 label="ex:10.11"} Define $(u,v)=T(s,t)$ on the strip
+
+
+### ex:10.11 
+ Define $(u,v)=T(s,t)$ on the strip
 
 $$
 0<s<\infty , \quad
@@ -216,10 +227,11 @@ reference="eq:8.96"} in this way. (For this application, Theorem
 \[\[thm:10.9\]](#thm:10.9){reference-type="ref" reference="thm:10.9"} has
 to be extended so as to cover certain improper integrals. Provide this
 extension.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.12 label="ex:10.12"} Let $I^k$ be the set of all
+
+
+### ex:10.12 
+ Let $I^k$ be the set of all
 $\mathbf{u} = (u_1, ... , u_k) \in \mathbb{R}^k$ with $0 \leq u_i \leq 1$ for
 all $i$; let $Q^k$ be the set of all
 $\mathbf{x} = (x_1, ... , x_k) \in  \mathbb{R}^k$ with
@@ -228,8 +240,8 @@ standard simplex in $\mathbb{R}^k$.) Define $\mathbf{x} = T(\mathbf{u})$ by
 
 $$
 \begin{aligned}
-        x_1   & = u_1                          \\
-        x_2   & = (1-u_1)u_2                   \\
+        x_1   & = u_1                          \\ 
+        x_2   & = (1-u_1)u_2                   \\ 
         \dots & \dots
         x_k   & = (1-u_1)\cdots(1-u_{k-1})u_k.
     \end{aligned}
@@ -267,10 +279,11 @@ J_S(\mathbf{x}) =
             \right]^{-1} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.13 label="ex:10.13"} Let $r_1,\dots,r_k$ be nonnegative
+
+
+### ex:10.13 
+ Let $r_1,\dots,r_k$ be nonnegative
 integers, and prove that 
 $$
 \int_{Q^k}
@@ -288,25 +301,28 @@ reference="ex:11.12"}, Theorem
 
 Note that the special case $r_1 = \cdots = r_k = 0$ shows that the
 volume of $Q^k$ is $1/k!$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.14 label="ex:10.14"} Prove formula
+
+
+### ex:10.14 
+ Prove formula
 \[\[eq:10.46\]](#eq:10.46){reference-type="eqref" reference="eq:10.46"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.15 label="ex:10.15"} If $\omega$ and $\lambda$ are $k$- and
+
+
+### ex:10.15 
+ If $\omega$ and $\lambda$ are $k$- and
 $m$-forms, respectively, prove that 
 $$
 \omega \wedge \lambda =
         (-1)^{km} \lambda \wedge \omega .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.16 label="ex:10.16"} If $k \geq 2$ and
+
+
+### ex:10.16 
+ If $k \geq 2$ and
 $\delta = [\mathbf{p}_0, \mathbf{p}_1, ... , \mathbf{p}_t]$ is an
 oriented affine $k$-simplex, prove that $\partial^2 \sigma = 0$,
 directly from the definition of the boundary operator $\partial$. Deduce
@@ -316,10 +332,11 @@ from this that $\partial^2 \Psi = 0$ for every chain $\Psi$.
 $i <j$, let $\sigma_{ij}$ be the $(k - 2)$-simplex obtained by deleting
 $\mathbf{p}_i$ and $\mathbf{p}_j$ from $u$. Show that each $\sigma_{ij}$
 occurs twice in $\partial^2 \sigma$, with opposite sign.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.17 label="ex:10.17"} Put $J^2 = \tau_1 + \tau_2$, where
+
+
+### ex:10.17 
+ Put $J^2 = \tau_1 + \tau_2$, where
 
 $$
 \tau_1 =  \left[ \mathbf{0,e_1,e_1+e_2} \right],
@@ -330,10 +347,11 @@ $$
 it is reasonable to call $J^2$ the positively oriented unit square in
 $\mathbb{R}^2$ . Show that $\partial J^2$ is the sum of 4 oriented affine
 1-simplexes. Find these. What is $\partial (\tau_1 - \tau_2)$?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.18 label="ex:10.18"} Consider the oriented affine 3-simplex
+
+
+### ex:10.18 
+ Consider the oriented affine 3-simplex
 
 $$
 \sigma_1 =  \left[ \mathbf{0,e_1,e_1+e_2,e_1+e_2+e_3} \right]
@@ -371,18 +389,19 @@ Show that the ranges of $\sigma_1, ... , \sigma_6$ have disjoint
 interiors, and that their union covers $I^3$. (Compare with Exercise
 \[\[ex:11.13\]](#ex:11.13){reference-type="ref" reference="ex:11.13"};
 note that $3! = 6$.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.19 label="ex:10.19"} Let $J^2$ and $J^3$ be as in Exercise
+
+
+### ex:10.19 
+ Let $J^2$ and $J^3$ be as in Exercise
 \[\[ex:11.17\]](#ex:11.17){reference-type="ref" reference="ex:11.17"} and
 \[\[ex:11.18\]](#ex:11.18){reference-type="ref" reference="ex:11.18"}.
 Define 
 $$
 \begin{aligned}
-        B_{01}(u,v) = (0,u,v), & B_{11}(u,v) = (1,u,v), \\
-        B_{02}(u,v) = (u,0,v), & B_{12}(u,v) = (u,1,v), \\
-        B_{03}(u,v) = (u,v,0), & B_{13}(u,v) = (u,v,1), \\
+        B_{01}(u,v) = (0,u,v), & B_{11}(u,v) = (1,u,v), \\ 
+        B_{02}(u,v) = (u,0,v), & B_{12}(u,v) = (u,1,v), \\ 
+        B_{03}(u,v) = (u,v,0), & B_{13}(u,v) = (u,v,1), \\ 
     \end{aligned}
 $$
  These are affine, and map $\mathbb{R}^2$ into $\mathbb{R}^3$.
@@ -398,10 +417,11 @@ $$
  in
 agreement with Exercise \[\[ex:10.18\]](#ex:10.18){reference-type="ref"
 reference="ex:10.18"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.20 label="ex:10.20"} State conditions under which the formula
+
+
+### ex:10.20 
+ State conditions under which the formula
 
 $$
 \int_{\Phi} f \mathrm{d} \omega =
@@ -412,10 +432,11 @@ $$
 generalizes the formula for integration by parts.
 
 *Hint:* $\d(f \omega) = (\mathrm{d} f) \wedge \omega + f d\omega$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.21 label="ex:10.21"} As in Example
+
+
+### ex:10.21 
+ As in Example
 \[\[newexample:10.36\]](#newexample:10.36){reference-type="ref"
 reference="newexample:10.36"}, consider the 1-form
 
@@ -424,7 +445,7 @@ $$
 $$
  in $\mathbb{R}^2 - \{\mathbf{0}\}$.
 
-<!-- ::: asparaenum -->
+
 Carry out the computation that leads to formula
 \[\[eq:10.113\]](#eq:10.113){reference-type="eqref"
 reference="eq:10.113"}, and prove that $\mathrm{d} \eta = 0$.
@@ -494,11 +515,12 @@ $$
  (See Exercise
 \[\[ex:8.23\]](#ex:8.23){reference-type="ref" reference="ex:8.23"} for
 the definition of the index of a curve.)
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.22 label="ex:10.22"} As in Example
+
+
+
+### ex:10.22 
+ As in Example
 \[\[newexample:10.37\]](#newexample:10.37){reference-type="ref"
 reference="newexample:10.37"}, define $\zeta$ in $\mathbb{R}^3 - \{\mathbf{0}\}$
 by 
@@ -521,7 +543,7 @@ x = \sin u \cos v, \quad
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that $\mathrm{d} \zeta = 0$ in $\mathbb{R}^3 - \{\mathbf{0}\}$.
 
 Let $S$ denote the restriction of $\sum$ to a parameter domain
@@ -620,11 +642,12 @@ and by noting that $z/r$ is the same at $\sum(u, v)$ as at
 $\Omega(u, v)$.
 
 Is $\zeta$ exact in the complement of every line through the origin?
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.23 label="ex:10.23"} Fix $n$. Define
+
+
+
+### ex:10.23 
+ Fix $n$. Define
 $r_k = (x_1^2 + \cdots + x_k^2)$ for $1 \leq k \leq n$, let $E_k$ be the
 set of all $\mathbf{x} \in \mathbb{R}^n$ at which $r_k > 0$, and let $\omega_k$
 be the $(k - 1)$-form defined in $E_k$ by
@@ -649,7 +672,7 @@ E_1 \subset
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that $\mathrm{d} \omega_k = 0$ in $E_k$.
 
 For $k=2,\dots,n$, prove that $\omega_k$ is exact in $E_{k-1}$, by
@@ -685,11 +708,12 @@ Try to extend some of the other assertions of Exercises
 \[\[ex:10.21\]](#ex:10.21){reference-type="ref" reference="ex:10.21"} and
 \[\[ex:10.22\]](#ex:10.22){reference-type="ref" reference="ex:10.22"} to
 $\omega_n$, for arbitrary $n$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.24 label="ex:10.24"} Let
+
+
+
+### ex:10.24 
+ Let
 $\omega = \sum a_i(\mathbf{x}) \mathrm{d} x_i$ be a 1-form of class
 $\mathscr{C}''$ in a convex open set $E \subset \mathbb{R}^n$. Assume
 $\mathrm{d} \omega = 0$ and prove that $\omega$ is exact in $E$, by completing
@@ -713,10 +737,11 @@ $$
 
 for $\mathbf{x} \in E$ , $\mathbf{y} \in E$ . Hence
 $(D_i f)(\mathbf{x}) = a_i(\mathbf{x})$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.25 label="ex:10.25"} Assume that $\omega$ is a 1-form in an
+
+
+### ex:10.25 
+ Assume that $\omega$ is a 1-form in an
 open set $E \subset \mathbb{R}^n$ such that 
 $$
 \int_{\gamma} \omega = 0
@@ -726,10 +751,11 @@ every closed curve $\gamma$ in $E$, of class $\mathscr{C}'$. Prove that
 $\omega$ is exact in $E$, by imitating part of the argument sketched in
 Exercise \[\[ex:10.24\]](#ex:10.24){reference-type="ref"
 reference="ex:10.24"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.26 label="ex:10.26"} Assume $\omega$ is a 1-form in
+
+
+### ex:10.26 
+ Assume $\omega$ is a 1-form in
 $\mathbb{R}^3-\{\mathbf{0}\}$, of class $\mathscr{C}'$ and $\mathrm{d} \omega =0$. Prove
 that w is exact in $\mathbb{R}^3-\{\mathbf{0}\}$.
 
@@ -737,10 +763,11 @@ that w is exact in $\mathbb{R}^3-\{\mathbf{0}\}$.
 $\mathbb{R}^3-\{\mathbf{0}\}$ is the boundary of a 2-surface in
 $\mathbb{R}^3-\{\mathbf{0}\}$. Apply Stokes' theorem and Exercise
 \[\[ex:10.25\]](#ex:10.25){reference-type="ref" reference="ex:10.25"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.27 label="ex:10.27"} Let $E$ be an open 3-cell in $\mathbb{R}^3$, with
+
+
+### ex:10.27 
+ Let $E$ be an open 3-cell in $\mathbb{R}^3$, with
 edges parallel to the coordinate axes. Suppose $(a, b, c) \in E$,
 $f_i \in \mathscr{C}'(E)$ for $i = 1, 2, 3$, 
 $$
@@ -757,7 +784,7 @@ $$
  where 
 $$
 \begin{aligned}
-        g_1(x,y,z) & = \int_{c}^{z} f_2(x,y,s) \mathrm{d} s - \int_{b}^{y} f_3(x,t,c) \mathrm{d} t \\
+        g_1(x,y,z) & = \int_{c}^{z} f_2(x,y,s) \mathrm{d} s - \int_{b}^{y} f_3(x,t,c) \mathrm{d} t \\ 
         g_2(x,y,z) & = -\int_{c}^{z} f_1(x,y,s) \mathrm{d} s ,
     \end{aligned}
 $$
@@ -767,10 +794,11 @@ $\mathrm{d} \lambda = \omega$ in $E$.
 Evaluate these integrals when $\omega = \zeta$ and thus find the form
 $\lambda$ that occurs in part (e) of Exercise
 \[\[ex:10.22\]](#ex:10.22){reference-type="ref" reference="ex:10.22"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.28 label="ex:10.28"} Fix $b > a > 0$, define
+
+
+### ex:10.28 
+ Fix $b > a > 0$, define
 
 $$
 \Phi(r, \theta) = (r \cos \theta, r \sin \theta)
@@ -785,38 +813,41 @@ $$
         \int_{\partial \Phi} \omega
 $$
  to verify that they are equal.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.29 label="ex:10.29"} Prove the existence of a function
+
+
+### ex:10.29 
+ Prove the existence of a function
 $\alpha$ with the properties needed in the proof of Theorem
 \[\[thm:10.38\]](#thm:10.38){reference-type="ref" reference="thm:10.38"},
 and prove that the resulting function $F$ is of class $\mathscr{C}'$.
 (Both assertions become trivial if $E$ is an open cell or an open ball,
 since $\alpha$ can then be taken to be a constant. Refer to Theorem
 \[\[thm:9.42\]](#thm:9.42){reference-type="ref" reference="thm:9.42"}.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.30 label="ex:10.30"} If $N$ is the vector given by
+
+
+### ex:10.30 
+ If $N$ is the vector given by
 \[\[eq:10.135\]](#eq:10.135){reference-type="eqref"
 reference="eq:10.135"}, prove that 
 $$
 \det
         \begin{bmatrix}
-            \alpha_1 & \beta_1 & \alpha_2 \beta_3 - \alpha_3 \beta_2 \\
-            \alpha_2 & \beta_2 & \alpha_3 \beta_1 - \alpha_1 \beta_3 \\
-            \alpha_3 & \beta_3 & \alpha_1 \beta_2 - \alpha_2 \beta_1 \\
+            \alpha_1 & \beta_1 & \alpha_2 \beta_3 - \alpha_3 \beta_2 \\ 
+            \alpha_2 & \beta_2 & \alpha_3 \beta_1 - \alpha_1 \beta_3 \\ 
+            \alpha_3 & \beta_3 & \alpha_1 \beta_2 - \alpha_2 \beta_1 \\ 
         \end{bmatrix} =
         \left| \mathbf{N} \right|^2 .
 $$
  Also, verify Eq.
 \[\[eq:10.137\]](#eq:10.137){reference-type="eqref"
 reference="eq:10.137"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.31 label="ex:10.31"} Let $E \subset \mathbb{R}^3$ be open, suppose
+
+
+### ex:10.31 
+ Let $E \subset \mathbb{R}^3$ be open, suppose
 $g \in  \mathscr{C}''(E)$, $h \in \mathscr{C}''(E)$, and consider the
 vector field 
 $$
@@ -824,7 +855,7 @@ $$
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that
 
 $$
@@ -875,18 +906,19 @@ $g = h$, and conclude that $h = 0$ in $\Omega$ if $h = 0$ on
 $\partial\Omega$.
 
 Show that Green's identities are also valid in $\mathbb{R}^2$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:10.32 label="ex:10.32"} Fix $\delta$, $0 < \delta < 1$. Let $D$
+
+
+
+### ex:10.32 
+ Fix $\delta$, $0 < \delta < 1$. Let $D$
 be the set of all $(0, t) \in \mathbb{R}^2$ such that $0 \leq \delta \leq \pi$,
 $-\delta \leq t \leq \delta$. Let $\Phi$ be the 2-surface in $\mathbb{R}^3$,
 with parameter domain $D$, given by 
 $$
 \begin{aligned}
-        x & = (1-t \sin \theta) \cos 2 \theta \\
-        y & = (1-t \sin \theta) \sin 2 \theta \\
+        x & = (1-t \sin \theta) \cos 2 \theta \\ 
+        y & = (1-t \sin \theta) \sin 2 \theta \\ 
         z & = t \cos \theta
     \end{aligned}
 $$
@@ -946,8 +978,8 @@ $$
 interval $[0, 2\pi]$ by the equations 
 $$
 \begin{aligned}
-        x & = (1 + \delta \sin \theta) \cos 2 \theta \\
-        y & = (1 + \delta \sin \theta) \sin 2 \theta \\
+        x & = (1 + \delta \sin \theta) \cos 2 \theta \\ 
+        y & = (1 + \delta \sin \theta) \sin 2 \theta \\ 
         z & = -\delta \cos \theta .
     \end{aligned}
 $$
@@ -970,4 +1002,4 @@ order to avoid this possible source of confusion, Stokes' formula
 (Theorem \[\[thm:10.50\]](#thm:10.50){reference-type="ref"
 reference="thm:10.50"}) is frequently stated only for orientable
 surfaces $\Phi$.
-<!-- ::: -->
+

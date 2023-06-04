@@ -1,7 +1,8 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:4.1 label="ex:4.1"} Suppose $f$ is a real function defined on
+
+### ex:4.1 
+ Suppose $f$ is a real function defined on
 $\mathbb{R}^1$ which satisfies
 
 $$
@@ -9,10 +10,11 @@ $$
 $$
  for every
 $x \in \mathbb{R}^1$. Does this implies that $f$ is continuous?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.2 label="ex:4.2"} If $f$ is a continuous mapping of a metric
+
+
+### ex:4.2 
+ If $f$ is a continuous mapping of a metric
 space $X$ into a metric space $Y$, prove that
 
 $$
@@ -21,25 +23,28 @@ $$
  for every set $E \subset X$.
 ($\overline{E}$ denotes the closure of $E$.) Show, by an example, that
 $f(\overline{E})$ can be a proper subset of $\overline{f(E)}$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.3 label="ex:4.3"} Let $f$ be a continuous real function on a
+
+
+### ex:4.3 
+ Let $f$ be a continuous real function on a
 metric space $X$. Let $Z(f)$ (the *zero set* of $f$) be the set of all
 $p \in X$ at which $f(p) = 0$. Prove that $Z(f)$ is closed.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.4 label="ex:4.4"} Let $f$ and $g$ be continuous mappings of a
+
+
+### ex:4.4 
+ Let $f$ and $g$ be continuous mappings of a
 metric space $X$ into a metric space $Y$, and let $E$ be a dense subset
 of $X$. Prove that $f(E)$ is dense in $f(X)$. If $g(p) = f(p)$ for all
 $p \in E$, prove that $g(p) = f(p)$ for all $p \in X$. (In other words,
 a continuous mapping is determined by its values on a dense subset of
 its domain.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.5 label="ex:4.5"} If $f$ is a real continuous function defined
+
+
+### ex:4.5 
+ If $f$ is a real continuous function defined
 on a closed set $E \subset \mathbb{R}^1$, prove that there exist continuous real
 functions $g$ on $\mathbb{R}^1$ such that $g(x) = f(x)$ for all $x \in E$.
 
@@ -54,20 +59,22 @@ which constitute the complement of $E$ (compare Exercise
 \[\[ex:2.29\]](#ex:2.29){reference-type="ref" reference="ex:2.29"}). The
 result remains true if $\mathbb{R}^1$ is replaced by any metric space, but the
 proof is not so simple.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.6 label="ex:4.6"} If $f$ is defined on $E$, the graph of $f$ is
+
+
+### ex:4.6 
+ If $f$ is defined on $E$, the graph of $f$ is
 the set of points $(x, f(x))$, for $x \in E$. In particular, if $E$ is a
 set of real numbers, and $f'$ is real-valued, the graph of $f$ is a
 subset of the plane.
 
 Suppose $E$ is compact, and prove that $f$ is continuous on $E$ if and
 only if its graph is compact.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.7 label="ex:4.7"} If $E \subset X$ and if $f$ is a function
+
+
+### ex:4.7 
+ If $E \subset X$ and if $f$ is a function
 defined on $X$, the *restriction* of $f$ to $E$ is the function $g$
 whose domain of definition is $E$, such that $g(p) =f(p)$ for $p \in E$.
 Define $f$ and $g$ on $\mathbb{R}^2$ by: $f(0, 0) = g(0, 0) = 0$,
@@ -76,27 +83,30 @@ $(x, y) \neq  (0, 0)$. Prove that $f$ is bounded on $\mathbb{R}^2$, that $g$ is
 unbounded in every neighborhood of $(0, 0)$, and that $f$ is not
 continuous at $(0, 0)$; nevertheless, the restrictions of both $f$ and
 $g$ to every straight line in $\mathbb{R}^2$ are continuous!
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.8 label="ex:4.8"} Let $f$ be a real uniformly continuous
+
+
+### ex:4.8 
+ Let $f$ be a real uniformly continuous
 function on the bounded set $E$ in $\mathbb{R}^1$. Prove that $f$ is bounded on
 $E$.
 
 Show that the conclusion is false if boundedness of $E$ is omitted from
 the hypothesis.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.9 label="ex:4.9"} Show that the requirement in the definition
+
+
+### ex:4.9 
+ Show that the requirement in the definition
 of uniform continuity can be rephrased as follows, in terms of diameters
 of sets: To every $\varepsilon > 0$ there exists a $\delta > 0$ such
 that $\diam f(E) < \varepsilon$ for all $E \subset X$ with
 $\diam E < \delta$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.10 label="ex:4.10"} Complete the details of the following
+
+
+### ex:4.10 
+ Complete the details of the following
 alternative proof of Theorem
 \[\[thm:4.19\]](#thm:4.19){reference-type="ref" reference="thm:4.19"}: If
 $f$ is not uniformly continuous, then for some $\varepsilon > 0$ there
@@ -104,26 +114,29 @@ are sequences $\{p_n\}, \{q_n\}$ in $X$ such that
 $d_X(p_n, q_n) \rightarrow 0$ but $d_Y(f(p_n),f(q_n)) > \varepsilon$.
 Use Theorem \[\[thm:2.37\]](#thm:2.37){reference-type="ref"
 reference="thm:2.37"} to obtain a contradiction.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.11 label="ex:4.11"} Suppose $f$ is a uniformly continuous
+
+
+### ex:4.11 
+ Suppose $f$ is a uniformly continuous
 mapping of a metric space $X$ into a metric space $Y$ and prove that
 $\{f(x_n)\}$ is a Cauchy sequence in $Y$ for every Cauchy sequence
 $\{x_n\}$ in $X$. Use this result to give an alternative proof of the
 theorem stated in Exercise \[\[ex:4.13\]](#ex:4.13){reference-type="ref"
 reference="ex:4.13"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.12 label="ex:4.12"} A uniformly continuous function of a
+
+
+### ex:4.12 
+ A uniformly continuous function of a
 uniformly continuous function is uniformly continuous.
 
 State this more precisely and prove it.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.13 label="ex:4.13"} Let $E$ be a dense subset of a metric space
+
+
+### ex:4.13 
+ Let $E$ be a dense subset of a metric space
 $X$, and let $f$ be a uniformly continuous real function defined on $E$.
 Prove that $f$ has a continuous extension from $E$ to $X$ (see Exercise
 \[\[ex:4.5\]](#ex:4.5){reference-type="ref" reference="ex:4.5"} for
@@ -139,29 +152,33 @@ $\mathbb{R}^1$. Prove that the function $g$ so defined on $X$ is the desired
 extension of $f$. Could the range space $\mathbb{R}^1$ be replaced by $\mathbb{R}^k$? By
 any compact metric space? By any complete metric space? By any metric
 space?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.14 label="ex:4.14"} Let $I = [0, 1]$ be the closed unit
+
+
+### ex:4.14 
+ Let $I = [0, 1]$ be the closed unit
 interval. Suppose $f$ is a continuous mapping of $f$ into $I$. Prove
 that $f(x) = x$ for at least one $x \in I$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.15 label="ex:4.15"} Call a mapping of $X$ into $Y$ open if
+
+
+### ex:4.15 
+ Call a mapping of $X$ into $Y$ open if
 $f(V)$ is an open set in $Y$ whenever $V$ is an open set in $X$. Prove
 that every continuous open mapping of $\mathbb{R}^1$ into $\mathbb{R}^1$ is monotonic.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.16 label="ex:4.16"} Let $[x]$ denote the largest integer
+
+
+### ex:4.16 
+ Let $[x]$ denote the largest integer
 contained in $x$, that is, $[x]$ is the integer such that
 $x - 1 < [x] \leq x$; and let $(x) = x - [x]$ denote the fractional part
 of $x$. What discontinuities do the functions $[x]$ and $(x)$ have?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.17 label="ex:4.17"} Let $f$ be a real function defined on
+
+
+### ex:4.17 
+ Let $f$ be a real function defined on
 $(a, b)$. Prove that the set of points at which $f$ has a simple
 discontinuity is at most countable.
 
@@ -177,27 +194,29 @@ of $E$, associate a triple $(p, q, r)$ of rational numbers such that
 The set of all such triples is countable. Show that each triple is
 associated with at most one point of E. Deal similarly with the other
 possible types of simple discontinuities.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.18 label="ex:4.18"} Every rational $x$ can be written in the
+
+
+### ex:4.18 
+ Every rational $x$ can be written in the
 form $x = m/n$, where $n > 0$, and $m$ and $n$ are integers without any
 common divisors. When $x = 0$, we take $n = 1$. Consider the function
 $f$ defined on $\mathbb{R}^1$ by 
 $$
 f(x) = \left\{ 
             \begin{array}{ll}
-                0 & (x \text{ irrational}). \\
-                \frac{1}{n} & \left( x = \frac{m}{n} \right) .\\
+                0 & (x \text{ irrational}). \\ 
+                \frac{1}{n} & \left( x = \frac{m}{n} \right) .\\ 
             \end{array}
         \right.
 $$
  Prove that $f$ is continuous at every irrational
 point, and that $f$ has a simple discontinuity at every rational point.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.19 label="ex:4.19"} Suppose $f$ is a real function with domain
+
+
+### ex:4.19 
+ Suppose $f$ is a real function with domain
 $\mathbb{R}^1$ which has the intermediate value property: If $f(a)< c <f(b)$,
 then $f(x) = c$ for some $x$ between $a$ and $b$.
 
@@ -210,10 +229,11 @@ Prove that $f$ is continuous.
 and all $n$, then $f(tn) = r$ for some $t_n$ between $x_0$ and $x_n$;
 thus $t_n \rightarrow x_0$. Find a contradiction. (N. J. Fine, *Amer.
 Math. Monthly*, vol. 73, 1966, p. 782.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.20 label="ex:4.20"} If $E$ is a nonempty subset of a metric
+
+
+### ex:4.20 
+ If $E$ is a nonempty subset of a metric
 space $X$, define the distance from $x \in X$ to $E$ by
 
 $$
@@ -221,7 +241,7 @@ $$
 $$
 
 
-<!-- ::: asparaenum -->
+
 Prove that $\rho_E(x) = 0$ if and only if $x \in E$.
 
 Prove that $\rho_E$ is a uniformly continuous function on $X$, by
@@ -231,7 +251,7 @@ $$
 $$
  for
 all $x \in X, y \in X$.
-<!-- ::: -->
+
 
 *Hint:* $\rho_E(x) \leq d(x, z) \leq d(x, y) + d(y, z),$ so that
 
@@ -239,10 +259,11 @@ $$
 \rho_E(x) \leq d(x, y) + \rho_E(y).
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.21 label="ex:4.21"} Suppose $K$ and $F$ are disjoint sets in a
+
+
+### ex:4.21 
+ Suppose $K$ and $F$ are disjoint sets in a
 metric space $X$, $K$ is compact, $F$ is closed. Prove that there exists
 $\delta > 0$ such that $d(p, q) > \delta$ if $p \in K$, $q \in F$.
 
@@ -250,10 +271,11 @@ $\delta > 0$ such that $d(p, q) > \delta$ if $p \in K$, $q \in F$.
 
 Show that the conclusion may fail for two disjoint closed sets if
 neither is compact.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.22 label="ex:4.22"} Let $A$ and $B$ be disjoint nonempty closed
+
+
+### ex:4.22 
+ Let $A$ and $B$ be disjoint nonempty closed
 sets in a metric space $X$, and define
 
 $$
@@ -277,10 +299,11 @@ and disjoint, and that $A \subset V$, $B \subset W$. (Thus pairs of
 disjoint closed sets in a metric space can be covered by pairs of
 disjoint open sets. This property of metric spaces is called
 *normality*.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.23 label="ex:4.23"} A real-valued function $f$ defined in
+
+
+### ex:4.23 
+ A real-valued function $f$ defined in
 $(a, b)$ is said to be *convex* if 
 $$
 f(\lambda x + (1-\lambda)y) \leq
@@ -299,10 +322,11 @@ $$
         \frac{f(u) - f(t)}{u - t}  .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.24 label="ex:4.24"} Assume that $f$ is a continuous real
+
+
+### ex:4.24 
+ Assume that $f$ is a continuous real
 function defined in $(a, b)$ such that
 
 $$
@@ -311,10 +335,11 @@ f\left( \frac{x+y}{2} \right) \leq
 $$
  for all $x, y \in  (a, b)$. Prove that
 $f$ is convex.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.25 label="ex:4.25"} If $A \subset \mathbb{R}^t$ and $B \subset \mathbb{R}^t$,
+
+
+### ex:4.25 
+ If $A \subset \mathbb{R}^t$ and $B \subset \mathbb{R}^t$,
 define $A + B$ to be the set of all sums $x + y$ with $x \in A$,
 $y \in B$.
 
@@ -333,10 +358,11 @@ $y \in B$.
     $n \in C_1$. Show that $C_1$ and $C_2$ are closed subsets of $\mathbb{R}^1$
     whose sum $C_1 + C_2$ is not closed, by showing that $C_1 + C_2$ is
     a countable dense subset of $\mathbb{R}^1$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:4.26 label="ex:4.26"} Suppose $X, Y, Z$ are metric spaces, and
+
+
+### ex:4.26 
+ Suppose $X, Y, Z$ are metric spaces, and
 $Y$ is compact. Let $f$ map $X$ into $Y$, let $g$ be a continuous
 one-to-one mapping of $Y$ into $Z$, and put $h(x) = g(f(x))$ for
 $x \in X$.
@@ -351,4 +377,4 @@ Show (by modifying Example \[\[ex:4.21\]](#ex:4.21){reference-type="ref"
 reference="ex:4.21"}, or by finding a different example) that the
 compactness of $Y$ cannot be omitted from the hypotheses, even when $X$
 and $Z$ are compact.
-<!-- ::: -->
+

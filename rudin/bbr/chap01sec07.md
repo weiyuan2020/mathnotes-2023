@@ -1,7 +1,8 @@
 # Euclidean space
 
-<!-- ::: mydef -->
-[]{#mydef:1.36 label="mydef:1.36"} For each positive integer $k$, let
+
+### mydef:1.36 
+ For each positive integer $k$, let
 $\mathbb{R}^k$ be the set of all ordered $k$-tuples
 
 $$
@@ -15,7 +16,7 @@ If $\mathbf{y} = \left(y_1,y_2,\dots,y_k\right)$ and if $\alpha$ is a
 real number, put 
 $$
 \begin{aligned}
-        \mathbf{x} + \mathbf{y} & = \left(x_1+y_1,x_2+y_2,\dots,x_k+y_k\right),         \\
+        \mathbf{x} + \mathbf{y} & = \left(x_1+y_1,x_2+y_2,\dots,x_k+y_k\right),         \\ 
         \alpha\mathbf{x}        & = \left(\alpha x_1,\alpha x_2,\dots,\alpha x_k\right)
     \end{aligned}
 $$
@@ -44,10 +45,11 @@ $$
 
 The structure now defined (the vector space $\mathbb{R}^k$ with the above inner
 product and norm) is called euclidean $k$-space.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:1.37 label="thm:1.37"} Suppose
+
+
+### thm:1.37 
+ Suppose
 $\mathbf{x}, \mathbf{y}, \mathbf{z}\in\mathbb{R}^k$, and $\alpha$ is real. Then
 
 (a) $| \mathbf{x}| \geq 0$;
@@ -61,9 +63,9 @@ $\mathbf{x}, \mathbf{y}, \mathbf{z}\in\mathbb{R}^k$, and $\alpha$ is real. Then
 (e) $|\mathbf{x}+\mathbf{y}| \leq | \mathbf{x} | + | \mathbf{y}|$;
 
 (f) $|\mathbf{x}-\mathbf{z}| \leq |\mathbf{x}-\mathbf{y}| + |\mathbf{y}-\mathbf{z}|$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Proof (a), (b), and (c) are obvious, and (d) is an immediate
 consequence of the Schwarz
 inequality\[\[thm:1.35\]](#thm:1.35){reference-type="ref"
@@ -71,19 +73,20 @@ reference="thm:1.35"}. By (d) we have
 $$
 \begin{aligned}
         |\mathbf{x} + \mathbf{y}|^2
-         & = (\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})                                \\
-         & = \mathbf{x} \cdot \mathbf{x} + 2\mathbf{x} \cdot \mathbf{y} + \mathbf{y} \cdot \mathbf{y} \\
-         & \leq |\mathbf{x}|^2 + 2|\mathbf{x}||\mathbf{y}| + |\mathbf{y}|^2                           \\
+         & = (\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})                                \\ 
+         & = \mathbf{x} \cdot \mathbf{x} + 2\mathbf{x} \cdot \mathbf{y} + \mathbf{y} \cdot \mathbf{y} \\ 
+         & \leq |\mathbf{x}|^2 + 2|\mathbf{x}||\mathbf{y}| + |\mathbf{y}|^2                           \\ 
          & = \left(|\mathbf{x}| + |\mathbf{y}|\right)^2.
     \end{aligned}
 $$
  so that (e) is proved. Finally, (f) follows from (e)
 if we replace $\mathbf{x}$ by $\mathbf{x}-\mathbf{y}$ and $\mathbf{y}$
 by $\mathbf{y}-\mathbf{z}$. ◻
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:1.38 label="myremark:1.38"} Theorem
+
+
+### myremark:1.38 
+ Theorem
 \[\[thm:1.37\]](#thm:1.37){reference-type="ref" reference="thm:1.37"}
 (a), (b), and (f) will allow us (see Chap. 2 ) to regard $\mathbb{R}^k$ as a
 metric space.
@@ -95,4 +98,4 @@ reference="mydef:1.24"} and
 \[\[mydef:1.36\]](#mydef:1.36){reference-type="ref"
 reference="mydef:1.36"}). In these two cases the norm is just the
 absolute value of the corresponding real or complex number.
-<!-- ::: -->
+

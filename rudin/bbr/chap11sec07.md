@@ -35,10 +35,11 @@ $$
 $$
 
 
-<!-- ::: thm -->
-[]{#thm:11.33 label="thm:11.33"}
 
-<!-- ::: asparaenum -->
+### thm:11.33 
+
+
+
 If $f \in \mathscr{R}$ on $[a,b]$, then $f \in \mathscr{L}$ on $[a,b]$,
 and 
 \label{eq:11.87}
@@ -52,8 +53,8 @@ $$
 
 Suppose $f$ is bounded on $[a,b]$. Then $f \in \mathscr{R}$ on $[a,b]$
 if and only if $f$ is continuous almost everywhere on $[a,b]$.
-<!-- ::: -->
-<!-- ::: -->
+
+
 
 
 \label{eq:11.96}

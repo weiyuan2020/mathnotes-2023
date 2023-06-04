@@ -1,7 +1,8 @@
 # Derivatives of higher order
 
-<!-- ::: mydef -->
-[]{#mydef:5.14 label="mydef:5.14"} If $f$ has a derivative $f'$ on an
+
+### mydef:5.14 
+ If $f$ has a derivative $f'$ on an
 interval, and if $f'$ is itself differentiable, we denote the derivative
 of $f'$ by $f''$ and call $f''$ the second derivative of $f$. Continuing
 in this manner, we obtain functions
@@ -19,4 +20,4 @@ is an endpoint of the interval on which $f$ is defined), and $f^{(n-1)}$
 must be differentiable at $x$. Since $f^{(n-1)}$ must exist in a
 neighborhood of $x$, $f^{(n-2)}$ must be differentiable in that
 neighborhood.
-<!-- ::: -->
+

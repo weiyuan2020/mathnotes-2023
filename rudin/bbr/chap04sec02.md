@@ -1,7 +1,8 @@
 # Continuous functions
 
-<!-- ::: mydef -->
-[]{#mydef:4.5 label="mydef:4.5"} Suppose $X$ and $Y$ are metric spaces,
+
+### mydef:4.5 
+ Suppose $X$ and $Y$ are metric spaces,
 $E \subset X$, $p \in E$, and $f$ maps $E$ into $Y$. Then $f$ is said to
 be *continuous at $p$* if for every $\varepsilon > 0$ there exists a
 $\varepsilon > 0$ such that 
@@ -29,28 +30,30 @@ $$
 d_Y(f(x),f(p)) = 0 < \varepsilon.
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.6 label="thm:4.6"} In the situation given in Definition
+
+
+### thm:4.6 
+ In the situation given in Definition
 \[\[mydef:4.5\]](#mydef:4.5){reference-type="ref" reference="mydef:4.5"},
 assume also that $p$ is a limit point of $E$. Then $f$ is continuous at
 $p$ if and only if $\lim_{x \to p}  f(x) = f(p)$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* This is clear if we compare Definitions
 \[\[mydef:4.1\]](#mydef:4.1){reference-type="ref" reference="mydef:4.1"}
 and \[\[mydef:4.5\]](#mydef:4.5){reference-type="ref"
 reference="mydef:4.5"}. ◻
-<!-- ::: -->
+
 
 We now turn to compositions of functions. A brief statement of the
 following theorem is that a continuous function of a continuous function
 is continuous.
 
-<!-- ::: thm -->
-[]{#thm:4.7 label="thm:4.7"} Suppose $X, Y, Z$ are metric spaces,
+
+### thm:4.7 
+ Suppose $X, Y, Z$ are metric spaces,
 $E \subset X$, $f$ maps $E$ into $Y$, $g$ maps the range of $f$, $f(E)$,
 into $Z$, and $h$ is the mapping of $E$ into $Z$ defined by
 
@@ -67,9 +70,9 @@ $$
 h = g \circ f
 $$
  is frequently used in this context.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $\varepsilon > 0$ be given. Since $g$ is continuous at
 $f(p)$, there exists $\eta > 0$ such that
 
@@ -90,24 +93,25 @@ d_Z(h(x), h(p)) = d_Z(g(f(x)), g(f(p))) < \varepsilon
 $$
  if
 $d_X(x, p) < \delta$ and $x \in E$. Thus $h$ is continuous at $p$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.8 label="thm:4.8"} A mapping $f$ of a metric space $X$ into a
+
+
+### thm:4.8 
+ A mapping $f$ of a metric space $X$ into a
 metric space $Y$ is continuous on $X$ if and only if $f^{-1}(V)$ is open
 in $X$ for every open set $V$ in $Y$.
-<!-- ::: -->
+
 
 (Inverse images are defined in Definition
 \[\[mydef:2.2\]](#mydef:2.2){reference-type="ref"
 reference="mydef:2.2"}.) This is a very useful characterization of
 continuity.
 
-<!-- ::: myCorollary* -->
+
 A mapping $f$ of a metric space $X$ into a metric space $Y$ is
 continuous if and only if $f^{-1} (C)$ is closed in $X$ for every closed
 set $C$ in $Y$.
-<!-- ::: -->
+
 
 This follows from the theorem, since a set is closed if and only if its
 complement is open, and since $f^{-1}(E^c) = [f^{-1}(E)]^c$ for every
@@ -116,24 +120,26 @@ $E \subset Y$.
 We now turn to complex-valued and vector-valued functions, and to
 functions defined on subsets of $\mathbb{R}^{k}$.
 
-<!-- ::: thm -->
-[]{#thm:4.9 label="thm:4.9"} Let $f$ and $g$ be complex continuous
+
+### thm:4.9 
+ Let $f$ and $g$ be complex continuous
 functions on a metric space $X$. Then $f + g,fg$, and $f/g$ are
 continuous on $X$.
 
 In the last case, we must of course assume that $g(x) \neq 0$, for all
 $x \in  X$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* At isolated points of $X$ there is nothing to prove. At limit
 points, the statement follows from Theorems
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"} and
 \[\[thm:4.6\]](#thm:4.6){reference-type="ref" reference="thm:4.6"}. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:4.10 label="thm:4.10"} (a) Let $f_1, \dots , f_k$ be real
+
+
+### thm:4.10 
+ (a) Let $f_1, \dots , f_k$ be real
 functions on a metric space $X$, and let $\mathbf{f}$ be the mapping of
 $X$ into $\mathbb{R}^{k}$ defined by 
 \label{eq:4.7}
@@ -149,13 +155,13 @@ $f_1, ... , f_k$ is continuous.
 \(b\) If $\mathbf{f}$ and $\mathbf{g}$ are continuous mappings of $X$
 into $\mathbb{R}^{k}$, then $\mathbf{f + g}$ and $\mathbf{f \cdot g}$ are
 continuous on $X$.
-<!-- ::: -->
+
 
 The functions $f_1, ... , f_k$ are called the *components* of
 $\mathbf{f}$. Note that $\mathbf{f + g}$ is a mapping into $\mathbb{R}^{k}$,
 whereas $\mathbf{f \cdot g}$ is a *real* function on $X$.
 
-<!-- ::: proof -->
+
 *Proof.* Part (a) follows from the inequalities
 
 $$
@@ -168,10 +174,11 @@ $$
  for $j=1,2,...,k$ . Part (b) follows
 form (a) and Theorem \[\[thm:4.9\]](#thm:4.9){reference-type="ref"
 reference="thm:4.9"}. ◻
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:4.11 label="newexample:4.11"}
+
+
+### newexample:4.11 
+
 
 $$
 \phi_i (\mathbf{x}) = x_i 
@@ -209,10 +216,11 @@ $$
         \quad (\mathbf{x,y} \in \mathbb{R}^{k})
 $$
 
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:4.12 label="myremark:4.12"} We defined the notion of
+
+
+### myremark:4.12 
+ We defined the notion of
 continuity for functions defined on a subset $E$ of a metric space $X$.
 However, the complement of $E$ in $X$ plays no role whatever in this
 definition (note that the situation was somewhat different for limits of
@@ -225,4 +233,4 @@ Theorems \[\[thm:4.8\]](#thm:4.8){reference-type="ref"
 reference="thm:4.8"} to \[\[thm:4.10\]](#thm:4.10){reference-type="ref"
 reference="thm:4.10"}, and will continue to do so in the following
 section on compactness.
-<!-- ::: -->
+

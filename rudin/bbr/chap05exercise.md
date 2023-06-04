@@ -1,17 +1,19 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:5.1 label="ex:5.1"} Let $f$ be defined for all real $x$, and
+
+### ex:5.1 
+ Let $f$ be defined for all real $x$, and
 suppose that 
 $$
 \left| f(x) - f(y) \right| \leq (x-y)^2
 $$
  for all real
 $x$ and $y$. Prove that $f$ is constant.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.2 label="ex:5.2"} Suppose $f'(x)>0$ in $(a,b)$. Prove that $f$
+
+
+### ex:5.2 
+ Suppose $f'(x)>0$ in $(a,b)$. Prove that $f$
 is strictly increasing in $(a,b)$, and let $g$ be its inverse function.
 Prove that $g$ is differentiable, and that 
 $$
@@ -20,17 +22,19 @@ g'(f(x)) = \frac{1}{f'(x)}
         (a<x<b),
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.3 label="ex:5.3"} Suppose $g$ is a real function on $\mathbb{R}^1$,
+
+
+### ex:5.3 
+ Suppose $g$ is a real function on $\mathbb{R}^1$,
 with bounded derivative (say $|g'|\leq M$). Fix $\varepsilon > 0$, and
 define $f(x) = x + \varepsilon g(x)$. Prove that $f$ is one-to-one if
 $\varepsilon$ is small enough.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.4 label="ex:5.4"} If
+
+
+### ex:5.4 
+ If
 
 $$
 C_0 + \frac{C_1}{2} + \cdots + \frac{C_{n-1}}{n} + \frac{C_n}{n+1} = 0,
@@ -43,15 +47,17 @@ C_0 + C_1 x + \cdots + C_{n-1} x^{n-1} + C_n x^n = 0
 $$
  has at least
 one real root between 0 and 1.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.5 label="ex:5.5"} Suppose $f$ is defined and differentiable for
+
+
+### ex:5.5 
+ Suppose $f$ is defined and differentiable for
 every $x>0$, and $f' \rightarrow 0$ as $x\rightarrow + \infty$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.6 label="ex:5.6"} Suppose
+
+
+### ex:5.6 
+ Suppose
 
 (a) $f$ is continuous for $x \geq 0$,
 
@@ -68,10 +74,11 @@ g(x) = \frac{f(x)}{x}
         (x>0)
 $$
  and prove that $g$ is monotonically increasing.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.7 label="ex:5.7"} Suppose $f'(x), g'(x)$ exists,
+
+
+### ex:5.7 
+ Suppose $f'(x), g'(x)$ exists,
 $g'(x) \neq 0$, and $f(x) = g(x) = 0$. Prove that
 
 $$
@@ -79,10 +86,11 @@ $$
 $$
  (This holds
 also for complex functions.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.8 label="ex:5.8"} Suppose $f'$ is continuous on $[a,b]$ and
+
+
+### ex:5.8 
+ Suppose $f'$ is continuous on $[a,b]$ and
 $\varepsilon >0$ such that
 
 $$
@@ -92,17 +100,19 @@ $$
 $0 < |t - x| < \delta$, $a \leq x \leq b$, $a \leq t \leq b$. (This
 could be expressed by saying that $f$ is on $[a, b]$ if $f'$ is
 continuous on $[a, b]$.) Does this hold for vector-valued functions too?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.9 label="ex:5.9"} Let $f$ be a continuous real function on
+
+
+### ex:5.9 
+ Let $f$ be a continuous real function on
 $\mathbb{R}^1$, of which it is known that $f'(x)$ exists for all $x \neq 0$ and
 that $f'(x) \rightarrow 3$ as $x \rightarrow 0$. Does it follow that
 $f'(0)$ exists?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.10 label="ex:5.10"} Suppose $f$ and $g$ are complex
+
+
+### ex:5.10 
+ Suppose $f$ and $g$ are complex
 differentiable function on $(0,1)$, $f(x) \rightarrow 0$,
 $g(x) \rightarrow 0$, $f'(x) \rightarrow A$, $g'(x) \rightarrow B$ as
 $x \rightarrow 0$, where $A$ and $B$ are complex numbers, $B \neq 0$.
@@ -123,10 +133,11 @@ $$
 Apply Theorem \[\[thm:5.13\]](#thm:5.13){reference-type="ref"
 reference="thm:5.13"} to the real and imaginary parts of $f(x)/x$ and
 $g(x)/x$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.11 label="ex:5.11"} Suppose $f$ is defined in a neighborhood of
+
+
+### ex:5.11 
+ Suppose $f$ is defined in a neighborhood of
 $x$, and suppose $f''(x)$ does exists. Show that
 
 $$
@@ -137,12 +148,13 @@ example that the limit may exist even if $f''(x)$ does not.
 
 *Hint:* Use Theorem \[\[thm:5.13\]](#thm:5.13){reference-type="ref"
 reference="thm:5.13"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.12 label="ex:5.12"} If $f(x) = |x|^3$, compute $f'(x), f''(x)$
+
+
+### ex:5.12 
+ If $f(x) = |x|^3$, compute $f'(x), f''(x)$
 for all real $x$, and show that $f^{(3)}(0)$ does not exist.
-<!-- ::: -->
+
 
 $f(x) = |x|^3$. 
 $$
@@ -150,34 +162,35 @@ $$
     f(x)   & =
     \left\{
     \begin{array}{ll}
-        x^3  & (x\geq 0), \\
-        -x^3 & (x < 0).   \\
+        x^3  & (x\geq 0), \\ 
+        -x^3 & (x < 0).   \\ 
     \end{array}
-    \right.            \\
+    \right.            \\ 
     f'(x)  & = \left\{
     \begin{array}{ll}
-        3x^2  & (x\geq 0), \\
-        -3x^2 & (x < 0).   \\
+        3x^2  & (x\geq 0), \\ 
+        -3x^2 & (x < 0).   \\ 
     \end{array}
-    \right.            \\
+    \right.            \\ 
     f''(x) & = \left\{
     \begin{array}{ll}
-        6x  & (x\geq 0), \\
-        -6x & (x < 0).   \\
+        6x  & (x\geq 0), \\ 
+        -6x & (x < 0).   \\ 
     \end{array}
     \right.\end{aligned}
 $$
  $f^{(3)}(x-) = -6$, $f^{(3)}(x+) = +6$,
 $f^{(3)}(x)$ doesn't exist.
 
-<!-- ::: myexercise -->
-[]{#ex:5.13 label="ex:5.13"} Suppose $a$ and $c$ are real numbers,
+
+### ex:5.13 
+ Suppose $a$ and $c$ are real numbers,
 $c>0$, and $f$ is defined on $[-1,1]$ by 
 $$
 f(x) = \left\{
         \begin{array}{ll}
-            x^a \sin (|x|^{-c}) & (\text{if } x \neq 0), \\
-            0                   & (\text{if } x =    0). \\
+            x^a \sin (|x|^{-c}) & (\text{if } x \neq 0), \\ 
+            0                   & (\text{if } x =    0). \\ 
         \end{array}
         \right.
 $$
@@ -196,18 +209,20 @@ $$
 (f) $f''$ is bounded if and only if $a\geq 2+2c$.
 
 (g) $f''$ is continuous if and only if $a>2+2c$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.14 label="ex:5.14"} Let $f$ be a differentiable real function
+
+
+### ex:5.14 
+ Let $f$ be a differentiable real function
 defined in $(a,b)$. Prove that $f$ is convex if and only if $f'$ is
 monotonically increasing. Assume next that $f''(x)$ exists for every
 $x \in (a,b)$, and prove that $f$ is convex if and only if
 $f''(x) \geq 0$ for all $x \in (a,b)$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.15 label="ex:5.15"} Suppose $a \in \mathbb{R}^1$, $f$ is
+
+
+### ex:5.15 
+ Suppose $a \in \mathbb{R}^1$, $f$ is
 twice-differentiable real function on $(a, \infty)$, and $M_0, M_1, M_2$
 are the least upper bounds of $|f(x)|$, $|f'(x)|$, $|f''(x)|$,
 respectively, on $(a, \infty)$. Prove that 
@@ -232,28 +247,30 @@ $M_1^2 = 4M_0 M_2$ can actually happen, take $a = -1$, define
 $$
 f(x) = \left\{
         \begin{array}{ll}
-            2x^2-1              & (-1<x<0),           \\
-            \frac{x^2-1}{x^2+1} & (0\leq x < \infty). \\
+            2x^2-1              & (-1<x<0),           \\ 
+            \frac{x^2-1}{x^2+1} & (0\leq x < \infty). \\ 
         \end{array}
         \right.
 $$
  and show that $M_0 = 1$, $M_1 = 4$, $M_2 = 4$.
 
 Does $M_1^2 \leq 4 M_0 M_2$ hold for vector-valued functions too?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.16 label="ex:5.16"} Suppose $f$ is twice-differentiable on
+
+
+### ex:5.16 
+ Suppose $f$ is twice-differentiable on
 $(0, \infty)$, $f''$ is bounded on $(0, \infty)$, and
 $f(x) \rightarrow 0$ as $x \rightarrow \infty$. Prove that
 $f'(x) \rightarrow 0$ as $x \rightarrow \infty$.
 
 *Hint:* Let $a \rightarrow \infty$ in Exercise
 \[\[ex:5.15\]](#ex:5.15){reference-type="ref" reference="ex:5.15"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.17 label="ex:5.17"} Suppose $f$ is a real, three times
+
+
+### ex:5.17 
+ Suppose $f$ is a real, three times
 differentiable function on $[-1, 1]$, such that 
 $$
 f(-1) =0,   \quad
@@ -274,10 +291,11 @@ $$
 f^{(3)}(s) + f^{(3)}(t) = 6.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.18 label="ex:5.18"} Suppose $f$ is a real function on $[a, b]$,
+
+
+### ex:5.18 
+ Suppose $f$ is a real function on $[a, b]$,
 $n$ is a positive integer, and $f^{(n-1)}$ exists for every
 $t \in [a, b]$. Let $\alpha, \beta$, and $P$ be as in Taylor's theorem
 (\[\[thm:5.15\]](#thm:5.15){reference-type="ref" reference="thm:5.15"}).
@@ -298,10 +316,11 @@ $$
 f(\beta) = P(\beta) + \frac{Q^{(n-1)}(\alpha)}{(n-1)!}(\beta - \alpha)^n .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.19 label="ex:5.19"} Suppose $f$ is defined in $(-1,1)$ and
+
+
+### ex:5.19 
+ Suppose $f$ is defined in $(-1,1)$ and
 $f'(0)$ exists. Suppose $-1 < \alpha_n < \beta_n < 1$,
 $\alpha_n \rightarrow 0$, and $\beta \rightarrow 0$ as
 $n \rightarrow \infty$. Define the difference quotients
@@ -322,29 +341,32 @@ following statements:
 Give an example in which $f$ is differentiable in $(-1, 1)$ (but $f'$ is
 not continuous at 0) and in which $\alpha_n$ , $\beta_n$ tend to 0 in
 such a way that $\lim D_n$ exists but is different from $f'(0)$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.20 label="ex:5.20"} Formulate and prove an inequality which
+
+
+### ex:5.20 
+ Formulate and prove an inequality which
 follows from Taylor's theorem and which remains valid for vector-valued
 functions.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.21 label="ex:5.21"} Let $E$ be a closed subset of $\mathbb{R}^1$. We
+
+
+### ex:5.21 
+ Let $E$ be a closed subset of $\mathbb{R}^1$. We
 saw in Exercise \[\[ex:4.22\]](#ex:4.22){reference-type="ref"
 reference="ex:4.22"}, that there is a real continuous function $f$ on
 $\mathbb{R}^1$ whose zero set is $E$. Is it possible, for each closed set $E$,
 to find such an $f$ which is differentiable on $\mathbb{R}^1$, or one which is
 $n$ times differentiable, or even one which has derivatives of all
 orders on $\mathbb{R}^1$?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.22 label="ex:5.22"} Suppose $f$ is a real function on
+
+
+### ex:5.22 
+ Suppose $f$ is a real function on
 $( - \infty, \infty )$. Call $x$ a off if $f(x) = x$.
 
-<!-- ::: asparaenum -->
+
 If $f$ is differentiable and $f'(t) \neq 1$ for every real $t$, prove
 that $f$ has at most one fixed point.
 
@@ -374,11 +396,12 @@ $$
             (x_3, x_4) \rightarrow \cdots .
 $$
 
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.23 label="ex:5.23"} The function $f$ defined bby
+
+
+
+### ex:5.23 
+ The function $f$ defined bby
 
 $$
 f(x) = \frac{x^3+1}{3}
@@ -404,10 +427,11 @@ setting $x_{n+1} = f(x_n)$.
 
 Thus $\beta$ can be located by this method, but $\alpha$ and $\gamma$
 cannot.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.24 label="ex:5.24"} The process described in part (c) of
+
+
+### ex:5.24 
+ The process described in part (c) of
 Exercise \[\[ex:5.22\]](#ex:5.22){reference-type="ref"
 reference="ex:5.22"} can of course also be applied to functions that map
 $(0,\infty)$ to $(0,\infty)$.
@@ -429,10 +453,11 @@ reference="ex:3.16"}, is so much more rapid than it is in Exercise
 \[\[ex:5.22\]](#ex:5.22){reference-type="ref" reference="ex:5.22"}.)
 
 Do the same when $0 < \alpha < 1$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.25 label="ex:5.25"} Suppose $f$ is twice differentiable on
+
+
+### ex:5.25 
+ Suppose $f$ is twice differentiable on
 $[a, b]$, $f(a) < 0$, $f(b) > 0$, $f'(x) \geq \delta > 0$, and
 $0 \leq f''(x) \leq M$ for all $x \in [a, b]$. Let $g$ be the unique
 point in $(a, b)$ at which $f(\xi) = 0$.
@@ -440,7 +465,7 @@ point in $(a, b)$ at which $f(\xi) = 0$.
 Complete the details in the following outline of Newton's method for
 computing $f$.
 
-<!-- ::: asparaenum -->
+
 Choose $x_1 \in (\xi, b)$, and define $\{x_n\}$ by
 
 $$
@@ -483,11 +508,12 @@ $g'(x)$ behave for $x$ near $\xi$?
 
 Put $f(x) = x^{1/2}$ on $(-\infty,\infty)$ and try Newton's method. What
 happens?
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.26 label="ex:5.26"} Suppose $f$ is a differentiable on
+
+
+
+### ex:5.26 
+ Suppose $f$ is a differentiable on
 $[a, b]$, $f(a) = 0$, and there is a real number $A$ such that
 $|f'(x)| \leq A |f(x)|$ on $[a, b]$. Prove that $f(x) = 0$ for all
 $x \in [a, b]$.
@@ -504,10 +530,11 @@ $$
 $$
  Hence
 $M_0 = 0$ if $A(x_0 - a) < 1$. That is, $f= 0$ on $[a, x_0]$, Proceed.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.27 label="ex:5.27"} Let $\phi$ be a real function defined on a
+
+
+### ex:5.27 
+ Let $\phi$ be a real function defined on a
 rectangle $R$ in the plane, given by $a \leq x \leq b$,
 $\alpha \leq y \leq \beta$. A of the initial-value problem
 
@@ -543,10 +570,11 @@ y' = y^{1/2}, \quad
 $$
  which has two solutions: $f(x) = 0$ and
 $f(x) = x^2/4$. Find all other solutions.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.28 label="ex:5.28"} Formulate and prove an analogous uniqueness
+
+
+### ex:5.28 
+ Formulate and prove an analogous uniqueness
 theorem for systems of differential equations of the form
 
 $$
@@ -567,15 +595,16 @@ components are the functions $\phi_1, ... , \phi_k$, and $c$ is the
 vector $(c_1, ... , c_k)$. Use Exercise
 \[\[ex:5.26\]](#ex:5.26){reference-type="ref" reference="ex:5.26"}, for
 vector-valued functions.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:5.29 label="ex:5.29"} Specialize Exercise
+
+
+### ex:5.29 
+ Specialize Exercise
 \[\[ex:5.28\]](#ex:5.28){reference-type="ref" reference="ex:5.28"} by
 considering the system 
 $$
 \begin{aligned}
-        y'_j & = y_{j+1} \quad (j = 1,\dots,k-1) ,  \\
+        y'_j & = y_{j+1} \quad (j = 1,\dots,k-1) ,  \\ 
         y'_k & = f(x) - \sum_{j=1}^{k} g_j(x) y_j ,
     \end{aligned}
 $$
@@ -597,4 +626,4 @@ y(a) = c_1, \quad
         y^{(k-1)}(a) = c_k.
 $$
 
-<!-- ::: -->
+

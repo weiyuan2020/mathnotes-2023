@@ -1,7 +1,8 @@
 # Constriction of the lebesgue measure
 
-<!-- ::: mydef -->
-[]{#mydef:11.4 label="mydef:11.4"} Let $\mathbb{R}^p$ denote $p$-dimensional
+
+### mydef:11.4 
+ Let $\mathbb{R}^p$ denote $p$-dimensional
 euclidean space. By an *interval* in $\mathbb{R}^p$ we mean the set of points
 $\mathbf{x} = (x_1 , ... , x_p)$ such that 
 \label{eq:11.10}
@@ -62,10 +63,11 @@ At this point, the following properties should be verified:
 
 Note that if $p = 1,2,3$, then $m$ is length, area, and volume,
 respectively.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:11.5 label="mydef:11.5"} A nonnegative additive set function
+
+
+### mydef:11.5 
+ A nonnegative additive set function
 $\phi$ defined on $\mathscr{E}$ is said to be regular if the following
 is true: To every $A \in \mathscr{E}$ and to every $\varepsilon > 0$
 there exist sets $F \in \mathscr{E}$, $G \in \mathscr{E}$ such that $F$
@@ -79,12 +81,13 @@ $$
         \phi(F) + \varepsilon .
 $$
 
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#neqexample:11.6 label="neqexample:11.6"}
 
-<!-- ::: asparaenum -->
+
+### neqexample:11.6 
+
+
+
 *The set function $m$ is regular.* If $A$ is an interval, it is trivial
 that the requirements of Definition
 \[\[mydef:11.5\]](#mydef:11.5){reference-type="ref"
@@ -96,9 +99,9 @@ Take $\mathbb{R}^p = \mathbb{R}^1$, and let $\alpha$ be a monotonically increasi
 function, defined for all real $x$. Put 
 $$
 \begin{aligned}
-            \mu([a,b]) & = \alpha(b-)-\alpha(a-), \\
-            \mu([a,b]) & = \alpha(b+)-\alpha(a+), \\
-            \mu([a,b]) & = \alpha(b+)-\alpha(a+), \\
+            \mu([a,b]) & = \alpha(b-)-\alpha(a-), \\ 
+            \mu([a,b]) & = \alpha(b+)-\alpha(a+), \\ 
+            \mu([a,b]) & = \alpha(b+)-\alpha(a+), \\ 
             \mu([a,b]) & = \alpha(b-)-\alpha(a-).
         \end{aligned}
 $$
@@ -107,21 +110,23 @@ Because of the possible discontinuities of $\alpha$, these cases have to
 be distinguished. If $\mu$ is defined for elementary sets as in
 (\[\[eq:11.11\]](#eq:11.11){reference-type="ref" reference="eq:11.11"}),
 $\mu$ is regular on $\mathscr{E}$. The proof is just like that of (a)
-<!-- ::: -->
-<!-- ::: -->
+
+
 
 Our next objective is to show that every regular set function on
 $\mathscr{E}$ can be extended to a countably additive set function on a
 $\sigma$-ring which contains $\mathscr{E}$.
 
-<!-- ::: mydef -->
-[]{#mydef:11.7 label="mydef:11.7"} outer measure $\mu^*(E)$
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.8 label="thm:11.8"}
+### mydef:11.7 
+ outer measure $\mu^*(E)$
 
-<!-- ::: asparaenum -->
+
+
+### thm:11.8 
+
+
+
 For every $A \in \mathscr{E}$, $\mu^* (A) = \mu (A)$.
 
 If $E = \cup_1^{\infty} E_n$, then 
@@ -133,26 +138,29 @@ $$
             \sum_{n=1}^{\infty} \mu^* (E_n) .
 $$
 
-<!-- ::: -->
-<!-- ::: -->
+
+
 
 Note that (a) asserts that $\mu^*$ is an extension of $\mu$ from
 $\mathscr{E}$ to the family of all subsets of $\mathbb{R}^P$. The property
 (\[\[eq:11.19\]](#eq:11.19){reference-type="ref" reference="eq:11.19"})
 is called *subadditivity*.
 
-<!-- ::: mydef -->
-[]{#mydef:11.9 label="mydef:11.9"} finitely $\mu$-measurable
-$A \in \mathfrak{M}_F(\mu)$
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.10 label="thm:11.10"} $\mathfrak{M}(\mu)$ is a $\sigma$-ring,
+### mydef:11.9 
+ finitely $\mu$-measurable
+$A \in \mathfrak{M}_F(\mu)$
+
+
+
+### thm:11.10 
+ $\mathfrak{M}(\mu)$ is a $\sigma$-ring,
 and $\mu^*$ is countably additive on $\mathfrak{M}(\mu)$.
-<!-- ::: -->
+
 
 properties of $S(A, B)$ and $d(A, B)$.
 
-<!-- ::: myremark -->
-[]{#myremark:11.11 label="myremark:11.11"}
-<!-- ::: -->
+
+### myremark:11.11 
+
+

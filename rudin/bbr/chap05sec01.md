@@ -1,7 +1,8 @@
 # The derivative of a real function
 
-<!-- ::: mydef -->
-[]{#mydef:5.1 label="mydef:5.1"} Let $f$ be defined (and real-valued) on
+
+### mydef:5.1 
+ Let $f$ be defined (and real-valued) on
 $[a, b]$. For any $x \in [a, b]$ form the quotient 
 \label{eq:5.1}
 
@@ -42,14 +43,15 @@ is defined by (\[\[eq:5.1\]](#eq:5.1){reference-type="ref"
 reference="eq:5.1"}) and (\[\[eq:5.2\]](#eq:5.2){reference-type="ref"
 reference="eq:5.2"}), as above. But $f'(a)$ and $f'(b)$ are not defined
 in this case.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:5.2 label="thm:5.2"} Let $f$ be defined on $[a, b]$. If $f$ is
+
+
+### thm:5.2 
+ Let $f$ be defined on $[a, b]$. If $f$ is
 differentiable at a point $x \in [a, b]$, then $f$ is continuous at $x$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* As $t \rightarrow x$, we have, by Theorem
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"}
 
@@ -58,15 +60,16 @@ f(t) - f(x) = \frac{f(t)-f(x)}{t-x}\cdot (t-x)
         \rightarrow f'(x)\cdot 0 = 0.
 $$
  ◻
-<!-- ::: -->
+
 
 The converse of this theorem is not true. It is easy to construct
 continuous functions which fail to be differentiable at isolated points.
 In Chap. 7 we shall even become acquainted with a function which is
 continuous on the whole line without being differentiable at any point!
 
-<!-- ::: thm -->
-[]{#thm:5.3 label="thm:5.3"} Suppose $f$ and $g$ are defined on $[a, b]$
+
+### thm:5.3 
+ Suppose $f$ and $g$ are defined on $[a, b]$
 and are differentiable at a point $x \in [a, b]$. Then $f + g$, $fg$,
 and $f/g$ are differentiable at $x$, and
 
@@ -77,9 +80,9 @@ and $f/g$ are differentiable at $x$, and
 (c) $\left( \cfrac{f}{g} \right)'(x) = \cfrac{g(x)f'(x) - g'(x)f(x)}{g^{2}(x)}$.
 
 In (c), we assume of course that $g(x) \neq 0$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* (a) is clear, by Theorem
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"}. Let
 $h = fg$. Then 
@@ -102,9 +105,9 @@ $$
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"} and
 \[\[thm:5.2\]](#thm:5.2){reference-type="ref" reference="thm:5.2"}, we
 obtain (c). ◻
-<!-- ::: -->
 
-<!-- ::: newexample -->
+
+
 The derivative of any constant is clearly zero. If $f$ is defined by
 $f(x) = x$, then $f'(x) = 1$. Repeated application of (b) and (c) then
 shows that $x^n$ is differentiable, and that its derivative is
@@ -112,7 +115,7 @@ $nx^{n-1}$ , for any integer $n$ (if $n < 0$, we have to restrict
 ourselves to $x \neq 0$). Thus every polynomial is differentiable, and
 so is every rational function, except at the points where the
 denominator is zero.
-<!-- ::: -->
+
 
 The following theorem is known as the "chain rule" for differentiation.
 It deals with differentiation of composite functions and is probably the
@@ -120,8 +123,9 @@ most important theorem about derivatives. We shall meet more general
 versions of it in Chap. \[\[chap:09\]](#chap:09){reference-type="ref"
 reference="chap:09"}.
 
-<!-- ::: thm -->
-[]{#thm:5.5 label="thm:5.5"} Suppose $f$ is continuous on $[a, b]$,
+
+### thm:5.5 
+ Suppose $f$ is continuous on $[a, b]$,
 $f'(x)$ exists at some point $x \in [a, b]$, $g$ is defined on an
 interval $I$ which contains the range of $f$, and $g$ is differentiable
 at the point $f(x)$. If 
@@ -139,9 +143,9 @@ $$
         h'(x) = g'(f(x))f'(x).
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $y = f(x)$. By the definition of the derivative, we have
 
 \label{eq:5.4}
@@ -170,8 +174,8 @@ obtain
 $$
 \begin{aligned}
         h(t) - h(x)
-         & = g(f(t)) - g(f(x))                                                          \\
-         & = \left[ f(t) - f(x) \right] \cdot \left[ g'(y) + v(s) \right]               \\
+         & = g(f(t)) - g(f(x))                                                          \\ 
+         & = \left[ f(t) - f(x) \right] \cdot \left[ g'(y) + v(s) \right]               \\ 
          & = (t - x)\cdot \left[ f'(x) + u(t) \right]\cdot \left[ g'(y) + v(s) \right],
     \end{aligned}
 $$
@@ -189,10 +193,10 @@ that $s \rightarrow y$, by the continuity of $f$, so that the right side
 of (\[\[eq:5.6\]](#eq:5.6){reference-type="ref" reference="eq:5.6"}) ends
 to $g'(y)f'(x)$, which gives (\[\[eq:5.3\]](#eq:5.3){reference-type="ref"
 reference="eq:5.3"}). ◻
-<!-- ::: -->
 
-<!-- ::: newexample -->
-<!-- ::: asparaenum -->
+
+
+
 
 \label{eq:5.7}
 
@@ -200,7 +204,7 @@ $$
 
             f(x) =
             \begin{array}{lc}
-                x\sin \frac{1}{x} & (x \neq 0), \\
+                x\sin \frac{1}{x} & (x \neq 0), \\ 
                 0                 & (x = 0).
             \end{array}
 $$
@@ -234,7 +238,7 @@ $$
 
             f(x) =
             \begin{array}{lc}
-                x^2\sin \frac{1}{x} & (x \neq 0), \\
+                x^2\sin \frac{1}{x} & (x \neq 0), \\ 
                 0                   & (x = 0).
             \end{array}
 $$
@@ -267,5 +271,5 @@ $$
 but $f'$ is not a continuous function, since $\cos (1/x)$ in
 (\[\[eq:5.10\]](#eq:5.10){reference-type="ref" reference="eq:5.10"}) does
 not tend to a limit as $x \rightarrow 0$.
-<!-- ::: -->
-<!-- ::: -->
+
+

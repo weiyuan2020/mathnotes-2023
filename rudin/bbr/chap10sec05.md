@@ -28,14 +28,15 @@ $\mathscr{C}''$-mapping) $\mathbf{g}$ of an open set $W \subset \mathbb{R}^k$
 into $\mathbb{R}^n$ such that $D \subset W$ and such that $\mathbf{g(x) = f(x)}$
 for all $\mathbf{x} \in D$.
 
-<!-- ::: mydef -->
-[]{#mydef:10.10 label="mydef:10.10"} Suppose $E$ is an open set in
+
+### mydef:10.10 
+ Suppose $E$ is an open set in
 $\mathbb{R}^n$. A $k$-surface in E is a $\mathscr{C}'$-mapping $\Phi$ from a
 compact set $D \subset \mathbb{R}^k$ into $E$.
 
 $D$ is called the of $\Phi$. Points of $D$ will be denoted by
 $\mathbf{u} = (u_1, \dots , u_k)$.
-<!-- ::: -->
+
 
 We shall confine ourselves to the simple situation in which $D$ is
 either a $k$-cell or the $k$-simplex $Q^k$ described in Example 10.4.
@@ -51,8 +52,9 @@ subsets of $E$. This agrees with our earlier definition of curves
 reference="mydef:6.26"}). In fact, $1$-surfaces are precisely the same
 as continuously differentiable curves.
 
-<!-- ::: mydef -->
-[]{#mydef:10.11 label="mydef:10.11"} Suppose $E$ is an open set in
+
+### mydef:10.11 
+ Suppose $E$ is an open set in
 $\mathbb{R}^n$. A $k \geq 1$ in $E$ (briefly, a $k$-form in $E$) is a function
 $\omega$, symbolically represented by the sum 
 \label{eq:10.34}
@@ -102,10 +104,11 @@ $\mathscr{C}''$ if the functions $a_{i_1 \cdots i_k}$ in
 are all of class $\mathscr{C}'$ or $\mathscr{C}''$.
 
 A 0-form in E is defined to be a continuous function in $E$.
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:10.12 label="newexample:10.12"}
+
+
+### newexample:10.12 
+
 
 (a) Let $\gamma$ be a 1-surface (a curve of class $\mathscr{C}$) in
     $\mathbb{R}^3$, with parameter domain $[0, 1 ]$. Write $(x, y, z)$ in place
@@ -126,7 +129,7 @@ $$
     $\int_{\gamma} \omega$ depends only on the initial point $\gamma(0)$
     and on the end point $\gamma(1)$ of $\gamma$. In particular,
     $\int_{\gamma} \omega = 0$ for every closed curve $\gamma$. (As we
-    shall see later, this is true for every $1$-form w which is .)\
+    shall see later, this is true for every $1$-form w which is .) 
     Integrals of I-forms are often called line .
 
 (b) Fix $a>0,b>0$, and define 
@@ -165,8 +168,8 @@ $$
     $\Phi(r,\theta,\phi)=(x,y,z)$, where 
 $$
 \begin{aligned}
-                      x & = r \sin \theta \cos \phi \\
-                      y & = r \sin \theta \sin \phi \\
+                      x & = r \sin \theta \cos \phi \\ 
+                      y & = r \sin \theta \sin \phi \\ 
                       z & = r \cos \theta.
                   \end{aligned}
 $$
@@ -190,10 +193,11 @@ $$
     are identified by $\Phi$), and that the integral
     \[\[eq:10.36\]](#eq:10.36){reference-type="eqref"
     reference="eq:10.36"} is equal to the volume of $\Phi(D)$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.13 label="mydef:10.13"} Let $\omega$, $\omega_1$,
+
+
+### mydef:10.13 
+ Let $\omega$, $\omega_1$,
 $\omega_2$ be $k$-forms in $E$. We write $\omega_1 = \omega_2$ if and
 only if $\omega_1(\Phi) = \omega_2(\Phi)$ for every $k$-surface $\Phi$
 in $E$. If $c$ is a real number, then $c\omega$ is the $k$-form defined
@@ -296,10 +300,11 @@ The anticommutativity expressed by
 (\[\[eq:10.42\]](#eq:10.42){reference-type="ref" reference="eq:10.42"})
 is the reason for the inordinate amount of attention that has to be paid
 to minus signs when studying differential forms.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.14 label="mydef:10.14"} If $i_1, \dots , i_k$ are integers
+
+
+### mydef:10.14 
+ If $i_1, \dots , i_k$ are integers
 such that $1 \leq i_1 < i_2 < \cdots < i_k \leq n$, and if $I$ is the
 ordered $k$-tuple $\{i_1, \dots , i_k\}$, then we call $I$ an increasing
 $k$-index, and we use the brief notation 
@@ -345,7 +350,7 @@ $$
  where $s$ is as in Definition
 \[\[mydef:9.33\]](#mydef:9.33){reference-type="ref"
 reference="mydef:9.33"}.
-<!-- ::: -->
+
 
 For example, 
 $$
@@ -374,9 +379,10 @@ If every $k$-tuple in (\[\[eq:10.34\]](#eq:10.34){reference-type="ref"
 reference="eq:10.34"}) is converted to an increasing $k$-index, then we
 obtain the so-called standard presentation of $\omega$:
 
-<!-- ::: Beqnarray -->
-[]{#eq:10.47 label="eq:10.47"} = \_I b_I () x̣\_I .
-<!-- ::: -->
+
+### eq:10.47 
+ = \_I b_I () x̣\_I .
+
 
 The summation in (\[\[eq:10.47\]](#eq:10.47){reference-type="ref"
 reference="eq:10.47"}) extends over all increasing $k$-indices $I$. \[Of
@@ -405,8 +411,9 @@ $$
 The following uniqueness theorem is one of the main reasons for the
 introduction of the standard presentation of a $k$-form.
 
-<!-- ::: thm -->
-[]{#thm:10.15 label="thm:10.15"} Suppose 
+
+### thm:10.15 
+ Suppose 
 \label{eq:10.48}
 
 $$
@@ -417,7 +424,7 @@ $$
 presentation of a $k$-form $\omega$ in an open set $E \subset \mathbb{R}^n$. If
 $\omega = 0$ in $E$, then $b_I(\mathbf{x}) = 0$ for every increasing
 $k$-index $I$ and for every $\mathbf{x} \in E$.
-<!-- ::: -->
+
 
 Note that the analogous statement would be false for sums such as
 (\[\[eq:10.34\]](#eq:10.34){reference-type="ref" reference="eq:10.34"}),
@@ -428,7 +435,7 @@ $$
 $$
 
 
-<!-- ::: mydef -->
+
 Suppose 
 \label{eq:10.51}
 
@@ -454,9 +461,9 @@ $$
         \mathrm{d} x_{j_q}.
 $$
 
-<!-- ::: -->
 
-<!-- ::: mydef -->
+
+
 Suppose $\omega$ and $\lambda$ are $p$- and $q$-forms, respectively, in
 some open set $E \subset \mathbb{R}^n$, with standard presentations
 
@@ -470,9 +477,9 @@ $$
  where $I$ abd $J$
 range over all increasing $p$-indices and over all increasing
 $q$-indices taken from the set $\{1, ... , n\}$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
+
+
 We shall now define a differentiation operator $\d$ which associates a
 $(k + 1)$-form $\mathrm{d} \omega$ to each $k$-form $\omega$ of class
 $\mathscr{C}'$ in some open set $E \in \mathbb{R}^n$.
@@ -496,9 +503,9 @@ $$
         \mathrm{d} \omega = \sum_I (\mathrm{d} b_I) \wedge \mathrm{d} x_I .
 $$
 
-<!-- ::: -->
 
-<!-- ::: newexample -->
+
+
 Suppose $E$ is open in $\mathbb{R}^n$, $f \in \mathscr{C}'(E)$, and $\gamma$ is
 a continuously differentiable curve in $E$, with domain $[0,1]$. By
 (\[\[eq:10.59\]](#eq:10.59){reference-type="ref" reference="eq:10.59"})
@@ -535,12 +542,13 @@ $$
 \mathrm{d} (x \mathrm{d} y) = \mathrm{d} x \wedge \mathrm{d} y
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.20 label="thm:10.20"}
 
-<!-- ::: asparaenum -->
+
+### thm:10.20 
+
+
+
 If $\omega$ and $\lambda$ are $k$- and $m$-forms, respectively, of class
 $\mathscr{C}'$ in $E$, then 
 \label{eq:10.63}
@@ -554,12 +562,12 @@ $$
 
 
 If $\omega$ is of class $\mathscr{C}''$ in $E$, then $\mathrm{d} ^2 \omega = 0$.
-<!-- ::: -->
-<!-- ::: -->
+
+
 
 Here $\mathrm{d} ^2 \omega$ means, of course, $\mathrm{d} (\mathrm{d} \omega)$.
 
-<!-- ::: mydef -->
+
 Suppose $E$ is an open set in $\mathbb{R}^n$, $T$ is a $\mathscr{C}'$-mapping of
 $E$ into an open set $V \subset \mathbb{R}^m$, and $\omega$ is a $k$-form in
 $V$, whose standard presentation is 
@@ -605,14 +613,15 @@ $$
  in each summand of
 (\[\[eq:10.67\]](#eq:10.67){reference-type="ref" reference="eq:10.67"}),
 $I = \{i_1,...,i_k\}$ is an increasing $k$-index.
-<!-- ::: -->
+
 
 Our next theorem shows that addition, multiplication, and
 differentiation of forms are defined in such a way that they commute
 with changes of variables.
 
-<!-- ::: thm -->
-[]{#thm:10.22 label="thm:10.22"} With $E$ and $T$ as in Sec. 10.21, let
+
+### thm:10.22 
+ With $E$ and $T$ as in Sec. 10.21, let
 $\omega$ and $A$ be $k$- and $m$-forms in $V$, respectively. Then
 
 (a) $(\omega + \lambda)_T = \omega_T + \lambda_T$ if $k = m$;
@@ -621,10 +630,11 @@ $\omega$ and $A$ be $k$- and $m$-forms in $V$, respectively. Then
 
 (c) $\mathrm{d} (\omega_T) = (\mathrm{d} \omega)_T$ if $\omega$ is of class
     $\mathscr{C}'$ and $T$ is of class $\mathscr{C}''$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.23 label="thm:10.23"} Suppose $T$ is a $\mathscr{C}'$-mapping
+
+
+### thm:10.23 
+ Suppose $T$ is a $\mathscr{C}'$-mapping
 of an open set $E \subset \mathbb{R}^n$ into an open set $V \subset \mathbb{R}^m$, $S$
 is a $\mathscr{C}'$-mapping of $V$ into an open set $W \subset \mathbb{R}^P$,
 and $w$ is a $k$-form in $W$, so that $\omega$ is a $k$-form in $V$ and
@@ -638,10 +648,11 @@ $$
         (\omega_S)_T = \omega_{ST} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.24 label="thm:10.24"} Suppose $\omega$ is a $k$-form in an
+
+
+### thm:10.24 
+ Suppose $\omega$ is a $k$-form in an
 open set $E \subset \mathbb{R}^n$, $\Phi$ is a $k$-surface in $E$, with
 parameter domain $D \subset \mathbb{R}^k$, and $\Delta$ is the $k$-surface in
 $\mathbb{R}^k$, with parameter domain $D$, defined by
@@ -652,10 +663,11 @@ $$
         \int_{\Delta} \omega_{\Phi} .
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.25 label="thm:10.25"} Suppose $T$ is a $\mathscr{C}'$-mapping
+
+
+### thm:10.25 
+ Suppose $T$ is a $\mathscr{C}'$-mapping
 of an open set $E \subset \mathbb{R}^n$ into an open set $V \subset \mathbb{R}^m$,
 $\Phi$ is a $k$-surface in $E$, and $\omega$ is a $k$-form in $V$.
 
@@ -665,9 +677,9 @@ $$
         \int_{\Phi} \omega_T
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* Let $D$ be the parameter domain of $\Phi$ (hence also of
 $\Phi$) and define $\Delta$ as in Theorem
 \[\[thm:10.24\]](#thm:10.24){reference-type="ref" reference="thm:10.24"}.
@@ -687,4 +699,4 @@ applied to $T\Phi$ in place of $\Phi$. The second follows from Theorem
 \[\[thm:10.23\]](#thm:10.23){reference-type="ref" reference="thm:10.23"}.
 The third is Theorem \[\[thm:10.24\]](#thm:10.24){reference-type="ref"
 reference="thm:10.24"}, with $\omega_T$ in place of $\omega$. ◻
-<!-- ::: -->
+

@@ -12,8 +12,9 @@ each theorem. This section may thus be regarded as a large exercise, and
 as an opportunity to apply some of the material that has been presented
 so far.
 
-<!-- ::: mydef -->
-[]{#mydef:8.17 label="mydef:8.17"} For $0 < x < \infty$,
+
+### mydef:8.17 
+ For $0 < x < \infty$,
 
 \label{eq:8.93}
 
@@ -24,12 +25,13 @@ $$
  The
 integral converges for these $x$. (When $x < 1$, both $0$ and $\infty$
 have to be looked at.)
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.18 label="thm:8.18"}
 
-<!-- ::: asparaenum -->
+
+### thm:8.18 
+
+
+
 The functional equation 
 $$
 \Gamma(x+1) = x\Gamma(x)
@@ -40,11 +42,12 @@ $0 < x < \infty$.
 $\Gamma(n+1)=n!$ for $n=1,2,3,\dots$.
 
 $\log \Gamma$ is convex on $(0,\infty)$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.19 label="thm:8.19"} If $f$ is a positive function on
+
+
+
+### thm:8.19 
+ If $f$ is a positive function on
 $(0, \infty)$ such that
 
 (a) $f(x+1)=xf(x)$,
@@ -54,9 +57,9 @@ $(0, \infty)$ such that
 (c) $\log f$ is convex,
 
 then $f(x) = \Gamma(x)$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* 
 \label{eq:8.94}
 
@@ -80,10 +83,11 @@ $$
 when $0 < x < 1$; from this one can deduce that
 (\[\[eq:8.95\]](#eq:8.95){reference-type="ref" reference="eq:8.95"})
 holds for all $x > 0$, since $\Gamma(x+1)=x\Gamma(x)$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.20 label="thm:8.20"} If $x>0$ and $y>0$, then
+
+
+### thm:8.20 
+ If $x>0$ and $y>0$, then
 
 \label{eq:8.96}
 
@@ -94,9 +98,9 @@ $$
 $$
  This integral is the
 so-called $B(x, y)$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* 
 \label{eq:8.97}
 
@@ -105,10 +109,11 @@ $$
         B(x+1,y) = \frac{x}{x+y}B(x,y) .
 $$
  ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.21 label="thm:8.21"} The substitution $t = \sin^2 \theta$
+
+
+### thm:8.21 
+ The substitution $t = \sin^2 \theta$
 turns (\[\[eq:8.96\]](#eq:8.96){reference-type="ref"
 reference="eq:8.96"}) into 
 \label{eq:8.98}
@@ -166,10 +171,11 @@ $$
  follows directly from
 Theorem \[\[thm:8.19\]](#thm:8.19){reference-type="ref"
 reference="thm:8.19"}.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:8.22 label="thm:8.22"} This provides a simple approximate
+
+
+### thm:8.22 
+ This provides a simple approximate
 expression for $\Gamma(x + 1)$ when $x$ is large (hence for $n!$ when
 $n$ is large). The formula is 
 \label{eq:8.103}
@@ -225,8 +231,8 @@ $$
 $$
 \psi_x(s) = \left\{
         \begin{array}{ll}
-            \exp \left[ -s^2 h (s\sqrt{2/x}) \right] & (-\sqrt{x/2}<s<\infty), \\
-            0                                        & (s\leq -\sqrt{x/2}).    \\
+            \exp \left[ -s^2 h (s\sqrt{2/x}) \right] & (-\sqrt{x/2}<s<\infty), \\ 
+            0                                        & (s\leq -\sqrt{x/2}).    \\ 
         \end{array}
         \right.
 $$
@@ -242,7 +248,7 @@ $$
 (d) When $s>0$ and $x>1$, then $0<\psi_x(s)<\psi_1(s)$.
 
 (e) $\int_{0}^{\infty}\psi_1(s)\mathrm{d} s<\infty$.
-<!-- ::: -->
+
 
 The convergence theorem stated in Exercise
 \[\[ex:7.12\]](#ex:7.12){reference-type="ref" reference="ex:7.12"} of can

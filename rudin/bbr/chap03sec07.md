@@ -1,17 +1,19 @@
 # Series of nonnegative terms
 
-<!-- ::: thm -->
-[]{#thm:3.26 label="thm:3.26"} If $0 \leq x < 1$, then
+
+### thm:3.26 
+ If $0 \leq x < 1$, then
 
 $$
 \sum_{n=0}^{\infty} x^n = \frac{1}{1-x}.
 $$
  If $x \geq 1$, the series
 diverges.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.27 label="thm:3.27"} Suppose
+
+
+### thm:3.27 
+ Suppose
 $a_1 \geq a_2 \geq a_3 \geq \dots \geq 0$. Then the series
 $\sum_{n=1}^{\infty}a_n$ converges if and only if the series
 
@@ -20,15 +22,15 @@ $$
         = a_1 + 2 a_2 + 4 a_4 + 8 a_8 + \dots
 $$
  converges.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* By Theorem \[\[thm:3.24\]](#thm:3.24){reference-type="ref"
 reference="thm:3.24"}, it suffices to consider boundedness of the
 partial sums. Let 
 $$
 \begin{aligned}
-        s_n & = a_1 + a_2 + \dots + a_n,             \\
+        s_n & = a_1 + a_2 + \dots + a_n,             \\ 
         t_n & = a_1 + 2 a_2 + \dots + 2^{k} a_{2^k}.
     \end{aligned}
 $$
@@ -36,8 +38,8 @@ $$
 $$
 \begin{aligned}
         s_n
-         & \leq a_1 + (a_2 + a_3) + \dots + (a_{2^k}+\dots+a_{2^{k+1}-1}) \\
-         & \leq a_1 + 2a_2 + \dots + 2^k a_{2^k}                          \\
+         & \leq a_1 + (a_2 + a_3) + \dots + (a_{2^k}+\dots+a_{2^{k+1}-1}) \\ 
+         & \leq a_1 + 2a_2 + \dots + 2^k a_{2^k}                          \\ 
          & = t_k,
     \end{aligned}
 $$
@@ -53,8 +55,8 @@ $$
 $$
 \begin{aligned}
         s_n
-         & \geq a_1 + a_2 + (a_3 + a_4) + \dots + (a_{2^{k-1}+1}+\dots+a_{2^{k}}) \\
-         & \geq \frac{1}{2}a_1 + a_2 + 2 a_4 + \dots + 2^{k+1} a_{2^k}            \\
+         & \geq a_1 + a_2 + (a_3 + a_4) + \dots + (a_{2^{k-1}+1}+\dots+a_{2^{k}}) \\ 
+         & \geq \frac{1}{2}a_1 + a_2 + 2 a_4 + \dots + 2^{k+1} a_{2^k}            \\ 
          & = \frac{1}{2}t_k,
     \end{aligned}
 $$
@@ -67,15 +69,17 @@ $$
 $$
  $\{s_n}$, $\sequence{t_n\}$ are both
 bounded or both unbounded. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.28 label="thm:3.28"} $\sum \frac{1}{n^p}$ converges if $p>1$
+
+
+### thm:3.28 
+ $\sum \frac{1}{n^p}$ converges if $p>1$
 and diverges if $p\leq 1$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.29 label="thm:3.29"} If $p > 1$ , 
+
+
+### thm:3.29 
+ If $p > 1$ , 
 \label{eq:3.10}
 
 $$
@@ -84,14 +88,14 @@ $$
 $$
  converges; if
 $p \leq 1$ , the series diverges.
-<!-- ::: -->
+
 
 "$\log n$" the logarithm of $n$ to the base $e$ (compare Exercise
 \[\[ex:1.7\]](#ex:1.7){reference-type="ref" reference="ex:1.7"}); the
 number $e$ will be defined in a moment (see Def 3.30). We let the series
 start with $n=2$ , since $\log 1 = 0$ .
 
-<!-- ::: proof -->
+
 *Proof.* The monotonicity of the logarithmic function (which will be
 discussed in more detail in Chap.
 \[\[chap:08\]](#chap:08){reference-type="ref" reference="chap:08"})
@@ -111,7 +115,7 @@ $$
 Theorem \[\[thm:3.29\]](#thm:3.29){reference-type="ref"
 reference="thm:3.29"} follows from Theorem
 \[\[thm:3.28\]](#thm:3.28){reference-type="ref" reference="thm:3.28"}. ◻
-<!-- ::: -->
+
 
 This procedure may evidently be continued. For instance,
 

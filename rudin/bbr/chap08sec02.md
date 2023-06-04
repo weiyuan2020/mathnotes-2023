@@ -18,7 +18,7 @@ $$
 \begin{aligned}
     E(z) E(w) 
     &= \sum_{n=0}^{\infty} \frac{z^n}{n!} \sum_{m=0}^{\infty} \frac{w^m}{m!}
-    = \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{z^n w^{n-k}}{k!(n-k)!} \\
+    = \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{z^n w^{n-k}}{k!(n-k)!} \\ 
     &= \sum_{n=0}^{\infty} \frac{1}{n!} 
     \sum_{k=0}^{n} \mybinom{n}{k} z^n w^{n-k} 
     = \sum_{n=0}^{\infty} \frac{(z + w)^n}{n!},\end{aligned}
@@ -140,8 +140,9 @@ also be replaced by a more convenient definition \[see (8.43)\].
 We now revert to the customary notation, $e^x$, in place of $E(x)$, and
 summarize what we have proved so far.
 
-<!-- ::: thm -->
-[]{#thm:8.6 label="thm:8.6"} Let $e^x$ be defined on $\mathbb{R}^1$ by
+
+### thm:8.6 
+ Let $e^x$ be defined on $\mathbb{R}^1$ by
 (\[\[eq:8.35\]](#eq:8.35){reference-type="ref" reference="eq:8.35"}) and
 (\[\[eq:8.25\]](#eq:8.25){reference-type="ref" reference="eq:8.25"}).
 Then
@@ -158,7 +159,7 @@ Then
     $e^x \rightarrow 0$ as $x \rightarrow 0$;
 
 (f) $\lim_{x \to +\infty}  x^n e^{-x} = 0$, for every $n$.
-<!-- ::: -->
+
 
 
 $$
@@ -242,7 +243,7 @@ $x \rightarrow 0$, Theorem \[\[thm:8.6\]](#thm:8.6){reference-type="ref"
 reference="thm:8.6"}(e) shows that 
 $$
 \begin{aligned}
-    \log x \rightarrow + \infty &\text{ as} x \rightarrow + \infty \\
+    \log x \rightarrow + \infty &\text{ as} x \rightarrow + \infty \\ 
     \log x \rightarrow - \infty &\text{ as} x \rightarrow 0.\end{aligned}
 $$
 
@@ -293,7 +294,7 @@ $$
 \begin{aligned}
     x^{-\alpha} \log x 
     &= x^{-\alpha} \int_{1}^{x} t^{-1} \mathrm{d} t
-    <  x^{-\alpha} \int_{1}^{x} t^{\varepsilon-1} \mathrm{d} t \\
+    <  x^{-\alpha} \int_{1}^{x} t^{\varepsilon-1} \mathrm{d} t \\ 
     &= x^{-\alpha} \frac{x^{\varepsilon}-1}{\varepsilon}
     <   \frac{x^{\varepsilon-\alpha}}{\varepsilon} ,\end{aligned}
 $$

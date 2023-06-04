@@ -2,8 +2,9 @@
 
 The following theorem is frequently useful in the evaluation of limits.
 
-<!-- ::: thm -->
-[]{#thm:5.13 label="thm:5.13"} Suppose $f$ and $g$ are real and
+
+### thm:5.13 
+ Suppose $f$ and $g$ are real and
 differentiable in $(a, b)$, and $g'(x) \neq 0$ for all $x \in (a, b)$,
 where $-\infty \leq a < b \leq + \infty$. Suppose 
 \label{eq:5.13}
@@ -40,7 +41,7 @@ $$
         \text{ as } x \rightarrow a.
 $$
 
-<!-- ::: -->
+
 
 The analogous statement is of course also true if $x \rightarrow b$, or
 if $g(x) \rightarrow -\infty$ in
@@ -49,7 +50,7 @@ us note that we now use the limit concept in the extended sense of
 Definition \[\[mydef:4.33\]](#mydef:4.33){reference-type="ref"
 reference="mydef:4.33"}.
 
-<!-- ::: proof -->
+
 *Proof.* We first consider the case in which
 $- \infty \leq A < + \infty$. Choose a real number $q$ such that
 $A < q$, and then choose $r$ such that $A < r < q$. By
@@ -133,4 +134,4 @@ $$
  and
 (\[\[eq:5.16\]](#eq:5.16){reference-type="ref" reference="eq:5.16"})
 follows from these two statements. ◻
-<!-- ::: -->
+

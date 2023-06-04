@@ -4,8 +4,9 @@ some sequences occur frequently. remark: If $0\leq x_n \leq s_n$ for
 $n \geq N$, where $N$ is some fixed number, and if $s_n \rightarrow 0$,
 then $x_n \rightarrow 0$.
 
-<!-- ::: thm -->
-[]{#thm:3.20 label="thm:3.20"} (a) If $p > 0$, then
+
+### thm:3.20 
+ (a) If $p > 0$, then
 $\lim_{n \to \infty} \frac{1}{n^p} = 0$.
 
 \(b\) If $p > 0$, then $\lim_{n \to \infty} \sqrt[n]{p} = 1$.
@@ -16,4 +17,4 @@ $\lim_{n \to \infty} \frac{1}{n^p} = 0$.
 $\lim_{n \to \infty} \frac{n^\alpha}{(1+p)^n} = 0$.
 
 \(e\) If $|x|<1$, then $\lim_{n \to \infty} x^n = 0$.
-<!-- ::: -->
+

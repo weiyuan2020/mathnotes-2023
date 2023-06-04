@@ -1,9 +1,10 @@
 # Properties of the integral
 
-<!-- ::: thm -->
-[]{#thm:6.12 label="thm:6.12"}
 
-<!-- ::: asparaenum -->
+### thm:6.12 
+
+
+
 If $f_1 \in \mathscr{R}(\alpha)$ and $f_2 \in \mathscr{R}(\alpha)$, then
 
 $$
@@ -65,10 +66,10 @@ $$
             c\int_{a}^{b} f \mathrm{d} \alpha .
 $$
 
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
+
 *Proof.* If $f = f_1 + f_2$ and $P$ is any partition of $[a, b]$, we
 have 
 \label{eq:6.20}
@@ -138,44 +139,48 @@ The proofs of the other assertions of Theorem
 so similar that we omit the details. In part (c) the point is that (by
 passing to refinements) we may restrict ourselves to partitions which
 contain the point $c$, in approximating $\int f \mathrm{d} \alpha$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.13 label="thm:6.13"} If $f \in \mathscr{R}(\alpha)$ and
+
+
+### thm:6.13 
+ If $f \in \mathscr{R}(\alpha)$ and
 $g \in \mathscr{R}(\alpha)$ on $[a, b]$ , then
 
 (a) $fg \in \mathscr{R}(\alpha)$
 
 (b) $\left| f \right| \in \mathscr{R}(\alpha)$ and
     $\left| \int_{a}^{b} f \mathrm{d} \alpha \right| \leq \int_{a}^{b} \left| f \right| \mathrm{d} \alpha$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:6.14 label="mydef:6.14"} The unit step function I is defined
+
+
+### mydef:6.14 
+ The unit step function I is defined
 by 
 $$
 I(x) = \left\{ 
             \begin{array}{ll}
-                0 & (x \leq 0), \\
+                0 & (x \leq 0), \\ 
                 1 & (x >    0).
             \end{array}
          \right.
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.15 label="thm:6.15"} If $a < s < b$, $f$ is bounded on
+
+
+### thm:6.15 
+ If $a < s < b$, $f$ is bounded on
 $[a, b ]$, $f$ is continuous at $s$, and $\alpha(x) = I(x - s)$, then
 
 $$
 \int_{a}^{b} f \mathrm{d} \alpha = f(s).
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.16 label="thm:6.16"} Suppose $c_n \geq 0$ for
+
+
+### thm:6.16 
+ Suppose $c_n \geq 0$ for
 $1, 2, 3, \dots$, $\sum c_n$ converges, $\{s_n\}$ is a sequence
 of distinct points in $(a, b)$, and 
 \label{eq:6.22}
@@ -195,10 +200,11 @@ $$
         \sum_{n=1}^{\infty} c_n f(s_n).
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.17 label="thm:6.17"} Assume $\alpha$ increases monotonically
+
+
+### thm:6.17 
+ Assume $\alpha$ increases monotonically
 and $\alpha' \in \mathscr{R}$ on $[a,b]$ . Let $f$ be a bounded real
 function on $[a,b]$ .
 
@@ -212,10 +218,11 @@ $$
         \int_{a}^{b} f(x) \alpha'(x) \mathrm{d} x .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:6.18 label="myremark:6.18"} The two preceding theorems
+
+
+### myremark:6.18 
+ The two preceding theorems
 illustrate the generality and flexibility which are inherent in the
 Stieltjes process of integration. If $\alpha$ is a pure step function
 \[this is the name often given to functions of the form (22)\], the
@@ -263,10 +270,11 @@ reference="eq:6.34"}) and (\[\[eq:6.35\]](#eq:6.35){reference-type="ref"
 reference="eq:6.35"}) as special cases, but it contains much more; for
 instance, the case in which $m$ is continuous but not everywhere
 differentiable.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:6.19 label="thm:6.19"} Suppose $\phi$ is a strictly increasing
+
+
+### thm:6.19 
+ Suppose $\phi$ is a strictly increasing
 continuous function that maps an interval $[A, B]$ onto $[a, b]$.
 Suppose $\alpha$ is monotonically increasing on $[a, b]$ and
 $f \in \mathscr{R}(\alpha)$ on $[a, b]$. Define $\beta$ and $g$ on
@@ -289,4 +297,4 @@ $$
         \int_{a}^{b} f \mathrm{d} \alpha.
 $$
 
-<!-- ::: -->
+

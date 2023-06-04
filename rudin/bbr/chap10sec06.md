@@ -1,7 +1,8 @@
 # Simplexes and chains
 
-<!-- ::: mydef -->
-[]{#mydef:10.26 label="mydef:10.26"} A mapping $\mathbf{f}$ that carries
+
+### mydef:10.26 
+ A mapping $\mathbf{f}$ that carries
 a vector space $X$ into a vector space $Y$ is said to be *affine* if
 $\mathbf{f - f(0)}$ is linear. In other words, the requirement is that
 
@@ -28,10 +29,11 @@ $$
 $$
  such that
 $\alpha \geq 0$ for $i = 1, ... , k$ and $\sum \alpha_i \leq 1$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.27 label="thm:10.27"} If $\delta$ is an oriented rectilinear
+
+
+### thm:10.27 
+ If $\delta$ is an oriented rectilinear
 $k$-simplex in an open set $E \subset \mathbb{R}^n$ and if
 $\overline{\Delta} = \varepsilon \delta$ then 
 \label{eq:10.81}
@@ -43,10 +45,11 @@ $$
 $$
  for every $k$-form $\omega$
 in $E$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.28 label="mydef:10.28"} An *affine $k$-chain* $\Gamma$ in
+
+
+### mydef:10.28 
+ An *affine $k$-chain* $\Gamma$ in
 an open set $E \subset \mathbb{R}^n$ is a collection of finitely many oriented
 affine $k$-simplexes $\delta_1, \dots, \delta_r$ in $E$. These need not
 be distinct; a simplex may thus occur in $\Gamma$ with a certain
@@ -62,10 +65,11 @@ $$
         \sum_{i=1}^{r} \int_{\sigma_i} \omega .
 $$
 
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.29 label="mydef:10.29"} For $k \geq 1$, the *boundary* of
+
+
+### mydef:10.29 
+ For $k \geq 1$, the *boundary* of
 the oriented affine $k$-simplex
 
 $$
@@ -81,7 +85,7 @@ $$
         \left[ \mathbf{p_0,p_1,\dots,p_{j-1},p_{j+1},\dots,p_k} \right]
 $$
 
-<!-- ::: -->
+
 
 For example, if $\sigma = [\mathbf{p}_0 , \mathbf{p}_1, \mathbf{p}_2 ]$,
 then 
@@ -113,7 +117,7 @@ $$
 $\mathbb{R}^{k-1}$ to $\mathbb{R}^n$ determined by 
 $$
 \begin{aligned}
-    B\mathbf{e}_i &= \mathbf{p}_i - \mathbf{p}_0 \quad (\text{if } 1 \leq i \leq j-1) , \\
+    B\mathbf{e}_i &= \mathbf{p}_i - \mathbf{p}_0 \quad (\text{if } 1 \leq i \leq j-1) , \\ 
     B\mathbf{e}_i &= \mathbf{p}_{i+1} - \mathbf{p}_0 \quad (\text{if } j \leq i \leq k-1) .\end{aligned}
 $$
 
@@ -134,8 +138,9 @@ $$
 $B\mathbf{e}_i = \mathbf{p}_{i+1} - \mathbf{p}_1$ for
 $1 \leq i \leq k-1$.
 
-<!-- ::: mydef -->
-[]{#mydef:10.30 label="mydef:10.30"} Let $T$ be a
+
+### mydef:10.30 
+ Let $T$ be a
 $\mathscr{C}''$-mapping of an open set $E \subset \mathbb{R}^n$ into an open set
 $V \subset \mathbb{R}^m$; $T$ need not be one-to-one. If $\sigma$ is an oriented
 affine $k$-simplex in $E$, then the composite mapping
@@ -197,10 +202,11 @@ $$
         \partial \Psi = \sum \partial \Phi_i ,
 $$
 
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.31 label="mydef:10.31"} So far we have associated
+
+
+### mydef:10.31 
+ So far we have associated
 boundaries to chains, not to subsets of $\mathbb{R}^n$. This notion of boundary
 is exactly the one that is most suitable for the statement and proof of
 Stokes' theorem. However, in applications, especially in $\mathbb{R}^2$ or
@@ -234,10 +240,11 @@ $$
 $$
  and we may denote this
 $(n - 1)$-chain by $\partial E$.
-<!-- ::: -->
 
-<!-- ::: newexample -->
-[]{#newexample:10.32 label="newexample:10.32"} For
+
+
+### newexample:10.32 
+ For
 $0 \leq u \leq \pi, 0 \leq v \leq 2\pi$, define 
 $$
 \sum(u,v) = \left( 
@@ -247,4 +254,4 @@ $$
          \right).
 $$
 
-<!-- ::: -->
+

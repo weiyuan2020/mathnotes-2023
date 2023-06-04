@@ -1,7 +1,8 @@
 # Integration
 
-<!-- ::: mydef -->
-[]{#mydef:11.21 label="mydef:11.21"} Suppose 
+
+### mydef:11.21 
+ Suppose 
 \label{eq:11.51}
 
 $$
@@ -45,10 +46,11 @@ $$
         I_E (s)
 $$
  for every nonnegative simple measurable function $s$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:11.22 label="mydef:11.22"} Let $f$ be measurable, and consider
+
+
+### mydef:11.22 
+ Let $f$ be measurable, and consider
 the two integrals 
 \label{eq:11.55}
 
@@ -89,13 +91,14 @@ integrable on $E$ only if its integral over $E$ is finite.
 
 We shall be mainly interested in integrable functions, although in some
 cases it is desirable to deal with the more general situation.
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:11.23 label="myremark:11.23"} The following properties are
+
+
+### myremark:11.23 
+ The following properties are
 evident:
 
-<!-- ::: asparaenum -->
+
 If $f$ is measurable and bounded on $E$, and if $\mu(E) < + \infty$,
 then $f \in \mathscr{L}(\mu)$ on $E$.
 
@@ -130,13 +133,14 @@ $$
 
 If $f \in \mathscr{L}(\mu)$ on $E$, $A \in \mathfrak{M}$, and
 $A \subset E$, then $f \in \mathscr{L}(\mu)$ on $A$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.24 label="thm:11.24"}
 
-<!-- ::: asparaenum -->
+
+
+### thm:11.24 
+
+
+
 Suppose $f$ is measurable and nonnegative on $X$. For
 $A \in \mathfrak{M}$, define 
 \label{eq:11.57}
@@ -149,10 +153,10 @@ $$
 additive on $\mathfrak{M}$.
 
 The same conclusion holds if $f \in \mathscr{L}(\mu)$ on $X$.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
+
 If $A \in \mathfrak{M}$, $B \in \mathfrak{M}$, $B \subset A$, and
 $\mu(A-B)=0$, then 
 $$
@@ -162,10 +166,11 @@ $$
  Since $A =B\cup (A - B)$, this follows from
 Remark \[\[myremark:11.23\]](#myremark:11.23){reference-type="ref"
 reference="myremark:11.23"}(e).
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:11.25 label="myremark:11.25"} The preceding corollary shows
+
+
+### myremark:11.25 
+ The preceding corollary shows
 that sets of measure zero are negligible in integration.
 
 Let us write $f \sim g$ on $E$ if the set 
@@ -186,10 +191,11 @@ $$
 $$
  provided the integrals exists, for every
 measurable subset $A$ of $E$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.26 label="thm:11.26"} If $f \in \mathscr{L}(\mu)$ on $E$,
+
+
+### thm:11.26 
+ If $f \in \mathscr{L}(\mu)$ on $E$,
 then $\left| f \right| \in \mathscr{L}(\mu)$ on $E$, and
 
 \label{eq:11.63}
@@ -200,20 +206,22 @@ $$
         \int_E \left| f \right| \mathrm{d} \mu .
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.27 label="thm:11.27"} Suppose $f$ is measurable on $E$,
+
+
+### thm:11.27 
+ Suppose $f$ is measurable on $E$,
 $\left| f \right| \leq g$, and $g \in \mathscr{L}(\mu)$ on $E$. Then
 $f \in \mathscr{L}(\mu)$ on $E$.
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* We have $f^+ \leq g$ and $f^- \leq g$. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.28 label="thm:11.28"} Suppose $E \in \mathfrak{M}$. Let
+
+
+### thm:11.28 
+ Suppose $E \in \mathfrak{M}$. Let
 $\{f_n\}$ be a sequence of measurable functions such that
 
 \label{eq:11.64}
@@ -244,10 +252,11 @@ $$
         \quad (n \rightarrow \infty).
 $$
 
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.29 label="thm:11.29"} Suppose $f = f_1 + f_2$, where
+
+
+### thm:11.29 
+ Suppose $f = f_1 + f_2$, where
 $f_i \in \mathsf{L}(\mu)$ on $E$ $(i = 1,2)$. Then
 $f \in \mathsf{L}(\mu)$ on $E$, and 
 \label{eq:11.73}
@@ -259,14 +268,15 @@ $$
         \int_E f_2 \mathrm{d} \mu .
 $$
 
-<!-- ::: -->
+
 
 We are now in a position to reformulate Theorem
 \[\[thm:11.28\]](#thm:11.28){reference-type="ref" reference="thm:11.28"}
 for series.
 
-<!-- ::: thm -->
-[]{#thm:11.30 label="thm:11.30"} Suppose $E \in \mathfrak{M}$. If
+
+### thm:11.30 
+ Suppose $E \in \mathfrak{M}$. If
 $\{f_n\}$ is a sequence of nonnegative measurable functions and
 
 \label{eq:11.76}
@@ -282,16 +292,17 @@ $$
         \sum_{n=1}^{\infty} \int_E f_n \mathrm{d} \mu .
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* The partial sums of
 (\[\[eq:11.76\]](#eq:11.76){reference-type="ref" reference="eq:11.76"})
 form a monotonically increasing sequence. ◻
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.31 label="thm:11.31"} Suppose $E \in \mathfrak{M}$. If
+
+
+### thm:11.31 
+ Suppose $E \in \mathfrak{M}$. If
 $\{f_n\}$ is a sequence of nonnegative measurable functions and
 
 $$
@@ -307,15 +318,16 @@ $$
         \liminf _{n \rightarrow \infty} f_n \mathrm{d} \mu .
 $$
 
-<!-- ::: -->
+
 
 Strict inequality may hold in
 (\[\[eq:11.77\]](#eq:11.77){reference-type="ref" reference="eq:11.77"}).
 An example is given in Exercise
 \[\[ex:11.5\]](#ex:11.5){reference-type="ref" reference="ex:11.5"}.
 
-<!-- ::: thm -->
-[]{#thm:11.32 label="thm:11.32"} Suppose $E \in \mathfrak{M}$. Let
+
+### thm:11.32 
+ Suppose $E \in \mathfrak{M}$. Let
 $\{f_n\}$ be a sequence of measurable functions such that
 
 \label{eq:11.82}
@@ -343,14 +355,14 @@ $$
         \int_E f \mathrm{d} \mu .
 $$
 
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If $\mu(E) < +\infty$, $\{f_n\}$ is uniformly bounded on $E$, and
 $f_n(x) \rightarrow f(x)$ on $E$, then
 (\[\[eq:11.84\]](#eq:11.84){reference-type="ref" reference="eq:11.84"})
 holds.
-<!-- ::: -->
+
 
 A uniformly bounded convergent sequence is often said to be boundedly
 convergent.

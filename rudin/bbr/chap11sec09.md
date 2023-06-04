@@ -6,8 +6,9 @@ in Chap. \[\[chap:08\]](#chap:08){reference-type="ref"
 reference="chap:08"}) and prove the Riesz-Fischer theorem for
 orthonormal sets of functions.
 
-<!-- ::: mydef -->
-[]{#mydef:11.34 label="mydef:11.34"} Let $X$ be a measurable space. We
+
+### mydef:11.34 
+ Let $X$ be a measurable space. We
 say that a complex function $f \in \mathscr{L}^2(\mu)$ on $X$ if $f$ is
 measurable and if 
 $$
@@ -23,10 +24,11 @@ $$
 $$
  and
 call $\|f\|$ the $\mathscr{L}^2(\mu)$ norm of $f$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.35 label="thm:11.35"} Suppose $f \in \mathscr{L}^2(\mu)$ and
+
+
+### thm:11.35 
+ Suppose $f \in \mathscr{L}^2(\mu)$ and
 $g \in \mathscr{L}^2(\mu)$. Then $fg \in \mathscr{L}  (\mu)$, and
 
 \label{eq:11.98}
@@ -37,7 +39,7 @@ $$
         \left\| f \right\| \left\| g \right\| .
 $$
 
-<!-- ::: -->
+
 
 This is the Schwarz inequality, which we have already encountered for
 series and for Riemann integrals. It follows from the inequality
@@ -51,8 +53,9 @@ $$
 
 which holds for every real $\lambda$.
 
-<!-- ::: thm -->
-[]{#thm:11.36 label="thm:11.36"} If $f \in \mathscr{L}^2(\mu)$ and
+
+### thm:11.36 
+ If $f \in \mathscr{L}^2(\mu)$ and
 $f \in \mathscr{L}^2(\mu)$, then $f + g \in \mathscr{L}^2(\mu)$, and
 
 $$
@@ -60,23 +63,24 @@ $$
         \left\| f \right\| + \left\| g \right\| .
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* The Schwarz inequality shows that 
 $$
 \begin{aligned}
         \left\| f + g \right\|^2
-         & = \int |f|^2 + \int f\bar{g} + \int \bar{f}g + \int |g|^2    \\
-         & \leq \|f\|^2 + 2\|f\| \|g\| + \|g\|^2                        \\
+         & = \int |f|^2 + \int f\bar{g} + \int \bar{f}g + \int |g|^2    \\ 
+         & \leq \|f\|^2 + 2\|f\| \|g\| + \|g\|^2                        \\ 
          & = \left( \left\| f \right\| + \left\| g \right\| \right)^2 .
     \end{aligned}
 $$
  ◻
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:11.37 label="myremark:11.37"} If we define the distance
+
+
+### myremark:11.37 
+ If we define the distance
 between two functions $f$ and $g$ in $\mathscr{L}^2(\mu)$ to be
 $\left\| f-g \right\|$, we see that the conditions of Definition
 \[\[mydef:2.15\]](#mydef:2.15){reference-type="ref"
@@ -88,12 +92,13 @@ space.
 
 We now consider $\mathscr{L}^2$ on an interval of the real line, with
 respect to Lebesgue measure.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.38 label="thm:11.38"} The continuous functions form a dense
+
+
+### thm:11.38 
+ The continuous functions form a dense
 subset of $\mathscr{L}^2$ on $[a, b]$.
-<!-- ::: -->
+
 
 More explicitly, this means that for any $f \in \mathscr{L}^2$ on
 $[a, b]$, and any $\varepsilon > 0$, there is a function $g$, continuous
@@ -105,16 +110,17 @@ $$
 $$
 
 
-<!-- ::: mydef -->
-[]{#mydef:11.39 label="mydef:11.39"} We say that a sequence of complex
+
+### mydef:11.39 
+ We say that a sequence of complex
 functions $\{\phi_n\}$ is an orthonormal set of functions on a
 measurable space $X$ if 
 $$
 \int_X \phi_n \bar{\phi}_m \mathrm{d} \mu =
         \left\{
         \begin{array}{ll}
-            0 & (n \neq m), \\
-            1 & (n =    m). \\
+            0 & (n \neq m), \\ 
+            1 & (n =    m). \\ 
         \end{array}
         \right.
 $$
@@ -133,12 +139,13 @@ $$
  as in Definition
 \[\[mydef:8.10\]](#mydef:8.10){reference-type="ref"
 reference="mydef:8.10"}.
-<!-- ::: -->
+
 
 Parseval theorem
 
-<!-- ::: thm -->
-[]{#thm:11.40 label="thm:11.40"} Suppose 
+
+### thm:11.40 
+ Suppose 
 \label{eq:11.99}
 
 $$
@@ -154,15 +161,15 @@ Then
 
 $$
 \begin{align}
-        \lim_{n \to \infty} \left\| f - s_n \right\| & = 0, \\
+        \lim_{n \to \infty} \left\| f - s_n \right\| & = 0, \\ 
         \sum_{-\infty}^{\infty} \left| c_n \right|^2 & =
         \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| f \right|^2 \mathrm{d} x.
     \end{align}
 $$
 
-<!-- ::: -->
 
-<!-- ::: myCorollary* -->
+
+
 If $f \in \mathscr{L}^2$ on $[-\pi, \pi]$, and if
 
 $$
@@ -171,32 +178,35 @@ $$
 $$
  then
 $\left\| f \right\| = 0$.
-<!-- ::: -->
+
 
 Thus if two functions in $\mathscr{L}^2$ have the same Fourier series,
 they differ at most on a set of measure zero.
 
-<!-- ::: mydef -->
-[]{#mydef:11.41 label="mydef:11.41"} Let $f$ and
+
+### mydef:11.41 
+ Let $f$ and
 $f_n \in \mathscr{L}^2(\mu) (n = 1, 2, 3, ... )$. We say that
 $\{f_n\}$ converges to $f$ in $\mathscr{L}^2(\mu)$ if
 $\left\| f_n - f \right\| \rightarrow 0$. We say that $\{f_n\}$
 is a Cauchy sequence in $\mathscr{L}^2(\mu)$ if for every
 $\varepsilon > 0$ there is an integer $N$ such that $n \geq N$,
 $m \geq N$ implies $\left\| f_n - f_m \right\| \leq \varepsilon$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:11.42 label="thm:11.42"} If $\{f_n\}$ is a Cauchy
+
+
+### thm:11.42 
+ If $\{f_n\}$ is a Cauchy
 sequence in $\mathscr{L}^2(\mu)$, then there exists a function
 $f \in \mathscr{L}^2(\mu)$ such that $\{f_n\}$ converges to $f$
 in $\mathscr{L}^2(\mu)$.
-<!-- ::: -->
+
 
 This says, in other words, that $\mathscr{L}^2(\mu)$ is a metric space.
 
-<!-- ::: thm -->
-[]{#thm:11.43 label="thm:11.43"} Let $\{\phi_n\}$ be orthonormal
+
+### thm:11.43 
+ Let $\{\phi_n\}$ be orthonormal
 on $X$. Suppose $\sum \left| c_n \right|^2$ converges, and put
 $s_n = c_1 \phi_1 + \cdots + c_n\phi_n$. Then there exists a function
 $f \in \mathscr{L}^2(\mu)$ such that $\{s_n\}$ converges to $f$
@@ -206,10 +216,11 @@ $$
 f \sim \sum_{n=1}^{\infty}c_n \phi_n .
 $$
 
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:11.44 label="mydef:11.44"} An orthonormal set
+
+
+### mydef:11.44 
+ An orthonormal set
 $\{\phi_n\}$ is said to be if, for $f \in \mathscr{L}^2(\mu)$,
 the equations 
 $$
@@ -217,7 +228,7 @@ $$
         \quad (n = 1,2,3,\dots)
 $$
  implies that $\left\| f \right\| = 0$.
-<!-- ::: -->
+
 
 In the Corollary to Theorem
 \[\[thm:11.40\]](#thm:11.40){reference-type="ref" reference="thm:11.40"}
@@ -226,8 +237,9 @@ Parseval equation (\[\[eq:11.101\]](#eq:11.101){reference-type="ref"
 reference="eq:11.101"}). Conversely, the Parseval equation holds for
 every complete orthonormal set:
 
-<!-- ::: thm -->
-[]{#thm:11.45 label="thm:11.45"} Let $\{\phi_n\}$ be a complete
+
+### thm:11.45 
+ Let $\{\phi_n\}$ be a complete
 orthonormal set. If $f \in \mathscr{L}^2(\mu)$ and if
 
 \label{eq:11.106}
@@ -246,7 +258,7 @@ $$
         \sum_{n=1}^{\infty} \left| c_n \right|^2 .
 $$
 
-<!-- ::: -->
+
 
 Combining Theorems \[\[thm:11.43\]](#thm:11.43){reference-type="ref"
 reference="thm:11.43"} and

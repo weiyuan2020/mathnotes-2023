@@ -1,30 +1,33 @@
 # The root and ratio tests
 
-<!-- ::: thm -->
-(Root test) []{#thm:3.33 label="thm:3.33"} Given $\sum a_n$ , put
+
+(Root test) ### thm:3.33 
+ Given $\sum a_n$ , put
 $\alpha = \limsup_{n \rightarrow \infty} \sqrt[n]{|a_n|}$ .
 
-Then\
-(a) if $\alpha < 1$, $\sum a_n$ converges;\
-(a) if $\alpha > 1$, $\sum a_n$ diverges;\
+Then 
+(a) if $\alpha < 1$, $\sum a_n$ converges; 
+(a) if $\alpha > 1$, $\sum a_n$ diverges; 
 (a) if $\alpha = 1$, The test gives no information.
-<!-- ::: -->
 
-<!-- ::: thm -->
-(Ratio test) []{#thm:3.34 ratio test label="thm:3.34 ratio test"} The
-series $\sum a_n$\
+
+
+(Ratio test) ### thm:3.34 ratio test 
+ The
+series $\sum a_n$ 
 (a) converges if
-$\limsup_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| < 1$.\
+$\limsup_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| < 1$. 
 (b) diverges if $\left|\frac{a_{n+1}}{a_n}\right| \geq 1$ for all
 $n \geq n_0$, where $n_0$ is some fixed integer.
-<!-- ::: -->
+
 
 Note: The knowledge that $\lim a_{n+1}/a_n = 1$ implies nothing about
 the convergence of $\sum a_n$. The series $\sum 1/n$ and $\sum 1/n^2$
 demonstrate this.
 
-<!-- ::: newexample -->
-[]{#newexample:3.35 label="newexample:3.35"} (a) Consider the series
+
+### newexample:3.35 
+ (a) Consider the series
 
 $$
 \frac{1}{2} 
@@ -41,11 +44,11 @@ $$
 $$
 \begin{aligned}
         \liminf_{n \to \infty} \frac{a_{n+1}}{a_n} 
-        &= \lim_{n \to \infty} \left(\frac{2}{3}\right)^n = 0,\\
+        &= \lim_{n \to \infty} \left(\frac{2}{3}\right)^n = 0,\\ 
         \liminf_{n \to \infty} \sqrt[n]{a_n} 
-        &= \lim_{n \to \infty} \sqrt[2n]{\frac{1}{3^n}} = \frac{1}{\sqrt{3}},\\
+        &= \lim_{n \to \infty} \sqrt[2n]{\frac{1}{3^n}} = \frac{1}{\sqrt{3}},\\ 
         \limsup_{n \to \infty} \frac{a_{n+1}}{a_n} 
-        &= \lim_{n \to \infty} \frac{1}{2}\left(\frac{3}{3}\right)^n = +\infty,\\
+        &= \lim_{n \to \infty} \frac{1}{2}\left(\frac{3}{3}\right)^n = +\infty,\\ 
         \limsup_{n \to \infty} \sqrt[n]{a_n} 
         &= \lim_{n \to \infty} \sqrt[2n]{\frac{1}{2^n}} = \frac{1}{\sqrt{2}}.
     \end{aligned}
@@ -67,8 +70,8 @@ $$
  where 
 $$
 \begin{aligned}
-        \liminf_{n \to \infty} \frac{a_{n+1}}{a_n} &= \frac{1}{8},\\
-        \limsup_{n \to \infty} \frac{a_{n+1}}{a_n} &= 2,\\
+        \liminf_{n \to \infty} \frac{a_{n+1}}{a_n} &= \frac{1}{8},\\ 
+        \limsup_{n \to \infty} \frac{a_{n+1}}{a_n} &= 2,\\ 
     \end{aligned}
 $$
  but
@@ -77,10 +80,11 @@ $$
 \lim_{n \to \infty} \sqrt[n]{a_n} = \frac{1}{2}.
 $$
 
-<!-- ::: -->
 
-<!-- ::: myremark -->
-[]{#myremark:3.36 label="myremark:3.36"} The ratio test is frequently
+
+
+### myremark:3.36 
+ The ratio test is frequently
 easier to apply than the root test, since it is usually easier to
 compute ratios than nth roots. However, the root test has wider scope.
 More precisely: Whenever the ratio test shows convergence, the root test
@@ -91,23 +95,24 @@ examples.
 Neither of the two tests is subtle with regard to divergence. Both
 deduce divergence from the fact that $a_n$ does not tend to zero as
 $n \rightarrow \infty$.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:3.37 label="thm:3.37"} For any sequence $\{c_n\}$ of
+
+
+### thm:3.37 
+ For any sequence $\{c_n\}$ of
 positive numbers, 
 $$
 \begin{aligned}
         \liminf_{n \to \infty} \frac{c_{n+1}}{c_n} &\leq 
-        \liminf_{n \to \infty} \sqrt[n]{c_n}, \\
+        \liminf_{n \to \infty} \sqrt[n]{c_n}, \\ 
         \limsup_{n \to \infty} \sqrt[n]{c_n} &\leq
-        \limsup_{n \to \infty} \frac{c_{n+1}}{c_n}. \\
+        \limsup_{n \to \infty} \frac{c_{n+1}}{c_n}. \\ 
     \end{aligned}
 $$
 
-<!-- ::: -->
 
-<!-- ::: proof -->
+
+
 *Proof.* We shall prove the second inequality; the proof of the first is
 quite similar. Put
 
@@ -160,4 +165,4 @@ $$
         \sqrt[n]{c_n} \leq \alpha.
 $$
  ◻
-<!-- ::: -->
+

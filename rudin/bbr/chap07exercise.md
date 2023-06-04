@@ -1,26 +1,30 @@
 # Exercises
 
-<!-- ::: myexercise -->
-[]{#ex:7.1 label="ex:7.1"} Prove that every uniformly convergent
-sequence of bounded functions is uniformly bounded.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.2 label="ex:7.2"} If $\{f_n\}$ and $\{g_n\}$ converge uniformly
+### ex:7.1 
+ Prove that every uniformly convergent
+sequence of bounded functions is uniformly bounded.
+
+
+
+### ex:7.2 
+ If $\{f_n\}$ and $\{g_n\}$ converge uniformly
 on a set $E$, prove that $\{f_n+g_n\}$ converges uniformly on $E$. If,
 in addition, $\{f_n\}$ and $\{g_n\}$ are sequences of bounded functions,
 prove that $\{f_n g_n\}$ converges uniformly on $E$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.3 label="ex:7.3"} Construct sequences $\{f_n\}$ , $\{g_n\}$
+
+
+### ex:7.3 
+ Construct sequences $\{f_n\}$ , $\{g_n\}$
 which converge uniformly on some set $E$, but such that $\{f_n g_n\}$
 does not converge uniformly on $E$ (of course, $\{f_n g_n\}$ must
 converge on $E$).
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.4 label="ex:7.4"} Consider
+
+
+### ex:7.4 
+ Consider
 
 $$
 f(x) = \sum_{n=1}^{\infty} \frac{1}{1+n^2x} .
@@ -29,15 +33,16 @@ $$
 does the series converge absolutely? On what intervals does it converge
 uniformly? On what intervals does it fail to converge uniformly? Is $f$
 continuous wherever the series converges? Is $f$ bounded?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.5 label="ex:7.5"} 
+
+
+### ex:7.5 
+ 
 $$
 f_n(x) = \left\{ 
             \begin{array}{ll}
-                0 & \left( x<\frac{1}{n+1} \right), \\
-                \sin^2 \frac{\pi}{x} & \left( \frac{1}{n+1}\leq x \leq \frac{1}{n} \right), \\
+                0 & \left( x<\frac{1}{n+1} \right), \\ 
+                \sin^2 \frac{\pi}{x} & \left( \frac{1}{n+1}\leq x \leq \frac{1}{n} \right), \\ 
                 0 & \left( \frac{1}{n} < x \right). \\ 
             \end{array}
          \right.
@@ -46,10 +51,11 @@ $$
 function, but not uniformly. Use the series $\sum f_n$ to show that
 absolute convergence, even for all $x$, does not imply uniform
 convergence.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.6 label="ex:7.6"} Prove that the series
+
+
+### ex:7.6 
+ Prove that the series
 
 $$
 \sum_{n=1}^{\infty} (-1)^n \frac{x^2+n}{n^2}
@@ -57,10 +63,11 @@ $$
  converges uniformly in
 every bounded interval, but does not converge absolutely for any value
 of $x$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.7 label="ex:7.7"} For $n=1,2,3,...,x$ real, put
+
+
+### ex:7.7 
+ For $n=1,2,3,...,x$ real, put
 
 $$
 f_n(x) = \frac{x}{1+nx^2}.
@@ -73,15 +80,16 @@ f'(x) = \lim_{n \to \infty} f'_n(x)
 $$
  is correct if $x \neq 0$, but
 false if $x=0$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.8 label="ex:7.8"} If 
+
+
+### ex:7.8 
+ If 
 $$
 I(x) = \left\{ 
             \begin{array}{ll}
-                0 & (x \leq 0), \\
-                1 & (x >    0), \\
+                0 & (x \leq 0), \\ 
+                1 & (x >    0), \\ 
             \end{array}
          \right.
 $$
@@ -94,10 +102,11 @@ f(x) = \sum_{n=1}^{\infty} c_n I(x-x_n) \quad
 $$
  converges uniformly, and that $f$ is
 continuous for every $x \neq x_n$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.9 label="ex:7.9"} Let $\{f_n\}$ be a sequence of continuous
+
+
+### ex:7.9 
+ Let $\{f_n\}$ be a sequence of continuous
 functions which converges uniformly to a function $f$ on a set $E$.
 Prove that 
 $$
@@ -106,10 +115,11 @@ $$
  for every sequence
 of points $x_n \in E$ such that $x_n \rightarrow x$, and $x \in E$. Is
 the converse of this true?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.10 label="ex:7.10"} Letting $(x)$ denote the fractional part of
+
+
+### ex:7.10 
+ Letting $(x)$ denote the fractional part of
 the real number $x$ (see Exercise
 \[\[ex:4.16\]](#ex:4.16){reference-type="ref" reference="ex:4.16"} for
 the definition), consider the function
@@ -121,10 +131,11 @@ $$
  Find all discontinuities of $f$, and show
 that they form a countable dense set. Show that $f$ is nevertheless
 Riemann-integrable on every bounded interval.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.11 label="ex:7.11"} Suppose $\{f_n\}$ , $\{g_n\}$ are defined
+
+
+### ex:7.11 
+ Suppose $\{f_n\}$ , $\{g_n\}$ are defined
 on $E$, and
 
 (a) $\sum f_n$ has uniformly bounded partial sums;
@@ -137,10 +148,11 @@ Prove that $\sum f_n g_n$ converges uniformly on $E$.
 
 *Hint:* Compare with Theorem
 \[\[thm:3.42\]](#thm:3.42){reference-type="ref" reference="thm:3.42"}.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.12 label="ex:7.12"} Suppose $g$ and $f_n(n=1,2,3,\dots)$ are
+
+
+### ex:7.12 
+ Suppose $g$ and $f_n(n=1,2,3,\dots)$ are
 defined on $(0,\infty)$, are Riemann-integrable on $[t,T]$ whenever
 $0 < t < T < \infty$, $|f_n| \leq g$, $f_n \rightarrow f$ uniformly on
 every compact subset of $(0, \infty)$, and
@@ -166,14 +178,15 @@ uniform convergence can be replaced by pointwise convergence if it is
 assumed that $f \in \mathscr{R}$. (See the articles by F. Cunningham in
 *Math. Mag.*, col.40, 1967, pp. 179-186, and by H. Kestelamn in *Amer.
 Math. Monthly*, vol. 77, 1970, pp. 182-187.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.13 label="ex:7.13"} Assume that $\{f_n\}$ is a sequence of
+
+
+### ex:7.13 
+ Assume that $\{f_n\}$ is a sequence of
 monotonically increasing functions on $\mathbb{R}^1$ with $0 \leq f_n(x) \leq 1$
 for all $x$ and all $n$.
 
-<!-- ::: asparaenum -->
+
 Prove that there is a function $f$ and a sequence $\{n_k\}$ such that
 
 $$
@@ -184,11 +197,11 @@ existence of such a pointwise convergent subsequence is usually called )
 
 If, moreover, $f$ is continuous, prove that $f_{n_k} \rightarrow f$
 uniformly on compact sets.
-<!-- ::: -->
+
 
 *Hint:*
 
-<!-- ::: inparaenum -->
+
 Some subsequence $\{f_{n_i}\}$ converges at all rational points $r$,
 say, to $f(r)$.
 
@@ -201,18 +214,19 @@ continuous. (This is where monotonicity is strongly used.)
 A subsequence of $\{f_{n_i}\}$ converges at every point of discontinuity
 of $f$ since there are at most countably many such points. This proves
 (a). To prove (b), modify your proof of (iii) appropriately.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.14 label="ex:7.14"} Let $f$ be a continuous real function on
+
+
+
+### ex:7.14 
+ Let $f$ be a continuous real function on
 $\mathbb{R}^1$ with the following properties: $0 \leq f(t) \leq 1$,
 $f(t + 2) = f(t)$ for every $t$, and 
 $$
 f(t) = \left\{ 
             \begin{array}{ll}
-                0 & \left( 0 \leq t \leq \frac{1}{3} \right) \\
-                1 & \left( \frac{2}{3} \leq t \leq 1 \right) . \\
+                0 & \left( 0 \leq t \leq \frac{1}{3} \right) \\ 
+                1 & \left( \frac{2}{3} \leq t \leq 1 \right) . \\ 
             \end{array}
          \right.
 $$
@@ -243,22 +257,25 @@ $f(3^k t_0) = a_k$, and hence that $x(t_0)=x_0$, $y(t_0)=y_0$.
 
 (This simple example of a so-called "space-filling curve" is due to I.
 J. Schoenberg, *Bull. A.M.S.*, vol. 44, 1938, pp. 519.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.15 label="ex:7.15"} Suppose $f$ is a real continuous function
+
+
+### ex:7.15 
+ Suppose $f$ is a real continuous function
 on $\mathbb{R}^1$,$f_n(t) =f(nt)$ for $n =1, 2, 3, ...$ , and $\{f_n\}$ is
 equicontinuous on $[0, 1]$. What conclusion can you draw about $f$?
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.16 label="ex:7.16"} Suppose $\{f_n\}$ is an equicontinuous
+
+
+### ex:7.16 
+ Suppose $\{f_n\}$ is an equicontinuous
 sequence of functions on a compact set $K$, and $\{f_n\}$ converges
 pointwise on $K$. Prove that $\{f_n\}$ converges uniformly on K.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.17 label="ex:7.17"} Define the notions of uniform convergence
+
+
+### ex:7.17 
+ Define the notions of uniform convergence
 and equicontinuity for mappings into any metric space. Show that
 Theorems \[\[thm:7.9\]](#thm:7.9){reference-type="ref"
 reference="thm:7.9"} and \[\[thm:7.12\]](#thm:7.12){reference-type="ref"
@@ -273,10 +290,11 @@ reference="thm:7.17"}, \[\[thm:7.24\]](#thm:7.24){reference-type="ref"
 reference="thm:7.24"}, and
 \[\[thm:7.25\]](#thm:7.25){reference-type="ref" reference="thm:7.25"}
 hold for vector-valued functions, that is, for mappings into any $\mathbb{R}^k$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.18 label="ex:7.18"} Let $\{f_n\}$ be a uniformly bounded
+
+
+### ex:7.18 
+ Let $\{f_n\}$ be a uniformly bounded
 sequence of functions which are Riemann-integrable on $[a, b]$, and put
 
 $$
@@ -285,10 +303,11 @@ F_n (x) = \int_{a}^{x} f_n(t) \mathrm{d} t \quad
 $$
  Prove that there exists a subsequence
 $\{F_{n_k}\}$ which converges uniformly on $[a,b]$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.19 label="ex:7.19"} Let $K$ be a compact metric space, let $S$
+
+
+### ex:7.19 
+ Let $K$ be a compact metric space, let $S$
 be a subset of $\mathscr{C}(K)$. Prove that $S$ is compact (with respect
 to the metric defined in Section
 \[\[mydef:7.14\]](#mydef:7.14){reference-type="ref"
@@ -296,10 +315,11 @@ reference="mydef:7.14"}) if and only if $S$ is uniformly closed,
 pointwise bounded, and equicontinuous. (If $S$ is not equicontinuous,
 then $S$ contains a sequence which has no equicontinuous subsequence,
 hence has no subsequence that converges uniformly on $K$.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.20 label="ex:7.20"} If $f$ is continuous on $[0,1]$ and if
+
+
+### ex:7.20 
+ If $f$ is continuous on $[0,1]$ and if
 
 $$
 \int_{0}^{1} f(x) x^n \mathrm{d} x = 0 \quad 
@@ -309,10 +329,11 @@ $$
 
 *Hint:* The integral of the product of $f$ with any polynomial is zero.
 Use the Weierstrass theorem to show that $\int_{0}^{1}f^2(x) \mathrm{d} x = 0$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.21 label="ex:7.21"} Let $K$ be the unit circle in the complex
+
+
+### ex:7.21 
+ Let $K$ be the unit circle in the complex
 plane (i.e., the set of all $z$ with $| z | = 1$ ), and let
 $\mathscr{A}$ be the algebra of all functions of the form
 
@@ -332,10 +353,11 @@ $$
 $$
  and this
 is also true for every $f$ in the closure of $\mathscr{A}$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.22 label="ex:7.22"} Assume $f \in \mathscr{R}(\alpha)$ on
+
+
+### ex:7.22 
+ Assume $f \in \mathscr{R}(\alpha)$ on
 $[a, b]$, and prove that there are polynomials $P_n$ such that
 
 $$
@@ -344,10 +366,11 @@ $$
 
 (Compare with Exercise \[\[ex:6.12\]](#ex:6.12){reference-type="ref"
 reference="ex:6.12"}.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.23 label="ex:7.23"} Put $P_0 = 0$, and define, for
+
+
+### ex:7.23 
+ Put $P_0 = 0$, and define, for
 $n=0,1,2,\dots$, 
 $$
 P_{n+1}(x) = P_n(x) + \frac{x^2 - P_n^2(x)}{2}.
@@ -378,10 +401,11 @@ $$
 $$
 
 if $|x| \leq 1$.
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.24 label="ex:7.24"} Let $X$ be a metric space, with metric $d$.
+
+
+### ex:7.24 
+ Let $X$ be a metric space, with metric $d$.
 Fix a point $a \in X$. Assign to each $p \in X$ the function $f_p$
 defined by 
 $$
@@ -406,10 +430,11 @@ is complete.
 *Conclusion: $X$ is isometric to a dense subset of a complete metric
 space $Y$.* (Exercise \[\[ex:3.24\]](#ex:3.24){reference-type="ref"
 reference="ex:3.24"}, contains a different proof of this.)
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.25 label="ex:7.25"} Suppose $\phi$ is a continuous bounded real
+
+
+### ex:7.25 
+ Suppose $\phi$ is a continuous bounded real
 function in the strip defined by $0 \leq x \leq 1$,
 $- \infty < y < \infty$. Prove that the initial-value problem
 
@@ -445,7 +470,7 @@ $$
 Choose $M < \infty$ so that $|\phi| \leq M$. Verify the following
 assertions.
 
-<!-- ::: asparaenum -->
+
 $|f'_n| \leq M$, $|\Delta_n| \leq 2M$, $\Delta_n \in \mathscr{R}$ , and
 $|f_n| \leq |c| + M = M_1$, say, on $[0,1]$, for all $n$.
 
@@ -475,11 +500,12 @@ f(x) = c + \int_{0}^{x} \phi (t, f(t)) \mathrm{d} t .
 $$
  This $f$ is a
 solution of the given problem.
-<!-- ::: -->
-<!-- ::: -->
 
-<!-- ::: myexercise -->
-[]{#ex:7.26 label="ex:7.26"} Prove an analogous existence theorem for
+
+
+
+### ex:7.26 
+ Prove an analogous existence theorem for
 the initial-value problem
 
 $$
@@ -492,4 +518,4 @@ $0 \leq x \leq 1$, $\mathbf{y} \in \mathbb{R}^k$ into $\mathbb{R}^k$. (Compare E
 \[\[ex:5.28\]](#ex:5.28){reference-type="ref" reference="ex:5.28"}.)
 *Hint:* Use the vector-valued version of Theorem
 \[\[thm:7.25\]](#thm:7.25){reference-type="ref" reference="thm:7.25"}.
-<!-- ::: -->
+

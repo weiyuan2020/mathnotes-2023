@@ -1,7 +1,8 @@
 # Integration
 
-<!-- ::: mydef -->
-[]{#mydef:10.1 label="mydef:10.1"} Suppose $I^k$ is a $k$-cell in
+
+### mydef:10.1 
+ Suppose $I^k$ is a $k$-cell in
 $\mathbb{R}^k$, consisting of all 
 $$
 \mathbf{x} = (x_1,\dots,x_k)
@@ -49,15 +50,17 @@ apparent. To prove this, let us introduce the temporary notation $L(f)$
 for the integral (\[\[eq:10.2\]](#eq:10.2){reference-type="ref"
 reference="eq:10.2"}) and $L'(f)$ for the result obtained by carrying
 out the $k$ integrations in some other order.
-<!-- ::: -->
 
-<!-- ::: thm -->
-[]{#thm:10.2 label="thm:10.2"} For every $f \in \mathscr{C}(I^k)$,
+
+
+### thm:10.2 
+ For every $f \in \mathscr{C}(I^k)$,
 $L(f) = L'(f)$.
-<!-- ::: -->
 
-<!-- ::: mydef -->
-[]{#mydef:10.3 label="mydef:10.3"} The of a (real or complex) function
+
+
+### mydef:10.3 
+ The of a (real or complex) function
 $f$ on $\mathbb{R}^k$ is the closure of the set of all points
 $\mathbf{x} \in R^k$ at which $f(\mathbf{x}) \neq 0$. If $f$ is a
 continuous function with compact support, let $I^k$ be any $k$-cell
@@ -72,7 +75,7 @@ $$
  The integral so defined is evidently
 independent of the choice of $I^k$, provided only that $I^k$ contains
 the support of $f$.
-<!-- ::: -->
+
 
 It is now tempting to extend the definition of the integral over $R^k$
 to functions which are limits (in some sense) of continuous functions
@@ -80,8 +83,9 @@ with compact support. We do not want to discuss the conditions under
 which this can be done; the proper setting for this question is the
 Lebesgue integral.
 
-<!-- ::: newexample -->
-[]{#newexample:10.4 label="newexample:10.4"} Let $Q^k$ be the
+
+### newexample:10.4 
+ Let $Q^k$ be the
 $k$-simplex which consists of all points
 $\mathbf{x} = (x_1, \dots , x_k)$ in $\mathbb{R}^k$ for which
 $x_1 + \dots + x_k \leq 1$ and $x_i \geq 0$ for $i = 1, ... , k$. If
@@ -118,9 +122,9 @@ $$
 
         \phi(t) = \left\{
         \begin{array}{ll}
-            1                    & (t\leq 1-\delta)      \\
-            \frac{(1-t)}{\delta} & (1-\delta < t \leq 1) \\
-            0                    & (1<t),                \\
+            1                    & (t\leq 1-\delta)      \\ 
+            \frac{(1-t)}{\delta} & (1-\delta < t \leq 1) \\ 
+            0                    & (1<t),                \\ 
         \end{array}
         \right.
 $$
@@ -193,4 +197,4 @@ partitions of unity. Primitive mappings will enable us to get a clearer
 picture of the local action of $\mathscr{C}'$-mapping with invertible
 derivative, and partitions of unity are a very useful device that makes
 it possible to use local information in a global setting.
-<!-- ::: -->
+
