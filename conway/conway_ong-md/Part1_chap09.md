@@ -102,7 +102,11 @@ between,
 
 then
 
-$$x^L<L<x<R<x^R$$
+$$
+
+x^L<L<x<R<x^R
+
+$$
 
 so the moves from $G - x$ to $G - x^L$ , $G - x^R$ are no good. But
 neither, in view of the definition of $L$ and $R$, are those to
@@ -190,7 +194,11 @@ not quite!)
 So these games are infinitesimal in a totally new sense, for we have,
 for instance,
 
-$$0<\uparrow<\frac{1}{\omega},\;0<\uparrow<\frac{1}{\varepsilon},\;0<\uparrow<\frac{1}{2^{\aleph_0}},\dots$$
+$$
+
+0<\uparrow<\frac{1}{\omega},\;0<\uparrow<\frac{1}{\varepsilon},\;0<\uparrow<\frac{1}{2^{\aleph_0}},\dots
+
+$$
 
 ($2^{\aleph_0}$ being identified with the smallest ordinal having that
 cardinal), and so on. (Informally, $0 < \uparrow < 1/$**On**.) Rather

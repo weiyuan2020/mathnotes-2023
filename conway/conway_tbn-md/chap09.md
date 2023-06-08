@@ -1,9 +1,5 @@
 # Some Transcendental Numbers
 
-
-
-
-
 [[chap09Part001]]
 [[chap09Part002]]
 [[chap09Part003]]

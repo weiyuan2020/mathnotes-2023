@@ -1,6 +1,5 @@
 # Power series
 
-
 ### mydef:3.38 
  Given a sequence $\{c_n\}$ of
 complex numbers, the series 
@@ -9,11 +8,12 @@ complex numbers, the series
 $$
 
         \sum_{n=0}^{\infty} c_n z^n
+
 $$
+
  is called a *power series*. The
 numbers $c_n$ are called the *coefficients* of the series; $z$ is a
 complex number.
-
 
 In general, the series will converge or diverge, depending on the choice
 of $z$. More specifically, with every power series there is associated a
@@ -25,33 +25,34 @@ the interior of a circle of infinite radius, and a point as a circle of
 radius zero). The behavior on the circle of convergence is much more
 varied and cannot be described so simply.
 
-
 ### thm:3.39 
  Given the power series $\sum c_n z^n$,
 put 
+
 $$
+
 \alpha = \limsup_{n \to \infty} \sqrt[n]{|c_n|},\quad
         R = \frac{1}{\alpha}.
+
 $$
+
  ( If $\alpha = 0$, $R = +\infty$; If
 $\alpha = +\infty$, $R = 0$. ) Then $\sum c_n z^n$ converges of
 $|z| < R$, and diverges if $|z| > R$.
 
-
-
 *Proof.* Put $a_n = c_n z^n$, and apply the root test:
 
 $$
+
 \limsup_{n \to \infty} \sqrt[n]{|a_n|}
         = |z| \limsup_{n \to \infty} \sqrt[n]{|c_n|}
         = \frac{|z|}{R}.
+
 $$
+
  ◻
 
-
 Note: $R$ is called the radius of convergence of $\sum c_n z^n$.
-
-
 
 The series $\sum n^n z^n$ has $R = 0$.
 
@@ -67,5 +68,4 @@ proved in Theorem 3.44)
 
 The series $\sum z^n / n^2$ has $R = 1$. It converges for all $z$ with
 $z = 1$, by the comparison test, since $|z^n/n^2| = 1/n^2$.
-
 

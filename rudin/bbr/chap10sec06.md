@@ -1,6 +1,5 @@
 # Simplexes and chains
 
-
 ### mydef:10.26 
  A mapping $\mathbf{f}$ that carries
 a vector space $X$ into a vector space $Y$ is said to be *affine* if
@@ -12,7 +11,9 @@ $$
 
         \mathbf{f(x)} = 
         \mathbf{f(0)} + A \mathbf{x}
+
 $$
+
  for some $A \in L(X, Y)$.
 
 An affine mapping of $\mathbb{R}^k$ into $\mathbb{R}^n$ is thus determined if we know
@@ -26,11 +27,11 @@ $\mathbf{u} \in \mathbb{R}^k$ of the form
 $$
 
         \mathbf{u} = \sum_{i=1}^{k} \alpha_i \mathbf{e}_i
+
 $$
+
  such that
 $\alpha \geq 0$ for $i = 1, ... , k$ and $\sum \alpha_i \leq 1$.
-
-
 
 ### thm:10.27 
  If $\delta$ is an oriented rectilinear
@@ -42,11 +43,11 @@ $$
 
         \int_{\overline{\delta}} \omega = 
         \varepsilon \int_{\delta} \omega
+
 $$
+
  for every $k$-form $\omega$
 in $E$.
-
-
 
 ### mydef:10.28 
  An *affine $k$-chain* $\Gamma$ in
@@ -63,18 +64,19 @@ $$
 
         \int_{\Gamma} \omega =
         \sum_{i=1}^{r} \int_{\sigma_i} \omega .
+
 $$
-
-
-
 
 ### mydef:10.29 
  For $k \geq 1$, the *boundary* of
 the oriented affine $k$-simplex
 
 $$
+
 \delta = \left[ \mathbf{p_0,p_1,\dots,p_k} \right]
+
 $$
+
  is defined to be
 the affine $(k - 1)$-chain 
 \label{eq:10.85}
@@ -83,13 +85,14 @@ $$
 
         \partial \delta = \sum_{j=0}^{k} (-1)^j
         \left[ \mathbf{p_0,p_1,\dots,p_{j-1},p_{j+1},\dots,p_k} \right]
+
 $$
-
-
 
 For example, if $\sigma = [\mathbf{p}_0 , \mathbf{p}_1, \mathbf{p}_2 ]$,
 then 
+
 $$
+
 \partial\sigma = 
     [\mathbf{p}_1, \mathbf{p}_2] - 
     [\mathbf{p}_0, \mathbf{p}_2] + 
@@ -97,7 +100,9 @@ $$
     [\mathbf{p}_0, \mathbf{p}_1] + 
     [\mathbf{p}_1, \mathbf{p}_2] + 
     [\mathbf{p}_2, \mathbf{p}_0] ,
+
 $$
+
  which coincides with the usual
 notion of the oriented boundary of a triangle. For $1 \leq j \leq k$,
 observe that the simplex
@@ -112,32 +117,41 @@ $$
     \sigma_j(\mathbf{u}) = \mathbf{p}_0 + B\mathbf{u} 
     \quad 
     (\mathbf{u} \in Q^{k-1}),
+
 $$
+
  where $B$ is the linear mapping from
 $\mathbb{R}^{k-1}$ to $\mathbb{R}^n$ determined by 
+
 $$
+
 \begin{aligned}
     B\mathbf{e}_i &= \mathbf{p}_i - \mathbf{p}_0 \quad (\text{if } 1 \leq i \leq j-1) , \\ 
     B\mathbf{e}_i &= \mathbf{p}_{i+1} - \mathbf{p}_0 \quad (\text{if } j \leq i \leq k-1) .\end{aligned}
-$$
 
+$$
 
 The simplex
 
 $$
+
 \sigma_0 = [\mathbf{p}_1,\mathbf{p}_2,\dots,\mathbf{p}_k]
+
 $$
+
  which also
 occurs in \[\[eq:10.85\]](#eq:10.85){reference-type="eqref"
 reference="eq:10.85"}, is given by the mapping
 
 $$
+
 \sigma_0(\mathbf{u}) = \mathbf{p}_1 + B \mathbf{u},
+
 $$
+
  where
 $B\mathbf{e}_i = \mathbf{p}_{i+1} - \mathbf{p}_1$ for
 $1 \leq i \leq k-1$.
-
 
 ### mydef:10.30 
  Let $T$ be a
@@ -157,7 +171,9 @@ $$
 
         \int_{\Psi} \omega = 
         \sum_{i=1}^{r} \int_{\Phi i} \omega
+
 $$
+
  and use the corresponding
 notation $\Psi = \sum \Phi_i$.
 
@@ -169,7 +185,9 @@ $\Phi_i = T \circ \sigma_i$, we also write $\Psi = T \circ \Gamma$, or
 $$
 
         T\left( \sum \sigma_i \right) = \sum T \sigma_i .
+
 $$
+
  The boundary
 $\partial \Phi$ of the oriented $k$-simplex $\Phi = T \circ \sigma$ a is
 defined to be the $(k - 1)$ chain 
@@ -178,8 +196,8 @@ defined to be the $(k - 1)$ chain
 $$
 
         \partial \Phi = T \left( \partial \sigma \right) .
-$$
 
+$$
 
 In justification of \[\[eq:10.89\]](#eq:10.89){reference-type="eqref"
 reference="eq:10.89"}, observe that if $T$ is affine, then
@@ -200,10 +218,8 @@ $\Psi = \sum \Phi_i$ to be the $(k - 1)$ chain
 $$
 
         \partial \Psi = \sum \partial \Phi_i ,
+
 $$
-
-
-
 
 ### mydef:10.31 
  So far we have associated
@@ -222,12 +238,16 @@ affine $(n - 1)$-chain. This chain is called the positively oriented
 boundary of the set $Q^n$.
 
 For example, the positively oriented boundary of $Q^3$ is 
+
 $$
+
 -
         [           0, \mathbf{e}_2, \mathbf{e}_3] +
         [           0, \mathbf{e}_1, \mathbf{e}_3] -
         [           0, \mathbf{e}_1, \mathbf{e}_2] .
+
 $$
+
  Now let $T$ be a
 1-1 mapping of $Q^n$ into $\mathbb{R}^n$, of class $\mathscr{C}''$, whose
 Jacobian is positive (at least in the interior of $Q^n$). Let
@@ -236,22 +256,25 @@ open subset of $\mathbb{R}^n$. We define the positively oriented boundary of the
 set $E$ to be the $(n - 1)$-chain
 
 $$
+
 \partial T = T (\partial \sigma_0) ,
+
 $$
+
  and we may denote this
 $(n - 1)$-chain by $\partial E$.
-
-
 
 ### newexample:10.32 
  For
 $0 \leq u \leq \pi, 0 \leq v \leq 2\pi$, define 
+
 $$
+
 \sum(u,v) = \left( 
             \sin u \cos v,
             \sin u \sin v,
             \cos u
          \right).
-$$
 
+$$
 

@@ -18,7 +18,6 @@ Accordingly, we first prove Theorem
 the linear version of Theorem
 \[\[thm:9.28\]](#thm:9.28){reference-type="ref" reference="thm:9.28"}.
 
-
 If $\mathbf{x} = (x_1 , \dots , x_n) e \mathbb{R}^n$ and
 $\mathbf{y} = (y_1 , \dots , y_m) e \mathbb{R}^m$, let us write
 $\mathbf{(x, y)}$ for the point (or vector) In what follows, the first
@@ -33,7 +32,9 @@ $$
 
         A_x \mathbf{h} = A \mathbf{(h, 0)},
         A_y \mathbf{h} = A \mathbf{(0, k)},
+
 $$
+
  for any
 $\mathbf{h} \in \mathbb{R}^n$, $\mathbf{k} \in \mathbb{R}^m$. Then $A_x \in L(\mathbb{R}^n)$,
 $A_y \in L(\mathbb{R}^m, \mathbb{R}^n)$, and 
@@ -42,11 +43,11 @@ $A_y \in L(\mathbb{R}^m, \mathbb{R}^n)$, and
 $$
 
         A(\mathbf{h, k}) = A_x \mathbf{h} + A_y \mathbf{k}.
+
 $$
+
  The linear
 version of the implicit function theorem is now almost obvious.
-
-
 
 ### thm:9.27 
  If $A \in L(\mathbb{R}^{n+m}, \mathbb{R}^n)$ and if $A_x$
@@ -59,10 +60,8 @@ $\mathbf{h}$ can be computed from $\mathbf{k}$ by the formula
 $$
 
         \mathbf{h} = -(A_x)^{-1} A_y \mathbf{k}
+
 $$
-
-
-
 
 ### thm:9.28 
  Let $\mathbf{f}$ be a
@@ -84,8 +83,8 @@ $$
         \mathbf{(x, y)} \in U
         \text{ and }
         \mathbf{f(x, y)} = 0 .
-$$
 
+$$
 
 If this $\mathbf{x}$ is defined to be $\mathbf{g(y)}$, then $\mathbf{g}$
 is a $\mathscr{C}'$-mapping of $W$ into $\mathbb{R}^n$, $\mathbf{g(b) = a}$,
@@ -97,16 +96,17 @@ $$
         \mathbf{f(g(y), y) = 0}
         \quad
         (\mathbf{y} \in W) ,
+
 $$
+
  and 
 \label{eq:9.58}
 
 $$
 
         \mathbf{g'(b)} = -(A_x)^{-1} A_y .
+
 $$
-
-
 
 The function g is "implicitly" defined by
 (\[\[eq:9.57\]](#eq:9.57){reference-type="ref" reference="eq:9.57"}).
@@ -124,18 +124,21 @@ $$
         \cdots \cdots \cdots \\ 
         f_n(x_1,\dots,x_n,y_1,\dots,y_m) = 0 \\ 
     \end{aligned}
-$$
 
+$$
 
 The assumption that $A_x$ is invertible means that the $n$ by $n$ matrix
 
 $$
+
 \begin{pmatrix}
         D_1 f_1 & \cdots & D_n f_1 \\ 
         \cdots  & \cdots & \cdots  \\ 
         D_1 f_n & \cdots & D_n f_n \\ 
     \end{pmatrix}
+
 $$
+
  evaluated at $\mathbf{(a, b)}$ defines an invertible
 linear operator in $\mathbb{R}^n$; in other words, its column vectors should be
 independent, or, equivalently, its determinant should be $\neq 0$, (See
@@ -149,15 +152,18 @@ $y_1, ... , y_m$, for every $\mathbf{y}$ near $\mathbf{b}$, and that
 these solutions are continuously differentiable functions of
 $\mathbf{y}$.
 
-
 Take $n = 2, m = 3$, and consider the mapping $f = (f1, f2)$ of $\mathbb{R}^5$
 into $\mathbb{R}^2$ given by 
+
 $$
+
 \begin{aligned}
         f_1(x_1, x_2, y_1, y_2, y_3) &= 2 e^{x1} + x_2 y_1 - 4 y_2 + 3 \\ 
         f_2(x_1, x_2, y_1, y_2, y_3) &= x_2 \cos x_1 - 6 x_1 + 2 y_1 - y_3.
     \end{aligned}
+
 $$
+
  If $\mathbf{a} = (0, 1)$ and
 $\mathbf{b} = (3, 2, 7)$, then $\mathbf{f(a, b)} = 0$.
 

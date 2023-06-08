@@ -1,6 +1,5 @@
 # Closed forms and exact forms
 
-
 Let $\omega$ be a $k$-form in an open set $E \subset \mathbb{R}^n$. If there is
 a $(k - 1)$- form $\lambda$ in $E$ such that $\omega = \mathrm{d} \lambda$, then
 $\omega$ is said to be exact in $E$.
@@ -24,12 +23,7 @@ reference="newexample:10.36"} and
 reference="newexample:10.37"} will exhibit closed forms that are not
 exact.
 
-
-
 ### myremark:10.35 
-
-
-
 
 ### newexample:10.36 
  Let
@@ -40,7 +34,9 @@ $E = \mathbb{R}^2 - \{\mathbf{0}\}$, the plane with the origin removed. The
 $$
 
         \eta = \frac{x \mathrm{d} y - y \mathrm{d} x}{x^2+y^2}
+
 $$
+
  is in
 $\mathbb{R}^2 - \{\mathbf{0}\}$. This is easily verified by differentiation. Fix
 $r>0$, and define 
@@ -51,7 +47,9 @@ $$
         \gamma(t) = (r \cos t, r \sin t)
         \quad 
         (0 \leq t \leq 2\pi).
+
 $$
+
  Then $\gamma$ is a curve (an "oriented
 I-simplex") in $\mathbb{R}^2 - \{\mathbf{0}\}$. Since $\gamma(0) = \gamma(2n)$,
 we have 
@@ -60,8 +58,8 @@ we have
 $$
 
         \partial \gamma = 0 .
-$$
 
+$$
 
 Direct computation shows that 
 \label{eq:10.113}
@@ -69,8 +67,8 @@ Direct computation shows that
 $$
 
         \int_{\gamma} \eta = 2\pi \neq 0 .
-$$
 
+$$
 
 The discussion in Remarks
 \[\[myremark:10.35\]](#myremark:10.35){reference-type="ref"
@@ -90,8 +88,6 @@ fact that $\eta$ is closed would force the integral
 \[\[eq:10.113\]](#eq:10.113){reference-type="eqref"
 reference="eq:10.113"} to be 0.
 
-
-
 ### newexample:10.37 
  Let
 $E = \mathbb{R}^3 - \{\mathbf{0}\}$, 3-space with the origin removed. Define
@@ -106,7 +102,9 @@ $$
             y \mathrm{d} z \wedge \mathrm{d} x + 
             z \mathrm{d} x \wedge \mathrm{d} y 
         }{\left( x^2+y^2+z^2 \right)^{3/2}}
+
 $$
+
  where we have written
 $(x, y, z)$ in place of $(x_1, x_2 , x_3)$. Differentiation shows that
 $\mathrm{d} \zeta = 0$, so that $\zeta$ is a closed 2-form in
@@ -127,7 +125,9 @@ $$
         \int_{\sum} \zeta = 
         \int_{D}    \sin u \mathrm{d} u \mathrm{d} v =
         4 \pi \neq 0 .
+
 $$
+
  As in the preceding example, we can now
 conclude that $\zeta$ is not exact in $\mathbb{R}^3 - \{\mathbf{0}\}$ (since
 $\partial \sum = 0$, as was shown in Example
@@ -138,8 +138,6 @@ $\mathscr{C}''$), although $\partial \sum = 0$.
 
 The following result will be used in the proof of Theorem
 \[\[thm:10.39\]](#thm:10.39){reference-type="ref" reference="thm:10.39"}.
-
-
 
 ### thm:10.38 
  Suppose $E$ is a convex open set in
@@ -152,19 +150,17 @@ $$
         (D_j f)(\mathbf{x}) = 0
         \quad 
         (p < j \leq n, \mathbf{x} \in E).
+
 $$
+
  Then there exists an
 $F \in \mathscr{C}'(E)$ such that
-
-
 
 ### thm:10.39 
  If $E \in \mathbb{R}^n$ is convex and open, if
 $k \geq 1$, if $\omega$ is a $k$-form of class $\mathscr{C}'$ in $E$, a
 nd if $\mathrm{d} \omega = 0$, then there is a $(k - 1)$-form $\lambda$ in $E$
 such that $\omega = \mathrm{d} \lambda$.
-
-
 
 ### thm:10.40 
  Fix $k$, $1 \leq k \leq n$. Let
@@ -174,7 +170,6 @@ $U \subset \mathbb{R}^n$ whose inverse $S$ is also of class $\mathscr{C}''$.
 
 Then every closed $k$-form in $V$ is exact in $V$.
 
-
 Note that every convex open set $E$ satisfies the present hypothesis, by
 Theorem \[\[thm:10.39\]](#thm:10.39){reference-type="ref"
 reference="thm:10.39"}. The relation between $E$ and $V$ may be
@@ -183,7 +178,5 @@ expressed by saying that they are $\mathscr{C}''$-*equivalent*.
 *Thus every closed form is exact in any set which is
 $\mathscr{C}''$-equivalent to a convex open set.*
 
-
 ### myremark:10.40 
-
 

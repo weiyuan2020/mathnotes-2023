@@ -1,17 +1,16 @@
 # 数学成熟度
 
-维基百科，自由的百科全书
+维基百科, 自由的百科全书
 
-
-在数学中， **数学成熟度** 是一个 [非正式的术语](https://en.wikipedia.org/wiki/Mathematical_jargon "数学术语") ，通常用于指对 [数学家](https://en.wikipedia.org/wiki/Mathematician "数学家") 操作和交流方式的一般理解和掌握的质量。 它涉及无法直接教授的数学经验和洞察力的混合物。 相反，它来自反复接触数学概念。 它是衡量数学学生在 [数学结构](https://en.wikipedia.org/wiki/Mathematical_structure "数学结构") 和方法方面的博学程度，可以与数学直觉和数学能力等其他相关概念重叠。 这个话题有时也会在文学作品中单独提及。 [[1]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-1) [[2]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:0-2)
+在数学中, **数学成熟度** 是一个 [非正式的术语](https://en.wikipedia.org/wiki/Mathematical_jargon "数学术语") , 通常用于指对 [数学家](https://en.wikipedia.org/wiki/Mathematician "数学家") 操作和交流方式的一般理解和掌握的质量. 它涉及无法直接教授的数学经验和洞察力的混合物. 相反, 它来自反复接触数学概念. 它是衡量数学学生在 [数学结构](https://en.wikipedia.org/wiki/Mathematical_structure "数学结构") 和方法方面的博学程度, 可以与数学直觉和数学能力等其他相关概念重叠. 这个话题有时也会在文学作品中单独提及. [[1]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-1) [[2]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:0-2)
 
 ## 定义
 
-不同的作者以几种不同的方式定义了数学成熟度，并且通常与其他相关概念相关联，例如数学的舒适度和能力、数学直觉和数学信念。 [[2]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:0-2)
+不同的作者以几种不同的方式定义了数学成熟度, 并且通常与其他相关概念相关联, 例如数学的舒适度和能力、数学直觉和数学信念. [[2]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:0-2)
 
 一个定义如下： [[3]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-3)
 
-> ... 面对符号的无畏：阅读和理解 [符号](https://en.wikipedia.org/wiki/Mathematical_notation "数学符号") ，在适当的时候引入清晰有用的符号（而不是在其他情况下！），以及用简洁但清晰和准确的语言表达的一般设施，数学家用来交流思想。
+> ... 面对符号的无畏：阅读和理解 [符号](https://en.wikipedia.org/wiki/Mathematical_notation "数学符号") , 在适当的时候引入清晰有用的符号（而不是在其他情况下！）, 以及用简洁但清晰和准确的语言表达的一般设施, 数学家用来交流思想. 
 
 更广泛的数学成熟度特征列表如下： [[4]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-4)
 
@@ -27,12 +26,12 @@
 > -   在几何（图形）和分析（方程）之间来回移动的能力
 > -   通过放弃幼稚的假设和培养更批判的态度来提高数学直觉
 
-最后，数学成熟度也被定义为执行以下操作的能力： [[5]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:1-5)
+最后, 数学成熟度也被定义为执行以下操作的能力： [[5]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:1-5)
 
 > -   建立和使用与其他问题和其他学科的联系
 > -   填写缺失的详细信息
 > -   发现、纠正错误并从错误中学习
-> -   从小麦中剔除谷壳，找到症结，识别意图
+> -   从小麦中剔除谷壳, 找到症结, 识别意图
 > -   认识并欣赏 [优雅](https://en.wikipedia.org/wiki/Mathematical_beauty "数学之美")
 > -   抽象地思考
 > -   阅读、写作和批评正式证明
@@ -45,7 +44,7 @@
 > -   保持专注
 > -   在需要时发挥本能和直觉
 
-有时有人说，数学成熟度的发展需要对主题进行长时间的深刻反思，以及鼓励探索的指导精神。 [[5]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:1-5)
+有时有人说, 数学成熟度的发展需要对主题进行长时间的深刻反思, 以及鼓励探索的指导精神. [[5]](https://en.wikipedia.org/wiki/Mathematical_maturity#cite_note-:1-5)
 
 ## 另见
 
@@ -53,13 +52,13 @@
 
 ## 参考文献
 
--   [Lynn Arthur Steen](https://en.wikipedia.org/wiki/Lynn_Arthur_Steen "林恩·阿瑟·斯蒂恩") (1983) “Developing Mathematical Maturity” 第 99 至 110 页， _《大学数学的未来：大学数学前两年会议/研讨会论文集》_ ，Anthony Ralston 编辑，Springer [国际标准书号](https://en.wikipedia.org/wiki/ISBN_(identifier) "ISBN（标识符）")  [1-4612-5510-4](https://en.wikipedia.org/wiki/Special:BookSources/1-4612-5510-4 "特别：BookSources / 1-4612-5510-4")
+-   [Lynn Arthur Steen](https://en.wikipedia.org/wiki/Lynn_Arthur_Steen "林恩·阿瑟·斯蒂恩") (1983) “Developing Mathematical Maturity” 第 99 至 110 页, _《大学数学的未来：大学数学前两年会议/研讨会论文集》_ , Anthony Ralston 编辑, Springer [国际标准书号](https://en.wikipedia.org/wiki/ISBN_(identifier) "ISBN（标识符）")  [1-4612-5510-4](https://en.wikipedia.org/wiki/Special:BookSources/1-4612-5510-4 "特别：BookSources / 1-4612-5510-4")
 
--   卢，克里斯汀。 [“数学家如何描述数学成熟度？”](http://sigmaa.maa.org/rume/crume2019/Papers/106.pdf) （PDF） 。 _sigmaa.maa.org_ 。 检索 2019-12-07 。
+-   卢, 克里斯汀. [“数学家如何描述数学成熟度？”](http://sigmaa.maa.org/rume/crume2019/Papers/106.pdf) （PDF） . _sigmaa.maa.org_ . 检索 2019-12-07 . 
 
 -   [数学 22 讲座 A](http://www.larry.denenberg.com/math22/LectureA.pdf) , 拉里·丹嫩伯格
 
--   [LBS 119 微积分 II 课程目标](https://www.msu.edu/course/lbs/119/simpson/goals_content.html) ，莱曼布里格斯科学学院
+-   [LBS 119 微积分 II 课程目标](https://www.msu.edu/course/lbs/119/simpson/goals_content.html) , 莱曼布里格斯科学学院
 
 [A Setmatical Equivoques](http://course1.winona.edu/KSuman/Dictionary/Fill%20Ins/Mathematical%20Maturity.htm) , Ken Suman, 威诺纳州立大学数学与统计系
 
@@ -149,5 +148,4 @@ It is sometimes said that the development of mathematical maturity requires a de
 -   [Read](https://en.wikipedia.org/wiki/Mathematical_maturity)
 
 -   This page was last edited on 3 November 2021, at 17:50 (UTC).
-
 

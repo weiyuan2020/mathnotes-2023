@@ -26,11 +26,19 @@ leads similarly to the fourth powers, and so on.
 
 So circling the numbers
 
-$$n+n\quad n+n+n \quad n+n+n+n \; ...$$
+$$
+
+n+n\quad n+n+n \quad n+n+n+n \; ...
+
+$$
 
 has led to the numbers
 
-$$n\times n\quad n\times n\times n \quad n\times n\times n\times n \; ...$$
+$$
+
+n\times n\quad n\times n\times n \quad n\times n\times n\times n \; ...
+
+$$
 
 If we circle each triangular number, $1 + 2+3 + 4+ \dots + n$
 
@@ -40,35 +48,75 @@ $1\times 2\times 3\times\dots\times n$, which we'll talk about soon.
 What if we circle the squares?
 
 If these numbers mystify you, notice that the squares are
-$$\begin{array}{c}
+
+$$
+
+\begin{array}{c}
 1 \\
 1+2+1 \\
 1+2+3+2+1 \\
 1+2+3+4+3+2+1 \\
-\end{array}$$ and that the final circled numbers are $$\begin{array}{c}
+\end{array}
+
+$$
+
+ and that the final circled numbers are 
+
+$$
+
+\begin{array}{c}
 1 \\
 1\times 2\times 1 \\
 1\times 2\times 3\times 2\times 1 \\
 1\times 2\times 3\times 4\times 3\times 2\times 1 \\
-\end{array}$$ The general rule is that if you start by circling
-$$1a,\; 2a+ 1b,\; 3a+ 2b+ 1c,\; 4a+ 3b+ 2c+1d...$$ then the final
+\end{array}
+
+$$
+
+ The general rule is that if you start by circling
+
+$$
+
+1a,\; 2a+ 1b,\; 3a+ 2b+ 1c,\; 4a+ 3b+ 2c+1d...
+
+$$
+
+ then the final
 circled numbers are
-$$1^a,\; 2^a\times  1^b,\; 3^a\times  2^b\times  1^c,\; 4^a\times  3^b\times  2^c\times 1^d...$$
+
+$$
+
+1^a,\; 2^a\times  1^b,\; 3^a\times  2^b\times  1^c,\; 4^a\times  3^b\times  2^c\times 1^d...
+
+$$
 
 # FACTORIAL NUMBERS
 
 How many "words" can we make from the letters A, E, T, each used just
 once?
 
-$$AET, ATE, EAT, ETA, TAE, TEA$$
+$$
+
+AET, ATE, EAT, ETA, TAE, TEA
+
+$$
 
 The first letter can be any one of the three, the second can be either
 one of the two remaining, and the third is then the one left over,
 
-$$3 \times 2\times 1 = 6 \;\text{words.}$$
+$$
+
+3 \times 2\times 1 = 6 \;\text{words.}
+
+$$
 
 If you have n different letters, they can be arranged in
-$$n\times (n—1) \times (n-2)\times \dots \times 3\times 2\times 1 \;\text{ways.}$$
+
+$$
+
+n\times (n—1) \times (n-2)\times \dots \times 3\times 2\times 1 \;\text{ways.}
+
+$$
 
 This number is called factorial 7, or n factorial. It often used to be
 written $|\underline{n}$, but today is usually written $n!$.
@@ -77,7 +125,9 @@ Of course, there's just one way to arrange no objects, so $0! = 1$. In
 general, $n!$ is the product of the numbers from 1 to n, the empty
 product being 1 (Figure 3.1).
 
-$$\begin{array}{cll}
+$$
+
+\begin{array}{cll}
                            &= 1 &= 0!\\
                         1   &= 1 &= 1!\\
                 1\times 2   &= 2 &= 2!\\
@@ -86,7 +136,11 @@ $$\begin{array}{cll}
 1\times 2\times 3\times 4 \times 5   &= 120 &= 5!\\
 1\times 2\times 3\times 4 \times 5 \times 6 &= 720 &= 6!\\
 1\times 2\times 3\times 4 \times 5 \times 6 \times 7 &= 5040 &= 7!\\
-    \end{array}$$ FIGURE 3.1 fhe factorial' nranheors
+    \end{array}
+
+$$
+
+ FIGURE 3.1 fhe factorial' nranheors
 
 We just saw how we can get the factorial numbers from Moessner's magic,
 and in fact we already met them in Chapter 2 when we piled up triangular
@@ -101,13 +155,22 @@ one of the $n$, the sccond can be any one of the remaining $n-1$, the
 third any one of remaining $n- 2$, and so on, the $r$th being any one of
 $n- r + 1$. The total number of different arrangements is
 
-$$n\times (n—1) \times (n-2)\times \dots \times (n-r+1)$$
+$$
+
+n\times (n—1) \times (n-2)\times \dots \times (n-r+1)
+
+$$
 
 the product of all the numbers from 1 to $n$, except for those from 1 to
 $n-r$ , so we can express this concisely using the factorial numbers:
 
 The number of **arrangements** of r things out of n is
-$$\frac{n!}{(n-r)!}$$
+
+$$
+
+\frac{n!}{(n-r)!}
+
+$$
 
 # CHOICE NUMBERS
 
@@ -119,14 +182,29 @@ $\binom{n}{r}$ we divide the arrangement numbers by $r$!
 
 The number of *choices* of r things from n is
 
-$$\boxed{\binom{n}{r} = \frac{n!}{r!(n-r)!}}$$
+$$
+
+\boxed{\binom{n}{r} = \frac{n!}{r!(n-r)!}}
+
+$$
 
 In this formula, you can swap $r$ for $n-r$ without altering the value.
 The number of ways of choosing 5 things out of 8 is the same as the
 number of ways of choosing the 3 you want to leave out:
-$$\binom{8}{5} = \binom{8}{3}$$ and generally,
 
-$$\boxed{\binom{n}{r} = \binom{n}{n-r}}$$
+$$
+
+\binom{8}{5} = \binom{8}{3}
+
+$$
+
+ and generally,
+
+$$
+
+\boxed{\binom{n}{r} = \binom{n}{n-r}}
+
+$$
 
 This is the left-right symmetry of Pascal's triangle, see Figures 3.2
 and 3.3
@@ -134,26 +212,42 @@ and 3.3
 Suppose a class of 28 students wants to choose a soccer team of 11
 players. In how many ways can they do it? We now know that this is
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \binom{28}{11} 
     &= \frac{28\times 27\times 26\times 25\times 24 \times 23\times 22\times 21\times 20\times 19\times 18}{1\times 2\times 3\times 4\times 5 \times 6\times 7\times 8\times 9\times 10\times 11} \\
-    &= \frac{28!}{11!17!} = 2^2\times 3^3\times 5\times 7\times 13\times 19 \times 23 = 21474180.\end{aligned}$$
+    &= \frac{28!}{11!17!} = 2^2\times 3^3\times 5\times 7\times 13\times 19 \times 23 = 21474180.\end{aligned}
+
+$$
 
 Now suppose you're in the class and want to know if you're on the team.
 In how many ways could you be included? If you're on, the other 10 must
 be chosen from the other 27:
 
-$$\binom{27}{10}=8436285\; \text{ways.}$$
+$$
+
+\binom{27}{10}=8436285\; \text{ways.}
+
+$$
 
 In how many ways are you *not* included? All 11 have to be chosen from
 the other 27:
 
-$$\binom{27}{11}=13037895\; \text{ways.}$$
+$$
+
+\binom{27}{11}=13037895\; \text{ways.}
+
+$$
 
 So $\binom{28}{11}$is the sum of these two numbers, and generally, since
 you are either on the team of r or not,
 
-$$\binom{n}{r} = \binom{n-1}{r} + \binom{n-1}{r-1}$$
+$$
+
+\binom{n}{r} = \binom{n-1}{r} + \binom{n-1}{r-1}
+
+$$
 
 # PASCAL'S TRIANGLE
 
@@ -175,10 +269,26 @@ Of course, we've seen some of these numbers before, in Chapter 2, when
 we piled up triangular pyramids in more and more dimensions. The numbers
 at the beginning of each row are just ones,
 
-$$1, 1,1, 1,1, 1,1,1,1,1,1,....$$ The second numbers in each row are the
+$$
+
+1, 1,1, 1,1, 1,1,1,1,1,1,....
+
+$$
+
+ The second numbers in each row are the
 counting numbers,
 
-$$1, 2, 3, 4, 5, 6, 7, 8,9, 10, 11,....$$ $$1 \\
+$$
+
+1, 2, 3, 4, 5, 6, 7, 8,9, 10, 11,....
+
+$$
+
+ 
+
+$$
+
+1 \\
 1 \; 2  \; 1 \\
 1 \; 3  \; 3  \; 1 \\
 1 \; 4  \; 6  \; 4  \; 1 \\
@@ -191,15 +301,37 @@ $$1, 2, 3, 4, 5, 6, 7, 8,9, 10, 11,....$$ $$1 \\
 1 \; 11 \; 55 \; 165\; 330 \; 462 \; 462 \; 330 \; 165 \; 55 \;11 \;1 \\
 1 \; 12 \; 66 \; 220\; 495 \; 792 \; 924 \; 792 \; 495 \; 220 \;66 \;12 \;1 \\
 1 \; 13 \; 78 \; 286\; 715 \; 1287 \;  1716 \;1716 \;1287 \;715 \;266 \;78 \;13\;1 \\
-$$ FIGURE 3.3 Pascal's numbers: the choice numbers, or binomial
+
+$$
+
+ FIGURE 3.3 Pascal's numbers: the choice numbers, or binomial
 coefficients.
 
 The third numbers are the **triangular numbers**,
-$$1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, ....$$ The fourth numbers are
+
+$$
+
+1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, ....
+
+$$
+
+ The fourth numbers are
 the **tetrahedral numbers**,
-$$1, 4, 10, 20, 35, 56, 84, 120, 165, 220, 286,....$$ The fifth ones are
+
+$$
+
+1, 4, 10, 20, 35, 56, 84, 120, 165, 220, 286,....
+
+$$
+
+ The fifth ones are
 the **pentatope numbers**,
-$$1, 5, 15, 35, 70, 126, 210, 330, 495, 715, 1001, ...,$$
+
+$$
+
+1, 5, 15, 35, 70, 126, 210, 330, 495, 715, 1001, ...,
+
+$$
 
 and so on. The numbers in each diagonal are the cumulative sums of those
 in the previous diagonal.
@@ -244,7 +376,12 @@ In general, to find the number of choices of $r$ things from $n$
 different ones, but with repetitions allowed, imagine that you are
 playing Sweet Seventeen, but instead of a deck of $13 + 4$ jokers, you
 have a deck of $n + (r - 1)$ jokers, and the answer is
-$$\binom{n+r-1}{r}$$
+
+$$
+
+\binom{n+r-1}{r}
+
+$$
 
 FIGURE 3.5 A poker band becomes a Sweet Seventeen band.
 
@@ -254,7 +391,11 @@ Figure 3.6 will help you to do two of the algebraic manipulations in
 Figure 3.7, where the numbers, or **coefficients**, that appear are
 exactly those of Pascal's triangle.
 
-You can see why this is so if you label the bs: $$\begin{aligned}
+You can see why this is so if you label the bs: 
+
+$$
+
+\begin{aligned}
         &(a + b_1)(a + b_2) = a^2 + a(b_1 + b_2) + b_1 b_2,\\
         &(a + b_1)(a + b_2)(a + b_3)\\
         &=a^3+ a^2(b_1+b_2+b_3) + a(b_1b_2+b_1b_3+b_2b_3)+b_1b_2b_3,\\
@@ -262,17 +403,23 @@ You can see why this is so if you label the bs: $$\begin{aligned}
         &=a^4+a^3(b_1+b_2+b_3+b_4)\\
         &+a^2(b_1b_2+b_1b_3+b_1b_4+b_2b_3+b_2b_4+b_3b_4)\\
         &+a(b_1b_2b_3+b_1b_2b_4+b_2b_3b_4)+b_1b_2b_3b_4.
-    \end{aligned}$$
+    \end{aligned}
+
+$$
 
 FIGURE 3.6 Geometric pictures of two binomial expansions.
 
-$$\begin{array}{cc}
+$$
+
+\begin{array}{cc}
             (a+b)^0=1 & 1 \\
             (a+b)^1=a+b & 1\;1 \\
             (a+b)^2=a^2+2ab+b^2 & 1\;2\;1 \\
             (a+b)^3=a^3+3a^2b+3ab^2+b^3 & 1\;3\;3\;1 \\
             (a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4 & 1\;4\;6\;4\;1 \\
-        \end{array}$$
+        \end{array}
+
+$$
 
 FiGURE 3.7 Binomial expansions.
 
@@ -282,7 +429,9 @@ and $n - r$ $as$ is the number of choices of $r$ $bs$ from among the
 total of $n$ $bs$, namely $\binom{n}{r}$ We've proved the **Binomial
 Theorem**:
 
-$$\boxed{
+$$
+
+\boxed{
     \begin{array}{cc}
         (a+b)^n
         &= a^n 
@@ -293,13 +442,17 @@ $$\boxed{
         + \dots
         + \binom{n}{n-1} a b^{n-1}
         + \binom{n}{n} b^n
-    \end{array}}$$
+    \end{array}}
+
+$$
 
 Because there are two choices from each of the $n$ binomial factors, the
 total number of products is $2^n$. We check this by adding the rows of
 Pascal's triangle:
 
-$$\begin{array}{cl}
+$$
+
+\begin{array}{cl}
         1 &= 2^0  \\
         1+1 &= 2^1  \\
         1+2+1 &= 2^2  \\
@@ -307,12 +460,16 @@ $$\begin{array}{cl}
         1+4+6+4+1 &= 2^4  \\
         1+5+10+10+5+1 &=2^5  \\
         1+6+15+20+15+6+1  &= 2^6\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 This is the result of setting $a=b = 1$ in the binomial theorem. If you
 let $a = 1$ and $b=-1$, you get the following.
 
-$$\begin{array}{cl}
+$$
+
+\begin{array}{cl}
         1 &= 0  \\
         1-1 &= 0  \\
         1-2+1 &= 0  \\
@@ -320,7 +477,9 @@ $$\begin{array}{cl}
         1-4+6-4+1 &= 0  \\
         1-5+10-10+5-1 &=0  \\
         1-6+15-20+15-6+1  &= 0\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 This is most obvious in the odd-numbered rows because of the symmetry,
 but it's also true in the even-numbered ones.
@@ -332,11 +491,15 @@ the left and horizontal lines of zeros above and below. In Figure 3.8(b)
 we've used ones instead of zeros. Now fill in the question marks by the
 rule that the numbers a and d in each little diamond
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
         b \\
         a\quad d \\
         c\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 *add* to 1 more than do $b$ and $c$ in Figure 3.8(a), while they
 *multiply* to 1 more than do $b$ and $c$ in Figure 3.8(b).
@@ -345,7 +508,9 @@ Some surprising things happen, as shown in Figure 3.9(a) and (b). For
 the *additive* pattern, part (a), the next zeros in each line form a
 copy of the initial zigzag, so the pattern repeats itself every seven
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
 0\;0\;0\;0\;0\;0\;0\;0\;0\\
 \;\;0\;?\;?\;?\;?\;?\;?\;?\\
 \;\;\;\;0\;?\;?\;?\;?\;?\;?\;?\\
@@ -354,9 +519,13 @@ $$\begin{array}{l}
 \;\;0\;?\;?\;?\;?\;?\;?\;?\\
 \;\;\;\;0\;?\;?\;?\;?\;?\;?\;?\\
 \;\;\;\;\;\;0\;0\;0\;0\;0\;0\;0\;0\\
-        \end{array}$$
+        \end{array}
 
-$$\begin{array}{l}
+$$
+
+$$
+
+\begin{array}{l}
 1\;1\;1\;1\;1\;1\;1\;1\;1\\
 \;\;1\;?\;?\;?\;?\;?\;?\;?\\
 \;\;\;\;1\;?\;?\;?\;?\;?\;?\;?\\
@@ -365,10 +534,16 @@ $$\begin{array}{l}
 \;\;1\;?\;?\;?\;?\;?\;?\;?\\
 \;\;\;\;1\;?\;?\;?\;?\;?\;?\;?\\
 \;\;\;\;\;\;1\;1\;1\;1\;1\;1\;1\;1\\
-        \end{array}$$ FIGURE 3.8 Fill in these friezes, using the
+        \end{array}
+
+$$
+
+ FIGURE 3.8 Fill in these friezes, using the
 diamond rule.
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
 0\;0\;0\;0\;0\;0\;0\;0\;0\\
 \;\;0\;1\;2\;5\;6\;4\;3\;0\\
 \;\;\;\;0\;2\;6\;10\;9\;6\;2\;0\\
@@ -377,9 +552,13 @@ $$\begin{array}{l}
 \;\;0\;1\;4\;8\;10\;8\;4\;0\\
 \;\;\;\;0\;2\;3\;6\;5\;4\;1\;0\\
 \;\;\;\;\;\;0\;0\;0\;0\;0\;0\;0\;0\\
-        \end{array}$$
+        \end{array}
 
-$$\begin{array}{l}
+$$
+
+$$
+
+\begin{array}{l}
     1\;1\;1\;1\;1\;1\;1\;1\;1\;1\\
     \;\;1\;2\;2\;4\;2\;1\;3\;2\;4\;1\\
     \;\;\;\;1\;3\;7\;7\;1\;2\;5\;7\;3\;1\\
@@ -388,7 +567,9 @@ $$\begin{array}{l}
     \;\;1\;2\;5\;7\;3\;1\;3\;7\;7\;1\\
     \;\;\;\;1\;3\;2\;4\;1\;2\;2\;4\;2\;1\\
     \;\;\;\;\;\;1\;1\;1\;1\;1\;1\;1\;1\\
-\end{array}$$
+\end{array}
+
+$$
 
 FIGURE 3.9 Filled in frieze patterns repeat after so many steps.
 
@@ -405,12 +586,16 @@ why.
 For multiplicative frieze patterns, the essential observation is that
 for any six entries such as
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
             \quad b \\
             a\quad\; d \\
             \quad c\quad\; f\\
             \quad\quad e
-        \end{array}$$
+        \end{array}
+
+$$
 
 we have $(a + e)/c = (b + f)/d$. Figure 3.10 shows how this implies that
 a number $x$ just above the lower row of ones will reappear sometime
@@ -419,15 +604,25 @@ later, just below the upper row of ones.
 There are other ways of starting than by using a zigzag of Is. In fact,
 you can use any diagonal sequence of numbers
 
-$$1 = a_0, a_1,\dots,a_n = 1 \text{ such that } a_i \text{ divides } a_{i-1} + a_{i+1}$$
+$$
+
+1 = a_0, a_1,\dots,a_n = 1 \text{ such that } a_i \text{ divides } a_{i-1} + a_{i+1}
+
+$$
 
 How many such sequences are there? We'll tell you the answer in the next
 chapter.
 
 \% todo
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
             \frac{x+0}{1}=\dots=\frac{a+e}{c}=\frac{b+f}{d}=\dots=\frac{0+}{1}\\
             \text{so }x=y\\
-        \end{array}$$ FIGURE 3.10 How mutiplicative frieze patterns
+        \end{array}
+
+$$
+
+ FIGURE 3.10 How mutiplicative frieze patterns
 reflect

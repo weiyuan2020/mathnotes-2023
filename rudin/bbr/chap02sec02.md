@@ -1,6 +1,5 @@
 # Metric space
 
-
 ### mydef:2.15 
  set $X$ metric space $p\in X$, $p$
 point.
@@ -13,8 +12,6 @@ b.  $d(p,q) = d(q,p)$.
 
 c.  $d(p,q) \leq d(p,r) + d(r,q)$, $\forall r\in X$
 
-
-
 the distance of the euclidean space $\mathbb{R}^k$ is defined by
 
 \label{eq:2.19}
@@ -23,9 +20,8 @@ $$
 
         d(\mathbf{x}, \mathbf{y}) = |\mathbf{x} - \mathbf{y}|
         \qquad (\mathbf{x}, \mathbf{y}\in \mathbb{R}^k)
+
 $$
-
-
 
 It's important to observe that every subset $Y$ of metric space $X$ is a
 metric space in its own right, with the same distance function. For it
@@ -38,7 +34,6 @@ Thus every subset of a euclidean space is a metric space. Other examples
 are the spaces $l(K)$ and $L^2 (\mu)$, which are discussed in Chaps. 7
 and 11, respectively.
 
-
 ### mydef:2.17 
  By the $(a, b)$ we mean the set of
 all real numbers $x$ such that $a < x <b$.
@@ -49,7 +44,6 @@ $a \leq x \leq b$
 Occasionally we shall also encounter "half-open intervals" $[a, b)$ and
 $(a, b]$; the first consists of all $x$ such that $a \leq x < b$, the
 second of all $x$ such that $a < x \leq b$
-
 
 If $a_i <b_i$ for $i=1,...,k$, the set of all points
 $\mathbf{x} =(x_1, ..., x_k)$ in $\mathbb{R}^k$ whose coordinates satisfy the
@@ -63,28 +57,29 @@ $|\mathbf{y} - \mathbf{x}| \leq r$).
 
 We call a set $E \subset \mathbb{R}^k$ if
 
-
 $$
+
 \lambda\mathbf{x} + (1 - \lambda)\mathbf{y} \in E
-$$
 
+$$
 
 whenever $\mathbf{x} \in E$, $\mathbf{y} \in E$, and $0 < \lambda < 1$.
 
 For example, . For if \|y -x\| \<r, \|z-x\| \<r, and $0 < \lambda <1$,
 we have 
+
 $$
+
 \begin{aligned}
     |\lambda \mathbf{y} + (1-\lambda) \mathbf{z} - \mathbf{x}|
     & = |\lambda (\mathbf{y} - \mathbf{x}) + (1 - \lambda)(\mathbf{z} - \mathbf{x})\\ 
     & \leq \lambda |\mathbf{y} - \mathbf{x}| + (1 - \lambda)|\mathbf{z} - \mathbf{x}| < \lambda r + (1 - \lambda)r\\ 
     & = r.\end{aligned}
-$$
 
+$$
 
 The same proof applies to closed balls. It is also easy to see that
 $k$-cells are convex.
-
 
 ### mydef:2.18 
  Definition Let $X$ be a metric space.
@@ -120,45 +115,47 @@ subsets of $X$.
 (j) $E$ is in $X$ if every point of $X$ is a limit point of $E$, or a
     point of $E$ (or both).
 
-
 Let us note that in $\mathbb{R}^1$ neighborhoods are segments, whereas in $\mathbb{R}^2$
 neighborhoods are interiors of circles.
 
-
 ### thm:2.19 
  Every neighborhood is an open set.
-
-
 
 *Proof.* Consider a neighborhood $E = N_r(p)$, and let $q$ be any point
 of $E$. Then there is a positive real number $h$ such that
 
 $$
+
 d(p, q) = r - h.
+
 $$
+
  For all points $s$ such that $d(q, s) < h$, we have
 then 
+
 $$
+
 d(p, s) \leq d(p, q) + d(q, s) < r - h + h = r,
+
 $$
+
  so that
 $s \in E$. Thus $q$ is an interior point of $E$. ◻
-
-
 
 ### thm:2.20 
  If $p$ is a limit point of a set $E$,
 then every neighborhood of $p$ contains infinitely many points of $E$.
-
-
 
 *Proof.* Suppose there is a neighborhood $N$ of $p$ which contains only
 a finite number of points of $E$. Let $q_1, ... , q_n$ be those points
 of $N \cap E$, which are distinct from $p$, and put
 
 $$
+
 r = \min_{1 \leq m \leq n} d(p, q_m)
+
 $$
+
  \[we use this notation to
 denote the smallest of the numbers $d(p, q_1), ..., d(p, q_n)$\]. The
 minimum of a finite set of positive numbers is clearly positive, so that
@@ -168,11 +165,7 @@ The neighborhood $N_r(p)$ contains no point $q$ of $E$ such that
 $q \neq p$, so that $p$ is not a limit point of $E$. This contradiction
 establishes the theorem. ◻
 
-
-
 A finite point set has no limit points.
-
-
 
 ### newexample:2.21 
  Let us consider the
@@ -195,10 +188,8 @@ following subsets of $\mathbb{R}^{2}$:
 
 (g) The segment $(a,b)$.
 
-
 Let us note that (d),(e),(g)can be regarded also as subsets of $\mathbb{R}^{1}$.
 Some properties of these sets are tabulated below:
-
 
   ------- -------- ------ --------- ---------
            Closed   Open   Perfect   Bounded
@@ -211,11 +202,9 @@ Some properties of these sets are tabulated below:
   \(g\)      No              No        Yes
   ------- -------- ------ --------- ---------
 
-
 In (g), we left the second entry blank. The reason is that the segment
 $(a,b)$ is not open if we regard it as a subset of $\mathbb{R}^2$, but it is an
 open subset of $\mathbb{R}^1$.
-
 
 ### thm:2.22 
  Let $\{E_\alpha\}$ be a (finite or
@@ -225,10 +214,8 @@ infinite) collection of sets $E_\alpha$. Then
 $$
 
         \left(\bigcup_{\alpha} E_{\alpha} \right)^c = \bigcap_{\alpha}( E_{\alpha}^c )
+
 $$
-
-
-
 
 *Proof.* Let $A$ and $B$ be the left and right members of
 (\[\[eq:2.20\]](#eq:2.20){reference-type="ref" reference="eq:2.20"}). If
@@ -243,13 +230,9 @@ $x \in (\cup_\alpha E_\alpha)^c$. Thus $B \subset A$.
 
 It follows that $A = B$. ◻
 
-
-
 ### thm:2.23 
  A set $E$ is open if and only if its
 complement is closed.
-
-
 
 *Proof.* First, suppose $E^c$ is closed. Choose $x \in E$. Then
 $x \not\in E^c$, and $x$ is not a limit point of $E^c$. Hence there
@@ -262,14 +245,9 @@ neighborhood of $x$ contains a point of $E^c$, so that $x$ is not an
 interior point of $E$. Since $E$ is open, this means that $x \in E^c$.
 It follows that $E$ is closed. ◻
 
-
-
 A set $F$ is closed if and only if its complement is open.
 
-
-
 ### thm:2.24 
-
 
 (a) For any collection $\{G_\alpha\}$ of open sets,
     $\cup_\alpha G_\alpha$ is open.
@@ -283,8 +261,6 @@ A set $F$ is closed if and only if its complement is open.
 (d) For any finite collection $F_1, ..., F_n$ of closed sets,
     $\cup_{i=1}^n F_i$ is closed.
 
-
-
 *Proof.* Put
 
 By Theorem \[\[thm:2.22\]](#thm:2.22){reference-type="ref"
@@ -295,16 +271,18 @@ $$
 
         \left( \bigcap_\alpha F_\alpha \right)^c = 
         \bigcup_\alpha \left( F_\alpha^c \right),
+
 $$
+
  ◻
-
-
 
 In parts (c)and (d) of the preceding theorem, the finiteness of the
 collections is essential.
 
 $$
+
 G_n = \left(-\frac{1}{n}, \frac{1}{n} \; (n=1,2,3,\dots). \right)
+
 $$
 
 $G = \cap_{n=1}^\infty G_n$ Then $G$ consists of a single point (namely,
@@ -314,14 +292,10 @@ Thus the intersection of an infinite collection of open sets need not be
 open. Similarly, the union of an infinite collection of closed sets need
 not be closed.
 
-
-
 ### mydef:2.26 
  If $X$ is a metric space, if
 $E \subset X$, and if $E'$ denotes the set of all limit points of $E$ in
 $X$, then the of $E$ is the set $\overline{E}=E \cup E'$.
-
-
 
 ### thm:2.27 
  If $X$ is a metric space and
@@ -334,10 +308,8 @@ $E \subset X$, then
 (c) $E \subset F$ for every closed set $F \subset X$ such that
     $E \subset F$.
 
-
 By (a) and (c), $E$ 1s the smallest closed subset of $X$ that contains
 $E$.
-
 
 *Proof.*
 
@@ -358,23 +330,17 @@ $E$.
 
  ◻
 
-
-
 ### thm:2.28 
  Let $E$ be a nonempty set of real numbers
 which is bounded above. Let $y = \sup E$. Then $y \in \overline{E}$.
 Hence $y \in E$ if $E$ is closed.
 
-
 Compare this with the examples in Sec. 1.9.
-
 
 *Proof.* If $y \in E$ then $y \in \overline{E}$. Assume $y \not\in E$.
 For every $h > 0$ there exists then a point $x \in E$ such that
 $y - h < x < y$, for otherwise $y - h$ would be an upper bound of $E$.
 Thus $y$ is a limit point of $E$. Hence $y \in \overline{E}$. ◻
-
-
 
 ### myremark:2.29 
  Suppose
@@ -392,21 +358,20 @@ Example 2.21(g) showed that a set may be open relative to $Y$ without
 being an open subset of $X$. However, there is a simple relation between
 these concepts, which we now state.
 
-
-
 ### thm:2.30 
  Suppose $Y \subset X$. A subset $E$ of
 $Y$ is open relative to $Y$ if and only if $E = Y \cap G$ for some open
 subset $G$ of $X$.
 
-
-
 *Proof.* Suppose $E$ is open relative to $Y$. To each $p \in E$ there is
 a positive number $r_P$ such that the conditions $d(p, q) < r_P$,
 $q \in Y$ imply that $q \in E$. Let $V_P$ be the set of all $q \in X$
 such that $d(p, q) < r_P$, and define 
+
 $$
+
 G = \bigcup_{p \in E} V_P.
+
 $$
 
 Then $G$ is an open subset of $X$, by Theorems

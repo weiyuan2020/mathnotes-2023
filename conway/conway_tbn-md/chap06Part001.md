@@ -9,7 +9,11 @@ We expect that you are familiar with the more mundane uses of fractions,
 so the real theme of this chapter is how fractions can be used to throw
 light on some subtle properties of whole numbers.
 
-$$\text{Each fraction has many forms: }\frac{4}{6} = \frac{2}{3} = \frac{6}{9}= \frac{202}{303}=\dots$$
+$$
+
+\text{Each fraction has many forms: }\frac{4}{6} = \frac{2}{3} = \frac{6}{9}= \frac{202}{303}=\dots
+
+$$
 
 The **golden rule** for fractions is that you may multiply the numerator
 and the denominator by the same number without affecting the value of
@@ -17,10 +21,14 @@ the fraction. A fraction with no such common factor is in its lowest
 terms (4 in the above example). The golden rule enables you to add,
 subtract, multiply, and divide fractions:
 
-$$\frac{2}{3}+\frac{1}{4} = \frac{8}{12}+\frac{3}{12}=\frac{11}{12};\;
+$$
+
+\frac{2}{3}+\frac{1}{4} = \frac{8}{12}+\frac{3}{12}=\frac{11}{12};\;
     \frac{2}{3}\times \frac{1}{4} = \frac{4}{6} \times \frac{1}{4}=\frac{1}{6};\\
     \;\\
-    \frac{2}{3}\div \frac{1}{4} = \frac{2/3}{1/4} = \frac{8/3}{1} = \frac{8}{3}.$$
+    \frac{2}{3}\div \frac{1}{4} = \frac{2/3}{1/4} = \frac{8/3}{1} = \frac{8}{3}.
+
+$$
 
 Of course, fractions arise all over mathematics and the sciences.
 Indeed, it was this ubiquity that convinced the Pythagorean brotherhood
@@ -37,7 +45,9 @@ suggested arranging all the proper fractions with (owest) denominator up
 to some point, in order of magnitude. For example, the sixth **Farey
 series** is
 
-$$\frac{0}{1}\;
+$$
+
+\frac{0}{1}\;
     \frac{1}{6}\;
     \frac{1}{5}\;
     \frac{1}{4}\;
@@ -49,7 +59,9 @@ $$\frac{0}{1}\;
     \frac{3}{4}\;
     \frac{4}{5}\;
     \frac{5}{6}\;
-    \frac{1}{1}.$$
+    \frac{1}{1}.
+
+$$
 
 Such series have many nice arithmetical properties. For instance, if
 $\frac{a}{c}$ and $\frac{b}{d}$ are consecutive fractions in the series,
@@ -63,7 +75,11 @@ between $\frac{a}{c}$ and $\frac{b}{d}$ is always the **mediant**
 fraction $\frac{a+c}{b+d}$. Thus, to get the seventh Farey series from
 the sixth, we insert
 
-$$\frac{0+1}{1+6}\; \frac{1+1}{4+3}\; \frac{2+2}{5+2}\; \frac{1+3}{2+5}\; \frac{2+3}{3+4}\; \frac{5+1}{6+1}\;.$$
+$$
+
+\frac{0+1}{1+6}\; \frac{1+1}{4+3}\; \frac{2+2}{5+2}\; \frac{1+3}{2+5}\; \frac{2+3}{3+4}\; \frac{5+1}{6+1}\;.
+
+$$
 
 Warning: forming the mediant is *not* the way to add fractions, unless
 you're calculating batting averages!

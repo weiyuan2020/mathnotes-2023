@@ -5,15 +5,21 @@ quick latex for obsidian
 [    
     // Math mode
     {trigger: "mk", replacement: "${$0}$", options: "tA"},
-    {trigger: "dm", replacement: "$$\n$0\n$$", options: "tAw"},
-    {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
+    {trigger: "dm", replacement: "
 
+$$
+
+\n$0\n
+
+$$
+
+", options: "tAw"},
+    {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
 
     // Dashes
     // {trigger: "--", replacement: "–", options: "tA"},
     // {trigger: "–-", replacement: "—", options: "tA"},
     // {trigger: "—-", replacement: "---", options: "tA"},
-
 
     // Greek letters
     {trigger: "@a", replacement: "\\alpha", options: "mA"},
@@ -50,7 +56,6 @@ quick latex for obsidian
     {trigger: "@O", replacement: "\\Omega", options: "mA"},
     {trigger: "([^\\\\])(${GREEK}|${SYMBOL})", replacement: "[[0]]\\[[1]]", options: "rmA", description: "Add backslash before greek letters and symbols"},
 
-
     // Insert space after greek letters and symbols, etc
     {trigger: "\\\\(${GREEK}|${SYMBOL}|${SHORT_SYMBOL})([A-Za-z])", replacement: "\\[[0]] [[1]]", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) sr", replacement: "\\[[0]]^{2}", options: "rmA"},
@@ -65,7 +70,6 @@ quick latex for obsidian
     {trigger: "\\\\(${GREEK}|${SYMBOL}) ove", replacement: "\\overline{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK}),\\.", replacement: "\\boldsymbol{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK})\\.,", replacement: "\\boldsymbol{\\[[0]]}", options: "rmA"},
-
 
     // Operations
     {trigger: "te", replacement: "\\text{$0}", options: "m"},
@@ -84,7 +88,6 @@ quick latex for obsidian
     {trigger: "trace", replacement: "\\mathrm{Tr}", options: "mA"},
     {trigger: "det", replacement: "\\det", options: "mA"},
 	{trigger: "binom", replacement: "\\binom{$0}{$1}$2", options: "mA"},
-
 
     {trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
     {trigger: "([a-zA-Z])\\.,", replacement: "\\mathbf{[[0]]}", options: "rmA"},
@@ -113,15 +116,12 @@ quick latex for obsidian
     {trigger: "\\\\(arcsinh|arccosh|arctanh|arccoth|arcsch|arcsech|sinh|cosh|tanh|coth|csch)([A-Za-z])", replacement: "\\[[0]] [[1]]", options: "rmA"}, // Insert space after trig funcs
     {trigger: "\\\\(neq|geq|leq|gg|ll|sim)([0-9]+)", replacement: "\\[[0]] [[1]]", options: "rmA"}, // Insert space after inequality symbols
 
-
     // Visual operations
     {trigger: "U", replacement: "\\underbrace{ ${VISUAL} }_{ $0 }", options: "mA"},
     {trigger: "B", replacement: "\\underset{ $0 }{ ${VISUAL} }", options: "mA"},
     {trigger: "C", replacement: "\\cancel{ ${VISUAL} }", options: "mA"},
     {trigger: "K", replacement: "\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},
     {trigger: "S", replacement: "\\sqrt{ ${VISUAL} }", options: "mA"},
-
-
 
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
@@ -179,7 +179,6 @@ quick latex for obsidian
     {trigger: "yii", replacement: "y_{i}", options: "mA"},
     {trigger: "yjj", replacement: "y_{j}", options: "mA"},
 
-
     {trigger: "mcal", replacement: "\\mathcal{$0}$1", options: "mA"},
     {trigger: "mscr", replacement: "\\mathscr{$0}$1", options: "mA"},
     {trigger: "mbb", replacement: "\\mathbb{$0}$1", options: "mA"},
@@ -198,8 +197,6 @@ quick latex for obsidian
     {trigger: "BB", replacement: "\\mathbf{B}", options: "mA"},
     {trigger: "EE", replacement: "\\mathbf{E}", options: "mA"},
 
-
-
     // Unit vectors
     {trigger: ":i", replacement: "\\mathbf{i}", options: "mA"},
     {trigger: ":j", replacement: "\\mathbf{j}", options: "mA"},
@@ -207,8 +204,6 @@ quick latex for obsidian
     {trigger: ":x", replacement: "\\hat{\\mathbf{x}}", options: "mA"},
     {trigger: ":y", replacement: "\\hat{\\mathbf{y}}", options: "mA"},
     {trigger: ":z", replacement: "\\hat{\\mathbf{z}}", options: "mA"},
-
-
 
     // Derivatives
     {trigger: "par", replacement: "\\frac{ \\partial ${0:y} }{ \\partial ${1:x} } $2", options: "m"},
@@ -221,8 +216,6 @@ quick latex for obsidian
     {trigger: "de([A-Za-z])([A-Za-z])2", replacement: "\\frac{ d^{2}[[0]] }{ d[[1]]^{2} } ", options: "rmA"},
     {trigger: "ddt", replacement: "\\frac{d}{dt} ", options: "mA"},
 
-
-
     // Integrals
     {trigger: "oinf", replacement: "\\int_{0}^{\\infty} $0 \\, \\mathrm{d}${1:x} $2", options: "mA"},
     {trigger: "infi", replacement: "\\int_{-\\infty}^{\\infty} $0 \\, \\mathrm{d}${1:x} $2", options: "mA"},
@@ -232,11 +225,8 @@ quick latex for obsidian
     {trigger: "iint", replacement: "\\iint", options: "mA"},
     {trigger: "int", replacement: "\\int $0 \\, \\mathrm{d}${1:x} $2", options: "mA"},
 
-
-
     // Physics
     {trigger: "kbt", replacement: "k_{B}T", options: "mA"},
-
 
     // Quantum mechanics
     {trigger: "hba", replacement: "\\hbar", options: "mA"},
@@ -253,7 +243,6 @@ quick latex for obsidian
     {trigger: "big|", replacement: "\\Bigg|_{${0:0}}^{${1:\\infty}} ", options: "mA"},
     {trigger: "box", replacement: "\\boxed{$0} ", options: "mA"},
 
-
     // Chemistry
     {trigger: "pu", replacement: "\\pu{ $0 }", options: "mA"},
     {trigger: "msun", replacement: "M_{\\odot}", options: "mA"},
@@ -262,8 +251,6 @@ quick latex for obsidian
     {trigger: "iso", replacement: "{}^{${0:4}}_{${1:2}}${2:He}", options: "mA"},
     {trigger: "hel4", replacement: "{}^{4}_{2}He ", options: "mA"},
     {trigger: "hel3", replacement: "{}^{3}_{2}He ", options: "mA"},
-
-
 
     // Environments
     {trigger: "pmat", replacement: "\\begin{pmatrix}\n$0\n\\end{pmatrix}", options: "mA"},
@@ -275,8 +262,6 @@ quick latex for obsidian
     {trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
     {trigger: "array", replacement: "\\begin{array}{$0}\n$1\n\\end{array}", options: "mA"},
     {trigger: "matrix", replacement: "\\begin{matrix}\n$0\n\\end{matrix}", options: "mA"},
-
-
 
     // Brackets
     {trigger: "avg", replacement: "\\langle $0 \\rangle $1", options: "mA"},
@@ -295,8 +280,6 @@ quick latex for obsidian
     {trigger: "lra", replacement: "\\left< $0 \\right> $1", options: "mA"},
     {trigger: "ceiling", replacement: "\\lceil $0 \\rceil $1", options: "mA"},
     {trigger: "floor", replacement: "\\lfloor $0 \\rfloor $1", options: "mA"},
-
-
 
     // Misc
     {trigger: "tayl", replacement: "${0:f}(${1:x} + ${2:h}) = ${0:f}(${1:x}) + ${0:f}'(${1:x})${2:h} + ${0:f}''(${1:x}) \\frac{${2:h}^{2}}{2!} + \\dots$3", options: "mA"},

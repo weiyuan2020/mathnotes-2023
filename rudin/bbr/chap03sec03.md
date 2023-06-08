@@ -1,16 +1,13 @@
 # Cauchy sequences
 
-
 ### mydef:3.8 
  A sequence $\{p_n\}$ in a metric space
 $X$ is said to be a *Cauchy sequence* if for every $\varepsilon > 0$
 there is an integer $N$ such that $d(p_n, p_m) <e$ if $n \geq N$ and
 $m \geq N$.
 
-
 In our discussion of Cauchy sequences, as well as in other situations
 which will arise later, the following geometric concept will be useful.
-
 
 ### mydef:3.9 
  Let $E$ be a nonempty subset of a
@@ -18,43 +15,40 @@ metric space $X$, and let $S$ be the set of all real numbers of the form
 $d(p, q)$, with $p \in E$ and $q \in E$. The sup of $S$ is called the of
 $E$.
 
-
 If $\{p_n\}$ is a sequence in $X$ and if $E_N$ consists of the
 points $p_N, p_{N+1}, p_{N+2},\dots$, it is clear from the two preceding
 definitions that $\{p_n\}$ is a *if and only if*
 
-
 $$
+
 \lim_{N \to \infty} \diam E_N = 0.
+
 $$
-
-
 
 ### thm:3.10 
 
-
-
 If $\overline{E}$ is the closure of a set $E$ in a metric space $X$,
 then 
-$$
-\diam E = \diam E.
+
 $$
 
+\diam E = \diam E.
+
+$$
 
 If $K_n$ is a sequence of compact sets in $X$ such that
 $K_n \supset K_{n+1}$ $(n=1,2,3,...)$and if
 
 $$
+
 \lim_{n \to \infty} \diam K_n = 0,
+
 $$
+
  then $\cap_1^\infty K_n$ consists
 of exactly one point.
 
-
-
-
 ### thm:3.11 
-
 
 (a) In any metric space $X$, every convergent sequence is a Cauchy
     sequence.
@@ -64,7 +58,6 @@ of exactly one point.
     $X$.
 
 (c) In $\mathbb{R}^{k}$, every Cauchy sequence converges.
-
 
 Note: The difference between the definition of convergence and the
 definition of a Cauchy sequence is that the limit is explicitly involved
@@ -78,11 +71,9 @@ The fact (contained in Theorem
 that a sequence converges in $\mathbb{R}^{k}$ if and only if it is a Cauchy
 sequence is usually called the *Cauchy criterion* for convergence.
 
-
 ### mydef:3.12 
  A metric space in which every Cauchy
 sequence converges is said to be *complete*.
-
 
 Thus Theorem \[\[thm:3.11\]](#thm:3.11){reference-type="ref"
 reference="thm:3.11"} says that *all compact metric spaces and all
@@ -102,7 +93,6 @@ in $\mathbb{R}^{k}$ need not converge. However, there is one important case in
 which convergence is equivalent to boundedness; this happens for
 monotonic sequences in $\mathbb{R}^{1}$.
 
-
 ### mydef:3.13 
  A sequence $\{s_n\}$ of real
 numbers is said to be
@@ -110,8 +100,6 @@ numbers is said to be
 (a) monotonically increasing if $s_n \leq s_{n+1}$ $(n=1,2,3,...)$;
 
 (b) monotonically decreasing if $s_n \geq s_{n+1}$ $(n=1,2,3,...)$.
-
-
 
 ### thm:3.14 
  Theorem Suppose $\{s_n\}$ is

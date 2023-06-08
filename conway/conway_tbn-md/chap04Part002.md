@@ -34,14 +34,18 @@ distinguishable. Add the mirror-images of trees in the last row.
 
 How many values can you expect from an n-fold exponential? (Figure 4.6)
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     3^2 =9\\
     (4^3)^2 = 4^6, 4^{3^2} = 4^9.\\
     ((5^4)^3)^2= 5^{24},
     5^{(4^{(3^2)})}= 5^{262144},
     (5^{(4^{3})})^2= 5^{128},\\
     (5^{4})^{(3^2)}= 5^{36},
-    5^{((4^3)^2)}= 5^{4096},\end{aligned}$$
+    5^{((4^3)^2)}= 5^{4096},\end{aligned}
+
+$$
 
 FIGURE 4.6 Laddered exponents give varied values.
 
@@ -74,7 +78,9 @@ ways by rotating.
 
 # CATALAN NUMBERS
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
         1\\
         1\;1\\
         1\;2\;1\\
@@ -84,21 +90,50 @@ $$\begin{array}{c}
         1\;6\;15\;20\;15\;6\;1\\
         1\;7\;21\;35\;35\;21\;7\;1\\
         1\;8\;28\;56\;70\;56\;28\;8\;1\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 Figure 4.11 7he central binomial coefficients.
 
 Look at the middle numbers in Pascal's triangle (Figure 4.11):
-$$1, 2, 6, 20, 70, 252, 924, 3432, 12870, 48620, ....$$ It seems that we
-can divide them by $$1, 2, 3, 4, 5, 6, 7, 8,9, 10,...$$ to give the
+
+$$
+
+1, 2, 6, 20, 70, 252, 924, 3432, 12870, 48620, ....
+
+$$
+
+ It seems that we
+can divide them by 
+
+$$
+
+1, 2, 3, 4, 5, 6, 7, 8,9, 10,...
+
+$$
+
+ to give the
 whole number sequence
 
-$$1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, ....$$
+$$
+
+1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, ....
+
+$$
 
 A typical middle number is the binomial coefficient, $\binom{2n}{n}$, so
-our guess is that $$\frac{1}{n+1}\binom{2n}{n}=
+our guess is that 
+
+$$
+
+\frac{1}{n+1}\binom{2n}{n}=
     \frac{(2n)!}{n!(n+1)!}=
-    \frac{1}{2n+1}\binom{2n+1}{n}=c_n,$$ say, isa whole number. These
+    \frac{1}{2n+1}\binom{2n+1}{n}=c_n,
+
+$$
+
+ say, isa whole number. These
 numbers are called **Catalan numbers**.
 
 Now we'll show that all the preceding problems have the same answer.
@@ -176,7 +211,13 @@ mountains with $3$ upstrokes and $3$ downstrokes.
 In general, the mountains with $n$ upstrokes and $n$ downstrokes
 correspond to the
 
-$$\frac{1}{2n+1} \binom{2n+1}{n}$$ FIGURE 4.21 Mountain ranges with $4$
+$$
+
+\frac{1}{2n+1} \binom{2n+1}{n}
+
+$$
+
+ FIGURE 4.21 Mountain ranges with $4$
 upstrokes and $3$ downstrokes.
 
 different cyclic patterns of $n + 1$ upstrokes and $n$ downstrokes. This

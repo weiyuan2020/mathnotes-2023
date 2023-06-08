@@ -27,12 +27,20 @@ followed by the shift "$+c$" takes $0$ to $b + c$ and so must be the
 shift "$+(b + c)$." This establishes the **associative law of
 addition**:
 
-$$(a+b) +c=a+(b+c)$$
+$$
+
+(a+b) +c=a+(b+c)
+
+$$
 
 and if we replace shifts by twirls we similarly find the **associative
 law of multiplication**:
 
-$$(ab)c = a(bc).$$
+$$
+
+(ab)c = a(bc).
+
+$$
 
 In fact, ali the algebraic rules have easy geometrical explanations.
 
@@ -46,13 +54,17 @@ quarter-turns make a half-turn (Figure 8.5(b)), so if you follow
 "$\times i$" by another "$\times i$" you get the same effect as
 "$\times (-1)$". So indeed
 
-$$\boxed{
+$$
+
+\boxed{
 \begin{array}{c}
 \text{if you multiply a complex number by $i$,} \\
 \text{and then by $i$ again, you’ve multiplied it by $-1$,} \\
 z\times i\times i=z\times(-1)=-z \quad i\times i=-1 \\
 \end{array}
-}$$
+}
+
+$$
 
 Our geometrical definitions have produced a system of numbers that have
 a square root of $-1$ and satisfy the usual algebraic rules.
@@ -107,7 +119,9 @@ unique factorization will work as well for the Gaussian integers.
 Let's see why $13$ is't prime as a *Gaussian* number. From Wilson's test
 for primality we know that $13$ divides
 
-$$12+1=
+$$
+
+12+1=
 1\times
 2\times
 3\times
@@ -119,9 +133,15 @@ $$12+1=
 9\times
 10\times
 11\times
-12+1.$$
+12+1.
 
-Working modulo $13$, this is congruent to $$1\times
+$$
+
+Working modulo $13$, this is congruent to 
+
+$$
+
+1\times
 2\times
 3\times
 4\times
@@ -132,7 +152,9 @@ Working modulo $13$, this is congruent to $$1\times
 (-4) \times
 (-3) \times
 (-2) \times
-(-1)+ 1,$$
+(-1)+ 1,
+
+$$
 
 which is $(6!)^2+ 1 = (6!)^2-i^2 = (6!+ i)(6!-i)$, so, as a Gaussian
 integer, $13$ can't be prime since it divides the product of $6!+i$ and
@@ -152,11 +174,14 @@ Fermat's two-square theorem.
 
 In the *Gaussian* world,
 
-$$2=(1+i)(1-i)=1^2+1^2, \\
+$$
+
+2=(1+i)(1-i)=1^2+1^2, \\
 3\text{ is still prime}, \\
 5=(2+i)(2-i)=2^2+1^2, \\
 7\text{ and 11 are still primes}, \\
 13 = (3+2i)(3-2i) = 3^2 + 2^2. \\
+
 $$
 
 The expression of a prime as the sum of two squares, when possible, is
@@ -186,7 +211,11 @@ by the Eisenstein units.
 The analog of Fermat's sum of two squares theorem is that an ordinary
 prime number $p$ can be written in the form
 
-$$a^2-ab+b^2=(a+b\omega)(a+b\omega^2)$$
+$$
+
+a^2-ab+b^2=(a+b\omega)(a+b\omega^2)
+
+$$
 
 FIGURE 8.10 (a) The triangular lattice of Eisenstein integers. (b) The
 size of the remainder when you divide by an Eisenstein integer.
@@ -197,22 +226,29 @@ primes
 just if $3$ does not divide $p + 1$. These are precisely the ordinary
 primes that factor in the world of Eisenstein integers:
 
-$$3 = (2 + \omega)(2 + \omega^2) = -\omega(2 + \omega)^2, \\
+$$
+
+3 = (2 + \omega)(2 + \omega^2) = -\omega(2 + \omega)^2, \\
 7 = (3 + \omega)(2 + \omega^2),\\
 13 = (4+ \omega)(4 + \omega^2),\\
 19 = (5 + 2\omega)(5 + 2\omega^2),\\
 31 = (6 + \omega)(6 + \omega^2),\\
+
 $$
 
 and so on: they are just the primes that can be expressed in the form
 $3m^2 + n^2$. To see this, use one of these three forms of
 $a^2 - ab + b$:
 
-$$3\biggl(\frac{a}{2}\biggr)^2
+$$
+
+3\biggl(\frac{a}{2}\biggr)^2
     +\biggl(\frac{a}{2}-b\biggr)^2 \quad
     3\biggl(\frac{b}{2}\biggr)^2
     +\biggl(\frac{b}{2}-a\biggr)^2 \quad
     3\biggl(\frac{a-b}{2}\biggr)^2
-    +\biggl(\frac{a+b}{2}\biggr)^2$$
+    +\biggl(\frac{a+b}{2}\biggr)^2
+
+$$
 
 according as it is $a, b$ or $a + b$ that is even.

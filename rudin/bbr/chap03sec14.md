@@ -1,6 +1,5 @@
 # Rearrangements
 
-
 ### mydef:3.52 
  Let $\{k_n\}, n=1,2,3,\dots,$
 be a sequence in which every positive integer appears once and only once
@@ -9,11 +8,13 @@ notation of Definition \[\[mydef:2.2\]](#mydef:2.2){reference-type="ref"
 reference="mydef:2.2"}). Putting
 
 $$
+
 a'_n = a_{k_n} \quad (n = 1,2,3,\dots),
+
 $$
+
  we say that $\sum a'_n$ is a
 rearrangements of $\sum a_n$.
-
 
 If $\{s_n}$ , $\sequence{s'_n\}$ are the sequences of partial
 sums of $\{a_n}$ , $\sequence{a'_n\}$ , it is easily seen that,
@@ -21,7 +22,6 @@ in general, these two sequences consist of entirely different numbers.
 We are thus led to the problem of determining under what conditions all
 rearrangements of a convergent series will converge and whether the sums
 are necessarily the same.
-
 
 Consider the convergent series 
 \label{eq:3.22}
@@ -35,7 +35,9 @@ $$
         +\frac{1}{5}
         -\frac{1}{6}
         +\cdots
+
 $$
+
  and one of its rearrangements 
 \label{eq:3.23}
 
@@ -51,34 +53,49 @@ $$
         +\frac{1}{11}
         -\frac{1}{6}
         +\cdots
+
 $$
+
  in which two positive terms are always followed by one
 negative. If $s$ is the sum of
 (\[\[eq:3.22\]](#eq:3.22){reference-type="ref" reference="eq:3.22"}),
 then 
+
 $$
+
 s < 1 - \frac{1}{2} + \frac{1}{3} = \frac{5}{6}.
+
 $$
+
  Since
 
 $$
+
 \frac{1}{4k-3} + 
         \frac{1}{4k-1} - 
         \frac{1}{2k} > 0
+
 $$
+
  for $k \geq 1$ , we see that
 $s'_3 < s'_6 < s'_9 < \cdots$ , where $s'_n$ is $n$th partial sum of
 (\[\[eq:3.23\]](#eq:3.23){reference-type="ref" reference="eq:3.23"}). 
 Hence 
+
 $$
+
 \limsup_{n \to \infty} s'_n > s'_3 = \frac{5}{6},
+
 $$
+
  so that
 (\[\[eq:3.23\]](#eq:3.23){reference-type="ref" reference="eq:3.23"})
 certainly does not converge to $s$. \[verigy
 (\[\[eq:3.23\]](#eq:3.23){reference-type="ref" reference="eq:3.23"})
 converge\] my: 
+
 $$
+
 \begin{aligned}
         \frac{1}{4k-3} + 
         \frac{1}{4k-1} - 
@@ -91,26 +108,30 @@ $$
         &< \frac{4}{(4(k-1))^2}
         = \frac{}{4(k-1)^2}
     \end{aligned}
+
 $$
+
  because $\sum 1/n^2$ converge,
 (\[\[eq:3.23\]](#eq:3.23){reference-type="ref" reference="eq:3.23"})
 converge.
 
-
 This example illustrates the following theorem, due to Riemann.
-
 
 ### thm:3.54 
  Let $\sum a_n$ be a series of real
 numbers which converges, but not absolutely. Suppose 
+
 $$
+
 \begin{aligned}
         -\infty 
         \leq \alpha 
         \leq \beta 
         \leq \infty.
     \end{aligned}
+
 $$
+
  Then there exists a rearrangement $\sum a'_n$ with
 partial sum $\sum s'_n$ such that 
 \label{eq:3.24}
@@ -119,17 +140,19 @@ $$
 
         \liminf_{n \to \infty} s'_n = \alpha,\quad
         \limsup_{n \to \infty} s'_n = \beta.
+
 $$
-
-
-
 
 *Proof.* Let 
+
 $$
+
 p_n = \frac{\left| a_n \right| + a_n}{2}, \quad
         q_n = \frac{\left| a_n \right| - a_n}{2}, \quad
         (n = 1,2,3,\dots).
+
 $$
+
  Then $p_n - q_n = a_n$ , $p_n + q_n = a_n$
 , $p_n \geq 0$ , $q_n \geq 0$ . The series $\sum p_n, \sum q_n$ must
 both diverge.
@@ -137,16 +160,23 @@ both diverge.
 For if both were convergent, then
 
 $$
+
 \sum (p_n + q_n) = \sum \left| a_n \right|
+
 $$
+
  would converge, contrary
 to hypothesis. Since 
+
 $$
+
 \sum_{n=1}^{N} a_n = 
         \sum_{n=1}^{N} (p_n - q_n) = 
         \sum_{n=1}^{N} p_n -
         \sum_{n=1}^{N} q_n ,
+
 $$
+
  divergence of $\sum p_n$ and convergence
 of $\sum q_n$ (or vice versa) implies divergence of $\sum a_n$ , again
 contrary to hypothesis.
@@ -170,7 +200,9 @@ $$
             &+ \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} \\ 
             &+ P_{m_1 + 1} + \cdots + P_{m_2} - Q_{k_1 + 1} - \cdots - Q_{k_2} + \cdots,
         \end{aligned}
+
 $$
+
  which clearly is a rearrangement of $\sum a_n$ ,
 satisfies (\[\[eq:3.24\]](#eq:3.24){reference-type="ref"
 reference="eq:3.24"}).
@@ -180,20 +212,27 @@ such that $\alpha_n \rightarrow \alpha$ , $\beta_n \rightarrow \beta$ ,
 $\alpha_n < \beta_n$ , $\beta_1 > 0$.
 
 Let $m_1, k_1$ be the smallest integers such that 
+
 $$
+
 \begin{aligned}
         &P_1 + \cdots + P_{m_1} > \beta_1,\\ 
         &P_1 + \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} < \alpha_1;
     \end{aligned}
+
 $$
+
  let $m_2, k_2$ be the smallest integers such that
 
 $$
+
 \begin{aligned}
         &P_1 + \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} + P_{m_1 + 1} + \cdots + P_{m_2} > \beta_2,\\ 
         &P_1 + \cdots + P_{m_1} - Q_1 - \cdots - Q_{k_1} + P_{m_1 + 1} + \cdots + P_{m_2} - Q_{k_1 + 1} - \cdots - Q_{k_2} < \alpha_2;
     \end{aligned}
+
 $$
+
  and continues in this way. This is possible since
 $\sum P_n$ and $\sum Q_n$ diverge.
 
@@ -202,9 +241,12 @@ If $x_n, y_n$ denote the partial sums of
 whose last terms are $P_{m_n}$ , $-Q_{k_n}$ , then
 
 $$
+
 \left| x_n - \beta_n \right| \leq P_{m_n}, \quad
         \left| y_n - \alpha_n \right| \leq Q_{k_n}.
+
 $$
+
  Since
 $P_n \rightarrow 0$ and $Q_n \rightarrow 0$ as $n \rightarrow \infty$ ,
 we see that $x_n \rightarrow \beta, y_n \rightarrow \alpha$ .
@@ -213,14 +255,10 @@ Finally, it is clearly that no number less than $\alpha$ or greater than
 $\beta$ can be a subsequential limit of the partial sums of
 (\[\[eq:3.25\]](#eq:3.25){reference-type="ref" reference="eq:3.25"}). ◻
 
-
-
 ### thm:3.55 
  If $\sum a_n$ is a series of complex
 numbers which converges absolutely, then every rearrangement of
 $\sum a_n$ converges, and they all converge to the same sum.
-
-
 
 *Proof.* Let $\sum a'_n$ be a rearrangement, with partial sums
 $\sum s'_n$ . Given $\varepsilon > 0$ , there exists an integer $N$ such
@@ -230,7 +268,9 @@ that $m \geq n \geq N$ implies
 $$
 
         \sum_{i=n}^{m} \left| a_i \right| \leq \varepsilon.
+
 $$
+
  Now choose
 $p$ such that the integers $1,2,\dots,N$ are all contained in the set
 $k_1, k_2, \dots, k_p$ (we use the notation of Definition

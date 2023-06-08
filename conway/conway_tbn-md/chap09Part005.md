@@ -5,13 +5,19 @@ $\Biggl(1 + \cfrac{1}{N}\Biggr)^N$ for some large $N$: the larger the
 value of $N$, the better the approximation. For instance, $e^5$ is
 approximately
 
-$$\Biggl(1+\frac{1}{2000}\Biggr)^{2000\times 5}=\Biggl(1+\frac{5}{10000}\Biggr)^{10000}$$
+$$
+
+\Biggl(1+\frac{1}{2000}\Biggr)^{2000\times 5}=\Biggl(1+\frac{5}{10000}\Biggr)^{10000}
+
+$$
 
 and in general, $e^x$ is approximately $\Biggl(1+\cfrac{x}{N}\Biggr)^N$
 for large $N$. By the binomial theorem,
 $\Biggl(1+\frac{x}{100}\Biggr)^{1000}$
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
     =1
     +\frac{1000}{1!}\Biggl(\frac{x}{1000}\Biggr)
     +\frac{1000\times 999}{2!}\Biggl(\frac{x}{1000}\Biggr)^{2}
@@ -22,28 +28,40 @@ $$\begin{array}{l}
     +0.999\frac{x^{2}}{2!}
     +0.999\times 0.998\frac{x^{3}}{3!}
     +\dots.\\
-\end{array}$$
+\end{array}
+
+$$
 
 Taking larger and larger values of $N$, we approach the ultimately
 correct formula
 
-$$e^x=1
+$$
+
+e^x=1
     +\frac{x}{1!}
     +\frac{x^{2}}{2!}
     +\frac{x^{3}}{3!}
-    +\dots.$$
+    +\dots.
+
+$$
 
 In particular, Napier's number has the elegant form
 
-$$e^x=1
+$$
+
+e^x=1
     +\frac{1}{1!}
     +\frac{1}{2!}
     +\frac{1}{3!}
-    +\dots.$$
+    +\dots.
+
+$$
 
 from which it's very easy to calculate $e$ with considerable accuracy:
 
-$$\begin{array}{ll}
+$$
+
+\begin{array}{ll}
 1.00000\; 00000, & \text{divide by } 1    \\
 1.00000\; 00000, & \text{divide by } 2    \\
 0.50000\; 00000, & \text{divide by } 3    \\
@@ -60,7 +78,9 @@ $$\begin{array}{ll}
 0.00000\; 00002, & \text{and add up}      \\
 \hline\\
 2.71828\; 18286 & \\
-\end{array}$$
+\end{array}
+
+$$
 
 with an accumulated error of $1$ in the tenth decimal place.
 
@@ -70,7 +90,9 @@ We ask first whether $e$ is *rational*. We see that $7e$ is roughly
 $19.028$, so that $19/7$ is quite a good approximation for $e$. Could it
 be that $7e$ was exactly $19$? No! For if so, we'd have
 
-$$\begin{array}{rl}
+$$
+
+\begin{array}{rl}
 \frac{19}{7}=e=1
 +&\frac{1}{1!}
 +\frac{1}{2!}
@@ -82,16 +104,22 @@ $$\begin{array}{rl}
 +\frac{1}{8!}
 +\frac{1}{9!}\\
 &+\text{ a known error}.\\
-\end{array}$$
+\end{array}
+
+$$
 
 All the fractions you can see can be written to the common denominator
 $9! = 362880$, so the error, which is positive, would be at least
 $1/362880 = 1/9!$ But in fact the error is exactly
 
-$$\frac{1}{10!}
+$$
+
+\frac{1}{10!}
 +\frac{1}{11!}
 +\frac{1}{12!}
-+\dots,$$
++\dots,
+
+$$
 
 which is much less than $1/9!$. The point is that by stopping the series
 at some term we obtain close approximations, $n/d$, in which the error,
@@ -104,18 +132,26 @@ $(5 + \sqrt{10})/3$, it would satisfy the equation $3e^2 - 10e + 5 = 0$,
 and $3e + (5/e)$ would equal the rational number $10$. This is disproved
 using the close approximations obtained from the series
 
-$$3e+\frac{5}{e}=
+$$
+
+3e+\frac{5}{e}=
  \frac{3+5}{0!}+\frac{3-5}{1!}
 +\frac{3+5}{2!}+\frac{3-5}{3!}
-+\frac{3+5}{4!}+\dots.$$
++\frac{3+5}{4!}+\dots.
+
+$$
 
 The same method also shows that $e^{\sqrt{2}}$ and $e^{i\sqrt{2}}$ are
 irrational. The real part of $e^{i\sqrt{2}}$ is given by the series
 
-$$1
+$$
+
+1
 -\frac{2^{ }}{2!}+\frac{2^{2}}{4!}
 -\frac{2^{3}}{6!}+\frac{2^{4}}{8!}
--\frac{2^{5}}{10!}+\dots,$$
+-\frac{2^{5}}{10!}+\dots,
+
+$$
 
 where the powers of $2$ cancel exactly, so we do indeed get close
 approximations in our precise sense by stopping at any term. Note that
@@ -150,7 +186,11 @@ other than $0$ or $1$ and $\beta$ is an irrational algebraic number.
 Lindemann's and Baker's theorems imply that the standard functions (for
 algebraic numbers $b$ and $x$)
 
-$$\cos x, \sin x, \tan x, \log_b x, \ln x, e^x$$
+$$
+
+\cos x, \sin x, \tan x, \log_b x, \ln x, e^x
+
+$$
 
 take transcendental values except at some very obvious places. In
 particular, our Gregory numbers $t_{a/b}$ are transcendental, since
@@ -163,18 +203,33 @@ $\Biggl(1+\cfrac{x}{N}\Biggr)^N$ works also for complex numbers $x$.
 
 This equation
 
-$$\boxed{e^{i\pi}+1=0}$$
+$$
+
+\boxed{e^{i\pi}+1=0}
+
+$$
 
 appears in Euler's *Introductio*, published in Lausanne in 1748. It is
 justly celebrated as one of the most remarkable identities in all of
 mathematics.
 
 For the thought will console (as it jolly well ought) that it's
-$$e^{\pi i}+1=0$$ "Diogenes"
+
+$$
+
+e^{\pi i}+1=0
+
+$$
+
+ "Diogenes"
 
 However, Euler's equation is no longer mysterious. It means just that
 
-$$\Biggl(1+\cfrac{i\pi}{N}\Biggr)^N$$
+$$
+
+\Biggl(1+\cfrac{i\pi}{N}\Biggr)^N
+
+$$
 
 gets closer and closer to $-1$ as $N$ gets larger and larger. The idea
 here is that the triangle on the right side of Figure 9.7, whose top
@@ -190,7 +245,11 @@ semicircle, as in Figure 9.8(a).
 On the other hand, our twirling rule for multiplying complex numbers
 tells us that
 
-$$\Biggl(1+\cfrac{i\pi}{N}\Biggr)^N$$
+$$
+
+\Biggl(1+\cfrac{i\pi}{N}\Biggr)^N
+
+$$
 
 is the point obtained by juxtaposing $N$ triangles of the same shape and
 slowly increasing size, as in Figures 9.8(b), (c), and (d), where we

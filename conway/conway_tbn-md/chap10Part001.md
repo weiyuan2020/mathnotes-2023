@@ -58,11 +58,15 @@ for the earliest ordinal number after $a, b, c,...$. The vertical bar
 signals the place where we've cut off the number sequence $a, b,c,...$,
 for example,
 
-$$\{0, 1, 2|\} = 3, 
+$$
+
+\{0, 1, 2|\} = 3, 
     \{0, 1, 2,...|\} =\omega,
     \{0|\} = 1,\\
     \{|\} =0, 
-    \{0,1, 2,...\omega|\} = \omega+1.$$
+    \{0,1, 2,...\omega|\} = \omega+1.
+
+$$
 
 To avoid inventing lots of new words, the symbols
 $\omega+1,\omega+2,...$ are used as proper names for the ordinary
@@ -109,12 +113,16 @@ Since two numbers, $\alpha, \beta$, in their two orders, can give two
 distinct sums, you might expect that three ordinal numbers,
 $\alpha, \beta, \gamma$, could give six different sums,
 
-$$\alpha+\beta+\gamma,
+$$
+
+\alpha+\beta+\gamma,
     \alpha+\gamma+\beta,
     \beta+\alpha+\gamma,
     \beta+\gamma+\alpha,
     \gamma+\alpha+\beta,
-    \gamma+\beta+\alpha,$$
+    \gamma+\beta+\alpha,
+
+$$
 
 but it turns out that at least two of these six are equal, so that no
 three ordinal numbers can have more than five different sums.
@@ -122,14 +130,18 @@ three ordinal numbers can have more than five different sums.
 By taking the largest possible number of different sums of $n$ ordinal
 numbers for $n = 1, 2, 3,...$, we get the sequence
 
-$$\begin{array}{lllll}
+$$
+
+\begin{array}{lllll}
     1 & 2 & 5 & 13 & 33 \\
     81^{} &193 & 449 & 33^2 & 33 \times 81 \\
     81^{2} & 81 \times 193 & 193^2 & 33^2 \times 81 & 33 \times 81^2 \\
     81^{3} & 81^2 \times 193 & 81\times 193^2 & 193^3 & 33 \times 81^3 \\
     \text{and} & \text{from here on} & \text{you multiply} & \text{the previous} & \text{row by} 81: \\
     81^{4} & 81^3 \times 193 & 81^2 \times 193^2 & 81 \times 193^2 & 33 \times 81^4 \\
-\end{array}$$
+\end{array}
+
+$$
 
 So the largest number of different sums that $N$ ordinals can have
 behaves rather strangely. For $15$ or more numbers, it will be either a

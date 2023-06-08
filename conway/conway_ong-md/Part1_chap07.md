@@ -138,7 +138,11 @@ we may obtain a distinct game by reversing the roles of Left and Right
 throughout $G$. The game so obtained we call the negative of $G$.
 Inductively, it is the game $-G$ defined by the equation
 
-$$-G = \{-G^R | -G^L \}.$$
+$$
+
+-G = \{-G^R | -G^L \}.
+
+$$
 
 Obviously, negation interchanges positive and negative games, while the
 negative of a zero or fuzzy game is another game of the same type.
@@ -322,7 +326,11 @@ the position ? in our domino game. In Fig. 6 we illustrate the
 
 remarkable equality
 
-$$\{0|\uparrow\} = \uparrow +  \uparrow + *$$
+$$
+
+\{0|\uparrow\} = \uparrow +  \uparrow + *
+
+$$
 
 Fic. 6. The upstart equality.
 
@@ -368,11 +376,19 @@ $G \ngeqslant H$;$G <H,G>H,G =H$, as usual.
 
 Definition of $G + H$.
 
-$$G+H=\{G^L+H,G+H^L|G^R +H,G+ H^R\}$$
+$$
+
+G+H=\{G^L+H,G+H^L|G^R +H,G+ H^R\}
+
+$$
 
 Definition of $-G$.
 
-$$-G = \{-G^R| -G^L\}.$$
+$$
+
+-G = \{-G^R| -G^L\}.
+
+$$
 
 Then we have all the statements of the following.
 
@@ -432,13 +448,22 @@ In this game, the players alternately name sums of money (for just two
 moves), and the player who names the larger amount is the winner. The
 game is essentially the same as
 
-$$\omega - \omega = \{0-\omega , 1-\omega , ...,n-\omega , ....|\omega - 0,\omega - -1,...,\omega - n,...\},$$
+$$
+
+\omega - \omega = \{0-\omega , 1-\omega , ...,n-\omega , ....|\omega - 0,\omega - -1,...,\omega - n,...\},
+
+$$
+
 whose tree is rather complicated, though the complication is irrelevant
 in play. As childhood experience shows, there is not much point in
 starting first at this game. This observation is equivalent to the
 equality
 
-$$\omega - \omega = 0.$$
+$$
+
+\omega - \omega = 0.
+
+$$
 
 The theory of games developed in the rest of this book is a grand
 generalization of the earlier theory found independently by Sprague and

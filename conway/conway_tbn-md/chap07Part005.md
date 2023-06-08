@@ -5,14 +5,22 @@ patterns of $n$ children in a row are there if every girl is next to at
 least one other girl? For example, with four children there are seven
 patterns:
 
-$$\begin{array}{ccccc ccccc cccc}
+$$
+
+\begin{array}{ccccc ccccc cccc}
 \text{for }n = &0&1&3&4&5&6&7&6&9&10&11&12 \\
 &1&1&2&4&7&12&21&616&37&114&200&351&616\\
-\end{array}$$
+\end{array}
+
+$$
 
 In general, if $P(n)$ is the number of patterns of $n$ children, then
 
-$$P(n) = 2P(n-1) - P(n-2) + P(n-3),$$
+$$
+
+P(n) = 2P(n-1) - P(n-2) + P(n-3),
+
+$$
 
 and the ratio $P(n+1)/P(n)$ approaches the degree $3$ algebraic number
 $1.754877666247 ...$ , a solution of the equation $x^3=2x^2-x+1$.
@@ -20,7 +28,11 @@ $1.754877666247 ...$ , a solution of the equation $x^3=2x^2-x+1$.
 If the girls must appear in groups of at least three, then the numbers
 of patterns are
 
-$$1\;1\;1\;2\;4\;7\;11\;17\;27\;44\;72...,$$
+$$
+
+1\;1\;1\;2\;4\;7\;11\;17\;27\;44\;72...,
+
+$$
 
 and the relevant equation, $x^4 - 2x^3 + x^2 -1= 0$, factors into two
 quadratic equations, and we have four algebraic numbers, each of degree
@@ -57,7 +69,9 @@ are more than unit distance apart? Ron Graham has shown that the answer
 looks like Figure 7.25, whose area $A = 0.674981...$ is an algebraic
 number of degree 10 satisfying the equation
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
 4096A^{10} &
 - 8192A^{9}
 - 3008A^{8}
@@ -69,7 +83,9 @@ $$\begin{aligned}
 + 1232A^{3}
 + 144,464A^{2}
 - 78,488A^{}
-+ 11,993 = 0 \\\end{aligned}$$
++ 11,993 = 0 \\\end{aligned}
+
+$$
 
 and is larger than the area of the regular hexagon,
 $3\sqrt{3}/8 = 0.649519 ...$.
@@ -85,17 +101,24 @@ considered shuffling infinite collections. Even for very simple
 instance, under the 'shuffle' $x\rightarrow x^2-2$ of the numbers
 between $-2$ and $2$, the six particular numbers
 
-$$1.532088886 \ldots{} \rightarrow 0.347296355 \ldots{}
+$$
+
+1.532088886 \ldots{} \rightarrow 0.347296355 \ldots{}
 \rightarrow -1.879385241 \ldots{}
 \rightarrow 1.532088886\ldots{};\\
 1.2469796037 \ldots{} \rightarrow -0.4450418679 \ldots{}
 \rightarrow -18019377358 \ldots{} \rightarrow 1.246979603
 .\\
+
 $$
 
 each have period $3$. They are the roots of
 
-$$x^3 -3x+1=0 \text{ and } x^3 + x^2 -2x-1=0.$$
+$$
+
+x^3 -3x+1=0 \text{ and } x^3 + x^2 -2x-1=0.
+
+$$
 
 Now Sharkovsky has a wonderful theorem that if, under a continuous map
 ('smooth shuffle') of the numbers in an interval, there is a number
@@ -114,16 +137,24 @@ So, since $3$ is the first term of the Sharkovsky shuffling "sequence,"
 we know that there must be a number with any other period that you like
 under the map that takes $x$ to $x^2-2$. For example,
 
-$$2\rightarrow
+$$
+
+2\rightarrow
     2\rightarrow
     \dots
     -1\rightarrow
     -1\rightarrow
-    \dots$$
+    \dots
+
+$$
 
 have period $1$, and $(\sqrt{5} - 1)/2 =$
 
-$$0.618033988749 ... \rightarrow -1.618033988746 ... \rightarrow 0.618033988749 ...$$
+$$
+
+0.618033988749 ... \rightarrow -1.618033988746 ... \rightarrow 0.618033988749 ...
+
+$$
 
 has period $2$. This is an example of James Yorke's slogan, "Period
 three implies chaos."
@@ -136,7 +167,11 @@ function passes through certain critical values. Feigenbaum has found
 that these "bifurcation points" are usually spaced approximately like
 geometric series with limiting ratio
 
-$$F_{1} = 4.6692016090 ....$$
+$$
+
+F_{1} = 4.6692016090 ....
+
+$$
 
 Almost certainly Feigenbaum's number is not an algebraic number, but a
 transcendental one, such as we will study in the next chapter.
@@ -145,7 +180,11 @@ transcendental one, such as we will study in the next chapter.
 
 About how many digits has the $n$th term in the sequence
 
-$$1 11 21 1211 111221 312211 13112221 1113213211 31131211131221 ...?$$
+$$
+
+1 11 21 1211 111221 312211 13112221 1113213211 31131211131221 ...?
+
+$$
 
 Have you guessed the general rule yet? The first term consists of one
 "one," so the second is "one one." This consists of two "ones," so the
@@ -155,12 +194,18 @@ and so gives "one two one one," and so on.
 It can be shown that the number of digits in the mth term is roughly
 proportional to
 
-$$(1.303577 269034 29639 12570991 1215255 189073 070250 46594 ...)’,$$
+$$
+
+(1.303577 269034 29639 12570991 1215255 189073 070250 46594 ...)’,
+
+$$
 
 where the simplest algebraic equation defining the number in parentheses
 is
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
 x^{71}-x^{69}-2x^{68}-x^{67}+2x^{66}+2x^{65}+x^{64}-x^{63}-x^{62}-x^{61}-x^{60}-x^{59}\\
 +2x^{58}+5x^{57}+3x^{56}-2x^{55}-10x^{54}-3x^{53}-2x^{52}+6x^{51}\\
 +6x^{50}+x^{49}+9x^{48}-3x^{47}-7x^{46}-8x^{45}-8x^{44}+10x^{43}\\
@@ -168,7 +213,9 @@ x^{71}-x^{69}-2x^{68}-x^{67}+2x^{66}+2x^{65}+x^{64}-x^{63}-x^{62}-x^{61}-x^{60}-
 -3x^{34}+10x^{33}+x^{32}-6x^{31}-2x^{30}-10x^{29}-3x^{28}+2x^{27}\\
 +9x^{26}-3x^{25}+14x^{24}-8x^{23}-7x^{21}+9x^{20}+3x^{19}-4x^{18}\\
 -10x^{17}-7x^{16}+12x^{15}+7x^{14}+2x^{13}-12x^{12}-4x^{11}-2x^{10}\\
-+5x^{9}+x^{7}-7x^{6}+7x^{5}-4x^{4}+12x^{3}-6x^{2}+3x^{}-6=0.\end{aligned}$$
++5x^{9}+x^{7}-7x^{6}+7x^{5}-4x^{4}+12x^{3}-6x^{2}+3x^{}-6=0.\end{aligned}
+
+$$
 
 # REFERENCES {#references7}
 

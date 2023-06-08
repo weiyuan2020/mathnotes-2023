@@ -12,11 +12,19 @@ obviously broken. There are various speculations as to the exact scope
 Figure 6.11. According to this, the full table could have recorded all
 of the shapes
 
-$$\text{length : breadth : diagonal}$$
+$$
+
+\text{length : breadth : diagonal}
+
+$$
 
 proportional to
 
-$$2pq:p^2-q^2:p^2+q^2$$
+$$
+
+2pq:p^2-q^2:p^2+q^2
+
+$$
 
 with $p$ and $q$ 'regular' numbers (i.e., that divide powers of $60$)
 and $q$ less than $60$.
@@ -38,9 +46,14 @@ was regarded as basic and the length $4$ was taken as the unit.
 
 Other errors are
 
-$$\begin{array}{ll}
+$$
+
+\begin{array}{ll}
         \text{on line 8  } & \text{$59 (= 45 + 14)$ was written in error for $45,14$,}\\
         \text{on line 9  } & \text{$9,1 (= 541)$ was written in error for $8,1 (= 481)$,}\\
         \text{on line 13 } & \text{$7,12,1 (= 1617)$ was written in error for $2,41 (= 161)$,}\\
         \text{on line 15 } & \text{$56$ and $53$ were written in place of $28$ and $53$ (or $56$ and $106$).}\\
-    \end{array}$$
+    \end{array}
+
+$$
+

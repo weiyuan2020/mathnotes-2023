@@ -8,8 +8,11 @@ It is easy to verify that sums and products of complex measurable
 functions are again measurable. Since
 
 $$
+
 \left| f \right| = (u^2 + v^2)^{1/2},
+
 $$
+
  Theorem
 \[\[thm:11.18\]](#thm:11.18){reference-type="ref" reference="thm:11.18"}
 shows that $|f|$ is measurable for every complex measurable $f$.
@@ -23,14 +26,19 @@ $f \in \mathscr{L}(\mu)$ on $E$ provided that $f$ is measurable and
 $$
 
     \int_E \left| f \right| \mathrm{d} \mu < +\infty ,
+
 $$
+
  and we define
 
 $$
+
 \int_E f \mathrm{d} \mu =
     \int_E u \mathrm{d} \mu + i
     \int_E v \mathrm{d} \mu
+
 $$
+
  if (\[\[eq:11.97\]](#eq:11.97){reference-type="ref"
 reference="eq:11.97"}) holds. Since $|u| \leq |f|$, $|v| \leq |f|$, and
 $|f | \leq | u | + | v |$, it is clear that
@@ -53,18 +61,25 @@ is the only one that offers anything of interest:
 
 If $f \in \mathscr{L}(\mu)$ on $E$, there is a complex number $c$,
 $|c| = 1$, such that 
+
 $$
+
 c \int_E f \mathrm{d} \mu \geq 0 .
+
 $$
+
  Put
 $g = cf = u + iv$, $u$ and $v$ real. Then
 
 $$
+
 \left| \int_E f \mathrm{d} \mu \right| =
     c \int_E f \mathrm{d} \mu =
     \int_E g \mathrm{d} \mu =
     \int_E u \mathrm{d} \mu \leq
     \int_E | f | \mathrm{d} \mu .
+
 $$
+
  The third of the above equalities holds
 since the preceding ones show that $\int f \mathrm{d} \mu$ is real.

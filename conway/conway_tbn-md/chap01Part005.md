@@ -31,7 +31,11 @@ Again, it is because mathematical and astronomical tables written in
 this notation were so hard to recompute that a modern astronomer writes
 an angle $25^\circ 32'14''$ just as his Babylonian forebears wrote
 
-$$<<|||<<<||<|||$$
+$$
+
+<<|||<<<||<|||
+
+$$
 
 and similarly, that you say that the time is $9:45$ ($9$ hours, $45$
 minutes) rather than $9.75$ hours, We see that the Babylonians used
@@ -57,12 +61,18 @@ than a myriad (10,000). Diophantus, around the third century A.D., used
 a dot to indicate that the preceding numbers should be multiplied by
 10,000. He gave the following example.
 
-$$\begin{array}{cccc c cccc}
+$$
+
+\begin{array}{cccc c cccc}
     .\alpha & \tau & \lambda & \alpha & . & ,\epsilon & \sigma & \iota  & \delta \\ 
     1 & 3 & 3 & 1 &   & 5 & 2 & 1 & 4\\
-\end{array}$$
+\end{array}
 
-$$\begin{array}{ccc ccc ccc}
+$$
+
+$$
+
+\begin{array}{ccc ccc ccc}
         \alpha & \beta & \gamma & \delta & \epsilon & F & \zeta & \eta & \theta \\
         1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
         \iota & \kappa & \lambda & \mu & \nu & \xi & o & \pi & \varrho \\
@@ -71,7 +81,9 @@ $$\begin{array}{ccc ccc ccc}
         100 & 200 & 300 & 400 & 500 & 600 & 700 & 800 & 900 \\
         ,\alpha & ,\beta & ,\gamma & ,\delta & ,\epsilon & F & ,\zeta & ,\eta & ,\theta \\
         1000 & 2000 & 3000 & 4000 & 5000 & 6000 & 7000 & 8000 & 9000 \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 FIRGURE 1.1 The Greek number system.
 
@@ -87,7 +99,11 @@ Latin letters C and M, which happened to be the initial letters of
 *centum* and *mille*. Half of ? was simplified to ? or D for $500$. The
 symbols
 
-$$\text{for } 5000 \; 10000 \; 50000 \; 100000$$
+$$
+
+\text{for } 5000 \; 10000 \; 50000 \; 100000
+
+$$
 
 are fortunately no longer used, although twenty-two of the original 32
 copies of ? can still be seen on the *Columna Rostrata*, describing the
@@ -143,7 +159,11 @@ the merchants of Europe were thoroughly familiar with the Roman system
 and found the new Arabic system very confusing, and early examples often
 contain mistakes or mix the two systems.
 
-$$\text{M50iv} = 1504$$
+$$
+
+\text{M50iv} = 1504
+
+$$
 
 Lowercase numerals were also introduced in medieval times, and it was
 not uncommon to see $\text{mcdxxvi} = 1426$. Nowadays, this system of
@@ -155,7 +175,11 @@ of a list or in numbering the preliminary pages of a book.
 Of course, a similar system of notation can be defined using any whole
 number, $N$, as a base. In the base $N$ system, "$abcd$" means
 
-$$aN^3 + bN^2 + cN + d,$$
+$$
+
+aN^3 + bN^2 + cN + d,
+
+$$
 
 and the "digits" $a, b, c, d$ customarily range from $0$ to $N-1$.
 
@@ -168,10 +192,14 @@ written in base $2$ are often called "binary numbers." Of course, binary
 numbers are not a new kind of number, they're just the old numbers under
 a different name:
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
         1, 10 = 2, 11 = 3, 100 = 4, 101 = 5,\\
         110 = 6, 111 = 7, 1000 = 8\ldots{}\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 # KINDS OF NUMBERS
 

@@ -1,13 +1,10 @@
 # Exercises
 
-
 ### ex:9.1 
  If $S$ is a nonempty subset of a vector space
 $X$, prove (as asserted in Sec.
 \[\[mydef:9.1\]](#mydef:9.1){reference-type="ref" reference="mydef:9.1"})
 that the span of $S$ is a vector space.
-
-
 
 ### ex:9.2 
  Prove (as asserted in Sec.
@@ -16,22 +13,16 @@ that $BA$ is linear if $A$ and $B$ are linear transformations.
 
 Prove also that $A^{- 1}$ is linear and invertible.
 
-
-
 ### ex:9.3 
  Assume $A \in  L(X, Y)$ and
 $A\mathbf{x}= \mathbf{0}$ only when $\mathbf{x}= \mathbf{0}$. Prove that
 $A$ is then 1-1.
-
-
 
 ### ex:9.4 
  Prove (as asserted in Sec.
 \[\[mydef:9.30\]](#mydef:9.30){reference-type="ref"
 reference="mydef:9.30"}) that null spaces and ranges of linear
 transformations are vector spaces.
-
-
 
 ### ex:9.5 
  Prove that to every $A \in L(\mathbb{R}^n, \mathbb{R}^1)$
@@ -43,19 +34,17 @@ Prove also that $\left\| A \right\| = \left| \mathbf{y} \right|$.
 *Hint:* Under certain conditions, equality holds in the Schwarz
 inequality.
 
-
-
 ### ex:9.6 
  If $f (0, 0) = 0$ and
 
 $$
+
 f(x, y) = \frac{xy}{x^2 + y^2} \quad\text{if } (x, y) \neq (0, 0),
+
 $$
 
 prove that $(D_1f)(x, y)$ and $(D_2f)(x, y)$ exist at every point of
 $\mathbb{R}^2$, although $f$ is not continuous at $(0, 0)$.
-
-
 
 ### ex:9.7 
  Suppose that $f$ is a real-valued function
@@ -66,22 +55,16 @@ continuous in $E$.
 *Hint:* Proceed as in the proof of Theorem
 \[\[thm:9.21\]](#thm:9.21){reference-type="ref" reference="thm:9.21"}.
 
-
-
 ### ex:9.8 
  Suppose that $f$ is a differentiable real
 function in an open set $E \subset \mathbb{R}^n$, and that $f$ has a local
 maximum at a point $\mathbf{x} \in E$. Prove that $f'(\mathbf{x}) = 0$.
-
-
 
 ### ex:9.9 
  If $\mathbf{f}$ is a differentiable mapping
 of a open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^m$, and if
 $\mathbf{f}'(\mathbf{x}) = 0$ for every $\mathbf{x} \in E$, prove that
 $\mathbf{f}$ is constant in $E$.
-
-
 
 ### ex:9.10 
  If $f$ is a real function defined in a
@@ -93,50 +76,57 @@ Show that the convexity of E can be replaced by a weaker condition, but
 that some condition is required. For example, if $n = 2$ and $E$ is
 shaped like a horseshoe, the statement may be false.
 
-
-
 ### ex:9.11 
  If $f$ and $g$ are differentiable real
 functions in $\mathbb{R}^n$, prove that 
+
 $$
+
 \nabla (fg) = 
         f\nabla g + 
         g\nabla f
+
 $$
+
  and that $\nabla (1/f)=-f^{-2}\nabla f$ wherever
 $f \neq 0$.
-
-
 
 ### ex:9.12 
  Fix two real numbers $a$ and $b$,
 $0 <a< b$. Define a mapping $\mathbf{f} = (f_1,f_2,f_3)$of $\mathbb{R}^2$ into
 $\mathbb{R}^3$ by 
+
 $$
+
 \begin{aligned}
         f_1(s,t)&=(b+a\cos s)\cos t \\ 
         f_2(s,t)&=(b+a\cos s)\sin t \\ 
         f_3(s,t)&=a\sin s.
     \end{aligned}
+
 $$
+
  Describe the range $K$ of $\mathbf{f}$. (It is a
 certain compact subset of $\mathbb{R}^3$.)
-
 
 Show that there are exactly 4 points $\mathbf{p} \in K$ such that
 
 $$
+
 (\nabla f_1)(\mathbf{f}^{-1}(\mathbf{p})) = \mathbf{0}.
+
 $$
+
  Find these
 points.
 
 Determine the set of all $\mathbf{q} \in K$ such that
 
 $$
-(\nabla f_3)(\mathbf{f}^{-1}(\mathbf{q})) = \mathbf{0}.
-$$
 
+(\nabla f_3)(\mathbf{f}^{-1}(\mathbf{q})) = \mathbf{0}.
+
+$$
 
 Show that one of the points $\mathbf{p}$ found in part (a) corresponds
 to a local maximum of $f_1$, one corresponds to a local minimum, and
@@ -150,13 +140,11 @@ $\mathbf{g}(t) = \mathbf{f}(t, \lambda t)$. Prove that $\mathbf{g}$ is a
 1-1 mapping of $\mathbb{R}^1$ onto a dense subset of $K$. Prove that
 
 $$
+
 \left| \mathbf{g}'(t) \right|^2 =
             a^2 + \lambda^2(b + a \cos t)^2 .
+
 $$
-
-
-
-
 
 ### ex:9.13 
  Suppose $\mathbf{f}$ is a differentiable
@@ -165,17 +153,15 @@ $t$. Prove that $\mathbf{f}'(t) \cdot \mathbf{f}(t) = 0$.
 
 Interpret this result geometrically.
 
-
-
 ### ex:9.14 
  Define $f(0, 0) = 0$ and
 
 $$
+
 f(x, y) = \frac{x^3}{x^2+y^2}
         \quad\text{if }(x, y) \neq (0, 0).
+
 $$
-
-
 
 Prove that $D_1 f$ and $D_2 g$ are bounded functions in $\mathbb{R}^2$. (Hence
 $f$ is continuous.)
@@ -193,25 +179,27 @@ If $\gamma \in \mathscr{C}'$, prove that $g \in \mathscr{C}'$.
 
 In spite of this, prove that $f$ is not differentiable at $(0, 0)$.
 
-
 *Hint:* Formula (\[\[eq:8.40\]](#eq:8.40){reference-type="ref"
 reference="eq:8.40"}) fails.
-
-
 
 ### ex:9.15 
  Define $f(0, 0) = 0$, and put
 
 $$
+
 f(x,y)=x^2+y^2-2x^2y-\frac{4x^6y^2}{(x^4+y^2)^2}
+
 $$
+
  if
 $(x,y)\neq (0,0)$.
 
-
 Prove, for all $(x, y) \in \mathbb{R}^2$ , that 
+
 $$
+
 4x^3y^2 \leq (x^4+y^2)^2.
+
 $$
 
 Conclude that $f$ is continuous.
@@ -219,8 +207,11 @@ Conclude that $f$ is continuous.
 For $0 \leq \theta \leq 2\pi$, $-\infty < t < \infty$, define
 
 $$
+
 g_{\theta}(t) = f(t\cos \theta, t\sin \theta).
+
 $$
+
  Show that
 $g_{\theta} (0) = 0$, $g'_{\theta} (0) = 0$, $g''_{\theta} (0) = 2$.
 Each $g_{\theta}$ has therefore a strict local minimum at $t = 0$.
@@ -231,32 +222,32 @@ a strict local minimum at $(0, 0)$.
 Show that $(0, 0)$ is nevertheless not a local minimum for $f$, since
 $f(x, x^2) = -x^4$.
 
-
-
-
 ### ex:9.16 
  Show that the continuity of $\mathbf{f}'$
 at the point $\mathbf{a}$ is needed in the inverse function theorem,
 even in the case $n = 1$ : If
 
 $$
+
 f(t) = t+2t^2\sin \left( \frac{1}{t} \right)
+
 $$
+
  for $t \neq 0$, and
 $f(0) = 0$, then $f'(0) = 1$, $f'$ is bounded in $(-1, 1)$, but $f$ is
 not one-to-one in any neighborhood of 0.
 
-
-
 ### ex:9.17 
  Let $f = (f_1,f_2)$ be the mapping of
 $\mathbb{R}^2$ into $\mathbb{R}^2$ given by 
+
 $$
+
 f_1(x,y) = e^x \cos y, 
         \quad
         f_2(x,y) = e^x \sin y,
-$$
 
+$$
 
 (a) What is the range of $f$?
 
@@ -274,37 +265,37 @@ $$
 (d) What are the images under $\mathbf{f}$ of lines parallel to the
     coordinate axes?
 
-
-
 ### ex:9.18 
  Answer analogous questions for the mapping
 defined by 
+
 $$
+
 u = x^2-y^2, 
         \quad 
         v = 2xy.
+
 $$
-
-
-
 
 ### ex:9.19 
  Show that the system of equations
 
 $$
+
 \begin{aligned}
         3x +  y -  z +  u^2 &= 0 \\ 
          x -  y + 2z +  u   &= 0 \\ 
         2x + 2y - 3z + 2u   &= 0 
     \end{aligned}
+
 $$
+
  can be solved for $x, y, u$ in terms of $z$; for
 $x, z, u$ in terms of $y$; for $y, z, u$ in terms of $x$; but not for
 $x, y, z$ in terms of $u$.
 
-
-
 $$
+
 \begin{pmatrix}
         3 &  1 & -1 \\ 
         1 & -1 &  2 \\ 
@@ -316,23 +307,21 @@ $$
     \begin{pmatrix}
         -u^2 \\ u \\ 2u \\ 
     \end{pmatrix}
+
 $$
-
-
 
 ### ex:9.20 
  Take $n = m = 1$ in the implicit function
 theorem, and interpret the theorem (as well as its proof) graphically.
 
-
-
 ### ex:9.21 
  Define $f$ in $\mathbb{R}^2$ by
 
 $$
-f(x,y) = 2x^3-3x^2+2y^3+3y^2.
-$$
 
+f(x,y) = 2x^3-3x^2+2y^3+3y^2.
+
+$$
 
 (a) Find the four points in $\mathbb{R}^2$ at which the gradient of $f$ is zero.
     Show that $f$ has exactly one local maximum and one local minimum in
@@ -343,48 +332,52 @@ $$
     equation $f(x, y) = 0$ can be solved for $y$ in terms of $x$ (or for
     $x$ in terms of $y$). Describe $S$ as precisely as you can.
 
-
-
 ### ex:9.22 
  Give a similar discussion for
 
 $$
+
 f(x,y)=2x^3+6xy^2-3x^2+3y^2.
+
 $$
-
-
-
 
 ### ex:9.23 
  Define $f$ in $\mathbb{R}^3$ by
 
 $$
+
 f(x,y_1,y_2) = x^2 y_1 + e^x + y_2 .
+
 $$
+
  Show that $f(0, 1, -1) = 0$,
 $(D_1 f) (0, 1, -1) \neq 0$, and that there exists therefore a
 differentiable function $g$ in some neighborhood of $(1, -1)$ in $\mathbb{R}^2$,
 such that $g(1, -1) = 0$ and 
+
 $$
+
 f(g(y_1, y_2), y_1, y_2) = 0.
+
 $$
+
  Find
 $(D_1 g)(1, -1)$ and $(D_2 g)(1, -1)$.
-
-
 
 ### ex:9.24 
  For $(x, y) \neq (0, 0)$, define
 $\mathbf{f} = (f_1,f_2)$ by 
+
 $$
+
 f_1(x,y) = \frac{x^2-y^2}{x^2+y^2}, 
         \quad 
         f_2(x,y) = \frac{xy}{x^2+y^2}.
+
 $$
+
  Compute the rank of
 $\mathbf{f}'(x, y)$, and find the range of $\mathbf{f}$.
-
-
 
 ### ex:9.25 
  Suppose $A \in L(\mathbb{R}^n, \mathbb{R}^m)$, let $r$ be
@@ -400,26 +393,27 @@ the rank of $A$.
 
 (b) Use (a) to show that
     
+
 $$
+
 \dim \mathscr{N}(A) + \dim \mathscr{R}(A) = n.
+
 $$
-
-
-
 
 ### ex:9.26 
  Show that the existence (and even the
 continuity) of $D_{12}f$ does not imply the existence of $D_1 f$. For
 example, let $f(x, y) = g(x)$, where $g$ is nowhere differentiable.
 
-
-
 ### ex:9.27 
  Put $f(0,0)=0$, and
 
 $$
+
 f(x,y) = \frac{xy(x^2-y^2)}{x^2+y^2}
+
 $$
+
  if $(x,y) \neq (0,0)$. Prove
 that
 
@@ -430,11 +424,11 @@ that
 
 (c) $(D_{12}f)(0,0)=1$, and $(D_{21}f)(0,0)=-1$.
 
-
-
 ### ex:9.28 
  For $t \geq 0$, put 
+
 $$
+
 \phi(x,t) = \left\{ 
             \begin{array}{ll}
                 x & (0 \leq x \leq \sqrt{t}) \\ 
@@ -442,27 +436,35 @@ $$
                 0 & (\text{otherwise}), \\ 
             \end{array}
          \right.
+
 $$
+
  and put $\phi(x,t)=-\phi(x,|t|)$ if $t<0$.
 
 Show that $\phi$ is continuous on $\mathbb{R}^2$, and 
+
 $$
+
 (D_2 \phi)(x, 0) = 0
+
 $$
 
 for all $x$. Define 
+
 $$
+
 f(t) = \int_{-1}^{1} \phi (x,t) \mathrm{d} x.
+
 $$
+
  Show that
 $f(t)=t$ if $|t|<\frac{1}{4}$. Hence
 
 $$
+
 f'(0) \neq \int_{-1}^{1} (D_2 \phi) (x,0) \mathrm{d} x.
+
 $$
-
-
-
 
 ### ex:9.29 
  Let $E$ be an open set in $\mathbb{R}^n$. The
@@ -477,19 +479,24 @@ of Theorem \[\[thm:9.41\]](#thm:9.41){reference-type="ref"
 reference="thm:9.41"}) that the $k$th-order derivative
 
 $$
+
 D_{i_1 i_2 \cdots i_k} f = D_{i_1} D_{i_2} \dots D_{i_k} f
+
 $$
+
  is
 unchanged if the subscripts $i_1, ... , i_k$ are permuted.
 
 For instance, if $n \geq 3$, then 
+
 $$
+
 D_{1213} f = D_{3112} f
+
 $$
+
  for every
 $f \in \mathscr{C}^{(4)}$,
-
-
 
 ### ex:9.30 
  Let $f \in \mathscr{C}^{(m)} (E)$, where
@@ -497,24 +504,34 @@ $E$ is an open subset of $\mathbb{R}^n$. Fix $\mathbf{a} \in E$, and suppose
 $x \in \mathbb{R}^n$ is so close to $\mathbf{0}$ that the points
 
 $$
+
 \mathbf{p}(t) = \mathbf{a} + t \mathbf{x}
+
 $$
+
  lie in $E$ whenever
 $0 \leq t \leq 1$. Define 
+
 $$
+
 h(t) = f(\mathbf{p}(t))
+
 $$
+
  for all
 $t \in \mathbb{R}^1$ for which $\mathbf{p}(t) \in E$.
 
-
 For $1 \leq k \leq m$, show (by repeated application of the chain rule)
 that 
+
 $$
+
 h^{(k)}(t) = \sum 
             \left( D_{i_1 \cdots i_k} \right) \left( \mathbf{p}(t) \right) 
             x_{i_1} \dots x_{i_k} .
+
 $$
+
  The sum extends over all ordered
 $k$-tuples $(i_1, ... , i_k)$ in which each $i_j$ is one of the integers
 $1, ... , n$.
@@ -523,24 +540,31 @@ By Taylor's theorem \[\[thm:5.15\]](#thm:5.15){reference-type="ref"
 reference="thm:5.15"},
 
 $$
+
 h(1) = \sum_{k=0}^{m-1} \frac{h^{(k)}(0)}{k!} + \frac{h^{(m)}(t)}{m!}
+
 $$
 
 for some $t \in (0, 1)$. Use this to prove Taylor's theorem in $n$
 variables by showing that the formula
 
 $$
+
 f(\mathbf{a+x}) = \sum_{k=0}^{m-1} \frac{1}{k!}
             \sum \left( D_{i_1 \cdots i_k} f \right)(\mathbf{a})
             x_{i_1} \dots x_{i_k} 
             + r(\mathbf{x})
+
 $$
+
  represents $f(\mathbf{a + x})$ as the sum
 of its so-called "Taylor polynomial of degree $m - 1$," plus a remainder
 that satisfies
 
 $$
+
 \lim_{\mathbf{x} \to \mathbf{0}} \frac{r(\mathbf{x})}{|\mathbf{x}|^{m-1}} = 0.
+
 $$
 
 Each of the inner sums extends over all ordered $k$-tuples
@@ -555,22 +579,25 @@ times, as $D_{113}, D_{131}, D_{311}$, The sum of the corresponding
 three terms can be written in the form
 
 $$
+
 3\left( D_1^2 D_3 f \right)(\mathbf{a}) x_1^2 x_3 .
+
 $$
+
  Prove (by
 calculating how often each derivative occurs) that the Taylor polynomial
 in (b) can be written in the form
 
 $$
+
 \sum \frac{(D_1^{s_1} \cdots D_n^{s_n} f)(\mathbf{a})}{s_1 ! \cdots s_n !} 
             x_1^{s_1} \cdots x_n^{s_n} .
+
 $$
+
  Here the summation extends
 over all ordered $n$-tuples $(s_1, ... , s_n)$ such that each $s$, is a
 nonnegative integer, and $s_1 + \cdots + s_n \leq m - 1$.
-
-
-
 
 ### ex:9.31 
  Suppose $f \in \mathscr{C}^{(3)}$ in some

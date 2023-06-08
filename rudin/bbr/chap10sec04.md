@@ -7,7 +7,6 @@ many applications. This is illustrated by Exercises
 \[\[ex:10.9\]](#ex:10.9){reference-type="ref" reference="ex:10.9"} to
 \[\[ex:10.13\]](#ex:10.13){reference-type="ref" reference="ex:10.13"}
 
-
 ### thm:10.9 
  Suppose $T$ is a 1-1
 $\mathscr{C}'$-mapping of an open set $E \subset \mathbb{R}^k$ into $\mathbb{R}^k$ such
@@ -20,6 +19,6 @@ $$
 
         \int_{\mathbb{R}^k} f(\mathbf{y}) \mathrm{d} \mathbf{y} =
         \int_{\mathbb{R}^k} f(T \mathbf{x}) \left| J_T(\mathbf{x}) \right| \mathrm{d} \mathbf{x} .
-$$
 
+$$
 

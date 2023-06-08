@@ -27,13 +27,21 @@ $n-m \geqslant 1$ ; then both conventions 1 and 3 agree.*
 
 ::: answer
 **题目解答 2**. *the quantity (\[x\>0\]\_\[x\<0\]) is often called
-sign(x) or signum(x). $$sign(x) = \left\{
+sign(x) or signum(x). 
+
+$$
+
+sign(x) = \left\{
             \begin{array}{ll}
                 1,  & x>0; \\
                 0,  & x=0; \\
                 -1, & x<0; \\
             \end{array}
-        \right.$$ $x\; sign(x) = |x|$ , $[]$ 判定命题真假*
+        \right.
+
+$$
+
+ $x\; sign(x) = |x|$ , $[]$ 判定命题真假*
 :::
 
 ::: exercise
@@ -42,12 +50,25 @@ sign(x) or signum(x). $$sign(x) = \left\{
 
 ::: answer
 **题目解答 3**.
-*$$\sum_{0\leqslant k\leqslant 5}a_k = a_0+a_1+a_2+a_3+a_4+a_5$$
-$$\begin{array}{rlrrrr}
+*
+
+$$
+
+\sum_{0\leqslant k\leqslant 5}a_k = a_0+a_1+a_2+a_3+a_4+a_5
+
+$$
+
+$$
+
+\begin{array}{rlrrrr}
             \sum_{0\leqslant k^2\leqslant 5}a_k 
             &= {\color{red} \;a_4}&{\color{red}+a_1}&+a_0&+a_1&+a_4 \\
             {\color{blue}(k}&{\color{blue}= -2,} &{\color{blue}-1,} &{\color{blue}0, }&{\color{blue}1, }&{\color{blue}2)}\\
-        \end{array}$$*
+        \end{array}
+
+$$
+
+*
 :::
 
 ::: exercise
@@ -55,35 +76,75 @@ $$\begin{array}{rlrrrr}
 :::
 
 ::: answer
-**题目解答 4**. *$$I = 
+**题目解答 4**. *
+
+$$
+
+I = 
         \sum_{1\leqslant i\leqslant 4}
         \sum_{1\leqslant j\leqslant 4}
         \sum_{1\leqslant k\leqslant 4}
         a_{ijk}
-        \quad (k\rightarrow j\rightarrow i)$$ $$I = 
+        \quad (k\rightarrow j\rightarrow i)
+
+$$
+
+ 
+
+$$
+
+I = 
         \sum_{1\leqslant k\leqslant 4}
         \sum_{1\leqslant j\leqslant 4}
         \sum_{1\leqslant i\leqslant 4}
         a_{ijk}
-        \quad (i\rightarrow j\rightarrow k)$$ 1. $$\left\{
+        \quad (i\rightarrow j\rightarrow k)
+
+$$
+
+ 1. 
+
+$$
+
+\left\{
             \begin{array}{ll}
                  & a_{1jk} \\
                 +& a_{2jk} \\
                 +& a_{3jk} \\
                 +& a_{4jk} \\
             \end{array}
-        \right.$$ $$\left\{
+        \right.
+
+$$
+
+ 
+
+$$
+
+\left\{
             \begin{array}{lll}
                 a_{12k} &+ a_{13k} &+ a_{14k} \\
                 &+ a_{23k} &+ a_{24k} \\
                 &          &+ a_{34k} \\
             \end{array}
-        \right.$$ $$\left\{
+        \right.
+
+$$
+
+ 
+
+$$
+
+\left\{
             \begin{array}{lll}
                 a_{123} &+a_{124} &+a_{134} \\
                 &+a_{234}& \\
             \end{array}
-        \right.$$*
+        \right.
+
+$$
+
+*
 
 *(1). $\Bigl(\bigl(a_{123}+a_{124}\bigr)+a_{134}\Bigr)+a_{234}$ .*
 

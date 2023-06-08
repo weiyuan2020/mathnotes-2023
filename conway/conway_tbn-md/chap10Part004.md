@@ -7,7 +7,11 @@ numbers.
 
 The symbol
 
-$$\{a,b,c,...|d,e,f,...\}$$
+$$
+
+\{a,b,c,...|d,e,f,...\}
+
+$$
 
 means "the *simplest* number strictly greater than all the numbers
 $a, b, c,...$ and strictly less than all the numbers $d, e, f, ...$ ."
@@ -17,22 +21,34 @@ examples.
 The ordinal numbers are those where there aren't any numbers to the
 right of the bar:
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
 \{ | \}   = 0, \text{ the simplest number of ail}\\
 \{0| \}   = 1, \text{ the simplest number greater than} 0\\
 \{0,1| \} = 2, \text{ the simplest number greater than $1$ (and $0$)}\\
-\end{array}$$
+\end{array}
+
+$$
 
 and so on.
 
 But now we can put numbers on either side of the bar. Thus
 
-$$\{0|1\} 
-    \text{ is the simplest number between $0$ and $1$, namely }\frac{1}{2}$$
+$$
+
+\{0|1\} 
+    \text{ is the simplest number between $0$ and $1$, namely }\frac{1}{2}
+
+$$
 
 and we may have no numbers on the *left* of the bar:
 
-$$\{ |0\} \text{is the simplest number less than $0$, namely $-1$.}$$
+$$
+
+\{ |0\} \text{is the simplest number less than $0$, namely $-1$.}
+
+$$
 
 The same surreal number may have many definitions: $\{1| \}$ is another
 name for $2 = \{0,1| \}$, because the simplest number greater than $1$
@@ -46,25 +62,41 @@ is rather surprising: we play a game!
 
 Any number
 
-$$\{a,b,c,...|d,e,f,..\}=g$$
+$$
+
+\{a,b,c,...|d,e,f,..\}=g
+
+$$
 
 may also be regarded as a game played between two players, Left and
 Right: the **moves**
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
         \text{from } g \text{ to } a, b, c,... \text{ are legal only for Left, and those} \\
         \text{from } g \text{ to } d, e, f,... \text{ are legal only for Right.} \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 Suppose that Left moves from $g$ to $b$, say. Then $b$ will have a
 similar definition:
 
-$$b=\{A,B,C,...|D,E,F,...\},$$
+$$
+
+b=\{A,B,C,...|D,E,F,...\},
+
+$$
 
 and so Right may now move from $b$ to any of $D, E, F,...$. Suppose he
 moves to
 
-$$D=\{\alpha,\beta,\gamma,...|\delta,\epsilon,\zeta,...\}.$$
+$$
+
+D=\{\alpha,\beta,\gamma,...|\delta,\epsilon,\zeta,...\}.
+
+$$
 
 Then Left may move to any of $\alpha,\beta,\gamma,...$. and so on. The
 first person unable to move loses, and the other is then the winner.
@@ -82,7 +114,11 @@ If you can't move when it's your turn, you lose,
 
 We use the same notation
 
-$$\{a,b,c,...|d,e,f,..\}=g$$
+$$
+
+\{a,b,c,...|d,e,f,..\}=g
+
+$$
 
 for Hackenbush positions as we do for numbers since it will turn out
 that they're much the same thing. Left can move from $g$ to $a$ or $b$
@@ -94,7 +130,11 @@ Let's analyze some easy positions. At the end of the game you may be
 faced with the empty position in which there are no red or black edges
 at all (Figure 10.6) neither player has any legal moves.
 
-$$--------=\Biggl\{\quad|\quad\Biggr\}$$
+$$
+
+--------=\Biggl\{\quad|\quad\Biggr\}
+
+$$
 
 FIGURE 10.6 The eipty position.
 
@@ -107,15 +147,27 @@ In general, you get the **negative** of a Hackenbush game just by
 interchanging red and black edges throughout. This reverses the roles of
 the two players. So if
 
-$$g=\{a,b,c,...|d,e,f,..\}$$
+$$
+
+g=\{a,b,c,...|d,e,f,..\}
+
+$$
 
 then
 
-$$-g=\{-d,-e,-f,..|-a,-b,-c,...\}$$
+$$
+
+-g=\{-d,-e,-f,..|-a,-b,-c,...\}
+
+$$
 
 Thus
 
-$$1\tfrac{1}{2} = \{1|2\} \text{ gives } -1\tfrac{1}{2} = \{-2|-1\}.$$
+$$
+
+1\tfrac{1}{2} = \{1|2\} \text{ gives } -1\tfrac{1}{2} = \{-2|-1\}.
+
+$$
 
 What do these equalities mean?
 
@@ -183,7 +235,11 @@ The value of $\pi$ in binary is $(3).001 001 000 011 111 101 101\dots.$
 Hackenbush chains can be infinitc! Indeed, we allow the height of our
 Hackenbush chains to be any of Cantor's ordinal numbers,
 
-$$0,1,2,...,\omega,\omega+1,\omega+\omega,...,\omega^2,....$$
+$$
+
+0,1,2,...,\omega,\omega+1,\omega+\omega,...,\omega^2,....
+
+$$
 
 Figure 10.9 shows somic examples.
 
@@ -210,7 +266,9 @@ given in Figure 10.12. Using them you could check that $1/\omega$
 deserves its name by multiplying it by $\omega$ to get $1$. You could
 also check, by squaring
 
-$$\sqrt{\omega}=
+$$
+
+\sqrt{\omega}=
     \Biggl\{
         0,1,2,...|
         \omega,
@@ -218,13 +276,17 @@ $$\sqrt{\omega}=
         \frac{1}{4}\omega,
         \frac{1}{8}\omega,
         ...
-    \Biggr\}$$
+    \Biggr\}
+
+$$
 
 that it, too, deserves its name. This number is the yalue of a
 Hackenbush chain consisting of one $\omega$-sized blue chain surmounted
 by $\omega$ $\omega$-sized red chains.
 
-$$\text{lf } \alpha=\{...,a...|...,A...\} \text{ and } \beta = \{...,b,...|...,B,...\}, \text{ then}\\
+$$
+
+\text{lf } \alpha=\{...,a...|...,A...\} \text{ and } \beta = \{...,b,...|...,B,...\}, \text{ then}\\
 \alpha+\beta=\{...,\alpha+\beta,...,...,\alpha+b... |... A+ \beta,...,...,\alpha+B,...\}\\
 \text{and } -\alpha=\{...,-A,... |..., -a,...\},\\
 \text{while } \alpha\beta = \left\{ 
@@ -233,6 +295,7 @@ $$\text{lf } \alpha=\{...,a...|...,A...\} \text{ and } \beta = \{...,b,...|...,B
     ...,A\beta+\alpha B-AB,...|..., A\beta+\alpha b-Ab,...\\
 \end{array}
 \right\}\\
+
 $$
 
 FIGURE 10.12 We suppose that a bas been named in terms of various
@@ -241,10 +304,14 @@ example, one of the numbers on the right int the definition of
 $\alpha\beta$ might be
 $\alpha_{13}\beta + \alpha\beta_{7}-\alpha_{13}\beta_{7}$. For example,
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
     8\times 25 = \{0,1,...,7|\} \times \{0,1,...,24|\}\\
     =\{7|\}\times\{24|\} = \{7\times 25\ + 8\times 24 -7\times 24|\} = \{199|\}=200.
-\end{array}$$
+\end{array}
+
+$$
 
 The definitions are inductive, it being supposed that the simpler
 products bave already been computed.

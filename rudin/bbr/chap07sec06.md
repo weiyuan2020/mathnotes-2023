@@ -1,20 +1,20 @@
 # The stone-weierstrass theorem
 
-
 ### thm:7.26 
  If $f$ is a continuous complex function
 on $[a, b]$, there exists a sequence of polynomials $P_n$ such that
 
 $$
+
 \lim_{n \to \infty} P_n(x) = f(x)
+
 $$
+
  uniformly on $[a, b]$. If $f$ is
 real, the $P_n$ may be taken real.
 
-
 This is the form in which the theorem was originally discovered by
 Weierstrass.
-
 
 ### myCorollary:7.27 
  For every interval
@@ -22,12 +22,13 @@ $[-a, a]$ there is a sequence of real polynomials $P_n$ such that
 $P_n(0) = 0$ and such that
 
 $$
+
 \lim_{n \to \infty} P_n(x) = \left| x \right|
+
 $$
+
  uniformly on
 $[-a, a]$.
-
-
 
 ### mydef:7.28 
  A family $\mathscr{A}$ of complex
@@ -54,14 +55,10 @@ Weierstrass theorem may be stated by saying that the set of continuous
 functions on $[a, b]$ is the uniform closure of the set of polynomials
 on $[a, b]$.
 
-
-
 ### thm:7.29 
  Let $\mathscr{B}$ be the uniform closure
 of an algebra $\mathscr{A}$ of bounded functions. Then $\mathscr{B}$ is
 a uniformly closed algebra.
-
-
 
 ### mydef:7.30 
  Let $\mathscr{A}$ be a family of
@@ -81,8 +78,6 @@ $f (-x) = f (x)$ for every even function $f$
 
 The following theorem will illustrate these concepts further.
 
-
-
 ### thm:7.31 
  Suppose $\mathscr{A}$ is an algebra of
 functions on a set $E$, $\mathscr{A}$ separates points on $E$, and
@@ -90,16 +85,16 @@ $\mathscr{A}$ vanishes at no point of $E$. Suppose $x_1, x_2$ are
 distinct points of $E$, and $c_1, c_2$ are constants (real if
 $\mathscr{A}$ is a real algebra). Then $\mathscr{A}$ contains a function
 $f$ such that 
+
 $$
+
 f(x_1) = c_1, \quad 
         f(x_2) = c_2.
+
 $$
-
-
 
 We now have all the material needed for Stone's generalization of the
 Weierstrass theorem.
-
 
 ### thm:7.32 
  Let $\mathscr{A}$ be an algebra of real
@@ -108,9 +103,7 @@ points on $K$ and if $\mathscr{A}$ vanishes at no point of $K$, then the
 uniform closure $\mathscr{B}$ of $\mathscr{A}$ consists of all real
 continuous functions on $K$.
 
-
 We shall divide the proof into four steps.
-
 
 ### thm:7.33 
  Suppose $\mathscr{A}$ is a self-adjoint

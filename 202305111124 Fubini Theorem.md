@@ -5,9 +5,12 @@ https://mathworld.wolfram.com/FubiniTheorem.html
 Fubini's theorem, sometimes called Tonelli's theorem, establishes a connection between a [multiple integral](https://mathworld.wolfram.com/MultipleIntegral.html) and a [repeated](https://mathworld.wolfram.com/RepeatedIntegral.html) one. If${f(x,y)}$ is continuous on the rectangular region R:a<=x<=b,c<=y<=d$R:a\leq x\leq b,c\leq y\leq d$, then the equality
 
 $$
+
 \iint _{R} f(x,y)  \, \mathrm{d}(x,y)  = 
 \int_{a}^{b} \int_{c}^{d} f(x,y) \, \mathrm{d}y  \, \mathrm{d}x 
+
 $$
+
 ![intint_Rf(x,y)d(x,y)=int_a^bint_c^df(x,y)dydx|300](https://mathworld.wolfram.com/images/equations/FubiniTheorem/NumberedEquation1.svg)
 
 holds (Thomas and Finney 1996, p. 919).

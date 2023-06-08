@@ -20,24 +20,38 @@ When we define powers
 $a^1 = a,a^2=a\times a,a^3= a\times a\times a,...$, there are many
 surprises. We find
 
-$$2^2 = 3, 4^4 = 5, 16^{16} = 17, 256^{256} = 257,... .$$
+$$
+
+2^2 = 3, 4^4 = 5, 16^{16} = 17, 256^{256} = 257,... .
+
+$$
 
 And there are more nimbers than you might think: one for each of
 Cantor's ordinal numbers. Infinite nimber arithmetic yields more
 surprises:
 
-$$\omega^3 = 2!$$
+$$
+
+\omega^3 = 2!
+
+$$
 
 How do you tell which are the good positions to move in Nim? If you're
 playing Nim with just one heap, the answer would be easy. It's good to
 move to $0$ (since this ends the game) and bad to move to any other
 nimber,
 
-$$1, 2,3,4,5,6,...$$
+$$
+
+1, 2,3,4,5,6,...
+
+$$
 
 (since your opponent could then move to $0$).
 
-$$\begin{array}{r cccc cccc cccc cccc}
+$$
+
+\begin{array}{r cccc cccc cccc cccc}
 a+b & 0  & 1   & 2  & 3   & 4  & 5   & 6  & 7   & 8  & 9   & 10 & 11  & 12 & 13  & 14 & 15 \\
 0   & 0  & 1   & 2  & 3   & 4  & 5   & 6  & 7   & 8  & 9   & 10 & 11  & 12 & 13  & 14 & 15 \\
 1   & 1  & 0   & 3  & 2   & 5  & 4   & 7  & 6   & 9  & 8   & 11 & 10  & 13 & 12  & 15 & 14 \\
@@ -55,7 +69,9 @@ a+b & 0  & 1   & 2  & 3   & 4  & 5   & 6  & 7   & 8  & 9   & 10 & 11  & 12 & 13 
 13  & 13 & 12  & 15 & 14  & 9  & 8   & 11 & 10  & 5  & 4   & 7  & 6   & 1  & 0   & 3  & 2  \\
 14  & 14 & 15  & 12 & 13  & 10 & 11  & 8  & 9   & 6  & 7   & 4  & 5   & 2  & 3   & 0  & 1  \\
 15  & 15 & 14  & 13 & 12  & 11 & 10  & 9  & 8   & 7  & 6   & 5  & 4   & 3  & 2   & 1  & 0  \\
-\end{array}$$
+\end{array}
+
+$$
 
 TABLE 10.1 A Nim addition table. All the entries are nimbers.
 
@@ -65,7 +81,9 @@ Two equal nimbers always add to $0$. If the 'larger' of two different
 nimbers is $1$ or $2$ or $4$ or $8$ or $16$ or..., you add them just as
 you add the corresponding ordinary numbers.
 
-$$\begin{array}{r cccc cccc cccc cccc}
+$$
+
+\begin{array}{r cccc cccc cccc cccc}
 a+b & 0 &   1   &   2   &   3   &   4   &   5   &   6   &   7   &   8   &   9   &   10  &   11  &   12  &   13  &   14  &   15  \\
 0   & 0 &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   \\
 1   & 0 &   1   &   2   &   3   &   4   &   5   &   6   &   7   &   8   &   9   &   10  &   11  &   12  &   13  &   14  &   15  \\
@@ -83,7 +101,9 @@ a+b & 0 &   1   &   2   &   3   &   4   &   5   &   6   &   7   &   8   &   9   
 13  & 0 &   13  &   6   &   11  &   9   &   4   &   15  &   2   &   14  &   3   &   8   &   5   &   7   &   10  &   1   &   12  \\
 14  & 0 &   14  &   7   &   9   &   5   &   11  &   2   &   12  &   10  &   4   &   13  &   3   &   15  &   1   &   8   &   6   \\
 15  & 0 &   15  &   5   &   10  &   1   &   14  &   4   &   11  &   2   &   13  &   7   &   8   &   3   &   12  &   6   &   9   \\
-\end{array}$$
+\end{array}
+
+$$
 
 TABLE 10.2 A Nim multiplication table. All the entries are nimbers.
 
@@ -95,7 +115,9 @@ multiply the corresponding ordinary numbers. The product of one of these
 special nimbers with itself is obtained by taking $1\frac{1}{2}$ times
 its ordinary value.
 
-$$\begin{array}{r cccc cccc cccc cccc}
+$$
+
+\begin{array}{r cccc cccc cccc cccc}
 a+b &   0   &   1   &   2   &   3   &   4   &   5   &   6   &   7   &   8   &   9   &   10  &   11  &   12  &   13  &   14  &   15  \\
 0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   &   0   \\
 1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   &   1   \\
@@ -113,18 +135,24 @@ a+b &   0   &   1   &   2   &   3   &   4   &   5   &   6   &   7   &   8   &   
 13  &   1   &   13  &   10  &   8   &   14  &   1   &   13  &   10  &   8   &   14  &   1   &   13  &   10  &   8   &   14  &   1   \\
 14  &   1   &   14  &   8   &   10  &   13  &   1   &   14  &   8   &   10  &   13  &   1   &   14  &   8   &   10  &   13  &   1   \\
 15  &   1   &   15  &   9   &   13  &   12  &   3   &   10  &   7   &   11  &   8   &   2   &   5   &   14  &   6   &   4   &   1   \\
-\end{array}$$
+\end{array}
+
+$$
 
 TABLE 10.3 Nim powers a. Here a is a nimber, butb is an ordinary number.
 
 Using these rules and the laws of algebra, you can do nim arith-
 
-$$\begin{array}{ccccc ccccc c}
+$$
+
+\begin{array}{ccccc ccccc c}
     5+6 &=& (4+1) &+& (4+2) &=& (4+4) &+& (1+2) &=& 0+3=3\\
     5\times 6 &=& (4+1) &\times& (4+2)\\
     &=& (4\times 4) &+& (4\times 2) &+& (1\times 4) &+& (1\times 2)\\
     &=& 6 &+& 8 &+& 4 &+& 2 = & 8\\
-\end{array}$$
+\end{array}
+
+$$
 
 It turns out that any collection of Nim heaps, $a, b, c,...$, can be
 replaced by a single heap of size $a + b + c+...$, so the answer to our
@@ -133,19 +161,35 @@ which $a+b+c+\dots=0$,
 
 So, if your opponent moved to a position
 
-$$3,5,7$$
+$$
+
+3,5,7
+
+$$
 
 he should jose, since
 
-$$(3+5)+7=6+7=1$$
+$$
+
+(3+5)+7=6+7=1
+
+$$
 
 from Table 10.1. If you respond by moving to any of
 
-$$2,5,7\; 3,4,7\; 3,5,6$$
+$$
+
+2,5,7\; 3,4,7\; 3,5,6
+
+$$
 
 and continue playing this well, you'll eventually win, since
 
-$$2+5+7=3+4+7=3+5+6=0$$
+$$
+
+2+5+7=3+4+7=3+5+6=0
+
+$$
 
 Nim addition has applications to many other games, and Nim
 multiplication helps to analyze a few more, and these notions have some
@@ -153,12 +197,20 @@ other applications, outside game theory. Here's a simple one.
 
 Each sequence in Table 10.4 has been selected as the first sequence
 
-$$...000...v\; w\; x\; y\; z$$
+$$
+
+...000...v\; w\; x\; y\; z
+
+$$
 
 that differs from each of its predecessors in at least three places. The
 individual digits may be arbitrary nimbers
 
-$$0,\; 1,\; 2,\; 3,\; 4,\; 5,\; 6,\; 7,\; 8,\; 9,\; 10,\; 11,\; 12,\;...$$
+$$
+
+0,\; 1,\; 2,\; 3,\; 4,\; 5,\; 6,\; 7,\; 8,\; 9,\; 10,\; 11,\; 12,\;...
+
+$$
 
 (where $11$, for example, is to be thought of as a single digit), but
 the order is as if they were ordinary integers, written in a
@@ -172,7 +224,9 @@ without carrying, you'll always get a new codeword. Even stranger, if
 you multiply each separate digit of a codeword by a nimber, you get a
 codeword.
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
     ...000000 \\
     ...000111 \\
     ...000222 \\
@@ -198,7 +252,9 @@ $$\begin{array}{l}
     ...0...... \\
     ...100132 \\
     ...0...... \\
-\end{array}$$
+\end{array}
+
+$$
 
 TABLE 10.4 The codewords of the integral lexicographic code of distance
 $3$.
@@ -212,9 +268,13 @@ Infinite Green Hackenbush involves the arithmetic of infinite nimbers,
 which we won't teach you in full. The good move in Figure 10.15 is to
 replace $\omega \times 2$ by $\omega + 6$ since
 
-$$(\omega +6)+
+$$
+
+(\omega +6)+
     (\omega +3)+
-    5=0$$
+    5=0
+
+$$
 
 Figure 10.14 Value of a Neutral Hackenbush tree.
 
@@ -229,7 +289,9 @@ function $e^x$ grows more rapidly than any of these. Let's define it to
 have growth rate $\omega$. The table shows the growth rates of some
 functions.
 
-$$\begin{array}{ccccc ccccc ccc}
+$$
+
+\begin{array}{ccccc ccccc ccc}
     X&
     X^{2}&
     X^{3}&
@@ -256,7 +318,9 @@ $$\begin{array}{ccccc ccccc ccc}
     \omega^2&
     \omega^{\omega}&
     1/\omega\\
-\end{array}$$
+\end{array}
+
+$$
 
 The idea of rates of growth as numbers first appeared in the infinitary
 calculus of Paul Dubois-Raymond.
@@ -264,7 +328,11 @@ calculus of Paul Dubois-Raymond.
 In calculus problems one often deals with a power series involving a
 small number x, for instance,
 
-$$\ln (1+x) =x - \frac{1}{2}x^2 +\frac{1}{3}x^3 -\frac{1}{4} x^4 + ...,$$
+$$
+
+\ln (1+x) =x - \frac{1}{2}x^2 +\frac{1}{3}x^3 -\frac{1}{4} x^4 + ...,
+
+$$
 
 Here we regard this as the sum of the first-order infinitesimal $x$, the
 second-order one $-\frac{1}{2}x^2$, the third-order one
@@ -273,10 +341,14 @@ $x - \frac{1}{2}x^2 + \frac{1}{3}x^3$ is a third-order approximation to
 $\ln (1 + x)$. In our notation, taking $x = 1/X$, these are decreasing
 functions of $X$ and so have *negative* growth rates:
 
-$$\begin{array}{ccc}
+$$
+
+\begin{array}{ccc}
 x & x^2 & x^3 \\
 -1 & -2 & -3 \\
-\end{array}$$
+\end{array}
+
+$$
 
 We expect that the future will bring other applications and other
 species of infinite numbers, but we shall stop here, since we cannot

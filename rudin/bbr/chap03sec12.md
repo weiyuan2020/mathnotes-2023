@@ -3,22 +3,20 @@
 The series $\sum a_n$ i said to *converge absolutely* if the series
 $\sum |a_n|$ converges.
 
-
 ### thm:3.45 
  if $\sum a_n$ converges absolutely, then
 $\sum a_n$ converges.
 
-
-
 *Proof.* The assertion follow from the inequality
 
 $$
+
 \left|\sum_{k=n}^{m}a_k\right|
         \leq \sum_{k=n}^{m} |a_k|,
+
 $$
+
  plus the Cauchy criterion. ◻
-
-
 
 ### myremark:3.46 
  For series of positive terms,
@@ -28,8 +26,11 @@ If $\sum a_n$ converges, but $\sum |a_n|$ diverges, we say that
 $\sum a_n$ converges *nonabsolutely*. For instance, the series
 
 $$
+
 \sum \frac{(-1)^n}{n}
+
 $$
+
  converges nonabsolutely (Theorem
 \[\[thm:3.43\]](#thm:3.43){reference-type="ref" reference="thm:3.43"}).
 

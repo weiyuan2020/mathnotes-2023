@@ -338,36 +338,180 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = -2.0999999999999996`, \
-$CellContext`b$$ = -1.48, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"\:65e0\:6807\:9898\"", Typeset`specs$$ = {{
-      Hold[$CellContext`a$$], -10., 10.}, {
-      Hold[$CellContext`b$$], -2, 2}}, Typeset`size$$ = {
-    364.66509577709525`, {111., 114.71919311110565`}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+   DynamicModuleBox[{$CellContext`a
+
+$$
+
+ = -2.0999999999999996`, \
+$CellContext`b
+
+$$
+
+ = -1.48, Typeset`show
+
+$$
+
+ = True, Typeset`bookmarkList
+
+$$
+
+ = {}, 
+    Typeset`bookmarkMode
+
+$$
+
+ = "Menu", Typeset`animator
+
+$$
+
+, Typeset`animvar
+
+$$
+
+ = 
+    1, Typeset`name
+
+$$
+
+ = "\"\:65e0\:6807\:9898\"", Typeset`specs
+
+$$
+
+ = {{
+      Hold[$CellContext`a
+
+$$
+
+], -10., 10.}, {
+      Hold[$CellContext`b
+
+$$
+
+], -2, 2}}, Typeset`size
+
+$$
+
+ = {
+    364.66509577709525`, {111., 114.71919311110565`}}, Typeset`update
+
+$$
+
+ = 0, 
+    Typeset`initDone
+
+$$
+
+, Typeset`skipInitDone
+
+$$
+
+ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {$CellContext`a$$ = -10., $CellContext`b$$ = -2}, 
+      "Variables" :> {$CellContext`a
+
+$$
+
+ = -10., $CellContext`b
+
+$$
+
+ = -2}, 
       "ControllerVariables" :> {}, 
       "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> Plot[
-        CosIntegral[$CellContext`a$$ (-$CellContext`b$$ + $CellContext`x)], \
+       Typeset`show
+
+$$
+
+, Typeset`bookmarkList
+
+$$
+
+, Typeset`bookmarkMode
+
+$$
+
+, 
+        Typeset`animator
+
+$$
+
+, Typeset`animvar
+
+$$
+
+, Typeset`name
+
+$$
+
+, 
+        Typeset`specs
+
+$$
+
+, Typeset`size
+
+$$
+
+, Typeset`update
+
+$$
+
+, Typeset`initDone
+
+$$
+
+,
+         Typeset`skipInitDone
+
+$$
+
+}, "Body" :> Plot[
+        CosIntegral[$CellContext`a
+
+$$
+
+ (-$CellContext`b
+
+$$
+
+ + $CellContext`x)], \
 {$CellContext`x, -10., 10.}], 
-      "Specifications" :> {{$CellContext`a$$, -10., 
-         10.}, {$CellContext`b$$, -2, 2}}, "Options" :> {}, 
+      "Specifications" :> {{$CellContext`a
+
+$$
+
+, -10., 
+         10.}, {$CellContext`b
+
+$$
+
+, -2, 2}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
      ImageSizeCache->{409., {160.9206298828125, 166.0793701171875}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
     SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+    UndoTrackedVariables:>{Typeset`show
+
+$$
+
+, Typeset`bookmarkMode
+
+$$
+
+},
+    UnsavedVariables:>{Typeset`initDone
+
+$$
+
+},
+    UntrackedVariables:>{Typeset`size
+
+$$
+
+}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",

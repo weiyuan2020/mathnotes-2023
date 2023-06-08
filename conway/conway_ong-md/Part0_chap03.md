@@ -27,7 +27,11 @@ $\alpha$ (Old numbers).
 Now each $x \in N_\alpha$ defines a Dedekind section $L, R$ of
 $O_{\alpha}$ if we set
 
-$$L = \{y\in O_{\alpha}|y<x\},\text{ and }R=\{y\in O_{\alpha}|y> x\}.$$
+$$
+
+L = \{y\in O_{\alpha}|y<x\},\text{ and }R=\{y\in O_{\alpha}|y> x\}.
+
+$$
 
 Since the simplicity theorem tells us that then $x = \{L| R\}$, we can
 regard $M_{\alpha} = O_{\alpha} \cup N_{\alpha}$as the union of
@@ -66,7 +70,11 @@ We now order such sign-sequences lexicographically by the conditions:
 
 1.  \< (t) iff for some $\alpha$ we have
 
-$$S_\beta = t_\beta \text{ for all }\beta<\alpha,\text{ but }s_\alpha < t_\alpha,$$
+$$
+
+S_\beta = t_\beta \text{ for all }\beta<\alpha,\text{ but }s_\alpha < t_\alpha,
+
+$$
 
 it being understood that $- <0 < +$.
 
@@ -94,7 +102,11 @@ Then by induction, for each $\beta<\alpha$, there exists a number
 $x_\beta$ whose sign-expansion is $s(\beta)$. Then we consider the
 number
 
-$$x = \{x_\beta \text{ for which } s(\beta) < (s)| x, \text{ for which } s(\beta) > (s)\}.$$
+$$
+
+x = \{x_\beta \text{ for which } s(\beta) < (s)| x, \text{ for which } s(\beta) > (s)\}.
+
+$$
 
 Plainly the birthday of $x$ is at most $\alpha$, and $s_\beta$ is the
 sign of $x - x_\beta$ for all $\beta<\alpha$, so that $x$ has the
@@ -150,7 +162,11 @@ on. \[Thus $\omega^{\frac{3}{4}}$ will be the simplest leader between
 $\omega^{\frac{1}{2}}$ and $\omega^1$.\] The same effect is achieved by
 the more formal definition
 
-$$\omega^x = \{0, r\omega^{x^L} | r\omega^{x^R}\}$$
+$$
+
+\omega^x = \{0, r\omega^{x^L} | r\omega^{x^R}\}
+
+$$
 
 where $r$ denotes a variable ranging over all positive real numbers. (We
 shall also use $s$ in this sense.)
@@ -175,7 +191,11 @@ $X'Y + XY' - X'Y'$. If $Y'$ is $0$, this is $X'Y$, and if $X'$ is $0$,
 it is $XY'$. Otherwise we can suppose
 $X' = r\omega^{x'}, Y' = s\omega^{y'}$, when the formula becomes
 
-$$r\omega^{x'+y} + s\omega^{x+y'} - rs\omega^{x'+y'}$$
+$$
+
+r\omega^{x'+y} + s\omega^{x+y'} - rs\omega^{x'+y'}
+
+$$
 
 by induction.
 
@@ -183,7 +203,11 @@ When this is positive, it lies between two positive real multiples of
 $\omega'$. where $z$ is the largest of the three indices, which is
 always one of $x' + y$ and $x + y'$. We have said enough to show that
 
-$$\omega^x\cdot\omega^y = \{0,r\omega^{x^L+y},s\omega^{x+y^L}|r\omega^{x^R+y},s\omega^{x+y^R}\}.$$
+$$
+
+\omega^x\cdot\omega^y = \{0,r\omega^{x^L+y},s\omega^{x+y^L}|r\omega^{x^R+y},s\omega^{x+y^R}\}.
+
+$$
 
 Summary. $\omega^x$ does indeed behave like the xth power of $\omega$.
 Those familiar with the normal arithmetic of ordinals will have no
@@ -200,7 +224,11 @@ $R$ are non-empty, since for suitably large $n$ we have
 $-n\in L, n\in R$, and so by the theory of real numbers, one of $L$ and
 $R$ has an external point $r_0$, say. Write
 
-$$x=\omega^{y_0} .r_0 + x_1$$
+$$
+
+x=\omega^{y_0} .r_0 + x_1
+
+$$
 
 It follows that $x_1$, is *small compared to* $x$, that is, that $nx_1$,
 is between $x$ and $-x$ for all integers $n$. If $x_1$, is not zero, we
@@ -209,7 +237,11 @@ $x_1 = \omega^{y_0}. r_1 + x_2$, where $x_2$ is small compared to $x_1$.
 
 If again $x_2$ is non-zero, we can continue, producing an expansion
 
-$$x=\omega^{y_0}.r_0+\omega^{y_1}.r_1+\dots+\omega^{y_{n-1}}.r_{n-1}+x_n$$
+$$
+
+x=\omega^{y_0}.r_0+\omega^{y_1}.r_1+\dots+\omega^{y_{n-1}}.r_{n-1}+x_n
+
+$$
 
 which will terminate painlessly if any $x_n$ is zero. But usually the
 expansion will continue for more than $\omega$ steps, so that we must
@@ -265,7 +297,14 @@ call $x$ reducible. Suppose the index $y$, in the $\alpha$-term of $x$
 has the same birthday as $x$. Then it is easy to see that
 $\omega^{y_\alpha}.r_\alpha$, is the last term in the normal form of
 $x$, and that $r_\alpha = \pm 1$. \[This is because the numbers
-$$\sum_{\beta<\alpha}\omega^{y_\beta}.r_\beta \pm \omega^{y_\alpha}$$ \]
+
+$$
+
+\sum_{\beta<\alpha}\omega^{y_\beta}.r_\beta \pm \omega^{y_\alpha}
+
+$$
+
+ \]
 
 So in this case, we can write $x=x'\pm\omega^{y}$, where $x'$ is born
 before $x, \omega^{y}$ is small compared to $x$, and $y$ has the same
@@ -274,7 +313,11 @@ inserting the normal form for $y$ we obtain an expression for $x$ in
 terms of simpler numbers, and so we regard $x$ as reducible in this case
 also. In the hard cases, we shall find
 
-$$x=x'\pm\omega^{y}, y=y'\pm\omega^{z}, z=z'\pm\omega^{t},... (\text{to just } \omega \text{ terms}).$$
+$$
+
+x=x'\pm\omega^{y}, y=y'\pm\omega^{z}, z=z'\pm\omega^{t},... (\text{to just } \omega \text{ terms}).
+
+$$
 
 It is only these numbers which we shall finally call *irreducible*.
 
@@ -287,11 +330,19 @@ any irreducible number is an $\varepsilon$-number.
 The *continued exponential* expression for the number $x$ we have just
 considered is
 
-$$x=x'\pm\omega^{y'\pm\omega^{z'\pm\omega^{t'\pm\omega^{\cdot^{\cdot^{\cdot}}}}}}$$
+$$
+
+x=x'\pm\omega^{y'\pm\omega^{z'\pm\omega^{t'\pm\omega^{\cdot^{\cdot^{\cdot}}}}}}
+
+$$
 
 which we write as
 
-$$x=x'\pm\omega^{y'\pm}\omega^{z'\pm}\omega^{t'\pm}\omega^{\cdots}$$
+$$
+
+x=x'\pm\omega^{y'\pm}\omega^{z'\pm}\omega^{t'\pm}\omega^{\cdots}
+
+$$
 
 so as to keep it on one line (almost).
 
@@ -301,7 +352,11 @@ exponential. We shall only discuss this briefly and informally.
 
 For the moment, let $E$ stand for the formal expression
 
-$$a\pm\omega^{b\pm}\omega^{c\pm}\omega^{\cdots}.$$
+$$
+
+a\pm\omega^{b\pm}\omega^{c\pm}\omega^{\cdots}.
+
+$$
 
 The first number to be born with this as its continued exponential will
 be called $E_0$, or just $E$. At later times, there will be constructed
@@ -315,16 +370,28 @@ The following examples will show why $E_x$, exists for all numbers $x$.
 Let $\varepsilon$ denote the particular expression with
 $a = b =c =... = 0$ and all signs $+$, or more simply,
 
-$$\varepsilon = \omega^{\omega^{\omega^{\cdot^{\cdot^{\cdot}}}}}.$$
+$$
+
+\varepsilon = \omega^{\omega^{\omega^{\cdot^{\cdot^{\cdot}}}}}.
+
+$$
 
 Then $\varepsilon_0$ (or simply $\varepsilon$) denotes the first ordinal
 $\varepsilon$-number greater than $\omega$, namely the number
 
-$$\{\omega, \omega^{\omega}, \omega^{\omega^{\omega}},...| \},$$
+$$
+
+\{\omega, \omega^{\omega}, \omega^{\omega^{\omega}},...| \},
+
+$$
 
 and $\varepsilon_1$ denotes the next $\varepsilon$-number
 
-$$\{\varepsilon+1, \omega^{\varepsilon+1}, ...|\},$$
+$$
+
+\{\varepsilon+1, \omega^{\varepsilon+1}, ...|\},
+
+$$
 
 and so on. \[This is the usual notation for the ordinal
 $\varepsilon$-number. \]
@@ -346,7 +413,11 @@ $\varepsilon$-number which is *not* an ordinal number.
 In a similar way, we see that the number $\varepsilon_{-\frac{1}{2}}$ is
 defined by
 
-$$\varepsilon_{-\frac{1}{2}}=\{\delta+1, \omega^{\delta+1}, \omega^{\omega^{\delta+1}},... | \varepsilon-1, \omega^{\varepsilon-1}, \omega^{\omega^{\varepsilon-1}},...\}.$$
+$$
+
+\varepsilon_{-\frac{1}{2}}=\{\delta+1, \omega^{\delta+1}, \omega^{\omega^{\delta+1}},... | \varepsilon-1, \omega^{\varepsilon-1}, \omega^{\omega^{\varepsilon-1}},...\}.
+
+$$
 
 It is easy to show that these generalised $\varepsilon$-number are
 precisely the solutions of the equation $x = \omega^x$.
@@ -354,11 +425,19 @@ precisely the solutions of the equation $x = \omega^x$.
 In a similar fashion we can show that the equation $x = \omega^x$ has a
 unique solution
 
-$$\left[\omega^{-\omega^{-\omega^{\cdot^{\cdot^{\cdot}}}}}\right]_0$$
+$$
+
+\left[\omega^{-\omega^{-\omega^{\cdot^{\cdot^{\cdot}}}}}\right]_0
+
+$$
 
 and that more generally if we write
 
-$$x=\left[\omega^{-\omega^{-\omega^{\cdot^{\cdot^{\cdot}}}}}\right]_{z},y=\left[\omega^{-\omega^{-\omega^{\cdot^{\cdot^{\cdot}}}}}\right]_{-z}$$
+$$
+
+x=\left[\omega^{-\omega^{-\omega^{\cdot^{\cdot^{\cdot}}}}}\right]_{z},y=\left[\omega^{-\omega^{-\omega^{\cdot^{\cdot^{\cdot}}}}}\right]_{-z}
+
+$$
 
 then we have $x = \omega^{-y}, y=\omega^{-x}$.
 
@@ -403,7 +482,9 @@ and that $r,s, t,...$ have (ordinary) sign-expansions
 $[R_0,R_1,...], [S_0,S_1,---], [T_0,T_1,...],...$. Then the
 sign-expansion of $\omega^x.r+\omega^y.s+\omega.t+...$ is
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     &(X_{0}R_{0})^{\omega^{e_{0}+1}},...
     &(X_{\delta}R_{0})^{\omega^{e_{\delta}+1}},...
     &R_{1}^{\omega^{e_{\alpha}}},
@@ -415,7 +496,9 @@ $$\begin{aligned}
     &(Z_{0}T_{0})^{\omega^{g_{0}+1}},...
     &(Z_{\delta}T_{0})^{\omega^{g_{\delta}+1}},...
     &T_{1}^{\omega^{g_{\gamma}}},
-    &T_{2}^{\omega^{g_{\gamma}}},...,&...\end{aligned}$$
+    &T_{2}^{\omega^{g_{\gamma}}},...,&...\end{aligned}
+
+$$
 
 where for each $\delta<\alpha$, $e_{\delta}$ denotes the (ordinal)
 number of $+$ signs among the numbers
@@ -443,9 +526,13 @@ $l \in L$, $r \in R$, and $s$ is any positive real.
 Our theory of normal forms is easily extended to cater for gaps. In fact
 any gap has one of the two forms
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \sum_{\beta\in \text{\bf{On}}} \omega^{x_{\beta}}.r_{\beta}\\
-    \sum_{\beta < \alpha} \omega^{x_{\beta}}.r_{\beta} \pm \omega^{\Xi'} \\\end{aligned}$$
+    \sum_{\beta < \alpha} \omega^{x_{\beta}}.r_{\beta} \pm \omega^{\Xi'} \\\end{aligned}
+
+$$
 
 where in each case the sequence $(x_{\beta})$ is decreasing and each
 $r_{\beta}$ is a non-zero real number, and in the second case $\Xi'$ is
@@ -462,7 +549,11 @@ same kind. Consequently we can continue, defining a sequence of numbers
 $x$, and gaps $\Xi_{n}$ so that $\Xi_{n}=x_{n} \pm \omega^{\Xi_{n+1}}$
 and the gap $\Xi=\Xi_{0}$ has a continued exponential expression
 
-$$\Xi = x_0 \pm \omega^{x_1 \pm}\omega^{x_2 \pm}\omega^{\cdots}.$$
+$$
+
+\Xi = x_0 \pm \omega^{x_1 \pm}\omega^{x_2 \pm}\omega^{\cdots}.
+
+$$
 
 The gap is not determined by this expression however-for instance
 (**No**, $\varnothing$) and the upper bound of all ordinals less than

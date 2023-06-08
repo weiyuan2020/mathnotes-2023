@@ -51,24 +51,32 @@ purposes in out-of-the-way places. The particular sequence of words
 varies both with the part of the country and the purpose for which they
 were used. One such system is
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
         \text{\emph{wan, twan, tetbera, methera, pimp,}}\\
         \text{\emph{sethera, lethbera, boverd, dovera, dick,}}\\
         \text{\emph{wanadick, twanadick, tetberadick, metheradick, pimpdick,}}\\
         \text{\emph{setheradick, letberadick, boveradick, doveradick, bumfit,}}\\
         \text{\emph{wanabumfit,...,}}\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 Such rustic sequences appear in many countries. They are usually highly
 corrupted versions of the standard number systems of ancient languages.
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
     \text{\emph{Hickory, dickory, dock.}}\\
     \text{\emph{The mouse ran up the clock.}}\\
     \text{\emph{The clock struck one;}}\\
     \text{\emph{The mouse ran down.}}\\
     \text{\emph{Hickory, dickory, dock.}}\\
-\end{array}$$
+\end{array}
+
+$$
 
 Probably hickory,"dickory,\" and "dock\" are the words for "eight,\"
 nine,\" and "ten\" in one of these systems (compare "hovera, dovera,

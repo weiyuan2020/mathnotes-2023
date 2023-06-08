@@ -35,7 +35,12 @@ Tuesdays; the numbers $3, 10, 17, 24, 31$ are all congruent modulo $7$.
 
 A three-line version of the equals sign is used to denote congruence.
 For example, modulo $9$,
-$$1 \equiv  10  \equiv  100  \equiv  1000  \equiv  10000  \equiv \dots,$$
+
+$$
+
+1 \equiv  10  \equiv  100  \equiv  1000  \equiv  10000  \equiv \dots,
+
+$$
 
 and this is the basis of *preuve par neuf*, or \"casting out the
 nines,\" a useful arithmetic check. To cast out nines from a number,
@@ -47,7 +52,11 @@ $5\times 5 \equiv 25=2+5=7$, agreeing with
 $239 \times 4649 = 1111111 \equiv 7$. You can test the multiplication
 $127 \times 9721 = 1234567$ similarly. Now suppose we wish to check that
 
-$$2^{32} + 1 = 4294967297 = 641 \times 6700417.$$
+$$
+
+2^{32} + 1 = 4294967297 = 641 \times 6700417.
+
+$$
 
 The sums of the digits of the two factors are $11$ and $25$, and the
 sums of *their digits* are $2$ and $7$, whose product is $14$, the sum
@@ -100,7 +109,6 @@ from each part of Figure 2.1, into a single table, we have the
 **multiplication table** (Figure 2.8), whose main diagonai gives us the
 **square numbers** (Figure 2.9).
 
-
   --------- --------- --------- ---------- ---------- ----------
                                                       
    $1^2=1$   $2^2=4$   $3^2=9$   $4^2=16$   $5^2=25$   $6^2=36$
@@ -115,11 +123,15 @@ the answers for moduli 5, 7, and 8. Figure 2.10(a) is the same as Figure
 
 From Figure 2.10(c) we see that
 
-$$\boxed{
+$$
+
+\boxed{
         \begin{array}{c}
             \text{The odd squares are}\\ \text{congruent to 1 modulo 8.}\\
         \end{array}
-    }$$
+    }
+
+$$
 
 We'll see another neat proof of this after we've met the triangular
 numbers (Figure 2.23).
@@ -143,5 +155,12 @@ produce a larger figure of the same shape a gnomon (knower) after the
 shape of the gnomon of a sundial (time-knower). The **gnomons** of
 Figure 2.12 fit together to show that the sum of the first $n$ odd
 numbers is the $n$th square, $n^2$. The addition of one more gnomon
-would illustrate the identity $$\begin{aligned}
-n^2+(2n+1)=(n+1)^2\end{aligned}$$
+would illustrate the identity 
+
+$$
+
+\begin{aligned}
+n^2+(2n+1)=(n+1)^2\end{aligned}
+
+$$
+

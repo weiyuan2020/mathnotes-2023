@@ -12,7 +12,6 @@ each theorem. This section may thus be regarded as a large exercise, and
 as an opportunity to apply some of the material that has been presented
 so far.
 
-
 ### mydef:8.17 
  For $0 < x < \infty$,
 
@@ -21,30 +20,29 @@ so far.
 $$
 
         \Gamma(x) = \int_{0}^{\infty} t^{x-1} e^{-t} \mathrm{d} t.
+
 $$
+
  The
 integral converges for these $x$. (When $x < 1$, both $0$ and $\infty$
 have to be looked at.)
 
-
-
 ### thm:8.18 
 
-
-
 The functional equation 
+
 $$
+
 \Gamma(x+1) = x\Gamma(x)
+
 $$
+
  holds if
 $0 < x < \infty$.
 
 $\Gamma(n+1)=n!$ for $n=1,2,3,\dots$.
 
 $\log \Gamma$ is convex on $(0,\infty)$.
-
-
-
 
 ### thm:8.19 
  If $f$ is a positive function on
@@ -58,8 +56,6 @@ $(0, \infty)$ such that
 
 then $f(x) = \Gamma(x)$.
 
-
-
 *Proof.* 
 \label{eq:8.94}
 
@@ -68,9 +64,8 @@ $$
         \phi(x+1) = \phi(x) + \log x
         \quad
         (0 < x < \infty),
+
 $$
-
-
 
 \label{eq:8.95}
 
@@ -78,13 +73,13 @@ $$
 
         \Gamma(x) =
         \lim_{n \to \infty} \frac{n!n^x}{x(x+1)\cdots(x+n)}
+
 $$
+
  at least
 when $0 < x < 1$; from this one can deduce that
 (\[\[eq:8.95\]](#eq:8.95){reference-type="ref" reference="eq:8.95"})
 holds for all $x > 0$, since $\Gamma(x+1)=x\Gamma(x)$. ◻
-
-
 
 ### thm:8.20 
  If $x>0$ and $y>0$, then
@@ -95,11 +90,11 @@ $$
 
         \int_{0}^{1} t^{x-1}(1-t)^{y-1} \mathrm{d} t =
         \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}.
+
 $$
+
  This integral is the
 so-called $B(x, y)$.
-
-
 
 *Proof.* 
 \label{eq:8.97}
@@ -107,10 +102,10 @@ so-called $B(x, y)$.
 $$
 
         B(x+1,y) = \frac{x}{x+y}B(x,y) .
+
 $$
+
  ◻
-
-
 
 ### thm:8.21 
  The substitution $t = \sin^2 \theta$
@@ -125,7 +120,9 @@ $$
         (\cos \theta)^{2y-1}
         \mathrm{d} \theta =
         \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}.
+
 $$
+
  The special case
 $x=y=\frac{1}{2}$ gives 
 \label{eq:8.99}
@@ -133,8 +130,8 @@ $x=y=\frac{1}{2}$ gives
 $$
 
         \Gamma\left( \frac{1}{2} \right) = \sqrt{\pi} .
-$$
 
+$$
 
 The substitution $t=s^2$ turns
 (\[\[eq:8.93\]](#eq:8.93){reference-type="ref" reference="eq:8.93"})
@@ -146,8 +143,8 @@ $$
         \Gamma(x) = 2 \int_{0}^{\infty} s^{2x-1} e^{-s^2} \mathrm{d} s
         \quad
         (0 < x < \infty)
-$$
 
+$$
 
 The special case $x=\frac{1}{2}$ gives 
 \label{eq:8.101}
@@ -155,8 +152,8 @@ The special case $x=\frac{1}{2}$ gives
 $$
 
         \int_{-\infty}^{\infty} e^{-s^2} \mathrm{d} s = \sqrt{\pi} .
-$$
 
+$$
 
 By (\[\[eq:8.99\]](#eq:8.99){reference-type="ref" reference="eq:8.99"}),
 the identity 
@@ -167,12 +164,12 @@ $$
         \Gamma(x) = \frac{2^{x-1}}{\sqrt{\pi}}
         \Gamma \left( \frac{x}{2} \right)
         \Gamma \left( \frac{x+1}{2} \right)
+
 $$
+
  follows directly from
 Theorem \[\[thm:8.19\]](#thm:8.19){reference-type="ref"
 reference="thm:8.19"}.
-
-
 
 ### thm:8.22 
  This provides a simple approximate
@@ -183,6 +180,7 @@ $n$ is large). The formula is
 $$
 
         \lim_{x \to \infty} \frac{\Gamma(x+1)}{(x/e)^{x}\sqrt{2\pi x}} = 1 .
+
 $$
 
 Here is a proof. Put $t=x(1+u)$ in
@@ -195,7 +193,9 @@ $$
         \Gamma(x+1) = x^{x+1} e^{-x}
         \int_{-1}^{\infty}
         \left[ (1+u)e^{-u} \right]^{x} \mathrm{d} u .
+
 $$
+
  Determine $h(u)$ so that
 $h(0)=1$ and 
 \label{eq:8.105}
@@ -203,7 +203,9 @@ $h(0)=1$ and
 $$
 
         (1+u)e^{-u}=\exp \left[ -\frac{u^2}{2}h(u) \right]
+
 $$
+
  if
 $-1<u<\infty$, $u \neq 0$. Then 
 \label{eq:8.106}
@@ -211,7 +213,9 @@ $-1<u<\infty$, $u \neq 0$. Then
 $$
 
         h(u) = \frac{2}{u^2} \left[ u - \log (1+u) \right].
+
 $$
+
  It follows
 that $h$ is continuous, and that $h(u)$ decreases monotonically from
 $\infty$ to $0$ as $u$ increases from $-1$ to $\infty$.
@@ -225,17 +229,22 @@ $$
 
         \Gamma(x+1) = x^x e^{-x} \sqrt{2x}
         \int_{-\infty}^{\infty} \psi_x(s) \mathrm{d} s
+
 $$
+
  where
 
 $$
+
 \psi_x(s) = \left\{
         \begin{array}{ll}
             \exp \left[ -s^2 h (s\sqrt{2/x}) \right] & (-\sqrt{x/2}<s<\infty), \\ 
             0                                        & (s\leq -\sqrt{x/2}).    \\ 
         \end{array}
         \right.
+
 $$
+
  Note the following facts about $\psi_x(s)$:
 
 (a) For every $s$, $\psi_x(s)\rightarrow e^{-s^2}$ as
@@ -248,7 +257,6 @@ $$
 (d) When $s>0$ and $x>1$, then $0<\psi_x(s)<\psi_1(s)$.
 
 (e) $\int_{0}^{\infty}\psi_1(s)\mathrm{d} s<\infty$.
-
 
 The convergence theorem stated in Exercise
 \[\[ex:7.12\]](#ex:7.12){reference-type="ref" reference="ex:7.12"} of can

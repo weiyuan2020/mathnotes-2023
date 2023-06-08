@@ -2,13 +2,10 @@ chap11sec05
 
 # Simple functions
 
-
 ### mydef:11.19 
  simple function
 
 characteristic function
-
-
 
 ### thm:11.20 
  Let $f$ be a real function on $X$.

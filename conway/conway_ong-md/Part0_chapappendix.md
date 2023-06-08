@@ -56,12 +56,20 @@ rather than a set, and so cannot serve as an element in some other
 class. A slightly greater knowledge of ZF shows that this is no
 obstacle, and the theory may be formalised along the following lines.
 
-We define a game as an ordered pair $$ of sets whose elements are
+We define a game as an ordered pair 
+
+$$
+
+ of sets whose elements are
 themselves games of lower rank. (The *rank* of a set is the least
 $\alpha$ for which that set belongs to $P_\alpha$.) Then we introduce
 the relation $\leqslant$ on games by
 
-$$x \leqslant x' \text{ iff}(\text{no member of } L \text{ is } \geqslant x' \text{ and } x \geqslant \text{ no member of } R'),$$
+$$
+
+x \leqslant x' \text{ iff}(\text{no member of } L \text{ is } \geqslant x' \text{ and } x \geqslant \text{ no member of } R'),
+
+$$
 
 where $x = <L, R>$, and $x' = <L', R'>$. The equivalence relation
 $\doteq$ is then introduced by $x \doteq y$ if and only if
@@ -76,7 +84,10 @@ $x$. Any set of the form $[x]$ for some prenumber $x$ is then called a
 *number*.
 
 So a number becomes a rather curiously restricted set of ordered pairs
-$$, each of which is of course a set according to the Kuratowski
+
+$$
+
+, each of which is of course a set according to the Kuratowski
 definition $= \{\{L\}, \{L, R\}\}$.
 
 Another, and technically simpler, approach makes use of the

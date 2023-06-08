@@ -1,9 +1,5 @@
 # Imagining Imaginary Numbers
 
-
-
-
-
 [[chap08Part001]]
 [[chap08Part002]]
 [[chap08Part003]]

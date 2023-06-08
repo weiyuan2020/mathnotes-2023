@@ -11,38 +11,60 @@ The angie $t_{a/b}$ of a hill of slope $b$ in $a$ is just the angle of
 the Gaussian number $a + bi$. These angies add the way Gauss's numbers
 multiply (Figure 9.3). For instance,
 
-$$(2+i)(3+i)=5+5i$$ so
+$$
 
-$$t_2+t_3=t_{5/5}=t_1$$
+(2+i)(3+i)=5+5i
+
+$$
+
+ so
+
+$$
+
+t_2+t_3=t_{5/5}=t_1
+
+$$
 
 ($5$ in $5$ hills have the same slope as $1$ in $1$ hills).
 
 We've seen in Chapter 8 that every Gaussian number can be written in
 essentially just one way as the product of Gauss's prime numbers:
 
-$$1\pm i,\; 3,\; 2\pm i,\; 7,\; 11,\; 3\pm 2i,\; 4\pm i,\; 19,\; 23,\; 5\pm 2i,\; 31,\dots.$$
+$$
+
+1\pm i,\; 3,\; 2\pm i,\; 7,\; 11,\; 3\pm 2i,\; 4\pm i,\; 19,\; 23,\; 5\pm 2i,\; 31,\dots.
+
+$$
 
 This tells us that any Gregory number $t_{a/b}$ is uniquely expressible
 in terms of the "prime" Gregory numbers
 
-$$t_{1/1},
+$$
+
+t_{1/1},
     t_{2/1},
     t_{3/2},
     t_{4/1},
     t_{5/2},
     t_{6/1},
-    t_{5/4},\dots.$$
+    t_{5/4},\dots.
+
+$$
 
 for which $a^2 + b^2$ is a prime number and $a/b \geq 1$. (These come
 from the complex Gaussian primes, $a + bi$,
 
-$$1+i,\;
+$$
+
+1+i,\;
     2+i,\;
     3+i,\;
     4+i,\;
     5+2i,\;
     6+i,\;
-    5+4i,\dots.$$
+    5+4i,\dots.
+
+$$
 
 The conjugate ones, $a - bi$, just give the negatives of these angles,
 and the *real* Gaussian primes, $3, 7, 11, ...$ , all give angle zero.)
@@ -64,20 +86,38 @@ sign is chosen so that you can cancel the corresponding prime number $p$
 We'll do $t_{70}$. We find $70^2 + 1 = 13 \times 29$, so our first
 Størmer number will be $12$, since $12^2 + 1 = 5 \times 29$. Now
 
-$$(70 + i)(12 - i) = 29(29 - 2i),$$ and we continue in the same way:
+$$
 
-$$\begin{array}{rl}
+(70 + i)(12 - i) = 29(29 - 2i),
+
+$$
+
+ and we continue in the same way:
+
+$$
+
+\begin{array}{rl}
     (29 - 2i)(5 - i) &= 13(11 - 3i)\\
     (11 - 3i)(5 - i) &= 26(2 - i)\\
-\end{array}$$
+\end{array}
+
+$$
 
 so that
 
-$$t_{70}-t_{12}-t_{5}-t_{5}=-t_{2}$$
+$$
+
+t_{70}-t_{12}-t_{5}-t_{5}=-t_{2}
+
+$$
 
 or
 
-$$t_{70}=t_{12}+2t_{5}-t_{2}.$$
+$$
+
+t_{70}=t_{12}+2t_{5}-t_{2}.
+
+$$
 
 Figure 9.4 illustrates this process geometrically and Table 9.1 lists
 the first $30$ Størmer numbers, $n$, with their corresponding primes,
@@ -126,19 +166,31 @@ Table 9.2 expresses the Gregory numbers, $t_n$, for which $n$ *isn't* a
 Størmer number in terms of those for which it is. The entries in this
 table are easily checked using Lewis Carroll's observation that
 
-$$t_{n} = t_{n+c}+t_{n+d}$$
+$$
+
+t_{n} = t_{n+c}+t_{n+d}
+
+$$
 
 holds just if $cd = n^2 + 1$. For instance, $100^2 + 1 = 73 \times 137$,
 so $t_{100} = t_{173} + t_{237}$. You can use Table 9.2 to find other
 formulas for $\pi$, for instance, Størmer's ow formula
 
-$$\frac{\pi}{4}=t_1=12t_8+8t_{57}-5t_{239}.$$
+$$
+
+\frac{\pi}{4}=t_1=12t_8+8t_{57}-5t_{239}.
+
+$$
 
 TABLE 9.2 Gregory numbers $t_n$, for which $n$ is not a Størmer number.
 
 Bernt Klostermark has produced many such formulas, such as
 
-$$\frac{\pi}{4}= 44 t_{57} +24 t_{1068} +12 t_{3001/3} -5  t_{239}.$$
+$$
+
+\frac{\pi}{4}= 44 t_{57} +24 t_{1068} +12 t_{3001/3} -5  t_{239}.
+
+$$
 
 Now that we know so much about $\pi$, we're ready for some other
 transcendental numbers. Of course, $\pi$ is the best-known

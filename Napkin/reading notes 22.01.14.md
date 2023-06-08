@@ -9,10 +9,8 @@ This book wan't to take a place in the middle ground between a "vague notion" an
 2. acquaint few really major examples.
 3. know the precise statements of famous theorems, and having a sense of why they *should* be true.
 
-
 understading "why" something is true can have many forms:
 This is sometimes accomplished with a complete rigorous proof; in other cases, it is given by the idea of the proof; it is just a few key examples with extensive cheerleading.
-
 
 # Advice for the reader
 ## Prerequisites

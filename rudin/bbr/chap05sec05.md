@@ -1,6 +1,5 @@
 # Derivatives of higher order
 
-
 ### mydef:5.14 
  If $f$ has a derivative $f'$ on an
 interval, and if $f'$ is itself differentiable, we denote the derivative
@@ -8,8 +7,11 @@ of $f'$ by $f''$ and call $f''$ the second derivative of $f$. Continuing
 in this manner, we obtain functions
 
 $$
+
 f,f',f'', f^{(3)}, \dots ,f^{(n)},
+
 $$
+
  each of which is the derivative
 of the preceding one. $f^{(n)}$ is called the $n$th derivative, or the
 derivative of order $n$, of $f$.

@@ -27,13 +27,17 @@ A **fifth** is $0.5849625007\dots.$ of an octave.
 
 We can use the continued fractions method (Chapter 6) to find that
 
-$$\begin{array}{rr}
+$$
+
+\begin{array}{rr}
 \text{roughly }
  7\text{ fifths make} & 4  \text{ octaves},\\
 12\text{ fifths make} & 7  \text{ octaves},\\
 41\text{ fifths make} & 24 \text{ octaves},\\
 53\text{ fifths make} & 31 \text{ octaves}.\\
-\end{array}$$
+\end{array}
+
+$$
 
 Is any whole number of fifths precisely equal to a whole number of
 octaves? This is the same as asking is log, $3$ a rational number? No!
@@ -57,11 +61,15 @@ The harmonic numbers are
 $H_{1} = 1, H_{2} = 1+\frac{1}{2},H_{3}=1+\frac{1}{2}+\frac{1}{3}$, and,
 more generally,
 
-$$H_n = 1
+$$
+
+H_n = 1
 +\frac{1}{2}
 +\frac{1}{3}
 +\dots
-+\frac{1}{n}.$$
++\frac{1}{n}.
+
+$$
 
 No harmonic number is a whole number after the first one: look at the
 term with the highest power of $2$ in it. It has nothing with which to
@@ -82,39 +90,59 @@ you get $8H_8$.
 
 In general, the **second harmonic number**, $H_n^{(n)}$, is
 
-$$H_1+
+$$
+
+H_1+
     H_2+
     \dots+
     H_n=
     (n+1)
     (H_{n+1}-1)
     =(n+1)
-    (H_{n+1}-H_1)$$
+    (H_{n+1}-H_1)
+
+$$
 
 and the **third harmonic number**, $H_n^{(3)}$, is
 
-$$H_1^{(2)}+
+$$
+
+H_1^{(2)}+
     H_2^{(2)}+
     \dots+
     H_n^{(2)}=
-    \binom{n+2}{n}(H_{n+2}-H_2),$$
+    \binom{n+2}{n}(H_{n+2}-H_2),
+
+$$
 
 and the $k$th harmonic number is
 
-$$H_n^{(k)}=\binom{n+k-1}{k-1}(H_{n+k-1}-H_{k-1})$$
+$$
+
+H_n^{(k)}=\binom{n+k-1}{k-1}(H_{n+k-1}-H_{k-1})
+
+$$
 
 ## HOW BIG IS THE NTH HARMONIC NUMBER?
 
 One answer is "about one $n$th of the $n$th prime." For example, the
 60th prime is $281$ and $281/60 = 4.6833 ...$, while
 
-$$1+\frac{1}{2}+\frac{1}{3} +... + \frac{1}{60} = 4.6798....$$
+$$
+
+1+\frac{1}{2}+\frac{1}{3} +... + \frac{1}{60} = 4.6798....
+
+$$
 
 We know that the size of the $n$th prime is roughly $n \ln n$, so
 another answer is "roughly $\ln n$." The real answer is rather
 surprising! $H_n$ is very close to
 
-$$\ln n + 0.5772156 + \frac{1}{2n}.$$
+$$
+
+\ln n + 0.5772156 + \frac{1}{2n}.
+
+$$
 
 FiGuRE 9.10 An area slightly bigger than inn.
 
@@ -123,15 +151,21 @@ in Figure 9.5 (with $c = n$). This is just a bit less (roughly $0.077$)
 than the polygonal area in Figure 9.10, which is made of $n - 1$ pieces,
 whose areas are the averages of
 
-$$1\text{ and } \frac{1}{2},\;
+$$
+
+1\text{ and } \frac{1}{2},\;
     \frac{1}{2}\text{ and } \frac{1}{3},\;
     \frac{1}{3}\text{ and } \frac{1}{4},\;
     ....\;
-    \frac{1}{n-1}\text{ and } \frac{1}{n},$$
+    \frac{1}{n-1}\text{ and } \frac{1}{n},
+
+$$
 
 So the total area is
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     &\frac{1}{2}\Biggl(
         1
         +\frac{1}{2}
@@ -145,14 +179,21 @@ $$\begin{aligned}
     \Biggr)\\
     &=1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{n}
     -\frac{1}{2}\Biggl(1+\frac{1}{n}\Biggr)\\
-    &= H_n -\frac{1}{2}-\frac{1}{2n}\\\end{aligned}$$
+    &= H_n -\frac{1}{2}-\frac{1}{2n}\\\end{aligned}
+
+$$
 
 and $H_n$ is about $\ln n + \frac{1}{2} + \frac{1}{2n} + 0.077$.
 
 # THE EULER-MASCHERONI NUMBER
 
 The number
-$$\gamma = 0.5772156649015328606065 1209008240243 1042 15933593992$$
+
+$$
+
+\gamma = 0.5772156649015328606065 1209008240243 1042 15933593992
+
+$$
 
 that appears here is one of the most mysterious of all arithmetic
 constants. Some people credit it to Mascheroni and others to Euler, so
@@ -181,7 +222,11 @@ whose average is $0.57416...$.
 Euler's totient number, the number of proper fractions with denominator
 exactly $n$ (see Chapter 6), can never get much smaller than
 
-$$\frac{n}{e^{\gamma}\ln\ln n}$$
+$$
+
+\frac{n}{e^{\gamma}\ln\ln n}
+
+$$
 
 although it often gets about this small.
 
@@ -194,16 +239,28 @@ the sums of values of functions. The most famous application is
 
 STIRLING'S APPROXIMATE FORMULA FOR N!
 
-$$\boxed{n! \text{ is roughly equal to } \sqrt{2\pi n} (n/e)^n}$$
+$$
+
+\boxed{n! \text{ is roughly equal to } \sqrt{2\pi n} (n/e)^n}
+
+$$
 
 for $\ln n! = \ln 1 + \ln 2 + \dots + \ln n$ is roughly equal to
 
-$$H_1+H_2+\dots+H_n-n\gamma -\frac{1}{2}Hn$$
+$$
+
+H_1+H_2+\dots+H_n-n\gamma -\frac{1}{2}Hn
+
+$$
 
 which we have seen is $(n+1/2)H_n - n - n\gamma$, or, roughly,
 
-$$(n + 1/2)(\ln n + \gamma) - n - n\gamma \doteqdot
-    (n + 1/2)\ln n - n,$$
+$$
+
+(n + 1/2)(\ln n + \gamma) - n - n\gamma \doteqdot
+    (n + 1/2)\ln n - n,
+
+$$
 
 so $n!$ is roughly $n^{n+1/2}e^{-n}$.
 
@@ -221,29 +278,41 @@ Mathematicians are still wrestling with the numbers not covered by
 Lindemann's and Baker's theorems. For all we knew until quite recently ,
 **Apéry's number**,
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \zeta(3)&= 1 + \frac{1}{2^3} + \frac{1}{3^3} + \frac{1}{4^3}+\dots\\
-    &= 1.20205 69031 59594 28539 97381 61511 44999 07649\dots\\\end{aligned}$$
+    &= 1.20205 69031 59594 28539 97381 61511 44999 07649\dots\\\end{aligned}
+
+$$
 
 might have been rational, but we've named it after Apéry because he
 recently found quite a simple proof that it is not. However, we still
 don't know if it's transcendental, and we don't know anything about
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \zeta(5)&= 1 + \frac{1}{2^5} + \frac{1}{3^5} + \frac{1}{4^5}+\dots\\
     &= 1.03692 77551 43369 92633 13654 86457 03416 80570... ,\\
     \zeta(7)&= 1 + \frac{1}{2^7} + \frac{1}{3^7} + \frac{1}{4^7}+\dots\\
-    &= 1.00834 92773 81922 82683 97975 49849 79675 95998 ...,\\\end{aligned}$$
+    &= 1.00834 92773 81922 82683 97975 49849 79675 95998 ...,\\\end{aligned}
+
+$$
 
 etc. However,
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \zeta(2) &= 1 + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2}+\dots=\frac{\pi^2}{6}\\
     &= 1.64493 40668 48226 43647 24151 66646... ,\\
     \zeta(4) &= 1 + \frac{1}{2^4} + \frac{1}{3^4} + \frac{1}{4^4}+\dots=\frac{\pi^4}{90}\\
     &= 1.08232 32337 11138 19151 60036 96541 ...,\\
     \zeta(6) &= 1 + \frac{1}{2^6} + \frac{1}{3^6} + \frac{1}{4^6}+\dots=\frac{\pi^6}{945}\\
-    &= 1.01734 30619 84449 13971 45179 29790...,\\    \end{aligned}$$
+    &= 1.01734 30619 84449 13971 45179 29790...,\\    \end{aligned}
+
+$$
 
 are all transcendental.
 

@@ -10,7 +10,6 @@ $\mathbf{F'(x)}$.
 Before stating it, we need a few more facts about linear
 transformations.
 
-
 ### mydef:9.30 
  Suppose $X$ and $Y$ are vector
 spaces, and $A \in L( X, Y)$, as in Definition 9.6. The *null space* of
@@ -33,8 +32,6 @@ $x \in A$, hence $\mathscr{N}(A) = X$.
 In this connection, see Exercise
 \[\[ex:9.25\]](#ex:9.25){reference-type="ref" reference="ex:9.25"}.
 
-
-
 Let $X$ be a vector space. An operator $P\in L(X)$ is said to be a
 *projection* in $X$ if $P^2 = P$.
 
@@ -42,9 +39,7 @@ More explicitly, the requirement is that
 $P(P \mathbf{x}) = P \mathbf{x}$ for every $\mathbf{x} \in X$. In other
 words, $P$ fixes every vector in its range $\mathscr{R}(P)$.
 
-
 Here are some elementary properties of projections:
-
 
 ### thm:9.32 
  Suppose $m, n, r$ are nonnegative
@@ -68,10 +63,11 @@ $$
         \quad
         (\mathbf{x} \in V)
         
+
 $$
+
  where $q$, is a $\mathscr{C'}$-mapping of
 the open set $A(V) \subset Y_1$ into $Y_2$.
-
 
 After the proof we shall give a more geometric description of the
 information that (\[\[eq:9.66\]](#eq:9.66){reference-type="ref"
@@ -83,6 +79,7 @@ $$
 
     S( c_1 \mathbf{y}_1 + \cdots + c_r \mathbf{y}_r ) =
     c_1 \mathbf{z}_1 + \cdots + c_r \mathbf{z}_r
+
 $$
 
 \label{eq:9.68}
@@ -92,6 +89,7 @@ $$
     AS \mathbf{y} = \mathbf{y}
     \quad
     (\mathbf{y} \in Y_1).
+
 $$
 
 \label{eq:9.69}
@@ -102,8 +100,8 @@ $$
     \mathbf{x} + SP[\mathbf{F(x)}-A\mathbf{x}]
     \quad
     (\mathbf{x} \in E).
-$$
 
+$$
 
 \label{eq:9.70}
 
@@ -113,8 +111,8 @@ $$
     P \mathbf{F(x)}
     \quad
     (\mathbf{x} \in E).
-$$
 
+$$
 
 \label{eq:9.71}
 
@@ -123,8 +121,8 @@ $$
     P \mathbf{F(H(x))} = A \mathbf{x}
     \quad
     (\mathbf{x} \in V).
-$$
 
+$$
 
 \label{eq:9.72}
 
@@ -133,8 +131,8 @@ $$
     \psi(\mathbf{x}) = \mathbf{F(H(x))} - A\mathbf{x}
     \quad
     (\mathbf{x} \in V).
-$$
 
+$$
 
 \label{eq:9.73}
 
@@ -143,8 +141,8 @@ $$
     \phi(A \mathbf{x}) = \psi(\mathbf{x})
     \quad
     (\mathbf{x} \in V).
-$$
 
+$$
 
 \label{eq:9.74}
 
@@ -152,8 +150,8 @@ $$
 
     \psi(\mathbf{x}_1) =
     \psi(\mathbf{x}_2)
-$$
 
+$$
 
 \label{eq:9.75}
 
@@ -163,16 +161,16 @@ $$
     \mathrm{rank} \mathbf{F'(H(x))H'(x)} = r
     \quad
     (\mathbf{x} \in V).
-$$
 
+$$
 
 \label{eq:9.76}
 
 $$
 
     P \mathbf{\Phi'(x)} = A.
-$$
 
+$$
 
 \label{eq:9.77}
 
@@ -181,8 +179,8 @@ $$
     \mathbf{g}(t) = \psi(\mathbf{x}_1 + t \mathbf{h})
     \quad
     (0 \leq t \leq 1).
-$$
 
+$$
 
 \label{eq:9.78}
 
@@ -191,23 +189,23 @@ $$
     \mathbf{g}'(t) = \psi'(\mathbf{x}_1 + t \mathbf{h})
     \quad
     (0 \leq t \leq 1),
-$$
 
+$$
 
 \label{eq:9.79}
 
 $$
 
     \mathbf{x} = \mathbf{x_0} + S(\mathbf{y-y_0})
-$$
-
-
 
 $$
+
+$$
+
 A \mathbf{x} =
     A \mathbf{x}_0 + \mathbf{y-y_0} = \mathbf{y} .
-$$
 
+$$
 
 \label{eq:9.80}
 
@@ -216,8 +214,8 @@ $$
     \phi(\mathbf{y}) = \psi(\mathbf{x_0} - S\mathbf{y}_0 + S\mathbf{y})
     \quad
     (\mathbf{y} \in W).
-$$
 
+$$
 
 \label{eq:9.81}
 
@@ -226,5 +224,6 @@ $$
     \mathbf{y} = P \mathbf{y} + \phi(P \mathbf{y})
     \quad
     (\mathbf{y} \in \mathbf{F}(U)).
+
 $$
 

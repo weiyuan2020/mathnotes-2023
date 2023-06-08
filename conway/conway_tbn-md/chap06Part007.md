@@ -28,7 +28,11 @@ multiplier being chosen to be the first one that reduces the error to a
 new minimum. For example, we get the sixth line by adding twice the
 fifth to the fourth, since this gives a new record low error of
 
-$$7.78... -2(3.09...) = 1.59...$$
+$$
+
+7.78... -2(3.09...) = 1.59...
+
+$$
 
 (had we only added *one* copy, we would have had
 $7.78...- 3.09... = 4.68...$ , *not* a new record).
@@ -37,25 +41,35 @@ So we see that the error of $0.0864$ of a day ($2$ hours $4.4$ minutes)
 in Meton's approximation is not bettered until we compare $4131$ months
 with $334$ years. The successive fractions
 
-$$\frac{12}{1} \;
+$$
+
+\frac{12}{1} \;
     \frac{25}{2} \;
     \frac{37}{3} \;
     \frac{99}{8} \;
     \frac{136}{11} \;
     \frac{235}{19} \;
-    \frac{4131}{334} \;$$
+    \frac{4131}{334} \;
+
+$$
 
 may be written
 
-$$12,
+$$
+
+12,
     12+\cfrac{1}{2},
     12+\cfrac{1}{2+\cfrac{1}{1}},
     12+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{2}}},
     12+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{2+\cfrac{1}{1}}}},\\
     12+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{1}}}}},
-    12+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{\cfrac{1+}{17}}}}}}.$$
+    12+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{\cfrac{1+}{17}}}}}}.
 
-$$\begin{array}{rll}
+$$
+
+$$
+
+\begin{array}{rll}
 & \text{error}  & \text{multiplier} \\
 0 \text{months}    = 1 \text{year}      & -365.242199 \text{days}   &       \\
 1 \text{month}     = 0 \text{year}      & +29.530588 \text{days}    & (12)  \\
@@ -66,7 +80,9 @@ $$\begin{array}{rll}
 136 \text{months}  = 11 \text{years}    & -1.504221 \text{days}     & (1)   \\
 235 \text{months}  = 19 \text{years}    & +0.086399 \text{days}     & (17)  \\
 4131 \text{months} = 334 \text{years}   & -0.035438 \text{days}     & (2?)  \\
-\end{array}$$
+\end{array}
+
+$$
 
 FIGURE 6.12 Better and better approximations for the month-to-year
 ratio.
@@ -74,7 +90,11 @@ ratio.
 Expressions like these are commonly called continued fractions and
 written in an abbreviated notation:
 
-$$12 + \frac{1}{2+} \frac{1}{1+} \frac{1}{2+} \frac{1}{1+} \frac{1}{17+} \frac{1}{2}.$$
+$$
+
+12 + \frac{1}{2+} \frac{1}{1+} \frac{1}{2+} \frac{1}{1+} \frac{1}{17+} \frac{1}{2}.
+
+$$
 
 The numbers $12, 2, 1, 2, 1, 1, 17, 2$ are called **partial quotients**,
 and the fractions $\frac{12}{1}, \frac{25}{2}, \frac{37}{3}$,...
@@ -84,22 +104,30 @@ Each rational number corresponds to precisely two such continued
 fractions, one in which the last partial quotient is $1$, and one in
 which it isn't:
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
         \frac{4131}{334}
         &=12 + \frac{1}{2+} \frac{1}{1+} \frac{1}{2+} \frac{1}{1+} \frac{1}{16+} \frac{1}{1} \\
         &=12 + \frac{1}{2+} \frac{1}{1+} \frac{1}{2+} \frac{1}{1+} \frac{1}{17+} .\\
-    \end{aligned}$$
+    \end{aligned}
+
+$$
 
 It is obvious from the way we found them that the successive fractions
 
-$$\frac{p}{q} = 
+$$
+
+\frac{p}{q} = 
     \frac{12}{1} \;
     \frac{25}{2} \;
     \frac{37}{3} \;
     \frac{99}{8} \;
     \frac{136}{11} \;
     \frac{235}{19} \;
-    \frac{4131}{334} \;$$
+    \frac{4131}{334} \;
+
+$$
 
 are those that achieve new record minima for the difference between $p$
 months and $q$ years.

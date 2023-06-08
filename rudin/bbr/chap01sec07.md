@@ -1,25 +1,31 @@
 # Euclidean space
 
-
 ### mydef:1.36 
  For each positive integer $k$, let
 $\mathbb{R}^k$ be the set of all ordered $k$-tuples
 
 $$
+
 \mathbf{x} = \left(x_1,x_2,\dots,x_k\right),
+
 $$
+
  where
 $x_1,x_2,\dots,x_k$ are real numbers, called the *coordinates* of
 $\mathbf{x}$. The elements of $\mathbb{R}^k$ are called points, or vectors,
 especially when $k > 1$. We shall denote vectors by boldfaced letters.
 If $\mathbf{y} = \left(y_1,y_2,\dots,y_k\right)$ and if $\alpha$ is a
 real number, put 
+
 $$
+
 \begin{aligned}
         \mathbf{x} + \mathbf{y} & = \left(x_1+y_1,x_2+y_2,\dots,x_k+y_k\right),         \\ 
         \alpha\mathbf{x}        & = \left(\alpha x_1,\alpha x_2,\dots,\alpha x_k\right)
     \end{aligned}
+
 $$
+
  so that $\mathbf{x} +\mathbf{y} \in \mathbb{R}^k$ and
 $\alpha\mathbf{x} \in \mathbb{R}^k$. This defines addition of vectors, as well
 as multiplication of a vector by a real number (a scalar). These two
@@ -33,20 +39,22 @@ We also define the so-called "inner product" (or scalar product) of
 $\mathbf{x}$ and $\mathbf{y}$ by
 
 $$
+
 \mathbf{x}\cdot\mathbf{y} = \sum_{j=1}^{k}x_j y_j
+
 $$
+
  and the norm of
 $\mathbf{x}$ by
 
 $$
-|x| = (x\cdot x)^{1/2} = \left( \sum_{1}^{k} x_j^2 \right)^{1/2}.
-$$
 
+|x| = (x\cdot x)^{1/2} = \left( \sum_{1}^{k} x_j^2 \right)^{1/2}.
+
+$$
 
 The structure now defined (the vector space $\mathbb{R}^k$ with the above inner
 product and norm) is called euclidean $k$-space.
-
-
 
 ### thm:1.37 
  Suppose
@@ -64,13 +72,13 @@ $\mathbf{x}, \mathbf{y}, \mathbf{z}\in\mathbb{R}^k$, and $\alpha$ is real. Then
 
 (f) $|\mathbf{x}-\mathbf{z}| \leq |\mathbf{x}-\mathbf{y}| + |\mathbf{y}-\mathbf{z}|$.
 
-
-
 *Proof.* Proof (a), (b), and (c) are obvious, and (d) is an immediate
 consequence of the Schwarz
 inequality\[\[thm:1.35\]](#thm:1.35){reference-type="ref"
 reference="thm:1.35"}. By (d) we have 
+
 $$
+
 \begin{aligned}
         |\mathbf{x} + \mathbf{y}|^2
          & = (\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})                                \\ 
@@ -78,12 +86,12 @@ $$
          & \leq |\mathbf{x}|^2 + 2|\mathbf{x}||\mathbf{y}| + |\mathbf{y}|^2                           \\ 
          & = \left(|\mathbf{x}| + |\mathbf{y}|\right)^2.
     \end{aligned}
+
 $$
+
  so that (e) is proved. Finally, (f) follows from (e)
 if we replace $\mathbf{x}$ by $\mathbf{x}-\mathbf{y}$ and $\mathbf{y}$
 by $\mathbf{y}-\mathbf{z}$. ◻
-
-
 
 ### myremark:1.38 
  Theorem

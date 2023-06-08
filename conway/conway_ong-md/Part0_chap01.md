@@ -108,20 +108,30 @@ prohibited by the definition of number.
 
 We recall that $x + y = {x^L + y,x + y^L|x^R + y,x + y^R}$.
 
-THEOREM 3. For all $x, y, z$ we have $$x+0\equiv x, \quad
+THEOREM 3. For all $x, y, z$ we have 
+
+$$
+
+x+0\equiv x, \quad
     x+y\equiv y+x, \quad
-    (x+y)+z\equiv x+(y+z).$$
+    (x+y)+z\equiv x+(y+z).
+
+$$
 
 Proof.
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
 x+0&\equiv \{x^L + 0| x^R + 0\}\equiv \{x^L|x^R\}\equiv x\\
 x+y&\equiv \{x^L+y,x+y^L|x^R+y,x+y^R\} \equiv \\
 &\equiv \{y+x^L,y^L+x|y+x^R,y^R+x\}\equiv y+x.\\
 (x+y)+z&\equiv \{(x+y)^L+z,(x+y)+z^L|...\}\equiv \\
 &\equiv  \{(x^L+ y)+z,(x+y^L)+z, (x+y)+z^L|...\} \\
 &\equiv  \{x^L+ (y+z),x+(y^L+z), x+(y+z^L)|...\} \\
-&\equiv ...\equiv x+(y+z).\\\end{aligned}$$
+&\equiv ...\equiv x+(y+z).\\\end{aligned}
+
+$$
 
 In each case the middle identity follows from the inductive hypothesis.
 Proofs like these we call *$1$-line proofs* even when as here the "line"
@@ -159,24 +169,37 @@ All this is true for general games.
 THEOREM 5. We have $y \geqslant z$ *iff* $x+y \geqslant x+z$.
 
 Proof. If $x + y \geqslant x + z$, we cannot have
-$$x+y^R \leqslant  x +z \text{ or } x+y \leqslant  x +z^L,$$
+
+$$
+
+x+y^R \leqslant  x +z \text{ or } x+y \leqslant  x +z^L,
+
+$$
 
 and so by induction we cannot have $y^R \leqslant z$ or
 $y \leqslant z^L$,so that $y \geqslant z$.
 
 Now supposing $x + y \ngeqslant x + z$, we must have one of
 
-$$x^R+y \leqslant x+z,\;
+$$
+
+x^R+y \leqslant x+z,\;
     x+y^R \leqslant x+z,\;
     x+y   \leqslant x^L+z,\;
-    x+y   \leqslant x+z^L,$$
+    x+y   \leqslant x+z^L,
+
+$$
 
 and if we further suppose $y \geqslant z$, we deduce one of
 
-$$x^R+y \leqslant x+y,\;
+$$
+
+x^R+y \leqslant x+y,\;
     x+y^R \leqslant x+y,\;
     x+z   \leqslant x^L+z,\;
-    x+z   \leqslant x+z^L,$$
+    x+z   \leqslant x+z^L,
+
+$$
 
 all of which imply contradictions by cancellation. Theorem 5 implies in
 particular that we have $y =z$ iff $x+y=x+z$, justifying replacement by
@@ -196,7 +219,11 @@ neither a $0^L$ nor a $0^R$.
 
 2.  We deduce inductively that each of
 
-$$x^L+y,x+y^L<x+y < \text{ each of } x^R + y,x + y^R,$$
+$$
+
+x^L+y,x+y^L<x+y < \text{ each of } x^R + y,x + y^R,
+
+$$
 
 all of $x^L + y$, etc., being numbers.
 
@@ -208,31 +235,53 @@ all of $x^L + y$, etc., being numbers.
 
 We recall the definition of multiplication
 
-$$xy = \{x^Ly + xy^L - x^Ly^L, x^Ry + xy^R - x^Ry^R|x^Ly + xy^R - x^Ly^R x^Ry + xy^L - x^Ry^L\}.$$
+$$
+
+xy = \{x^Ly + xy^L - x^Ly^L, x^Ry + xy^R - x^Ry^R|x^Ly + xy^R - x^Ly^R x^Ry + xy^L - x^Ry^L\}.
+
+$$
 
 THEOREM 7. *For all $x, y, z$ we have the identities*
 
-$$x0 \equiv 0, xl \equiv x, xy \equiv yx, (-x)y \equiv x(-y) \equiv -xy,$$
+$$
+
+x0 \equiv 0, xl \equiv x, xy \equiv yx, (-x)y \equiv x(-y) \equiv -xy,
+
+$$
 
 *and the equalities*
 
-$$(x + y)z =xz+ yz,\; (xy)z = x(yz).$$
+$$
+
+(x + y)z =xz+ yz,\; (xy)z = x(yz).
+
+$$
 
 *Proof*. The identities have easy $1$-line proofs. The equalities also
 have $1$-line proofs, as follows:
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
 (x + y)z \equiv & \{(x + y)^L z + (x + y)z^L - (x + y)^L z^L ,...|...\} \equiv \\
 \equiv & \{(x^L + y)z + (x + y)z^L - (x^L + y)z^L,\\
 &(x + y^L)z +(x + y)z^L -(x +y^L)z^L,...|...\} = \\
 =& \{(x^L z + xz^L - x^L z^L) + yz, xz + (y^Lz + yz^L - y^L z^L),...|...\}\\
-\equiv& xz + yz.\end{aligned}$$
+\equiv& xz + yz.\end{aligned}
+
+$$
 
 \[This fails to yield an identity since the law $x + -x =0$ is
 invoked.\]
 
 The central expression for $xyz$ has four expressions like
-$$x^L yz + xy^L z + xyz^L  - x^L y^L z - x^L yz^L  - xy^L z^L  + x^L y^L z^L$$
+
+$$
+
+x^L yz + xy^L z + xyz^L  - x^L y^L z - x^L yz^L  - xy^L z^L  + x^L y^L z^L
+
+$$
+
 [^1]
 
 (with perhaps some even number of $x^L, y^L, z^L$ replaced by
@@ -241,7 +290,11 @@ number of such replacements) on the right.
 
 *Note*. We now have the more illuminating form
 
-$$\{xy - (x - x^L)(y - y^L), xy - (x^R - x) (y^R - y)|xy +(x - x^L)(y^R - y), xy +(x^R - x)(y - y^L)\}$$
+$$
+
+\{xy - (x - x^L)(y - y^L), xy - (x^R - x) (y^R - y)|xy +(x - x^L)(y^R - y), xy +(x^R - x)(y - y^L)\}
+
+$$
 
 for the product $xy$.
 
@@ -264,20 +317,32 @@ adding these and cancelling common terms from the two sides.[^2]
 Now to prove (i), we observe first that inductively, all options of $xy$
 are numbers, so that we have only to prove a number of inequalities like
 
-$$x^{L_1}y + xy^{L} - x^{L_1}y^{L} < x^{L_2}y + xy^{R} - x^{L_2}y^{R}.$$
+$$
+
+x^{L_1}y + xy^{L} - x^{L_1}y^{L} < x^{L_2}y + xy^{R} - x^{L_2}y^{R}.
+
+$$
 
 But if $x^{L_1} \leqslant x^{L_2}$ we have
 
-$$x^{L_1}y + xy^{L} - x^{L_1}y^{L} \leqslant x^{L_2}y + xy^{L} - x^{L_2}y^{L} < x^{L_2}y + xy^{R} - x^{L_2}y^{R}$$
+$$
+
+x^{L_1}y + xy^{L} - x^{L_1}y^{L} \leqslant x^{L_2}y + xy^{L} - x^{L_2}y^{L} < x^{L_2}y + xy^{R} - x^{L_2}y^{R}
+
+$$
 
 (these two inequalities reducing respectively to
 $P(x^{L_1}, x^{L_2} : y^{L},y^{})$ and
 $P(x^{L_2}, x^{} : y^{L},y^{R})$), while if $x^{L_1} \leqslant x^{L_2}$
 we have instead
 
-$$x^{L_1}y + xy^{L} - x^{L_1}y^{L} < 
+$$
+
+x^{L_1}y + xy^{L} - x^{L_1}y^{L} < 
     x^{L_1}y + xy^{R} - x^{L_1}y^{R} \leqslant  
-    x^{L_2}y + xy^{R} - x^{L_2}y^{R}.$$
+    x^{L_2}y + xy^{R} - x^{L_2}y^{R}.
+
+$$
 
 (these being $P(x^{L_1}, x^{} : y^{L},y^{R})$ and
 $P(x^{L_2}, x^{L_1} : y^{},y^{R})$).
@@ -299,10 +364,14 @@ $P(x_{1}^{R}, x_{2} : y_{1},y_{2})$ of which the latter is strictly
 simpler than the original. A similar argument now reduces our problem to
 proving strict inequalities. of the four forms
 
-$$P(x^{L}, x : y^{L}, y),\;
+$$
+
+P(x^{L}, x : y^{L}, y),\;
     P(x^{L}, x : y, y^{R}),\;
     P(x, x^{R} : y^{L}, y),\;\text{and }
-    P(x, x^{R} : y, y^{R}),\;$$
+    P(x, x^{R} : y, y^{R}),\;
+
+$$
 
 which merely assert that $xy$ has the right order relations with its
 options.
@@ -340,12 +409,16 @@ $y$ is a number and that $xy = 1$.
 
 *Definition*
 
-$$y= \biggl\{0,  
+$$
+
+y= \biggl\{0,  
 \frac{1 + (x^R - x)y^L}{x^R} + 
 \frac{(x^L - x)y^R}{x^L} \bigg| 
 \frac{1+ (x^L - x)y^L}{x^L} ,
 \frac{1+ (x^R - x)y^R}{x^R} 
-\biggr\}$$
+\biggr\}
+
+$$
 
 Note that expressions involving $y^L$ and $y^R$ appear in the definition
 of $y$. It is this that requires us to "explain" the definition. The
@@ -366,12 +439,20 @@ THEOREM 10. *We have* (i) $xy^L < 1 < xy^R$ for all $y^L, y^R$.
 *Proof*. We observe that the options of y are defined by formulae of the
 form
 
-$$y''=\frac{1-(x'-x)y'}{x'}$$
+$$
+
+y''=\frac{1-(x'-x)y'}{x'}
+
+$$
 
 where $y'$ is an "earlier" option of $y$, and $x'$ some non-zero option
 of $x$. This formula can be written
 
-$$1-xy''=(1-xy')\frac{x'-x}{x'}$$
+$$
+
+1-xy''=(1-xy')\frac{x'-x}{x'}
+
+$$
 
 which shows that $y''$ satisfies (i)if $y'$ does. Plainly $0$ does. Part
 (ii) now follows, since we cannot have any inequality
@@ -382,11 +463,15 @@ we observe first that $z = xy$ has a left option $0$ (take
 $x^L = y^L = 0$), and that (iii) asserts that $z^L < 1 < z^R$ for all
 $z^L, z^R$. Then
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
 \text{$z \geqslant  1$, since no $z^R \leqslant  1$, and $z \leqslant$ no $1^L$ (since some $z^L = 0$), and also}\\
 \text{$1 \geqslant  z$, since no $1^R \leqslant  z$, and $1 \leqslant$ no $z^L$,}\\
 \text{so that indeed $z = 1$.}\\
-\end{array}$$
+\end{array}
+
+$$
 
 *Summary*. The Class **No** of all numbers forms a totally ordered
 Field.
@@ -394,10 +479,14 @@ Field.
 Clive Bach has found a similar definition for the square root of a
 nonnegative number $x$. He defines
 
-$$\sqrt{x}=y=\biggl\{
+$$
+
+\sqrt{x}=y=\biggl\{
     \sqrt{x}^L, \frac{x+y^{L}y^{R}}{y^{L}+y^{R}} \bigg|
     \sqrt{x}^R, \frac{x+y^{L}y^{L*}}{y^{L}+y^{L*}}, \frac{x+y^{R}y^{R*}}{y^{R}+y^{R*}}
-    \biggr\}$$
+    \biggr\}
+
+$$
 
 where $x^L$ and $x^R$ are non-negative options of $x$, and
 $y^L, y^{L*}, y^R, y^{R*}$ are options of $y$ chosen so that no one of
@@ -407,23 +496,41 @@ inductive proof that this is correct.
 Martin Kruskal has pointed out that the options of $1/x$ can be written
 in the form
 
-$$\frac{1-\prod \biggl(1-\cfrac{x}{x_i}\biggr)}{x}$$
+$$
+
+\frac{1-\prod \biggl(1-\cfrac{x}{x_i}\biggr)}{x}
+
+$$
 
 where the denominator $x$ cancels formally, the $x_i$, denote positive
 options of $x$, and the product may be empty. This is a Left option of
 $1/x$ just when an *even* number of the $x$, are Left options of $x$.
 There is a similar closed form for Bach's definition of $\sqrt{x}$.
 
-[^1]: (my answer:) $$(x-x^L)(y-y^L)(z-z^L)>0\\
+[^1]: (my answer:) 
+
+$$
+
+(x-x^L)(y-y^L)(z-z^L)>0\\
       xyz>x^L yz + xy^L z + xyz^L  - x^L y^L z - x^L yz^L  - xy^L z^L  + x^L y^L z^L .\\
-    $$
+    
+
+$$
 
 [^2]: (my answer:) $x_{1} \leqslant x_{2} \leqslant x_{3}$, (iii).
-    $$x_{1}y_{2} + x_{2}y_{1} \leqslant x_{1}y_{1} + x_{2}y_{2}\\
+    
+
+$$
+
+x_{1}y_{2} + x_{2}y_{1} \leqslant x_{1}y_{1} + x_{2}y_{2}\\
       x_{2}y_{2} + x_{3}y_{1} \leqslant x_{2}y_{1} + x_{3}y_{2}\\
       \Downarrow\\
       x_{1}y_{2} + x_{3}y_{1} \leqslant x_{1}y_{1} + x_{3}y_{2}\\
-    $$ This is $P(x_{1}, x_{3} : y_{1},y_{2})$.
+    
+
+$$
+
+ This is $P(x_{1}, x_{3} : y_{1},y_{2})$.
 
 [^3]: To see how the definition works, take $x = \{0,2|\} = 3$. Then
     there is no $x^R$ and the only $x^L$ is $2$, so $x^L -x = -1$ and

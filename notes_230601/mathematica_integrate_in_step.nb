@@ -37,10 +37,26 @@ Cell[BoxData[
 
 Cell[BoxData[
  NamespaceBox["WolframAlphaQueryResults",
-  DynamicModuleBox[{Typeset`q$$ = "int (x + 1) over x", Typeset`opts$$ = {
+  DynamicModuleBox[{Typeset`q
+
+$$
+
+ = "int (x + 1) over x", Typeset`opts
+
+$$
+
+ = {
    AppearanceElements -> {"Pods"}, IncludePods -> "IndefiniteIntegral", 
     PodStates -> {"IndefiniteIntegral__Step-by-step solution"}}, 
-   Typeset`elements$$ = {"Pods"}, Typeset`pod1$$ = XMLElement[
+   Typeset`elements
+
+$$
+
+ = {"Pods"}, Typeset`pod1
+
+$$
+
+ = XMLElement[
    "pod", {"title" -> "Indefinite integrals", "scanner" -> "Integral", "id" -> 
      "IndefiniteIntegral", "position" -> "100", "error" -> "false", 
      "numsubpods" -> "2", "primary" -> "true"}, {
@@ -272,9 +288,21 @@ Cell[BoxData[
        XMLElement[
        "state", {
         "name" -> "Hide steps", "input" -> 
-         "IndefiniteIntegral__Hide steps"}, {}]}]}], Typeset`aux1$$ = {
-   True, False, {False, False}, True}, Typeset`asyncpods$$ = {}, 
-   Typeset`nonpods$$ = {
+         "IndefiniteIntegral__Hide steps"}, {}]}]}], Typeset`aux1
+
+$$
+
+ = {
+   True, False, {False, False}, True}, Typeset`asyncpods
+
+$$
+
+ = {}, 
+   Typeset`nonpods
+
+$$
+
+ = {
     XMLElement["assumptions", {"count" -> "1"}, {
       XMLElement[
       "assumption", {
@@ -296,8 +324,16 @@ instead", "count" -> "3", "pulldown" -> "false", "default" ->
           "a function property", "input" -> 
           "{\"C\", \"int\"} -> \
 {\"MathematicalFunctionIdentityPropertyClass\"}"}, {}]}]}]}, 
-   Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True], 
-   Typeset`queryinfo$$ = {
+   Typeset`initdone
+
+$$
+
+ = FrontEnd`SuppressEvaluationHash[True], 
+   Typeset`queryinfo
+
+$$
+
+ = {
    "success" -> "true", "error" -> 
     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
     "numpods" -> "1", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
@@ -307,31 +343,143 @@ instead", "count" -> "3", "pulldown" -> "false", "default" ->
     "https://www6b3.wolframalpha.com", "server" -> "4", "related" -> 
     "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
 MSPa865011i68igh6igf5c4f00005i398a87hahgbg1h6430556393126808734", "version" -> 
-    "2.6", "inputstring" -> "int (x + 1) over x"}, Typeset`sessioninfo$$ = {
+    "2.6", "inputstring" -> "int (x + 1) over x"}, Typeset`sessioninfo
+
+$$
+
+ = {
    "TimeZone" -> 8., 
     "Date" -> {2023, 6, 1, 9, 17, 17.7223862`9.001097139108401}, "Line" -> 4, 
-    "SessionID" -> 27608962436396221335}, Typeset`showpods$$ = {1}, 
-   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
-   Typeset`newq$$ = "int (x + 1) over x"}, 
+    "SessionID" -> 27608962436396221335}, Typeset`showpods
+
+$$
+
+ = {1}, 
+   Typeset`failedpods
+
+$$
+
+ = {}, Typeset`chosen
+
+$$
+
+ = {}, Typeset`open
+
+$$
+
+ = False, 
+   Typeset`newq
+
+$$
+
+ = "int (x + 1) over x"}, 
    DynamicBox[ToBoxes[
      AlphaIntegration`FormatAlphaResults[
       Dynamic[{
-       1, {Typeset`pod1$$}, {Typeset`aux1$$}, Typeset`chosen$$, 
-        Typeset`open$$, Typeset`elements$$, Typeset`q$$, Typeset`opts$$, 
-        Typeset`nonpods$$, Typeset`queryinfo$$, Typeset`sessioninfo$$, 
-        Typeset`showpods$$, Typeset`failedpods$$, Typeset`newq$$}]], 
+       1, {Typeset`pod1
+
+$$
+
+}, {Typeset`aux1
+
+$$
+
+}, Typeset`chosen
+
+$$
+
+, 
+        Typeset`open
+
+$$
+
+, Typeset`elements
+
+$$
+
+, Typeset`q
+
+$$
+
+, Typeset`opts
+
+$$
+
+, 
+        Typeset`nonpods
+
+$$
+
+, Typeset`queryinfo
+
+$$
+
+, Typeset`sessioninfo
+
+$$
+
+, 
+        Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+, Typeset`newq
+
+$$
+
+}]], 
      StandardForm],
     ImageSizeCache->{462., {252.63403328722342`, 258.3659667127766}},
-    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+    TrackedSymbols:>{Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+}],
    DynamicModuleValues:>{},
    Initialization:>If[
      And[
-      Not[Typeset`initdone$$ === True], 
-      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+      Not[Typeset`initdone
+
+$$
+
+ === True], 
+      Not[Typeset`initdone
+
+$$
+
+ === FrontEnd`SuppressEvaluationHash[True]]], 
      Null; WolframAlphaClient`Private`doAsyncUpdates[
-       Hold[{Typeset`pod1$$}], Typeset`asyncpods$$, 
-       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
-     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+       Hold[{Typeset`pod1
+
+$$
+
+}], Typeset`asyncpods
+
+$$
+
+, 
+       Dynamic[Typeset`failedpods
+
+$$
+
+]]; Typeset`asyncpods
+
+$$
+
+ = {}; 
+     Typeset`initdone
+
+$$
+
+ = FrontEnd`SuppressEvaluationHash[True]],
    SynchronousInitialization->False],
   BaseStyle->{Deployed -> True},
   DeleteWithContents->True,
@@ -391,16 +539,32 @@ Cell[BoxData[
 
 Cell[BoxData[
  NamespaceBox["WolframAlphaQueryResults",
-  DynamicModuleBox[{Typeset`q$$ = "integrate -Log[x]/(x + 1) from 0 to 1", 
-   Typeset`opts$$ = {
+  DynamicModuleBox[{Typeset`q
+
+$$
+
+ = "integrate -Log[x]/(x + 1) from 0 to 1", 
+   Typeset`opts
+
+$$
+
+ = {
    AppearanceElements -> {
      "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
       "Sources"}, 
     PodStates -> {
      "IndefiniteIntegral__Step-by-step solution", "Input__More digits"}}, 
-   Typeset`elements$$ = {
+   Typeset`elements
+
+$$
+
+ = {
    "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
-    "Sources"}, Typeset`pod1$$ = XMLElement[
+    "Sources"}, Typeset`pod1
+
+$$
+
+ = XMLElement[
    "pod", {"title" -> "Definite integral", "scanner" -> "Integral", "id" -> 
      "Input", "position" -> "100", "error" -> "false", "numsubpods" -> "1", 
      "primary" -> "true"}, {
@@ -479,7 +643,11 @@ Cell[BoxData[
        XMLElement[
        "state", {
         "name" -> "More digits", "input" -> "Input__More digits"}, {}]}]}], 
-   Typeset`pod2$$ = XMLElement[
+   Typeset`pod2
+
+$$
+
+ = XMLElement[
    "pod", {"title" -> "Visual representation of the integral", "scanner" -> 
      "Integral", "id" -> "VisualRepresentationOfTheIntegral", "position" -> 
      "200", "error" -> "false", "numsubpods" -> "1"}, {
@@ -917,7 +1085,11 @@ HO7/+K/P/vP/AioHoFM=
        "dataformats", {}, {"minput,computabledata,formatteddata"}]}], 
      XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
        XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
-   Typeset`pod3$$ = XMLElement[
+   Typeset`pod3
+
+$$
+
+ = XMLElement[
    "pod", {"title" -> "Riemann sums", "scanner" -> "Integral", "id" -> 
      "RiemannSums", "position" -> "300", "error" -> "false", "numsubpods" -> 
      "1"}, {
@@ -931,20 +1103,72 @@ HO7/+K/P/vP/AioHoFM=
               StyleBox[
                
                DynamicModuleBox[{
-                CalculateScan`RiemannSumScanner`Private`intervals$$ = 10, 
-                 CalculateScan`RiemannSumScanner`Private`method$$ = 
+                CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+ = 10, 
+                 CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+ = 
                  CalculateScan`RiemannSumScanner`Private`LeftValue, 
-                 CalculateUtilities`GraphicsUtilities`Private`more$$ = False, 
-                 Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-                 Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
-                 Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
-                 Typeset`specs$$ = {{
+                 CalculateUtilities`GraphicsUtilities`Private`more
+
+$$
+
+ = False, 
+                 Typeset`show
+
+$$
+
+ = True, Typeset`bookmarkList
+
+$$
+
+ = {}, 
+                 Typeset`bookmarkMode
+
+$$
+
+ = "Menu", Typeset`animator
+
+$$
+
+, 
+                 Typeset`animvar
+
+$$
+
+ = 1, Typeset`name
+
+$$
+
+ = "\"untitled\"", 
+                 Typeset`specs
+
+$$
+
+ = {{
                     Hold[
-                    CalculateUtilities`GraphicsUtilities`Private`more$$], {
+                    CalculateUtilities`GraphicsUtilities`Private`more
+
+$$
+
+], {
                     False, True}}, {{
-                    Hold[CalculateScan`RiemannSumScanner`Private`intervals$$],
+                    Hold[CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+],
                      10, "number of subintervals"}, 2, 100, 1}, {{
-                    Hold[CalculateScan`RiemannSumScanner`Private`method$$], 
+                    Hold[CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+], 
                     CalculateScan`RiemannSumScanner`Private`LeftValue, 
                     "summation method"}, {
                     CalculateScan`RiemannSumScanner`Private`LeftValue -> 
@@ -966,43 +1190,147 @@ HO7/+K/P/vP/AioHoFM=
                     Manipulate`Place[2]}], 
                     ImageMargins -> {{20, 30}, {10, 10}}]}, {1, 2}, 2, 
                     Alignment -> {Left, Top}]]], 
-                    Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = 
-                 Automatic, Typeset`update$$ = 0, Typeset`initDone$$ = False, 
-                 Typeset`skipInitDone$$ = False, 
-                 CalculateUtilities`GraphicsUtilities`Private`more$5165583$$ = 
+                    Manipulate`Dump`ThisIsNotAControl}}, Typeset`size
+
+$$
+
+ = 
+                 Automatic, Typeset`update
+
+$$
+
+ = 0, Typeset`initDone
+
+$$
+
+ = False, 
+                 Typeset`skipInitDone
+
+$$
+
+ = False, 
+                 CalculateUtilities`GraphicsUtilities`Private`more$5165583
+
+$$
+
+ = 
                  False, CalculateScan`RiemannSumScanner`Private`intervals$\
-5165588$$ = 0, CalculateScan`RiemannSumScanner`Private`method$5165589$$ = 
+5165588
+
+$$
+
+ = 0, CalculateScan`RiemannSumScanner`Private`method$5165589
+
+$$
+
+ = 
                  False}, 
                 DynamicBox[
                  Manipulate`ManipulateBoxes[
                  2, TraditionalForm, 
                   "Variables" :> {
-                   CalculateScan`RiemannSumScanner`Private`intervals$$ = 10, 
-                    CalculateScan`RiemannSumScanner`Private`method$$ = 
+                   CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+ = 10, 
+                    CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+ = 
                     CalculateScan`RiemannSumScanner`Private`LeftValue, 
-                    CalculateUtilities`GraphicsUtilities`Private`more$$ = 
+                    CalculateUtilities`GraphicsUtilities`Private`more
+
+$$
+
+ = 
                     False}, "ControllerVariables" :> {
                     Hold[
-                    CalculateUtilities`GraphicsUtilities`Private`more$$, 
+                    CalculateUtilities`GraphicsUtilities`Private`more
+
+$$
+
+, 
                     CalculateUtilities`GraphicsUtilities`Private`more$5165583$\
 $, False], 
                     Hold[
-                    CalculateScan`RiemannSumScanner`Private`intervals$$, 
+                    CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+, 
                     CalculateScan`RiemannSumScanner`Private`intervals$5165588$\
 $, 0], 
                     Hold[
-                    CalculateScan`RiemannSumScanner`Private`method$$, 
-                    CalculateScan`RiemannSumScanner`Private`method$5165589$$, 
+                    CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+, 
+                    CalculateScan`RiemannSumScanner`Private`method$5165589
+
+$$
+
+, 
                     False]}, 
                   "OtherVariables" :> {
-                   Typeset`show$$, Typeset`bookmarkList$$, 
-                    Typeset`bookmarkMode$$, Typeset`animator$$, 
-                    Typeset`animvar$$, Typeset`name$$, Typeset`specs$$, 
-                    Typeset`size$$, Typeset`update$$, Typeset`initDone$$, 
-                    Typeset`skipInitDone$$}, "Body" :> Quiet[
+                   Typeset`show
+
+$$
+
+, Typeset`bookmarkList
+
+$$
+
+, 
+                    Typeset`bookmarkMode
+
+$$
+
+, Typeset`animator
+
+$$
+
+, 
+                    Typeset`animvar
+
+$$
+
+, Typeset`name
+
+$$
+
+, Typeset`specs
+
+$$
+
+, 
+                    Typeset`size
+
+$$
+
+, Typeset`update
+
+$$
+
+, Typeset`initDone
+
+$$
+
+, 
+                    Typeset`skipInitDone
+
+$$
+
+}, "Body" :> Quiet[
                     
                     With[{CalculateScan`RiemannSumScanner`Private`delta$ = (1 - 
-                    0)/CalculateScan`RiemannSumScanner`Private`intervals$$, 
+                    0)/CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+, 
                     CalculateScan`RiemannSumScanner`Private`epsilon$ = 
                     RandomReal[{0, 0.001}]}, 
                     Labeled[
@@ -1037,7 +1365,11 @@ $, 0],
                     Quiet[
                     Which[
                     MatchQ[
-                    CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+, 
                     CalculateScan`RiemannSumScanner`Private`LeftValue], 
                     (If[
                     Not[
@@ -1056,7 +1388,11 @@ $, 0],
                     0 + CalculateScan`RiemannSumScanner`Private`i 
                     CalculateScan`RiemannSumScanner`Private`delta$]]], 
                     MatchQ[
-                    CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+, 
                     CalculateScan`RiemannSumScanner`Private`MidpointValue], 
                     (If[
                     Not[
@@ -1079,7 +1415,11 @@ $, 0],
                     CalculateScan`RiemannSumScanner`Private`i + 1) 
                     CalculateScan`RiemannSumScanner`Private`delta$)/2]]], 
                     MatchQ[
-                    CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+, 
                     CalculateScan`RiemannSumScanner`Private`RightValue], 
                     (If[
                     Not[
@@ -1099,7 +1439,11 @@ $, 0],
                     CalculateScan`RiemannSumScanner`Private`delta$]]], True, 
                     0]]]]], {
                     CalculateScan`RiemannSumScanner`Private`i, 0, 
-                    CalculateScan`RiemannSumScanner`Private`intervals$$ - 1}],
+                    CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+ - 1}],
                      PlotStyle -> AbsoluteThickness[1], ImageSize -> 1.5 200], 
                     (If[
                     NumericQ[#], 
@@ -1128,21 +1472,41 @@ $, 0],
                     CalculateScan`RiemannSumScanner`Private`delta$ + 
                     CalculateScan`RiemannSumScanner`Private`delta$ 
                     ReplaceAll[
-                    CalculateScan`RiemannSumScanner`Private`method$$, {
+                    CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+, {
                     CalculateScan`RiemannSumScanner`Private`LeftValue -> 0, 
                     CalculateScan`RiemannSumScanner`Private`MidpointValue -> 
                     Rational[1, 2], 
                     CalculateScan`RiemannSumScanner`Private`RightValue -> 
                     1}]}], {
                     CalculateScan`RiemannSumScanner`Private`k, 0, 
-                    CalculateScan`RiemannSumScanner`Private`intervals$$ - 
+                    CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+ - 
                     1}]]]]]]], 
                   "Specifications" :> {{
-                    CalculateUtilities`GraphicsUtilities`Private`more$$, {
+                    CalculateUtilities`GraphicsUtilities`Private`more
+
+$$
+
+, {
                     False, True}, ControlType -> None}, {{
-                    CalculateScan`RiemannSumScanner`Private`intervals$$, 10, 
+                    CalculateScan`RiemannSumScanner`Private`intervals
+
+$$
+
+, 10, 
                     "number of subintervals"}, 2, 100, 1, ControlPlacement -> 
-                    1}, {{CalculateScan`RiemannSumScanner`Private`method$$, 
+                    1}, {{CalculateScan`RiemannSumScanner`Private`method
+
+$$
+
+, 
                     CalculateScan`RiemannSumScanner`Private`LeftValue, 
                     "summation method"}, {
                     CalculateScan`RiemannSumScanner`Private`LeftValue -> 
@@ -1187,13 +1551,33 @@ rl002lnUoAXe2rz0ThNkB5glZtzyhOUgX6g4myb78UXEruZxpMuT9QBg6pWqt6G9hfZQlV5CxDIwkx\
 guaeg3msEpqBCpY9oMSJM5BMIRkv+zHffMPFyuBVO0rVJfyLA5caU7Dk+\
 iXBT6kYmqy5o4dOLqC2xazieRJrbqIpenitNkc0/\
 0m040bmgM9lITQkoQP9G5T6DaFv7opLO3B3ZrQrQndmtCtCd2a8P+uCS5i/Ff6DacHuMY="]]}; 
-                 Typeset`initDone$$ = True), DynamicModuleValues :> {}, 
+                 Typeset`initDone
+
+$$
+
+ = True), DynamicModuleValues :> {}, 
                 Deinitialization :> None, 
-                UntrackedVariables :> {Typeset`size$$}, 
+                UntrackedVariables :> {Typeset`size
+
+$$
+
+}, 
                 SynchronousInitialization -> True, 
-                UnsavedVariables :> {Typeset`initDone$$}, 
+                UnsavedVariables :> {Typeset`initDone
+
+$$
+
+}, 
                 UndoTrackedVariables :> {
-                 Typeset`show$$, Typeset`bookmarkMode$$}], "Manipulate", 
+                 Typeset`show
+
+$$
+
+, Typeset`bookmarkMode
+
+$$
+
+}], "Manipulate", 
                Deployed -> True, StripOnInput -> False], TraditionalForm], 
              Manipulate`InterpretManipulate[1]], TraditionalForm]], 
           "Output", {
@@ -1219,7 +1603,11 @@ iXBT6kYmqy5o4dOLqC2xazieRJrbqIpenitNkc0/\
        XMLElement["dataformats", {}, {}]}], 
      XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
        XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
-   Typeset`pod4$$ = XMLElement[
+   Typeset`pod4
+
+$$
+
+ = XMLElement[
    "pod", {"title" -> "Indefinite integral", "scanner" -> "Integral", "id" -> 
      "IndefiniteIntegral", "position" -> "400", "error" -> "false", 
      "numsubpods" -> "1"}, {
@@ -1339,10 +1727,34 @@ PolyLog", "text" -> "Properties", "title" -> "Wolfram Functions Site"}, {}],
          "link", {
           "url" -> "http://mathworld.wolfram.com/Polylogarithm.html", "text" -> 
            "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
-   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`aux2$$ = {
-   True, False, {False}, True}, Typeset`aux3$$ = {True, False, {False}, True},
-    Typeset`aux4$$ = {True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
-   Typeset`nonpods$$ = {
+   Typeset`aux1
+
+$$
+
+ = {True, False, {False}, True}, Typeset`aux2
+
+$$
+
+ = {
+   True, False, {False}, True}, Typeset`aux3
+
+$$
+
+ = {True, False, {False}, True},
+    Typeset`aux4
+
+$$
+
+ = {True, False, {False}, True}, Typeset`asyncpods
+
+$$
+
+ = {}, 
+   Typeset`nonpods
+
+$$
+
+ = {
     XMLElement["assumptions", {"count" -> "1"}, {
       XMLElement[
       "assumption", {
@@ -1358,8 +1770,16 @@ instead", "count" -> "2", "pulldown" -> "false", "default" ->
         "value", {
          "name" -> "Log10", "desc" -> "the base 10 logarithm", "input" -> 
           "{\"FunClash\", \"Log\"} -> {\"Log10\"}"}, {}]}]}]}, 
-   Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True], 
-   Typeset`queryinfo$$ = {
+   Typeset`initdone
+
+$$
+
+ = FrontEnd`SuppressEvaluationHash[True], 
+   Typeset`queryinfo
+
+$$
+
+ = {
    "success" -> "true", "error" -> 
     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
     "numpods" -> "4", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
@@ -1370,33 +1790,181 @@ instead", "count" -> "2", "pulldown" -> "false", "default" ->
     "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
 MSPa56331dh07a746egc96310000548d02f14f4h2ie83454770973695860617", "version" -> 
     "2.6", "inputstring" -> "integrate -Log[x]/(x + 1) from 0 to 1"}, 
-   Typeset`sessioninfo$$ = {
+   Typeset`sessioninfo
+
+$$
+
+ = {
    "TimeZone" -> 8., 
     "Date" -> {2023, 6, 1, 9, 21, 48.5187152`9.438484150248856}, "Line" -> 8, 
-    "SessionID" -> 27608962436396221335}, Typeset`showpods$$ = {1, 2, 3, 4}, 
-   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
-   Typeset`newq$$ = "integrate -Log[x]/(x + 1) from 0 to 1"}, 
+    "SessionID" -> 27608962436396221335}, Typeset`showpods
+
+$$
+
+ = {1, 2, 3, 4}, 
+   Typeset`failedpods
+
+$$
+
+ = {}, Typeset`chosen
+
+$$
+
+ = {}, Typeset`open
+
+$$
+
+ = False, 
+   Typeset`newq
+
+$$
+
+ = "integrate -Log[x]/(x + 1) from 0 to 1"}, 
    DynamicBox[ToBoxes[
      AlphaIntegration`FormatAlphaResults[
       Dynamic[{
-       1, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$}, {
-        Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$}, 
-        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
-        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
-        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
-        Typeset`newq$$}]], StandardForm],
+       1, {Typeset`pod1
+
+$$
+
+, Typeset`pod2
+
+$$
+
+, Typeset`pod3
+
+$$
+
+, Typeset`pod4
+
+$$
+
+}, {
+        Typeset`aux1
+
+$$
+
+, Typeset`aux2
+
+$$
+
+, Typeset`aux3
+
+$$
+
+, Typeset`aux4
+
+$$
+
+}, 
+        Typeset`chosen
+
+$$
+
+, Typeset`open
+
+$$
+
+, Typeset`elements
+
+$$
+
+, Typeset`q
+
+$$
+
+, 
+        Typeset`opts
+
+$$
+
+, Typeset`nonpods
+
+$$
+
+, Typeset`queryinfo
+
+$$
+
+, 
+        Typeset`sessioninfo
+
+$$
+
+, Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+, 
+        Typeset`newq
+
+$$
+
+}]], StandardForm],
     ImageSizeCache->{462., {473.6340332872234, 479.3659667127766}},
-    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+    TrackedSymbols:>{Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+}],
    DynamicModuleValues:>{},
    Initialization:>If[
      And[
-      Not[Typeset`initdone$$ === True], 
-      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+      Not[Typeset`initdone
+
+$$
+
+ === True], 
+      Not[Typeset`initdone
+
+$$
+
+ === FrontEnd`SuppressEvaluationHash[True]]], 
      Null; WolframAlphaClient`Private`doAsyncUpdates[
-       Hold[{Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$}],
-        Typeset`asyncpods$$, 
-       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
-     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+       Hold[{Typeset`pod1
+
+$$
+
+, Typeset`pod2
+
+$$
+
+, Typeset`pod3
+
+$$
+
+, Typeset`pod4
+
+$$
+
+}],
+        Typeset`asyncpods
+
+$$
+
+, 
+       Dynamic[Typeset`failedpods
+
+$$
+
+]]; Typeset`asyncpods
+
+$$
+
+ = {}; 
+     Typeset`initdone
+
+$$
+
+ = FrontEnd`SuppressEvaluationHash[True]],
    SynchronousInitialization->False],
   BaseStyle->{Deployed -> True},
   DeleteWithContents->True,

@@ -2663,11 +2663,27 @@ Cell[BoxData[
 
 Cell[BoxData[
  NamespaceBox["WolframAlphaQueryResults",
-  DynamicModuleBox[{Typeset`q$$ = "int -(t-Tanh[t])Sech[t]^2Tanh[t] over t", 
-   Typeset`opts$$ = {
+  DynamicModuleBox[{Typeset`q
+
+$$
+
+ = "int -(t-Tanh[t])Sech[t]^2Tanh[t] over t", 
+   Typeset`opts
+
+$$
+
+ = {
    AppearanceElements -> {"Pods"}, IncludePods -> "IndefiniteIntegral", 
     PodStates -> {"IndefiniteIntegral__Step-by-step solution"}}, 
-   Typeset`elements$$ = {"Pods"}, Typeset`pod1$$ = XMLElement[
+   Typeset`elements
+
+$$
+
+ = {"Pods"}, Typeset`pod1
+
+$$
+
+ = XMLElement[
    "pod", {"title" -> "Indefinite integrals", "scanner" -> "Integral", "id" -> 
      "IndefiniteIntegral", "position" -> "100", "error" -> "false", 
      "numsubpods" -> "2", "primary" -> "true"}, {
@@ -3901,9 +3917,21 @@ Cell[BoxData[
        XMLElement[
        "state", {
         "name" -> "Hide steps", "input" -> 
-         "IndefiniteIntegral__Hide steps"}, {}]}]}], Typeset`aux1$$ = {
-   True, False, {False, False}, True}, Typeset`asyncpods$$ = {}, 
-   Typeset`nonpods$$ = {
+         "IndefiniteIntegral__Hide steps"}, {}]}]}], Typeset`aux1
+
+$$
+
+ = {
+   True, False, {False, False}, True}, Typeset`asyncpods
+
+$$
+
+ = {}, 
+   Typeset`nonpods
+
+$$
+
+ = {
     XMLElement["assumptions", {"count" -> "1"}, {
       XMLElement[
       "assumption", {
@@ -3921,8 +3949,16 @@ Cell[BoxData[
           "a function property", "input" -> 
           "{\"C\", \"int\"} -> \
 {\"MathematicalFunctionIdentityPropertyClass\"}"}, {}]}]}]}, 
-   Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True], 
-   Typeset`queryinfo$$ = {
+   Typeset`initdone
+
+$$
+
+ = FrontEnd`SuppressEvaluationHash[True], 
+   Typeset`queryinfo
+
+$$
+
+ = {
    "success" -> "true", "error" -> 
     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
     "numpods" -> "1", "datatypes" -> "", "timedout" -> "Integral", 
@@ -3935,31 +3971,143 @@ MSPa49611hggdf92981e7ia00001ag5c76h220b9ca36430556393126808734", "id" ->
     "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
 MSPa49811hggdf92981e7ia00002e5c056bb76e547d6430556393126808734", "version" -> 
     "2.6", "inputstring" -> "int -(t-Tanh[t])Sech[t]^2Tanh[t] over t"}, 
-   Typeset`sessioninfo$$ = {
+   Typeset`sessioninfo
+
+$$
+
+ = {
    "TimeZone" -> 8., 
     "Date" -> {2023, 4, 28, 16, 18, 27.0680795`9.185032358869702}, "Line" -> 
-    23, "SessionID" -> 28181587643149499416}, Typeset`showpods$$ = {1}, 
-   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
-   Typeset`newq$$ = "int -(t-Tanh[t])Sech[t]^2Tanh[t] over t"}, 
+    23, "SessionID" -> 28181587643149499416}, Typeset`showpods
+
+$$
+
+ = {1}, 
+   Typeset`failedpods
+
+$$
+
+ = {}, Typeset`chosen
+
+$$
+
+ = {}, Typeset`open
+
+$$
+
+ = False, 
+   Typeset`newq
+
+$$
+
+ = "int -(t-Tanh[t])Sech[t]^2Tanh[t] over t"}, 
    DynamicBox[ToBoxes[
      AlphaIntegration`FormatAlphaResults[
       Dynamic[{
-       1, {Typeset`pod1$$}, {Typeset`aux1$$}, Typeset`chosen$$, 
-        Typeset`open$$, Typeset`elements$$, Typeset`q$$, Typeset`opts$$, 
-        Typeset`nonpods$$, Typeset`queryinfo$$, Typeset`sessioninfo$$, 
-        Typeset`showpods$$, Typeset`failedpods$$, Typeset`newq$$}]], 
+       1, {Typeset`pod1
+
+$$
+
+}, {Typeset`aux1
+
+$$
+
+}, Typeset`chosen
+
+$$
+
+, 
+        Typeset`open
+
+$$
+
+, Typeset`elements
+
+$$
+
+, Typeset`q
+
+$$
+
+, Typeset`opts
+
+$$
+
+, 
+        Typeset`nonpods
+
+$$
+
+, Typeset`queryinfo
+
+$$
+
+, Typeset`sessioninfo
+
+$$
+
+, 
+        Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+, Typeset`newq
+
+$$
+
+}]], 
      StandardForm],
     ImageSizeCache->{466., {1213.6340332872235`, 1219.3659667127765`}},
-    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+    TrackedSymbols:>{Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+}],
    DynamicModuleValues:>{},
    Initialization:>If[
      And[
-      Not[Typeset`initdone$$ === True], 
-      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+      Not[Typeset`initdone
+
+$$
+
+ === True], 
+      Not[Typeset`initdone
+
+$$
+
+ === FrontEnd`SuppressEvaluationHash[True]]], 
      Null; WolframAlphaClient`Private`doAsyncUpdates[
-       Hold[{Typeset`pod1$$}], Typeset`asyncpods$$, 
-       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
-     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+       Hold[{Typeset`pod1
+
+$$
+
+}], Typeset`asyncpods
+
+$$
+
+, 
+       Dynamic[Typeset`failedpods
+
+$$
+
+]]; Typeset`asyncpods
+
+$$
+
+ = {}; 
+     Typeset`initdone
+
+$$
+
+ = FrontEnd`SuppressEvaluationHash[True]],
    SynchronousInitialization->False],
   BaseStyle->{Deployed -> True},
   DeleteWithContents->True,
@@ -4052,11 +4200,27 @@ Cell[BoxData[
 
 Cell[BoxData[
  NamespaceBox["WolframAlphaQueryResults",
-  DynamicModuleBox[{Typeset`q$$ = "int Sin[x]/x over x from 0 to Pi", 
-   Typeset`opts$$ = {
+  DynamicModuleBox[{Typeset`q
+
+$$
+
+ = "int Sin[x]/x over x from 0 to Pi", 
+   Typeset`opts
+
+$$
+
+ = {
    AppearanceElements -> {"Pods"}, IncludePods -> "IndefiniteIntegral", 
     PodStates -> {"IndefiniteIntegral__Step-by-step solution"}}, 
-   Typeset`elements$$ = {"Pods"}, Typeset`pod1$$ = XMLElement[
+   Typeset`elements
+
+$$
+
+ = {"Pods"}, Typeset`pod1
+
+$$
+
+ = XMLElement[
    "pod", {"title" -> "Indefinite integral", "scanner" -> "Integral", "id" -> 
      "IndefiniteIntegral", "position" -> "100", "error" -> "false", 
      "numsubpods" -> "1"}, {
@@ -4134,9 +4298,29 @@ Cell[BoxData[
          "link", {
           "url" -> "http://mathworld.wolfram.com/SineIntegral.html", "text" -> 
            "Definition", "title" -> "MathWorld"}, {}]}]}]}], 
-   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
-   Typeset`nonpods$$ = {}, Typeset`initdone$$ = 
-   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   Typeset`aux1
+
+$$
+
+ = {True, False, {False}, True}, Typeset`asyncpods
+
+$$
+
+ = {}, 
+   Typeset`nonpods
+
+$$
+
+ = {}, Typeset`initdone
+
+$$
+
+ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo
+
+$$
+
+ = {
    "success" -> "true", "error" -> 
     "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
     "numpods" -> "1", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
@@ -4147,31 +4331,143 @@ Cell[BoxData[
     "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
 MSPa15620621096497gie6300005f772bi978i4560d724077331436509559", "version" -> 
     "2.6", "inputstring" -> "int Sin[x]/x over x from 0 to Pi"}, 
-   Typeset`sessioninfo$$ = {
+   Typeset`sessioninfo
+
+$$
+
+ = {
    "TimeZone" -> 8., 
     "Date" -> {2023, 5, 1, 13, 16, 49.8523107`9.45026014856995}, "Line" -> 3, 
-    "SessionID" -> 28183276723053903035}, Typeset`showpods$$ = {1}, 
-   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = False, 
-   Typeset`newq$$ = "int Sin[x]/x over x from 0 to Pi"}, 
+    "SessionID" -> 28183276723053903035}, Typeset`showpods
+
+$$
+
+ = {1}, 
+   Typeset`failedpods
+
+$$
+
+ = {}, Typeset`chosen
+
+$$
+
+ = {}, Typeset`open
+
+$$
+
+ = False, 
+   Typeset`newq
+
+$$
+
+ = "int Sin[x]/x over x from 0 to Pi"}, 
    DynamicBox[ToBoxes[
      AlphaIntegration`FormatAlphaResults[
       Dynamic[{
-       1, {Typeset`pod1$$}, {Typeset`aux1$$}, Typeset`chosen$$, 
-        Typeset`open$$, Typeset`elements$$, Typeset`q$$, Typeset`opts$$, 
-        Typeset`nonpods$$, Typeset`queryinfo$$, Typeset`sessioninfo$$, 
-        Typeset`showpods$$, Typeset`failedpods$$, Typeset`newq$$}]], 
+       1, {Typeset`pod1
+
+$$
+
+}, {Typeset`aux1
+
+$$
+
+}, Typeset`chosen
+
+$$
+
+, 
+        Typeset`open
+
+$$
+
+, Typeset`elements
+
+$$
+
+, Typeset`q
+
+$$
+
+, Typeset`opts
+
+$$
+
+, 
+        Typeset`nonpods
+
+$$
+
+, Typeset`queryinfo
+
+$$
+
+, Typeset`sessioninfo
+
+$$
+
+, 
+        Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+, Typeset`newq
+
+$$
+
+}]], 
      StandardForm],
     ImageSizeCache->{466., {45.63403328722343, 51.36596671277657}},
-    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+    TrackedSymbols:>{Typeset`showpods
+
+$$
+
+, Typeset`failedpods
+
+$$
+
+}],
    DynamicModuleValues:>{},
    Initialization:>If[
      And[
-      Not[Typeset`initdone$$ === True], 
-      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+      Not[Typeset`initdone
+
+$$
+
+ === True], 
+      Not[Typeset`initdone
+
+$$
+
+ === FrontEnd`SuppressEvaluationHash[True]]], 
      Null; WolframAlphaClient`Private`doAsyncUpdates[
-       Hold[{Typeset`pod1$$}], Typeset`asyncpods$$, 
-       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
-     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+       Hold[{Typeset`pod1
+
+$$
+
+}], Typeset`asyncpods
+
+$$
+
+, 
+       Dynamic[Typeset`failedpods
+
+$$
+
+]]; Typeset`asyncpods
+
+$$
+
+ = {}; 
+     Typeset`initdone
+
+$$
+
+ = FrontEnd`SuppressEvaluationHash[True]],
    SynchronousInitialization->False],
   BaseStyle->{Deployed -> True},
   DeleteWithContents->True,

@@ -4,12 +4,9 @@
 
 2.18 中的定义结合2.21 的例子是非常重要的.
 
-
 neighborhood
 
 neighborhood $N_r(p)$, $\forall q, \exists r>0$ s.t. $d(p,r)<r$.
-
-
 
 limit point, isolated point, interior point
 
@@ -20,93 +17,67 @@ isolated point, $p\in E$, $p$ is not a limit point.
 
 interior point, for a point $p \in E$, $\exists N_r(p)\subset E$.
 
-
-
 closed
 
 $E$ is *closed* if every limit point of $E$ is a point of $E$.
-
-
 
 open
 
 $E$ is *open* if every point of $E$ is an interior point of $E$.
 
-
-
 Every neighborhood is an open set.
-
-
 
 complement
 
 The *complement* of $E$ (denoted by $E^c$)is the set of all points
 $p \in X$ such that $p \not\in E$.
 
-
-
 perfect
 
 \(h\) $E$ is *perfect* if $E$ is closed and if every point of $E$ is a
 limit point of $E$.
-
-
 
 bounded
 
 \(i\) $E$ is *bounded* if there is a real number $M$ and a point
 $q \in X$ such that $d(p,q)< M$ for all $p \in E$.
 
-
-
 dense
 
 \(j\) $E$ is *dense* in $X$ if every point of $X$ is a limit point of
 $E$, or a point of $E$ (or both).
-
 
 定理 \[\[thm:2.23\]](#thm:2.23){reference-type="ref"
 reference="thm:2.23"} 表明, 虽然使用了看似不相关的定义,
 这里得到的开集与闭集仍然满足"开集的补集是闭集,
 闭集的补集是开集"这样直观的定理
 
-
 A set $E$ is open if and only if its complement is closed.
-
-
 
 open relative
 
 $E$ is open relative to $Y$, $\forall p \in E$, $\exists r>0$, s.t.
 $q \in E$, $d(p, q)<r$, $q \in Y$.
 
-
 任给 $E$ 中一点, 存在邻域 $N$, $N$ 是 $Y$ 的子集. 称 $E$ 对 $Y$
 而言是开集.
 
 2022.11.10
 
-
 *Derived Set*
 
 The limit points of a set ${P}$, denoted $P^{'}$.
-
-
 
 *Perfect Set*
 
 A set $P$ is called perfect if $P=P^{'}$, where $P^{'}$ is the derived
 set of $P$.
 
-
 <https://mathworld.wolfram.com/PerfectSet.html>
-
 
 *Complete Space*
 
 A space of functions comprising a complete biorthogonal system.
-
-
 
 *Complete Metric Space*
 

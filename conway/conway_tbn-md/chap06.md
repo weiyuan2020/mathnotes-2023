@@ -1,7 +1,5 @@
 # Further Fruitfulness of Fractions
 
-
-
 [[chap06Part001]]
 [[chap06Part002]]
 [[chap06Part003]]

@@ -8,7 +8,9 @@ fractions.
 Lagrange proved that continued fractions are periodic just for algebraic
 numbers of degree $2$; for example:
 
-$$\begin{array}{rl}
+$$
+
+\begin{array}{rl}
         \sqrt{2} &= 1+
         \cfrac{1}{2+}
         \cfrac{1}{2+}
@@ -37,12 +39,16 @@ $$\begin{array}{rl}
         \cfrac{1}{4+}
         \cfrac{1}{4+}
         \cfrac{1}{4+}....\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 Very few other numbers display any recognizable pattern, but Napier's
 number does:
 
-$$e=2+
+$$
+
+e=2+
 \frac{1}{1+}
 \frac{1}{2+}
 \frac{1}{1+}
@@ -53,15 +59,21 @@ $$e=2+
 \frac{1}{6+}
 \frac{1}{1+}
 \frac{1}{1+}
-\frac{1}{8+}...,$$
+\frac{1}{8+}...,
+
+$$
 
 and so does its cube. However,
 
-$$\pi = 3+
+$$
+
+\pi = 3+
     \frac{1}{7+}
     \frac{1}{15+}
     \frac{1}{1+}
-    \frac{1}{292+}...$$
+    \frac{1}{292+}...
+
+$$
 
 is quite chaotic.
 
@@ -71,34 +83,58 @@ Notice that you get a good approximation to a number if you chop off the
 tail of its continued fraction just before a large partial quotient. For
 example, just before $15$ or just before $292$ in $\pi$,
 
-$$\pi\approx3+\frac{1}{7} \text{ or }
-    \pi\approx3+\frac{1}{7+}\frac{1}{15+}\frac{1}{1}=\frac{355}{113}$$
+$$
+
+\pi\approx3+\frac{1}{7} \text{ or }
+    \pi\approx3+\frac{1}{7+}\frac{1}{15+}\frac{1}{1}=\frac{355}{113}
+
+$$
 
 Lagrange proved a theorem that says that you can find infinitely many
 approximations $\frac{p}{q}$ to any real number $r$ that satisfy
 
-$$\bigg|r-\frac{p}{q}\bigg| \leq \frac{1}{\sqrt{5}q^2}$$
+$$
+
+\bigg|r-\frac{p}{q}\bigg| \leq \frac{1}{\sqrt{5}q^2}
+
+$$
 
 The worst numbers to approximate are associated with the golden number
 $\tau$ whose partial quotients are, as we've just seen, all $1$. If you
 rule out such numbers, then Lagrange improves his result to
 
-$$\bigg|r-\frac{p}{q}\bigg| \leq \frac{1}{\sqrt{8}q^2}$$
+$$
+
+\bigg|r-\frac{p}{q}\bigg| \leq \frac{1}{\sqrt{8}q^2}
+
+$$
 
 The next most difficult numbers are associated with $\sqrt{2}$ and if
 you leave these out as well, then the theorem improves to
 
-$$\bigg|r-\frac{p}{q}\bigg| \leq \frac{1}{\sqrt{221/25}q^2}$$
+$$
+
+\bigg|r-\frac{p}{q}\bigg| \leq \frac{1}{\sqrt{221/25}q^2}
+
+$$
 
 and so on. These constants, $\sqrt{5}$, $\sqrt{8}$, and
 $\sqrt{221/25}, ...$, are the **Lagrange numbers**, They are of shape
 
-$$\sqrt{9-\frac{4}{m^2}}$$
+$$
+
+\sqrt{9-\frac{4}{m^2}}
+
+$$
 
 where $m$ is a **Markov number**. The Markov numbers occur in the
 solutions of the diophantine equation
 
-$$x^2 + y^2 + z^2 = 3xyz$$
+$$
+
+x^2 + y^2 + z^2 = 3xyz
+
+$$
 
 It is clear that $(x,y,z) = (1,1,1)$ is a solution, and so is $(1,1,2)$.
 As the equation is quadratic in $x,y,z$, each different number in a
@@ -125,7 +161,11 @@ spectrum that are less than 3 are the ones formed from the Markov
 numbers, but there are many more. In fact G. A. Freiman has shown that
 the last gap ends at **Freiman's number**:
 
-$$\frac{2221564096 + 283748 \sqrt{462}}{491993569}$$
+$$
+
+\frac{2221564096 + 283748 \sqrt{462}}{491993569}
+
+$$
 
 which is approximately $4.5278295661 6087914088 2695988070$
 $4696469298 3363276972 8374065061 ...$ and ail real numbers larger than

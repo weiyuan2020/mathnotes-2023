@@ -26,11 +26,15 @@ that, and so on-we won't draw the pictures for
 $\omega^4, \omega^5, ...$---and there are lots of other numbers. For
 instance,
 
-$$\omega^{6}\times 49+
+$$
+
+\omega^{6}\times 49+
     \omega^{3}\times 8 +
     \omega^{2}\times 3 +
     \omega^{ }\times 57+
-    1001$$
+    1001
+
+$$
 
 lies between $\omega^6$ and $\omega^7$. Figure 10.3 shows a pattern for
 the number $\omega^2\times 2+\omega\times 3 +7$.
@@ -40,18 +44,24 @@ FIGURE 10.3 $(\omega^2\times 2)+(\omega\times 3)+ 7$.
 Can we go further? Yes! In Cantor's system you can *always* go further!
 The number
 
-$$\omega^{\omega}=1
+$$
+
+\omega^{\omega}=1
 +\omega^{}
 +\omega^{2}
 +\omega^{3}
 +\omega^{4}
-+\dots$$
++\dots
+
+$$
 
 is obtained by juxtaposing all the patterns for
 $1,\omega,\omega^{2},\omega^{3},\omega^{4}$ ,in that order. Then you
 have
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
     \omega^{\omega}+1,
     \omega^{\omega}+2,
     \dots, \omega^{\omega}+\omega,
@@ -80,12 +90,18 @@ $$\begin{array}{l}
     \omega^{\omega^{\omega+1}},\dots,
     \omega^{\omega^{\omega^{\omega}}},\dots,
     \omega^{\omega^{\omega^{\omega^{\omega}}}},\dots\\
-\end{array}$$
+\end{array}
+
+$$
 
 The "limit" of all these is a number that is natural to write
 astonishing
 
-$$\omega^{\omega^{\omega^{\omega^{\omega^{.^{.^{.}}}}}}}$$
+$$
+
+\omega^{\omega^{\omega^{\omega^{\omega^{.^{.^{.}}}}}}}
+
+$$
 
 where there are $\omega$ omegas. This famous number was called
 $\epsilon_0$, by Cantor. It's the first ordinal number that you can't
@@ -93,12 +109,16 @@ get from smaller ones by a finite number of additions $\alpha+\beta$,
 multiplications $\alpha\times\beta$, and exponentiations
 $\alpha^{\beta}$. Another formula for it is
 
-$$\epsilon_0 = 1
+$$
+
+\epsilon_0 = 1
     +\omega
     +\omega^{\omega}
     +\omega^{\omega^{\omega}}
     +\omega^{\omega^{\omega^{\omega}}}
-    +\dots.$$
+    +\dots.
+
+$$
 
 It is also the first number that satisfies Cantor's famous equation
 $\omega^{\epsilon} = \epsilon$, You'd think that this couldn't happen,
@@ -109,16 +129,22 @@ $\omega^3$ still more so than $\omega$,
 
 but Cantor showed that his equation has lots of solutions. The next is
 
-$$\epsilon_1=(\epsilon_0+1)
+$$
+
+\epsilon_1=(\epsilon_0+1)
 +\omega^{\epsilon_0+1}
 +\omega^{\omega^{\epsilon_0+1}}
 +\omega^{\omega^{\omega^{\epsilon_0+1}}}
 +\omega^{\omega^{\omega^{\omega^{\epsilon_0+1}}}}
-+\dots.$$
++\dots.
+
+$$
 
 Then come
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
     \epsilon_{2},
     \epsilon_{3},
     \dots,
@@ -139,11 +165,17 @@ $$\begin{array}{l}
     \epsilon_{\epsilon_{\epsilon_{1}}},\dots,
     \epsilon_{\epsilon_{\epsilon_{\omega}}},\dots,
     \epsilon_{\epsilon_{\epsilon_{\epsilon_{0}}}},\dots\\
-\end{array}$$
+\end{array}
+
+$$
 
 and eventually
 
-$$\epsilon_{\epsilon_{\epsilon_{\epsilon_{.}}}},$$
+$$
+
+\epsilon_{\epsilon_{\epsilon_{\epsilon_{.}}}},
+
+$$
 
 which is the first solution of $\epsilon_{\alpha}=\alpha$.
 
@@ -183,60 +215,89 @@ count, but also the *order* you count them in. The positive integers can
 be counted in lots and lots of different ways. The simplest is just to
 put them in order of size:
 
-$$\begin{array}{cr}
+$$
+
+\begin{array}{cr}
         1\; 2\; 3\; 4\; 5\; ... &\text{ans.: }\omega\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 Or we might prefer odd numbers first:
 
-$$\begin{array}{ccr}
+$$
+
+\begin{array}{ccr}
         1\; 3\; 5\; 7\; ... 
         2\; 4\; 6\; 8\; ... 
         &\text{ans.: }\omega\times 2\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 We might even discriminate further, classifying numbers according to
 exactly which power of $2$ divides them. This gives
-$$\begin{array}{lllllllr}
+
+$$
+
+\begin{array}{lllllllr}
                     & 1 & 3  & 5  & 7  & 9  & .... \\
         \text{then} & 2 & 6  & 10 & 14 & 18 & .... \\
         \text{then} & 4 & 12 & 20 & 28 & 36 & .... \\
         \text{then} & 8 & 24 & 40 & 56 & 72 & .... &\text{ans.: }\omega^2\\
                     &   & ...& ...\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 Equally we could classify them by the odd factor, i.e., reading this by
 columns, getting the order
 
-$$\begin{array}{lllllllr}
+$$
+
+\begin{array}{lllllllr}
                     & 1 & 2  & 4  & 8  & 16  & .... \\
         \text{then} & 3 & 6  & 12 & 24 & 48  & .... \\
         \text{then} & 5 & 10 & 20 & 40 & 80  & .... \\
         \text{then} & 7 & 14 & 28 & 56 & 112 & .... &\text{ans.: }\omega^2\\
                     &   & ...& ...\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 We can be even more profligate. Let's first have the powers of $2$:
 
-$$1\; 2\; 4\; 8\; 16\;.... (\omega,\text{ so far})$$
+$$
+
+1\; 2\; 4\; 8\; 16\;.... (\omega,\text{ so far})
+
+$$
 
 Then $3$ times these, $3^2$ times them, $3^3$ times, etc.
 
-$$3\;  6\;  12\; 24\; 48 ... 
+$$
+
+3\;  6\;  12\; 24\; 48 ... 
     9\;  18\; 36\; 72 ... 
     27\; 54\; 108\; ... 
-    81 ... 243 ... (\omega^2 ,\text{m?})$$
+    81 ... 243 ... (\omega^2 ,\text{m?})
+
+$$
 
 Then $5$ times all the numbers so far, $25\times$ them, $125\times ...$
 and so on:
 
-$$\begin{array}{cccc ccc ccc}
+$$
+
+\begin{array}{cccc ccc ccc}
 5   & 10   & 20  & 40... &15   &  30  & 60...&  45  & 90  & 180...\\
 25  & 50   & 100 & ...   &75   &  150 &      & 225  & 450 & ...\\
 125 & 250  & 500 & ...   &375  & ...  &      & 1125 & ... & (\omega^3 \text{ here})\\
 625 & 1250 & ... &       &...  &      &      & ...  & \\
 ... & ...  \\
-\end{array}$$
+\end{array}
+
+$$
 
 Then all these times successive powers of $7$, ($\omega^{4}$ more) and
 all those times successive powers of $11$, ($\omega^{5}$ more) and so on
@@ -244,11 +305,15 @@ using the primes in order.
 
 This way we get in all
 
-$$\omega+
+$$
+
+\omega+
     \omega^{2}+
     \omega^{3}+
     \omega^{4}+
     \omega^{5}+
-    \dots=\omega^{\omega}$$
+    \dots=\omega^{\omega}
+
+$$
 
 for the final answer.

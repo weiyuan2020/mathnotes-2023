@@ -3,7 +3,11 @@ years, there are even more open problems today than there have ever been
 before. Most of the positive integers can be expressed as the product of
 smaller ones; such products are called **composite numbers**.
 
-$$4=2\times2,6=2\times3,8=2\times4,9=3\times3,10=2\times5,12=3\times4$$
+$$
+
+4=2\times2,6=2\times3,8=2\times4,9=3\times3,10=2\times5,12=3\times4
+
+$$
 
 are examples of composite numbers.
 
@@ -11,8 +15,12 @@ The number 1 is in a class all by itself and is called the **unit**. The
 remaining numbers that are bigger than 1, but not the product of smaller
 numbers,
 
-$$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,\\
-    53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, ...,$$
+$$
+
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,\\
+    53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, ...,
+
+$$
 
 are called **prime numbers**. Perhaps the greatest mystery about prime
 numbers is that although they are quite simply defined they behave quite
@@ -32,17 +40,29 @@ companions. Here's how it works.
 Write down the numbers in order, putting $1$ in a box to show that it's
 the unit
 
-$$[1] \; 2 \; 3 \; 4 \; 5 \; 6 \; 7 \; 8 \; 9 \; 10 \; 11 \; 12 \; 13 \; ....$$
+$$
+
+[1] \; 2 \; 3 \; 4 \; 5 \; 6 \; 7 \; 8 \; 9 \; 10 \; 11 \; 12 \; 13 \; ....
+
+$$
 
 Circle the first remaining number, which is $2$, and strike out every
 second number thereafter:
 
-$$[1] \; \textcircled{2} \; 3 \; {4} \; 5 \; 6 \; 7 \; 8 \; 9 \; 10 \; 11 \; 12 \; 13 \; ....$$
+$$
+
+[1] \; \textcircled{2} \; 3 \; {4} \; 5 \; 6 \; 7 \; 8 \; 9 \; 10 \; 11 \; 12 \; 13 \; ....
+
+$$
 
 Circle the next remaining number, namely $3$, and strike out all
 subsequent multiples of that number
 
-$$[1] \; \textcircled{2} \; \textcircled{3} \; {4} \; 5 \; 6 \; 7 \; 8 \; 9 \; 10 \; 11 \; 12 \; 13 \; ....$$
+$$
+
+[1] \; \textcircled{2} \; \textcircled{3} \; {4} \; 5 \; 6 \; 7 \; 8 \; 9 \; 10 \; 11 \; 12 \; 13 \; ....
+
+$$
 
 If you continue in this way at each stage, circling the first remaining
 number and striking out its higher multiples, the numbers you circle
@@ -54,12 +74,20 @@ as a multiple of $2$. In fact, when we're coping with a prime number
 $p$, its multiples by numbers smaller than $p$ will already have been
 dealt with, and the first one that hasn't been will be
 
-$$p \text{ times } p = p^2$$
+$$
+
+p \text{ times } p = p^2
+
+$$
 
 When we dealt with $2$ and $3$, leaving $5$ as the next prime, the
 remaining numbers,
 
-$$5, 7, 11, 13, 17, 19, 23$$
+$$
+
+5, 7, 11, 13, 17, 19, 23
+
+$$
 
 below $5^2 = 25$ were therefore already known to be prime.
 
@@ -68,8 +96,16 @@ array, with rows of some fixed length (compare Figures 2.1, 2.4, 2.5,
 2.6, 2.7 in Chapter 2), for then the multiples of any fixed number will
 form an orderly pattern that helps to get them right.
 
-In Figure 5.1 we have drawn just the odd numbers below $$361 =
-19^2$$, and the various straight lines strike out the multiples of
+In Figure 5.1 we have drawn just the odd numbers below 
+
+$$
+
+361 =
+19^2
+
+$$
+
+, and the various straight lines strike out the multiples of
 $3, 5, 7, 11, 13$, and $17$. So the remaining numbers are $1$ and the
 odd primes below $360$.
 
@@ -115,27 +151,39 @@ Modulo a prime number, it's sensible to talk about fractions!
 
 If we work modulo $7$, then
 
-$$2\times4\equiv 1,3\times5\equiv1,\text{and }6\times6\equiv1,$$
+$$
+
+2\times4\equiv 1,3\times5\equiv1,\text{and }6\times6\equiv1,
+
+$$
 
 and so it's quite alright to say that
 
-$$\frac{1}{2}\equiv4, \; 
+$$
+
+\frac{1}{2}\equiv4, \; 
     \frac{1}{3}\equiv5, \; 
     \frac{1}{4}\equiv2, \; 
     \frac{1}{5}\equiv3, \; 
     \frac{1}{6}\equiv6, \; 
-    \text{mod  } 7.$$
+    \text{mod  } 7.
+
+$$
 
 Now since $\frac{1}{8}$ is $5$, $\frac{2}{8}$ should be $2$ $\times$
 $5$, which is $3$ mod $7$, and you can check that
 
-$$\frac{2}{3}\equiv3, \; 
+$$
+
+\frac{2}{3}\equiv3, \; 
     \frac{3}{4}\equiv6, \; 
     \frac{2}{5}\equiv6, \; 
     \frac{3}{5}\equiv2, \; 
     \frac{4}{5}\equiv5, \; 
     \frac{5}{6}\equiv2, \; 
-    \text{mod  } 7.$$
+    \text{mod  } 7.
+
+$$
 
 What about $\frac{1}{7}$? Since $7$ is the same as $0$ mod $7$, this
 would be dividing by zero, which is illegal!
@@ -156,25 +204,45 @@ number $\frac{1}{8}$ mod $101$? The first multiple of $8$ that exceeds
 101 is $8 \times 13 = 104 \equiv 3$ mod $101$, and so we can certainly
 reduce the size of the problem:
 
-$$8\text{ times }13\text{ gives }3.$$
+$$
+
+8\text{ times }13\text{ gives }3.
+
+$$
 
 Now the first multiple of $3$ after $101$ is $3 \times  34 = 102 = 1$
 mod $101$, whence
 
-$$3\text{ times }34\text{ gives }1.$$
+$$
+
+3\text{ times }34\text{ gives }1.
+
+$$
 
 and so
 
-$$8\text{ times }13\times34\text{ will give }1.$$
+$$
+
+8\text{ times }13\times34\text{ will give }1.
+
+$$
 
 This tells us the answer:
 
-$$\frac{1}{8}\equiv  13 \times 34 \text{ mod }101.$$
+$$
+
+\frac{1}{8}\equiv  13 \times 34 \text{ mod }101.
+
+$$
 
 This is surprisingly easy to work out: we know that three $34$s are $1$,
 so twelve $34$s are $4$ and thirteen $34$s must be $38$:
 
-$$\frac{1}{8} \text{ is }38 \text{ mod }101.$$
+$$
+
+\frac{1}{8} \text{ is }38 \text{ mod }101.
+
+$$
 
 In the same way we can find all the numbers
 $\frac{1}{2}$,$\frac{1}{3}$,$\dots$ ,$\frac{1}{100}$ mod $101$. If you
@@ -185,24 +253,36 @@ get a smaller answer):
 SO $\frac{1}{68}$ is $2 \times 3 \times 26 \times 34$, which is just
 $2 \times 26 = 52$, since we already know that $3 \times 34$ is $1$.
 
-$$\frac{1}{68} \equiv 52 \text{ mod }101$$
+$$
 
-$$\begin{aligned}
+\frac{1}{68} \equiv 52 \text{ mod }101
+
+$$
+
+$$
+
+\begin{aligned}
     68\stackrel{\times 2}{\longrightarrow}136\equiv 
     34\stackrel{\times 3}{\longrightarrow}102\equiv 0,\\
     5\stackrel{\times 21}{\longrightarrow}105\equiv 
-    3\stackrel{\times 34}{\longrightarrow}102\equiv 0.\end{aligned}$$
+    3\stackrel{\times 34}{\longrightarrow}102\equiv 0.\end{aligned}
+
+$$
 
 In fact there isn't a number $\frac{1}{68}$ mod $102$, but there *is* a
 number $\frac{1}{8}$, namely $41$.
 
-$$\boxed{
+$$
+
+\boxed{
         \begin{array}{c}
             \text{You can divide by any number,} \\
             \text{other than zero,} \\
             \text{modulo a prime number,} \\
         \end{array}
-    }$$
+    }
+
+$$
 
 but for numbers that aren't prime there will be some other divisions
 that you can't do.
@@ -216,18 +296,28 @@ numbers is equivalent to the assertion that every number factors
 uniquely into prime numbers. This is not at all obvious, and you might
 perhaps think that it's not true for $1001$, since
 
-$$1001 = 7 \times 143 = 11 \times 91.$$
+$$
+
+1001 = 7 \times 143 = 11 \times 91.
+
+$$
 
 The explanation's easy. Although $7$ and $11$ are primes,
 $143 = 11 \times 13$ and $91 = 7 \times 13$ are not, and the only
 factorization of $1001$ into numbers that are *all* primes is
 
-$$1001 = 7 \times 11 \times 13 = 11 \times 7\times 13 =\cdots$$
+$$
+
+1001 = 7 \times 11 \times 13 = 11 \times 7\times 13 =\cdots
+
+$$
 
 (the order doesn't matter). It's easy to show that this always happens
 if you know
 
-$$\text{EUCLID’S PRINCIPLE:} \\
+$$
+
+\text{EUCLID’S PRINCIPLE:} \\
     \boxed{
         \begin{array}{c}           
             \text{A prime number} \\
@@ -235,7 +325,11 @@ $$\text{EUCLID’S PRINCIPLE:} \\
             \text{unless it divides} \\
             \text{one of the factors.} \\
         \end{array}
-    }$$ For *if* $n =a\times b\times c\times ...$ and $p$ *doesn't*
+    }
+
+$$
+
+ For *if* $n =a\times b\times c\times ...$ and $p$ *doesn't*
 divide any of $a, b,c,...,$ then, modulo $p$, there are numbers
 $1/a, 1/b, 1/c,...$ , and so there isa number
 $1/2 = 1/a \times 1/b \times l/c \times ...$ , which shows that $n$
@@ -256,12 +350,22 @@ because all the numbers have been struck out. However, Euclid also
 proved that the primes do indeed continue forever. % 134 THE Book oF
 NUMBERS
 
-Imagine that all the primes you know are $$2, 3, 5, 7, 11, 13.$$
+Imagine that all the primes you know are 
+
+$$
+
+2, 3, 5, 7, 11, 13.
+
+$$
 
 Then we'll show that there must be another one. Multiply your primes
 together and add $1$ to get the larger number
 
-$$2\times3\times5\times7\times11\times13 + 1 = 30031.$$
+$$
+
+2\times3\times5\times7\times11\times13 + 1 = 30031.
+
+$$
 
 This number is certainly bigger than $1$. What is the smallest number,
 bigger than $1$, that divides it exactly? This must be a prime,
@@ -273,22 +377,42 @@ prime.
 Sometimes the big number here is already prime, but sometimes, as in the
 previous example, it isn't:
 
-$$\begin{array}{rl}
+$$
+
+\begin{array}{rl}
         1 + 1 = 2 &\text{ is prime} \\
         2+ 1 =3  &\text{ is prime} \\
         2\times3 + 1 = 7  &\text{ is prime} \\
         2\times3\times5 + 1 = 31  &\text{ is prime} \\
         2\times3\times5\times7 + 1 = 211  &\text{ is prime} \\
         2\times3\times5\times7\times11 + 1 = 2311  &\text{ is prime} \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 but
-$$2\times3\times5\times7\times11\times 13 + 1 = 30031 = 59\times509$$
+
+$$
+
+2\times3\times5\times7\times11\times 13 + 1 = 30031 = 59\times509
+
+$$
+
 and
-$$2\times3\times5\times7\times11\times13\times17 + 1 = 510511 = 19\times97\times277,$$
+
+$$
+
+2\times3\times5\times7\times11\times13\times17 + 1 = 510511 = 19\times97\times277,
+
+$$
+
 while
 
-$$2\times3\times5\times7\times11\times13\times17\times19 + 1= 9699691 = 347\times27953.$$
+$$
+
+2\times3\times5\times7\times11\times13\times17\times19 + 1= 9699691 = 347\times27953.
+
+$$
 
 The next few prime numbers of the form
 $2\times3\times5\times\dots\times p + 1$ are for

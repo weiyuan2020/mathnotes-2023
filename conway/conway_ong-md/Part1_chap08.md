@@ -68,7 +68,11 @@ while Right will wish to make them small, so that in fact Left will
 choose $x = \frac{1}{3}$ and Right $x = \frac{1}{2}$, if they play
 wisely. In symbolic terms, this means that we have the equation
 
-$$\boxed{\tfrac{2}{5}} = \{\boxed{\tfrac{1}{3}} \; \boxed{\tfrac{1}{2}}\}$$
+$$
+
+\boxed{\tfrac{2}{5}} = \{\boxed{\tfrac{1}{3}} \; \boxed{\tfrac{1}{2}}\}
+
+$$
 
 So it is fairly easy to see that what has happened in this game is that
 we have imposed a distorted notion of simplicity, under which
@@ -76,9 +80,13 @@ $\frac{1}{3}$ is counted as simpler than $\frac{1}{4}$ because it has
 smaller denominator. Proceeding in order of this new kind of simplicity,
 we obtain the table
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
   x&=\dots\;-1\;-\frac{1}{2}\;0\;\frac{1}{4}\;\frac{1}{3}\;\frac{2}{5}\;\frac{1}{2}\;\frac{3}{5}\;\frac{2}{3}\;\frac{3}{4}\;1\;1\frac{1}{2}\;2\dots\\
-  \boxed{x}&=\dots\;-1\;-\frac{1}{2}\;0\;\frac{1}{8}\;\frac{1}{4}\;\frac{3}{8}\;\frac{1}{2}\;\frac{5}{8}\;\frac{3}{4}\;\frac{7}{8}\;1\;1\frac{1}{2}\;2\dots\\\end{aligned}$$
+  \boxed{x}&=\dots\;-1\;-\frac{1}{2}\;0\;\frac{1}{8}\;\frac{1}{4}\;\frac{3}{8}\;\frac{1}{2}\;\frac{5}{8}\;\frac{3}{4}\;\frac{7}{8}\;1\;1\frac{1}{2}\;2\dots\\\end{aligned}
+
+$$
 
 in which arbitrary fractions on the top line correspond to dyadic ones
 on the bottom line, in the respective orders of simplicity.
@@ -100,7 +108,9 @@ sign-expansions (Chapter 3).
 Each rational number $x$ can be expanded as a simple continued fraction
 in two closely related ways:
 
-$$x
+$$
+
+x
   =a+
   \frac{1}{b}
   \begin{array}{c}\\+\\\end{array}
@@ -118,7 +128,9 @@ $$x
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{n}
   \begin{array}{c}\\+\\\end{array}
-  \frac{1}{1},$$
+  \frac{1}{1},
+
+$$
 
 in view of the equation
 
@@ -136,7 +148,9 @@ $0$ is replaced by the binary point.
 
 Thus
 
-$$2\frac{1}{3}\frac{3}{5}
+$$
+
+2\frac{1}{3}\frac{3}{5}
   =
   2+
   \frac{1}{2}
@@ -145,7 +159,9 @@ $$2\frac{1}{3}\frac{3}{5}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{2}
   \begin{array}{c}\\+\\\end{array}
-  \frac{1}{4},$$
+  \frac{1}{4},
+
+$$
 
 and so we have
 
@@ -153,7 +169,9 @@ $\boxed{2\tfrac{1}{3}\tfrac{3}{5}} = 2\cdot 0100 1111 = 2\frac{79}{256}$
 
 (The alternative form
 
-$$2+
+$$
+
+2+
   \frac{1}{2}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{1}
@@ -162,7 +180,9 @@ $$2+
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{3}
   \begin{array}{c}\\+\\\end{array}
-  \frac{1}{1}$$
+  \frac{1}{1}
+
+$$
 
 would yield a binary expansion ending in $0$, and so is discarded.) Of
 course the numbers before the binary point will usually be written in
@@ -172,19 +192,27 @@ For irrational $x$, we obtain an infinite continued fraction, and
 exactly the same rule works, except that we have no worries about double
 representation. Thus for
 
-$$x=
+$$
+
+x=
   1+
   \frac{1}{1}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{1}
   \begin{array}{c}\\+...\\\end{array}
-  =1+\frac{1}{x},$$
+  =1+\frac{1}{x},
+
+$$
 
 we have the binary expansion $1\cdot 101010... = 1\frac{2}{3}$. Since
 this $x$ is the positive root of the equation $x^2 = x + 1$, we have the
 mystic equation
 
-$$\boxed{\frac{1+\sqrt{5}}{2}}=\frac{5}{3},$$
+$$
+
+\boxed{\frac{1+\sqrt{5}}{2}}=\frac{5}{3},
+
+$$
 
 The function here called $\boxed{x}$ is traditionally called
 "Minkowski's Question-Mark Function," and has interesting analytic
@@ -194,7 +222,11 @@ Fic. 8.
 
 Suppose we have the position
 
-$$\boxed{x}+\boxed{x}+\boxed{x}+\boxed{x}+\boxed{x}$$
+$$
+
+\boxed{x}+\boxed{x}+\boxed{x}+\boxed{x}+\boxed{x}
+
+$$
 
 but that Right is allowed to pass just once during the game, at any time
 he chooses. For what real number $x$ is this a fair game?
@@ -204,24 +236,36 @@ and so we must solve the equation $\boxed{x} = 4$. Now the number
 $\frac{1}{5}$ has the binary expansion $0\cdot 00110011001100...$, and
 so the required $x$ is the number represented by the continued fraction
 
-$$x=\frac{1}{3}
+$$
+
+x=\frac{1}{3}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{2}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{2}
-  \begin{array}{c}\\+\dots\\\end{array}.$$
+  \begin{array}{c}\\+\dots\\\end{array}.
+
+$$
 
 Now writing $t$ for the number
 
-$$1+\frac{1}{2}
+$$
+
+1+\frac{1}{2}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{2}
   \begin{array}{c}\\+\\\end{array}
-  \begin{array}{c}\\\dots\\\end{array}$$
+  \begin{array}{c}\\\dots\\\end{array}
+
+$$
 
 we find that
 
-$$t=1+\frac{1}{1+t},$$
+$$
+
+t=1+\frac{1}{1+t},
+
+$$
 
 and so $t^2 = 2$, whence $t = \sqrt{2}$ since $t$ is obviously positive,
 and this gives us the surprising answer
@@ -233,7 +277,9 @@ Problems. Solve the equations
 We illustrate with the last equation (none of the others requires much
 calculation). The continued fraction for $\pi$ is
 
-$$\pi=3+\frac{1}{7}
+$$
+
+\pi=3+\frac{1}{7}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{15}
   \begin{array}{c}\\+\\\end{array}
@@ -241,17 +287,23 @@ $$\pi=3+\frac{1}{7}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{292}
   \begin{array}{c}\\+\\\end{array}
-  \begin{array}{c}\\\dots\\\end{array}$$
+  \begin{array}{c}\\\dots\\\end{array}
+
+$$
 
 which we write as
 
-$$3+\frac{1}{7}
+$$
+
+3+\frac{1}{7}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{15}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{1}
   \begin{array}{c}\\+\\\end{array}
-  \frac{1}{77+x}$$
+  \frac{1}{77+x}
+
+$$
 
 for a reason that will soon become apparent. So the expansion of
 $\boxed{\pi}$ will be
@@ -262,12 +314,18 @@ $3\cdot {000 000} {11111 11111 11111} 0 {11111 11111 \dots 111} 1 {111111 \dots 
 
 and
 
-$$0\cdot 000 \dots\dots\dots\dots\dots \dots\dots\dots\dots\dots \dots 0001$$
+$$
+
+0\cdot 000 \dots\dots\dots\dots\dots \dots\dots\dots\dots\dots \dots 0001
+
+$$
 
 is the corresponding expansion of $\boxed{\frac{1}{100}}$ We conclude
 that $E$ must be the number
 
-$$3+\frac{1}{7}
+$$
+
+3+\frac{1}{7}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{15}
   \begin{array}{c}\\+\\\end{array}
@@ -279,11 +337,15 @@ $$3+\frac{1}{7}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{215}
   \begin{array}{c}\\+\\\end{array}
-  \begin{array}{c}\\\dots\\\end{array}.$$
+  \begin{array}{c}\\\dots\\\end{array}.
+
+$$
 
 or more simply
 
-$$E=
+$$
+
+E=
   3+\frac{1}{7}
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{15}
@@ -294,7 +356,9 @@ $$E=
   \begin{array}{c}\\+\\\end{array}
   \frac{1}{1}
   \begin{array}{c}\\+\\\end{array}
-  \frac{1}{x}$$
+  \frac{1}{x}
+
+$$
 
 Eliminating $x$ we find the displayed answer. The calculations would
 have been *much* harder if we had not the good rational approximation
@@ -342,11 +406,19 @@ black edges in a suitable order so as to have $n$ successive moves.
 
 The position ? has value $\frac{1}{2}$, for we have the equation
 
-$$?=\{\_\_\_|?\}=\{0|1\}=\frac{1}{2}$$
+$$
+
+?=\{\_\_\_|?\}=\{0|1\}=\frac{1}{2}
+
+$$
 
 and similarly we find the equations
 
-$$?=\{\_\_\_|?\}=\{0|1,\frac{1}{2}\}=\frac{1}{4},?=\{\_\_\_?|?\}=\{0,\frac{1}{2}|1\}=\frac{3}{4}.$$
+$$
+
+?=\{\_\_\_|?\}=\{0|1,\frac{1}{2}\}=\frac{1}{4},?=\{\_\_\_?|?\}=\{0,\frac{1}{2}|1\}=\frac{3}{4}.
+
+$$
 
 It appears that black edges favour Left, but less so as they get further
 from the ground, while white edges favour Right in a similar way.
@@ -370,12 +442,16 @@ conditions:
 For real $x$, the number $1:x$ (the ordinal sum of $1$ and $x$) has the
 first value from the series
 
-$$\frac{x+1}{1},
+$$
+
+\frac{x+1}{1},
   \frac{x+2}{2},
   \frac{x+3}{4},
   \frac{x+4}{8},
   \frac{x+5}{16},
-  \dots$$
+  \dots
+
+$$
 
 for which the numerator of the given expression exceeds $1$. (We mean
 the numerator $x + n$ as written, not the numerator of the number
@@ -384,12 +460,16 @@ $(x + n)/2^{n-1}$ when written as a rational fraction in least terms.)
 In a similar way, the number $(-1):x$ (always negative) will have the
 first value from the series
 
-$$\frac{x-1}{1},
+$$
+
+\frac{x-1}{1},
   \frac{x-2}{2},
   \frac{x-3}{4},
   \frac{x-4}{8},
   \frac{x-5}{16},
-  \dots$$
+  \dots
+
+$$
 
 in which the numerator is exceeded by $-1$, This is the value of the
 position $?$, when $P$ has value $x$.
@@ -562,7 +642,11 @@ kind. Richard Guy and I have shown that they are all of the form $x$ or
 $x + *$ for various numbers $x$. For the inequalities below imply
 trivially that
 
-$$G^L+* \leqslant G \leqslant G^R+*$$
+$$
+
+G^L+* \leqslant G \leqslant G^R+*
+
+$$
 
 for any COL position $G$, and from this the desired result follows by
 induction. We do not know if denominators of 16 or more can appear in
@@ -571,7 +655,11 @@ $x$.
 All the values in the COL table can be found by the following sort of
 analysis. We have the equation
 
-$$??=\{0,-2,/frac{1}{2}|3,1+*\}=1.$$
+$$
+
+??=\{0,-2,/frac{1}{2}|3,1+*\}=1.
+
+$$
 
 (found by examining the effects of the possible moves), which determines
 the value of the game on the left hand side in terms of simpler cases.

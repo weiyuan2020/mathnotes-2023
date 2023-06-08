@@ -67,7 +67,11 @@ We use the term $2$-power to mean a power of $2$ in the ordinary sense,
 such as $1, 2, 4, 8, 16,....$ (These are not powers of $2$ with the new
 muliiplication.) Using this Nim-addition is easy, for example
 
-$$13+7=(8+4+1)+(4+2+1) =8+2=10,$$
+$$
+
+13+7=(8+4+1)+(4+2+1) =8+2=10,
+
+$$
 
 since the $4$'s and $2$'s cancel. The rule is of course the same as the
 usual rule "write the numbers down in binary and then add without
@@ -127,9 +131,13 @@ $2^2 = 3, 4^2 = 6, 16^2 = 24,...$.
 To work out the products of other numbers we use the associative and
 distributive laws. For example
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     5.9=(4+ 1)(4.2+ 1) &= 4.2+4.2+4+1=6.2+8+4+1\\
-    &= (4 + 2).2+ 13=4.2+2^2+13=8+3+13=6.\\\end{aligned}$$
+    &= (4 + 2).2+ 13=4.2+2^2+13=8+3+13=6.\\\end{aligned}
+
+$$
 
 Our two rules for addition and multiplication imply and are implied by
 the following rules, which are remarkably similar to each other:
@@ -137,7 +145,11 @@ the following rules, which are remarkably similar to each other:
 1.  If $x$ is a $2$-power, and $y < x$, then $x + y$ has its normal
     value, but
 
-$$x+x=0.$$
+$$
+
+x+x=0.
+
+$$
 
 1.  If $x$ is a Fermat $2$-power, and $y < x$, then $xy$ has its normal
     value, but $x.x$ is the ordinary value of $3x/2$.
@@ -199,25 +211,46 @@ other excludents are distinct from $\alpha + \beta$.
 
 THEOREM. 37. For all ordinals $\alpha, \beta,\gamma$ we have
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \alpha+0=\alpha \alpha+\beta=\beta+\alpha, (\alpha+\beta)+\gamma=\alpha+(\beta+\gamma),\\
-    \alpha+\alpha=0, -\alpha=\alpha.\\\end{aligned}$$
+    \alpha+\alpha=0, -\alpha=\alpha.\\\end{aligned}
+
+$$
 
 Proof. These have 1-line proofs:
-$$\alpha + O = \text{mex}\{\alpha'+ 0,\alpha + 0'\} = \text{mex}\{\alpha'\} =\alpha$$
 
-$$\alpha+ \beta = \text{mex}\{\alpha' + \beta,\alpha+ \beta'\} = \text{mex}\{\beta+\alpha', \beta'+\alpha\}=\beta+\alpha$$
+$$
 
-$$\begin{aligned}
+\alpha + O = \text{mex}\{\alpha'+ 0,\alpha + 0'\} = \text{mex}\{\alpha'\} =\alpha
+
+$$
+
+$$
+
+\alpha+ \beta = \text{mex}\{\alpha' + \beta,\alpha+ \beta'\} = \text{mex}\{\beta+\alpha', \beta'+\alpha\}=\beta+\alpha
+
+$$
+
+$$
+
+\begin{aligned}
 (\alpha + \beta) + \gamma 
 &= \text{mex}\{(\alpha + \beta)* + \gamma, (\alpha + \beta ) + \gamma'\} \\
 &= \text{mex}\{(\alpha'+ \beta)  + \gamma, (\alpha + \beta') + \gamma, (\alpha+ \beta)+ \gamma' \} \\
 &= \text{mex}\{\alpha' + (\beta  + \gamma), \alpha + (\beta' + \gamma), \alpha+ (\beta+ \gamma')\} \\
-&=...=\alpha+ (\beta + \gamma). \\\end{aligned}$$
+&=...=\alpha+ (\beta + \gamma). \\\end{aligned}
 
-$$\begin{aligned}
+$$
+
+$$
+
+\begin{aligned}
     \alpha+\alpha &=\text{mex}\{\alpha' + \alpha, \alpha + \alpha'\} = \text{mex}\{O*\} = 0 \\
-    -\alpha &= \text{mex}\{-\alpha'\}  = \text{mex}\{\alpha'\}  =\alpha. \end{aligned}$$
+    -\alpha &= \text{mex}\{-\alpha'\}  = \text{mex}\{\alpha'\}  =\alpha. \end{aligned}
+
+$$
 
 (Note the occasional occurrences of $*$.)
 
@@ -228,15 +261,25 @@ $-\alpha = \alpha$.
 
 THEOREM 38. For all ordinals $\alpha, \beta, \gamma$ we have
 
-$$\alpha 0=0, \alpha 1=\alpha, \alpha \beta = \beta\alpha, (\alpha+ \beta) \gamma = \alpha\gamma + \beta \gamma, (\alpha\beta )\gamma = \alpha(\beta \gamma).$$
+$$
+
+\alpha 0=0, \alpha 1=\alpha, \alpha \beta = \beta\alpha, (\alpha+ \beta) \gamma = \alpha\gamma + \beta \gamma, (\alpha\beta )\gamma = \alpha(\beta \gamma).
+
+$$
 
 Proof. These also have 1-line proofs:
 
-$$\begin{aligned}
-    \alpha 0 &= \text{mex}\{\} =0\\
-    \alpha \beta &= \text{mex}\{\alpha '1 + \alpha0 - \alpha' 0\} = \text{mex}\{\alpha\}  = \alpha\end{aligned}$$
+$$
 
-$$\begin{aligned}
+\begin{aligned}
+    \alpha 0 &= \text{mex}\{\} =0\\
+    \alpha \beta &= \text{mex}\{\alpha '1 + \alpha0 - \alpha' 0\} = \text{mex}\{\alpha\}  = \alpha\end{aligned}
+
+$$
+
+$$
+
+\begin{aligned}
     \alpha\beta 
 &= \text{mex}\{\alpha'\beta + \alpha \beta'- \alpha'\beta' \}   = \text{mex} \{\beta\alpha + \beta\alpha'- \beta'\alpha'\}  = \beta\alpha\\
 (\alpha + \beta)\gamma &= \text{mex} \{(\alpha + \beta) * \gamma + (\alpha + \beta) \gamma' - (\alpha + \beta)*\gamma'\}\\ 
@@ -248,11 +291,17 @@ $$\begin{aligned}
 &= \text{mex} \{(\alpha\beta)*\gamma + (\alpha\beta )\gamma '- (\alpha\beta )*\gamma'\} \\
 &= \text{mex} \{(\alpha'\beta + \alpha\beta'- \alpha'\beta')\gamma + (\alpha\beta)\gamma'- (\alpha'\beta + \alpha\beta'- \alpha'\beta')\gamma \}\\
 &= \text{mex} \{\alpha \beta \gamma + \alpha \beta' \gamma + \alpha\beta\gamma' - \alpha'\beta'\gamma - \alpha' \beta \gamma'- \alpha\beta'\gamma'+ \alpha'\beta'\gamma'\}\\
-&=... = \alpha(\beta \gamma).\\\end{aligned}$$
+&=... = \alpha(\beta \gamma).\\\end{aligned}
+
+$$
 
 In the last two of these we have to use the assertion that
 
-$$\alpha\beta  = \text{mex}\{\alpha * \beta + \alpha \beta * - \alpha * \beta *\},$$
+$$
+
+\alpha\beta  = \text{mex}\{\alpha * \beta + \alpha \beta * - \alpha * \beta *\},
+
+$$
 
 which amounts to the assertion that from
 $\alpha \neq \alpha*, \beta \neq \beta*$we can deduce
@@ -266,13 +315,21 @@ Summary. **On**$_2$ is a commutative Ring with $1$ as one. In fact
 construction of inverses in No to construct inverses in **On**$_2$. In
 fact if we define $1/\alpha$ inductively by the formula
 
-$$\beta = \frac{1}{\alpha}=\text{mex}\left\{0, \frac{1+[\alpha'-\alpha]\beta'}{\alpha'}\right\}$$
+$$
+
+\beta = \frac{1}{\alpha}=\text{mex}\left\{0, \frac{1+[\alpha'-\alpha]\beta'}{\alpha'}\right\}
+
+$$
 
 then we can mimic the proof of Chapter 1 to show that
 $\alpha \beta = 1$. A similar construction shows that every number in
 **On**$_2$ has a square root-this time we use the inductive definition
 
-$$\beta = \sqrt{\alpha} = \text{mex}\left\{\sqrt{\alpha'}, \frac{\beta'\beta*+\alpha}{\beta'+\beta*}\right\}$$
+$$
+
+\beta = \sqrt{\alpha} = \text{mex}\left\{\sqrt{\alpha'}, \frac{\beta'\beta*+\alpha}{\beta'+\beta*}\right\}
+
+$$
 
 in which $\beta'$ and $\beta*$ denote options of $\beta$ not both equal,
 which mimics Bach definition for **No** (Chapter 1).
@@ -384,7 +441,11 @@ $\Delta \alpha = \Delta(\Gamma - \beta) = 1$.
 
 THEOREM 44. With assumptions as in Theorem 43 and its proof, we have
 
-$$\Delta^n \gamma_n + \Delta^{n-1} \gamma_{m-1}+\dots+\Delta \gamma_{1} + \delta = \left[\Delta\left(\Gamma^{n-1}\gamma_n+...+\gamma_1 \right)+\delta \right]$$
+$$
+
+\Delta^n \gamma_n + \Delta^{n-1} \gamma_{m-1}+\dots+\Delta \gamma_{1} + \delta = \left[\Delta\left(\Gamma^{n-1}\gamma_n+...+\gamma_1 \right)+\delta \right]
+
+$$
 
 for all $n\in\omega$, and all
 $\gamma_0,\gamma_1,...,\gamma_n\in\Gamma, \delta\in\Delta$.
@@ -394,7 +455,11 @@ See note on p 63.
 Proof. It will suffice to prove that $\Delta^{n+1} = [\Delta\Gamma^n]$.
 Now the typical excludent for $\Delta^{n+1}$ has the form
 
-$$\Delta^{n}\left(\delta_0+...+\delta_n\right)-\Delta^{n-1}\left(\delta_0 \delta_1+...\right)+...\pm \delta_0 \delta_1 \dots \delta_n,$$
+$$
+
+\Delta^{n}\left(\delta_0+...+\delta_n\right)-\Delta^{n-1}\left(\delta_0 \delta_1+...\right)+...\pm \delta_0 \delta_1 \dots \delta_n,
+
+$$
 
 where the $\delta_i$ are independent variables ranging over $\Delta$.
 Each of the coefficients in this polynomial is in $\Delta$, and is
@@ -402,7 +467,11 @@ either of form $\gamma$ or $\Gamma + \gamma$ for some
 $\gamma \in \Gamma$. Using the equation $\Delta\Gamma = \Delta\beta + 1$
 we can therefore reduce the polynomial to the form
 
-$$\Delta^n \gamma_n + \dots+\Delta \gamma_{1} + \delta_0,$$
+$$
+
+\Delta^n \gamma_n + \dots+\Delta \gamma_{1} + \delta_0,
+
+$$
 
 where the $\gamma_i$ and $\delta$ are restricted as in the theorem. From
 the inductive hypothesis, we deduce that this number is less than
@@ -416,32 +485,52 @@ degree coefficients first. \]
 
 Proof. The typical excludent for $\Delta^{n}$ is
 
-$$\Delta^{n-1}(\delta_1 +... + \delta_n) - \Delta^{n-2}(\delta_1 \delta_2 +...) +... \pm \delta_1 \delta_2 ...\delta_n,$$
+$$
+
+\Delta^{n-1}(\delta_1 +... + \delta_n) - \Delta^{n-2}(\delta_1 \delta_2 +...) +... \pm \delta_1 \delta_2 ...\delta_n,
+
+$$
 
 the $\delta_i$ ranging freely over $\Delta$.
 
 Now if all polynomials earlier than
 
-$$- \Delta^N + \Delta^{N-1} \alpha_{N-1}-\dots\pm \alpha_0$$
+$$
+
+- \Delta^N + \Delta^{N-1} \alpha_{N-1}-\dots\pm \alpha_0
+
+$$
 
 have roots in $\Delta$, they will all split completely into linear
 factors in $\Delta$, and so we can choose $n$ and the $\delta_i$ to show
 that $\Delta$ cannot be a root of any such polynomial. But if the
 displayed polynomial itself has no root, then every number less than
 
-$$\Delta^N = \Delta^{N-1} - \dots \pm \alpha_0 = \left[\Delta^{N-1}\alpha_{N-1}-\dots\pm \alpha_0\right]$$
+$$
+
+\Delta^N = \Delta^{N-1} - \dots \pm \alpha_0 = \left[\Delta^{N-1}\alpha_{N-1}-\dots\pm \alpha_0\right]
+
+$$
 
 appears as an excludent for $\Delta^{N}$, but this number does not, and
 so we have indeed
 
-$$\Delta^N = \Delta^{N-1} \alpha_{N-1} - \dots\pm \alpha_0$$
+$$
+
+\Delta^N = \Delta^{N-1} \alpha_{N-1} - \dots\pm \alpha_0
+
+$$
 
 Note that we have also proved:
 
 THEOREM 46. With the same assumptions as in Theorem 45 and its proof, we
 have
 
-$$\Delta^n \delta_n +... + \delta_0 = \left[\Delta^n \delta_n +... + \delta_0\right]$$
+$$
+
+\Delta^n \delta_n +... + \delta_0 = \left[\Delta^n \delta_n +... + \delta_0\right]
+
+$$
 
 for all $n < N$ and all $\delta_0,...,\delta_n$ in $\Delta$.
 
@@ -513,26 +602,46 @@ THEOREM 49. The finite numbers that are fields are the Fermat $2$-powers
 $2, 4, 16, 256,...$, each the \[square\] of the previous one. These
 numbers satisfy the equations
 
-$$2^{2} = 3,4^{2} = 6,16^{2} = 24,...,\left[2^{2^{n}}\right]^{2} = \left[\tfrac{3}{2}\cdot 2^{2^{n+1}}\right].$$
+$$
+
+2^{2} = 3,4^{2} = 6,16^{2} = 24,...,\left[2^{2^{n}}\right]^{2} = \left[\tfrac{3}{2}\cdot 2^{2^{n+1}}\right].
+
+$$
 
 The next numbers that are fields are
 $\omega, \left[\omega^3\right], \left[\omega^9\right],...$, and in the
 sequence
 
-$$2, \omega, \left[\omega^3\right], \left[\omega^9\right],...$$
+$$
+
+2, \omega, \left[\omega^3\right], \left[\omega^9\right],...
+
+$$
 
 each term is the cube of its successor(!) Then in the sequence
 
-$$4, \left[\omega^{\omega}\right], \left[\omega^{\omega 5}\right], \left[\omega^{\omega 25}\right],...$$
+$$
+
+4, \left[\omega^{\omega}\right], \left[\omega^{\omega 5}\right], \left[\omega^{\omega 25}\right],...
+
+$$
 
 each term is the fifth power of its successor, and in
 
-$$\omega+1, \left[\omega^{\omega^2}\right], \left[\omega^{\omega^2 .7}\right], \left[\omega^{\omega^2 .49}\right],...$$
+$$
+
+\omega+1, \left[\omega^{\omega^2}\right], \left[\omega^{\omega^2 .7}\right], \left[\omega^{\omega^2 .49}\right],...
+
+$$
 
 each term is the seventh power of its successor. In general, if $p$ is
 the $(k + 1)$st odd prime, each term in the sequence
 
-$$\alpha_p, \left[\omega^{\omega^k}\right], \left[\omega^{\omega^k .p}\right], \left[\omega^{\omega^k .p^2}\right],...$$
+$$
+
+\alpha_p, \left[\omega^{\omega^k}\right], \left[\omega^{\omega^k .p}\right], \left[\omega^{\omega^k .p^2}\right],...
+
+$$
 
 is the $p'$th power of its successor, $\alpha_p$ being the least number
 in $\left[\omega^{\omega^k}\right]$ with no $p'$th root in
@@ -549,7 +658,11 @@ Then the first irreducible equation over $16$ is $x^2 + x = 8$, and so
 we have $16^2 + 16 = 8$, whence $16^2 = 24$. Now we know that $256$ is a
 field, with typical element $X = 16x + y$. We examine the function
 
-$$X^{2} + X = 16^{2}x^{2} + y^{2} + 16x + y = 16(x^{2} + x) + (8x^{2} + y^{2} + y).$$
+$$
+
+X^{2} + X = 16^{2}x^{2} + y^{2} + 16x + y = 16(x^{2} + x) + (8x^{2} + y^{2} + y).
+
+$$
 
 In this, $x^{2} + x$ can take any value in $8$, and since when we change
 $x$ by $1$ the expression $8x^{2} + y^{2} + y$ changes by $8$, this
@@ -585,7 +698,11 @@ be a $7$th power in this field. But in fact the only numbers that are
 $7$th powers in the field are the powers of $\omega$. which we find by
 direct calculation to be
 
-$$1, \omega, \omega^2, \omega^3 = 2, \omega^4 = \omega.2, \omega^5 = \omega^2.2, \omega^6 = 3, \omega^7 = \omega.3,$$
+$$
+
+1, \omega, \omega^2, \omega^3 = 2, \omega^4 = \omega.2, \omega^5 = \omega^2.2, \omega^6 = 3, \omega^7 = \omega.3,
+
+$$
 
 and $\omega^8 = \omega^{2}.3$. Since $\omega + 1$ is not among these, it
 is not a seventh power in the field generated by $\omega$ and the finite
@@ -597,7 +714,11 @@ Hendrik Lenstra has computed $\alpha_p$ for $p < 43$.
 Observe that the theorem enables us to compute with numbers below
 $\left[\omega^{\omega^\omega}\right]$, using the expansion
 
-$$\Omega^{p-1}\alpha_{p-1}+...+\Omega\alpha_1+\alpha_0=\left[\Omega^{p-1}+...+\Omega\alpha_1+\alpha_0\right]$$
+$$
+
+\Omega^{p-1}\alpha_{p-1}+...+\Omega\alpha_1+\alpha_0=\left[\Omega^{p-1}+...+\Omega\alpha_1+\alpha_0\right]
+
+$$
 
 for
 $\Omega=\left[\omega^{\omega^k,p^n}\right], \alpha_0,...,\alpha_{p-1}<\Omega$,
@@ -617,38 +738,70 @@ $\left[\omega^{\omega^{\omega+1}}\right]$ is the inverse of
 $\left[\omega^{\omega^\omega}\right]$. In fact we do not see another
 field until we get to
 
-$$\left[\omega^{\omega^{\omega^{\omega}}}\right] = \Omega,\text{ say}.$$
+$$
+
+\left[\omega^{\omega^{\omega^{\omega}}}\right] = \Omega,\text{ say}.
+
+$$
 
 For let $t = \left[\omega^{\omega^\omega}\right]$, and
 $\alpha, \beta, \gamma,...$ denote various ordinals less than $t$. Then
 since
 
-$$\left[t^n \alpha + t^{n-1} \beta + ... + t \gamma + \delta \right] = t^n\alpha + t^{n-1}\beta+...+t\gamma+\delta$$
+$$
+
+\left[t^n \alpha + t^{n-1} \beta + ... + t \gamma + \delta \right] = t^n\alpha + t^{n-1}\beta+...+t\gamma+\delta
+
+$$
 
 we must have
 
-$$\left[t^\omega\right] = 1/t$$
+$$
+
+\left[t^\omega\right] = 1/t
+
+$$
 
 and then we find
 
-$$\left[t^{\omega + n} \alpha + \dots +  t^{\omega} \beta + t^m \gamma + \dots + \delta \right] = \frac{\alpha}{t^{n+1}} + \dots + \frac{\beta}{t} + \gamma t^m + \dots + \delta$$
+$$
+
+\left[t^{\omega + n} \alpha + \dots +  t^{\omega} \beta + t^m \gamma + \dots + \delta \right] = \frac{\alpha}{t^{n+1}} + \dots + \frac{\beta}{t} + \gamma t^m + \dots + \delta
+
+$$
 
 showing that
 
-$$\left[t^{\omega+\omega}\right]=\frac{1}{t-1}$$
+$$
+
+\left[t^{\omega+\omega}\right]=\frac{1}{t-1}
+
+$$
 
 Continuing, we find more generally that
 
-$$\left[t^{\omega+\omega\alpha+n}\right]=\frac{1}{(t-\alpha)^{n+1}}$$
+$$
+
+\left[t^{\omega+\omega\alpha+n}\right]=\frac{1}{(t-\alpha)^{n+1}}
+
+$$
 
 and that rational functions of t arise in lexicographic order of their
 partial fraction expansions
 
-$$\sum t^{\omega+\omega\alpha_i+n_i} \beta_i + \sum t^{m_j \gamma_j} = \sum \frac{\beta_i}{(t-\alpha_i)^{n_i+1}} + \sum \gamma_j t^{m_j}$$
+$$
+
+\sum t^{\omega+\omega\alpha_i+n_i} \beta_i + \sum t^{m_j \gamma_j} = \sum \frac{\beta_i}{(t-\alpha_i)^{n_i+1}} + \sum \gamma_j t^{m_j}
+
+$$
 
 The limit of these numbers, namely
 
-$$\left[ t^{\omega+\omega t} \right] = \left[ t^t \right] = \left[ \omega^t \right] = \Omega$$
+$$
+
+\left[ t^{\omega+\omega t} \right] = \left[ t^t \right] = \left[ \omega^t \right] = \Omega
+
+$$
 
 must be the first algebraic extension $\Omega = \sqrt{t}$, followed by
 $\left[\Omega^2\right]=\sqrt[4]{t}$,
@@ -658,7 +811,11 @@ At $x=\left[\Omega^\omega\right]$ we have a perfect field, and will not
 need to adjoin more square roots before the next transcendental
 equation. In fact $x$ satisfies
 
-$$x^2+x=t$$
+$$
+
+x^2+x=t
+
+$$
 
 and we must solve many such equations before the first cubic extension
 $\sqrt[3]{t}$, which probably happens at the next $\varepsilon$-number

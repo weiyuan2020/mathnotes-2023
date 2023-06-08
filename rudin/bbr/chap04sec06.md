@@ -3,7 +3,6 @@
 We shall now study those functions which never decrease (or never
 increase) on a given segment.
 
-
 ### mydef:4.28 
  Let $f$ be real on $(a, b)$. Then $f$
 is said to be *monotonically increasing* on $(a, b)$ if $a< x < y < b$
@@ -11,8 +10,6 @@ implies $f(x) \leq f(y)$. If the last inequality is reversed, we obtain
 the definition of a *monotonically decreasing* function. The class of
 monotonic functions consists of both the increasing and the decreasing
 functions.
-
-
 
 ### thm:4.29 
  Let f be monotonically increasing on
@@ -25,7 +22,9 @@ $$
         \sup_{a < t < x} f(t) = f(x-)
         \leq f(x) \leq
         f(x+) = \inf_{x < t < b} f(t).
+
 $$
+
  Furthermore, if
 $a < x < y < b$, then 
 \label{eq:4.26}
@@ -33,12 +32,10 @@ $a < x < y < b$, then
 $$
 
         f(x+) \leq f(y-).
+
 $$
 
-
-
 Analogous results evidently hold for monotonically decreasing functions.
-
 
 *Proof.* By hypothesis, the set of numbers $f(t)$, where $a< t < x$, is
 bounded above by the number $f(x)$, and therefore has a least upper
@@ -53,8 +50,8 @@ $a < x - \delta < x$ and
 $$
 
         A - \varepsilon < f(x - \delta) \leq A.
-$$
 
+$$
 
 Since $f$ is monotonic, we have 
 \label{eq:4.28}
@@ -64,18 +61,21 @@ $$
         f(x-\delta) \leq f(t) \leq A
         \quad
         (x-\delta < t < x).
-$$
 
+$$
 
 Combining (\[\[eq:4.27\]](#eq:4.27){reference-type="ref"
 reference="eq:4.27"}) and (\[\[eq:4.28\]](#eq:4.28){reference-type="ref"
 reference="eq:4.28"}), we see that
 
 $$
+
 \left| f(t) - A \right| < \varepsilon
         \quad
         (x - \delta < t < x).
+
 $$
+
  Hence $f(x-) = A$.
 
 The second half of (\[\[eq:4.25\]](#eq:4.25){reference-type="ref"
@@ -91,7 +91,9 @@ $$
         f(x+)
         = \inf_{x < t < b} f(t)
         = \inf_{x < t < y} f(t)
+
 $$
+
  The last equality is obtained by
 applying (\[\[eq:4.25\]](#eq:4.25){reference-type="ref"
 reference="eq:4.25"}) to $(a, y)$ in place of $(a, b)$. Similarly,
@@ -103,17 +105,16 @@ $$
         f(y-)
         = \sup_{a < t < y} f(t)
         = \sup_{x < t < y} f(t)
+
 $$
+
  Comparison of
 (\[\[eq:4.29\]](#eq:4.29){reference-type="ref" reference="eq:4.29"}) and
 (\[\[eq:4.30\]](#eq:4.30){reference-type="ref" reference="eq:4.30"})
 gives (\[\[eq:4.26\]](#eq:4.26){reference-type="ref"
 reference="eq:4.26"}). ◻
 
-
-
 Monotonic functions have no discontinuities of the second kind.
-
 
 This corollary implies that every monotonic function is discontinuous at
 a countable set of points at most. Instead of appealing to the general
@@ -121,13 +122,10 @@ theorem whose proof is sketched in Exercise
 \[\[ex:4.17\]](#ex:4.17){reference-type="ref" reference="ex:4.17"}, we
 give here a simple proof which is applicable to monotonic functions.
 
-
 ### thm:4.30 
  Let $f$ be monotonic on $(a, b)$. Then
 the set of points of $(a, b)$ at which $f$ is discontinuous is at most
 countable.
-
-
 
 ### myremark:4.31 
  It should be noted that the
@@ -147,7 +145,9 @@ $$
         f(x) = \sum_{x_n < x} c_n
         \quad
         (a < x < b).
+
 $$
+
  The summation is to be understood as follows: Sum
 over those indices $n$ for which $x_n < x$. If there are no points $x_n$
 to the left of $x$, the sum is empty; following the usual convention, we
@@ -156,19 +156,17 @@ define it to be zero. Since
 converges absolutely, the order in which the terms are arranged is
 immaterial.
 
-
-
 $f$ is monotonically increasing on $(a, b)$;
 
 $f$ is discontinuous at every point of $E$; in fact,
 
 $$
+
 f(x_n+) - f(x_n-) = c_n
+
 $$
 
-
 $f$ is continuous at every other point of $(a, b)$.
-
 
 Moreover, it is not hard to see that $f(x-) =f(x)$ at all points of
 $(a, b)$. If a function satisfies this condition, we say that $f$ is

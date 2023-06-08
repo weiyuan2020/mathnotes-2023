@@ -68,21 +68,33 @@ Theorem 34 does not show that these integers have unique factorisation.
 In fact, for example, $\omega$ has infinitely many distinct
 factorisations
 
-$$\omega = 
+$$
+
+\omega = 
     2\cdot \frac{\omega}{2}=
     3\cdot \frac{\omega}{3}=
     ...=
-    (\sqrt{\omega})^2, \text{etc}.$$
+    (\sqrt{\omega})^2, \text{etc}.
+
+$$
 
 The same thing can happen for indivisible integers, for example
 
-$$\omega + 1 =
+$$
+
+\omega + 1 =
     (\omega^{\frac{1}{2}}+1)(\omega^{\frac{2}{3}}-\omega^{\frac{1}{2}}+1) = 
-    (\omega^{\frac{1}{3}}+1)(\omega^{\frac{3}{4}}-...+1) = ...$$
+    (\omega^{\frac{1}{3}}+1)(\omega^{\frac{3}{4}}-...+1) = ...
+
+$$
 
 But certain other infinite integers appear to be prime, for instance
 
-$$\omega+\omega^{\frac{1}{2}}+\omega^{\frac{1}{3}}+...+1$$
+$$
+
+\omega+\omega^{\frac{1}{2}}+\omega^{\frac{1}{3}}+...+1
+
+$$
 
 Conjecture. Omnific integers have the refinement property---if $ab = cd$
 for omnific integers, then there are further integers $e, f, g, h$ with
@@ -125,7 +137,11 @@ stage if one of the remainders $y, z,...$ is zero, but otherwise we
 obtain an infinite continued fraction (we use the standard abbreviated
 notation)
 
-$$a+\frac{1}{b}\begin{array}{c}\\+\\\end{array}\frac{1}{c}\begin{array}{c}\\+\\\end{array}\frac{1}{d}\begin{array}{c}\\+\\\end{array}...$$
+$$
+
+a+\frac{1}{b}\begin{array}{c}\\+\\\end{array}\frac{1}{c}\begin{array}{c}\\+\\\end{array}\frac{1}{d}\begin{array}{c}\\+\\\end{array}...
+
+$$
 
 corresponding to $x$.
 
@@ -151,15 +167,31 @@ example the case $N = \omega + 3$.
 
 Here we find successively
 
-$$\sqrt{(\omega+2)}=\sqrt{\omega}+\frac{1}{u},\text{ say}$$
+$$
 
-$$u=\frac{1}{3}(\sqrt{(\omega +3)}+\omega)=\frac{2}{3}\sqrt{\omega}+\frac{1}{v},\text{ say}$$
+\sqrt{(\omega+2)}=\sqrt{\omega}+\frac{1}{u},\text{ say}
 
-$$v=\sqrt{(\omega +3)}+\omega = \sqrt{\omega}+\frac{1}{u}$$
+$$
+
+$$
+
+u=\frac{1}{3}(\sqrt{(\omega +3)}+\omega)=\frac{2}{3}\sqrt{\omega}+\frac{1}{v},\text{ say}
+
+$$
+
+$$
+
+v=\sqrt{(\omega +3)}+\omega = \sqrt{\omega}+\frac{1}{u}
+
+$$
 
 so that $\sqrt{(\omega +3)}$ yields the periodic continued fraction
 
-$$\sqrt{\omega}+\frac{1}{\frac{2}{3}\sqrt{\omega}}\begin{array}{c}\\+\\\end{array}\frac{1}{2\sqrt{\omega}}\begin{array}{c}\\+\\\end{array}\frac{1}{\frac{2}{3}\sqrt{\omega}}\begin{array}{c}\\+...\\\end{array}$$
+$$
+
+\sqrt{\omega}+\frac{1}{\frac{2}{3}\sqrt{\omega}}\begin{array}{c}\\+\\\end{array}\frac{1}{2\sqrt{\omega}}\begin{array}{c}\\+\\\end{array}\frac{1}{\frac{2}{3}\sqrt{\omega}}\begin{array}{c}\\+...\\\end{array}
+
+$$
 
 whose first few convergents are
 
@@ -168,9 +200,17 @@ $\frac{\sqrt{\omega}}{1},\frac{\frac{2}{3}\omega+1}{\frac{2}{3}\sqrt{\omega}},\f
 The alternate ones of these do indeed yield solutions of the equation,
 namely
 
-$$(\frac{2}{3}\omega+1)^2-(\omega+3)(\frac{2}{3}\sqrt{\omega})^2=1$$
+$$
 
-$$(\frac{8}{9}\omega^2+\frac{8}{3}\omega+1)^2-(\omega+3)(\frac{8}{9}\omega\sqrt{\omega}+\frac{4}{3}\sqrt{\omega})^2=1$$
+(\frac{2}{3}\omega+1)^2-(\omega+3)(\frac{2}{3}\sqrt{\omega})^2=1
+
+$$
+
+$$
+
+(\frac{8}{9}\omega^2+\frac{8}{3}\omega+1)^2-(\omega+3)(\frac{8}{9}\omega\sqrt{\omega}+\frac{4}{3}\sqrt{\omega})^2=1
+
+$$
 
 as can easily be checked.
 
@@ -180,7 +220,11 @@ fractions, there are some that do not, for instance
 $\sqrt{(\omega^2 + 2e\omega)}$ (where $e$ is the base of the natural
 logarithms) yields the same continued fraction as $\omega + e$, namely
 
-$$\omega+2+\frac{1}{1}\begin{array}{c}\\+\\\end{array}\frac{1}{2}\begin{array}{c}\\+\\\end{array}\frac{1}{1}\begin{array}{c}\\+\\\end{array}\frac{1}{1}\begin{array}{c}\\+\\\end{array}\frac{1}{4}\begin{array}{c}\\+...\\\end{array}$$
+$$
+
+\omega+2+\frac{1}{1}\begin{array}{c}\\+\\\end{array}\frac{1}{2}\begin{array}{c}\\+\\\end{array}\frac{1}{1}\begin{array}{c}\\+\\\end{array}\frac{1}{1}\begin{array}{c}\\+\\\end{array}\frac{1}{4}\begin{array}{c}\\+...\\\end{array}
+
+$$
 
 Plainly no convergent of this leads to a solution of the corresponding
 Pellian equation, which is therefore insoluble. Other behaviours are

@@ -1,6 +1,5 @@
 # Integration of vector-valued functions
 
-
 ### mydef:6.23 
  Let $f_1,\dots,f_k$ be real functions
 on $[a, b]$, and let $\mathbf{f} = (f_1,\dots,f_k)$ be the corresponding
@@ -8,14 +7,18 @@ mapping of $[a, b]$ into $\mathbb{R}^k$. If $\alpha$ increases monotonically on
 $[a, b]$, to say that $\mathbf{f} \in \mathscr{R}(\alpha)$ means that
 $f_j \in \mathscr{R}(\alpha)$ for $j = 1, ... , k$. If this is the case,
 we define 
+
 $$
+
 \int_{a}^{b} \mathbf{f} \mathrm{d} \alpha = 
         \left( 
             \int_{a}^{b} f_1 \mathrm{d} \alpha
             , \dots,
             \int_{a}^{b} f_k \mathrm{d} \alpha
          \right).
+
 $$
+
  In other words, $\int \mathbf{f} \mathrm{d} \alpha$ is the
 point in $\mathbb{R}^k$ whose $j$th coordinate is $\int f \mathrm{d} \alpha$.
 
@@ -29,23 +32,20 @@ and \[\[thm:6.21\]](#thm:6.21){reference-type="ref"
 reference="thm:6.21"}. To illustrate, we state the analogue of Theorem
 \[\[thm:6.21\]](#thm:6.21){reference-type="ref" reference="thm:6.21"}.
 
-
-
 ### thm:6.24 
  If $\mathbf{f}$ and $\mathbf{F}$ map
 $[a, b]$ into $\mathbb{R}^k$ , if $\mathbf{f} \in \mathscr{R}$ on $[a, b]$, and
 if $\mathbf{F}' = \mathbf{f}$, then
 
 $$
+
 \int_{a}^{b} \mathbf{f}(t) \mathrm{d} t = \mathbf{F}(b) - \mathbf{F}(a).
+
 $$
-
-
 
 The analogue of Theorem \[\[thm:6.13\]](#thm:6.13){reference-type="ref"
 reference="thm:6.13"}(b) offers some new features, however, at least in
 its proof.
-
 
 ### thm:6.25 
  If $\mathbf{f}$ maps $[a, b]$ into $\mathbb{R}^k$
@@ -59,10 +59,8 @@ $$
 
         \left| \int_{a}^{b} \mathbf{f} \mathrm{d} \alpha \right| \leq
         \int_{a}^{b} \left| \mathbf{f} \right| \mathrm{d} \alpha .
+
 $$
-
-
-
 
 *Proof.* If $f_1,\dots,f_k$ are the components of $\mathbf{f}$, then
 
@@ -71,6 +69,7 @@ $$
 $$
 
         \left| \mathbf{f} \right| = \left( f_1^2 + \cdots + f_k^2 \right)^{1/2}.
+
 $$
 
 By Theorem \[\[thm:6.11\]](#thm:6.11){reference-type="ref"
@@ -91,11 +90,14 @@ $y_j = \int f_j \mathrm{d} \alpha$. Then we have
 $\mathbf{y_j} = \int \mathbf{f_j} \mathrm{d} \alpha$, and
 
 $$
+
 \left| \mathbf{f} \right|^2 = 
         \sum y_i^2 =
         \sum y_j \int f_j \mathrm{d} \alpha = 
         \int \left( \sum y_j f_j \right) \mathrm{d} \alpha .
+
 $$
+
  By the Schwarz
 inequality, 
 \label{eq:6.42}
@@ -105,7 +107,9 @@ $$
         \sum y_j f_j (t) \leq \left| \mathbf{y} \right| \left| \mathbf{f}(t) \right| 
         \quad 
         (a \leq t \leq b);
+
 $$
+
  hence Theorem
 \[\[thm:6.12\]](#thm:6.12){reference-type="ref" reference="thm:6.12"}(b)
 implies 
@@ -115,6 +119,7 @@ $$
 
         \left| \mathbf{y} \right|^2 \leq 
         \left| \mathbf{y} \right| \int \left| \mathbf{f} \right| \mathrm{d} \alpha.
+
 $$
 
 If $\mathbf{y = 0}$, (\[\[eq:6.40\]](#eq:6.40){reference-type="ref"

@@ -1,6 +1,6 @@
 # 如何绘制 NDSolve 的结果
 
-[NDSolve](https://reference.wolfram.com/language/ref/NDSolve.html) 对微分方程进行数值求解. 它所返回的解，其形式很容易用于多种不同方式. 其中一个典型的用法是生成解的图形.
+[NDSolve](https://reference.wolfram.com/language/ref/NDSolve.html) 对微分方程进行数值求解. 它所返回的解, 其形式很容易用于多种不同方式. 其中一个典型的用法是生成解的图形.
 
 以初始条件为 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/1.png) 与 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/2.png) 的方程 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/3.png) 为例：
 
@@ -12,7 +12,7 @@ In[1]:=
 
 `https://wolfram.com/xid/0pfvutfx6j4fdey5jm6g2x7phu-nyxrnp`
 
-在 [NDSolve](https://reference.wolfram.com/language/ref/NDSolve.html) 中，方程为第一个参数，要求解的函数 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/4.png) 为第二个参数，独立变量的变化范围为第三个参数：
+在 [NDSolve](https://reference.wolfram.com/language/ref/NDSolve.html) 中, 方程为第一个参数, 要求解的函数 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/4.png) 为第二个参数, 独立变量的变化范围为第三个参数：
 
 In[2]:=
 
@@ -40,7 +40,7 @@ Out[3]=
 
 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/O_2.png)
 
-常常需要将解与其导数（或多个独立变量）绘制在一起. 用 [Evaluate](https://reference.wolfram.com/language/ref/Evaluate.html) 将您所要绘制的内容包括，可以将它们以不同的颜色显示：
+常常需要将解与其导数（或多个独立变量）绘制在一起. 用 [Evaluate](https://reference.wolfram.com/language/ref/Evaluate.html) 将您所要绘制的内容包括, 可以将它们以不同的颜色显示：
 
 In[4]:=
 
@@ -54,7 +54,7 @@ Out[4]=
 
 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/O_3.png)
 
-对于自由度为两个和三个的系统，在相平面内的图形往往更有助益. 这可以用 [ParametricPlot](https://reference.wolfram.com/language/ref/ParametricPlot.html) 来实现：
+对于自由度为两个和三个的系统, 在相平面内的图形往往更有助益. 这可以用 [ParametricPlot](https://reference.wolfram.com/language/ref/ParametricPlot.html) 来实现：
 
 In[5]:=
 
@@ -110,7 +110,7 @@ Out[8]=
 
 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/O_7.png)
 
-将 [Manipulate](https://reference.wolfram.com/language/ref/Manipulate.html) 用于相平面图形，使您很容易对初始条件进行改变：
+将 [Manipulate](https://reference.wolfram.com/language/ref/Manipulate.html) 用于相平面图形, 使您很容易对初始条件进行改变：
 
 In[9]:=
 
@@ -126,7 +126,7 @@ Out[9]=
 
 [Locator](https://reference.wolfram.com/language/ref/Locator.html) 的输入允许您拖动点以改变初始条件. 参数 T 允许您对所求解问题的区间进行控制.
 
-对于偏微分方程，往往存在多种选择. 这里以 Wolfram 的非线性波动方程为例 [[更多信息](http://www.wolframscience.com/nksonline/page-923a-text)]：
+对于偏微分方程, 往往存在多种选择. 这里以 Wolfram 的非线性波动方程为例 [[更多信息](http://www.wolframscience.com/nksonline/page-923a-text)]：
 
 In[10]:=
 
@@ -154,7 +154,7 @@ Out[11]=
 
 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/O_9.png)
 
-另一种方法是 [DensityPlot](https://reference.wolfram.com/language/ref/DensityPlot.html)，它往往能对解的细节提供更多有用信息：
+另一种方法是 [DensityPlot](https://reference.wolfram.com/language/ref/DensityPlot.html), 它往往能对解的细节提供更多有用信息：
 
 In[12]:=
 
@@ -168,7 +168,7 @@ Out[12]=
 
 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/O_10.png)
 
-对于这类时间演变方程，最好的直觉往往来自动画. 使用 [ListAnimate](https://reference.wolfram.com/language/ref/ListAnimate.html) 往往能够得到最佳结果. 首先生成一个用相等时间间隔分开的图形列表，全部具有相同的 [PlotRange](https://reference.wolfram.com/language/ref/PlotRange.html)：
+对于这类时间演变方程, 最好的直觉往往来自动画. 使用 [ListAnimate](https://reference.wolfram.com/language/ref/ListAnimate.html) 往往能够得到最佳结果. 首先生成一个用相等时间间隔分开的图形列表, 全部具有相同的 [PlotRange](https://reference.wolfram.com/language/ref/PlotRange.html)：
 
 In[13]:=
 
@@ -190,7 +190,7 @@ Out[14]=
 
 ![](https://reference.wolfram.com/language/howto/Files/PlotTheResultsOfNDSolve.zh/O_11.png)
 
-在这种情形中，看到波动有一定难度，因为变化的背景来自一个零初始条件. 解决这个问题的一个简单方法是求解对应的常微分方程，并将它消掉：
+在这种情形中, 看到波动有一定难度, 因为变化的背景来自一个零初始条件. 解决这个问题的一个简单方法是求解对应的常微分方程, 并将它消掉：
 
 In[15]:=
 

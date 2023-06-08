@@ -4,22 +4,32 @@ Fermat showed that any odd prime number p must satisfy
 
 FERMAT'S TEST:
 
-$$\begin{aligned}
-b^{p-1} \equiv 1 \text{ mod } p,\text{ for any } b \text{ not divisible by }p. \end{aligned}$$
+$$
+
+\begin{aligned}
+b^{p-1} \equiv 1 \text{ mod } p,\text{ for any } b \text{ not divisible by }p. \end{aligned}
+
+$$
 
 So if a number *doesn't* satisfy this condition, it can't be prime.
 We'll explain why the test works in Chapter 6, but here we'll use it to
 tell us that $91$ isn't prime. If it *were* prime, then, by the test,
 $2^{90}$ would be congruent to $1$, mod $91$. But, working mod $91$,
 
-$$2^6 = 64 \equiv -27, \\
+$$
+
+2^6 = 64 \equiv -27, \\
 \text{so }2^{12} \equiv (-27)^2 = 729 \equiv  1 \\
+
 $$
 
 since $8 \times 91 = 728$.
 
-$$2^{84} = (2^{12})^7 \equiv 1^7 = 1 \text{ and} \\
+$$
+
+2^{84} = (2^{12})^7 \equiv 1^7 = 1 \text{ and} \\
 2^{90} = 2^{84}\times 2^6 \equiv 1 \times (-27),\\
+
 $$
 
 which is not congruent to $1$.
@@ -40,9 +50,20 @@ The number $341 = 11 \times 31$ passes Fermat's test to base $2$, even
 though it isn't prime! Using congruences, this is easy. Since
 $2^5 = 32$, we have
 
-$$2^5 \equiv  +1 (\text{mod }31),\\
+$$
+
+2^5 \equiv  +1 (\text{mod }31),\\
 2^5 \equiv -1 (\text{mod }11),\\
-$$ and so $$2^{10} = +1 (\text{ mod }11 \text{ and }31).$$
+
+$$
+
+ and so 
+
+$$
+
+2^{10} = +1 (\text{ mod }11 \text{ and }31).
+
+$$
 
 We can deduce from this that $2^{10}$ is congruent to $1$ (mod $341$)
 and therefore so is $2^{340}$.
@@ -74,7 +95,9 @@ even more time-consuming than testing $p$ by trial divisors.
 
 Up to $10$ there are $4$ primes, so $1$ in $2.5$ numbers is prime.
 
-$$\begin{array}{rcl rcc}
+$$
+
+\begin{array}{rcl rcc}
 \text{up to } &100    & \text{ there are }  & 25 & \text{ primes,i.e.}1 \text{ in } & 4     \\
               &10^{3} &                     & 168       &                           & 6     \\
               &10^{4} &                     & 1229      &                           & 8.1   \\
@@ -83,26 +106,36 @@ $$\begin{array}{rcl rcc}
               &10^{7} &                     & 664579    &                           & 15    \\
               &10^{8} &                     & 5761455   &                           & 17.3  \\
               &10^{9} &                     & 50847534  &                           & 19.8  \\
-\end{array}$$
+\end{array}
+
+$$
 
 It seems that, up to $10^n$, roughly $1$ in every $2.3 n$ of the numbers
 is a prime. What happens in general?
 
 ## LEGENDRE'S LOGARITHMIC LAW
 
-$$\boxed{
+$$
+
+\boxed{
 \begin{array}{c}        
 \text{Of the numbers up to }N, \\
 \text{roughly } 1 \text{ in every } l \text{ is prime}, \\
 \text{where } l \text{ is the natural logarithm of }N. \\
 \end{array}
-}$$
+}
+
+$$
 
 The natural logarithm of $N$ is $2.30258509...$ times the base $10$
 logarithm of $N$ and is roughly equal to the $N$th harmonic number (see
 Chapter 9):
 
-$$H_N = 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{N}.$$
+$$
+
+H_N = 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{N}.
+
+$$
 
 In 1896, a full century after Adrienne Marie Legendre (1752- 1833)
 guessed the approximate formula $N/\ln N$ for the number of primes up to
@@ -117,10 +150,14 @@ in terms of natural logarithms that we'll meet in Chapter 9.
 
 Gauss guessed that Legendre's idea should be modified slightly.
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
 \text{Of the numbers near }N, \\
 \text{roughly } \frac{1}{\ln N} \text{ are prime.}
-\end{array}$$
+\end{array}
+
+$$
 
 FIGURE 5.2 Gautss's guess.
 
@@ -135,12 +172,16 @@ In 1859, the great German mathematician Georg Friedrich Bernhard Riemann
 
 The number of primes up to $N$ is roughly
 
-$$R(N) = Li(N) 
+$$
+
+R(N) = Li(N) 
     - \frac{1}{2}Li(N^{\frac{1}{2}})
     - \frac{1}{3}Li(N^{\frac{1}{3}})
     - \frac{1}{5}Li(N^{\frac{1}{5}})
     + \frac{1}{6}Li(N^{\frac{1}{6}})
-    - \dots$$
+    - \dots
+
+$$
 
 The coefficient of $\frac{1}{n}Li(N^{\frac{1}{n}})$ is the $n$th
 $\mathbf{\text{Mo\"bius}}$ **number**, $\mu(n)$, which is $0$ if $n$ has
@@ -155,7 +196,11 @@ However, in 1914, John Edensor Littlewood had already proved that
 occasionally Riemann's refinement is worse than Gauss's guess, and his
 student, Skewes, showed that it had to happen before
 
-$$10^{10^{10^{34}}} \text{ (Skewes’s number)}.$$
+$$
+
+10^{10^{10^{34}}} \text{ (Skewes’s number)}.
+
+$$
 
 We don't know any particular $N$ for which this happens; but Sherman
 Lehman has proved that it happens for at least $10^{500}$ numbers with
@@ -173,7 +218,10 @@ unsolved problems of mathematics.
 # HOW GOOD ARE THE GUESSES?
 
 Table 5.2 compares Legendre's, Gauss's, and Riemarnn's guesses.
-$$\begin{array}{ccccc}
+
+$$
+
+\begin{array}{ccccc}
 &\text{ Number of Primes up to }N   & &\text{... and the errors in:}& \\
 N &\pi(n) & \text{Legendre’s Law} & \text{Gause's Guess} & \text{Riemann’s Refinement} \\
 & &  \frac{N}{\ln N}-\pi(N) & Li(N)-\pi(N)  & R(N)-\pi(N) \\
@@ -193,7 +241,11 @@ N &\pi(n) & \text{Legendre’s Law} & \text{Gause's Guess} & \text{Riemann’s R
 10^{14} & 3204941750802   &      -102838308636   &     314890       & -19200          \\
 10^{15} & 29844570422669  &      -891604962452   &     1052619      & 73218           \\
 10^{16} & 279238341033925 &      -7804289844393  &     3214632      & 327052          \\
-\end{array}$$ TABLE 5.2 Errors (to the nearest integer) in formulas for
+\end{array}
+
+$$
+
+ TABLE 5.2 Errors (to the nearest integer) in formulas for
 $\pi(n)$.
 
 # WHICH NUMBERS ARE SUMS OF TWO SQUARES?
@@ -202,8 +254,11 @@ Fermat found the fascinating fact that a prime number, $p$, can be
 written as the sum of two squares just if $p + 1$ isn't divisible by
 $4$. The expression is then unique; for instance,
 
-$$2= 1^2+1^2, 5 = 2^2+1^2, 13 = 3^2+2^2, 17 = 4^2+1^2,\\
+$$
+
+2= 1^2+1^2, 5 = 2^2+1^2, 13 = 3^2+2^2, 17 = 4^2+1^2,\\
 29 = 5^2+2^2, 37 = 6^2+1^2, 41 = 5^2+4^2,...,\\
+
 $$
 
 But $3, 7, 11, 19, 23, 31, 43, \dots$ are *not* sums of two squares.
@@ -216,7 +271,11 @@ it in Chapter 8.
 To see if an arbitrary positive number is the sum of two squares, factor
 it into prime powers:
 
-$$p^a q^b r^c \dots.$$
+$$
+
+p^a q^b r^c \dots.
+
+$$
 
 Then it és the sum of two squares just if$p^a+1, q^b+1, r^c+1, \dots$
 are none of them divisible by $4$.
@@ -247,11 +306,15 @@ our fourteen fruitful fractions (Figure 5.3) that yields a whole number
 answer. The letters over the arrows in Figure 5.4 indicate which of
 these fractions is being used:
 
-$$\begin{array}{ll}
+$$
+
+\begin{array}{ll}
         \stackrel{\times M}{\longrightarrow} 15 \stackrel{\times N}{\longrightarrow} 825 & \stackrel{\times E}{\longrightarrow} 725 \stackrel{\times F}{\longrightarrow} 1925 \stackrel{\times K}{\longrightarrow} 2275 \stackrel{\times A}{\longrightarrow} 425 \stackrel{\times B}{\longrightarrow} 309 \stackrel{\times J}{\longrightarrow}\\        
         &\stackrel{\times E}{\longrightarrow} 290 \stackrel{\times F}{\longrightarrow} 770 \stackrel{\times K}{\longrightarrow} 910 \stackrel{\times A}{\longrightarrow} 170 \stackrel{\times B}{\longrightarrow} 156 \stackrel{\times J}{\longrightarrow} \\        
         &\stackrel{\times E}{\longrightarrow} 116 \stackrel{\times F}{\longrightarrow} 308 \stackrel{\times K}{\longrightarrow} 364 \stackrel{\times A}{\longrightarrow} 68 \stackrel{\times I}{\longrightarrow} 4=2^2\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 Figure 5.4 7he first nineteen steps yield $2^2$, so $2$ is the first
 prime.
@@ -268,14 +331,18 @@ numbers.
 The following amount is now known about the prime factorizations of the
 $9$th to the $13$th Fermat numbers:
 
-$$\begin{array}{ll}
+$$
+
+\begin{array}{ll}
 F_{10} = & 2424833.74556028256478842083373957362004549 18783366342657 .p_{99}  \\
 F_{10} = & 45592577.648703 1809.46597757852200 18543264560743076778 192897 .p_{252}  \\
 F_{10} = & 319489.974849. 1679885 56341760475 1 37.3560841 9064458339205 13 .p_{564}  \\
 F_{10} = & 114689.26017793.63766529.190274191361.1256132134125569. p_{1187}  \\
 F_{10} = & 2710954639361 .2663848877 152141313.  \\
 &\quad 3603 109844542291969.3 1954602082055 16432206725 13. p_{2391}\\
-\end{array}$$
+\end{array}
+
+$$
 
 where the numbers written out in full are primes, and $P_N$ or $c_N$
 denotes an $N$-digit prime or composite number. *See* Richard P. Brent.

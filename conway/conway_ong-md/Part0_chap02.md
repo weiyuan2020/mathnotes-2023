@@ -16,7 +16,11 @@ of $z$ satisfies the same condition. Then $x = z$.
 
 Proof. We have
 
-$$x \geqslant  z \text{ unless some } x^R \leqslant  z \text{ (no!) or } x \leqslant \text{ some } z^L.$$
+$$
+
+x \geqslant  z \text{ unless some } x^R \leqslant  z \text{ (no!) or } x \leqslant \text{ some } z^L.
+
+$$
 
 But from $x \leqslant z^L$, we can deduce
 $x^L \ngeqslant x \leqslant z^L <z \ngeqslant x^R$ for all $x^L, x^R$,
@@ -64,7 +68,11 @@ usual ways.
 Definition. x is a *real number* if and only if $-n < x < n$ for some
 integer $n$, and
 
-$$x=\{x-1,x-\frac{1}{2},x-\frac{1}{3},...|x+1,x+\frac{1}{2},x+\frac{1}{3}...\},$$
+$$
+
+x=\{x-1,x-\frac{1}{2},x-\frac{1}{3},...|x+1,x+\frac{1}{2},x+\frac{1}{3}...\},
+
+$$
 
 or in short, $x = \{x - (1/n)|x + (1/n)\}_{n>0}$. \[It is to be
 understood that $n$ ranges over the positive integers. \]
@@ -96,7 +104,11 @@ this proves (iii).
 As for (iv), note that $\{L | R\}$ is certainly some number, $x$, say,
 and that easily $-n <x <n$ for some integer $n$. So we need only show
 
-$$X=\left\{x-\frac{1}{n}\bigg|x+\frac{1}{n}\right\}_{n>0}.$$
+$$
+
+X=\left\{x-\frac{1}{n}\bigg|x+\frac{1}{n}\right\}_{n>0}.
+
+$$
 
 But since $L$ has no greatest, for any $y\in L$ we have $y + (1/n)\in L$
 for all sufficiently large $n$. This shows that for sufficiently large

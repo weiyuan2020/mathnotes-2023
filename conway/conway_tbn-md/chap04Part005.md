@@ -164,11 +164,19 @@ likelihood of the emergence of petal number $n$.
 The position angles are just the fractional parts of successive
 multiples
 
-$$0,\; 1.618... ,\; 3.236... ,\; 4.854...$$
+$$
+
+0,\; 1.618... ,\; 3.236... ,\; 4.854...
+
+$$
 
 of the **golden number**
 
-$$\tau = \frac{1+\sqrt{5}}{2} = 1.6180339887494... .$$
+$$
+
+\tau = \frac{1+\sqrt{5}}{2} = 1.6180339887494... .
+
+$$
 
 On this view you will see that the fifth petal (number $4$) finds things
 just as easily ($0.146$) as its predecessor, while the sixth and later

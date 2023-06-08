@@ -4,7 +4,6 @@ some sequences occur frequently. remark: If $0\leq x_n \leq s_n$ for
 $n \geq N$, where $N$ is some fixed number, and if $s_n \rightarrow 0$,
 then $x_n \rightarrow 0$.
 
-
 ### thm:3.20 
  (a) If $p > 0$, then
 $\lim_{n \to \infty} \frac{1}{n^p} = 0$.

@@ -1,6 +1,5 @@
 # Measure space
 
-
 measurable space
 
 notation 
@@ -9,7 +8,9 @@ notation
 $$
 
         \{x |P\}
+
 $$
+
  the set of all elements $x$ which have the property
 $P$.
 

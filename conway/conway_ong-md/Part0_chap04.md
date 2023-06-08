@@ -23,11 +23,19 @@ the previous chapter.
 
 THEOREM 22.
 
-$$\sum_{y\in \text{No}}\omega^y. r_y + \sum_{y\in \text{No}}\omega^y. s_y=\sum_{y\in \text{No}}\omega^y. (r_y+s_y)$$
+$$
+
+\sum_{y\in \text{No}}\omega^y. r_y + \sum_{y\in \text{No}}\omega^y. s_y=\sum_{y\in \text{No}}\omega^y. (r_y+s_y)
+
+$$
 
 Proof. This follows easily from the formula
 
-$$\sum_{y\in \text{No}}\omega^y. r_y = \left\{\sum_{y\in \text{No}}\omega^y. r_y + \omega^z. r_z^L \bigg| \sum_{y\in \text{No}}\omega^y. r_y + \omega^z. r_z^R\right\}$$
+$$
+
+\sum_{y\in \text{No}}\omega^y. r_y = \left\{\sum_{y\in \text{No}}\omega^y. r_y + \omega^z. r_z^L \bigg| \sum_{y\in \text{No}}\omega^y. r_y + \omega^z. r_z^R\right\}
+
+$$
 
 The apparent appearance of a proper Class of numbers within the brackets
 is an illusion, since there is no $r^{L}_{z}$ or $r^{R}_{z}$ for $z$
@@ -50,7 +58,11 @@ descending sequence ($y_\beta : \beta < \alpha$). This last restriction
 is quite essential to prevent certain absurdities---without it we should
 have
 
-$$(1 - \omega) + (\omega - \omega^2) + (\omega^2 - \omega^3) +... = 1,$$
+$$
+
+(1 - \omega) + (\omega - \omega^2) + (\omega^2 - \omega^3) +... = 1,
+
+$$
 
 in which an infinite sequence of negative numbers has positive sum. We
 call a number *infinitesimal* if it lies between $-r$ and $r$ for every
@@ -73,11 +85,19 @@ for each positive integer $n$.
 
 Proof. By considering the normal form of $x$, we see that we can write
 
-$$x = \omega^r.r.(1+\delta)$$
+$$
+
+x = \omega^r.r.(1+\delta)
+
+$$
 
 where $\delta$ is some infinitesimal number. Then the number
 
-$$\omega^{y/n}.r^{1/n}.\left[1+\frac{1}{n}\cdot\delta+\frac{1}{n}\cdot\left(\frac{1}{n}-1\right)\frac{\delta^2}{2}+\dots\right]$$
+$$
+
+\omega^{y/n}.r^{1/n}.\left[1+\frac{1}{n}\cdot\delta+\frac{1}{n}\cdot\left(\frac{1}{n}-1\right)\frac{\delta^2}{2}+\dots\right]
+
+$$
 
 is an $n$th root of $x$. The uniqueness is obvious.
 
@@ -90,11 +110,19 @@ $A = 0$. Then unless the polynomial is the rather trivial polynomial
 $x^n$ (which has the root $0$), we can replace $x$ by $tx$ for some
 number $t$ so as to ensure that
 
-$$\text{max}(|B|,|C|,...,|K|)=1.$$
+$$
+
+\text{max}(|B|,|C|,...,|K|)=1.
+
+$$
 
 Then $f(x)$ takes the form
 
-$$x^n +(b + \beta)x^{n-2} +(c + \gamma)x^{n-3} +... +(k +\kappa),$$
+$$
+
+x^n +(b + \beta)x^{n-2} +(c + \gamma)x^{n-3} +... +(k +\kappa),
+
+$$
 
 in which $b,c,...,k$ are real numbers not all zero, and
 $\beta,\gamma,...$, denote not ordinals but infinitesimal numbers.
@@ -102,7 +130,11 @@ $\beta,\gamma,...$, denote not ordinals but infinitesimal numbers.
 For a first approximation, put $\beta = \gamma =... =0$. Then the
 resulting polynomial has a factorisation
 
-$$(x - p)^{n_1} .(x - q)^{n_2}...(x - r)^{n_j}$$
+$$
+
+(x - p)^{n_1} .(x - q)^{n_2}...(x - r)^{n_j}
+
+$$
 
 in which $p,q,...,r$ are distinct complex numbers. Moreover, since the
 sum of the roots is zero, we must have $j \geqslant 2$.
@@ -110,7 +142,11 @@ sum of the roots is zero, we must have $j \geqslant 2$.
 We can now group the complex numbers in conjugate pairs to obtain a
 factorisation
 
-$$f_{1}(x).f_{2}(x)...f_{J}(x)$$
+$$
+
+f_{1}(x).f_{2}(x)...f_{J}(x)
+
+$$
 
 in which the $f_t$, are polynomials with real coefficients, and no two
 of the $f_t$ have a common root. Moreover, we still have $J \geqslant 2$
@@ -237,15 +273,22 @@ is not $1$, at least in the ordinary sense, because there are plenty of
 numbers in between. A simpler, but sometimes less convincing, example of
 the same phenomenon is given by the sequence
 
-$$0, 1, 2, 3,...$$
+$$
+
+0, 1, 2, 3,...
+
+$$
 
 of all finite ordinals, which one would expect to tend to $\omega$, but
 which obviously can't, since there is a whole Host of numbers greater
 than every finite integer but less than $\omega$. For the author's
 amusement, we recall some of the simplest of them:
 
-$$\omega-1, \omega/2, \sqrt{\omega}, \omega^{1/\omega}, [\omega^{\omega^{-\omega^{-\omega...}}}]_{x} \text{(for all x!),}\\
+$$
+
+\omega-1, \omega/2, \sqrt{\omega}, \omega^{1/\omega}, [\omega^{\omega^{-\omega^{-\omega...}}}]_{x} \text{(for all x!),}\\
 \omega^{\omega^{-\omega}}, \omega^{\omega^{-z}},\dots.\\
+
 $$
 
 ## NON-STANDARD ANALYSIS
@@ -256,7 +299,11 @@ analysis developed by Abraham Robinson. Thus for instance for any
 reasonable function $f$, we can define the derivative of $f$ at the real
 number $x$ to be the closest real number to the quotient
 
-$$\frac{f[x + (1/\omega)] - f(x)}{1/\omega}$$
+$$
+
+\frac{f[x + (1/\omega)] - f(x)}{1/\omega}
+
+$$
 
 The reason is that any totally ordered real-closed field is a model for
 the elementary statements about the real numbers. But for precisely this

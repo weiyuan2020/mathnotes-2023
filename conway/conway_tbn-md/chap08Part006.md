@@ -20,27 +20,44 @@ Hamilton finally discovered that the correct thing to do was to use not
 only three coordinates, but four, and he devised a new system of numbers
 that he called **quaternions**. The typical quaternion,
 
-$$q=a+bi+cj+dk$$
+$$
+
+q=a+bi+cj+dk
+
+$$
 
 has a (one-dimensional, real) **scalar** part, $a$, but its "imaginary"
 part is the three-dimensional **vector**
 
-$$v=bi+cj+dk$$
+$$
+
+v=bi+cj+dk
+
+$$
 
 You add them in the obvious way, but multiply them using
 
-$$\boxed{
+$$
+
+\boxed{
 \begin{array}{c}
 i^2+j^2+k^2=-1\\
 ij=k\; jk=i\; ki=j\\
 ji=-k\; kj=-i\; ik=-j\\
 \end{array}
-}$$ Hamilton's rules.
+}
+
+$$
+
+ Hamilton's rules.
 
 For instance:
 
-$$(2+i)(3+j)=6+3i+2j+k,\\
+$$
+
+(2+i)(3+j)=6+3i+2j+k,\\
     (3+j)(2+i)=6+3i+2j-k,\\
+
 $$
 
 but
@@ -53,7 +70,11 @@ Hamilton's quaternions are indeed useful in geometry! The rotation
 through angie $2\theta$ about any unit (length $1$) vector,
 $bi + ocj + dk$, takes any other vector $xi + yj + zk$ to
 
-$$q^{-1}(xi+yj+zk)q,$$
+$$
+
+q^{-1}(xi+yj+zk)q,
+
+$$
 
 where $q = \cos \theta + (bi+cj+dk) \sin \theta$.
 
@@ -63,11 +84,15 @@ things that Hamilton did after discovering his rules was to check that
 the norm of the product of two quaternions is just the product of their
 norms. This gives the famous four-square formula
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
     (a^2+b^2+c^2+d^2)(\alpha^2+\beta^2+\gamma^2+\delta^2)=\\
     (a\alpha-b\beta-c\gamma-d\delta)^2+(a\beta+b\alpha+c\delta-d\gamma)^2+\\
     (a\gamma-b\delta+c\alpha+d\beta)^2+(a\delta+b\gamma-c\beta+d\alpha)^2\\
-\end{array}$$
+\end{array}
+
+$$
 
 already sent by Euler in a letter to Goldbach, April 15, 1705, and used
 by Lagrange in his proof of Fermat's assertion that every integer is the
@@ -119,30 +144,46 @@ Arthur Cayley (1821-1895) discovered an eight-dimensional algebra of
 used to explain certain special properties of seven-dimensional and
 eight-dimensional space. The typical Cayley number has the form
 
-$$a+bi_0+ci_1+di_2+ei_3+fi_4+gi_5+hi_6,$$
+$$
+
+a+bi_0+ci_1+di_2+ei_3+fi_4+gi_5+hi_6,
+
+$$
 
 where each of the triples
 
-$$(i_0,i_1,i_3)
+$$
+
+(i_0,i_1,i_3)
     (i_1,i_2,i_4)
     (i_2,i_3,i_5)
     (i_3,i_4,i_6)
     (i_4,i_5,i_0)
     (i_5,i_6,i_1)
-    (i_6,i_0,i_2)$$
+    (i_6,i_0,i_2)
+
+$$
 
 behaves like Hamilton's $(i, j, k)$.
 
 Any rotation of eight-dimensional space may be written in the form
 
-$$x\text{ goes to } ((((((xc_1)c_2)c_3)c_4)c_5)c_6)c_7$$
+$$
+
+x\text{ goes to } ((((((xc_1)c_2)c_3)c_4)c_5)c_6)c_7
+
+$$
 
 for suitable Cayley numbers $c_1,c_2,c_3,c_4,c_5,c_6,c_7$.
 
 BEWARE! Cayley numbers are not associative, so this *cannot* be written
 as
 
-$$xc_1 c_2 c_3 c_4 c_5 c_6 c_7$$
+$$
+
+xc_1 c_2 c_3 c_4 c_5 c_6 c_7
+
+$$
 
 In 1898 Hurwitz proved that the algebras of real numbers, complex
 numbers, quaternions, and Cayley numbers are the only ones in which all

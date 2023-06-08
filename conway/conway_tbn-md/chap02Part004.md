@@ -6,14 +6,18 @@ Suppose you want to stack up the first few tetrahedral numbers to make
 pentatope numbers (Figure 2.47) (the pentatope is the simplest regular
 figure in four dimensions).
 
-$$\begin{array}{clcll}
+$$
+
+\begin{array}{clcll}
         1 & = & 1 & = & \text{Ptop}_{1} \\
         1+ 4 & = & 5 & = & \text{Ptop}_{2} \\
         1+4+10 & = & 15 & = & \text{Ptop}_{3} \\
         1+4+10+20 & = & 35 & = & \text{Ptop}_{4} \\
         1+4+10+20+35 & = & 70 & = & \text{Ptop}_{5} \\
         1+4+10+20+ 35 + 56 & = & 126 & = & \text{Ptop}_{6} \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 FIGURE 2.47 Pentatope numbers.
 
@@ -33,18 +37,26 @@ In general, four copies of the first $n$ tetrahcdral numbers add up to
 $n + 3$ times the $n$th tetrahedral number,
 $\frac{1}{6} n(n + 1)(n + 2)$. So
 
-$$\boxed{
+$$
+
+\boxed{
         \begin{array}{c}
             \text{The }m\text{th pentatope number is:}\\
             \text{Ptop}_n = \frac{1}{4} \text{Tet}_n \times (n + 3) = \frac{1}{24} n(n + 1)(n + 2)(n + 3)\\
         \end{array}
-    }$$
+    }
+
+$$
 
 Incidentally, we have proved that
 
-$$\text{The product of four} \\
+$$
+
+\text{The product of four} \\
     \text{consecutive integers} \\
-    \text{is divisible by }24.$$
+    \text{is divisible by }24.
+
+$$
 
 ## Sums of CUBES
 
@@ -60,20 +72,32 @@ helps us to add up the cubes.
 
 The gnomons contain
 
-$$\begin{array}{cl}
+$$
+
+\begin{array}{cl}
         1(1) &=1\times 1^2=1^3 \\
         2(1+2+1) &=2\times 2^2=2^3 \\
         3(1+2+3+2+1) &=3\times 3^2=3^3 \\
         4(1+2+3+4+3+2+1) &=4\times 4^2=4^3 \\
         5(1+2+3+4+5+4+3+1) &=5\times 5^2=5^3 \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 using the Upstairs-Downstairs rule (Figure 2.20), But the total of the
 numbers in the multiplication table is exactly the product
 
-$$(1+2+3+4+5)(1+2+3+4+5)= \Delta_5^2$$
+$$
 
-and so, aS we saw in Figure 2.18(b): $$\boxed{
+(1+2+3+4+5)(1+2+3+4+5)= \Delta_5^2
+
+$$
+
+and so, aS we saw in Figure 2.18(b): 
+
+$$
+
+\boxed{
     \begin{array}{c}
         \text{The sum of the first }n\text{ cubes} \\
         1^3+2^3+3^3+\dots+n^3 \\
@@ -81,7 +105,9 @@ and so, aS we saw in Figure 2.18(b): $$\boxed{
         \text{the $n$th triangular number,}\\
         \Delta_n^2 = \frac{1}{4}n^2(n+1)^2\\
     \end{array}
-    }$$
+    }
+
+$$
 
 Figure 2.50 shows this as an easy three-dimensional jigsaw puzzle. The
 square of side $1 + 2+ 3 + 4+ 5 = 15$ of part (a) is chopped into
@@ -94,28 +120,40 @@ Figure 2.50 A squared triangular number is the sum of cubes.
 We can go on piling up triangular pyramids in more and more dimensions.
 The method that we used in Figures 2.29 and 2.45 extends to show that
 
-$$\begin{array}{ccc}
+$$
+
+\begin{array}{ccc}
         1+1+1+\dots+1 & = & n \\
         1+2+3+\dots+n & = & \frac{1}{2}n(n+1) \\
         1+3+6+\dots+\frac{1}{2}n(n+1) & = & \frac{1}{6}n(n+1)(n+2) \\
         1+4+10+\dots+\frac{1}{6}n(n+1)(n+2) & = & \frac{1}{24}n(n+1)(n+2)(n+3) \\
         1+5+15+\dots+\frac{1}{24}n(n+1)(n+2)(n+3) & = & \dots\;\dots \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 giving the counting, triangular, tetrahedral, and pentatope numbers; and
 although we've run out of names, we'll never run out of dimensions---the
 first unnamed numbers
 
-$$\frac{1}{120}n(n+1)(n+2)(n+3)(n+4)$$
+$$
+
+\frac{1}{120}n(n+1)(n+2)(n+3)(n+4)
+
+$$
 
 show that:
 
-$$\boxed{
+$$
+
+\boxed{
     \begin{array}{c}
         \text{The product of five consecutive integers}\\
         \text{is divisible by }120 =1\times2\times3\times4\times5 \\
     \end{array}
-}$$
+}
+
+$$
 
 # SOME VERY LARGE NUMBERS
 
@@ -128,13 +166,17 @@ Computers used to print $m\uparrow n$ so as to avoid superscripts
 (though today only the arrowhead seems to remain). This suggests the
 following handy **arrow notation**. Just as
 
-$$\begin{array}{lccc}
+$$
+
+\begin{array}{lccc}
 m\times n\text{ or}    & mn            & \text{abbreviates}   & m+m+\dots+m \\
 \text{and}             & m\uparrow n   & \text{abbreviates}   & mm\dots m \\
 \text{so we use}       & m\uparrow \uparrow n & \text{to abbreviate}  & m\uparrow m\uparrow \dots \uparrow m \\
 \text{then}            & m\uparrow \uparrow \uparrow n  & \text{to abbreviate} & m\uparrow\uparrow m\uparrow\uparrow \dots \uparrow\uparrow m \\
 \text{and then}        & m\uparrow\uparrow\uparrow\uparrow n & \text{to abbreviate} & m\uparrow\uparrow\uparrow m\uparrow\uparrow\uparrow \dots \uparrow\uparrow\uparrow m\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 and so on, with $n$ copies of $m$ in each case and these expressions
 being evaluated from the right.
@@ -143,14 +185,24 @@ Although the notation $m\uparrow\uparrow\dots\uparrow n$ was only
 introduced in 1976 by Donald Knuth, an essentially similar function was
 defined by W. Ackermann in 1928, and so we'll call
 
-$$1\uparrow 1,\; 2\uparrow\uparrow 2,\; 3\uparrow\uparrow\uparrow 3,\; 4\uparrow\uparrow\uparrow\uparrow 4,\dots$$
+$$
+
+1\uparrow 1,\; 2\uparrow\uparrow 2,\; 3\uparrow\uparrow\uparrow 3,\; 4\uparrow\uparrow\uparrow\uparrow 4,\dots
+
+$$
 
 the **Ackermann numbers**. The first Ackermann numbcr is $1$, the second
 is $2\uparrow\uparrow 2 = 2\uparrow 2 = 4$, and the third is
 
-$$3^{3^{3^{3^3}}}$$
+$$
 
-$$\color{red}{
+3^{3^{3^{3^3}}}
+
+$$
+
+$$
+
+\color{red}{
     \begin{array}{l}
             \text{my question: how to get it?  By definition,}\\
 3\uparrow\uparrow\uparrow 3 = 3\uparrow\uparrow 3\uparrow\uparrow 3, \text{(Does this calculate have an order?)}\\
@@ -159,30 +211,52 @@ $$\color{red}{
 I = 3\uparrow\uparrow 3^{3^3} = 3\uparrow 3\uparrow 3\uparrow \dots \uparrow 3 = 3^{3^{3^3}}.\\
 \text{(Don't need to care the calculate order here, because they get the same answer.)}\\
     \end{array}
-}$$
+}
+
+$$
 
 where the number of threes is $3^{3^3} = 7625597484987$. It's virtually
 impossible to comprehend the immensity of the fourth Ackermann number,
 $4\uparrow\uparrow\uparrow\uparrow 4 = 4\uparrow\uparrow\uparrow 4\uparrow\uparrow\uparrow 4\uparrow\uparrow\uparrow 4$.
 This is
 
-$$4\uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4\dots \uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4$$
+$$
+
+4\uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4\dots \uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4
+
+$$
 
 where the number of fours here is
 
-$$4\uparrow\uparrow 4\uparrow\uparrow 4\dots \uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4$$
+$$
+
+4\uparrow\uparrow 4\uparrow\uparrow 4\dots \uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4
+
+$$
 
 where the number of fours *there* is
 
-$$4\uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4$$
+$$
+
+4\uparrow\uparrow 4\uparrow\uparrow 4\uparrow\uparrow 4
+
+$$
 
 (the number of fours in *that* being four). This last number is
 
-$$4^{4^{4^{4^{4}}}}$$
+$$
+
+4^{4^{4^{4^{4}}}}
+
+$$
 
 in which the number of fours is
 
-$$4^{4^{4^{4}}}$$
+$$
+
+4^{4^{4^{4}}}
+
+$$
 
 so Go 1SSdigit number)
 
@@ -193,26 +267,42 @@ Our own "chained arrow" notation names some even larger numbers. In
 this, $a\uparrow\uparrow \dots \uparrow\uparrow b$ (with $c$ arrows) is
 called $a\rightarrow b\rightarrow c$.
 
-$$a\rightarrow b\rightarrow \dots\rightarrow x\rightarrow y\rightarrow 1$$
+$$
+
+a\rightarrow b\rightarrow \dots\rightarrow x\rightarrow y\rightarrow 1
+
+$$
 
 is another name for
 $a\rightarrow b\rightarrow \dots\rightarrow x\rightarrow y$, and
 
-$$a\dots\rightarrow x\rightarrow y\rightarrow (z+1)$$
+$$
+
+a\dots\rightarrow x\rightarrow y\rightarrow (z+1)
+
+$$
 
 is defined to be
 
-$$\begin{array}{cc}
+$$
+
+\begin{array}{cc}
         a\dots x & \text{if} y = 1, \\
         a\dots x\rightarrow (a\dots x)\rightarrow z & \text{if} y = 2, \\
         a\dots x\rightarrow (a\dots x\rightarrow (a\dots x)\rightarrow z) \rightarrow z & \text{if} y = 3, \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 and so on. The parentheses here may be rubbed out after the numbers
 inside them have been completely evaluated. The first three of our own
 rapidly increasing sequence of numbers
 
-$$1,2\rightarrow 2, 3\rightarrow 3\rightarrow 3, 4\rightarrow 4\rightarrow 4\rightarrow 4, \dots$$
+$$
+
+1,2\rightarrow 2, 3\rightarrow 3\rightarrow 3, 4\rightarrow 4\rightarrow 4\rightarrow 4, \dots
+
+$$
 
 agree with the Ackermann numbers
 $1\uparrow 1, 2\uparrow \uparrow 2, 3\uparrow \uparrow \uparrow 3,$ but
@@ -228,7 +318,9 @@ improvements of Skewes's theorem has been deflated to **10\^{1167}**
 number, although the theorem in which this number appears might well be
 deflated in the future.
 
-$$\boxed{
+$$
+
+\boxed{
     \begin{array}{c}        
         \text{Graham’s number is}\\
         4\uparrow\uparrow\dots\uparrow\uparrow 4 \text{, where the number of arrows is} \\
@@ -238,20 +330,30 @@ $$\boxed{
         \text{It lies between } 3 \rightarrow 3 \rightarrow 64 \rightarrow 2 \text{ and}\\
         3\rightarrow 3 \rightarrow 65 \rightarrow 2.\\
             \end{array}
-}$$
+}
 
-$$\boxed{
+$$
+
+$$
+
+\boxed{
     \begin{array}{ccc}
         \text{Skewes's number} & \text{ is less than } & 4^{4^{4^{4^4}}} = 4\uparrow\uparrow 5, \\
         10^{1167}              & \text{ is less than } & 5^{5^5} = 5\uparrow 3, \text{ and} \\
         \text{Graham's number} & \text{ is less than } & 3\rightarrow 3\rightarrow 3\rightarrow 3. \\
     \end{array}
-}$$
+}
+
+$$
 
 What's the largest individual number that occurs "naturally" in an
 undeflatable theorem? A moderately large and very special number is
 
-$$8080\; 17424\; 79451\; 28758\; 86459\; 90496\; 17107\; 57005\; 75436\; 80000\; 00000,$$
+$$
+
+8080\; 17424\; 79451\; 28758\; 86459\; 90496\; 17107\; 57005\; 75436\; 80000\; 00000,
+
+$$
 
 which is the order of the so-called Monster simple group, but we are
 sure that this entry has already been outrun by worthier candidates.

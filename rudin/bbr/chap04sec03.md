@@ -1,19 +1,14 @@
 # Continuity and compactness
 
-
 ### mydef:4.13 
  A mapping $\mathbf{f}$ of a set $E$
 into $\mathbb{R}^{k}$ is said to be *bounded* if there is a real number $M$ such
 that $\left| f(x) \right| \leq M$ for all $x \in E$.
 
-
-
 ### thm:4.14 
  Suppose $f$ is a continuous mapping of a
 compact metric space $X$ into a metric space $Y$. Then $f(X)$ is
 compact.
-
-
 
 *Proof.* Let $\{V_\alpha\}$ be an open cover of $f(X)$. Since $f$
 is continuous, Theorem \[\[thm:4.8\]](#thm:4.8){reference-type="ref"
@@ -28,7 +23,9 @@ $$
         f^{-1} (V_{\alpha_1})
         \cup \cdots \cup
         f^{-1} (V_{\alpha_n}).
+
 $$
+
  Since $f(f^{-1}(E)) \subset E$ for
 every $E \subset Y$, (\[\[eq:4.12\]](#eq:4.12){reference-type="ref"
 reference="eq:4.12"}) implies that 
@@ -40,11 +37,10 @@ $$
         (V_{\alpha_1})
         \cup \cdots \cup
         (V_{\alpha_n}).
+
 $$
 
-
 This completes the proof ◻
-
 
 Note: We have used the relation $f(f^{- 1}(E)) \subset E$, valid for
 $E \subset Y$. If $E \subset X$, then $f^{- 1}(f(E)) \supset E$;
@@ -53,17 +49,14 @@ equality need not hold in either case.
 We shall now deduce some consequences of Theorem
 \[\[thm:4.14\]](#thm:4.14){reference-type="ref" reference="thm:4.14"}
 
-
 ### thm:4.15 
  If $\mathbf{f}$ is a continuous mapping
 of a compact metric space $X$ into $\mathbb{R}^{k}$, then $\mathbf{f}(X)$ is
 closed and bounded. Thus, $\mathbf{f}$ is bounded.
 
-
 This follows from Theorem \[\[thm:2.41\]](#thm:2.41){reference-type="ref"
 reference="thm:2.41"}. The result is particularly important when $f$ is
 real:
-
 
 ### thm:4.16 
  Suppose $f$ is a continuous real function
@@ -74,10 +67,11 @@ $$
 
         M = \sup_{p\in X} f(p), \quad
         m = \inf_{p\in X} f(p).
+
 $$
+
  Then there exist points $p, q \in X$
 such that $f(p) = M$ and $f(q) = m$.
-
 
 The notation in (\[\[eq:4.14\]](#eq:4.14){reference-type="ref"
 reference="eq:4.14"}) means that $M$ is the least upper bound of the set
@@ -88,30 +82,33 @@ The conclusion may also be stated as follows: *There exist points $p$
 and $q$ in $X$ such that $f(q) \leq f(x) \leq f(p)$ for all $x \in X$;*
 that is, $f$ attains its maximum (at $p$) and its minimum (at $q$).
 
-
 *Proof.* By Theorem \[\[thm:4.15\]](#thm:4.15){reference-type="ref"
 reference="thm:4.15"}, $f(X)$ is a closed and bounded set of real
 numbers; hence $f(X)$ contains 
+
 $$
+
 M = \sup f(X), \quad
         m = \inf f(X).
+
 $$
+
  By Theorem
 \[\[thm:2.28\]](#thm:2.28){reference-type="ref" reference="thm:2.28"} ◻
-
-
 
 ### thm:4.17 
  Suppose $f$ is a continuous 1-1 mapping
 of a compact metric space $X$ onto a metric space $Y$. Then the inverse
 mapping 1-1 defined on $Y$ by 
+
 $$
+
 f^{-1}(f(x)) = x \quad
         (x \in X)
+
 $$
+
  is a continuous mapping of $Y$ onto $X$.
-
-
 
 ### mydef:4.18 
  Let $f$ be a mapping of a metric
@@ -123,10 +120,11 @@ $\delta > 0$ such that
 $$
 
         d_Y(f(p),f(q)) < \varepsilon
+
 $$
+
  for all $p$ and $q$ in $X$ for
 which $d_X(p, q) < \delta$.
-
 
 Let us consider the differences between the concepts of continuity and
 of uniform continuity. First, uniform continuity is a property of a
@@ -145,13 +143,10 @@ Evidently, every uniformly continuous function is continuous. That the
 two concepts are equivalent on compact sets follows from the next
 theorem.
 
-
 ### thm:4.19 
  Let $f$ be a continuous mapping of a
 compact metric space $X$ into a metric space $Y$. Then $f$ is uniformly
 continuous on $X$.
-
-
 
 *Proof.* Let $\varepsilon > 0$ be given. Since $f$ is continuous, we can
 associate to each point $p \in X$ a positive number $\phi(p)$ such that
@@ -163,8 +158,8 @@ $$
         q\in X, d_X(p, q) < \phi(p)
         \text{ implies }
         d_Y (f(p), f(q)) < \frac{\varepsilon}{2}.
-$$
 
+$$
 
 Let $J(p)$ be the set of all $q \in X$ for which 
 \label{eq:4.17}
@@ -172,8 +167,8 @@ Let $J(p)$ be the set of all $q \in X$ for which
 $$
 
         d_X(p, q) < \frac{1}{2}\phi(p).
-$$
 
+$$
 
 Since $p \in J(p)$, the collection of all sets $J(p)$ is an open cover
 of $X$; and since $X$ is compact, there is a finite set of points
@@ -183,12 +178,17 @@ $p_1,...,p_n$ in $X$, such that
 $$
 
         X \subset J(p_1) \cup \cdots \cup J(p_n).
+
 $$
+
  We put
 
 $$
+
 \delta = \frac{1}{2} \min [\phi(p_1), ..., \phi(p_n)].
+
 $$
+
  Then
 $\delta > 0$ . (This is one point where the finiteness of the covering,
 inherent in the definition of compactness, is essential. The minimum of
@@ -204,27 +204,35 @@ hence
 $$
 
         d_X(p, p_m) < \frac{1}{2}\phi(p_m),
+
 $$
+
  and we also have
 
 $$
+
 d_X(q, p_m) \leq
         d_X(p, q) +
         d_X(p, p_m) <
         \delta + \frac{1}{2}\phi(p_m) \leq
         \phi(p_m).
+
 $$
+
  Finally,
 (\[\[eq:4.16\]](#eq:4.16){reference-type="ref" reference="eq:4.16"})
 shows that therefore 
+
 $$
+
 d_Y(f(p), f(q)) \leq
         d_Y(f(p), f(p_m)) +
         d_Y(f(q), f(p_m)) <
         \varepsilon .
-$$
- This complete the proof. ◻
 
+$$
+
+ This complete the proof. ◻
 
 An alternative proof is sketched in Exercise
 \[\[ex:4.10\]](#ex:4.10){reference-type="ref" reference="ex:4.10"}.
@@ -235,7 +243,6 @@ reference="thm:4.14"}, \[\[thm:4.15\]](#thm:4.15){reference-type="ref"
 reference="thm:4.15"}, \[\[thm:4.16\]](#thm:4.16){reference-type="ref"
 reference="thm:4.16"}, and
 \[\[thm:4.19\]](#thm:4.19){reference-type="ref" reference="thm:4.19"}.
-
 
 ### thm:4.20 
  Let $E$ be a noncompact set in $\mathbb{R}^{1}$
@@ -250,8 +257,6 @@ Then
 (c) there exists a continuous function on $E$ which is not uniformly
     continuous.
 
-
-
 *Proof.* Suppose first that $E$ is bounded, so that there exists a limit
 point $x_0$ of $E$ which is not a point of $E$. Consider
 
@@ -262,7 +267,9 @@ $$
         f(x) = \frac{1}{x - x_0}
         \quad
         (x \in E).
+
 $$
+
  This is continuous on $E$ (Theorem 4.9), but
 evidently unbounded. To see that
 (\[\[eq:4.21\]](#eq:4.21){reference-type="ref" reference="eq:4.21"}) is
@@ -281,12 +288,18 @@ $$
         g(x) = \frac{1}{1+(x-x_0)^2}
         \quad
         (x \in E)
+
 $$
+
  is continuous on $E$, and is bounded, since
 $0 < g(x) < 1$. It is clear that 
+
 $$
+
 \sup_{x \in E} g(x) = 1,
+
 $$
+
  whereas
 $g(x) < l$ for all $x \in E$. Thus $g$ has no maximum on $E$.
 
@@ -300,10 +313,15 @@ $$
         h(x) = \frac{x^2}{1 + x^2}
         \quad
         (x \in E)
+
 $$
+
  establishes (b), since 
+
 $$
+
 \sup_{x \in E} h(x) = 1
+
 $$
 
 and $h(x) < 1$ for all $x \in E$.
@@ -315,11 +333,9 @@ merely take $\delta < 1$ in Definition
 \[\[mydef:4.18\]](#mydef:4.18){reference-type="ref"
 reference="mydef:4.18"}. ◻
 
-
 We conclude this section by showing that compactness is also essential
 in Theorem \[\[thm:4.17\]](#thm:4.17){reference-type="ref"
 reference="thm:4.17"}.
-
 
 Let $X$ be the half-open interval $[0, 2\pi)$ on the real line, and let
 $f$ be the mapping of $X$ onto the circle $Y$ consisting of all points
@@ -331,7 +347,9 @@ $$
         f(t) = (\cos t, \sin t)
         \quad
         (0 \leq t < 2\pi).
+
 $$
+
  The continuity of the trigonometric
 functions cosine and sine, as well as their periodicity properties, will
 be established in Chap. \[\[chap:08\]](#chap:08){reference-type="ref"

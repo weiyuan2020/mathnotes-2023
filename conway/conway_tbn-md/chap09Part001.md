@@ -12,7 +12,11 @@ did compass it round about.
 
 The area of a circle of radius $1$ is roughly
 
-$$3.1415926535 ....$$
+$$
+
+3.1415926535 ....
+
+$$
 
 The perimeter of a circle of diameter $1$ is the same number. Just what
 is this number? The above quotation suggests that its author thought
@@ -30,7 +34,11 @@ proved that the above two definitions do give exactly the same answer,
 and he also showed that it's the same number that occurs in the slightly
 more complicated formulas
 
-$$4\pi r^2 \text{ and } \frac{4}{3}\pi r^3$$
+$$
+
+4\pi r^2 \text{ and } \frac{4}{3}\pi r^3
+
+$$
 
 for the surface area and volume of a sphere, respectively. He also
 proved that $\pi$ is strictly less than $3\frac{1}{7}$, but strictly
@@ -50,10 +58,14 @@ called the "accurate" value.
 
 In 1593 Vieta exhibited a formula for $\pi$,
 
-$$\frac{2}{\pi}=
+$$
+
+\frac{2}{\pi}=
     \sqrt{\frac{1}{2}}\times
     \sqrt{\frac{1}{2}+\frac{1}{2}\sqrt{\frac{1}{2}}}\times
-    \sqrt{\frac{1}{2}+\frac{1}{2}\sqrt{\frac{1}{2}+\frac{1}{2}\sqrt{\frac{1}{2}}}}\times\cdots.$$
+    \sqrt{\frac{1}{2}+\frac{1}{2}\sqrt{\frac{1}{2}+\frac{1}{2}\sqrt{\frac{1}{2}}}}\times\cdots.
+
+$$
 
 He found this by using Archimedes's idea, but with polygons with
 $4, 8, 16,... , 2^n$ sides in a circle of radius $1$ (Figure 9.1).
@@ -68,7 +80,11 @@ He directed that it be inscribed on his gravestone, which is now
 unfortunately lost. In 1596 he computed $\pi$ to $20$ decimal places and
 by the time of his death he had computed $\pi$ to $35$ decimal places:
 
-$$3.14159 26535 89793 23846 26433 83279 50288....$$
+$$
+
+3.14159 26535 89793 23846 26433 83279 50288....
+
+$$
 
 Soon after Ludoiph's death, many new formulas for $\pi$ were discovered
 in great profusion, some of which can be used to compute $\pi$ with

@@ -53,16 +53,24 @@ find the answer $31$. What you won't find is a region labeled $12345$.
 The labels contain just $0, 1, 2, 3$, or $4$ numbers, so the number of
 regions is not $2^{n-1}$, but rather the sum of the first five terms
 
-$$\binom{n-1}{0} + 
+$$
+
+\binom{n-1}{0} + 
     \binom{n-1}{1} + 
     \binom{n-1}{2} + 
     \binom{n-1}{3} + 
-    \binom{n-1}{4}$$
+    \binom{n-1}{4}
+
+$$
 
 in the binomial expansion of $(1 + 1)^{n-1}$. This is *all* the terms
 for up to $5$. When $n = 6$, the last term
 
-$$\binom{6-1}{5}=1,$$
+$$
+
+\binom{6-1}{5}=1,
+
+$$
 
 is missing, and for larger $n$, the answer falls increasingly short. The
 correct answers are, for
@@ -85,13 +93,19 @@ supposing that we badn't been able to find the general formula above.
 
 We prepare a **difference table** in which each entry is the difference
 between the two entries just above it (in the sense \"right minus
-left\"). You'll see that in our case, $$\begin{array}{ll}
+left\"). You'll see that in our case, 
+
+$$
+
+\begin{array}{ll}
         \text{values } &1 \quad 2 \quad 4 \quad 8 \quad 16 \quad 31 \quad 57 \quad 99 \quad 163 \\
         \text{first differences }& 1 \quad 2 \quad 4 \quad 8 \quad 15 \quad 26 \quad 42 \quad 64\\
         \text{second differences }& 1 \quad 2 \quad 4 \quad 7 \quad 11 \quad 16 \quad 22\\
         \text{third differences }& 1 \quad 2 \quad 3 \quad 4 \quad 5 \quad 6\\
         \text{fourth differences }& 1 \quad 1 \quad 1 \quad 1 \quad 1\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 the fourth differences are all the same. We can guess that this pattern
 continues forever and use this guess to work out the next term by
@@ -109,20 +123,26 @@ $d$th difference sequence will be the values of some degree zero
 polynomial. In other words, its dth differences will all have the same
 constant value.
 
-$$\begin{array}{l}
+$$
+
+\begin{array}{l}
         \quad \quad \quad \quad \dots \quad 99 \quad 163 \quad 256 \quad = \quad 163 \quad + \quad 93\\
         \quad \quad \quad \dots \quad 42 \quad 64 \quad 93 \quad = \quad 64 \quad + \quad 29\\
         \quad \quad \dots \quad 16 \quad 22 \quad 29 \quad = \quad 22 \quad + \quad 7\\
         \quad \dots \quad 5 \quad 6 \quad 7 \quad = \quad 6 \quad + \quad 1\\
         \dots \quad 1 \quad 1 \quad 1 \quad\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 FIGURE 3.14 Calculating the next term, assuming that the fourth
 differences are constant.
 
 For example, let's difference the sequence of cubes:
 
-$$\begin{array}{ll}
+$$
+
+\begin{array}{ll}
     \text{values} &
     0 \quad 1 \quad 8 \quad 27 \quad 64 \quad 125 \quad 216 \quad 343 \quad 512 \quad 729 \quad 1000 \\
     \text{first differences}& 
@@ -131,7 +151,9 @@ $$\begin{array}{ll}
     6 \quad 12 \quad 18 \quad 24 \quad 30 \quad 36 \quad 42 \quad 48 \quad 54\\
     \text{third differences}&
     6 \quad 6 \quad 6 \quad 6 \quad 6 \quad 6 \quad 6 \quad 6\\
-\end{array}$$
+\end{array}
+
+$$
 
 The $n$th differences of mth powers are all equal to the $w$th factorial
 number, $n!$.
@@ -146,49 +168,85 @@ $\dots$
 If you look at the bold numbers, you'll see that the sequence with
 difference table of shape
 
-is $$A\binom{n}{0}+
+is 
+
+$$
+
+A\binom{n}{0}+
     B\binom{n}{1}+
     C\binom{n}{2}+
-    D\binom{n}{3}.$$ that is,
-$$A+Bn+\frac{1}{2}Cn(n-1)+\frac{1}{6}Dn(n-1)(n-2).$$
+    D\binom{n}{3}.
+
+$$
+
+ that is,
+
+$$
+
+A+Bn+\frac{1}{2}Cn(n-1)+\frac{1}{6}Dn(n-1)(n-2).
+
+$$
 
 For example, when we differenced the cubes, we found
-$$A=0, B=1, C=6, D=6,$$
 
-and $$0\binom{n}{0}+
+$$
+
+A=0, B=1, C=6, D=6,
+
+$$
+
+and 
+
+$$
+
+0\binom{n}{0}+
     1\binom{n}{1}+
     6\binom{n}{2}+
     6\binom{n}{3}=\\
-    0+n+3n(n-1)+n(n-1)(n-2)=n^3$$
+    0+n+3n(n-1)+n(n-1)(n-2)=n^3
+
+$$
 
 A similar pattern works for higher-degree polynomials. If, starting from
 the $t$th term, you get a table in which the $d$th-degree differences
 are all $K$:
 
-$$\begin{array}{lc}
+$$
+
+\begin{array}{lc}
         & n=t \quad t \quad t+1 \quad t+2 \quad t+3 \quad ...\\
         \text{values}& A \quad ? \quad ? \quad ? \quad \dots\\
         \text{first differences}& \quad B \quad ? \quad ? \quad ? \quad...\\
         \text{second differences}& \quad \quad C \quad ? \quad ? \quad...\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 then the $n$th term is
 
-$$A\binom{n-t}{0}+
+$$
+
+A\binom{n-t}{0}+
     B\binom{n-t}{1}+
     C\binom{n-t}{2}+
     \dots+
-    K\binom{n-t}{d}.$$
+    K\binom{n-t}{d}.
+
+$$
 
 This correctly gives
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     1\binom{n-1}{0}+
     1\binom{n-1}{1}+
     1\binom{n-1}{2}+
     1\binom{n-1}{3}+
     1\binom{n-1}{4}.\\
-    =\frac{1}{24}(n^4-6n^3+23n^2-18n+24)\end{aligned}$$
+    =\frac{1}{24}(n^4-6n^3+23n^2-18n+24)\end{aligned}
+
+$$
 
 for our \"regions" problem, in which $t, A, B,..., K$ were all 1.
 
@@ -201,39 +259,55 @@ carefully, and then make a difference table. If you draw more figures
 than we've done in Figure 3.15, and count all the triangles (including
 the upside-down ones) you'll find the numbers and their differences are
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     1\quad 5\quad 13\quad 27\quad 48\quad 78\quad 118\\
     4\quad 8\quad 14\quad 21\quad 30\quad 40\\
     4\quad 6\quad 7\quad 9\quad 10\\
-    2\quad 1\quad 2\quad 1\\\end{aligned}$$
+    2\quad 1\quad 2\quad 1\\\end{aligned}
+
+$$
 
 The third differences alternate between $2$ and $1$ so the answer is
 given alternately by two expressions:
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \begin{array}{cc}
         \cfrac{n(n+2)(2n+1)}{8} & 
         \cfrac{n(n+2)(2n+1)-1}{8} \\
         \text{for even }n &
         \text{for odd }n \\
-    \end{array}\end{aligned}$$
+    \end{array}\end{aligned}
+
+$$
 
 Even when your sequence does not come from a polynomial, differencing is
 often informative. Figures 3.16 and 3.17 show how the powers of $2$, and
 the Fibonacci numbers (which we'll learn more about in the next
 chapter), repeat themselves when differenced.
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     2^n\quad 1\quad 2\quad 4\quad 8\quad 16\quad 32\quad 64\quad 128\quad 256\quad 512\quad 1024 \quad \dots\\
     1\quad 2\quad 4\quad 8\quad 16\quad 32\quad 64\quad 126\quad 256\quad 512\quad \dots\\
-    1\quad 2\quad 4\quad 8\quad 16\quad 32\quad 64\quad 128\quad 256\quad\dots\\\end{aligned}$$
+    1\quad 2\quad 4\quad 8\quad 16\quad 32\quad 64\quad 128\quad 256\quad\dots\\\end{aligned}
+
+$$
 
 FIGURE 3.16 Difference table for the powers of $2$.
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \;\;\; 0\quad 1\quad 1\quad 2\quad 3\quad 5\quad 8\quad 13\quad 21\quad 34\quad 55\quad 89\quad \dots\\
     \;\;\; 1\quad 0\quad 1\quad 1\quad 2\quad 3\quad 5\quad 8\quad 13\quad 21\quad 34\quad \dots\\
-    -1\quad 1\quad 0\quad 1\quad 1\quad 2\quad 3\quad 5\quad 8\quad 13\quad \dots\\\end{aligned}$$
+    -1\quad 1\quad 0\quad 1\quad 1\quad 2\quad 3\quad 5\quad 8\quad 13\quad \dots\\\end{aligned}
+
+$$
 
 FIGURE 3.17 Difference table for the Fibonacci numbers.
 
@@ -242,10 +316,14 @@ powers of $2$, the original sequence differs from the powers of $2$ only
 by the values of polynomial. This is similar for other sequences of
 powers and for the Fibonacci numbers as well.
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     1\quad 3\quad 6\quad 11\quad 20\quad 37\quad 70\quad 135\quad 264\quad \dots\\
     2\quad 3\quad 5\quad 9\quad 17\quad 33\quad 68\quad 129\quad \dots\quad\\
-    \quad 1\quad 2\quad 4\quad 8\quad 16\quad 32\quad 64\quad \dots\quad\quad\\\end{aligned}$$
+    \quad 1\quad 2\quad 4\quad 8\quad 16\quad 32\quad 64\quad \dots\quad\quad\\\end{aligned}
+
+$$
 
 FIGURE 3.18 A sequence not very different from the powers of $2$.
 
@@ -282,23 +360,31 @@ and beneath these we place the terms of your suspect sequence, Further
 entries are computed by the rule that for every cross of five adjacent
 numbers,
 
-$$\begin{array}{c}
+$$
+
+\begin{array}{c}
 N\\
 W\; X\; E\\
 S\\
 \end{array}
-\text{ we have } X^2 = NS + EW.$$
+\text{ we have } X^2 = NS + EW.
+
+$$
 
 Then, if some row consists entirely of zeros, your suspect sequence is
 indeed a bootstrapping sequence, in which each term can be computed as
 the sum of fixed multiples of the previous $k$ terms, where
 
-$$\begin{array}{cccc ccc}
+$$
+
+\begin{array}{cccc ccc}
         1 & 1 & 1 & 1  & 1   & 1    & 1    \\
         0 & 1 & 5 & 19 & 65  & 211  & 665  \\
           & 1 & 6 & 36 & 216 & 1296 &      \\
           &   & 0 & 0  & 0   &      &      \\
-    \end{array}$$
+    \end{array}
+
+$$
 
 FIGURE 3.21 A number wail or quotient-difference table.
 
@@ -310,16 +396,24 @@ bootstrapping sequence in which each term is the sum of fixed multiples
 of its two predecessors (a \"second-order recurrence\"). You can now
 find further terms by working north-eastward using
 
-$$E= (X^2 - NS)/W$$
+$$
+
+E= (X^2 - NS)/W
+
+$$
 
 as in Figure 3.22. In fact, the typical term here is $3^n-2^n$.
 
-$$\begin{array}{lccccl}
+$$
+
+\begin{array}{lccccl}
         \dots & 1 & 1 & 1 & 1 &\\
         \dots & 65 & 211 & 665 & 2059 &2059=\frac{665^2-1\times 7776}{211} \\
         \dots & 216 & 1296 & 7776 &   &7776=\frac{1296^2-211\times 0}{216} \\
         \dots & 0 & 0 &  &  &\\
-    \end{array}$$
+    \end{array}
+
+$$
 
 FIGURE 3.22 Calculating the next entries in a quotient-difference table.
 
@@ -332,13 +426,21 @@ geometric progressions. Figure 3.23 shows an example. To get the numbers
 just below a window, you must use another rule, explained in Figure
 3.24.
 
-It's easier to work past an isolated zero $$\begin{array}{ccccc}
+It's easier to work past an isolated zero 
+
+$$
+
+\begin{array}{ccccc}
         &&N'&&\\
         &&N&&\\
         W'& W& 0& E& E'\\
         &&S&&\\
         &&S'&&\\
-    \end{array}$$ using the fact that $S’N^2 + N’S^2 = E'W^2 + W'E^2.$
+    \end{array}
+
+$$
+
+ using the fact that $S’N^2 + N’S^2 = E'W^2 + W'E^2.$
 
 FIGURE 3.23 Zeros appear in window's in the quotient-difference table
 for the Fibonacci numbers minus one.
@@ -350,12 +452,16 @@ $ns = ew$ for even windows
 
 $ns = -ew$ for odd windows
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \begin{array}{l}
         \cfrac{s_1}{s}=\cfrac{n_1}{n}-\cfrac{w_1}{w}+\cfrac{e_1}{e}\\
         \cfrac{s_2}{s}=\cfrac{n_2}{n}-\cfrac{w_2}{w}+\cfrac{e_2}{e}\\
         \cfrac{s_3}{s}=\cfrac{n_3}{n}-\cfrac{w_3}{w}+\cfrac{e_3}{e}\\
-    \end{array}\end{aligned}$$
+    \end{array}\end{aligned}
+
+$$
 
 FIGURE 3.24 How to work past a window.
 
@@ -372,7 +478,11 @@ what they are? You can look in Sloane & Plouffe's wonderful
 *Encyclopedia of Integer Sequences*, or you can email to
 sequences@research.att.com with a line that reads, say,
 
-$$\text{lookup }1\;1\;2\;3\;5\;8\;12$$
+$$
+
+\text{lookup }1\;1\;2\;3\;5\;8\;12
+
+$$
 
 or whatever the sequence is that you're interested in.
 

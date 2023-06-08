@@ -1,30 +1,54 @@
 Historically, complex numbers first arose from the solution of quadratic
 equations. You can solve the equation
 
-$$x^2-x-6 =0$$
+$$
+
+x^2-x-6 =0
+
+$$
 
 either by factoring it as $(x-3)(x+2) = 0$, or by using the well-known
 formula, or by writing it as
 
-$$\biggl(x-\frac{1}{2}\biggr)^2
+$$
+
+\biggl(x-\frac{1}{2}\biggr)^2
     =6\frac{1}{4}=
-    \biggl(2\frac{1}{2}\biggr)^2$$
+    \biggl(2\frac{1}{2}\biggr)^2
+
+$$
 
 and you get the answers $\frac{1}{2}\pm2\frac{1}{2}$, namely, $3$ or
 $-2$; sensible answers and there's no problem.
 
 But for the equation
 
-$$x^2-2x+2 = 0,$$ we arrive at $$(x-1)^2= -1,$$
+$$
+
+x^2-2x+2 = 0,
+
+$$
+
+ we arrive at 
+
+$$
+
+(x-1)^2= -1,
+
+$$
 
 and since the squares of real numbers are positive (or possibly zero),
 it looks as though there aren't any roots. But if we allow ourselves to
 invent a number called "the square root of minus one," then we could get
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
         x-1&= \pm \sqrt{-1}.\\
         x&=1+\sqrt{-1}\text{ or }1-\sqrt{-1}.\\
-    \end{aligned}$$
+    \end{aligned}
+
+$$
 
 Why do these seem nonsensical?
 

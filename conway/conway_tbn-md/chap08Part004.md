@@ -19,7 +19,11 @@ Moivre numbers (Figure 8.13{a)) are $1$, $(-1+i\sqrt{3})/2$,
 $(-1-i\sqrt{3})/2$, and the sixth-order ones are these and their
 negatives:
 
-$$1,\;(1+i\sqrt{3})/2,\;(-1+i\sqrt{3})/2,\;-1,\;(-1-i\sqrt{3})/2,\;(1-i\sqrt{3})/2$$
+$$
+
+1,\;(1+i\sqrt{3})/2,\;(-1+i\sqrt{3})/2,\;-1,\;(-1-i\sqrt{3})/2,\;(1-i\sqrt{3})/2
+
+$$
 
 (again reading counterclockwise). The fifth-order ones are a bit harder:
 You have to solve one quadratic equation on top of another.
@@ -31,7 +35,11 @@ $\delta$ when $n$ is obvious. Since the twirl that takes $1$ to $\delta$
 (Figure 8.13(c)) takes $\delta$ to $\delta^2$, $\delta^2$ to $\delta^3$,
 and so on, we see that the full set of $n$th-order De Moivre numbers is
 
-$$1, \delta, \delta^2,..., \delta^{n-1}, \text{ where }\delta = \delta_n,$$
+$$
+
+1, \delta, \delta^2,..., \delta^{n-1}, \text{ where }\delta = \delta_n,
+
+$$
 
 and we also see that $\delta^n = 1$. But we saw that $\delta_4 = i$,
 which satisfies $\delta^2 + 1 = 0$, so $\delta^n = 1$ is not always the
@@ -45,9 +53,13 @@ $x^k = 1$ for $k = n$, but for no smaller value of $k$.
 We said that $\delta_n$, could be found by solving one quadratic on top
 of another. In fact,
 
-$$\delta_5 = \frac{1}{4}\biggl(
+$$
+
+\delta_5 = \frac{1}{4}\biggl(
         -1+\sqrt{5}+i\sqrt{10+2\sqrt{5}}
-    \biggr)$$
+    \biggr)
+
+$$
 
 as you can see by writing the equation
 $\delta^4+\delta^3+\delta^2+\delta+1=0$ in the form

@@ -3,17 +3,25 @@
 The three irrational numbers that came from the ratios diagonal: side
 for the square, pentagon, and hexagon satisfy algebraic equations. Thus
 
-$$\begin{array}{llll}
+$$
+
+\begin{array}{llll}
 x = a/b & \text{for the square satisfies }   & x^2 = 2   & \text{ or }x^2-2 = 0; \\
 y = e/d & \text{for the pentagon satisfies } & y^2 = y+1 & \text{ or }y^2-y-1 = 0; \\
 z = e/f & \text{for the hexagon satisfies }  & z^2 = 3   & \text{ or }z^2-3 = 0, \\
-\end{array}$$
+\end{array}
+
+$$
 
 so they are called **algebraic numbers**.
 
 In fact any number $x$ that is a solution of an equation
 
-$$ax^{n} + bx^{n-1} + cx^{n-2} +\cdots+ kx +l=0 (a \neq 0)$$
+$$
+
+ax^{n} + bx^{n-1} + cx^{n-2} +\cdots+ kx +l=0 (a \neq 0)
+
+$$
 
 where $a, b, c,..., k,l$ are integers, is called an algebraic number,
 whose **degree** is the smallest possible number $n$ in such an
@@ -26,19 +34,31 @@ be satisfied by some other numbers, $\beta, \gamma, ...$ . In fact, it
 will always have $n$ distinct solutions, $\alpha, \beta, \gamma, ...$
 (although some of these may be complex; see the next chapter):
 
-$$ax^{n} + bx^{n-1} + cx^{n-2} +\cdots+ kx +l=a(x-\alpha)(x-\beta)(x-\gamma)\cdots .$$
+$$
+
+ax^{n} + bx^{n-1} + cx^{n-2} +\cdots+ kx +l=a(x-\alpha)(x-\beta)(x-\gamma)\cdots .
+
+$$
 
 The numbers $\beta, \gamma, ...$ are called the **conjugates** of
 $\alpha$. If a satisfies any other algebraic equation
 
-$$Ax^N+Bx^{N-1}+Cx^{N-2}+\cdots+Kx+L= 0$$
+$$
+
+Ax^N+Bx^{N-1}+Cx^{N-2}+\cdots+Kx+L= 0
+
+$$
 
 (where $A, B,C, ..., K$, are integers), then its conjugates will satisfy
 this equation (because it is a multiple of the simplest one).
 
 For instance, the simplest equation for the golden number
 
-$$\tau=(1+\sqrt{5})/2$$
+$$
+
+\tau=(1+\sqrt{5})/2
+
+$$
 
 is $x^2 - x - 1 = 0$, which has another root,
 $\sigma = (1 - \sqrt{5})/2$. Now $\tau$ also satisfies the equation
@@ -140,21 +160,31 @@ We call numbers obtained by repeatedly solving quadratic equations
 
 FIGURE 7.8 Solving a quadratic equation geometrically.
 
-For instance, $$\begin{aligned}
+For instance, 
+
+$$
+
+\begin{aligned}
     q=&
     \frac{1}{8}\Biggl\{
         -1+\sqrt{17}+\sqrt{34-2\sqrt{17}} \\
         &\quad +\sqrt{68+12\sqrt{17}
         -16\sqrt{34+2\sqrt{17}}
         +2(-1+\sqrt{17})\sqrt{34-2\sqrt{17}}}
-        \Biggr\}\\\end{aligned}$$
+        \Biggr\}\\\end{aligned}
+
+$$
 
 is a Euclidean number: this is found, after messy algebra, to be the
 larger root of the quadratic equation $x^2 - ax + b = 0$, where $a, b$
 are the larger roots of the equations
 
-$$x^2 - \alpha x -1=0,\\
-x^2 - \beta  x -1=0.$$
+$$
+
+x^2 - \alpha x -1=0,\\
+x^2 - \beta  x -1=0.
+
+$$
 
 and $\alpha$ and $\beta$ are $(-1 \pm \sqrt{17})/2$, the roots of
 $x^2 + x - 4 = 0$.
@@ -162,13 +192,20 @@ $x^2 + x - 4 = 0$.
 This example arises in Gauss's famous construction of the regular
 polygon with $17$ sides (see Chapter 8). The solutions of
 
-$$x^2 - \alpha x - 1 = 0, x^2 - \beta x - 1 = 0$$
+$$
+
+x^2 - \alpha x - 1 = 0, x^2 - \beta x - 1 = 0
+
+$$
 
 satisfy $(x^2 - \alpha x - 1)(x^2 - \beta x - 1) = 0$, namely,
 $x^4 + x^3 - 6x^2 - x + 1 = 0$, which has the four roots
 
-$$a,c = \frac{\alpha\pm \sqrt{\alpha^2+4}}{2} = \frac{-1+\sqrt{17}\pm\sqrt{34-2\sqrt{17}}}{4}, \\
+$$
+
+a,c = \frac{\alpha\pm \sqrt{\alpha^2+4}}{2} = \frac{-1+\sqrt{17}\pm\sqrt{34-2\sqrt{17}}}{4}, \\
     b,d = \frac{\beta \pm \sqrt{\beta ^2+4}}{2} = \frac{-1-\sqrt{17}\pm\sqrt{34+2\sqrt{17}}}{4}. \\
+
 $$
 
 A point with coordinates $(x, y)$ is geometrically obtainable by ruler
@@ -177,7 +214,11 @@ Euclidean numbers. This is what makes those Greek problems impossible.
 The problem of duplicating the cube requires the **Delian number**,
 $\sqrt[3]{2}$, but
 
-$$\text{the Delian number}, \sqrt[3]{2},\text{ is not a Euclidean number}.$$
+$$
+
+\text{the Delian number}, \sqrt[3]{2},\text{ is not a Euclidean number}.
+
+$$
 
 FiguRE 7.8 An enneagon can be constructed just if the length $x$ can.
 
@@ -186,12 +227,20 @@ construct, for instance, a regular polygon with nine sides in a circle
 of radius $2$ (Figure 7.9). The point P, has coordinates $(x, y)$, where
 $x$ satisfies the equation $x^3 - 3x + 1 = 0$. But
 
-$$\text{this }x \text{ is not a Euclidean number}.$$
+$$
+
+\text{this }x \text{ is not a Euclidean number}.
+
+$$
 
 Finally, if you could square the circle, you could construct the point
 with coordinates $(\pi, 0)$, but
 
-$$\text{Ludolpb’s number}, 1, \text{ is not a Euclidean number}.$$
+$$
+
+\text{Ludolpb’s number}, 1, \text{ is not a Euclidean number}.
+
+$$
 
 This third problem is completely different from the other two, which led
 to numbers satisfying the aigebraic equations $x^3 - 2 = 0$,
@@ -230,8 +279,11 @@ Figure 7.11 Archimedes's neusis angle-trisection.
 
 FIGURE 7.13 Three ways to follow Archimedes"s instructions,
 
-$$0^\circ \;  90^\circ \;  180^\circ \;  270^\circ \;  360^\circ \;  450^\circ \;  540^\circ \;  630^\circ \;  720^\circ \;  810^\circ \;  900^\circ \;  990^\circ \;  1080^\circ \;  .\\
+$$
+
+0^\circ \;  90^\circ \;  180^\circ \;  270^\circ \;  360^\circ \;  450^\circ \;  540^\circ \;  630^\circ \;  720^\circ \;  810^\circ \;  900^\circ \;  990^\circ \;  1080^\circ \;  .\\
 0^\circ \;  90^\circ \;  60^\circ \;  90^\circ \;  120^\circ \;  150^\circ \;  180^\circ \;  210^\circ \;  240^\circ \;  270^\circ \;  300^\circ \;  330^\circ \;  360^\circ \; \\
+
 $$
 
 Since lines are unaffected by complete revolutions (multiples of
@@ -240,12 +292,16 @@ $B + 120^\circ$ and $B + 240^\circ$,
 
 We see that
 
-$$\boxed{
+$$
+
+\boxed{
 \begin{array}{c}
 \text{There are really {three} trisectors}\\
 \text{for any given angle.}\\
 \end{array}
-}$$
+}
+
+$$
 
 Figure 7.12(b) shows the three trisectors (dashed) of angle $X\hat{O}R$.
 Don't confuse these with the trisectors of the reversed angle

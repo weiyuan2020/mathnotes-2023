@@ -16,7 +16,11 @@ these too as part of our system (although the arithmetic is different).
 In the system of "Surreal Numbers" we shall describe, every number has
 its own unique name and properties and many remarkable numbers, such as
 
-$$\sqrt[3]{(\omega+1)}-\frac{\pi}{\omega}$$
+$$
+
+\sqrt[3]{(\omega+1)}-\frac{\pi}{\omega}
+
+$$
 
 appear. But the "number" $i = \sqrt{-1}$ will not arise in the same way
 (though we add it in Chapter 4), since there is no property enjoyed by
@@ -99,12 +103,29 @@ $x > y$ iff ($x \geqslant y$ and $y \ngeqslant x$).
 
 $x < y$ iff $y > x$.
 
-*Definition* of $x + y$. $$x+y= \{x^L + y,x+ y^L|x^R + y,x + y^R\}.$$
+*Definition* of $x + y$. 
 
-*Definition* of $-x$. $$-x = \{-x^R| -x^L\}.$$
+$$
+
+x+y= \{x^L + y,x+ y^L|x^R + y,x + y^R\}.
+
+$$
+
+*Definition* of $-x$. 
+
+$$
+
+-x = \{-x^R| -x^L\}.
+
+$$
 
 *Definition* of $xy$.
-$$xy = \{x^L y + xy^L - x^L y^L, x^R y + xy^R - x^R y^R | \\ x^L y +xy^R - x^L y^R, x^Ry + xy^R - x^Ry^L\}.\\ $$
+
+$$
+
+xy = \{x^L y + xy^L - x^L y^L, x^R y + xy^R - x^R y^R | \\ x^L y +xy^R - x^L y^R, x^Ry + xy^R - x^Ry^L\}.\\ 
+
+$$
 
 some thing from knuth's *surreal number* $xy>x^L y+x y^L-x^L y^L$, this
 number is come from $(x-x^L)(y-y^L)>0$. we can get other number by
@@ -174,7 +195,11 @@ $xy$. It might seem, for instance, that we know that $xy$ lies between
 $x^L y$ and $xy^L$ (on the left) and $x^Ry$ and $xy^R$ (on the right),
 which would yield the definition
 
-$$xy = \{x^Ly, xy^L | xy, xy^R\}.$$
+$$
+
+xy = \{x^Ly, xy^L | xy, xy^R\}.
+
+$$
 
 But this fails in two ways. Firstly, what we "knew" here is sometimes
 false (consider negative numbers), and secondly, even when it is true it
@@ -264,12 +289,20 @@ $1 \geqslant 1$. Why not do this yourself?[^1]
 We now have three numbers $-1 < 0 <1$, and so a whole battery of
 particular sets
 
-$$\{\}, \{-1\}, \{0\}, \{1\}, \{-1,0\}, \{-1, 1\}, \{0,1\}, \{-1,0, 1\}$$
+$$
+
+\{\}, \{-1\}, \{0\}, \{1\}, \{-1,0\}, \{-1, 1\}, \{0,1\}, \{-1,0, 1\}
+
+$$
 
 to use for $L$ and $R$. But the condition that no member of $L$ should
 be $\geqslant$ any member of $R$ restricts us to the possibilities
 
-$$\{| R\} \{L|\}, \{-1| 0\}, \{-1| 0, 1\}, \{-1| 1\}, \{0| 1\}, \{-1, 0|1\}.$$
+$$
+
+\{| R\} \{L|\}, \{-1| 0\}, \{-1| 0, 1\}, \{-1| 1\}, \{0| 1\}, \{-1, 0|1\}.
+
+$$
 
 If our hopes are fulfilled, we should have $\{1|\} > 1$ and
 $0 < \{0|1\} < 1$.So we anticipate their probable values, and define
@@ -295,14 +328,18 @@ all our expectations are fulfilled.
 
 In a similar way, we should expect all the equalities in the table:
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
 -2 &= \{|-1\} = \{|-1,0\} = \{|-1,1\} = \{|-1,0,1\} \\
 -1 &= \{|0\} = \{|0,1\} \\
 -\frac{1}{2} &= \{-1|0\} = \{-1|0,1\} \\
 0 &= \{|\} = \{-1\} = \{|1\} = \{-1|1\} \\
 \frac{1}{2} &= \{0|1\} = \{-1,0|1\} \\
 1 &= \{0|\} = \{-1,0|\} \\
-2 &= \{1|\} = \{0,1|\} = \{-1,1|\} = \{-1,0,1|\} \\\end{aligned}$$
+2 &= \{1|\} = \{0,1|\} = \{-1,1|\} = \{-1,0,1|\} \\\end{aligned}
+
+$$
 
 Clearly we need some way of automating our expectations. Let us ask when
 the number $X = \{y, x^L|x^R\}$ obtained by adding a new entry $y$ to
@@ -325,20 +362,32 @@ $1 \nleqslant 0 = \{-1|\}$, we have $0=\{-1|1\}$.\]
 
 It is not hard to check the inequalities
 
-$$-2<-1<-\frac{1}{2}<0<\frac{1}{2}<1 <2,$$
+$$
+
+-2<-1<-\frac{1}{2}<0<\frac{1}{2}<1 <2,
+
+$$
 
 which shows that at least these numbers have the right order properties.
 What else do we require to justify their names?
 
 According to the definition
 
-$$1+1=\{0+1,1+0|\},$$
+$$
+
+1+1=\{0+1,1+0|\},
+
+$$
 
 since $0$ is the only $1^L$, and there is no $1^R$. So provided $0 + 1$
 and $1+ 0$ behave as expected, we have $1 + 1 = 2$, as we might hope.
 But provided $x^L + 0 = x^L$ and $x^R + 0 = x^R$ we have
 
-$$x +0 = \{x^L + 0| x^R + 0\} = \{x^L| x^R\} = x,$$
+$$
+
+x +0 = \{x^L + 0| x^R + 0\} = \{x^L| x^R\} = x,
+
+$$
 
 and similarly $0 + x = x$. Since we already know $0 + 0 = 0$, this shows
 that $1+0=0+1 =1$, as we wanted for the proof of $1 + 1 = 2$, but in
@@ -350,7 +399,11 @@ justifying the name of $\frac{1}{2}$. From the definition (supposing
 that $x + y = y+ x$ for all $x,y$, which is quite easy to prove
 inductively) we see that
 
-$$\frac{1}{2}+\frac{1}{2}=\{\frac{1}{2}|1\frac{1}{2}\}$$
+$$
+
+\frac{1}{2}+\frac{1}{2}=\{\frac{1}{2}|1\frac{1}{2}\}
+
+$$
 
 where we are using $1\frac{1}{2}$ as a temporary name for
 $1 + \frac{1}{2}$.
@@ -371,7 +424,11 @@ $\frac{1}{2}+\frac{1}{2} \geqslant 1$
 
 Now is the time to leave the question
 
-$$\text{``is } 1 \geqslant \frac{1}{2}+\frac{1}{2} \text{?''}$$
+$$
+
+\text{``is } 1 \geqslant \frac{1}{2}+\frac{1}{2} \text{?''}
+
+$$
 
 to the reader. He should conclude that indeed
 $\frac{1}{2}+\frac{1}{2}=1$ [^2]
@@ -412,12 +469,20 @@ ordered, in any expression $x = \{x^L| x^R\}$ we need only consider the
 greatest $x^L$ (if any) and the least $x^R$ (ditto). This gives us for
 the next "day" only the numbers
 
-$$0< \{0|\tfrac{1}{2}\} < \tfrac{1}{2} < \{\tfrac{1}{2}|1\} < 1 < \{1|2\} < 2 < \{2|\}$$
+$$
+
+0< \{0|\tfrac{1}{2}\} < \tfrac{1}{2} < \{\tfrac{1}{2}|1\} < 1 < \{1|2\} < 2 < \{2|\}
+
+$$
 
 and their negatives. What are the proper names for these numbers? We
 suspect that $\{2 |\} = 3$, and indeed we can verify that
 
-$$1+1+1 = \{0+1+1,1+0+1,1+1+0|\} = \{2|\}.$$
+$$
+
+1+1+1 = \{0+1+1,1+0+1,1+1+0|\} = \{2|\}.
+
+$$
 
 The equation $\{1|2\} = 1\frac{1}{2}$ is almost as easy to guess and
 verify. So we shall make $1\frac{1}{2}$ a permanent name for this
@@ -464,7 +529,11 @@ appearing on the left.
 
 Of course the most negative number born on day $\omega$ will be
 
-$$-\omega=\{|0,-1,-2,-3,...\}.$$
+$$
+
+-\omega=\{|0,-1,-2,-3,...\}.
+
+$$
 
 The smallest positive number born on this day is the number
 $\{0| 1,\frac{1}{2},\frac{1}{4},\frac{1}{8},...\}$ which turns out to be
@@ -473,7 +542,9 @@ $1/\omega$, surprisingly and fortunately.
 But besides these strange new numbers, some quite ordinary numbers are
 born at the same time. For instance, we have
 
-$$\tfrac{1}{4}<
+$$
+
+\tfrac{1}{4}<
     \tfrac{1}{4}+
     \tfrac{1}{16}<
     \tfrac{1}{4}+
@@ -482,17 +553,23 @@ $$\tfrac{1}{4}<
     \tfrac{1}{3}<\dots<
     \tfrac{1}{2}-
     \tfrac{1}{8}<
-    \tfrac{1}{2},$$
+    \tfrac{1}{2},
+
+$$
 
 so we might expect the number
 
-$$\{
+$$
+
+\{
     \tfrac{1}{4},
     \tfrac{1}{4}+\tfrac{1}{16},
     \tfrac{1}{4}+\tfrac{1}{16}+\tfrac{1}{64},...|
     \tfrac{1}{2},
     \tfrac{1}{2}-\tfrac{1}{8},...
-\}=x, \text{say}$$
+\}=x, \text{say}
+
+$$
 
 to be $\frac{1}{3}$, and behold, it can in fact be proved that
 $x+x+x=1$! In a similar way, all of the real numbers defined by
@@ -505,7 +582,11 @@ $\pi$ are all born on day $\omega$.
 It is rather nice that our definition of equality ensures automatically
 that the number (for example)
 
-$$\{\text{dyadic rationals < $\tfrac{3}{8}$| dyadic rationals > $\tfrac{3}{8}$}\}$$
+$$
+
+\{\text{dyadic rationals < $\tfrac{3}{8}$| dyadic rationals > $\tfrac{3}{8}$}\}
+
+$$
 
 turns out to be the same as the number
 $\frac{3}{8} = \{\frac{1}{4}| \frac{1}{2}\}$, so that the dyadic
@@ -515,15 +596,23 @@ before.
 It is also rather nice that Cantor's ordinal numbers (as modified by von
 Neumann) fit smoothly into our system. Thus we have
 
-$$0=\{|\},\;
+$$
+
+0=\{|\},\;
     1=\{0|\},\;
     2=\{0,1|\},...,\;
     \omega=\{0,1,2,3,...|\},
-    \alpha=\{\beta<\alpha|\},$$
+    \alpha=\{\beta<\alpha|\},
+
+$$
 
 where von Neumann has
 
-$$0=\{\}, 1=\{0\}, 2=\{0,1\},..., \omega = \{0,1,2,...\}, \alpha= \{\beta<\alpha\},\dots.$$
+$$
+
+0=\{\}, 1=\{0\}, 2=\{0,1\},..., \omega = \{0,1,2,...\}, \alpha= \{\beta<\alpha\},\dots.
+
+$$
 
 In other words, the ordinal numbers are those we obtain by requiring
 always that the set $R$ be empty. We may say that Cantor was only
@@ -546,7 +635,11 @@ satisfy $n < x < \omega$ for all finite integers $n$, in other words,
 $x$ should be an infinite number less than the "least" infinite number
 $\omega$. Adding $1$ to $x$, we find the number
 
-$$\{1, 2, 3,..., x|\omega + 1\} = y, \text{ say}.$$
+$$
+
+\{1, 2, 3,..., x|\omega + 1\} = y, \text{ say}.
+
+$$
 
 Here, since $x < \omega$, and $\omega + 1 \nleqslant \omega$, we see
 that $y = \omega$, for the new entries $x$ on the left and $\omega + 1$
@@ -556,29 +649,45 @@ Check that we get the same result on subtracting $1$ from $w$.
 
 In a similar way, we find successively that
 
-$$\begin{array}{rl}
+$$
+
+\begin{array}{rl}
     \omega-2 &= \{0,1,2,3,...|\omega,\omega-1\},...,\\
     \omega-n &= \{0,1,2,3,...|\omega,\omega-1,\omega-2,...,\omega-(n-1)\}.\\
-\end{array}$$
+\end{array}
+
+$$
 
 Plainly the next number to consider is
 
-$$z=\{0,1,2,3,...|\omega,\omega-1,\omega-2,...\}=\{n|\omega-n\}, \text{ say}.$$
+$$
+
+z=\{0,1,2,3,...|\omega,\omega-1,\omega-2,...\}=\{n|\omega-n\}, \text{ say}.
+
+$$
 
 It should not take the reader too long to verify that $z = \omega/2$.
 When he has done this, and defined $\omega/4, \omega/8,...$ as well, he
 should be in a position to define $\omega/3$ (for instance), and to
 verify our assertion that
 
-$$\{0, 1,2, 3,...|\omega, \omega/2, \omega/4, \omega/8, ...\}$$
+$$
+
+\{0, 1,2, 3,...|\omega, \omega/2, \omega/4, \omega/8, ...\}
+
+$$
 
 is a square root of $\omega$.
 
 Other easy exercises are
 
-$$\biggl\{0\bigg|\frac{1}{\omega}\biggr\}=\frac{1}{2\omega},\quad
+$$
+
+\biggl\{0\bigg|\frac{1}{\omega}\biggr\}=\frac{1}{2\omega},\quad
     \biggl\{\frac{1}{\omega}\bigg|1,\tfrac{1}{2},\tfrac{1}{4},...\biggr\}=\frac{2}{\omega},\quad
-    \biggl\{0\bigg|\frac{1}{\omega},\frac{1}{2\omega},\frac{1}{4\omega},...\biggr\}=\frac{1}{\omega^2},$$
+    \biggl\{0\bigg|\frac{1}{\omega},\frac{1}{2\omega},\frac{1}{4\omega},...\biggr\}=\frac{1}{\omega^2},
+
+$$
 
 and so on.
 

@@ -18,27 +18,33 @@ measurable.
 Let the measure space $X$ be the interval $[a, b]$ of the real line,
 with $\mu = m$ (the Lebesgue measure), and $\mathfrak{M}$ the family of
 Lebesgue-measurable subsets of $[a, b]$. Instead of 
+
 $$
+
 \int_X f \mathrm{d} m
+
 $$
+
  it
 is customary to use the familiar notation 
+
 $$
+
 \int_{a}^{b} f \mathrm{d} x
+
 $$
+
  for
 the Lebesgue integral of $f$ over $[a, b]$. To distinguish Riemann
 integrals from Lebesgue integrals, we shall now denote the former by
 
 $$
+
 \mathfrak{R} \int_{a}^{b} f \mathrm{d} x .
+
 $$
 
-
-
 ### thm:11.33 
-
-
 
 If $f \in \mathscr{R}$ on $[a,b]$, then $f \in \mathscr{L}$ on $[a,b]$,
 and 
@@ -48,14 +54,11 @@ $$
 
             \int_{a}^{b} f \mathrm{d} x =
             \mathscr{R} \int_{a}^{b} f \mathrm{d} x .
-$$
 
+$$
 
 Suppose $f$ is bounded on $[a,b]$. Then $f \in \mathscr{R}$ on $[a,b]$
 if and only if $f$ is continuous almost everywhere on $[a,b]$.
-
-
-
 
 \label{eq:11.96}
 
@@ -64,13 +67,14 @@ $$
     F(x) = \int_{a}^{x} f \mathrm{d} t
     \quad
     (a \leq x \leq b),
-$$
-
-
 
 $$
+
+$$
+
 F(x) - F(a) = \int_{a}^{x} F'(t)
     \quad
     (a \leq x \leq b).
+
 $$
 

@@ -7,7 +7,11 @@ can probably make out the base 60 numbers on the diagonal of the square
 ($1 = 1, < = 10$). If we use the notation usually associated with
 another bequest of the Babylonians, it is $1^\circ 24'51''10''$, meaning
 
-$$1+\frac{24}{60}+\frac{51}{60^2}+\frac{10}{60^3}=1.414 212 962 962 96...$$
+$$
+
+1+\frac{24}{60}+\frac{51}{60^2}+\frac{10}{60^3}=1.414 212 962 962 96...
+
+$$
 
 FIGURE 7.1 YBC 7289.
 
@@ -47,12 +51,15 @@ know that the Pythagoreans and the later Greek geometers were tightly
 very impressed by it. The standard story related by Proclus is that they
 sacrificed a hundred oxen in its honor, The Pythagorean result is
 
-$$\boxed{\begin{array}{c}
+$$
+
+\boxed{\begin{array}{c}
 \sqrt{2}\text{ cannot be expressed}\\
 \text{as a fraction b}\\
 \text{where } a, b \text{ are whole numbers.}\\
 \end{array}}\\
 \text{Pythagoras’ Big Theorem}\\
+
 $$
 
 The discussion in Chapter 4 then implies that its decimal expansion does
@@ -62,7 +69,11 @@ notation, for example, the Babylonian sexagesimal scale.
 In the standard mathematical language we refer to ratios or **rational
 numbers**, rather than fractions, and we assert that
 
-$$\sqrt{2} \text{ is an irrational number,}$$
+$$
+
+\sqrt{2} \text{ is an irrational number,}
+
+$$
 
 historically the first known example of such a number's existence.
 
@@ -73,7 +84,11 @@ We can see the irrationality of $\sqrt{2}$ by folding a square of paper
 $\sqrt{2}$ times the length of the side. If the length of the side is
 $12$ inches, the length of the diagonal is
 
-$$12\sqrt{2} = 16.97056 ... \text{inches,}$$
+$$
+
+12\sqrt{2} = 16.97056 ... \text{inches,}
+
+$$
 
 or nearly $17$ inches. So $\sqrt{2}$ is very nearly $\frac{17}{12}$.
 However, we shall show that $\sqrt{2}$ cannot be equal to any such
@@ -83,10 +98,14 @@ from its original position $AD’$ onto the diagonal $AC$. Then $CDE$ is
 the same shape as $ABC$ (so that $CD = DE$) and still has whole number
 sides, namely
 
-$$\begin{array}{ll}
+$$
+
+\begin{array}{ll}
 CD = 5, & \text{ obtained as } 17 - 12, \\
 CE = 7, & \text{ obtained as } 12 - 5, \\
-\end{array}$$
+\end{array}
+
+$$
 
 so the simplest fraction for $\sqrt{2}$ couldn't be $\frac{17}{12}$, for
 it would already have been $\frac{7}{5}$. The same argument, starting
@@ -125,18 +144,30 @@ The fractional parts of $B/A$ and $NA/B$ have the form $a/A$ and $b/B$,
 where $a, b$ are positive numbers smaller than $A,B$. But if two numbers
 are equal, their fractional parts are also equal:
 
-$$\frac{a}{A}=\frac{b}{B}$$
+$$
+
+\frac{a}{A}=\frac{b}{B}
+
+$$
 
 and so
 
-$$\frac{b}{a}=\frac{B}{A}=\sqrt{N}$$
+$$
+
+\frac{b}{a}=\frac{B}{A}=\sqrt{N}
+
+$$
 
 This gives a simpler form for $\sqrt{N}$, contrary to our assumption.
 
 For instance, if $\sqrt{2}$ were $\frac{17}{12}$ it would also be
 $\frac{24}{17}$, and the fractional parts of these would be equal.
 
-$$\frac{5}{12}\text{ would equal  }\frac{7}{17}\text{, and }\frac{7}{5}\text{ would equal }\frac{17}{12}=\sqrt{2},$$
+$$
+
+\frac{5}{12}\text{ would equal  }\frac{7}{17}\text{, and }\frac{7}{5}\text{ would equal }\frac{17}{12}=\sqrt{2},
+
+$$
 
 giving a simpler fraction for $\sqrt{2}$.
 

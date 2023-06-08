@@ -1,6 +1,5 @@
 # The derivative of a real function
 
-
 ### mydef:5.1 
  Let $f$ be defined (and real-valued) on
 $[a, b]$. For any $x \in [a, b]$ form the quotient 
@@ -11,14 +10,18 @@ $$
         \phi(t) = \frac{f(t) - f(x)}{t - x}
         \quad
         (a < t < b, t \neq x),
+
 $$
+
  and define 
 \label{eq:5.2}
 
 $$
 
         f'(x) = \lim_{t \to x} \phi(t),
+
 $$
+
  provided this limit exists in
 accordance with Definition 4.1.
 
@@ -44,29 +47,26 @@ reference="eq:5.1"}) and (\[\[eq:5.2\]](#eq:5.2){reference-type="ref"
 reference="eq:5.2"}), as above. But $f'(a)$ and $f'(b)$ are not defined
 in this case.
 
-
-
 ### thm:5.2 
  Let $f$ be defined on $[a, b]$. If $f$ is
 differentiable at a point $x \in [a, b]$, then $f$ is continuous at $x$.
-
-
 
 *Proof.* As $t \rightarrow x$, we have, by Theorem
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"}
 
 $$
+
 f(t) - f(x) = \frac{f(t)-f(x)}{t-x}\cdot (t-x)
         \rightarrow f'(x)\cdot 0 = 0.
-$$
- ◻
 
+$$
+
+ ◻
 
 The converse of this theorem is not true. It is easy to construct
 continuous functions which fail to be differentiable at isolated points.
 In Chap. 7 we shall even become acquainted with a function which is
 continuous on the whole line without being differentiable at any point!
-
 
 ### thm:5.3 
  Suppose $f$ and $g$ are defined on $[a, b]$
@@ -81,32 +81,36 @@ and $f/g$ are differentiable at $x$, and
 
 In (c), we assume of course that $g(x) \neq 0$.
 
-
-
 *Proof.* (a) is clear, by Theorem
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"}. Let
 $h = fg$. Then 
+
 $$
+
 h(t) - h(x) =
         f(t)\left[g(t) - g(x)\right] +
         g(x)\left[f(t) - f(x)\right].
+
 $$
+
  If we divide this by $t - x$ and
 note that $f(t) \rightarrow f(x)$ as $t \rightarrow x$ (Theorem 5.2),
 (b) follows. Next, let $h = f/g$. Then 
+
 $$
+
 \frac{h(t) - h(x)}{t - x} =
         \frac{1}{g(t)g(x)}\left[
             g(x) \frac{f(t) - f(x)}{t - x} -
             f(x) \frac{g(t) - g(x)}{t - x}
             \right].
+
 $$
+
  Letting $t \rightarrow x$, and applying Theorem
 \[\[thm:4.4\]](#thm:4.4){reference-type="ref" reference="thm:4.4"} and
 \[\[thm:5.2\]](#thm:5.2){reference-type="ref" reference="thm:5.2"}, we
 obtain (c). ◻
-
-
 
 The derivative of any constant is clearly zero. If $f$ is defined by
 $f(x) = x$, then $f'(x) = 1$. Repeated application of (b) and (c) then
@@ -116,24 +120,26 @@ ourselves to $x \neq 0$). Thus every polynomial is differentiable, and
 so is every rational function, except at the points where the
 denominator is zero.
 
-
 The following theorem is known as the "chain rule" for differentiation.
 It deals with differentiation of composite functions and is probably the
 most important theorem about derivatives. We shall meet more general
 versions of it in Chap. \[\[chap:09\]](#chap:09){reference-type="ref"
 reference="chap:09"}.
 
-
 ### thm:5.5 
  Suppose $f$ is continuous on $[a, b]$,
 $f'(x)$ exists at some point $x \in [a, b]$, $g$ is defined on an
 interval $I$ which contains the range of $f$, and $g$ is differentiable
 at the point $f(x)$. If 
+
 $$
+
 h(t) = g(f(t))
         \quad
         (a \leq t \leq b),
+
 $$
+
  then $h$ is differentiable at $x$, and
 
 \label{eq:5.3}
@@ -141,10 +147,8 @@ $$
 $$
 
         h'(x) = g'(f(x))f'(x).
+
 $$
-
-
-
 
 *Proof.* Let $y = f(x)$. By the definition of the derivative, we have
 
@@ -153,15 +157,17 @@ $$
 $$
 
         f(t) - f(x) = (t - x) \left[ f'(x) + u(t) \right],
-$$
 
+$$
 
 \label{eq:5.5}
 
 $$
 
         g(s) - g(y) = (s - y) \left[ g'(y) + v(s) \right],
+
 $$
+
  where
 $t \in [a, b]$, $s \in I$, and $u(t) \rightarrow 0$ as
 $t \rightarrow x$, $v(s) \rightarrow 0$ as $s \rightarrow y$. Let
@@ -171,14 +177,18 @@ Using first (\[\[eq:5.5\]](#eq:5.5){reference-type="ref"
 reference="eq:5.5"}) and then
 (\[\[eq:5.4\]](#eq:5.4){reference-type="ref" reference="eq:5.4"}), we
 obtain 
+
 $$
+
 \begin{aligned}
         h(t) - h(x)
          & = g(f(t)) - g(f(x))                                                          \\ 
          & = \left[ f(t) - f(x) \right] \cdot \left[ g'(y) + v(s) \right]               \\ 
          & = (t - x)\cdot \left[ f'(x) + u(t) \right]\cdot \left[ g'(y) + v(s) \right],
     \end{aligned}
+
 $$
+
  or, if $t \neq x$, 
 \label{eq:5.6}
 
@@ -187,16 +197,14 @@ $$
         \frac{h(t) - h(x)}{t - x} =
         \left[ g'(y) + v(s) \right]\cdot
         \left[ f'(x) + u(t) \right],
+
 $$
+
  Letting $t \rightarrow x$, we see
 that $s \rightarrow y$, by the continuity of $f$, so that the right side
 of (\[\[eq:5.6\]](#eq:5.6){reference-type="ref" reference="eq:5.6"}) ends
 to $g'(y)f'(x)$, which gives (\[\[eq:5.3\]](#eq:5.3){reference-type="ref"
 reference="eq:5.3"}). ◻
-
-
-
-
 
 \label{eq:5.7}
 
@@ -207,8 +215,8 @@ $$
                 x\sin \frac{1}{x} & (x \neq 0), \\ 
                 0                 & (x = 0).
             \end{array}
-$$
 
+$$
 
 apply Theorem \[\[thm:5.3\]](#thm:5.3){reference-type="ref"
 reference="thm:5.3"} and \[\[thm:5.5\]](#thm:5.5){reference-type="ref"
@@ -220,17 +228,21 @@ $$
             f'(x) = \sin \frac{1}{x} - \frac{1}{x} \cos \frac{1}{x}
             \quad
             (x \neq 0).
+
 $$
+
  At $x = 0$, these theorems do not apply any
 longer, since $1/x$ is not defined there, and we appeal directly to the
 definition: for $t \neq 0$,
 
 $$
+
 \frac{f(t) - f(0)}{t - 0} = \sin \frac{1}{t}.
+
 $$
+
  As $t \rightarrow 0$,
 this does not tend to any limit, so that $f'(0)$ does not exist.
-
 
 \label{eq:5.9}
 
@@ -241,7 +253,9 @@ $$
                 x^2\sin \frac{1}{x} & (x \neq 0), \\ 
                 0                   & (x = 0).
             \end{array}
+
 $$
+
  As above, we obtain 
 \label{eq:5.10}
 
@@ -250,15 +264,21 @@ $$
             f'(x) = 2x \sin \frac{1}{x} - \cos \frac{1}{x}
             \quad
             (x \neq 0).
+
 $$
+
  At $x = 0$, we appeal to the definition, and
 obtain 
+
 $$
+
 \left| \frac{f(t) - f(0)}{t - 0} \right| =
             \left| t \sin \frac{1}{t} \right| \leq \left| t \right|
             \quad
             (t \neq 0);
+
 $$
+
  letting $t \rightarrow 0$, we see that
 
 \label{eq:5.11}
@@ -266,10 +286,11 @@ $$
 $$
 
             f'(0) = 0.
+
 $$
+
  Thus $f$ is differentiable at all points $x$,
 but $f'$ is not a continuous function, since $\cos (1/x)$ in
 (\[\[eq:5.10\]](#eq:5.10){reference-type="ref" reference="eq:5.10"}) does
 not tend to a limit as $x \rightarrow 0$.
-
 

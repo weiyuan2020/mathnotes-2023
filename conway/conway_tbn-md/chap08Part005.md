@@ -10,7 +10,11 @@ take the smallest possible value of $n$. Since the three indicated
 shifts add up to zero, we see that the mth-orderx De Moivre number
 $\delta=\delta_n$, must satisfy
 
-$$a+b\delta^p+c\delta^q=0,$$
+$$
+
+a+b\delta^p+c\delta^q=0,
+
+$$
 
 as, therefore, must all the algebraic conjugates of $\delta_n$, that
 have the form $\delta^k$ whenever $k$ and $n$ have no common factor.
@@ -21,7 +25,11 @@ FIGURE 8,15 At most two such triangles!
 
 So indeed we have $\phi(n)$ equations
 
-$$a+b\delta^{kp}+c\delta^{kq}$$
+$$
+
+a+b\delta^{kp}+c\delta^{kq}
+
+$$
 
 and so $\phi(n)$ different triangles, such as in Figure 8.15, all of
 which have the same base and the same edge lengths, but different
@@ -39,27 +47,37 @@ inside a circle of radius $2$. Its vertices, $P_{1}, P_{2}, ...,P_{16}$
 are therefore the doubles of the $17$th-order De Moivre numbers
 ($\delta =\delta_{17}$):
 
-$$2,
+$$
+
+2,
     2\delta,
     2\delta^{2},
     2\delta^{3},
     \dots,
-    2\delta^{16}$$
+    2\delta^{16}
+
+$$
 
 and the points are
 
-$$\delta^{1} \mathop+^{Q_1} \delta^{16}\;
+$$
+
+\delta^{1} \mathop+^{Q_1} \delta^{16}\;
     \delta^{2} \mathop+^{Q_2} \delta^{15}\;
     \delta^{3} \mathop+^{Q_3} \delta^{14}\;
     \delta^{4} \mathop+^{Q_4} \delta^{13}\;
     \delta^{5} \mathop+^{Q_5} \delta^{12}\;
     \delta^{6} \mathop+^{Q_6} \delta^{11}\;
     \delta^{7} \mathop+^{Q_7} \delta^{10}\;
-    \delta^{8} \mathop+^{Q_8} \delta^{9}$$
+    \delta^{8} \mathop+^{Q_8} \delta^{9}
+
+$$
 
 Now $\delta$ satisfies the equation
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
 \delta^{16}
 &
 +\delta^{15}
@@ -78,11 +96,15 @@ $$\begin{aligned}
 +\delta^{3}
 +\delta^{2}
 +\delta
-+1=0.\end{aligned}$$
++1=0.\end{aligned}
+
+$$
 
 Let's write the powers of $\delta$ in the order
 
-$$\delta^{1}\;
+$$
+
+\delta^{1}\;
     \delta^{3}\;
     \delta^{9}\;
     \delta^{10}\;
@@ -97,11 +119,15 @@ $$\delta^{1}\;
     \delta^{4}\;
     \delta^{12}\;
     \delta^{2}\;
-    \delta^{6}$$
+    \delta^{6}
+
+$$
 
 where the exponents, modulo $17$, are
 
-$$1\;3\;
+$$
+
+1\;3\;
     3^{2}\;
     3^{3}\;
     3^{4}\;
@@ -116,11 +142,15 @@ $$1\;3\;
     3^{12}\;
     3^{13}\;
     3^{14}\;
-    3^{15}$$
+    3^{15}
+
+$$
 
 By taking alternate terms we get the two numbers
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     \alpha&=
     \delta^{1}+
     \delta^{9}+
@@ -138,7 +168,9 @@ $$\begin{aligned}
     \delta^{14}+
     \delta^{7}+
     \delta^{12}+
-    \delta^{6}\end{aligned}$$
+    \delta^{6}\end{aligned}
+
+$$
 
 so that $\alpha + \beta = -1$. If we multiply $\alpha$ by $\beta$ we get
 the sum of $64$ terms consisting of all the numbers
@@ -150,7 +182,9 @@ $x^2+x-4 = 0$.
 We now repeat the process, taking alternate terms from $\alpha$ and
 $\beta$, to find the four numbers
 
-$$\begin{aligned}
+$$
+
+\begin{aligned}
     a&=
     \delta^{1}+
     \delta^{13}+
@@ -170,7 +204,9 @@ $$\begin{aligned}
     \delta^{10}+
     \delta^{11}+
     \delta^{7}+
-    \delta^{6}\\\end{aligned}$$
+    \delta^{6}\\\end{aligned}
+
+$$
 
 that satisfy $a+c = \alpha, b+d = \beta, ac = bd = -1$, so that $a, c$
 and $b, d$ are the roots of the quadratics $x^2-\alpha x-1 = 0$ and
@@ -186,10 +222,13 @@ pass through the points $(2\alpha, 0), (2\beta, 0)$, and its
 quadrisectors through the points $(a, 0), (b, 0), (c, 0), (d, 0)$. The
 circles on $YA*, YB*, YC*, YD*$ then solve the equations
 
-$$x^2 - ax + b =0, \\
+$$
+
+x^2 - ax + b =0, \\
 x^2 - bx + c =0, \\
 x^2 - cx + d =0, \\
 x^2 - dx + a =0, \\
+
 $$
 
 cutting the axis in $Q_1,Q_4;Q_3,Q_5;Q_8,Q_2;Q_7,Q_6$, with coordinates

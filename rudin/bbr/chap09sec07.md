@@ -7,7 +7,6 @@ used to decide whether the hypotheses of some of the preceding theorems
 are satisfied. They will play an even more important role in Chap.
 \[\[chap:10\]](#chap:10){reference-type="ref" reference="chap:10"}.
 
-
 ### mydef:9.33 
  If $(j_1, \dots, j_n)$ is an ordered
 $n$-tuple of integers, define 
@@ -17,24 +16,23 @@ $$
 
         s(j_1, \dots, j_n) =
         \prod_{p<q} \text{sgn } (j_q - j_p),
+
 $$
+
  where sgn $x = 1$ if
 $x > 0$, sgn $x = -1$ if $x < 0$, sgn $x = 0$ if $x = 0$. Then
 $s(j_1, ... ,j_n) = 1, -1$, or $0$, and it changes sign if any two of
 the j's are interchanged.
 
-
-
 ### thm:9.34 
-
-
 
 If $I$ is the identity operator on $\mathbb{R}^n$, then
 
 $$
-\det [I] = \det ( e_1, \dots , e_n) = 1.
-$$
 
+\det [I] = \det ( e_1, \dots , e_n) = 1.
+
+$$
 
 $\det$ is a linear function of each of the column vectors $x_i$, if the
 others are held fixed.
@@ -44,24 +42,19 @@ $\det [A]_1 = -\det [A]$.
 
 If $[A]$ has two equal columns, then $\det [A]= 0$.
 
-
-
-
 ### thm:9.35 
  If $[A]$ and $[B]$ are $n$ by $n$
 matrices, then 
+
 $$
+
 \det ([B][A]) = \det [B] \det [A].
+
 $$
-
-
-
 
 ### thm:9.36 
  A linear operator $A$ on $\mathbb{R}^n$ is
 invertible if and only if $\det [A] \neq 0$.
-
-
 
 ### myremark:9.37 
  Suppose $\{e_1, ... , e_n\}$
@@ -70,13 +63,12 @@ on $\mathbb{R}^n$ determines matrices $[A]$ and $[A]_U$, with entries $a_{ij}$
 and $\alpha_{ij}$, given by
 
 $$
+
 A \mathbf{e}_j = \sum_{i} a_{ij} \mathbf{e}_i ,
         \quad
         A \mathbf{u}_j = \sum_{i} \alpha_{ij} \mathbf{u}_i .
+
 $$
-
-
-
 
 If $\mathbf{f}$ maps an open set $E \subset \mathbb{R}^n$ into $\mathbb{R}^n$, and if
 $\mathbf{f}$ is differentiable at a point $\mathbf{x} \in E$, the
@@ -90,7 +82,9 @@ $$
         J_{\mathbf{f}}(\mathbf{x}) =
         \det
         \mathbf{f'(x)} .
+
 $$
+
  We shall also use the notation
 
 \label{eq:9.94}
@@ -98,7 +92,9 @@ $$
 $$
 
         \frac{\partial (y_1,...,y_n)}{\partial (x_1,...,x_n)}
+
 $$
+
  for
 $J_{\mathbf{f}} (\mathbf{x})$, if
 $(y_1, ... , y_n) = \mathbf{f} (x_1, ... , x_n)$.
@@ -111,8 +107,9 @@ If the implicit function theorem is stated in terms of the functions
 assumption made there on A amounts to
 
 $$
+
 \frac{\partial (y_1,...,y_n)}{\partial (x_1,...,x_n)}
         \neq 0
-$$
 
+$$
 

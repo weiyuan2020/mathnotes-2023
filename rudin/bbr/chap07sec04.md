@@ -7,7 +7,6 @@ $\{f_n}$ implies nothing about the sequence $\sequence{f'_n\}$.
 Thus stronger hypotheses are required for the assertion that
 $f'_n \rightarrow f'$ if $f_n \rightarrow f$.
 
-
 ### thm:7.17 
  Suppose $\{f_n\}$ is a sequence of
 functions, differentiable on $[a, b]$ and such that
@@ -22,18 +21,14 @@ $$
         f'(x) = \lim_{n \to \infty} f'_n (x)
         \quad 
         (a \leq x \leq b).
+
 $$
-
-
-
 
 If the continuity of the functions $f'_n$ is assumed in addition to the
 above hypotheses, then a much shorter proof of
 (\[\[eq:7.27\]](#eq:7.27){reference-type="ref" reference="eq:7.27"}) can
 be based on Theorem \[\[thm:7.16\]](#thm:7.16){reference-type="ref"
 reference="thm:7.16"} and the fundamental theorem of calculus.
-
-
 
 There exists a real continuous function on the real line which is
 nowhere differentiable.
