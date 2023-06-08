@@ -4,8 +4,8 @@ quick latex for obsidian
 ```json
 [    
     // Math mode
-    {trigger: "mk", replacement: "${$0}$", options: "tA"},
-    {trigger: "dm", replacement: "$$\n$0\n$$", options: "tAw"},
+    {trigger: "mk", replacement: " ${$0}$ ", options: "tA"},
+    {trigger: "dm", replacement: "\n$$\n$0\n$$\n", options: "tAw"},
     {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
 
 

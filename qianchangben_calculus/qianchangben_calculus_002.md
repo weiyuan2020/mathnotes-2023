@@ -12,6 +12,7 @@
 给出三种解法
 #### 解1
 利用 ${(uvw)'=u'vw + uv'w + uvw'}$ 
+
 $$
 \begin{align}
 f''(x) & = u''vw + u'v'w + u'vw' \\
@@ -19,11 +20,14 @@ f''(x) & = u''vw + u'v'w + u'vw' \\
  & + u'vw' + uv'w' + uvw'' \\
 \end{align}
 $$
+
 解得 ${f''(0) = 0}$. 
+
 解毕
 
 #### 解2
 利用积化和差公式恒等变形
+
 $$
 \begin{align}
 f(x) &  = \sin x\sin 3x \sin 5x = \frac{1}{2} \sin x(\cos 2x - \cos 8x) \\
@@ -54,15 +58,19 @@ $f''(x)$ 在 $x=0$ 点的值!是否一定要先求出 $f''(x)$呢?
 ### 例6
 
 求极限 
+
 $$
 \lim_{ x \to 0 } \frac{(3+2\sin x)^{x}-3^{x}}{\tan ^{2}x}
 $$
+
 这是关于 ${\frac{0}{0}}$ 型的不定式, 可以用洛必达法则求解. 
 
 #### 解1
 
-因为 ${\tan ^{2}x \sim x^{2}(x\to {0})}$, 且 ${\lim_{ x \to 0 }3^{x} = 1}$, 
+因为 ${\tan ^{2}x \sim x^{2}(x\to {0})}$, 
+且 ${\lim_{ x \to 0 }3^{x} = 1}$, 
 利用等价无穷小替代并及时提出有确定极限的因子, 有
+
 $$
 \begin{align}
 I & = \lim_{ x \to 0 } \frac{(3+2\sin x)^{x}-3^{x}}{\tan ^{2}x} \\
@@ -72,6 +80,7 @@ $$
 
 两次运用洛必达法则, 注意到 ${\lim_{ x \to 0 } \left( 1+\frac{2}{3}\sin x \right)^{x} = 1}$ 
 及时分离出有确定极限的项
+
 $$
 \begin{align}
 I 
@@ -82,10 +91,11 @@ I
 & = \lim_{ x \to 0 } \frac{ \frac{2}{3}\cos x}{2\left( 1+\frac{2}{3}\sin x \right)} + \frac{1}{3} = \frac{2}{3} . \\
 \end{align}
 $$
+
 解毕
 
 
-解 1 中已反映出对“等价无穷小的替代”, “提出(分离出)
+解 1 中已反映出对 “等价无穷小的替代”, “提出(分离出)
 极限已确定的因子(项)"等技巧的使用意识，
 从而避免了例行程序地死套罗必塔法则计算所引起的复杂化.
 但这里的使用意识并不很强, 
@@ -96,8 +106,11 @@ $$
 $$
 \left( 1+\frac{2}{3}\sin x \right)^{x} = e^{x\ln(1+ \frac{2}{3}\sin x)}
 $$
-又因为 ${\lim_{ x \to 0 } x\ln\left( 1 + \frac{2}{3}\sin x \right) = 0, \lim_{ x \to 0 } \frac{2}{3}\sin x = 0}$
-考虑到 ${t\to 0 }$ 时, ${\sin t\sim t, e^{t}-1\sim t, \ln(1+t)\sim t}$. 有
+
+又因为 
+${\lim_{ x \to 0 } x\ln\left( 1 + \frac{2}{3}\sin x \right) = 0, \lim_{ x \to 0 } \frac{2}{3}\sin x = 0}$
+考虑到 ${t\to 0 }$ 时, ${\sin t\sim t, e^{t}-1\sim t, \ln(1+t)\sim t}$. 
+有
 
 #### 解2
 
@@ -110,6 +123,7 @@ I
 & = \lim_{ x \to 0 } \frac{\frac{2}{3}\sin x}{x} = \frac{2}{3}  \\
 \end{align}
 $$
+
 解毕
 
 采用等价无穷小的替代技巧, 回避了罗必塔法则的使用, 
@@ -117,6 +131,7 @@ $$
 不难看出其中化 ${\left( 1+ \frac{3}{2}\sin x \right)^{x}}$ 为 ${e^{x\ln\left( 1 + \frac{2}{3}\sin x \right)}}$ 的念头是对等价无穷小替代的技巧的强烈使用意识所致. 
 一般, 为了使用等价无穷小替代, 记住以下几个结果是十分有益的, 
 当 ${x\to 0}$ 时, 有
+
 $$
 x \sim
 \sin x \sim
@@ -126,13 +141,17 @@ x \sim
 e^{x} - 1 \sim
 \ln(x+1)
 $$
+
 从上面可以推出
 当 ${x\to 0}$ 时, 有
+
 $$
 \log_{a}(1+x) \sim \frac{x}{\ln a},
 a^{x} - 1 \sim x\ln a
 $$
-此外还有 ${x\to 0}$ 时,  
+
+此外还有 ${x\to 0}$ 时,
+
 $$
 1 - \cos x \sim \frac{x^{2}}{2},
 \sqrt{ 1 + x } - 1 \sim \frac{x}{2},
@@ -150,9 +169,15 @@ $$
 
 为什么说 ${\lim_{ x \to 0 } \frac{\sin x}{x} = 1, \lim_{ x \to \infty }\left( 1+ \frac{1}{x} \right)^{x} = e}$ 是两个重要的极限
 
-几乎每一本高等数学的教材都对这两个极限冠以“重要极限”的字眼儿，而它们究竟为什么重要?几乎所有的教材对此都没有直接点出来.在学习了导数及其计算后，我们明了了这一点：初等函数的求导运算在初等函数范围内是封闭性的运算；并且利用求导的有关法则可以将一切初等函数的求导问题归结为常数和基本初等函数的求导运算.那么，基本初等函数的求导问题又可以归结为哪几个(尽可能少)函数的求导问题呢？
+几乎每一本高等数学的教材都对这两个极限冠以“重要极限”的字眼儿，而它们究竟为什么重要?
+几乎所有的教材对此都没有直接点出来.
+在学习了导数及其计算后，我们明了了这一点：
+初等函数的求导运算在初等函数范围内是封闭性的运算；
+并且利用求导的有关法则可以将一切初等函数的求导问题归结为常数和基本初等函数的求导运算.
+那么，基本初等函数的求导问题又可以归结为哪几个(尽可能少)函数的求导问题呢？
 
 #### 解
+
 让我们从初等函数的求导运算的展开关系来分析
 ${\lim_{ x \to 0 } \frac{\sin x}{x} = 1, \lim_{ x \to \infty }\left( 1+ \frac{1}{x} \right)^{x} = e}$
 的重要性
@@ -188,6 +213,7 @@ $$
   & = \cos x \cdot 1 = \cos x;
 \end{align}
 $$
+
 $$
 \begin{align}
 (\ln x)'  & = \lim_{ h \to 0 } \frac{\ln(x+h) - \ln x}{h} = \lim_{ h \to 0 } \left[ \frac{1}{x} \cdot \ln \left( 1 + \frac{h}{x} \right)^{ \frac{x}{h}}  \right]  \\
@@ -211,40 +237,54 @@ $$
 https://zhuanlan.zhihu.com/p/413693606
 
 ${\forall \varepsilon >0, \exists N, \text{s.t.} \forall n > N}$
+
 $$
 \left| \frac{x_{n+1} - x_{n}}{y_{n+1} - y_{n}} - l \right| < \varepsilon,
 \quad y_{n} > 0.
 $$
+
 利用 $\{y_{n}\}$ 的单调性, 得到
+
 $$
 (l - \varepsilon)(y_{n+1} - y_{n}) < x_{n+1} - x_{n} < 
 (l + \varepsilon)(y_{n+1} - y_{n})
 $$
+
 取 ${n = N+1,N+2,\dots}$ , 将得到的不等式相加, 得到
+
 $$
 (l - \varepsilon)(y_{n+1} - y_{N+1}) < x_{n+1} - x_{N+1} < 
 (l + \varepsilon)(y_{n+1} - y_{N+1})
 $$
+
 除以 ${y_{n+1}}$ 得到
+
 $$
 (l - \varepsilon)\left( 1 - \frac{y_{N+1}}{y_{n+1}} \right) < \frac{x_{n+1}}{y_{n+1}} - \frac{x_{N+1}}{y_{n+1}} < 
 (l + \varepsilon)\left( 1 - \frac{y_{N+1}}{y_{n+1}} \right)
 $$
+
 对上面的不等式求极限，得到
+
 $$
 l - \varepsilon \leq \frac{x_{n+1}}{y_{n+1}} \leq l + \varepsilon
 $$
-**只有在保证极限存在时，才能两边求极限**。然而这里并没有保证极限存在，反而极限存在是我们要证明的结论的一部分。 
+
+**只有在保证极限存在时，才能两边求极限**。
+然而这里并没有保证极限存在，反而极限存在是我们要证明的结论的一部分。 
 
 简单说就是循环论证
 
 新的证明
 ${\forall \varepsilon \in (0,1), \exists N, \text{s.t.} \forall n > N}$ 
+
 $$
 \left| \frac{x_{n+1} - x_{n}}{y_{n+1} - y_{n}} - l \right| < \frac{\varepsilon}{2},
 \quad y_{n} > 0.
 $$
+
 且 ${\exists K, \text{s.t.} n > K}$ 成立
+
 $$
 \frac{1}{y_{n+1}} < 
 \frac{\varepsilon}{2\left| x_{N+1} \right| + (2|l| + 1)b_{N+1} }
@@ -252,10 +292,12 @@ $$
 
 仍然求和
 这次可以得到
+
 $$
 \left( l - \frac{\varepsilon}{2} \right)\left( 1 - \frac{y_{N+1}}{y_{n+1}} \right)  + \frac{x_{N+1}}{y_{n+1}} < \frac{x_{n+1}}{y_{n+1}} < 
 \left( l + \frac{\varepsilon}{2} \right)\left( 1 - \frac{y_{N+1}}{y_{n+1}} \right) + \frac{x_{N+1}}{y_{n+1}}
 $$
+
 $$
 - \left( l - \frac{\varepsilon}{2} \right)\left(  \frac{y_{N+1}}{y_{n+1}} \right)  + \frac{x_{N+1}}{y_{n+1}} - \frac{\varepsilon}{2} < \frac{x_{n+1}}{y_{n+1}} - l < 
 -\left( l + \frac{\varepsilon}{2} \right)\left(\frac{y_{N+1}}{y_{n+1}} \right) + \frac{x_{N+1}}{y_{n+1}} + \frac{\varepsilon}{2} 
@@ -266,16 +308,21 @@ $$
 < \frac{x_{n+1}}{y_{n+1}} - l 
 < \frac{x_{N+1} -\left( l + \frac{\varepsilon}{2} \right)\left(  y_{N+1} \right) }{y_{n+1}} + \frac{\varepsilon}{2} 
 $$
+
 由三角不等式, 得到
+
 $$
 \left| \frac{x_{n+1}}{y_{n+1}} - l \right| < 
 \frac{|x_{N+1}| + \left( |l| + \frac{\varepsilon}{2} \right)\left(  y_{N+1} \right) }{y_{n+1}} + \frac{\varepsilon}{2} 
 $$
+
 注意 ${\varepsilon<1}$ 所以当 ${n>K}$ 时成立
+
 $$
 \left| \frac{x_{n+1}}{y_{n+1}} - l \right| < 
 \varepsilon.
 $$
+
 
 ### 例8
 求 ${\lim_{ n \to \infty } \frac{ 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n} }{n}}$. 
@@ -285,6 +332,7 @@ $$
 记 ${x_{n} = a_{1} + a_{2} + \dots + a_{n} = 1 + \frac{1}{2} + \dots + \frac{1}{n}}$; ${y_{n} = n}$. 
 易见 ${\{ y_{n} \}}$ 单调增且 ${\lim_{ n \to \infty }y_{n} = + \infty}$
 对 ${\frac{x_{n}}{y_{n}}}$ 用施笃兹定理, 有
+
 $$
 \begin{align}
 \lim_{ n \to \infty } \frac{1 + \frac{1}{2} + \dots + \frac{1}{n} }{n} & = \lim_{ n \to \infty } \frac{x_{n}}{y_{n}} = \lim_{ n \to \infty } \frac{x_{n} - x_{n-1}}{y_{n} - y_{n-1}}  \\
@@ -292,6 +340,7 @@ $$
   & = \lim_{ n \to \infty } a_{n} = 0.
 \end{align}
 $$
+
 解毕
 
 让我们回顾解答，看它能给人以什么教益！
@@ -303,6 +352,7 @@ $$
 
 ### 施笃兹定理 推论1 
 若 ${\lim_{ n \to \infty }a_{n}}$ 存在 (有限值或 ${\pm \infty}$), 则
+
 $$
 \lim_{ n \to \infty } \frac{a_{1}+a_{2}+\dots+a_{n}}{n} = 
 \lim_{ n \to \infty } a_{n}.
@@ -312,24 +362,31 @@ $$
 求 ${\lim_{ n \to \infty } \frac{n}{\sqrt[n]{ n! }}}$. 
 
 #### 解
+
 $$
 \begin{align}
 I & = \lim_{ n \to \infty } \frac{n}{\sqrt[n]{ n! }} = \lim_{ n \to \infty } \frac{n}{n+1} \cdot \frac{n+1}{\sqrt[n]{ n! }} \\
   & = \lim_{ n \to \infty } \frac{n+1}{\sqrt[n]{ n! }} = \lim_{ n \to \infty } \sqrt[n]{ \frac{(n+1)^{n}}{n!} },
 \end{align}
 $$
+
 令 ${a_{n} = \left( \frac{n+1}{n} \right)^{n}}$, 则 ${\lim_{ n \to \infty }a_{n} = e}$, 且
+
 $$
 a_{1}a_{2}\dots a_{n} = \left( \frac{2}{1} \right)\left( \frac{3}{2} \right)^{2}\dots\left( \frac{n+1}{n} \right)^{n} = \frac{(n+1)^{n}}{n!},
 $$
+
 即 ${\sqrt[n]{ a_{1}a_{2}\dots a_{n} } = \sqrt[n]{ \frac{(n+1)^{n}}{n!} } = \frac{n+1}{\sqrt[n]{ n! }}}$. 
 对上式两边取对数
+
 $$
 \ln \frac{n+1}{\sqrt[n]{ n! }} 
 = \frac{1}{n} (\ln a_{1} + \ln a_{2} + \dots + \ln a_{n}).
 $$
+
 ${\lim_{ n \to \infty }\ln a_{n} = \ln e = 1}$.
 由推论1有
+
 $$
 \lim_{ n \to \infty } \left( \ln \frac{n+1}{\sqrt[n]{ n! }}  \right) 
 = \lim_{ n \to \infty } \frac{\ln a_{1} + \ln a_{2} + \dots+ \ln a_{n}}{n}
@@ -337,33 +394,42 @@ $$
 $$
 
 于是有
+
 $$
 I = \lim_{ n \to \infty } \frac{n + 1}{\sqrt[n]{ n! }}
 = \lim_{ n \to \infty } e^{\ln \frac{n+1}{\sqrt[n]{ n! }}}
 = e^{\lim_{ n \to \infty } \ln \frac{n+1}{\sqrt[n]{ n! }}}
 = e .
 $$
+
 解毕
 
 抛开其中 ${\{ a_{n} \}}$ 的具体形式及意义时，解答的关键步骤就是
+
 $$
 \lim_{ n \to \infty } \ln \sqrt[n]{ a_{1}a_{2}\dots a_{n} }
 = \lim_{ n \to \infty } \frac{\ln a_{1} + \ln a_{2} + \dots+ \ln a_{n}}{n} 
 = \lim_{ n \to \infty } \ln a_{n},
 $$
+
 即 ${\lim_{ n \to \infty }\sqrt[n]{ a_{1}a_{2}\dots a_{n} } = \lim_{ n \to \infty }a_{n}}$.
 
 ### 施笃兹定理 推论2
 
 若 ${a_{n} > 0}$ 且 ${\lim_{ n \to \infty }a_{n}}$ 存在 (有限值或 ${\pm \infty}$), 则
+
 $$
 \lim_{ n \to \infty } \sqrt[n]{ a_{1}a_{2}\dots a_{n} } = \lim_{ n \to \infty } a_{n} .
 $$
+
 进一步, 若 ${a_{n} > 0}$ 且 ${\lim_{ n \to \infty } \frac{a_{n}}{a_{n-1}}}$ 存在 (有限值或 ${\pm \infty}$), 我们令
+
 $$
 x_{1} = a_{1}, x_{n} = \frac{a_{n}}{a_{n-1}} (n = 2,3,4,\dots),
 $$
+
 由推论2 就有
+
 $$
 \begin{align}
 \lim_{ n \to \infty } \sqrt[n]{ a_{n} }
@@ -376,6 +442,7 @@ $$
 ### 施笃兹定理 推论3
 
 若 ${a_{n} > 0}$ 且 ${\lim_{ n \to \infty } \frac{a_{n}}{a_{n-1}}}$ 存在 (有限值或 ${\pm \infty}$), 则
+
 $$
 \lim_{ n \to \infty } \sqrt[n]{ a_{n} } 
 = \lim_{ n \to \infty } \frac{a_{n}}{a_{n-1}}.
@@ -385,13 +452,16 @@ $$
 
 #### 解2
 令 ${a_{n} = \frac{n^{n}}{n!}}$, 易见 ${a_{n} > 0}$ 且
+
 $$
 \lim_{ n \to \infty } \frac{a_{n+1}}{a_{n}} 
 = \lim_{ n \to \infty } \frac{(n+1)^{n+1}}{(n+1)!} \cdot \frac{n!}{n^{n}}
 = \lim_{ n \to \infty } \left( 1 + \frac{1}{n} \right)^{n}
 = e,
 $$
+
 由推论3知
+
 $$
 \lim_{ n \to \infty } \frac{n}{\sqrt[n]{ n! }} 
 = \lim_{ n \to \infty } \sqrt[n]{ a_{n} }
@@ -423,6 +493,7 @@ $$
 容易想到变形所给函数的思路与解答方案.
 
 #### 解
+
 $$
 \begin{align}
 y & = \frac{1}{x^{2} - 1} = \frac{1}{2} \left( \frac{1}{x-1} - \frac{1}{x+1} \right), \\
@@ -430,6 +501,7 @@ y^{(5)} & = \frac{1}{2} \left[ \frac{-5!}{(x-1)^{6}} - \frac{-5!}{(x+1)^{6}} \ri
   & 60 \left[ \frac{1}{(x+1)^{6}} - \frac{1}{(x-1)^{6}} \right]. 
 \end{align}
 $$
+
 解毕
 
 倘使认定最初的思路，将对所给函数原表示式的逐次求导
@@ -443,11 +515,14 @@ $$
 而欲求结果为 $f^{(5)(x)}$ 在 $x = 0$ 点的值, 
 显然，不必将 $f^{(5)(x)}$ 求出.
 我们不妨设
+
 $$
 f(x) = Ax^{6} + Bx^{5} + P_{4}(x)
 $$
+
 其中 ${P_{4}(x)}$ 是 ${x}$ 的四次多项式
 于是
+
 $$
 \begin{align}
 f^{(5)}(x) & = 6! Ax + 5!B \\
@@ -458,6 +533,7 @@ $$
 解答的关键在于求出五次项系数B
 
 #### 解
+
 $$
 \begin{align}
 f(x) & =  (6+5x)(4+3x)^{2}(2+x)^{3} \\
@@ -465,16 +541,20 @@ f(x) & =  (6+5x)(4+3x)^{2}(2+x)^{3} \\
 & = Ax^{6} + 444x^{5} + P_{4}(x) \\
 \end{align}
 $$
+
 $$
 f^{(5)}(0) = 444 \times 5! = 53280.
 $$
+
 解毕
 
 
 使用maxima验算
+
 $$
 f(x) = 45 {{x}^{6}}+444 {{x}^{5}}+1808 {{x}^{4}}+3888 {{x}^{3}}+4656 {{x}^{2}}+2944 x+768
 $$
+
 ```maxima
 f : (6+5*x)*(4+3*x)^2*(2+x)^3;
 expand(%);
@@ -482,14 +562,15 @@ diff(f,x,5);
 expand(%);
 ```
 
-上例 $f(x)$ 展开式中充项的系数$B$也可以这样求:
-将因子$(6+5x)$中$x$的$n$次项$(n=0,1)$、
-因子$(4+3x)$ 中$x$的$m$次项$(m=0,1,2)$和
-因子$(4+3x)$中$x$的$l$次项$(l=0,1,2,3)$的乘积项
-${x^{n+m+l}}$的系数记为${(n,m,l)}$
-于是满足${n+m+l=5}$的仅有三种组合，
-即$(0,2,3)$, $(1,1,3)$和$(1,2,2)$.
+上例 $f(x)$ 展开式中充项的系数 $B$ 也可以这样求:
+将因子 $(6+5x)$ 中 $x$ 的 $n$ 次项 $(n=0,1)$、
+因子 $(4+3x)$ 中 $x$ 的  $m$ 次项 $(m=0,1,2)$ 和
+因子 $(4+3x)$ 中 $x$ 的  $l$ 次项 $(l=0,1,2,3)$ 的乘积项
+${x^{n+m+l}}$ 的系数记为 ${(n,m,l)}$
+于是满足 ${n+m+l=5}$ 的仅有三种组合，
+即 $(0,2,3)$, $(1,1,3)$ 和 $(1,2,2)$.
 从而有
+
 $$
 \begin{align}
 B & = (0,2,3) + (1,1,3) + (1,2,2) \\
@@ -503,14 +584,18 @@ $$
 
 #### 解
 变换 ${f(x)}$ 的形式使之有利于求导
+
 $$
 f(x) = \frac{(x^{2} + 1) - 5(x-1)}{x^{2} + 1}
 = 1 - \frac{5(x-1)}{x^{2}+1}
 $$
+
 求导得
+
 $$
 f'(x) = \frac{5(x^{2}-2x-1)}{(x^{2}+1)^{2}}
 $$
+
 ${f'(x) = 0}$ 即解 ${x^{2}-2x-1=0}$.
 得驻点 ${x_{1} = 1 - \sqrt{ 2 }, x_{2} = 1 + \sqrt{ 2 }}$. 
 
@@ -524,11 +609,13 @@ f''(x) & = \frac{5(x^{2}-2x -1)'}{(x^{2}+1)^{2}} + 5(x^{2}-2x-1) \cdot \left[ \f
   & = \frac{10(x-1 )}{(x^{2}+1)^{2}} + \varphi(x)
 \end{align}
 $$
+
 此处 ${\varphi(x)}$ 无需详细求出, 因为 ${\varphi(x_{1})=\varphi(x_{2})=0}$ 已成为事实.
 
 由于 ${f''(x_{1})<0, f''(x_{2})>0}$ 
 ${f(x_{1}) = \frac{1}{2}(7+5\sqrt{ 2 })}$ 为极大值
 ${f(x_{2}) = \frac{1}{2}(7-5\sqrt{ 2 })}$ 为极小值
+
 解毕
 
 完成后分析部分
@@ -552,12 +639,14 @@ ${f(x_{2}) = \frac{1}{2}(7-5\sqrt{ 2 })}$ 为极小值
 较简单的形式.
 
 #### 解
+
 $$
 \begin{align}
 y & = \frac{\sin^{2}x\cos 2x}{\sin 3x - \sin x} = \frac{\sin^{2}x\cos 2x}{2\cos 2x \sin x} = \frac{\sin x}{2}, \\
 y' & = \frac{\cos x}{2}.
 \end{align}
 $$
+
 解毕
 
 ### 例14
@@ -565,12 +654,14 @@ $$
 
 #### 解 
 my
+
 $$
 \begin{align}
 y & = \arctan \frac{\sqrt{ x^{2} + 2 }}{x} + \ln \sqrt{ \frac{\sqrt{ x^{2} + 2 } - x}{\sqrt{ x^{2} + 2 } + x} } \\
 & = \arctan \frac{\sqrt{ x^{2} + 2 }}{x} + \ln \frac{\sqrt{ 2 }}{\sqrt{ x^{2} + 2 } + x} \\
 \end{align}
 $$
+
 $$
 \begin{align}
 y' & = \frac{1}{1 + \left( \frac{\sqrt{ x^{2} + 2 }}{x} \right)^{2}} \frac{\frac{x}{\sqrt{ x^{2}+2 }} x - \sqrt{ x^{2} + 2 } }{x^{2}} - \frac{1}{\sqrt{ x^{2} + 2 }} \\
@@ -583,26 +674,32 @@ $$
 
 #### 解
 令 ${u = \frac{\sqrt{ x^{2} + 2 }}{x}}$, 则
+
 $$
 \begin{align}
 y & = \arctan u + \frac{1}{2} \ln\left( \frac{u - 1}{u + 1} \right) \\
   & = \arctan u + \frac{1}{2} \left[ \ln \left| u-1 \right|  - \ln \left| u+1 \right| \right].
 \end{align}
 $$
+
 因为 ${\frac{dy}{dx} = \frac{dy}{du}\cdot \frac{du}{dx}}$, 且 ${\frac{du}{dx} = \frac{-2}{x^{2}\sqrt{ x^{2} + 2 }}}$,
+
 $$
 \begin{align}
 \frac{dy}{du} & = \frac{1}{1+u^{2}} + \frac{1}{2} \left( \frac{1}{u-1} - \frac{1}{u+1} \right)  \\
   & = \frac{2u^{2}}{u^{4} - 1} = \frac{x^{2}(x^{2} + 2)}{2(x^{2} + 1)}.
 \end{align}
 $$
+
 所以
+
 $$
 \begin{align}
 \frac{dy}{dx} & = \frac{dy}{du}\cdot \frac{du}{dx} \\
   & = \frac{x^{2}(x^{2} + 2)}{2(x^{2} + 1)} \cdot \frac{-2}{x^{2}\sqrt{ x^{2}+2 }} = \frac{-\sqrt{ x^{2}+2 }}{x^{2} + 1}.
 \end{align}
 $$
+
 解毕
 
 一般用链导法求复合函数的导数的习题和例题都是针对单项表示的复合函数，此时只要就其所给形式按自然程序逐层求导下去.而对于由几项之和形式给出的函数且可以设出共同中间变量的习题甚少, 所以类似例 14 的做法值得重视.
@@ -612,6 +709,7 @@ $$
 
 #### 解 
 令 ${x = \arcsin t}$.
+
 $$
 I = \lim_{ t \to 0 } \left( \frac{\arcsin t}{t} \right)^{\frac{1}{t^{2}}}
 = \lim_{ x \to 0 } \left( \frac{x}{\sin x} \right)^{\frac{1}{\sin ^{2}x}}
@@ -628,9 +726,11 @@ $$
 $$
 
 所以
+
 $$
 I = e^{1/6}.
 $$
+
 解毕
 
 引入新变量 $x$ ,以及将幂指函数转化成以e为底的指数函数的目的，
@@ -647,35 +747,46 @@ $$
 $$
 A_{n} = \sqrt[n]{ \frac{n}{n}\cdot \frac{n+1}{n}\cdot \frac{n+2}{n}\dots \frac{n+ n-1}{n} }
 $$
+
 $$
 \ln A_{n} = 
 \frac{1}{n} \sum_{k = 0}^{n-1} \ln\left( 1+\frac{k}{n} \right)
 $$
 
 由定积分定义
+
 $$
 \begin{align}
 \lim_{ n \to \infty } \ln A_{n} & = \lim_{ n \to \infty } \frac{1}{n} \sum_{k = 0}^{n-1} \ln\left( 1 + \frac{k}{n} \right) \\
   & = \int_{0}^{1} \ln(1+x) \, \mathrm{d}x = 2\ln 2 - 1 = \ln \frac{4}{e}.
 \end{align}
 $$
+
 原极限为
+
 $$
 \lim_{ n \to \infty } A_{n} = \lim_{ n \to \infty } e^{\ln A_{n}} = \frac{4}{e}.
 $$
+
 解毕
 
 定积分是由特定形式的和式极限来定义的，这一构造性定义
-虽然为我们提供了计算定积分的一种办法，但这一方法无疑是非常困难的.计算定积分我们有牛顿-莱布尼兹公式来解决.既然由和式的极限求定积分是繁复困难的.反之，将某些和式的极限的计算转化为相应的定积分，再由牛顿二莱布尼兹公式去求出它，则是化难为易的捷径.
+虽然为我们提供了计算定积分的一种办法，但这一方法无疑是非常困难的.
+计算定积分我们有牛顿-莱布尼兹公式来解决.
+既然由和式的极限求定积分是繁复困难的.
+反之，将某些和式的极限的计算转化为相应的定积分，
+再由牛顿二莱布尼兹公式去求出它，则是化难为易的捷径.
 
 ### 例 17
 求 ${\lim_{ n \to \infty } \sum_{k = 1}^{n} \frac{1}{k(k+1)(k+2)\dots(k+l)}}$, 其中 ${l}$ 为自然数
 
 为更好理解问题, 从简单的具体情况开始讨论
 ${l=1}$
+
 $$
 \frac{1}{k(k+1)} = \frac{1}{k} - \frac{1}{k+1}.
 $$
+
 $$
 \begin{align}
 \sum_{k = 0}^{n} \frac{1}{k(k+1)}  
@@ -683,15 +794,18 @@ $$
   & = 1 - \frac{1}{n+1}. \\
 \end{align}
 $$
+
 $$
 \lim_{ n \to \infty } \sum_{k = 0}^{n} \frac{1}{k(k+1)} = 
 \lim_{ n \to \infty } \left( 1 - \frac{1}{n+1} \right) = 1 .
 $$
 
 对 ${l=2}$ 使用与 ${l=1}$ 类似的裂项相消的方法
+
 $$
 \frac{1}{k(k+1)(k+2)} = \frac{1}{2} \left[ \frac{1}{k(k+1) - \frac{1}{(k+1)(k+2)}} \right]
 $$
+
 $$
 \begin{align}
 \sum_{k = 1}^{n} \frac{1}{k(k+1)(k+2)} & = \frac{1}{2} \sum_{k = 1}^{n} \left[ \frac{1}{k(k+1) - \frac{1}{(k+1)(k+2)}} \right] \\
@@ -708,6 +822,7 @@ $$
 
 #### 解
 和式一般项可化为
+
 $$
 \begin{align}
 \frac{1}{k(k+1)\dots(k+l)} & = 
@@ -715,7 +830,9 @@ $$
   & = \frac{1}{l} \left[ \frac{1}{k(k+1)\dots(k+l-1)} - \frac{1}{(k+1)\dots(k+l)} \right],
 \end{align}
 $$
+
 因此
+
 $$
 \begin{align}
 \sum_{k = 1}^{n} \frac{1}{k(k+1)\dots(k+l)} & = \frac{1}{l} \left[ \frac{1}{l!} - \frac{1}{(n+1)\dots(n+l)} \right] \\
@@ -723,6 +840,7 @@ $$
   & = \frac{1}{l\cdot l!}.
 \end{align}
 $$
+
 解毕
 
 和谐化是指将问题的表达方式更为符合数形内部固有的和谐统一的特点，以便突出问题涉及的各种对象间的本质联系，进而促使问题完美解决.
@@ -736,6 +854,7 @@ $$
 进而将区域 ${\Omega}$ 划分
 
 #### 解2
+
 $$
 \begin{align}
 I & = \frac{1}{2} \int_{1}^{2}  \, \mathrm{d}x \iint_{D_{z}} (x^{2} + y^{2}) \mathrm{d}x\mathrm{d}y  \\
@@ -743,5 +862,6 @@ I & = \frac{1}{2} \int_{1}^{2}  \, \mathrm{d}x \iint_{D_{z}} (x^{2} + y^{2}) \ma
   & = \pi \int_{1}^{2} z^{2} \, \mathrm{d}z = \frac{7\pi}{3}.   
 \end{align}
 $$
+
 解毕
 

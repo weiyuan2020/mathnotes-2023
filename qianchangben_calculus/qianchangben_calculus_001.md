@@ -11,7 +11,9 @@
 
 
 ### 例1
-有没有自然数$n$使得式子$(2+\sqrt{2})^n$的值的小数部分大于 $0.\underbrace{99\cdots 9}_{100\text{个}9}$
+有没有自然数 $n$ 
+使得式子 $(2+\sqrt{2})^n$ 的值的小数部分
+大于 $0.\underbrace{99\cdots 9}_{100\text{个}9}$
 <!-->
 latex    使用`\vphantom`  对齐下大括号
 
@@ -169,42 +171,49 @@ $$
 
 
 
-从而知,存在自然数${n}$使$(2+\sqrt{2})^n$的小数部分大于 ${0.\underbrace{99\cdots 9}_{100\text{个}9}}$
+从而知,存在自然数 ${n}$ 
+使 $(2+\sqrt{2})^n$ 的小数部分大于 ${0.\underbrace{99\cdots 9}_{100\text{个}9}}$
 
 (解毕)
 
 
-对例1若要求出一个具体的$n$也是可以的,
+对例1若要求出一个具体的 $n$ 也是可以的,
 因为
 
 $$
 A_n-B_n=(2-\sqrt{2})^n<(0.6)^n,
 $$
 
-解不等式$(0.6)^n<10^{-100}$得$n>\frac{-100}{\log 0.6} \approx 450.8$,
-故可取 $N=450$,当$n>450$时都行.
+解不等式 $(0.6)^n<10^{-100}$ 
+得 $n>\frac{-100}{\log 0.6} \approx 450.8$,
+故可取 $N=450$ ,当 $n>450$ 时都行.
 
-当然,问题中的数字可以改得更一般些,譬如:$(k+\sqrt{m})^n$, 
+当然, 问题中的数字可以改得更一般些, 譬如: $(k+\sqrt{m})^n$ , 
 其中正整数 $k,m$ 满足 $0<k-\sqrt{m}<1$ .
 
 实际上例1是根据如下问题;
 "设 $[x]$ 为不超过 $x$ 的最大整数, 
-而${x}=x-[x]$.求 $\lim_{n \to \infty} \{2+\sqrt{3}^n\}$  修改而成的.
+而 ${x}=x-[x]$ .求 $\lim_{n \to \infty} \{2+\sqrt{3}^n\}$ 
+修改而成的.
+
 原题因过于道貌岸然而显得呆板,缺乏生气. 
 又因本质外露而使其难度较小. 
+
 经改造所得的例1已将极限本质巧妙掩盖起来,
 这必须通过
 "熟悉问题.深入理解问题.探索有益的念头"
-等几个步骤后,才可能抓住问题的本质,从而得到求解方案的眉目.
+等几个步骤后,才可能抓住问题的本质,
+从而得到求解方案的眉目.
 
 让我们遵照例1解答的程序再做几个题.
 
 ### 例2
+
   讨论数列 $\sqrt{7},\sqrt{7-\sqrt{7}},\sqrt{7-\sqrt{7+\sqrt{7}}},$ 
-  $\sqrt{7-\sqrt{7+\sqrt{7-\sqrt{7}}}},\dots$的极限
+  $\sqrt{7-\sqrt{7+\sqrt{7-\sqrt{7}}}},\dots$ 的极限
 
 为讨论方便, 不妨记数列为  $\{a_n\}$ ,
-观察所给的数列, 易见当$n\geqslant 3$ 时有递推式
+观察所给的数列, 易见当 $n\geqslant 3$ 时有递推式
 
 $$
   a_n = \sqrt{7-\sqrt{7+a_{n-2}}}.
@@ -214,17 +223,17 @@ $$
 
 #### 分析
 回想以往是否做过类似题目,
-有,譬如 "讨论数列$\sqrt{2},\sqrt{2+\sqrt{2}},$ $\sqrt{2+\sqrt{2+\sqrt{2}}},\dots$, 的极限."
+有,譬如 "讨论数列 $\sqrt{2},\sqrt{2+\sqrt{2}},$ $\sqrt{2+\sqrt{2+\sqrt{2}}},\dots$, 的极限."
 
 我们是这样解答的: 
 "记数列为 $\{b_n\}$ 有 $b_{n+1}=\sqrt{2+b_n}$ . 
-因为 $b_1 = \sqrt{2}<2$ ,且假若$b_n<2$,则必有
+因为 $b_1 = \sqrt{2}<2$ ,且假若 $b_n<2$, 则必有
 
 $$
   b_{n+1}=\sqrt{2+b_n}<\sqrt{2+2}=2.
 $$
 
-故 $b_n<2$ ,即$\{b_n\}$有界.又因为 $0 <b_n< 2$ , 故有
+故 $b_n<2$ ,即 $\{b_n\}$ 有界.又因为 $0 <b_n< 2$ , 故有
 
 
 $$
@@ -437,7 +446,7 @@ $$
 \lambda^{\left[ (n-1)/2 \right] } \left| a_{i} - 2 \right|. 
 $$
 
-其中${i=1,2. 0 < \lambda < 1}$ .
+其中 ${i=1,2. 0 < \lambda < 1}$ .
 
 于是, 有
 
@@ -453,12 +462,10 @@ $$
 上述解答中关键步骤是利用拉格朗日中值定理找到了递推不等式
 
 $$
-
 \left| a_{n} - 2 \right| \leq 
 \lambda \left| a_{n-2} - 2 \right| 
 \quad 
 (0 < \lambda < 1).
-
 $$
 
 
@@ -466,20 +473,16 @@ $$
 利用变形
 
 $$
-
 \begin{align}
 a_{n+2} - 2 & = \sqrt{ 7 - \sqrt{ 7 + a_{n} } } - 2 = \frac{3 - \sqrt{ 7 + a_{n} }}{\sqrt{ 7 - \sqrt{ 7 + a_{n} } } + 2} \\
   & = \frac{2-a_{n}}{\left( \sqrt{ 7 - \sqrt{ 7 + a_{n} } } + 2 \right) \left( 3 + \sqrt{ 7 + a_{n} } \right)  },
 \end{align}
-
 $$
 
 上式右方取绝对值放大
 
 $$
-
 \left| a_{n+2} - 2 \right| \leq \frac{1}{6} \left| a_{n} - 2 \right| .
-
 $$
 
 
@@ -490,36 +493,27 @@ $$
 
 
 $$
-
 a_{0} = \sqrt{ a },
 a_{1} = \sqrt{ a - \sqrt{ a } },
 a_{2} = \sqrt{ a - \sqrt{ a + \sqrt{ a } } }.
-
 $$
 
-
-
 $$
-
 A = \sqrt{ a - \sqrt{ a + A } }
-
 $$
 
-
 $$
-
 A^{4} - 2a A^{2} - A + a^{2} - a = 0
-
 $$
 
 
 使用maxima解得
 
 $$
-
-A=-\frac{\sqrt{4 a+1}-1}{2}\operatorname{,}A=\frac{\sqrt{4 a+1}+1}{2}\operatorname{,}A=-\frac{\sqrt{4 a-3}+1}{2}\operatorname{,}A=
-\frac{\sqrt{4 a-3}-1}{2}
-
+A=-\frac{\sqrt{4 a+1}-1}{2}, 
+A=\frac{\sqrt{4 a+1}+1}{2}, 
+A=-\frac{\sqrt{4 a-3}+1}{2},
+A=\frac{\sqrt{4 a-3}-1}{2}
 $$
 
 
@@ -535,16 +529,12 @@ $$
 令
 
 $$
-
 f(x) = x\ln(1+e^{x}).
-
 $$
 
 
 $$
-
 f(-x) = -x\ln(1+e^{-x}) = -x\ln(1+e^{x}) + x^{2}
-
 $$
 
 因为 ${f(-x) =-f(x) + x^{2}}$ , 故 ${f(x)}$ 不是奇函数 .
@@ -557,25 +547,22 @@ $$
 令 ${f(x) + g(x)}$ 是奇函数, 则
 
 $$
-
 \begin{align}
-\int_{-2}^{2} f(x) \, \mathrm{d}x  & = \int_{-2}^{2} \left\{ \left[ f(x) + g(x) \right] - g(x) \right\}  \, \mathrm{d}x  \\
-  & = -\int_{-2}^{2} g(x) \, \mathrm{d}x 	
+\int_{-2}^{2} f(x) \, \mathrm{d}x  
+& = \int_{-2}^{2} \left\{ \left[ f(x) + g(x) \right] - g(x) \right\}  \, \mathrm{d}x  \\
+& = -\int_{-2}^{2} g(x) \, \mathrm{d}x 	
 \end{align}
-
 $$
 
 或许右方的积分容易些.
 因为
 
 $$
-
 \begin{align}
 f(x) + g(x) & = - [f(-x) + g(-x)] \\
   & = -f(-x) - g(-x) \\
   & = x\ln(1+e^{x}) - x^{2} - g(-x)
 \end{align}
-
 $$
 
 ${g(x) + g(-x) = -x^{2}}$
@@ -609,21 +596,23 @@ $$
 例3的求解中, 要利用"奇函数在对称区间的定积分值为零"的念头给我们以某种希望, 
 虽然这一念头因受阻险些使人放弃, 但它确实还隐含着成功的可能.在全力以赴后, 终于使人如愿以偿.
 
-其实例3的解法是很多的, 上述解法也未必最自然.我们仍从"奇函数在对称区间上定积分值为零"的念头出发来分析被积函数.
-因为$x$是奇函数, 所以我们自然希望 $\ln(1+e^{x})$ 最好是偶函数, 但事实上 $\ln(1+e^{x})$ 不是偶函数.
-退一步的打算是什么呢?是否可以考虑从 $\ln(1+e^{x})$ 中分离出一个偶函数的"部分"呢？ 于是有
+其实例3的解法是很多的, 上述解法也未必最自然.
+我们仍从"奇函数在对称区间上定积分值为零"的念头出发来分析被积函数.
+因为 $x$ 是奇函数, 所以我们自然希望 $\ln(1+e^{x})$ 最好是偶函数, 
+但事实上 $\ln(1+e^{x})$ 不是偶函数.
+退一步的打算是什么呢? 
+是否可以考虑从 $\ln(1+e^{x})$ 中分离出一个偶函数的"部分"呢？ 
+于是有
 
 #### 解2
 因为
 
 $$
-
 \begin{align}
 \ln(1+e^{x}) & = \frac{1}{2} \ln(1+e^{x})^{2} 
 = \frac{1}{2} \ln(e^{2x} + 2e^{x} + 1) \\
   & = \frac{1}{2} \left[ x + \ln(e^{x} + 2 + e^{-x}) \right] 
 \end{align}
-
 $$
 
 
@@ -632,12 +621,10 @@ $$
 于是
 
 $$
-
 \begin{align}
 \int_{-2}^{2} x\ln(1 + e^{x})  \, \mathrm{d}x  & = \frac{1}{2} \int_{-2}^{2} x\left[ x + \ln(e^{x} + 2 + e^{-x}) \right]  \, \mathrm{d}x  \\
   & = \frac{1}{2} \int_{-2}^{2} x^{2}  \, \mathrm{d}x = \frac{8}{3}.
 \end{align}
-
 $$
 
 解毕
@@ -647,21 +634,18 @@ $$
 令 ${t = -x}$, 记原积分值为 ${I}$, 则
 
 $$
-
 \begin{align}
 I  & = \int_{-2}^{2} x\ln(1+e^{x}) \, \mathrm{d}x = \int_{2}^{-2} t\ln(1+e^{-t}) \, \mathrm{d}t \\
   & = \int_{-2}^{2} [t^{2} - t\ln(1+e^{t})] \, \mathrm{d}t = \int_{-2}^{2} t^{2} \, \mathrm{d}t - I
 \end{align}
-
 $$
 
 故 
 
 $$
-
 I = \int_{-2}^{2} x\ln(1+e^{x}) \, \mathrm{d}x
-= \frac{1}{2} \int_{-2}^{2} t^{2} \, \mathrm{d}t = \frac{8}{3} 
-
+= \frac{1}{2} \int_{-2}^{2} t^{2} \, \mathrm{d}t 
+= \frac{8}{3} 
 $$
 
 解毕
@@ -671,12 +655,10 @@ $$
 若 ${f(x)}$ 在 ${\left[ -a,a \right]}$ 上连续, 则
 
 $$
-
 \begin{align}
 \int_{-a}^{a} f(x) \, \mathrm{d}x  & \overset{x = -t}{=} \int_{a}^{-a} -f(-t) \, \mathrm{d}t = \int_{-a}^{a} f(-t) \, \mathrm{d}t \\
   & = \int_{-a}^{a} f(-x) \, \mathrm{d}x  
 \end{align}
-
 $$
 
 这一结果也可以从"奇函数 ${[f(x) - f(-x)]}$ 在 ${[-a,a]}$ 上积分等于零"得到.
@@ -684,13 +666,11 @@ $$
 
 
 $$
-
 \begin{align}
 \int_{-a}^{a} f(x) \, \mathrm{d}x  & = \int_{-a}^{a} f(-x) \, \mathrm{d}x \\
  & = \frac{1}{2} \int_{-a}^{a} [f(x) + f(-x)] \, \mathrm{d}x   \\
  & = \int_{0}^{a} [f(x) + f(-x)] \, \mathrm{d}x. 
 \end{align}
-
 $$
 
 
@@ -701,9 +681,7 @@ $$
 定义在对称区间 ${[-a,a]}$ 上的任意函数可以表示为一个奇函数与一个偶函数之和
 
 $$
-
 f(x) = \frac{1}{2}[f(x) - f(-x)] + \frac{1}{2}[f(x) + f(-x)] \qquad (-a \leq x \leq a)
-
 $$
 
 
@@ -721,54 +699,49 @@ $$
 ${f(0)=f(1)=0}$ 且 ${f'(x)}$ 在 ${[0,1]}$ 上连续.
 这说明 ${f(x)}$ 的图形是一条从点 ${(0,0)}$ 到点 ${(1,0)}$ 上的连续光滑曲线.
 
-${\int_{0}^{1} f(x) \, \mathrm{d}x}$ 的值表示曲线从 ${(0,0)}$ 到 ${(1,0)}$ 一段与 ${x}$ 轴的所围的各部分面积的代数和. ${f'(x)}$ 表示 ${f(x)}$ 的变化率, 或曲线在点 ${(x,f(x))}$ 处的斜率.
+${\int_{0}^{1} f(x) \, \mathrm{d}x}$ 的值表示曲线从 
+${(0,0)}$ 到 ${(1,0)}$ 一段与 ${x}$ 轴的所围的各部分面积的代数和. 
+${f'(x)}$ 表示 ${f(x)}$ 的变化率, 
+或曲线在点 ${(x,f(x))}$ 处的斜率.
 为方便计不妨记
 
 $$
-
 \max_{x \in [0, 1]} \{ \left| f'(x) \right| \} = k.
-
 $$
 
 从而知
 
 $$
-
 \left| f'(x) \right| \leq k
 \text{ 或者 }
 -k \leq f'(x) \leq k , 
 \quad
 x \in \left[ 0,1 \right] .
-
 $$
 
 
 可见曲线上下起伏变化的陡度不能太急剧, 无论是上升还是下降.
 
 从细节的分析, 使我们得到什么有益的启示和念头呢？
-对$0<x<1$而言, 从 ${\left| f'(x) \right| \leq k}$ 和 $f(0)=f(1)=0$ 出发,  
+对 $0<x<1$ 而言, 从 ${\left| f'(x) \right| \leq k}$ 和 $f(0)=f(1)=0$ 出发,  
 我们猜想应有
 
 $$
-
 \begin{align}
 \left| f(x) \right| \leq kx \text{ 且} \\
 \left| f(x) \right| \leq k(1-x).
 \end{align}
-
 $$
 
 
 ![[qianchangben_calculus_001-.png]]
 
 $$
-
 \left| \int_{0}^{1} f(x) \, \mathrm{d}x  \right| \leq S_{\triangle} OBC
-
 $$
 
 
-其中三角形 OBC 面积恰为 ${\frac{k}{4}}$ .
+其中三角形 $OBC$ 面积恰为 ${\frac{k}{4}}$ .
 
 #### 证明
 
@@ -776,44 +749,36 @@ $$
 则
 
 $$
-
 -k \leq f'(x) \leq k, 0 \leq x \leq 1.
-
 $$
 
 设 ${x \in (0,1)}$ , 在 ${[0,x],[x,1]}$ 上由拉格朗日中值定理, 得
 
 $$
-
 \begin{align}
 f(x) & = f(0) + f'(\xi_{1})x = f'(\xi_{1})x, & 0<\xi_{1}<x; \\
 f(x) & = f(1) + f'(\xi_{2})(x-1) = f'(\xi_{2})(x-1), & x<\xi_{2}<1.
 \end{align}
-
 $$
 
 从而有
 
 $$
-
 \begin{align}
 \left| f(x) \right|  & = \left| f'(\xi_{1}) \right|x \leq kx; \\
 \left| f(x) \right|  & = \left| f'(\xi_{2}) \right|(1 - x) \leq k(1 - x). \\
 \end{align}
-
 $$
 
 
 ${f(x)}$ 连续
 
 $$
-
 \begin{align}
 \left| \int_{0}^{1} f(x)  \, \mathrm{d}x  \right|  & \leq \int_{0}^{1} \left| f(x) \right|  \, \mathrm{d}x = \int_{0}^{\frac{1}{2}} \left| f(x) \right|  \, \mathrm{d}x  + \int_{\frac{1}{2}}^{1} \left| f(x) \right|  \, \mathrm{d}x  \\
   & \leq \int_{0}^{\frac{1}{2}} kx \, \mathrm{d}x + \int_{\frac{1}{2}}^{1} k(1-x) \, \mathrm{d}x   \\
   & = \frac{k}{4} = \frac{1}{4} \max_{x \in [0,1]} \{ \left| f'(x) \right|  \}.
 \end{align}
-
 $$
 
 证毕
@@ -827,7 +792,8 @@ $$
 当我们审视图形时, 容易发现条件与目标之间的种种联系, 从而促使有益念头的闪现.
 
 关键重要的一步是什么？
-从 ${\left| f'(x) \right| \leq k}$ 猜出 ${\left| f(x) \right| \leq kx, \left| f(x) \right|\leq k(1-x)}$. 
+从 ${\left| f'(x) \right| \leq k}$ 猜出 
+${\left| f(x) \right| \leq kx, \left| f(x) \right|\leq k(1-x)}$. 
 
 关于这一猜想是利用拉格朗日中值定理去证实的,
 是否还有其它的办法来证实这一点呢？
@@ -839,74 +805,58 @@ $$
 当我们从图中画出四条直线
 
 $$
-
 y = \pm kx,
 y = \pm k(1 - x)
-
 $$
 
 时, 一个菱形状立刻呈现在眼前, 我们多么希望曲线 ${f(x)}$ 能被框在其中,
 为证实愿望的真确, 自然会引进辅助函数
 
 $$
-
 g_{1}(x) = f(x) - kx, \quad 0 \leq x \leq 1
-
 $$
 
 求导并考虑到${\left| f'(x) \right| \leq k}$ , 则有
 
 $$
-
 g_{1}'(x) = f'(x) - k \leq 0
-
 $$
 
 又因为 ${g_{1}(0) = f(0) = 0}$, 故有
 
 $$
-
 g_{1}(x) \leq g_{1}(0) = 0,
-
 $$
 
 即
 
 $$
-
 f(x) \leq kx, x \in [0,1].
-
 $$
 
 类似, 由
 
 $$
-
 g_{2}(x) = f(x) + kx,
 g_{3}(x) = f(x) - k(x - 1),
 g_{4}(x) = f(x) + k(x - 1).
-
 $$
 
 可推出
 
 $$
-
 f(x) \geq -kx,
 f(x) \geq k(x-1),
 f(x) \leq -k(x-1).
-
 $$
 
 即有
 
 $$
-
 \left| f(x) \right| \leq kx
 \text{ 且 }
 \left| f(x) \right| \leq k(1 - x),
 x \in [0, 1].
-
 $$
 
 
@@ -914,40 +864,35 @@ $$
 若能想到 ${f(x)}$ 是 ${f'(x)}$ 的原函数, 并联系到 ${f(0) = f(1) = 0}$, 就会想到从
 
 $$
-
 -k \leq f'(x) \leq k
-
 $$
 
 出发, 去做 ${t \in (0,1)}$ 为上限的积分, 于是可导出
 
 $$
+\int_{0}^{t} -k \, \mathrm{d}x \leq \int_{0}^{t} f'(x) \, \mathrm{d}x \leq \int_{0}^{t} k \, \mathrm{d}x , 
+$$
 
-\begin{array}{c}
-\int_{0}^{t} -k \, \mathrm{d}x \leq \int_{0}^{t} f'(x) \, \mathrm{d}x \leq \int_{0}^{t} k \, \mathrm{d}x ,  \\
+$$
 -kt \leq f(t) \leq kt
-\end{array}
-
 $$
 
 
 $$
-
-\begin{array}{c}
-\int_{t}^{1} -k \, \mathrm{d}x \leq \int_{t}^{1} f'(x) \, \mathrm{d}x \leq \int_{t}^{1} k \, \mathrm{d}x ,  \\
--k(1 - t) \leq f(1) - f(t) \leq k(1 - t) \\
+\int_{t}^{1} -k \, \mathrm{d}x \leq \int_{t}^{1} f'(x) \, \mathrm{d}x \leq \int_{t}^{1} k \, \mathrm{d}x ,
+$$
+$$
+-k(1 - t) \leq f(1) - f(t) \leq k(1 - t)
+$$
+$$
 -k(1 - t) \leq  f(t) \leq k(1 - t)
-\end{array}
-
 $$
 
 即有 
 
 $$
-
 \left| f(x) \right| \leq kx, 
 \left| f(x) \right| \leq k(1-x), x \in [0,1]
-
 $$
 
 
@@ -958,10 +903,12 @@ $$
 
 关于怎样解题, 给出了四个例子. 
 综合起来, 求解一个问题的大致步骤为：
-(1) 熟悉问题;
-(2) 深入理解问题;
-(3) 探索有益念头, 拟定解题的计划;
-(4) 实现解题的计划;
-(5) 对解答的回顾.
+
+1. 熟悉问题;
+2. 深入理解问题;
+3. 探索有益念头, 拟定解题的计划;
+4. 实现解题的计划;
+5. 对解答的回顾.
+
 这正是著名的数学家波利亚在"怎样解题"表中所提出的几个要点.
 [[怎样解题 - wiki -G.Polya]]
