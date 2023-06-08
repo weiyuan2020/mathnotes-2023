@@ -43,7 +43,7 @@ $$
 设 ${y = \sin x \left( 0 \leq x \leq \frac{\pi}{2} \right)}$ 与直线 ${x=0,x=\frac{\pi}{2},y=t (0 \leq t\leq 1)}$ 所围成的面积为 ${S(t)}$.
 求 ${S(t)}$ 的最大值和最小值。
 
-![[qianchangben_calculus_005-.png]]
+![](attachments/qianchangben_calculus_005-.png)
 
 #### 解
 引入辅助线 ${y = \cos x \left( 0 \leq x \leq \frac{\pi}{2} \right)}$
@@ -88,7 +88,7 @@ $$
 I = \int_{-1}^{1} -x^{4} \, \mathrm{d}x = -\frac{2}{5} 
 $$
 
-![[qianchangben_calculus_005--1.png]]
+![](attachments/qianchangben_calculus_005--1.png)
 
 #### 解2 
 引入辅助线 ${y = -x^{3}}$
@@ -110,7 +110,7 @@ $$
 
 水桶底半径为1,高为3.在桶壁距底面高为1处有两个小孔，两小孔连线与水桶的轴线相交.问该桶最多能装多少水？
 
-![[qianchangben_calculus_005--2.png]]
+![](attachments/qianchangben_calculus_005--2.png)
 
 %% todo %%
 
@@ -465,7 +465,7 @@ $$
 
 #### 证
 
-![[qianchangben_calculus_005--3.png]]
+![](attachments/qianchangben_calculus_005--3.png)
 
 
 $$
@@ -580,7 +580,7 @@ ${V = \frac{\pi l^{3}}{96}}$.
 求这样的三角形，当它绕着长为 ${a}$ 的边旋转时所得旋转体的体积
 最大.”
 
-![[qianchangben_calculus_005--4.png]]
+![](attachments/qianchangben_calculus_005--4.png)
 
 绕BC边旋转得旋转体体积
 

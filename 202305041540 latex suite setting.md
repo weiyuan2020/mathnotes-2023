@@ -5,7 +5,8 @@ quick latex for obsidian
 [    
     // Math mode
     {trigger: "mk", replacement: " ${$0}$ ", options: "tA"},
-    {trigger: "dm", replacement: "\n$$\n$0\n$$\n", options: "tAw"},
+    {trigger: "dm", replacement: "\n$$\n$0\n$$\n\n", options: "tAw"},
+    {trigger: "ddm", replacement: "\n\n$$\n$0\n$$\n\n", options: "tA"},
     {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
 
 

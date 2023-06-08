@@ -876,7 +876,7 @@ ${n=3}$ 时该式有明显几何意义。
 如果 $S_{1}$ 与 ${St}$ 公共部分 ${\left( S_{1} \bigcap S_{t} \right)}$ 重叠的面积不小于 ${\frac{1}{2}}$ ,
 求动点 ${t}$ 变动范围的面积.
 
-![[qianchangben_calculus_006-.png]]
+![](attachments/qianchangben_calculus_006-.png)
 #### 解
 取坐标系，使原点在 $S_{1}$ 中心且ox轴平行于 ${S_{1}}$ 的一组对边.
 由于 $S_{1}$ 关于ox轴、oy轴对称,
@@ -966,7 +966,7 @@ $$
 
 ### 例65
 
-![[qianchangben_calculus_006--1.png]]
+![](attachments/qianchangben_calculus_006--1.png)
 
 一张1.4米高的图片挂在墙上，它的底边高于观察者的眼1.8米.问观察者应站在距墙多远处看图，才能最清晰（即视角最大.视角是观察图片上底和下底两视线的夹角）,并试将上述问题作一情境推广.
 

@@ -297,7 +297,7 @@ ${\pi}$ 是偶函数 ${f(x) =  \sin ^{6}x - 2\sin ^{8}x + \sin ^{10}x}$ 的周�
 已知  ${\int_{0}^{\pi/2} \sin ^{n}x \, \mathrm{d}x=  \int_{0}^{\pi/2} \cos^{n}x \, \mathrm{d}x}$. 
 
 $$
-\int_{0}^{\pi/2} \sin ^{n}x  \, \mathrm{d}x \left\{
+\int_{0}^{\pi/2} \sin ^{n}x  \, \mathrm{d}x = \left\{
 \begin{array}{ll}
 \frac{(n-1)!!}{n!!}\cdot \frac{\pi}{2}, & n\%2 == 0 \\
 \frac{(n-1)!!}{n!!}\cdot 1, & n\%2 == 1 \\
@@ -373,7 +373,7 @@ $$
 
 #### 解1
 折起边长 ${x}$ cm，倾角 ${\alpha}$
-![[qianchangben_calculus/attachments/qianchangben_calculus_003-.png]]
+![](attachments/qianchangben_calculus_003-.png)
 下底长 ${24-2x}$
 上底长 ${24-2x + 2x\cos\alpha}$
 高 ${x\sin\alpha}$
@@ -424,7 +424,7 @@ $$
 
 #### 解2
 
-![[qianchangben_calculus_003--1.png]]
+![](attachments/qianchangben_calculus_003--1.png)
 
 易见两侧折角小于 ${\frac{\pi}{2}}$ 
 
@@ -450,7 +450,7 @@ $$
 形"的限制.断面仅为四边形，它不一定是梯形，更谈不上是等腰
 梯形！此时，水槽的底也不一定平行于水面（参见断面示意图图3-3）.
 
-![[qianchangben_calculus_003--2.png]]
+![](attachments/qianchangben_calculus_003--2.png)
 
 铁板如何折法才能使断面面积最大?不妨将这一般情境下的问
 题改述为下例.
@@ -469,7 +469,7 @@ $$
 第三步 将目标函数在所有驻点的函数值及目标函数在定义域边界上的最大值和最小值相互比较，
 确定目标函数的最大值和最小值.
 
-![[qianchangben_calculus_003--3.png]]
+![](attachments/qianchangben_calculus_003--3.png)
 
 $$
 AB + BC + CD = 24
@@ -502,7 +502,7 @@ $$
 假设四边形ABCD是所求解.
 则$AB+BC+CD=24$ 且其面积$S_\text{ABCD}$最大（无法再扩大了！）
 
-![[qianchangben_calculus_003--4.png]] 
+![](attachments/qianchangben_calculus_003--4.png) 
 见图3-5,将 ${\triangle ACD}$ 固定（即定下点A, C, D, 从而边 AC 和 CD 为定长）时,
 ${S_{\triangle ABC}}$ 应该是不可扩大的.
 因为 ${AC}$ 为定长，因此点 B 是距 AC 边的最远点,考虑到
@@ -569,7 +569,7 @@ $$
 ### 例25
 求 ${I = \iint_{D} (x+y) \mathrm{d}\sigma}$, 其中 ${D: x^{2} +y^{2} \leq 2(x+y)}$. 
 
-![[qianchangben_calculus_003--5.png]]
+![](attachments/qianchangben_calculus_003--5.png)
 
 #### 解1
 
@@ -1176,6 +1176,6 @@ $$
 设点 $P$ 为抛物线 ${C_{1}: y = x^{2} - 4x + 3}$ 上的任一点，由
 $P$ 向抛物线 ${C_{2}: y = x^{2} - 4x +7}$ 作两切线，记两切点分别为 ${A}$ 和 ${B}$. 试证由线段 ${PA,PB}$ 及抛物线 ${C_{2}}$ 上的弧段 ${\overset{\LARGE{\frown}}{AB}}$ 所围成的曲边三角形的面积为常量.
 
-![[qianchangben_calculus_003-7.png]]
+![](attachments/qianchangben_calculus_003-7.png)
 %% todo  %%
 

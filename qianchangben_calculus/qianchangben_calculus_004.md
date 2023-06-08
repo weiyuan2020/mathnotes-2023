@@ -29,7 +29,7 @@ $$
 
 那么，显然有 ${f(a) = f(b)}$ 
 
-![[qianchangben_calculus_004-.png]]
+![](attachments/qianchangben_calculus_004-.png)
 
 于是,“平面曲线 ${\overset{\LARGE{\frown}}{AB}}$ 连续不断且其上各点都有切线”的条件就是
 “函数 ${f(x)}$ 在 ${[a,b]}$ 上连续，在 ${(a,b)}$ 内可导”;而结论“弧 ${\overset{\LARGE{\frown}}{AB}}$
@@ -53,7 +53,7 @@ $$
 $$
 
 成立。”
-![[qianchangben_calculus_004--1.png]]
+![](attachments/qianchangben_calculus_004--1.png)
 
 如果所取的 ${ox}$ 轴与弦 AB 不平行， 且弧 ${\overset{\LARGE{\frown}}{AB}}$ 的方程表示为
 
@@ -78,7 +78,7 @@ $$
 $$
 
 成立”
-![[qianchangben_calculus_004--2.png]]
+![](attachments/qianchangben_calculus_004--2.png)
 解毕
 
 ## 2.定理的证明
@@ -119,7 +119,7 @@ $$
 一方面希望利用罗尔定理的结论;
 另一方面希望由罗尔定理的证明过程受到启示.
 
-![[qianchangben_calculus_004--3.png]]
+![](attachments/qianchangben_calculus_004--3.png)
 
 类似罗尔定理寻找C点的分析，我们平移弦 ${AB,\dots\dots}$
 找到点 ${C(c,f(c))}$,
@@ -141,7 +141,7 @@ y - f(a) = k(x-a) \text{ or }
 y - kx - f(a) + ka = 0.
 $$
 
-由点到直线的距离公式 [[202306031501 点到直线的距离公式]] 知
+由点到直线的距离公式 [](attachments/202306031501 点到直线的距离公式) 知
 
 $$
 \begin{align}
@@ -368,7 +368,7 @@ $$
 讨论方程 ${4^{x} - 3x^{3}-1 = 0}$ 的实根个数
 
 
-![[qianchangben_calculus_004--4.png]]
+![](attachments/qianchangben_calculus_004--4.png)
 
 由观察不难看出 ${x=0,x=1}$ 是方程的两个实根。
 为讨论方便，记
@@ -468,7 +468,7 @@ $$
 
 %%todo%%
 
-![[qianchangben_calculus_004--5.png]]
+![](attachments/qianchangben_calculus_004--5.png)
 
 
 ### 例37

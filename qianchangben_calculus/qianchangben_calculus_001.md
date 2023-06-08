@@ -14,19 +14,7 @@
 有没有自然数 $n$ 
 使得式子 $(2+\sqrt{2})^n$ 的值的小数部分
 大于 $0.\underbrace{99\cdots 9}_{100\text{个}9}$
-<!-->
-latex    使用`\vphantom`  对齐下大括号
 
-$$
-
-  \begin{align*}
-    0=    \underbrace{\vphantom{\frac{a}{b}}a\times b}_{ab} & +\underbrace{\vphantom{\frac{a}{b}}\frac{a}{b}}_{a/b}\\
-    0=    \underbrace{a\times b}_{ab} & +\underbrace{\vphantom{\frac{a}{b}}\frac{a}{b}}_{a/b}\\
-  \end{align*}
-
-$$
-
-<-->
 
 #### 分析问题
 
@@ -48,8 +36,6 @@ $\sqrt{2}$ 是无理数, $\sqrt{2} = 1.414$ ;
 从中考察找出熟悉的、可能有用的部分, 
 自然会想到二项式展开定理, 让我们不妨试试看
 
-
-
 $$
 \begin{align*}
     (2+\sqrt{2})^2
@@ -59,14 +45,12 @@ $$
 \end{align*}
 $$
 
-
 观察展开式发现:
 第奇数项(即 $i$ 取 $0$ 或偶数时的对应项)皆为整数; 
 而其余项皆为非整数.
 
 我们将展开式中所有整数项的和记为 $A_n$ ,
 而将所有非整数的项的和记为 $B_n$ , 于是
-
 
 $$
   (2+\sqrt{2})^n = A_n+B_n 
@@ -734,7 +718,7 @@ $$
 $$
 
 
-![[qianchangben_calculus_001-.png]]
+![](attachments/qianchangben_calculus_001-.png)
 
 $$
 \left| \int_{0}^{1} f(x) \, \mathrm{d}x  \right| \leq S_{\triangle} OBC
@@ -911,4 +895,3 @@ $$
 5. 对解答的回顾.
 
 这正是著名的数学家波利亚在"怎样解题"表中所提出的几个要点.
-[[怎样解题 - wiki -G.Polya]]

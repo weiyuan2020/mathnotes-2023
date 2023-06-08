@@ -565,8 +565,256 @@ $$
 \begin{align}
 \bar{a}_{n} & = 0 (n=0,1,2,\dots); \\
 \bar{b}_{n} & = \frac{2}{2} \int_{0}^{2} h(x) \sin \frac{n\pi x}{2} \, \mathrm{d}x = \int_{0}^{2} \frac{1}{2} \sin \frac{n\pi x}{2} \, \mathrm{d}x  \\
-  & = \frac{1}{n\pi}
-
+  & = \frac{1}{n\pi}(1-\cos n\pi) 
 \end{align}
 $$
 
+$$
+\bar{b}_{n} = \left\{ 
+\begin{array}{ll}
+\frac{2}{n\pi}, & n \text{ is odd}, \\
+0, & n \text{ is even}.
+\end{array}
+\right. 
+$$
+
+于是有
+
+$$
+h(x) = \frac{2}{\pi} \left( 
+\sin \frac{\pi x}{2} 
++ \frac{1}{3}\sin \frac{3\pi x}{2}
++ \frac{1}{5}\sin \frac{5\pi x}{2}
++ \dots
+\right)
+$$
+
+$$
+(-\infty<x<+\infty; x\neq 4k+2(k \in\mathbb{Z})),
+$$
+
+由于 ${f(x) = h(x) + \frac{1}{2}}$ , 所以
+
+$$
+f(x) = \frac{1}{2} + \frac{2}{\pi}\left( 
+\sin \frac{\pi}{2}
++ \frac{1}{3} \sin \frac{3\pi x}{2}
++ \frac{1}{5} \sin \frac{5\pi x}{2}
++ \dots
+ \right)
+$$
+
+$$
+(-\infty<x<+\infty; x\neq 4k+2(k \in\mathbb{Z})),
+$$
+
+解毕
+
+上述解法充分利用了 ${f(x)}$ 图形的对称中心，
+从而使展开中的计算工作量减少了一半.
+由结果及解法可见: 若函数 ${f(x)}$ 的图形有对称中心 ${(0,h)}$ ,
+则 ${f(x)}$ 的傅立叶级数展开式中必有 
+
+$$
+\begin{align}
+a_{0} & = 2h  \left( \text{ or } \frac{a_{0}}{2} = h \right), \\
+a_{n} & = 0 \quad (n = 1,2,3,\dots), \\
+b_{n} & = \frac{2}{l} \int_{0}^{l} f(x) \sin \frac{n\pi}{l}x \, \mathrm{d}x \quad (n=1,2,3,\dots)
+\end{align}
+$$
+
+这一结论是不难由变量代换去证明的.
+
+## "对称"在积分中的应用
+
+众所周知，若 ${f(x)}$ 在 ${[-a,a]}$ 上连续，则有 
+
+$$
+\int_{-a}^{a} f(x) \, \mathrm{d}x =
+\left\{ 
+\begin{array}{ll}
+2\int_{0}^{a} f(x) \, \mathrm{d}x  & f(x) \text{ 为偶函数}; \\
+0 & f(x) \text{ 为奇函数}; \\
+\int_{0}^{a} f(-x) + f(x) \, \mathrm{d}x  & f(x) \text{ 为一般函数}. \\
+\end{array}
+\right. 
+$$
+
+对多元函数有类似结果
+
+若 ${f(P)}$ 是区域 ${\Omega}$ 上的连续函数，且区域 ${\Omega}$ 具有某种对称性.
+当函数 ${f(P)}$ 在 ${\Omega}$ 中各对称点处的函数值的绝对值相等且符号相反
+(称 ${f(P)}$ 为相应于区域 ${\Omega}$ 的奇函数)时，
+有 
+
+$$
+\int _{\Omega} f(P) \, \mathrm{d}\Omega = 0; 
+$$
+ 
+ 当 ${f(P)}$ 在 ${\Omega}$ 中各对称点处的函数值相等
+ (称 ${f(P)}$ 为相应于区域 ${\Omega}$ 的偶函数)时，
+ 有 
+
+$$
+\int _{\Omega} f(P) \, \mathrm{d}\Omega = 
+2 \int _{\Omega_{1}} f(P) \, \mathrm{d}\Omega 
+$$
+
+其中区域 ${\Omega_{1}}$ 为区域 ${\Omega}$ 的“对称的一半”.
+
+在上述结论中，当对区域 ${\Omega}$ 及被积函数 ${f(P)}$ 赋以具体的含义时, 
+${\int _{\Omega} f(P) \, \mathrm{d}\Omega}$ 就表示相应的各类不同的积分. 譬如
+
+当 ${\Omega}$ 是 ${x}$ 轴上区间 ${[a, b]}$ ,  ${f(P)}$ 是 ${[a,b]}$ 上的一元函数 ${f(x)}$ ,
+则 ${\int _{\Omega} f(P) \, \mathrm{d}\Omega}$ 就是定积分 ${\int_{a}^{b} f(x) \, \mathrm{d}x}$ ; 
+
+当 ${\Omega}$ 是三维空间中的区域 ${V}$ ,  ${f(P)}$ 是 ${V}$ 上的三元函数 ${f(x)}$ ，则 ${\int _{\Omega}f(P) \, \mathrm{d}\Omega}$ 就是三重积分 ${\iiint_{V} f(x,y,z) \mathrm{d}v}$ ；
+
+当 ${\Omega}$ 是一张空间曲面 ${\Sigma}$ , ${f(P)}$ 是定义于曲面 ${\Sigma}$ 上的函数 ${f(x,y,z)}$ ，则 ${\int _{\Omega} f(P) \, \mathrm{d}\Omega}$ 就是对面积的曲面积分 ${\iint_{\Sigma}f(x,y,z)\mathrm{d}S}$ ；
+等等,
+
+关于这一结论的应用，倘若在定积分范围还能被重视的话，
+那么，到了重积分、曲线积分和曲面积分的情境，则往往被忽视.
+下面，我们从影响甚广的教材或教学参考书中选几个例子予以说明
+(例中解1摘抄于原出处).
+
+### 例87
+利用高斯公式计算曲面积分
+
+$$
+∯_{\Sigma} (x-y) \mathrm{d}x \mathrm{d}y + (y-z) \mathrm{d}y \mathrm{d}z
+$$
+
+其中 ${\Sigma}$ 为柱面 ${x^{2}+y^{2}=1}$ 及平面 ${z=0,z=3}$ 所围成的空间闭区域 ${\Omega}$ 的边界曲面的外侧。
+
+#### 解1
+因为 ${P = (y-z)x, Q=0, R=x-y}$ .
+
+$$
+\frac{ \partial P }{ \partial x } = y-z,
+\frac{ \partial Q }{ \partial y } = 0,
+\frac{ \partial R }{ \partial z } = 0.
+$$
+
+利用高斯公式把所给曲面积分化为三重积分，
+再利用柱面坐标计算三重积分，
+有
+
+$$
+\begin{align}
+I & = \iiint_{\Omega}(y-z) \mathrm{d}x\mathrm{d}y\mathrm{d}z = \iiint_{\Omega} (r\sin\theta - z) r\mathrm{d}r\mathrm{d}\theta \mathrm{d}z \\
+  & = \int_{0}^{2\pi}  \, \mathrm{d}\theta \int_{0}^{1} r \, \mathrm{d}r \int_{0}^{3} (r\sin\theta - z) \, \mathrm{d}z \\
+  & = \int_{0}^{2\pi}  \, \mathrm{d}\theta \int_{0}^{1} 3r^{2}\sin\theta - \frac{9}{2}r \, \mathrm{d}r    \\
+  & = -\frac{9\pi}{2}.
+\end{align}
+$$
+
+解毕
+
+利用对称性改进
+
+$$
+\iiint_{\Omega}(y-z)\mathrm{d}x\mathrm{d}y\mathrm{d}z = 
+-\iiint_{\Omega} z \mathrm{d}x\mathrm{d}y\mathrm{d}z 
+$$
+ ${\Omega}$ 关于 ${z = \frac{3}{2}}$ 对称， ${\left( z-\frac{3}{2} \right)}$ 是相应于 ${\Omega}$ 的奇函数
+ 
+$$
+\iiint_{\Omega}\left( z- \frac{3}{2} \right) \mathrm{d}x\mathrm{d}y\mathrm{d}z = 0.
+$$
+
+### 例88
+
+计算曲面积分 ${\iint_{\Sigma}(xy+yz+zx)\mathrm{d}S}$, 其中 ${\Sigma}$ 为锥面 ${z=\sqrt{ x^{2}+y^{2} }}$ 被曲面 ${x^{2}+y^{2}=2ax(a>0)}$ 所截得的部分.
+
+#### 解1
+设 ${\Sigma}$ 在 ${xoy}$ 平面的投影区域为 ${D_{xy}}$,
+则 ${D_{xy}}$ 为 ${z=0}$ 上由圆 ${x^{2}+y^{2}=2ax}$ 围成的区域，见图8-3.
+
+![](attachments/qianchangben_calculus_008--2.png)
+
+因为
+
+$$
+\sqrt{ 1+z_{x}^{2}+z_{y}^{2} } = \sqrt{ 2 },
+$$
+
+所以
+
+$$
+I = \sqrt{ 2 } \iint_{D_{xy}} [xy + (x+y)\sqrt{ x^{2}+y^{2} }] \mathrm{d}x \mathrm{d}y.
+$$
+
+。。。
+
+#### 解2
+
+ ${\Sigma}$ 关于 ${xoz}$ 平面对称，  ${(xy+yz)}$ 是相应于 ${\Sigma}$ 的奇函数，故有
+
+$$
+I = \iint_{\Sigma}(xy+yz+zx)\mathrm{d}S = \iint_{\Sigma}zx \mathrm{d}S,
+$$
+
+又因为 ${\sqrt{ 1+z_{x}^{2}+z_{y}^{2} } = \sqrt{ 2 }}$ ,
+化为二重积分并利用极坐标，有
+
+$$
+\begin{align}
+I  & = \iint_{\Sigma}zx\mathrm{d}S = \iint_{x^{2}+y^{2}\leq 2ax} \sqrt{ 2 }x \sqrt{ x^{2}+y^{2} } \mathrm{d}x\mathrm{d}y \\
+  & = \sqrt{ 2 }\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}  \, \mathrm{d}\theta \int_{0}^{2a\cos\theta} r^{3} \cos\theta \, \mathrm{d}r \\
+  & = 8\sqrt{ 2 } a^{4} \int_{0}^{\pi/2} \cos ^{5}\theta \, \mathrm{d}\theta = \frac{64\sqrt{ 2 }}{15} ^{2}d_{4} 
+\end{align}
+$$
+
+解毕
+
+### 例89
+求密度为常数 ${\rho}$ 的均匀圆柱体 ${\Omega}$ :
+
+$$
+x^{2}+y^{2}\leq a^{2}, -h \leq z\leq h
+$$
+
+对直线 ${x=y=z}$ 的转动惯量。
+
+%%todo pp160%%
+
+### 例91
+
+求均匀半球面 ${z= \sqrt{ a^{2}-x^{2}-y^{2} }}$ 对 ${z}$ 轴的转动惯量 ${I}$ .
+其中面密度 ${\rho = 1}$ .
+
+#### 解
+利用对称性求解
+
+记 ${\Sigma: z= \sqrt{ a^{2}-x^{2}-y^{2}}}$, ${\Sigma_{1}: x^{2}+y^{2}+z^{2}=a^{2}}$ .
+ ${\Sigma_{1}}$ 关于 ${z=0}$ 平面对称且 ${(x^{2}+y^{2})}$ 是相应于 ${\Sigma_{1}}$ 的偶函数，
+ 所以有
+
+$$
+I = \iint_{\Sigma}(x^{2}+y^{2})\mathrm{d}S = \frac{1}{2}\iint_{\Sigma_{1}}(x^{2}+y^{2})\mathrm{d}S.
+$$
+
+又因 ${\Sigma_{1}}$ 中 ${x,y,z}$ 地位对称，考虑到积分仅与积分域及被积函数有关而与积分变量的字母无关，有
+
+$$
+\iint_{\Sigma_{1}}x^{2}\mathrm{d}S = 
+\iint_{\Sigma_{1}}y^{2}\mathrm{d}S = 
+\iint_{\Sigma_{1}}z^{2}\mathrm{d}S .
+$$
+
+于是
+
+$$
+\begin{align}
+I & = \frac{1}{2} \iint_{\Sigma_{1}} (x^{2}+y^{2})\mathrm{d}S = \frac{1}{3}\iint_{\Sigma_{1}}(x^{2}+y^{2}+z^{2})\mathrm{d}S \\
+  & = \frac{1}{3} \iint_{\Sigma_{1}}a^{2}\mathrm{d}S = \frac{4\pi}{3} a^{4}
+\end{align}
+$$
+
+解毕
+
+一般，利用对称性计算积分时总是将原积分转化为积分域的子域上的新积分,
+而上例解法却反其道而行之.
+方法的选择和采用应服从于目的的需要，
+这里正好说明逆向思维在克服思维定势中的作用.

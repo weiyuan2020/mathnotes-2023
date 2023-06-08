@@ -51,12 +51,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "拉格朗日乘数",
+                "query": "\\int_{0}^{\\pi/2}",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               }
             }
           },
@@ -70,8 +70,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,19 +138,25 @@
   },
   "active": "4f50c70f43af4bc4",
   "lastOpenFiles": [
-    "qianchangben_calculus/attachments/qianchangben_calculus_008--1.png",
-    "202305041540 latex suite setting.md",
+    "202306081627 三角函数定积分的一个重要结论 递推式.md",
     "qianchangben_calculus/qianchangben_calculus_008.md",
+    "qianchangben_calculus/qianchangben_calculus_003.md",
+    "202305041540 latex suite setting.md",
+    "qianchangben_calculus/attachments/qianchangben_calculus_008--2.png",
+    "qianchangben_calculus/qianchangben_calculus_005.md",
+    "qianchangben_calculus/qianchangben_calculus_006.md",
+    "qianchangben_calculus/qianchangben_calculus_007.md",
+    "qianchangben_calculus/qianchangben_calculus_001.md",
+    "qianchangben_calculus/qianchangben_calculus_002.md",
+    "qianchangben_calculus/qianchangben_calculus_004.md",
+    "qianchangben_calculus/attachments/qianchangben_calculus_008--1.png",
     "attachments/202306031501 点到直线的距离公式.md",
     "qianchangben_calculus/attachments/qianchangben_calculus_008-.png",
     "202008150900 单墫 三元不等式问题一例.md",
     "202306070842 单墫 不定方程问题一例.md",
-    "qianchangben_calculus/qianchangben_calculus_007.md",
     "mathematica/钱昌本-高数解题-chap08.nb",
-    "qianchangben_calculus/qianchangben_calculus_001.md",
     "202306041157.md",
     "202305011403 sinx x integrate.md",
-    "qianchangben_calculus/qianchangben_calculus_006.md",
     "rudin/bbr/chap01sec09exercise.md",
     "rudin/bbr/chap01sec08appendix.md",
     "rudin/bbr/chap01sec appendix.md",
@@ -164,14 +169,10 @@
     "yupin/202205141105 Euler formula.md",
     "yupin",
     "conway/21-11-14 johnConway_OneNumberAndGames.md",
-    "qianchangben_calculus/qianchangben_calculus_005.md",
-    "qianchangben_calculus/qianchangben_calculus_003.md",
     "具体数学/CMChap3.md",
     "具体数学/attachements/CMChap3-.png",
     "具体数学/attachements",
     "qianchangben_calculus/attachments/qianchangben_calculus_006--1.png",
-    "具体数学/CMChap2.md",
-    "未命名.md",
     "具体数学/CMChap2_table.tex",
     "具体数学/attachements/CMChap2_table-P1.png",
     "具体数学/CMChap2_table.pdf",
@@ -181,8 +182,6 @@
     "qianchangben_calculus/attachments/qianchangben_calculus_003-7.png",
     "attachments/qianchangben_calculus_004--4.png",
     "attachments/qianchangben_calculus_006-.png",
-    "qianchangben_calculus/attachments/qianchangben_calculus_001-.png",
-    "attachments/qianchangben_calculus_005--4.png",
     "rudin/bbr/mydefbook.tex",
     "rudin/bbr/listofspecialsymbols-.tex"
   ]
