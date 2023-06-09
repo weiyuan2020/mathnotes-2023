@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "895b7dd036462fdc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "qianchangben_calculus/qianchangben_calculus_009.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -91,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_008.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_009.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_008.md"
+                "file": "qianchangben_calculus/qianchangben_calculus_009.md"
               }
             }
           },
@@ -136,10 +148,11 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "4f50c70f43af4bc4",
+  "active": "895b7dd036462fdc",
   "lastOpenFiles": [
-    "202306081627 三角函数定积分的一个重要结论 递推式.md",
     "qianchangben_calculus/qianchangben_calculus_008.md",
+    "qianchangben_calculus/qianchangben_calculus_009.md",
+    "202306081627 三角函数定积分的一个重要结论 递推式.md",
     "qianchangben_calculus/qianchangben_calculus_003.md",
     "202305041540 latex suite setting.md",
     "qianchangben_calculus/attachments/qianchangben_calculus_008--2.png",
@@ -169,7 +182,6 @@
     "yupin/202205141105 Euler formula.md",
     "yupin",
     "conway/21-11-14 johnConway_OneNumberAndGames.md",
-    "具体数学/CMChap3.md",
     "具体数学/attachements/CMChap3-.png",
     "具体数学/attachements",
     "qianchangben_calculus/attachments/qianchangben_calculus_006--1.png",
