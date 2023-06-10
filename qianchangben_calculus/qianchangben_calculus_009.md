@@ -158,7 +158,7 @@ $$
 
 #### 解1
 记 ${I = \int_{0}^{\infty} e^{t^{2}} \, \mathrm{d}t}$ .
-因为积分制仅与被积函数及积分域有关，于是有
+因为积分值仅与被积函数及积分域有关，于是有
 
 $$
 \begin{align}
@@ -207,7 +207,7 @@ $$
 根据 Wallis 公式
 
 $$
-\frac{\pi}{2} = \lim_{ n \to \infty } \frac{1}{(2n-1)} \left[ \frac{(2n)!!}{(2n-1)!!} \right]^{2}
+\frac{\pi}{2} = \lim_{ n \to \infty } \frac{1}{(2n+1)} \left[ \frac{(2n)!!}{(2n-1)!!} \right]^{2}
 $$
 
 $$
@@ -244,3 +244,196 @@ $$
 $$
 
 解毕
+
+### 例94
+已知 ${x=e^{u}\cos v, y=e^{u}\sin v, z=uv}$ . 求 ${z_{x},z_{y}}$ .
+
+#### 解1
+视 ${z}$ 是中间变量为 ${u,v}$ , 自变量为 ${x,y}$ 的函数。
+由多元复合函数链导法则知
+
+$$
+\begin{align}
+z_{x} & = z_{u}u_{x} + z_{v}v_{x} = vu_{x} + uv_{x} \\
+z_{y} & = z_{u}u_{y} + z_{v}v_{y} = vu_{y} + uv_{y}
+\end{align}
+$$
+
+令
+
+$$
+\left\{ 
+\begin{array}{l}
+F(x,y,u,v) = x - e^{u}\cos v, \\
+G(x,y,u,v) = y - e^{u}\sin v.
+\end{array}
+\right.
+$$
+
+$$
+\begin{align}
+F_{x} = 1, F_{y} = 0, F_{u} = -e^{u}\cos v, F_{v} = e^{u}\sin v; \\
+G_{x} = 0, G_{y} = 1, G_{u} = -e^{u}\sin v, G_{v} = -e^{v}\cos v.
+\end{align}
+$$
+
+从而得雅可比式
+
+$$
+J = \frac{ \partial (F,G) }{ \partial (u,v) } =
+\left| \begin{array}{cc}
+F_{u} & F_{v} \\
+G_{u} & G_{v} \\
+\end{array} \right| 
+= e^{2u}.
+$$
+
+由隐函数存在定理知
+
+$$
+\begin{align}
+u_{x} & = -\frac{1}{J} \frac{ \partial (F,G) }{ \partial (x,v) } = e^{-u}\cos v, \\
+v_{x} & = -\frac{1}{J} \frac{ \partial (F,G) }{ \partial (u,x) } = -e^{-u}\sin v, \\
+u_{y} & = -\frac{1}{J} \frac{ \partial (F,G) }{ \partial (y,v) } = e^{-u}\sin v, \\
+v_{y} & = -\frac{1}{J} \frac{ \partial (F,G) }{ \partial (u,y) } = e^{-u}\cos v. \\
+\end{align}
+$$
+
+代入得
+
+$$
+\begin{align}
+z_{x} & = e^{-u}(v\cos v - u\sin v); \\
+z_{y} & = e^{-u}(v\sin v + u\cos v).
+\end{align}
+$$
+
+解毕
+
+上述解法是典型的“代公式”法，
+其实公式不必记，求 ${u_{x},v_{x},u_{y}}$ 和 ${v_{y}}$ 完全可依照公式推导的过程去求出，即在 ${x=e^{u}\cos v}$ 和 ${y=e^{u}\sin v}$ 两边对 ${x}$ 求偏导数，
+可得方程组
+
+$$
+\left\{ 
+\begin{array}{l}
+e^{u}\cos v \cdot u_{x} - e^{u}\sin v \cdot v_{x} = 1, \\
+e^{u}\sin v \cdot u_{x} + e^{u}\cos v \cdot v_{x} = 0.
+\end{array}
+\right. 
+$$
+
+
+解方程组可得
+
+$$
+u_{x} = e^{-u} \cos v, v_{x} = -e^{-u}\sin v.
+$$
+
+
+类似可求 ${u_{y}}$ 和 ${v_{y}}$ .
+对于本例的函数而言，实际上 ${u}$ 和 ${v}$ 是可以表为 ${x}$ 和 ${y}$ 的显函数形式.
+
+#### 解2
+从 ${x=e^{u}\cos v,y=e^{u}\sin v}$ 中可以解出
+
+$$
+u = \frac{1}{2} \ln(x^{2}+y^{2}),
+v = \arctan \frac{y}{x}.
+$$
+
+于是 ${z=uv=\frac{1}{2}\ln(x^{2}+y^{2})\cdot \arctan \frac{y}{x}}$ .
+从而有
+
+$$
+\begin{align}
+z_{x} & = z_{u}u_{x} + z_{v}v_{x} = v \cdot \frac{x}{x^{2}+y^{2}} - u \cdot \frac{y}{x^{2}+y^{2}} \\
+  & = e^{-u}(v\cos v-u\sin v); \\
+z_{y} & = z_{u}u_{y} + z_{v}v_{y} = v\cdot \frac{y}{x^{2}+y^{2}} + u \cdot \frac{x}{x^{2}+y^{2}} \\
+  & = e^{-u}(v\sin v+u\cos v).
+\end{align}
+$$
+
+解毕
+
+以上两种解法是视 ${u,v}$ 为中间变量，视 ${x,y}$ 为自变量.
+当然,我们也可以视 ${u,v}$ 为自变量而将 ${x}$ 和 ${y}$ 作为中间变量来处理.
+
+#### 解3
+将 ${u,v}$ 看成自变量，有
+
+$$
+\begin{align}
+z_{u} & = z_{x}x_{u} + z_{y}y_{u}; \\
+z_{v} & = z_{x}x_{v} + z_{y}y_{v}. \\
+\end{align}
+$$
+
+考虑到 ${z=uv,x=e^{u}\cos v,y=e^{u}\sin v}$ , 于是有
+
+$$
+\left\{ 
+\begin{array}{l}
+v = z_{x}e^{u}\cos v + z_{y}e^{u}\sin v, \\
+u = z_{x}(-e^{u}\sin v) + z_{y}e^{u}\cos v.
+\end{array} 
+\right.
+$$
+
+解得
+
+$$
+\begin{align}
+z_{x} & = e^{-u}(v\cos v-u\sin v), \\
+z_{y} & = e^{-u}(v\sin v+u\cos v).
+\end{align}
+$$
+
+解毕
+
+#### 解4
+求 ${z=uv,x=e^{u}\cos v, y=e^{u}\sin v}$ 的全微分，得
+
+$$
+\begin{align}
+\mathrm{d}z & = v\mathrm{d}u+u\mathrm{d}v, \\
+\mathrm{d}x & = e^{u}\cos v\mathrm{d}u - e^{u}\sin v\mathrm{d}v, \\
+\mathrm{d}y & = e^{u}\sin v\mathrm{d}u + e^{u}\cos v\mathrm{d}v.
+\end{align}
+$$
+
+解出 ${\mathrm{d}u,\mathrm{d}v}$ 并代入 ${\mathrm{d}z}$ 
+
+$$
+\begin{align}
+\mathrm{d}z & = v e^{-u}(\cos v\mathrm{d}x + \sin v\mathrm{d}y) + ue^{-u}(-\sin v\mathrm{d}x + \cos v\mathrm{d}y) \\
+  & = e^{-u}(v\cos v - u\sin v) \mathrm{d}x + e^{-u}(v\sin v + u\cos v) \mathrm{d}y .
+\end{align}
+$$
+
+从而知
+
+$$
+\begin{align}
+z_{x} & = e^{-u}(v\cos v - u\sin v) \mathrm{d}x , \\
+z_{y} & = e^{-u}(v\sin v + u\cos v) \mathrm{d}y .
+\end{align}
+$$
+
+解毕
+
+解答问题的目的并非单纯为了得到一个答案，学习过程中做练习题就尤其如此.
+前面三个例子都是极为普通的习题，求出它的答案也并不十分困难，
+倘若一旦得到答案就到此罢休，无疑会错过解题过程中一个重要且富有教益的方面.
+面对一个问题，尝试从不同的出发点、途径、方法和程序去求解，至少有这样几个好处：
+首先，这样做有利于通晓所学的基本理论，有利于洞悉数学各部分内容间的有机联系，促成所学知识的融会贯通.
+其次，当我们追求采用多种方法去解答同一个问题时，最先闯入脑海的思路及所采用的相应解法，往往是自己熟悉的或规范的，因而它也必定是较容易的. 当我们再去寻求第二种、第三种不同的解法时,问题的难度无疑将急剧增大. 从这点看，追求一题多解是发展学生智能的一种强化手段，有利于学生解决问、题能力的良好发展.
+最后，一题多解还有利于学生对自己的学业的自我鉴定及自行矫正能力的培养.
+通常，学生对自己的学业，往往依赖老师的鉴定和指正，这种依赖无益于学生学习的责任心和自信心的养成.
+生活中，为了确信某东西的存在或其质量的好坏，我们总喜欢去看看它、摸摸它，期望用两种不同的感官来感知它,
+同样，解题中我们也期望用两种不同的解法去取得对答案真确性的信心，犹如俗话所说：“抛两个锚更安全”.
+总之，用不同的方法去解决同一个问题，必定会有利于知识的巩固，有利于能力的发展.
+
+下面再举数例，并对每个问题给出几种不同的解法.
+
+%%todo pp173%%
