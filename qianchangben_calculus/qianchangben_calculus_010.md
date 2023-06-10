@@ -38,4 +38,145 @@ $$
 
 我们按这一思路去解.
 
-%%todo pp201%%
+#### 解
+为求两数列的界
+
+$$
+\left\{ \begin{array}{l}
+a_{n} \geq \int_{0}^{1} x \, \mathrm{d}x = \frac{1}{2}, \\
+b_{n} \leq \int_{0}^{1} x \, \mathrm{d}x = \frac{1}{2}
+\end{array} \right. 
+\quad n = 2,3,4,\dots
+$$
+
+利用上述结果，进一步有
+
+$$
+\begin{align}
+a_{n+1} & = \int_{0}^{1} \max (b_{n}, x) \, \mathrm{d}x  \\
+  & = \int_{0}^{\frac{1}{2}} \max (b_{n},x) \, \mathrm{d}x + \int_{\frac{1}{2}}^{1} \max (b_{n},x) \, \mathrm{d}x  \\
+  & \leq \int_{0}^{\frac{1}{2}} \frac{1}{2} \, \mathrm{d}x + \int_{\frac{1}{2}}^{1} x \, \mathrm{d}x = \frac{5}{8}, \quad n = 2,3,4,\dots \\
+\end{align}
+$$
+
+$$
+\begin{align}
+b_{n+1} & = \int_{0}^{1} \min (a_{n}, x) \, \mathrm{d}x  \\
+  & = \int_{0}^{\frac{1}{2}} \min (a_{n},x) \, \mathrm{d}x + \int_{\frac{1}{2}}^{1} \min (a_{n},x) \, \mathrm{d}x  \\
+  & \geq \int_{0}^{\frac{1}{2}} x \, \mathrm{d}x + \int_{\frac{1}{2}}^{1} \frac{1}{2} \, \mathrm{d}x = \frac{3}{8}, \quad n = 2,3,4,\dots \\
+\end{align}
+$$
+
+从而知
+
+$$
+\left\{ \begin{array}{l}
+\frac{1}{2} \leq a_{n} \leq \frac{5}{8}, \\
+\frac{3}{8} \leq b_{n} \leq \frac{1}{2}.
+\end{array} \right. 
+\quad n=3,4,5,\dots
+$$
+
+两数列都有界，但它们单调性无法确定，不妨先将数列递推关系进一步明确，
+
+$$
+\begin{align}
+a_{n+1} & = \int_{0}^{b_{n}} \max (b_{n}, x) \, \mathrm{d}x + \int_{b_{n}}^{ 1 } \max (b_{n}, x) \, \mathrm{d}x \\
+  & = \int_{0}^{b_{n}} b_{n} \, \mathrm{d}x + \int_{b_{n}}^{1} x \, \mathrm{d}x = \frac{1}{2} + \frac{b_{n}^{2}}{2}, \quad n = 3,4,5,\dots,  
+\end{align}
+$$
+
+$$
+\begin{align}
+b_{n+1} & = \int_{0}^{a_{n}} \min (a_{n}, x) \, \mathrm{d}x + \int_{a_{n}}^{ 1 } \min (a_{n}, x) \, \mathrm{d}x \\
+  & = \int_{0}^{a_{n}} x \, \mathrm{d}x + \int_{a_{n}}^{1} a_{n} \, \mathrm{d}x = a_{n} - \frac{a_{n}^{2}}{2}, \quad n = 3,4,5,\dots,  
+\end{align}
+$$
+
+即有
+
+$$
+\left\{ \begin{array}{ll}
+2a_{n+1} & = 1 + b_{n}^{2}, \\
+2b_{n+1} & = 2a_{n} - a_{n}^{2}.
+\end{array} \right. 
+\quad n = 3,4,5,\dots
+$$
+
+于是，当 ${ n=4,5,6,\dots }$ 时
+
+$$
+\begin{align}
+a_{n+2}-a_{n+1} & = \frac{1}{2} (b_{n+1}^{2} - b_{n}), \\
+b_{n+1}-b_{n} & = \frac{1}{2}(a_{n}-a_{n-1})[2-(a_{n}+a_{n-1})].
+\end{align}
+$$
+
+从而
+
+$$
+\begin{align}
+a_{n+2}-a_{n+1} & = \frac{1}{2}(b_{n+1}+b_{n})(b_{n+1}-b_{n})  \\
+  & = \frac{1}{4} (b_{n+1}+b_{n})(a_{n}-a_{n-1})[2-(a_{n}+a_{n-1})],
+\end{align}
+$$
+
+$$
+\begin{array}{rcl}
+\frac{3}{4} \leq & b_{n+1} + b_{n}   & \leq 1; \\
+\frac{3}{4} \leq & 2-(a_{n}+a_{n-1}) &  \leq 1; \\
+\end{array}
+$$
+
+取绝对值
+
+$$
+|a_{n+2} - a_{n+1}| \leq \frac{1}{4} |a_{n} - a_{n-1}|.
+\quad n=4,5,6,\dots
+$$
+
+反复利用上式可得
+
+$$
+\begin{align}
+|a_{2m} - a_{2m-1}| & \leq \frac{1}{4^{ m-2 }} |a_{4} - a_{3}|; \\
+|a_{2m+1} - a_{2m}| & \leq \frac{1}{4^{ m-2 }} |a_{5} - a_{4}|.
+\end{align}
+\quad m = 3,4,5,\dots
+$$
+
+记 ${ A=\max (|a_{5}-a_{4}|,|a_{4}-a_{3}|) , k = \left[ \frac{n}{2} \right]-2 }$ 时，则有
+
+$$
+|a_{n} - a_{n-1}| \leq \frac{A}{4^{ k }},
+\quad n=6,7,8,\dots
+$$
+
+因此，对任意的 ${ m>n }$ ，记 ${ l = \left[ \frac{m}{2} \right]-2, k = \left[ \frac{n}{2} \right]-2 }$ , 则有
+
+$$
+\begin{align}
+|a_{m} - a_{n}| & = \left| (a_{m} - a_{m-1}) + (a_{m-1} - a_{m-2}) + \dots + (a_{n+1} - a_{n}) \right|  \\
+  & \leq |a_{m} - a_{m-1}| + |a_{m-1} - a_{m-2}| + \dots + |a_{n+1} - a_{n}| \\
+  & \leq \frac{A}{4^{ l }} + \dots + \frac{A}{4^{ k }} < \frac{(m-n)A}{4^{ k }}.
+\end{align}
+$$
+
+因为 ${ \lim_{ n \to \infty } \frac{(m-n)A}{4^{ k }} = \lim_{ n \to \infty } \frac{(m-n)A}{4^{ [n/2] - 2 }} = 0 }$ .
+故由柯西极限存在准则知 ${ \lim_{ n \to \infty }a_{n} }$ 存在
+由此推知 ${ \lim_{ n \to \infty }b_{n} }$ 也存在。
+
+记 ${ \lim_{ n \to \infty }a_{n} = a, \lim_{ n \to \infty }b_{n} = b }$ 
+
+$$
+\left\{ \begin{array}{l}
+2a & = 1+b^{2}, \\
+2b & = 2a-a^{2}.
+\end{array} \right. 
+$$
+
+解得 ${ a = 2 - \sqrt{ 2 }, b = \sqrt{ 2 } - 1 }$ .
+
+解毕
+
+%%todo pp203%%
