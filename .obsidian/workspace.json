@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "895b7dd036462fdc",
+            "id": "ee490490d258bbb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_009.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3afb3639684f1865",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "202305041540 latex suite setting.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_009.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_009.md"
+                "file": "qianchangben_calculus/qianchangben_calculus_010.md"
               }
             }
           },
@@ -135,11 +123,13 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "895b7dd036462fdc",
+  "active": "ee490490d258bbb2",
   "lastOpenFiles": [
+    "qianchangben_calculus/qianchangben_calculus_009.md",
+    "qianchangben_calculus/qianchangben_calculus_010.md",
+    "qianchangben_calculus/attachments/qianchangben_calculus_009-.png",
     "202305041540 latex suite setting.md",
     "qianchangben_calculus/qianchangben_calculus_008.md",
-    "qianchangben_calculus/qianchangben_calculus_009.md",
     "202306081627 三角函数定积分的一个重要结论 递推式.md",
     "qianchangben_calculus/qianchangben_calculus_003.md",
     "qianchangben_calculus/attachments/qianchangben_calculus_008--2.png",
@@ -168,7 +158,6 @@
     "yupin/202305221712 于品 数学分析讲义 阅读笔记-1.md",
     "yupin/202205141105 Euler formula.md",
     "yupin",
-    "conway/21-11-14 johnConway_OneNumberAndGames.md",
     "具体数学/attachements/CMChap3-.png",
     "具体数学/attachements",
     "qianchangben_calculus/attachments/qianchangben_calculus_006--1.png",
@@ -180,7 +169,6 @@
     "qianchangben_calculus/attachments/qianchangben_calculus_003-.png",
     "qianchangben_calculus/attachments/qianchangben_calculus_003-7.png",
     "attachments/qianchangben_calculus_004--4.png",
-    "attachments/qianchangben_calculus_006-.png",
     "rudin/bbr/mydefbook.tex",
     "rudin/bbr/listofspecialsymbols-.tex"
   ]
