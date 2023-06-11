@@ -1,0 +1,130 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3766,        120]
+NotebookOptionsPosition[      2961,         97]
+NotebookOutlinePosition[      3379,        114]
+CellTagsIndexPosition[      3336,        111]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\:94b1\:660c\:672c \:4f8b103 check", "Text",
+ CellChangeTimes->{{3.8954806254546585`*^9, 
+  3.8954806317985916`*^9}},ExpressionUUID->"79e24e2f-a5fc-4fe9-9401-\
+eff7f87bcb47"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"y", "'"}], "[", "x", "]"}], "==", 
+      RowBox[{"z", "[", "x", "]"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"z", "'"}], "[", "x", "]"}], "==", 
+      RowBox[{"-", 
+       RowBox[{"y", "[", "x", "]"}]}]}], ",", 
+     RowBox[{
+      RowBox[{"y", "[", "0", "]"}], "==", "0"}], ",", 
+     RowBox[{
+      RowBox[{"z", "[", "0", "]"}], "==", "1"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"y", "[", "x", "]"}], ",", 
+     RowBox[{"z", "[", "x", "]"}]}], "}"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.895480431463081*^9, 3.8954804412173505`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"42087155-7bcb-47de-b178-28e58b739926"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"y", "[", "x", "]"}], "\[Rule]", 
+     RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+    RowBox[{
+     RowBox[{"z", "[", "x", "]"}], "\[Rule]", 
+     RowBox[{"Cos", "[", "x", "]"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.8954804423152676`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"bec21d71-a569-4841-831e-20adaa12d5af"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"f", "'"}], "[", "x", "]"}], "==", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], "/", "x"}], "+", "4"}]}], ",", 
+     RowBox[{
+      RowBox[{"f", "[", "1", "]"}], "==", "0"}]}], "}"}], ",", 
+   RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.895480445167286*^9, 3.8954804478552914`*^9}, {
+  3.89548055418468*^9, 3.895480614408119*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"a5c85938-8b14-4b8f-91f0-90c1bb2927d3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"f", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{"4", " ", "x", " ", 
+     RowBox[{"Log", "[", "x", "]"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8954805688616943`*^9, 3.8954806148112216`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"8d40caa8-d33c-4492-9e21-f8284f5a531c"]
+}, Open  ]]
+},
+WindowSize->{571.8, 524.4},
+WindowMargins->{{284.4, Automatic}, {18, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (2022\:5e742\:67084\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"018988ff-2e19-415c-9011-46237e0c51e2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 180, 3, 35, "Text",ExpressionUUID->"79e24e2f-a5fc-4fe9-9401-eff7f87bcb47"],
+Cell[CellGroupData[{
+Cell[763, 27, 787, 23, 64, "Input",ExpressionUUID->"42087155-7bcb-47de-b178-28e58b739926"],
+Cell[1553, 52, 409, 11, 32, "Output",ExpressionUUID->"bec21d71-a569-4841-831e-20adaa12d5af"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1999, 68, 594, 16, 43, "Input",ExpressionUUID->"a5c85938-8b14-4b8f-91f0-90c1bb2927d3"],
+Cell[2596, 86, 349, 8, 32, "Output",ExpressionUUID->"8d40caa8-d33c-4492-9e21-f8284f5a531c"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
