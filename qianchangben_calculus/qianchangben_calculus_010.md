@@ -387,4 +387,149 @@ $$
 
 即 ${ \left( \frac{f(x)}{x} \right)' = \frac{4}{x} }$ , 两边积分可求解。
 
-%%todo pp206%%
+### 例104
+设 ${ f(x) }$ 为 ${ [a,b] }$ 上的连续正值函数，若在 ${ x_{0} }$ 点 ${ (a \leq x_{0} \leq b) }$ 处 ${ f(x) }$ 有最大值 ${ M }$ .
+试证
+
+$$
+M = \lim_{ n \to \infty } \left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n } .
+$$
+
+为了弄清题目的本质意义及结论的来历，我们不妨采用收缩的手法，看其简单的情形。
+
+连续函数 ${ f(x) }$ 在区间 ${ [a,b] }$ 上的平均值为
+
+$$
+\frac{1}{b-a} \int_{a}^{b} f(x) \, \mathrm{d}x .
+$$
+
+而 ${ \sqrt{ \frac{1}{b-a}\int_{a}^{b} f^{2}(x) \, \mathrm{d}x } }$ 叫做 ${ f(x) }$ 在们上的均方根,
+
+为统一，我们
+称平均值为 ${ f(x) }$ 在 ${ [a,b] }$ 上的一次幂平均；
+称均方根为 ${ f(x) }$ 在 ${ [a,b] }$ 的二次幂平均.
+于是 ${ f(x) }$ 在 ${ [a,b] }$ 上的 ${ n }$ 次幂平均为
+
+$$
+\left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n } .
+$$
+
+当 ${ f(x) }$ 满足题设的条件时,  ${ f(x) }$ 在 ${ [a,b] }$上的最大值就等于 ${ f(x) }$ 在 ${ [a,b] }$ 上的 ${ n }$ 次幂平均在 ${ n\to + \infty }$ 时的极限值.
+
+当我们进一步将连续正值函数 ${ f(x) }$ 离散为 ${ [a,b] }$ 区间上的 ${ m }$ 个点处的函数值
+
+$$
+y_{1},y_{2},y_{3},\dots,y_{m} 
+\quad (y_{i}>0, i = 1,2,\dots,m) .
+$$
+
+我们称 ${ m }$ 个正数 ${ y_{1},y_{2},y_{3},\dots,y_{m}  }$ 的 ${ n }$ 次幂平均为
+
+$$
+\left( \frac{y_{1}^{ n } + y_{2}^{ n } + \dots +y_{m}^{ n } }{m} \right)^{ 1/n }
+$$
+
+简记成 ${ M_{n}(y) }$ , 可以证明
+
+$$
+\lim_{ n \to 0 } M_{n}(y) = \sqrt[m]{ y_{1}y_{2}\dots y_{m} } = G.
+$$
+
+因为
+
+$$
+\ln M_{n}(y) = \frac{1}{n} \ln \frac{y_{1}^{ n } + y_{2}^{ n } + \dots +y_{m}^{ n } }{m},
+$$
+
+记
+
+$$
+\frac{y_{1}^{ n } + y_{2}^{ n } + \dots +y_{m}^{ n } }{m} = t
+$$
+
+因为
+
+$$
+\lim_{ n \to 0 } y_{i}^{ n } = 1
+\quad (i = 1,2,\dots,m),
+$$
+
+所以
+
+$$
+\lim_{ n \to 0 } t = 1,
+$$
+
+于是
+
+$$
+\ln M_{n}(y) = \frac{1}{n} \ln t = \frac{t-1}{n} \cdot \frac{\ln[1+(t-1)]}{t-1},
+$$
+
+由于
+
+$$
+\lim_{ n \to 0 } \frac{\ln[1+(t-1)]}{t-1} = 1
+$$
+
+且
+
+$$
+\begin{align}
+\lim\limits_{n\to0}\frac{t-1}{n}&=\lim\limits_{n\to0}\frac{\frac{1}{m}(y_1^n+y_2^n+\cdots+y_m^n)-1}{n} \\
+&=\frac{1}{m}\Big[\lim\limits_{n\to0}\frac{y_1^n-1}{n}+\lim\limits_{n\to0}\frac{y_2^n-1}{n}+\cdots+\lim\limits_{n\to0}\frac{y_n^n-1}{n}\Big] \\
+&=\frac{1}{m}(\ln y_1+\ln y_2+\cdots+\ln y_m) \\
+&=\ln\sqrt[m]{y_1y_2\cdots y_m}.
+\end{align}
+$$
+
+$$
+\lim_{ n \to 0 } \ln M_{n} (y) = \ln \sqrt[m]{ y_{1}y_{2}\dots y_{m} }
+$$
+
+$$
+\lim_{ n \to 0 } M_{n} (y) = \sqrt[m]{ y_{1}y_{2}\dots y_{m} } = G.
+$$
+
+(先证 AM-GM 不等式)
+
+于是可以定义
+ ${ M_{0}(y) }$ 为 ${ y_{1},y_{2},\dots y_{m} }$ 的几何平均；
+ 当 ${ n=1 }$ 时 ${ M_{1}(y) }$ 为算术平均，即
+ 
+$$
+M_{1}(y) = \frac{y_{1} + y_{2} + \dots + y_{m}}{m} = A.
+$$
+
+ 当 ${ n=-1 }$ 时 ${ M_{-1}(y) }$ 为调和平均
+ 
+$$
+M_{-1}(y) = \frac{m}{\frac{1}{y_{1}} + \frac{1}{y_{2}} + \dots + \frac{1}{y_{m}}} = H.
+$$
+
+易知对任意 ${ m }$ 个正数 ${ y_{i}(i=1,2,\dots,m) }$ 恒有
+
+$$
+H \leq G \leq A,
+$$
+
+也即
+
+$$
+M_{-1}(y) \leq M_{0}(y) \leq M_{1}(y).
+$$
+
+由此，自然使人猜想: “在 ${ \alpha<\beta }$ 时,会有 ${ M_{\alpha}(y) \leq M_{\beta}(y) }$ ”.
+也即 ${ M_{\alpha}(y) }$ 是变量 ${ \alpha }$ 的增函数.
+
+又因
+
+$$
+\min \left(y_{1},y_{2},\cdots,y_{m}\right) \leq
+M_{\alpha}(y) \leq
+\max \left(y_{1},y_{2},\cdots,y_{m}\right) 
+$$
+
+故 ${ M_{\alpha}(y), \alpha\to + \infty }$ 必有极限
+它的极限是什么？
+%%todo pp209%%
