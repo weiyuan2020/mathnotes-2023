@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
+                "file": "202306120918 一些有帮助的网址.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,27 +33,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2ee8522b89541f45",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "\\int_{0}^{\\pi/2}",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "byModifiedTime"
-              }
-            }
-          },
-          {
             "id": "b92f09b65dcb2e9d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2ee8522b89541f45",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
               }
             }
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
+                "file": "202306120918 一些有帮助的网址.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_010.md"
+                "file": "202306120918 一些有帮助的网址.md"
               }
             }
           },
@@ -125,8 +125,14 @@
   },
   "active": "ee490490d258bbb2",
   "lastOpenFiles": [
-    "qianchangben_calculus/qianchangben_calculus_009.md",
+    "20-08-07.md",
+    "202306120918 一些有帮助的网址.md",
+    "202306041157 用均值不等式解决一个极值问题.md",
+    "202306120846 2023高考数学北京卷压轴题.md",
+    "attachments/202306120846 2023高考数学北京卷压轴题-.webp",
+    "polya数学与猜想读书笔记.md",
     "qianchangben_calculus/qianchangben_calculus_010.md",
+    "qianchangben_calculus/qianchangben_calculus_009.md",
     "qianchangben_calculus/attachments/qianchangben_calculus_009-.png",
     "202305041540 latex suite setting.md",
     "qianchangben_calculus/qianchangben_calculus_008.md",
@@ -145,7 +151,6 @@
     "202008150900 单墫 三元不等式问题一例.md",
     "202306070842 单墫 不定方程问题一例.md",
     "mathematica/钱昌本-高数解题-chap08.nb",
-    "202306041157.md",
     "202305011403 sinx x integrate.md",
     "rudin/bbr/chap01sec09exercise.md",
     "rudin/bbr/chap01sec08appendix.md",
@@ -153,10 +158,6 @@
     "rudin/bbr/chap01 appendix.md",
     "rudin/bbr/chap01_appendix.md",
     "xiehuimin",
-    "qianchangben_calculus/qianchangben_calculus_chap01.md",
-    "yupin/202305221725 于品 2.md",
-    "yupin/202305221712 于品 数学分析讲义 阅读笔记-1.md",
-    "yupin/202205141105 Euler formula.md",
     "yupin",
     "具体数学/attachements/CMChap3-.png",
     "具体数学/attachements",
@@ -168,7 +169,6 @@
     "具体数学/Concrete Mathematics - knuth.pdf",
     "qianchangben_calculus/attachments/qianchangben_calculus_003-.png",
     "qianchangben_calculus/attachments/qianchangben_calculus_003-7.png",
-    "attachments/qianchangben_calculus_004--4.png",
     "rudin/bbr/mydefbook.tex",
     "rudin/bbr/listofspecialsymbols-.tex"
   ]
