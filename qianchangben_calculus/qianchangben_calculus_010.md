@@ -804,8 +804,208 @@ $$
 
 $$
 \begin{align}
-\ln\left[ \left( 1 + \frac{1}{2n} \right)\left( 1 + \frac{1}{n} \right)^{ n }  \right] & = \ln\left( 1+\frac{1}{2n} \right) + n \ln\left( 1+\frac{1}{n} \right) \\
+I & = \ln\left[ \left( 1 + \frac{1}{2n} \right)\left( 1 + \frac{1}{n} \right)^{ n }  \right]  \\
+ & = \ln\left( 1+\frac{1}{2n} \right) + n \ln\left( 1+\frac{1}{n} \right) \\
+  & = \ln \frac{1+\frac{1}{4n+1}}{1-\frac{1}{4n+1}} + n \ln \frac{1+\frac{1}{2n+1}}{1-\frac{1}{2n+1}} \\
+  & = 2\left[ \frac{1}{4n+1} + \frac{1}{3(4n+1)^{3}} + \dots \right]  \\
+  & \qquad + 2n \left[ \frac{1}{2n+1} + \frac{1}{3(2n+1)^{3}} + \dots \right] \\
+  & > \frac{2}{4n+1} + \frac{2n}{4n+1} > \frac{2}{4n+2} + \frac{2n}{2n+1} = 1.
 \end{align}
 $$
 
-%%todo pp213%%
+所以
+
+$$
+e < \left( 1 + \frac{1}{2n} \right)\left( 1 + \frac{1}{n} \right)^{ n }.
+$$
+
+类似，有
+
+$$
+\begin{align}
+I & = \ln\left[ \left( 1 + \frac{1}{2n+1} \right)\left( 1 + \frac{1}{n} \right)^{ n }  \right] \\
+ & = \ln\left( 1+\frac{1}{2n+1} \right) + n \ln\left( 1+\frac{1}{n} \right) \\
+  & = \ln\left( 1+\frac{1}{2n+1} \right) + n \ln\left( \frac{2n+2}{2n} \right) \\ 
+  & = \ln\left( 1+\frac{1}{2n+1} \right) + n \ln\left( \frac{1+\frac{1}{2n+1}}{1 - \frac{1}{2n+1}} \right) \\ 
+  & = (n+1)\ln\left( 1+\frac{1}{2n+1} \right) - n \ln\left( {1 - \frac{1}{2n+1}} \right) \\
+  & = (n+1)\left[ \frac{1}{2n+1} - \frac{1}{2(2n+1)^{2}} + \frac{1}{3(2n+1)^{3}} - \dots \right]  \\
+  & \qquad + n\left[ \frac{1}{2n+1} + \frac{1}{2(2n+1)^{2}} + \frac{1}{3(2n+1)^{3}} + \dots  \right] \\
+  & = 1 - \frac{1}{2(2n+1)^{2}} + \frac{1}{3(2n+1)^{2}} - \frac{1}{4(2n+1)^{ 4 }} + \frac{1}{5(2n+1)^{ 4 }} - \dots  \\
+  & = 1 - \frac{1}{6(2n+1)^{2}} - \frac{1}{20(2n+1)^{ 4 }} - \dots  < 1.
+\end{align}
+$$
+
+所以 
+
+$$
+\left( 1 + \frac{1}{2n+1} \right)\left( 1 + \frac{1}{n} \right)^{ n } < e.
+$$
+
+证毕
+
+### 例106
+设函数 ${ f(x) }$ 满足 ${ f(1) = 1 }$ 且 ${ x\geq 1 }$ 时有
+
+$$
+f'(x) = \frac{1}{x^{2} + f^{2}(x)} .
+$$
+
+试证 ${ \lim \limits_{ n \to \infty } f(x) }$ 存在且极限值小于 ${ 1 + \frac{\pi}{4} }$ .
+
+#### 证
+由题设条件
+
+$$
+f'(x) = \frac{1}{x^{2} + f^{2}(x)} 
+\quad (x \geq 1)
+$$
+
+知 ${ x\geq 1 }$ 时 ${ f'(x)>0 }$ , 从而 ${ f(x) }$ 在 ${ x>1 }$ 上严格单调增。
+所以欲证 ${ \lim\limits_{ n \to \infty } f(x)}$ 存在，只需证明 ${ f(x) }$ 有上界。
+当 ${ x>1 }$ 时有
+
+$$
+f(x) > f(1) = 1,
+$$
+
+所以
+
+$$
+f'(x) =  \frac{1}{x^{2} + f^{2}(x)} <  \frac{1}{x^{2} + 1} .
+$$
+
+从而， ${ x>1 }$ 时
+
+$$
+\begin{align}
+f(x) & = \int_{1}^{x} f'(t) \, \mathrm{d}t + f(1) \\
+  & = \int_{1}^{x} \frac{1}{t^{2} + f^{2}(t)} \, \mathrm{d}t + 1 < 1 + \int_{1}^{x} \frac{1}{t^{2}+1} \, \mathrm{d}t  \\
+  & = 1 + \arctan x - \frac{\pi}{4} < 1 + \frac{\pi}{2} - \frac{\pi}{4} = 1 + \frac{\pi}{4} .
+\end{align}
+$$
+
+可见 ${ f(x),(x\geq 1) }$ 有上界 ${ 1+\frac{\pi}{4} }$ ,
+于是 ${ \lim \limits_{ x \to +\infty } f(x) }$ 存在且极限值不大于 ${ 1+\frac{\pi}{4} }$ 。
+又因为
+
+$$
+\begin{align}
+\lim \limits_{ x \to +\infty } & = \lim \limits_{ x \to +\infty } \left[ 1 + \int_{1}^{x} \frac{1}{t^{2} + f^{2}(t)} \, \mathrm{d}t \right] \\
+  & = 1 + \int_{1}^{+\infty} \frac{1}{t^{2} + f^{2}(t)} \, \mathrm{d}t < 1 + \int_{1}^{+\infty} \frac{1}{t^{2} + 1} \, \mathrm{d}t = 1 + \frac{\pi}{4} .
+\end{align}
+$$
+
+所以 ${ \lim \limits_{ x \to +\infty } f(x) }$ 的值小于 ${ 1+\frac{\pi}{4} }$ . 
+
+证毕
+
+### 例107
+点 ${ A(3,1,-1) }$ 是闭曲面 ${ S_{1} }$ 
+
+$$
+x^{2}+y^{2}+z^{2}-2x-6y+4z = 10
+$$
+
+内的定点。
+求以点 ${ A }$ 为球心的球面 ${ S_{2} }$ ，
+使 ${ S_{2} }$ 被包含在 ${ S_{1} }$ 内的那部分面积 ${ S }$ 为最大。
+
+#### 解
+将 ${ S_{1} }$ 变形，知 ${ S_{1} }$ 是球面
+
+$$
+(x-1)^{2} + (y-3)^{2} + (z+2)^{2} = 24 ,
+$$
+
+球心 ${ O(1,3,-2) }$ ，半径 ${ \sqrt{ 24 } }$ .
+易知 ${ |AO| = 3 }$ 
+
+只需 ${ S_{2} }$ 的半径，空间位置不影响问题本质。作如下变换
+
+$$
+S_{1}' : x^{2}+y^{2}+z^{2} = 24, A(0,0,3)
+$$
+
+$$
+S_{2}' : x^{2}+y^{2}+(z-3)^{2}=r^{2}
+$$
+
+ ${ 0<r \leqslant \sqrt{ 24 } - 3 }$ 时
+ 
+$$
+S = 4\pi r^{2} \leqslant 4\pi (\sqrt{ 24 } - 3)^{2} . 
+$$
+
+当 ${ \sqrt{ 24 } - 3 \leqslant r \leqslant \sqrt{ 24 } + 3 }$ 时，两球面 ${ S_{1},S_{2} }$ 交线为圆 ${ C }$ 
+
+$$
+\left\{ \begin{array}{l}
+x^{2} + y^{2} + z^{2} = 24, \\
+x^{2} + y^{2} + (z-3)^{2} = r^{2} .
+\end{array} \right. 
+$$
+
+消去 ${ x,y }$ 得到
+
+$$
+z(r) = \frac{1}{6} (33 - r^{2}) .
+$$
+
+![](attachments/qianchangben_calculus_010-.png)
+
+ ${ S }$ 为半径为 ${ r }$ 的球冠的面积，球冠高为
+ 
+$$
+h(r) = r - 3 + z(r) = \frac{1}{6}(15 + 6r - r^{2}) .
+$$
+
+为求 ${ S }$ ，视其为圆 ${ x^{2}+y^{2}=r^{2} }$ 上一段绕 ${ x }$ 轴旋转而得
+
+$$
+\begin{align}
+2x + 2yy'=0, \\
+\sqrt{ 1+y'^{2} } = \frac{r}{y}.
+\end{align}
+$$
+
+所以
+
+$$
+\begin{align}
+S(h) & = \int_{r-h}^{r} 2\pi y(x) \sqrt{ 1+y'^{2}(x) } \, \mathrm{d}x  \\
+  &  = \int_{r-h}^{r} 2\pi r \, \mathrm{d}x = 2\pi rh. \\
+\end{align}
+$$
+
+球冠面积为
+
+$$
+S(r) = 2\pi r \times \frac{1}{6}(15+6r - r^{2}) = \left( 5r + 2r^{2} - \frac{1}{3}r^{3} \right)\pi.
+$$
+
+对 ${ r }$ 求导，得
+
+$$
+\begin{align}
+S'(r) & = (5 + 4r - r^{2})\pi = (1+r)(5-r)\pi . \\
+S''(r) & = (4-2r)\pi
+\end{align}
+$$
+
+ ${ S'(r) }$ 在 ${ (\sqrt{ 24 } - 3, \sqrt{ 24 } + 3) }$ 上得唯一驻点 ${ r=5 }$ 
+
+$$
+S''(5) = -6\pi < 0
+$$
+
+ ${ S(r) }$ 在 ${ r=5 }$ 处取最大值 ${ S(5) = \frac{100\pi}{3} }$ .
+从而知所求球面半径 ${ r=5 }$ .
+
+回代得到所求球面
+
+$$
+(x-3)^{2} + (y-1)^{2} + (z+1)^{2} = 25.
+$$
+
+解毕
+

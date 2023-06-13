@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "527dada5b0b338d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "202305041540 latex suite setting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -123,18 +135,19 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "9ac2e765ad0a9ac3",
+  "active": "ee490490d258bbb2",
   "lastOpenFiles": [
+    "qianchangben_calculus/attachments/qianchangben_calculus_010-.png",
+    "202305041540 latex suite setting.md",
+    "qianchangben_calculus/qianchangben_calculus_010.md",
     "202306120918 一些有帮助的网址.md",
     "20-08-07.md",
     "202306041157 用均值不等式解决一个极值问题.md",
     "202306120846 2023高考数学北京卷压轴题.md",
     "attachments/202306120846 2023高考数学北京卷压轴题-.webp",
     "polya数学与猜想读书笔记.md",
-    "qianchangben_calculus/qianchangben_calculus_010.md",
     "qianchangben_calculus/qianchangben_calculus_009.md",
     "qianchangben_calculus/attachments/qianchangben_calculus_009-.png",
-    "202305041540 latex suite setting.md",
     "qianchangben_calculus/qianchangben_calculus_008.md",
     "202306081627 三角函数定积分的一个重要结论 递推式.md",
     "qianchangben_calculus/qianchangben_calculus_003.md",
@@ -156,7 +169,6 @@
     "rudin/bbr/chap01sec08appendix.md",
     "rudin/bbr/chap01sec appendix.md",
     "rudin/bbr/chap01 appendix.md",
-    "rudin/bbr/chap01_appendix.md",
     "xiehuimin",
     "yupin",
     "具体数学/attachements/CMChap3-.png",

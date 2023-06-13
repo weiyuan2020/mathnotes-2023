@@ -1,10 +1,6 @@
-latex suite
-quick latex for obsidian
-
-```json
 [    
     // Math mode
-    {trigger: "mk", replacement: " ${$0}$ ", options: "tA"},
+    {trigger: "mk", replacement: " ${ $0 }$ ", options: "tA"},
     {trigger: "dm", replacement: "\n$$\n$0\n$$\n\n", options: "tAw"},
     {trigger: "ddm", replacement: "\n\n$$\n$0\n$$\n\n", options: "tA"},
     {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
@@ -56,7 +52,7 @@ quick latex for obsidian
     {trigger: "\\\\(${GREEK}|${SYMBOL}|${SHORT_SYMBOL})([A-Za-z])", replacement: "\\[[0]] [[1]]", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) sr", replacement: "\\[[0]]^{2}", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) cb", replacement: "\\[[0]]^{3}", options: "rmA"},
-    {trigger: "\\\\(${GREEK}|${SYMBOL}) rd", replacement: "\\[[0]]^{$0}$1", options: "rmA"},
+    {trigger: "\\\\(${GREEK}|${SYMBOL}) rd", replacement: "\\[[0]]^{ $0 }$1", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) hat", replacement: "\\hat{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) dot", replacement: "\\dot{\\[[0]]}", options: "rmA"},
     {trigger: "\\\\(${GREEK}|${SYMBOL}) ddot", replacement: "\\ddot{\\[[0]]}", options: "rmA"},
@@ -74,10 +70,11 @@ quick latex for obsidian
     {trigger: "bf", replacement: "\\mathbf{$0}", options: "mA"},
     {trigger: "sr", replacement: "^{2}", options: "mA"},
     {trigger: "cb", replacement: "^{3}", options: "mA"},
-    {trigger: "rd", replacement: "^{$0}$1", options: "mA"},
+    {trigger: "rd", replacement: "^{ $0 }$1", options: "mA"},
     {trigger: "_", replacement: "_{$0}$1", options: "mA"},
     {trigger: "sts", replacement: "_\\text{$0}", options: "rmA"},
     {trigger: "sq", replacement: "\\sqrt{ $0 }$1", options: "mA"},
+    {trigger: "ssq", replacement: "\\sqrt[ $0 ]{ $1 }$2", options: "mA"},
     {trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
     {trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
     {trigger: "rm", replacement: "\\mathrm{$0}$1", options: "mA"},
@@ -85,6 +82,8 @@ quick latex for obsidian
     {trigger: "trace", replacement: "\\mathrm{Tr}", options: "mA"},
     {trigger: "det", replacement: "\\det", options: "mA"},
 	{trigger: "binom", replacement: "\\binom{$0}{$1}$2", options: "mA"},
+    {trigger: "max", replacement: "\\max ", options: "mA"},
+    {trigger: "min", replacement: "\\min ", options: "mA"},
 
 
     {trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
@@ -112,7 +111,7 @@ quick latex for obsidian
     {trigger: "([^\\\\])(arcsin|arccos|arctan|arccot|arccsc|arcsec|sin|cos|tan|cot|csc)", replacement: "[[0]]\\[[1]]", options: "rmA"},
     {trigger: "\\\\(arcsin|arccos|arctan|arccot|arccsc|arcsec|sin|cos|tan|cot|csc)([A-Za-gi-z])", replacement: "\\[[0]] [[1]]", options: "rmA"}, // Insert space after trig funcs. Skips letter "h" to allow sinh, cosh, etc.
     {trigger: "\\\\(arcsinh|arccosh|arctanh|arccoth|arcsch|arcsech|sinh|cosh|tanh|coth|csch)([A-Za-z])", replacement: "\\[[0]] [[1]]", options: "rmA"}, // Insert space after trig funcs
-    {trigger: "\\\\(neq|geq|leq|gg|ll|sim)([0-9]+)", replacement: "\\[[0]] [[1]]", options: "rmA"}, // Insert space after inequality symbols
+    {trigger: "\\\\(neq|geq|leq|gg|ll|sim|geqslant|leqslant)([0-9]+)", replacement: "\\[[0]] [[1]]", options: "rmA"}, // Insert space after inequality symbols
 
 
     // Visual operations
@@ -125,44 +124,47 @@ quick latex for obsidian
 
 
     // Symbols
-    {trigger: "ooo", replacement: "\\infty", options: "mA"},
+    {trigger: "ooo", replacement: "\\infty ", options: "mA"},
     {trigger: "sum", replacement: "\\sum $0", options: "mA"},
     {trigger: "\sum m", replacement: "sum_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "prod", replacement: "\\prod $0", options: "mA"},
     {trigger: "\prod d", replacement: "prod_{${0:n} = ${1:0}}^{${2:\\infty}} $3", options: "mA"},
     {trigger: "lim", replacement: "\\lim_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
-    {trigger: "pm", replacement: "\\pm", options: "m"},
-    {trigger: "mp", replacement: "\\mp", options: "m"},
-    {trigger: "...", replacement: "\\dots", options: "mA"},
+    {trigger: "lms", replacement: "\\lim \\limits_{ ${0:n} \\to ${1:\\infty} } $2", options: "mA"},
+    {trigger: "pm", replacement: "\\pm ", options: "m"},
+    {trigger: "mp", replacement: "\\mp ", options: "m"},
+    {trigger: "...", replacement: "\\dots ", options: "mA"},
     {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
-    {trigger: "->", replacement: "\\to", options: "mA"},
-    {trigger: "!>", replacement: "\\mapsto", options: "mA"},
+    {trigger: "->", replacement: "\\to ", options: "mA"},
+    {trigger: "!>", replacement: "\\mapsto ", options: "mA"},
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
-    {trigger: "\\\\\\", replacement: "\\setminus", options: "mA"},
-    {trigger: "||", replacement: "\\mid", options: "mA"},
-    {trigger: "and", replacement: "\\cap", options: "mA"},
-    {trigger: "orr", replacement: "\\cup", options: "mA"},
+    {trigger: "\\\\\\", replacement: "\\setminus ", options: "mA"},
+    {trigger: "||", replacement: "\\mid ", options: "mA"},
+    {trigger: "and", replacement: "\\cap ", options: "mA"},
+    {trigger: "orr", replacement: "\\cup ", options: "mA"},
     {trigger: "inn", replacement: "\\in", options: "mA"},
-    {trigger: "\\subset eq", replacement: "\\subseteq", options: "mA"},
+    {trigger: "\\subset eq", replacement: "\\subseteq ", options: "mA"},
     {trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
-    {trigger: "=>", replacement: "\\implies", options: "mA"},
-    {trigger: "=<", replacement: "\\impliedby", options: "mA"},
-    {trigger: "iff", replacement: "\\iff", options: "mA"},
-    {trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
+    {trigger: "=>", replacement: "\\implies ", options: "mA"},
+    {trigger: "=<", replacement: "\\impliedby ", options: "mA"},
+    {trigger: "iff", replacement: "\\iff ", options: "mA"},
+    {trigger: "e\\xi sts", replacement: "\\exists ", options: "mA", priority: 1},
     {trigger: "===", replacement: "\\equiv", options: "mA"},
     {trigger: "Sq", replacement: "\\square", options: "mA"},
-    {trigger: "!=", replacement: "\\neq", options: "mA"},
-    {trigger: ">=", replacement: "\\geq", options: "mA"},
-    {trigger: "<=", replacement: "\\leq", options: "mA"},
-    {trigger: ">>", replacement: "\\gg", options: "mA"},
-    {trigger: "<<", replacement: "\\ll", options: "mA"},
+    {trigger: "!=", replacement: "\\neq ", options: "mA"},
+    {trigger: ">=", replacement: "\\geq ", options: "mA"},
+    {trigger: "\geq sl", replacement: "geqslant ", options: "mA"},
+    {trigger: "<=", replacement: "\\leq ", options: "mA"},
+    {trigger: "\leq sl", replacement: "leqslant ", options: "mA"},
+    //{trigger: ">>", replacement: "\\gg", options: "mA"},
+    //{trigger: "<<", replacement: "\\ll", options: "mA"},
     {trigger: "~~", replacement: "\\sim", options: "mA"},
-    {trigger: "\\sim ~", replacement: "\\approx", options: "mA"},
-    {trigger: "prop", replacement: "\\propto", options: "mA"},
-    {trigger: "nabl", replacement: "\\nabla", options: "mA"},
-    {trigger: "del", replacement: "\\nabla", options: "mA"},
-    {trigger: "xx", replacement: "\\times", options: "mA"},
-    {trigger: "**", replacement: "\\cdot", options: "mA"},
+    {trigger: "\\sim ~", replacement: "\\approx ", options: "mA"},
+    {trigger: "prop", replacement: "\\propto ", options: "mA"},
+    {trigger: "nabl", replacement: "\\nabla ", options: "mA"},
+    {trigger: "del", replacement: "\\nabla ", options: "mA"},
+    {trigger: "xx", replacement: "\\times ", options: "mA"},
+    {trigger: "**", replacement: "\\cdot ", options: "mA"},
     {trigger: "para", replacement: "\\parallel", options: "mA"},
     {trigger: "cong", replacement: "\\cong", options: "mA"},
     {trigger: "circ", replacement: "\\circ", options: "mA"},
@@ -296,7 +298,7 @@ quick latex for obsidian
     {trigger: "lra", replacement: "\\left< $0 \\right> $1", options: "mA"},
     {trigger: "ceiling", replacement: "\\lceil $0 \\rceil $1", options: "mA"},
     {trigger: "floor", replacement: "\\lfloor $0 \\rfloor $1", options: "mA"},
-
+    {trigger: "\ll{", replacement: "left\\{ $0 \\right. $1", options: "mA"},
 
 
     // Misc
