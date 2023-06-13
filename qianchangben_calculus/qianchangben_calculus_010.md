@@ -319,9 +319,9 @@ $$
 $$
 \begin{align}
 \frac{f(x+\Delta x)-f(x)}{\Delta x} & =\frac{1}{\Delta x}\left\{f\left[ x\left( 1+\frac{\Delta x}{x}  \right)\right]-f(x)  \right\} \\
-&=\frac{1}{\Delta x}\bigg[\Big(1+\frac{\Delta x}{x}\Big)f(x)+xf\Big(1+\frac{\Delta x}{x}\Big)-f(x)\bigg] \\
-&=\frac{1}{\Delta x}\bigg[\frac{\Delta x}{x}f(x)+xf\bigg(1+\frac{\Delta x}{x}\bigg)\bigg] \\
-&=\frac{f(x)}{x}+\frac{f\Big(1+\frac{\Delta x}{x}\Big)-f(1)}{ \frac{\Delta x}{x}},
+&=\frac{1}{\Delta x}\left[\left(1+\frac{\Delta x}{x}\right)f(x)+xf\left(1+\frac{\Delta x}{x}\right)-f(x)\right] \\
+&=\frac{1}{\Delta x}\left[\frac{\Delta x}{x}f(x)+xf\bigg(1+\frac{\Delta x}{x}\bigg)\right] \\
+&=\frac{f(x)}{x}+\frac{f\left(1+\frac{\Delta x}{x}\right)-f(1)}{ \frac{\Delta x}{x}},
 \end{align}
 $$
 
@@ -532,4 +532,280 @@ $$
 
 故 ${ M_{\alpha}(y), \alpha\to + \infty }$ 必有极限
 它的极限是什么？
-%%todo pp209%%
+
+设 ${ \max(y_{1},y_{2},\dots,y_{m}) = y_{1} }$ , 易知有
+
+$$
+\begin{align}
+y_{1}\Bigl({\frac{1}{m}}\Bigr)^{\frac{1}{n}}&=\Bigl({\frac{y_{1}^{*}}{m}}\Bigr)^{\frac{1}{n}}\leqslant\Bigl({\frac{y_{1}^{*}+y_{2}^{*}+\cdots+y_{m}^{*}}{m}}\Bigr)^{\frac{1}{n}} \\
+&\leqslant\left(\frac{my_1^n}{m}\right)^\frac{1}{n}=y_1 
+\end{align}
+$$
+
+因为 ${ \lim_{ n \to \infty } \left( \frac{1}{m} \right)^{ 1/n } = 1 }$ , 即  ${ \lim_{ n \to \infty } \left( \frac{1}{m} \right)^{ 1/n } = y_{1} }$ .
+
+由夹逼准则知
+
+$$
+\begin{align}
+\operatorname*{lim}_{n\to+\infty}M_{n}(y)& =\lim\limits_{n\to+\infty}\Bigl(\frac{y_1^n+y_2^n+\cdots+y_m^{ n }}{m}\Bigr)^{\frac{1}{n}}  \\
+&=y_1=\max(y_1,y_2,\cdots,y_m).
+\end{align}
+$$
+
+至此可见，本例是上式结论在" ${ f(x) }$ 为 ${ [a, b] }$ 上的连续正值函数 " 情境下的推广。
+下面给出具体的证明。
+
+#### 证
+由闭区间上连续函数必有最大值的定理知，存在 ${ x = x_{0}(a \leq x_{0} \leq b) }$ 使
+
+$$
+f(x_{0}) = \max _{x \in [a, b]} f(x) = M.
+$$
+
+不妨先假设 ${ a<x_{0}<b }$ . 由 ${ f(x) }$ 的连续性知，对任意任意给定的 ${ \varepsilon>0 }$ , 存在 ${ \alpha>0 }$ , 使 ${ x_{0}-a>\alpha }$ 且 ${ b-x_{0} >\alpha }$ ，当
+
+$$
+|x-x_{0}|<\alpha
+$$
+
+时就有 ${ 0<M - \varepsilon \leq f(x) \leq M }$ 成立。 
+有因为 ${ f(x) > 0 }$ , 于是，有
+
+$$
+\begin{aligned}
+&{\frac{1}{b-a}}\int_{a}^{b}[f(x)]''d x={\frac{1}{b-a}}\bigg[\int_{\alpha}^{x_{o}-\alpha}[f(x)]''d x \\
+&+\int_{x_0-\alpha}^{x_0+\alpha}[f(x)]'' dx+\int_{x_0+\alpha}^b[f(x)]''dx\bigg] \\
+&\geqslant\frac{1}{b-a}\int_{x_0-\alpha}^{x_0+\alpha}[f(x)]''dx \\
+&\geqslant\frac{2\alpha}{b-a}(M-\varepsilon)''.
+\end{aligned}
+$$
+
+又因
+
+$$
+\frac{1}{b-a} \int_{a}^{b} [f(n)]^{ n } \, \mathrm{d}x 
+\leq M^{ n },
+$$
+
+所以
+
+$$
+\left( \frac{2\alpha}{b-a} \right)^{ 1/n }(M - \varepsilon) 
+\leq \left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n } 
+\leq M.
+$$
+
+因为 ${ \min_{n\to +\infty} \left( \frac{2\alpha}{b-a} \right)^{ 1/n } = 1 }$ ，
+故对 ${ \frac{\varepsilon}{M} > 0 }$ , 存在正整数 ${ N }$ , 使得当 ${ n>N }$ 时，就有
+
+$$
+\begin{array}{c}
+\left|\left(\frac{2\alpha}{b-a}\right)^{\frac{1}{n}}-1\right|<\frac{\varepsilon}{M}, \\
+\left(\frac{2\alpha}{b-\dot{a}}\right)^{\frac{1}{n}}>1-\frac{\varepsilon}{M}. \\
+\left(\frac{2\alpha}{b-a}\right)^{\frac{1}{n}}\left(M-\varepsilon\right)>\left(1-\frac{\varepsilon}{M}\right)(M-\varepsilon) \\
+=M-2\epsilon+\frac{\epsilon^{2}}{M}>M-2\epsilon. 
+\end{array}
+$$
+
+所以 ${ n>N }$ 时有
+
+$$
+M - 2\varepsilon 
+< \left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n } 
+\leq M.
+$$
+
+由 ${ \varepsilon }$ 的任意性知，有
+
+$$
+\lim_{ n \to \infty } \left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n } = M.
+$$
+
+ ${ x_{0}=a }$ 使用 ${ (a, a+\alpha) }$ 替代 ${ (x_{0}-\alpha, x_{0}+\alpha) }$ 
+ 
+ ${ x_{0}=b }$ 使用 ${ (b-\alpha, b) }$ 替代 ${ (x_{0}-\alpha, x_{0}+\alpha) }$ 
+
+证毕
+
+关于本例似乎应有对称结论成立
+ ${ f(x) }$ 在 ${ [a,b] }$ 上的最小值应该等于
+
+$$
+\lim_{ n \to -\infty } \left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n } 
+$$
+
+对上式令 ${ n = -n' }$ 
+
+$$
+\begin{aligned}
+&\lim_{n\to-\infty}\left[\frac{1}{b-a}\int _{a}^{b}[f(x)]^{ n }d x\right]^{\frac{1}{n}} \\
+&=\lim\limits_{n'\to+\infty}\left[\frac{1}{b-a}\int_a^b [f(x)]^{ -n' } dx\right]^{-\frac{1}{n'}} \\
+&=\left\{\lim\limits_{n'\to+\infty}\left[\frac{1}{b-a}\int_a^b\left[\frac{1}{f(x)}\right]^{n'}dx\right]^{\frac{1}{n}}\right\}^{-1} \\
+&=\left[\max\limits_{x\in[a,b]}\frac{1}{f(x)}\right]^{-1}=\min\limits_{x\in[a,b]}f(x).
+\end{aligned}
+$$
+
+可见推测是正确的。
+
+再推敲，发现本例结果可表现为另一形式。
+因为 ${ \lim_{ n \to \infty }\left( \frac{1}{b-a} \right)^{ 1/n } = 1 }$ , 
+所以 ${ f(x) }$ 在 ${ [a, b] }$ 的最大值和最小值分别为
+
+$$
+\begin{align}
+\lim_{ n \to +\infty } \left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n }  = \max \limits_{x \in [a, b]} f(x) \\
+\lim_{ n \to -\infty } \left[ \frac{1}{b-a} \int_{a}^{b} [f(x)]^{ n } \, \mathrm{d}x  \right]^{ 1/n }  = \min  \limits_{x \in [a, b]} f(x)
+\end{align}
+$$
+
+另外，本例值得注意的一点是，
+这种函数的最大值和最小值表示公式，
+仅仅需要 ${ f(x) }$ 在所论区间上连续，
+而不要求在取得最大最小值的点处函数的可导性.
+
+### 例105
+设 ${ n }$ 为自然数，试证
+
+$$
+\left( 1 + \frac{1}{2n+1} \right)\left( 1 + \frac{1}{n} \right)^{ n }
+< e <
+\left( 1 + \frac{1}{2n} \right)\left( 1 + \frac{1}{n} \right)^{ n } .
+$$
+
+先考虑不等式的一个方向,
+譬如欲证
+
+$$
+e<\left(1+{\frac{1}{2n}}\right)\left(1+{\frac{1}{n}}\right)^{n}, 
+$$
+
+即证
+
+$$
+\begin{align}
+1 & =\ln e<\ln\left[\left( 1+{\frac{1}{2n}} \right)\left( 1+\frac{1}{n} \right)^{*}\right] \\
+ & =\ln\left( 1+\frac{1}{2n} \right)+n\ln\left( 1+\frac{1}{n}\right), \\
+\end{align}
+$$
+
+$$
+\ln\left( \frac{2n+1}{2n} \right) + n \ln\left( \frac{n+1}{n} \right) - 1 > 0.
+$$
+
+至此，想到引入辅助函数的念头
+
+#### 证1
+设辅助函数
+
+$$
+f(x) = \ln\left( \frac{2x+1}{2x} \right) + x \ln\left( \frac{x+1}{x} \right) - 1 
+\quad (x> 0).
+$$
+
+易见  ${ \lim \limits_{ x \to +\infty } f(x) = \ln 1 + \ln e - 1 = 0 }$ .
+又因为
+
+$$
+f'(x) = - \frac{1}{(2x+1)x} + \ln\left( \frac{x+1}{x} \right) - \frac{1}{x+1} .
+$$
+
+故有 
+
+$$
+\lim_{ x \to +\infty } f'(x) = 0.
+$$
+
+当 ${ x>0 }$ 时，有
+
+$$
+f''(x) = \frac{5 x (x+1)+1}{x^2 (x+1)^2 (2 x+1)^2} > 0
+$$
+
+```mathematica
+f[x_] = -1 + x Log [1 + 1/x] + Log[(1 + 2 x)/(2 x)]
+D[f[x], x] // FullSimplify
+D[f[x], {x, 2}] // FullSimplify
+```
+
+从而知当 ${ n\to +\infty }$ 时 ${f(x)}$ 单调增且趋于零，
+所以 ${ x>0 }$ 时 ${ f'(x) < 0 }$ .
+进而知 ${ x\to +\infty }$ 时 ${ f(x) }$ 单调减且趋于零，
+于是 ${ x>0 }$ 时 ${ f(x)>0 }$ .
+也即对自然数 ${ N }$ 恒有 ${ f(n) > 0 }$ ,所以有
+
+$$
+\begin{gathered}
+\ln\left({\frac{2n+1}{2n}}\right)+n\ln\Bigl({\frac{n+1}{n}}\Bigr)-1>0, \\
+ 1<\ln\left[\left(1+{\frac{1}{2n}}\right)\left(1+{\frac{1}{n}}\right)^{n}\right] \\
+e<\left(1+{\frac{1}{2n}}\right)\left(1+{\frac{1}{n}}\right)^{n}. 
+\end{gathered}
+$$
+
+类似，引入辅助函数
+
+$$
+g(x) = \ln\left( \frac{2x+2}{2x+1} \right) + x \ln\left( \frac{x+1}{x} \right) - 1
+\quad (x>0).
+$$
+
+同样可以证明 ${ x>0, g(x)<0 }$ ，
+
+$$
+g''(x) = -\frac{1}{x (x+1) (2 x+1)^2} < 0
+$$
+
+从而对自然数 ${ n }$ 有
+
+$$
+\left( 1+\frac{1}{2n+1} \right)\left( 1 + \frac{1}{n} \right)^{ n } < e.
+$$
+
+证毕
+
+下面，借助于幂级数的展开式，并采用放缩的技巧来重新证明
+
+#### 证2
+
+欲证题中不等式，只需证
+
+$$
+\ln\left[ \left( 1 + \frac{1}{2n+1} \right)\left( 1 + \frac{1}{n} \right)^{ n } \right]
+< 1 <
+\ln\left[ \left( 1 + \frac{1}{2n} \right)\left( 1 + \frac{1}{n} \right)^{ n }  \right].
+$$
+
+因为
+
+$$
+\begin{align}
+\ln(1+x) & = x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}+O\left(x^6\right)  & (-1 < x \leq 1) \\
+\ln(1-x) & =-x-\frac{x^2}{2}-\frac{x^3}{3}-\frac{x^4}{4}-\frac{x^5}{5}+O\left(x^6\right)  & (-1 \leq x < 1).
+\end{align}
+$$
+
+两式相减，得
+
+$$
+\ln\left( \frac{1+x}{1-x} \right) = 
+2 x+\frac{2 x^3}{3}+\frac{2 x^5}{5}+O\left(x^6\right)
+\quad (-1<x<1).
+$$
+
+由于
+
+$$
+\begin{align}
+1+\frac{1}{n} & = \frac{n+1}{n} = \frac{(2n+1)+1}{(2n+1)-1} = \frac{1+\frac{1}{2n+1}}{1-\frac{1}{2n+1}} \\
+1+\frac{1}{2n} & = \frac{2n+1}{2n} = \frac{(4n+1)+1}{(4n+1)-1} = \frac{1+\frac{1}{4n+1}}{1-\frac{1}{4n+1}} \\
+\end{align}
+$$
+
+
+$$
+\begin{align}
+\ln\left[ \left( 1 + \frac{1}{2n} \right)\left( 1 + \frac{1}{n} \right)^{ n }  \right] & = \ln\left( 1+\frac{1}{2n} \right) + n \ln\left( 1+\frac{1}{n} \right) \\
+\end{align}
+$$
+
+%%todo pp213%%
