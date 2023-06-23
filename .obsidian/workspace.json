@@ -20,18 +20,19 @@
             }
           },
           {
-            "id": "527dada5b0b338d6",
+            "id": "bcd40e99268c3f0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202305041540 latex suite setting.md",
+                "file": "202306230951 变分法解最速降线问题.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
+                "file": "202306230951 变分法解最速降线问题.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_010.md"
+                "file": "202306230951 变分法解最速降线问题.md"
               }
             }
           },
@@ -135,11 +136,18 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "ee490490d258bbb2",
+  "active": "bcd40e99268c3f0c",
   "lastOpenFiles": [
-    "qianchangben_calculus/attachments/qianchangben_calculus_010-.png",
+    "attachments/202306230951 变分法解最速降线问题--4.png",
+    "attachments/202306230951 变分法解最速降线问题--4.png",
+    "202306230951 变分法解最速降线问题.md",
+    "attachments/202306230951 变分法解最速降线问题--3.png",
+    "attachments/202306230951 变分法解最速降线问题--2.png",
+    "attachments/202306230951 变分法解最速降线问题--1.png",
+    "attachments/202306230951 变分法解最速降线问题-.png",
     "202305041540 latex suite setting.md",
     "qianchangben_calculus/qianchangben_calculus_010.md",
+    "qianchangben_calculus/attachments/qianchangben_calculus_010-.png",
     "202306120918 一些有帮助的网址.md",
     "20-08-07.md",
     "202306041157 用均值不等式解决一个极值问题.md",
@@ -160,7 +168,6 @@
     "qianchangben_calculus/qianchangben_calculus_004.md",
     "qianchangben_calculus/attachments/qianchangben_calculus_008--1.png",
     "attachments/202306031501 点到直线的距离公式.md",
-    "qianchangben_calculus/attachments/qianchangben_calculus_008-.png",
     "202008150900 单墫 三元不等式问题一例.md",
     "202306070842 单墫 不定方程问题一例.md",
     "mathematica/钱昌本-高数解题-chap08.nb",
@@ -168,19 +175,13 @@
     "rudin/bbr/chap01sec09exercise.md",
     "rudin/bbr/chap01sec08appendix.md",
     "rudin/bbr/chap01sec appendix.md",
-    "rudin/bbr/chap01 appendix.md",
     "xiehuimin",
     "yupin",
-    "具体数学/attachements/CMChap3-.png",
     "具体数学/attachements",
-    "qianchangben_calculus/attachments/qianchangben_calculus_006--1.png",
     "具体数学/CMChap2_table.tex",
-    "具体数学/attachements/CMChap2_table-P1.png",
     "具体数学/CMChap2_table.pdf",
     "具体数学/attachements/repertoire.pdf",
     "具体数学/Concrete Mathematics - knuth.pdf",
-    "qianchangben_calculus/attachments/qianchangben_calculus_003-.png",
-    "qianchangben_calculus/attachments/qianchangben_calculus_003-7.png",
     "rudin/bbr/mydefbook.tex",
     "rudin/bbr/listofspecialsymbols-.tex"
   ]
