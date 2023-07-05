@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bcd40e99268c3f0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "202306230951 变分法解最速降线问题.md",
+                "file": "202307031456  Definition：a precise and unambiguous description of a term..md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202306230951 变分法解最速降线问题.md",
+                "file": "202307031456  Definition：a precise and unambiguous description of a term..md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202306230951 变分法解最速降线问题.md"
+                "file": "202307031456  Definition：a precise and unambiguous description of a term..md"
               }
             }
           },
@@ -132,32 +119,35 @@
     "hiddenItems": {
       "switcher:打开快速切换": false,
       "command-palette:打开命令面板": false,
+      "zk-prefixer:创建时间戳笔记": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "zk-prefixer:创建时间戳笔记": false
+      "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "bcd40e99268c3f0c",
+  "active": "ee490490d258bbb2",
   "lastOpenFiles": [
-    "attachments/202306230951 变分法解最速降线问题--6.png",
-    "attachments/202306230951 变分法解最速降线问题--5.png",
-    "attachments/202306230951 变分法解最速降线问题--4.png",
-    "attachments/202306230951 变分法解最速降线问题--4.png",
-    "202306230951 变分法解最速降线问题.md",
-    "attachments/202306230951 变分法解最速降线问题--3.png",
-    "attachments/202306230951 变分法解最速降线问题--2.png",
-    "attachments/202306230951 变分法解最速降线问题--1.png",
-    "attachments/202306230951 变分法解最速降线问题-.png",
-    "202305041540 latex suite setting.md",
     "qianchangben_calculus/qianchangben_calculus_010.md",
-    "qianchangben_calculus/attachments/qianchangben_calculus_010-.png",
+    "202307031456  Definition：a precise and unambiguous description of a term..md",
+    "attachments/5182846870f396052bce4364ebdda8bb_MD5.jpg",
+    "attachments/4a268abe41384af7af3de8d41cddc7ea_MD5.png",
+    "attachments/202307031456  Definition：a precise and unambiguous description of a term.-.png",
+    "attachments/202307031456--8.png",
+    "attachments/202307031456--7.png",
+    "attachments/202307031456--6.png",
+    "attachments/202307031456--5.png",
+    "attachments/202307031456--4.png",
+    "attachments/202307031456--3.png",
+    "attachments/202307031456--2.png",
+    "202307031124 matrix inversion lemma (Woodbury matrix Identity).md",
+    "202307031134 Kronecker product and Kronecker sum.md",
+    "202306230951 变分法解最速降线问题.md",
+    "202305041540 latex suite setting.md",
     "202306120918 一些有帮助的网址.md",
     "20-08-07.md",
     "202306041157 用均值不等式解决一个极值问题.md",
     "202306120846 2023高考数学北京卷压轴题.md",
-    "attachments/202306120846 2023高考数学北京卷压轴题-.webp",
     "polya数学与猜想读书笔记.md",
     "qianchangben_calculus/qianchangben_calculus_009.md",
-    "qianchangben_calculus/attachments/qianchangben_calculus_009-.png",
     "qianchangben_calculus/qianchangben_calculus_008.md",
     "202306081627 三角函数定积分的一个重要结论 递推式.md",
     "qianchangben_calculus/qianchangben_calculus_003.md",
@@ -172,9 +162,6 @@
     "202306070842 单墫 不定方程问题一例.md",
     "mathematica/钱昌本-高数解题-chap08.nb",
     "202305011403 sinx x integrate.md",
-    "rudin/bbr/chap01sec09exercise.md",
-    "rudin/bbr/chap01sec08appendix.md",
-    "rudin/bbr/chap01sec appendix.md",
     "xiehuimin",
     "yupin",
     "具体数学/attachements",
