@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ddcdd749f32f321f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "控制系统 现代控制理论笔记.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -57,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -111,8 +124,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5,
-    "collapsed": true
+    "width": 233.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -125,9 +137,17 @@
   },
   "active": "ee490490d258bbb2",
   "lastOpenFiles": [
+    "控制系统 现代控制理论笔记.md",
+    "202307061639 线性鲁棒控制 阅读笔记.md",
+    "attachments/202307061639 线性鲁棒控制 阅读笔记--1.png",
+    "控制系统 李雅普诺夫稳定性 第一法与第二法.md",
+    "控制系统 控制工程手册.md",
+    "控制 交叉频谱 What is the Cross Spectral Density (CSD).md",
+    "控制 工程控制论 钱学森 英文版及翻译 阅读笔记.md",
+    "控制 工程控制论 chap 01.md",
+    "控制 非线性系统 nonlinear systems -khalil reading notes.md",
     "attachments/202307061639 线性鲁棒控制 阅读笔记-.png",
     "attachments/202307061639 线性鲁棒控制 阅读笔记-.gif",
-    "202307061639 线性鲁棒控制 阅读笔记.md",
     "LMI linear matrix inequality 线性矩阵不等式.md",
     "202307061458 数学术语英文发音.md",
     "mathematical English/Pronunciation of mathematical expressions.pdf",
@@ -149,23 +169,14 @@
     "yingxingren/restudy_linear_algebra/chap1.md",
     "202305171009 王竹溪 特殊函数概论阅读笔记.md",
     "20-08-07.md",
-    "qianchangben_calculus/qianchangben_calculus_003.md",
-    "yupin/202305221712 于品 数学分析讲义 阅读笔记-1.md",
-    "于品/202305221725 于品 2.md",
-    "于品/202305221712 于品 数学分析讲义 阅读笔记-1.md",
-    "于品/202205141105 Euler formula.md",
     "于品",
-    "qianchangben_calculus/qianchangben_calculus_001.md",
     "attachments/qianchangben_calculus_006-.png",
     "attachments/qianchangben_calculus_004-.png",
     "attachments/f5904af4c0eb6f4f9dfee1654741157b_MD5.png",
     "attachments/202307031456--1.png",
     "attachments/202307031456--4.png",
     "attachments/202307031456--8.png",
-    "Inside Interesting Integrals/III_chap_1-ex.md",
     "attachments/5182846870f396052bce4364ebdda8bb_MD5.jpg",
-    "attachments/4a268abe41384af7af3de8d41cddc7ea_MD5.png",
-    "attachments/202307031456  Definition：a precise and unambiguous description of a term.-.png",
     "mathematica/钱昌本-高数解题-chap08.nb",
     "xiehuimin",
     "yupin",
