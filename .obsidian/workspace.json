@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5,
-    "collapsed": true
+    "width": 299.5
   },
   "right": {
     "id": "1e4e6f8c85937a0f",
@@ -126,8 +125,11 @@
   },
   "active": "ee490490d258bbb2",
   "lastOpenFiles": [
-    "202307061639 线性鲁棒控制 阅读笔记.md",
+    "attachments/Pasted image 20230716161750.png.md",
     "202307150120 how to think about analysis  lara alcock.md",
+    "attachments/202307150120 how to think about analysis  lara alcock-.png",
+    "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
+    "202307061639 线性鲁棒控制 阅读笔记.md",
     "Lectures on generating functions/Chap 1 Lectures on generating functions.md",
     "控制系统 李雅普诺夫稳定性 第一法与第二法.md",
     "attachments/控制系统 李雅普诺夫稳定性 第一法与第二法--1.png",
@@ -160,17 +162,14 @@
     "202306230951 变分法解最速降线问题.md",
     "202306120918 一些有帮助的网址.md",
     "yingxingren/restudy_linear_algebra/chap1.md",
-    "202305171009 王竹溪 特殊函数概论阅读笔记.md",
     "于品",
     "attachments/qianchangben_calculus_006-.png",
     "attachments/qianchangben_calculus_004-.png",
     "attachments/f5904af4c0eb6f4f9dfee1654741157b_MD5.png",
     "attachments/202307031456--1.png",
-    "attachments/202307031456--4.png",
     "mathematica/钱昌本-高数解题-chap08.nb",
     "xiehuimin",
     "yupin",
-    "具体数学/attachements",
-    "具体数学/CMChap2_table.tex"
+    "具体数学/attachements"
   ]
 }
