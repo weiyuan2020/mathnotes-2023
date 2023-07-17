@@ -286,14 +286,84 @@ not get obsessed with sequence formula form
 
 sequence diagram with extra dimension n can show long term behaviour.
 
+The order of sequence does matters.
+
 sequence can be considered as a function from nature numbers to the reals
 
-monotonicity
+#### monotonicity
 
 explain the meaning using appropriate notation --> definition formulated by mathematicians
 
-Definition: A sequence (an) is increasing if and only if ∀n ∈ N, an+1 ≥ an.
-Definition: A sequence (an) is decreasing if and only if ∀n ∈ N, an+1 ≤ an.
+Definition: A sequence (an) is **increasing** if and only if $∀n ∈ N, a_{n+1} ≥ a_n$.
+Definition: A sequence (an) is **decreasing** if and only if $∀n ∈ N, a_{n+1} ≤ a_n$.
 
 error based on everyday intuition, not on mathematical definitions.
+
+local property versus global property
+
+definition of increasing (decreasing) using ${ \geq(\leq) }$ rather than ${ >(<) }$ 
+in order to simple theorem statements.
+many theorems that apply to increasing sequences in general apply to constant sequences in particular
+
+For some case that didn't apply to the constant sequence, need definition like:
+
+Definition: A sequence (an) is **strictly increasing** if and only if $∀n ∈ N, a_{n+1} > a_n$.
+Definition: A sequence (an) is **strictly decreasing** if and only if $∀n ∈ N, a_{n+1} < a_n$.
+
+Definition: A sequence (an) is monotonic if and only if it is increasing or decreasing.
+
+
+The meaning of 'or' has two different meanings: inclusive, exclusive
+In mathematics we use inclusive meaning, that means the two cases can be both true.
+
+#### boundedness and convergence
+
+The definition of bounded above for a sequence is analogous to the definition of bounded above for a set.
+
+Definition: The set X is bounded above if and only if ∃ M ∈ R such that ∀x ∈ X, x ≤ M.
+Definition: The sequence (an) is **bounded above** if and only if ∃ M ∈ R such that ∀n ∈ N, an ≤ M.
+->                The sequence (an) is **bounded below** if and only if ∃ M ∈ R such that ∀n ∈ N, an ≥ M.
+Definition: The sequence (an) is **bounded** if and only if ∃ M > 0 such that ∀n ∈ N, |an| ≤ M.
+
+some of the terms either have to be or cannot be equal to M or -M
+why does it make sense to specify that M > 0
+
+
+
+convergence
+
+Informal description: A sequence (an) converges to a limit a if and only if, by going far enough along the sequence, we can make an as close as we like to a.
+
+![|500](attachments/202307150120%20how%20to%20think%20about%20analysis%20%20lara%20alcock--1.png)
+
+consider possible theorems (*universal statements* that satisfies some properties) are true or false. 
+
+To prove that a universal statement is false (to *refute* the statement), a mathematician would simply provide a *counterexample*.
+To prove that a universal statement is true, we have to prove that the conclusion really does hold for every object that satisfies the premises.
+
+subsequence: select some terms form original sequence
+we can formulate more theorems if we consider subsequences.
+
+Here are some more universal statements that might be theorems.
+Which do you think are true and which do you think are false?
+• Every convergent sequence has a monotonic subsequence.
+• Every sequence has a monotonic subsequence.
+• Every bounded sequence has a convergent subsequence.
+
+reconsider these universal statements while remember that a sequence does not have to follow a predictable pattern.
+
+Informal def -> formal def
+get an algebraic handle on the idea of 'close'
+
+consider terms within distance ${ \varepsilon }$ of the limit a, ${ a-\varepsilon <a_{n} <a+\varepsilon }$ 
+
+${ \exists N \in \mathbb{N} }$ such that ${ \forall n > N, |a_{n} - a| < \varepsilon }$ 
+
+this discription doesn't capture the ideat of making it as close as we like.
+
+Definition: (an) converges to a if and only if 
+${ \forall \varepsilon>0, \exists N \in \mathbb{N} }$ such that ${ \forall n >N, |a_{n} - a| < \varepsilon }$ .
+
+we don't say for this N, this is the distance ${ \varepsilon }$ 
+we say for this distance ${ \varepsilon }$ , this is the approproate N
 
