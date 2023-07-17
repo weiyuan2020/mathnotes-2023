@@ -274,4 +274,26 @@ speak more confidently to lecturers and other tutors
 
 # Part II
 
-%% todo%%
+### sequence
+
+an infinite list of numbers $(a_n)$
+comma between each pair of sequence terms
+end with an ellipsis
+infinite 'only in one direction'
+follow obvious pattern
+
+not get obsessed with sequence formula form
+
+sequence diagram with extra dimension n can show long term behaviour.
+
+sequence can be considered as a function from nature numbers to the reals
+
+monotonicity
+
+explain the meaning using appropriate notation --> definition formulated by mathematicians
+
+Definition: A sequence (an) is increasing if and only if ∀n ∈ N, an+1 ≥ an.
+Definition: A sequence (an) is decreasing if and only if ∀n ∈ N, an+1 ≤ an.
+
+error based on everyday intuition, not on mathematical definitions.
+
