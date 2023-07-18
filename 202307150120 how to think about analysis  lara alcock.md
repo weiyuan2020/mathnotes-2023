@@ -357,6 +357,8 @@ get an algebraic handle on the idea of 'close'
 
 consider terms within distance ${ \varepsilon }$ of the limit a, ${ a-\varepsilon <a_{n} <a+\varepsilon }$ 
 
+to capture the notation 'far enought along'
+
 ${ \exists N \in \mathbb{N} }$ such that ${ \forall n > N, |a_{n} - a| < \varepsilon }$ 
 
 this discription doesn't capture the ideat of making it as close as we like.
@@ -364,6 +366,17 @@ this discription doesn't capture the ideat of making it as close as we like.
 Definition: (an) converges to a if and only if 
 ${ \forall \varepsilon>0, \exists N \in \mathbb{N} }$ such that ${ \forall n >N, |a_{n} - a| < \varepsilon }$ .
 
-we don't say for this N, this is the distance ${ \varepsilon }$ 
-we say for this distance ${ \varepsilon }$ , this is the approproate N
+
+for all epsilon greater than 0,
+consider for smaller value of epsilon, we might need bigger values of N.
+
+<font color="#ff0000">If you want a more stringent test of whether or not you understood this section, write the definition on a blank piece of paper, put the book aside, and reconstruct the explanation for yourself.</font> 
+
+definition / common intuitive ideas
+1. we don't prove definitions because they are just conventions
+2. the def doesn't say waht happens 'at infinity', think about what happens 'at infinity' doesn't really make sense
+3. the def requires no sense of motion or time, treat the whole sequence as it already there
+4. we don't say for this N, this is the distance ${ \varepsilon }$ , we say for this distance ${ \varepsilon }$ , this is the approproate N
+5. notations in def: $(a_{n}) \to a$, $a_{n}\to a \text{ as } n\to \infty$, $\lim\limits_{ n \to \infty} a_{n} = a$.
+
 
