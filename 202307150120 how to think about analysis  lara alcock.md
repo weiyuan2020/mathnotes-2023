@@ -1,4 +1,6 @@
+# Part I
 
+## Axioms, Definitions and Theorems
 ### Axiom
 
 An axiom is a statement that mathematicians agree to treat as true; ax-
@@ -274,7 +276,7 @@ speak more confidently to lecturers and other tutors
 
 # Part II
 
-### sequence
+## sequence
 
 an infinite list of numbers $(a_n)$
 comma between each pair of sequence terms
@@ -290,7 +292,7 @@ The order of sequence does matters.
 
 sequence can be considered as a function from nature numbers to the reals
 
-#### monotonicity
+### monotonicity
 
 explain the meaning using appropriate notation --> definition formulated by mathematicians
 
@@ -316,7 +318,7 @@ Definition: A sequence (an) is monotonic if and only if it is increasing or decr
 The meaning of 'or' has two different meanings: inclusive, exclusive
 In mathematics we use inclusive meaning, that means the two cases can be both true.
 
-#### boundedness and convergence
+### boundedness and convergence
 
 The definition of bounded above for a sequence is analogous to the definition of bounded above for a set.
 
@@ -380,3 +382,289 @@ definition / common intuitive ideas
 5. notations in def: $(a_{n}) \to a$, $a_{n}\to a \text{ as } n\to \infty$, $\lim\limits_{ n \to \infty} a_{n} = a$.
 
 
+Claim: ${\left( 3 - \frac{4}{n} \right) \to 3}$
+Proof:
+Let ${ \varepsilon>0 }$ be arbitrary.
+Set ${ N = \lceil \frac{4}{\varepsilon} \rceil }$ .
+Then ${ n>N \implies |\left( 3 - \frac{4}{n} \right) | = | \frac{4}{n} | = \frac{4}{n} < \varepsilon }$ .
+*Hence we have shown that*
+${ \forall \varepsilon > 0 \exists N \in \mathbb{N} }$ s.t. ${ \forall n > N, |\left( 3-\frac{4}{n} \right) - 3| < \varepsilon }$ .
+So ${\left( 3 - \frac{4}{n} \right) \to 3}$ as required.
+
+think beyond the specifics
+
+### convergence and other properties
+
+- Every bounded sequence is convergent.
+- Every convergent sequence is bounded.
+
+sketch sequence graphs with dots only -> realize there are only finite points in the left side of 'N'
+
+Theorem: Every convergent sequence is bounded.
+Proof:
+Suppose that ${ (a_{n}) \to a }$ .
+Then, by definition, ${ \exists N \in \mathbb{N} }$ s.t. ${ \forall n > N, |a_{n} - a| < 1 }$,
+                                               i.e. ${ \forall n > N, a-1 <a_{n} < a + 1 }$.
+Note that N is finite.
+Let ${ M = \max \{ |a_{1}|, |a_{2}|,\dots,|a_{N}|, |a-1|,|a+1| \} }$ .
+Then ${ \forall n \in \mathbb{N}, |a_{n}| < M }$ .
+so ${ (a_{n}) }$ is bounded.
+
+![|500](attachments/202307150120%20how%20to%20think%20about%20analysis%20%20lara%20alcock--2.png)
+
+The assumption of convergence -> ${  }$ ${ \exists N \in \mathbb{N} }$ such that ${ \forall n > N, |a_{n} - a| < 1 }$ (${ \varepsilon\to {1} }$ )
+
+true theorem has a false converse.
+
+convergent ${ \Rightarrow }$ bounded
+bounded     ${ \nRightarrow }$ convergent
+
+these writing is informal but useful in self-notes
+
+### combining convergent sequences
+
+*sum rule*
+
+Theorem (the triangle inequality): ${ \forall x,y \in \mathbb{R}, |x+y| \leq |x| + |y| }$ 
+
+Theorem (sum rule for convergent sequences):
+Suppose that ($a_{n}$) → a and ($b_{n}$) → b. Then ($a_{n}+b_{n}$) → a+b.
+
+judicious choice of an ${ \varepsilon }$ -value
+using the triangle inequality to split up an expression
+
+### sequences that tend to infinity
+
+def ${ (a_{n}) }$ tends to infinity if and only if
+${ \forall C > 0, \exists N \in \mathbb{N} }$ such that ${ \forall n>N, a_{n} > C }$ 
+
+![|500](attachments/202307150120%20how%20to%20think%20about%20analysis%20%20lara%20alcock--3.png)
+
+$(a_{n})\to \infty$, 
+$a_{n}\to \infty \text{ as } n\to \infty$, 
+$\lim\limits_{ n \to \infty } a_{n} = \infty$ 
+
+Theorem (*ratio test*):
+比值审敛法？ 对数列
+Suppose that ($a_{n}$) is a sequence such that ($a_{n}+1/a_{n}$) → l. T h e n :
+1. If $–1 < l < 1$ then ($a_{n}$) → 0.
+2. If $l > 1$ and an > 0 ∀n ∈ N then ($a_{n}$) → ∞.
+3. If $l > 1$ and an < 0 ∀n ∈ N then ($a_{n}$) → –∞.
+4. If $l < –1$ then the sequence neither converges nor tends to ±∞.
+5. If $l = 1$ we get no information.
+
+Theorem: If (${ a_{n} \to \infty }$ ) then ${ \left( \frac{1}{a_{n}} \right) \to 0 }$ .
+Is it conversse true?
+
+Theorem (sandwich rule):
+Suppose that ($a_{n}$) → a and ($c_{n}$) → a and that ∀n ∈ N, $a_{n} ≤ b_{n} ≤ c_{n}$.
+Then ($b_{n}$) → a.
+
+a *comparison test* for sequence that tend to infinity
+
+Cauchy sequence
+def: ${ (a_{n}) }$ is a *Cauchy sequence* if and only if
+${ \forall \varepsilon > 0, \exists N \in \mathbb{N} }$ such that ${ \forall n,m >N, |a_{n} - a_{m}| < \varepsilon }$ .
+
+sequence convergence is key to the theory of series
+
+## series
+
+geometric series
+parital sum
+series convergence
+harmonic series
+power series
+Talyor series
+
+
+Theorem: ${ a + ar + ar^{2} + ar^{ 3 } + \dots = \frac{a}{1-r}. }$ 
+Proof:
+Let      ${ S = a + ar + ar^{2} + ar^{3} + \dots }$ 
+Then ${ rS = \qquad ar + ar^{2} + ar^{3} + \dots }$ 
+So  ${ S-rS = a }$ ,
+i.e. ${ (1-r)S = a. }$ 
+So   ${ S = \frac{a}{1-r} }$ .
+
+
+${ \infty - \infty }$  undefined
+
+write sum of series in sigma notation $\Sigma$
+
+$$
+\sum_{n = 1}^{\infty} \frac{n^{2}}{2^{ n }} = 6
+$$
+proof
+$$
+\sum_{n = 1}^{\infty} \frac{1}{2^{ n }} = \frac{1}{2} \frac{1}{1-\frac{1}{2}} = 1
+$$
+suppose
+$\sum\limits_{n = 1}^{\infty} \frac{n}{2^{ n }} = A$
+$$
+\sum_{n = 1}^{\infty} \frac{n}{2^{ n }} = A
+$$
+$$
+\sum_{n = 1}^{\infty} \frac{n}{2^{ n+1 }} = \frac{A}{2}
+$$
+$$
+\sum_{t = 2}^{\infty} \frac{t-1}{2^{ t }} = 
+\sum_{t = 2}^{\infty} \frac{t}{2^{ t }}  - \sum_{t = 2}^{\infty} \frac{1}{2^{ t }} = 
+\frac{A}{2}
+$$
+$$
+\sum_{t = 1}^{\infty} \frac{t}{2^{ t }} - \frac{1}{2^{ 1 }} - \frac{1}{4} \frac{1}{1-\frac{1}{2}} = \frac{A}{2}
+$$
+$$
+A - \frac{1}{2} - \frac{1}{2} = \frac{A}{2}
+$$
+$$
+A = 2
+$$
+
+suppose ${ \sum\limits_{n = 1}^{\infty} \frac{n^{2}}{2^{ n }}  = B}$ 
+
+$$
+ \sum_{n = 1}^{\infty} \frac{n^{2}}{2^{ n }}  = B
+$$
+$$
+\sum_{n = 1}^{\infty} \frac{n^{2}}{2^{ n+1 }}  =
+\sum_{t = 2}^{\infty} \frac{(t-1)^{2}}{2^{ t }} = 
+\sum_{t = 2}^{\infty} \left( \frac{t^{2}}{2^{ t }} - \frac{2t}{2^{ t }} + \frac{1}{2^{ t }} \right)= 
+\frac{B}{2}
+$$
+$$
+\sum_{t = 1}^{\infty} \frac{t^{2}}{2^{ t }} - \frac{1}{2} -\left( \sum_{t = 2}^{\infty} \frac{t}{2^{ t-1 }} \right) + 
+\sum_{t = 2}^{\infty} \frac{1}{2^{ t }} = \frac{B}{2}
+$$
+$$
+B - \frac{1}{2} - (A + 1) + \frac{1}{4} \frac{1}{1-\frac{1}{2}} = \frac{B}{2}
+$$
+$$
+B = 6
+$$
+
+
+使用Mathematica 检查
+```mathematica
+Sum[n^2/(2^n),{n,1,Infinity}]
+
+6
+```
+
+In mathemaics, 
+a sequence is an infinite *list*
+$$
+(a_{n}) = a_{1}, a_{2}, a_{3}, a_{4}, \dots 
+$$
+whereas a series is a infinite *sum*
+$$
+\sum a_{n} = a_{1} + a_{2} + a_{3} + a_{4} + \dots 
+$$
+
+Def
+${ \sum\limits_{i = 0}^{\infty} a_{i}}$ *converges* if and only if ${ (s_{n}) }$ converges, where ${ s_{n} = \sum\limits_{i = 0}^{\infty} a_{i}}$ 
+
+series convergence -> partial sum sequence convergence
+
+Koch snowflake
+![](attachments/202307150120%20how%20to%20think%20about%20analysis%20%20lara%20alcock--4.png)
+
+Theorem: If ${ \sum a_{n} }$  converges then ($a_{n}$) → 0.
+
+This theorem is sometimes referred to as the null sequence test, because
+its contrapositive acts as a test for non-convergence:
+
+(Contrapositive) If ($a_{n}$) ${ \not\to }$  0 then $\sum a_{n}$ does not converge.
+
+What about the converse of the theorem?
+
+(Converse) If (an) → 0 then ${ \sum a_{n} }$  converges.
+
+<font color="#ff0000">Theorem (shift rule for series):</font>
+Suppose N ∈N. Then ${ \sum a_{n} }$  converges if and only if ${ \sum a_{N + n} }$  converges.
+
+<font color="#ff0000">Theorem (comparison test for series):</font>
+比较审敛法
+Suppose that $0 ≤ a_{n} ≤ b_{n}$ ∀n ∈ N. Then
+1. If ${ \sum b_{n} }$  converges then $\sum a_{n}$ converges;
+2. If ${ \sum a_{n} }$  diverges then $\sum b_{n}$ diverges.
+
+<font color="#ff0000">Theorem (limit comparison test):</font>
+Suppose that $a_{n}, b_{n}$ > 0 ∀n ∈ N and ${ \left( \frac{a_{n}}{b_{n}} \right) \to l \neq 0 }$ 
+Then ${ \sum a_{n} }$ converges if and only if ${ \sum b_{n} }$  converges.
+
+<font color="#ff0000">Theorem (ratio test for series):</font>
+级数比值审敛法
+Suppose that $a_{n}$ > 0 ∀n ∈ N and that $(a_{n}+1/a_{n}) → l$ as n → ∞. Then :
+1. If $l < 1$ then ${ \sum }$  an converges.
+2. If $l > 1$ (including l = ∞) then ${ \sum a_{n} }$  diverges.
+
+Proof of part 1: Suppose $a_{n}$ > 0 ∀n ∈ $\mathbb{N}$ and ($a_{n+1}/a_{n}$) → $l < 1$.
+Then, using $ε = \frac{1}{2} (1 - l)$ in the definition of ($a_{n+1}/a_{n}$) → $l$,
+∃ N ∈ $\mathbb{N}$ s.t. ∀n > N,
+$$
+\left|\frac{a_{n+1}}{a_{n}} - l\right|
+<\frac{1}{2} (1 - l) ⇒ \frac{a_{n+1}}{a_{n}} < l + \frac{1}{2} (1 - l) = \frac{1}{2} (1 + l)  < 1.
+$$
+
+This means that ∀n > N, $a_{n+1} < \frac{1}{2}(1 + l)a_{n}$.
+In particular,
+$$
+a_{N+2} < \frac{1}{2}(1+l) a_{N+1}
+$$
+and
+$$
+a_{N+3} < \frac{1}{2} (1+l) a_{N+2} < \left( \frac{1}{2}(1+l) \right)^{2} a_{N+1}
+$$
+
+and, by induction,
+$$
+a_{N+n} <
+\left( \frac{1}{2}(1+l) \right)^{n-1} a_{N+1}
+\quad \forall n \in \mathbb{N}
+$$
+
+Now ${ \sum \left( \frac{1}{2} (1+l) \right)^{ n-1 } a_{N+1} }$  converges because it is a geometric series
+with common ratio less than 1.
+So ${ \sum a_{N+n} }$  converges by the comparison test for series.
+So ${ \sum a_{n} }$  converges by the shift rule for series.
+
+alternating series
+for example Leibniz series ${ \sum \frac{(-1)^{ n }}{n} }$ 
+
+Definition: ${ \sum a_{n} }$ is **absolutely convergent** if and only if ${ \sum |a_{n}| }$ is convergent.
+Definition: ${ \sum a_{n} }$ is **conditionally convergent** if and only if ${ \sum a_{n} }$ is convergent but ${ \sum |a_{n}| }$ is not.
+
+
+adding up a conditionally convergent series in different order can get different sum.
+then we can add up to any number we want (include infinity?)
+
+### power series and functions
+
+$$
+\sum_{n = 0}^{\infty} c_{n}(x-a)^{ n } = 
+c_{0}  + c_{1} (x-a) + c_{2} (x-a)^{2} + \dots 
+$$
+
+
+### radius of convergence
+
+ratio test for series theorem
+
+${ \sum_{n = 0}^{\infty} c_{n} (x-a)^{ n } }$ ,
+converges ${ |x-a| < R }$ 
+diverges ${ |x-a| > R }$ 
+
+a circle of radius R centred at a on complex number plane
+
+### Taylor series
+
+$$
+f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!} (x-a)^{2} + \dots  + \frac{f^{ (n) }(a)}{n!}(x-a)^{ n } + \dots 
+$$
+
+$$
+f(x + h) = f(x) + f'(x)h + f''(x) \frac{h^{2}}{2!} + \dots
+$$
+
+%%todo pp135%%
