@@ -667,4 +667,63 @@ $$
 f(x + h) = f(x) + f'(x)h + f''(x) \frac{h^{2}}{2!} + \dots
 $$
 
-%%todo pp135%%
+<font color="#ff0000">Theorem (integral test): </font>
+Suppose that $f : [1,\infty) → \mathbb{R}$ is positive and decreasing.
+Then $\sum\limits_{n=1}^{ \infty } f(n)$ and the sequence ${ \int_{1}^{n} f(x) \, \mathrm{d}x }$ either both converge or both tend to infinity.
+
+## continuity
+
+property of whole function
+property at one point
+
+
+polynomial function: quadratic function; cubic function; higher-order polynomial function.
+rational function
+exponential function
+logarithmic function
+trigonometric function
+inverse trigonometric function
+
+function might have different properties on different domains.
+
+codomain: the set to which the function maps the domain values
+image: the set of values that actually get 'hit' by the function
+
+
+theorem of *fixed point*
+Theorem: Suppose that $f : [0, 1] → [0, 1]$ is continuous.
+Then $∃ c ∈ [0, 1]$ such that $f(c) = c$.
+
+In mathematical terms, ${ f }$ doesn't have to be *surjective*.
+
+Incidentally, the conclusion of the theorem is about the existence of a *fixed point*—can you see why the point c would be called that? And why must the statement be true?
+
+piecewise function 分段函数 ?
+
+$$
+f(x) = 
+\begin{cases}
+2 & \text{if} x \in \mathbb{Z} \\
+1 & \text{if} x \not\in \mathbb{Z} \\
+\end{cases}
+$$
+
+$$
+f(x) = 
+\begin{cases}
+1 & \text{if } x \in \mathbb{Q} \\
+0 & \text{if } x \not\in \mathbb{Q} \\
+\end{cases}
+$$
+
+Informal description: A function f is continuous at a if and only if, by making x close enough to a, we can make f(x) as close as we like to f(a).
+
+to convert the informal description into a formal description, we need to get an algebraic handle on the idea of 'close'.
+
+${ \exists \delta > 0 }$ such that if ${ |x-a| < \delta }$ then ${ |f(x) - f(a)| < \varepsilon }$ .
+
+函数在某点连续的定义
+Definition: A function $f : \mathbb{R} → \mathbb{R}$ is continuous at $a ∈ \mathbb{R}$ if and only if
+∀ε > 0∃ δ > 0 such that if |x – a| < δ then | f(x) – f(a)| < ε.
+
+
