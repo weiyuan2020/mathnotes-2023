@@ -726,4 +726,199 @@ ${ \exists \delta > 0 }$ such that if ${ |x-a| < \delta }$ then ${ |f(x) - f(a)|
 Definition: A function $f : \mathbb{R} → \mathbb{R}$ is continuous at $a ∈ \mathbb{R}$ if and only if
 ∀ε > 0∃ δ > 0 such that if |x – a| < δ then | f(x) – f(a)| < ε.
 
+f is defined for every ${ x \in \mathbb{R} }$ is not necessary
 
+**Intermediate Value Theorem (IVT)**
+Suppose that ${ f }$ is continuous on ${ [a,b] }$  and that ${ y }$ is between ${ f(a) }$ and ${ f(b) }$ .
+Then ${ \exists c \in (a,b) }$ such that ${ f(c) = y }$ .
+
+Definition (limit): $\lim\limits_{x→a} f (x) = l$ if and only if
+$∀ε > 0, ∃ δ > 0$ such that if $0 < |x - a| < δ$ then $| f (x) - l| < ε$.
+Definition (continuity):
+A function $f : \mathbb{R} → \mathbb{R}$ is continuous at $a ∈ \mathbb{R}$ if and only if
+$∀ε > 0,∃ δ > 0$ such that if $|x - a| < δ$ then $| f (x) - f (a)| < ε$.
+
+limit def say nothing about what happened of f(x) at point a.
+
+**Extreme Value Theorem (EVT)**
+Suppose that ${ f:[a,b] \to \mathbb{R} }$ is continuous on ${ [a,b] }$ . Then
+1. ${ f }$ is bounded on ${ [a,b] }$ ;
+2. ${ \exists x_{1},x_{2} \in [a,b] }$ such that ${ \forall x \in [a,b], f(x_{1}) \leq f(x) \leq f(x_{2})  }$ .
+
+This is often stated more briefly as ‘a continuous function on a closed interval is bounded and attains its bounds’
+
+why closed interval, not open interval
+
+closed interval -> a compact set
+
+in metric spaces, uniform continuity 一致连续
+
+Def: ${ f: A\to \mathbb{R}}$ is *unifromaly continuous* on A if and only if
+${ \forall \varepsilon >0, \exists \delta >0 }$ such that ${ \forall x_{1}, x_{2} \in A }$ , ${ |x_{1} - x_{2}| < \delta \implies |f(x_{1}) - f(x_{2})| < \varepsilon }$ .
+
+
+
+## differentiability
+
+
+gradient of the graph
+gradient at a point
+
+secant line -> tangent line
+
+Def: ${ f }$ is differentiable at ${ a }$ if and only if ${ \lim\limits_{ x \to a } \frac{f(x) - f(a)}{x-a}}$ exists.
+
+difference quotient 差商
+
+I always advise students to work in this way because **people often make errors when they don’t**.
+
+
+Claim: If ${ f(x) = x^{3} }$ then ${ g'(x) = 0 }$ .
+Proof: 
+Note that ${ \forall x \in \mathbb{R} }$ we have ${ \frac{g(x) - g(0)}{x-0} = \frac{x^{3} - 0^{3}}{x-0} = x^{2} }$ .
+So ${ g'(0) = \lim\limits_{ x \to 0 } \frac{g(x) - g(0)}{x-0} = \lim\limits_{ x \to 0 } x^{2} = 0 }$ .
+
+separate algebra calculate and limit procedure and reduce the error occurance in calculate
+
+differentiable at a point
+
+Def: ${ f }$ is *continuous* at ${ a }$ if and only if ${\lim\limits_{ x \to a } f(x) }$ exists and is equal to ${ f(a) }$ .
+Def: ${ f }$ is *differentiable* at ${ a }$ if and only if ${\lim\limits_{ x \to a } \frac{f(x)-f(a)}{x-a} }$ exists.
+
+Theorem: If ${ f }$ is differentiable at ${ a }$ then ${ f }$ is continuous at ${ a }$ .
+
+Rolle's Theorem:Suppose that $f : [a, b] → \mathbb{R}$ is continuous on $[a, b]$ and differentiable on $(a, b)$, and that $f (a) = f (b)$. Then $∃ c ∈ (a, b)$ such that $f'(c) = 0$.
+
+Mean Value Theorem(MVT): Suppose that $f : [a, b] → \mathbb{R}$ is continuous on $[a, b]$ and differentiable on $(a, b)$. Then $∃ c ∈ (a, b)$ such that ${ f'(c) = \frac{f(b)-f(a)}{b-a} }$ .
+
+${ \frac{f(b)-f(a)}{b-a} }$ is the gradient of the line jointing the points ${ (a,f(a)), (b,f(b)) }$ 
+
+
+Taylor's Theorem
+remainder term
+
+Extreme Value Theorem (EVT) -> Rolle's Theorem -> Mean Value Theorem (MVT)
+
+L’Hôpital’s rule
+
+
+## integrability,
+
+Riemann’s condition
+
+differentiation and integration are *inverse operations*
+Why on earth would gradients and areas be related
+rate of change of the area -> derivatives
+
+what area means 
+define aera in mathematics by approximations from above and below
+
+
+split up interval ${ [a,b] }$   -> partition ${ \{  x_{0},x_{1},x_{2},\dots \} }$ 
+
+Definition: f is integrable on the interval ${ [a,b] }$ if and only if
+$\inf\{U( f ; P)|P$ is a partition of $[a, b]\}$= $\sup\{L( f ; P)|P$ is a partition of $[a, b]\}$.
+
+### Riemann's condition
+
+${ f }$ is integrable 
+${ f }$ is Riemann integrable
+
+<font color="#ff0000">Theorem (Riemann’s condition):</font>
+$f$ is (Riemann) integrable on $[a, b]$ if and only if for every $ε > 0$ there
+exists a partition $P$ of $[a, b]$ such that $U( f ; P) - L(f ; P) < ε$.
+
+<font color="#ff0000">Theorem (Fundamental Theorem of Calculus (FTC)):</font>
+Suppose that $f$ is integrable on ${ [a,b] }$ and let ${ F(x) = \int_{a}^{x} f(t) \, \mathrm{d}t }$ . Then
+1. $F$ is continuous on $[a, b]$;
+2. If $f$ is continuous on $[a, b]$ then F is differentiable on $[a, b]$ and $F'(x) = f (x)$.
+
+### real numbers
+rational number
+
+Claim: $\sqrt{ 2 }$ is irrational.
+Proof: Suppose for contradiction that $\sqrt{ 2 } ∈ \mathbb{Q}$.
+Then ${ \exists p,q \in \mathbb{Z} }$ (with ${ q \neq 0 }$ ) such that ${ \sqrt{ 2 } = p /q }$ and ${ p }$ and ${ q }$ have no common factors.
+This implies that ${ 2 = p^{2} / q^{2} }$ so ${ 2q^{2} = p^{2} }$ .
+Hence ${ 2|p^{2} }$ .
+But then ${ 2|p }$ because ${ 2 }$ is prime.
+Say ${ p = 2k }$ where ${ k \in \mathbb{Z} }$ .
+Then ${ 2q^{2} = 4k^{2} }$ , so ${ q = 2k^{2} }$ .
+So ${ 2|q^{2} }$ .
+But then ${ 2|q }$ because ${ 2 }$ is prime.
+So ${ p }$ and ${ q }$ have common factor ${ 2 }$ .
+But this gives a contradiction.
+Hence ${ \sqrt{ 2 } \not\in \mathbb{Q} }$ .
+
+Axioms for the real numbers
+
+commutativity of addition 加法交换律
+existence of an additive identity  加法单位元
+
+closure under multiplication
+associativity of multiplication
+existence of a multiplicative identity
+trichotomy
+associativity of addition
+commutativity of addition
+existence of multiplicative inverses
+closure under addition
+commutativity of multiplication
+existence of additive inverses
+transitivity
+distributivity of multiplication over addition
+existence of an additive identity
+
+群
+封闭性
+接合律
+单位元
+逆元
+
+交换群 添加交换律 (阿贝尔群)
+
+环
+$(\mathbb{R},+,\times)$
+$(\mathbb{R},+)$为交换群 ，即：
+结合律：对所有的  $a,b,c\in \mathbb{R}$ 有 $(a+b)+c=a+(b+c)$
+单位元：存在  $i\in \mathbb{R}$ ，对所有的 $r\in \mathbb{R}$ 有 $i+r=r+i=r$ （可由上面的性质证明这样的 $i$ 是唯一的， 这样的 $i$ 称为加法单位元）
+逆元：对所有的 $r\in \mathbb{R}$ 存在  $r^\prime \in \mathbb{R}$ 使 $r+r^\prime =r^\prime +r=0$ （可以由上面的性质证明这样的  $r^\prime$  是唯一的，通常简记为  $r^{-1}$ 并称为 $r$ 的加法逆元
+交换律：对所有的 $a,b\in \mathbb{R}$ 有 $a + b = b + a$
+
+$(\mathbb{R},\cdot )$ 为幺半群，即：
+结合律：对所有的  $a,b,c\in \mathbb{R}$ 有 $(a\cdot b)\cdot c=a\cdot (b\cdot c)$
+单位元：存在一个单位元 $e\in \mathbb{R}$使得对于任意的 $a\in \mathbb{R}$有 $a\cdot e=e\cdot a=a$
+
+乘法对于加法满足分配律，即对所有的 $a,b,c\in \mathbb{R}$ 有 
+$a\cdot (b+c)=(a\cdot b)+(a\cdot c)$ 
+$(a+b)\cdot c=(a\cdot c)+(b\cdot c)$
+
+若环${ \mathbb{R} }$ 是幺环，且${ R\backslash \{ 0 \} }$  对${ \mathbb{R} }$ 上的乘法形成一个群，即${ \forall a \in R\backslash \{ 0 \}, \exists a^{ -1 } in R\backslash \{ 0 \} }$ ，使得${ a^{ -1 }\cdot a = a\cdot a^{ -1 } = 1 }$ 。则称$R$为除环。
+
+域  实数域 (交换除环)
+
+---
+
+difference in ${ \mathbb{Q} }$ and ${ \mathbb{R} }$ 
+completeness
+
+上确界
+Definition: $U$ is the *supremum* of $X ⊆ R$ if and only if
+1. $∀x ∈ X, x ≤ U$;
+2. if u is any upper bound for $X$, then $U ≤ u$.
+
+supremum = least upper bound 最小上界
+infimum = greatest lower bound 
+
+supremum is the singular, suprema is the plural—this is like maximum and maxima.
+
+Completeness Axiom: Every nonempty subset of $\mathbb{R}$ that is bounded above has a supremum in $\mathbb{R}$.
+an informal saying is: ‘there are no holes in the number line.’
+
+Intermediate Value Theorem (IVT)
+need completeness to prove this theorem
+
+algebraic
+transcendental numbers 超越数 (like ${ \pi, e }$ )
+
+---fin---
