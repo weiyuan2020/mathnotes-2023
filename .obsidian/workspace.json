@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202307150120 how to think about analysis  lara alcock.md",
+                "file": "202307201125 proofs without words PWW.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202307150120 how to think about analysis  lara alcock.md",
+                "file": "202307201125 proofs without words PWW.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202307150120 how to think about analysis  lara alcock.md"
+                "file": "202307201125 proofs without words PWW.md"
               }
             }
           },
@@ -126,6 +126,11 @@
   },
   "active": "ee490490d258bbb2",
   "lastOpenFiles": [
+    "attachments/202307201125 proofs without words PWW--1.png",
+    "attachments/202307201125 proofs without words PWW-.png",
+    "202307200935 对数均值不等式.md",
+    "202307201125 proofs without words PWW.md",
+    "202307150120 how to think about analysis  lara alcock.md",
     "attachments/42e7c435ec255cd0907ed9fe59534fec_MD5.svg",
     "attachments/a1b9935792bf3f404c2333dc73232ae6_MD5.svg",
     "attachments/b2054a596f388114f89e053e7cf6f841_MD5.svg",
@@ -133,17 +138,14 @@
     "attachments/202307150120 how to think about analysis  lara alcock-.svg",
     "attachments/202307150120 how to think about analysis  lara alcock--4.png",
     "202307182100 黎曼ζ函数.md",
-    "202307150120 how to think about analysis  lara alcock.md",
     "attachments/202307150120 how to think about analysis  lara alcock--3.png",
     "attachments/202307150120 how to think about analysis  lara alcock--2.png",
     "attachments/202307150120 how to think about analysis  lara alcock--1.png",
     "attachments/Pasted image 20230716161750.png.md",
-    "attachments/202307150120 how to think about analysis  lara alcock-.png",
     "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
     "202307061639 线性鲁棒控制 阅读笔记.md",
     "Lectures on generating functions/Chap 1 Lectures on generating functions.md",
     "控制系统 李雅普诺夫稳定性 第一法与第二法.md",
-    "attachments/控制系统 李雅普诺夫稳定性 第一法与第二法--1.png",
     "控制系统 现代控制理论笔记.md",
     "控制系统 控制工程手册.md",
     "控制 交叉频谱 What is the Cross Spectral Density (CSD).md",
@@ -165,8 +167,6 @@
     "1.md",
     "202307031456  Definition：a precise and unambiguous description of a term..md",
     "Terence Tao - An Epsilon of Room.md",
-    "202307031124 matrix inversion lemma (Woodbury matrix Identity).md",
-    "202306230951 变分法解最速降线问题.md",
     "于品",
     "mathematica/钱昌本-高数解题-chap08.nb",
     "xiehuimin",
