@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202307210950  Circles rolling on circles.md",
+                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "68affc9408af0548",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "qianchangben_calculus/钱昌本 练习题目.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202307210950  Circles rolling on circles.md",
+                "file": "qianchangben_calculus/钱昌本 练习题目.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202307210950  Circles rolling on circles.md"
+                "file": "qianchangben_calculus/钱昌本 练习题目.md"
               }
             }
           },
@@ -119,16 +132,19 @@
     "hiddenItems": {
       "switcher:打开快速切换": false,
       "command-palette:打开命令面板": false,
-      "zk-prefixer:创建时间戳笔记": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
+      "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false,
+      "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "ee490490d258bbb2",
+  "active": "68affc9408af0548",
   "lastOpenFiles": [
+    "qianchangben_calculus/qianchangben_calculus_010.md",
+    "qianchangben_calculus/钱昌本 练习题目.md",
+    "202307221351.md",
+    "202307210950  Circles rolling on circles.md",
     "attachments/202307210950  Circles rolling on circles-.webp",
     "202307201125 proofs without words PWW.md",
-    "202307210950  Circles rolling on circles.md",
     "attachments/202307201125 proofs without words PWW--1.png",
     "attachments/202307201125 proofs without words PWW-.png",
     "202307200935 对数均值不等式.md",
@@ -141,7 +157,6 @@
     "attachments/202307150120 how to think about analysis  lara alcock--4.png",
     "202307182100 黎曼ζ函数.md",
     "attachments/202307150120 how to think about analysis  lara alcock--3.png",
-    "attachments/202307150120 how to think about analysis  lara alcock--2.png",
     "attachments/Pasted image 20230716161750.png.md",
     "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
     "202307061639 线性鲁棒控制 阅读笔记.md",
@@ -165,8 +180,6 @@
     "一个等于pi的无穷级数 by 欧拉.md",
     "数学成熟度 Mathematical maturity.md",
     "怎样解题 -G.Polya.md",
-    "1.md",
-    "202307031456  Definition：a precise and unambiguous description of a term..md",
     "于品",
     "mathematica/钱昌本-高数解题-chap08.nb",
     "xiehuimin",
