@@ -28,7 +28,7 @@ b_{n} & = \int_{0}^{1} \min (a_{n-1},x) \, \mathrm{d}x.
 \quad n = 2,3,4,\dots
 $$
 
-证明数列 ${\{ a_{n} \}, \{ b_{n} \}}$ 都收敛，并求 ${\lim_{ n \to \infty }a_{n}, \lim_{ n \to \infty }b_{n}}$ .
+证明数列 ${\{ a_{n} \}, \{ b_{n} \}}$ 都收敛，并求 ${\lim\limits_{ n \to \infty }a_{n}, \lim\limits_{ n \to \infty }b_{n}}$ .
 
 
 题设中的数列 ${\{ a_{n} \}, \{ b_{n} \}}$ 是通过积分的形式交叉递推定义的，这给解答带来了困难.
