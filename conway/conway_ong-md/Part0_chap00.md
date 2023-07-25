@@ -1,4 +1,4 @@
-# All Numbers Great and Small {#chapter-0-all-numbers-great-and-small}
+# All Numbers Great and Small 
 
 Whatever is not forbidden, is permitted.
 
