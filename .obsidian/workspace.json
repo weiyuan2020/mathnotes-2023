@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "how to think",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -140,11 +140,13 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "b92f09b65dcb2e9d",
+  "active": "68affc9408af0548",
   "lastOpenFiles": [
+    "mathematica/202305051055 mathematica 显示计算过程.md",
     "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
-    "attachments/202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法-.png",
     "qianchangben_calculus/钱昌本 练习题目.md",
+    "qianchangben_calculus/qianchangben_calculus_010.md",
+    "attachments/202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法-.png",
     "202307261622 一道积分方程求解 一题多解.md",
     "202307261031 这辈子读过最好的论文 论文推荐.md",
     "attachments/202307261031-.png",
@@ -170,7 +172,6 @@
     "attachments/bg2022123001.webp",
     "attachments/bg2022123005.webp",
     "巴比伦石板.md",
-    "qianchangben_calculus/qianchangben_calculus_010.md",
     "202307221351.md",
     "202307210950  Circles rolling on circles.md",
     "attachments/202307210950  Circles rolling on circles-.webp",
