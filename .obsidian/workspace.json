@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目.md",
+                "file": "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目.md"
+                "file": "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md"
               }
             }
           }
@@ -140,14 +140,15 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "68affc9408af0548",
+  "active": "aded1c779776b98d",
   "lastOpenFiles": [
-    "mathematica/202305051055 mathematica 显示计算过程.md",
+    "202307261622 一道积分方程求解 一题多解.md",
     "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
     "qianchangben_calculus/钱昌本 练习题目.md",
+    "控制系统 李雅普诺夫稳定性 第一法与第二法.md",
+    "mathematica/202305051055 mathematica 显示计算过程.md",
     "qianchangben_calculus/qianchangben_calculus_010.md",
     "attachments/202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法-.png",
-    "202307261622 一道积分方程求解 一题多解.md",
     "202307261031 这辈子读过最好的论文 论文推荐.md",
     "attachments/202307261031-.png",
     "conway/conway_ong-md/attachments",
@@ -180,7 +181,6 @@
     "attachments/202307201125 proofs without words PWW-.png",
     "202307200935 对数均值不等式.md",
     "202307150120 how to think about analysis  lara alcock.md",
-    "202307182100 黎曼ζ函数.md",
     "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
     "mathematical English/Pronunciation of mathematical expressions.pdf",
     "mathematical English/Mathematical English (a brief summary).pdf",
