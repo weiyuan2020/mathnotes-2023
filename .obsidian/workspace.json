@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "b5db41b4059f907b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "qianchangben_calculus/钱昌本 练习题目 32-35.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2e929b945252dccf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "介值定理 及证明.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "aded1c779776b98d",
             "type": "leaf",
             "state": {
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目 25-31.md",
+                "file": "qianchangben_calculus/钱昌本 练习题目 32-35.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目 25-31.md"
+                "file": "qianchangben_calculus/钱昌本 练习题目 32-35.md"
               }
             }
           }
@@ -128,11 +153,13 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "f86cb8683dd5626f",
+  "active": "b5db41b4059f907b",
   "lastOpenFiles": [
+    "介值定理 及证明.md",
+    "qianchangben_calculus/钱昌本 练习题目 32-35.md",
+    "qianchangben_calculus/钱昌本 练习题目 25-31.md",
     "qianchangben_calculus/qianchangben_calculus_010.md",
     "qianchangben_calculus/钱昌本 练习题目 16-24.md",
-    "qianchangben_calculus/钱昌本 练习题目 25-31.md",
     "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
     "qianchangben_calculus/钱昌本 练习题目 1-15.md",
     "202307261622 一道积分方程求解 一题多解.md",
@@ -164,9 +191,7 @@
     "attachments/bg2022123005.webp",
     "巴比伦石板.md",
     "202307221351.md",
-    "202307210950  Circles rolling on circles.md",
     "attachments/202307210950  Circles rolling on circles-.webp",
-    "202307201125 proofs without words PWW.md",
     "attachments/202307201125 proofs without words PWW--1.png",
     "attachments/202307201125 proofs without words PWW-.png",
     "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
