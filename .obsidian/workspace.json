@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ee490490d258bbb2",
+            "id": "f86cb8683dd5626f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "qianchangben_calculus/qianchangben_calculus_010.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6c8232bc3094b9e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目 16-24.md",
+                "file": "qianchangben_calculus/钱昌本 练习题目 25-31.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -103,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
+                "file": "qianchangben_calculus/钱昌本 练习题目 25-31.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md"
+                "file": "qianchangben_calculus/钱昌本 练习题目 25-31.md"
               }
             }
           }
@@ -141,12 +128,13 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "aded1c779776b98d",
+  "active": "f86cb8683dd5626f",
   "lastOpenFiles": [
-    "qianchangben_calculus/钱昌本 练习题目 16-24.md",
-    "qianchangben_calculus/钱昌本 练习题目 1-15.md",
     "qianchangben_calculus/qianchangben_calculus_010.md",
+    "qianchangben_calculus/钱昌本 练习题目 16-24.md",
+    "qianchangben_calculus/钱昌本 练习题目 25-31.md",
     "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
+    "qianchangben_calculus/钱昌本 练习题目 1-15.md",
     "202307261622 一道积分方程求解 一题多解.md",
     "控制系统 李雅普诺夫稳定性 第一法与第二法.md",
     "mathematica/202305051055 mathematica 显示计算过程.md",
@@ -181,7 +169,6 @@
     "202307201125 proofs without words PWW.md",
     "attachments/202307201125 proofs without words PWW--1.png",
     "attachments/202307201125 proofs without words PWW-.png",
-    "202307200935 对数均值不等式.md",
     "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
     "mathematical English/Pronunciation of mathematical expressions.pdf",
     "mathematical English/Mathematical English (a brief summary).pdf",
