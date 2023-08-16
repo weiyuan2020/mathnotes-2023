@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
+                "file": "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目 32-35.md",
+                "file": "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目 32-35.md"
+                "file": "【数学杂谈】自学数学如何获取教育资源 202308160929.md"
               }
             }
           }
@@ -153,14 +153,15 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "b5db41b4059f907b",
+  "active": "aded1c779776b98d",
   "lastOpenFiles": [
-    "qianchangben_calculus/钱昌本 练习题目 25-31.md",
+    "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
+    "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
     "qianchangben_calculus/钱昌本 练习题目 32-35.md",
+    "qianchangben_calculus/钱昌本 练习题目 25-31.md",
     "介值定理 及证明.md",
     "qianchangben_calculus/qianchangben_calculus_010.md",
     "qianchangben_calculus/钱昌本 练习题目 16-24.md",
-    "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
     "qianchangben_calculus/钱昌本 练习题目 1-15.md",
     "202307261622 一道积分方程求解 一题多解.md",
     "控制系统 李雅普诺夫稳定性 第一法与第二法.md",
@@ -190,7 +191,6 @@
     "attachments/bg2022123001.webp",
     "attachments/bg2022123005.webp",
     "巴比伦石板.md",
-    "202307221351.md",
     "attachments/202307210950  Circles rolling on circles-.webp",
     "attachments/202307201125 proofs without words PWW--1.png",
     "attachments/202307201125 proofs without words PWW-.png",
