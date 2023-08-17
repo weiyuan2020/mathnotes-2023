@@ -2,8 +2,8 @@
 
 ## Warmups
 
-::: exercise
-**练习 1**. 1 All horses are the same color; we can prove this by
+### exercise
+**练习 1**.  All horses are the same color; we can prove this by
 induction on the number of horses in a given set. Here's how: \"If
 there's just one horse then it's the same color as itself, so the basis
 is trivial. For the induction step, assume that there are n horses
@@ -13,19 +13,19 @@ But the middle horses, 2 through n - 1, can't change color when they're
 in different groups; these are horses, not chameleons. So horses 1 and n
 must be the same color as well, by transitivity. Thus all n horses are
 the same color; QED.\" What, if anything, is wrong with this reasoning?
-:::
 
-::: answer
+
+### answer
 **题目解答 1**. n=1 情况下马有相同颜色
 
 但 n=2 时 该假设不一定成立
-:::
 
-::: exercise
-**练习 2**. 2
-:::
 
-::: answer
+### exercise
+**练习 2**. 
+
+
+### answer
 **题目解答 2**. 不允许在A B之间直接移动, 求最短的移动序列
 $$\begin{array}{cll}
         k=1     & 1\quad A \Rightarrow C, C \Rightarrow B   & 2 \quad sum=2\\
@@ -56,13 +56,13 @@ $$\begin{array}{cll}
     \end{array}$$ 从前面的移动可以看出 $f(n) = 3*f(n-1)+2$, 设
 $g(n) = f(n)+1$, $g(1)=f(1)+1 = 3$, $g(n) = 3g(n-1)$. $g(n) = 3^{n}$,
 $f(n) = 3^{n}-1$.
-:::
 
-::: exercise
-**练习 3**. 3
-:::
 
-::: answer
+### exercise
+**练习 3**. 
+
+
+### answer
 **题目解答 3**. 是的, 以n个圆盘为例 正确的叠放方法有$3^n$种
 将ABC视为3个序列, 将所有圆盘从大到小依次放置在3个序列中,
 每个圆盘放置时有3种选择,
@@ -71,13 +71,13 @@ $f(n) = 3^{n}-1$.
 所以所有正确的叠放方法均会出现。
 
 我的思考, n个圆盘在3根柱子上任意放的方法有多少种？
-:::
 
-::: exercise
-**练习 4**. 4
-:::
 
-::: answer
+### exercise
+**练习 4**. 
+
+
+### answer
 **题目解答 4**. Are there any starting and ending configurations of n
 disks on three pegs that are more than $2^n - 1$ moves apart, under
 Lucas's original rules?
@@ -88,14 +88,14 @@ Lucas's original rules?
 1. 最大的圆盘不需要移动, 根据归纳法, 最多需要移动$2^{n-1}-1$次。\
 2. 最大的圆盘需要移动, 根据归纳法, 最多需要移动
 $2^{n-1}-1 + 1 + 2^{n-1}-1$ 即 $2^{n}-1$次
-:::
 
-::: exercise
-**练习 5**. 5
-:::
 
-::: answer
-**题目解答 5**. 3个给定集合, 共有8个可能子集。使用 Venn 图表示
+### exercise
+**练习 5**. 
+
+
+### answer
+**题目解答 5**. 个给定集合, 共有8个可能子集。使用 Venn 图表示
 
 [^1] $A, B, C,$ 三个集合的所有子集为
 $\{\varnothing, A, B, C, A\cap B, A\cap C, B\cap C, A \cap B \cap C, \}$
@@ -110,23 +110,23 @@ $\{A\cap B\cap C\}$. 空集和7个互不相交的真子集。
 
 对于4个集合, Venn图不能给出可能的16个子集, 因为不同的圆至多交于两点。
 参考答案中说的卵形 (ovals) 是什么意思？
-:::
 
-::: exercise
-**练习 6**. 6
-:::
 
-::: answer
+### exercise
+**练习 6**. 
+
+
+### answer
 **题目解答 6**. 无界区域个数$2n$\
 所有区域个数$\frac{n(n+1)}{2}+1$\
 二者相减得到有界区域个数 $\frac{(n-1)(n-2)}{2}$
-:::
 
-::: exercise
-**练习 7**. 7
-:::
 
-::: answer
+### exercise
+**练习 7**. 
+
+
+### answer
 **题目解答 7**. 设 $H(n) = J(n+1) - J(n)$.\
 $H(2n) = 2$, 对$n\geqslant 1$有\
 $$\begin{aligned}
@@ -136,19 +136,19 @@ $$\begin{aligned}
          &= 2H(n) - 2
     \end{aligned}$$ 但在$n=0$ 时, 由此推出
 $$H(1) = J(2)-J(1) = 1 - 1 = 0 \neq 2$$
-:::
+
 
 ## 作业题
 
-::: exercise
+### exercise
 **练习 8**. $$\begin{aligned}
         Q_0 &= \alpha\\
         Q_1 &= \beta \\
         Q_n &= \frac{1+Q_{n-1}}{Q_{n-2}} ,\quad n>1
     \end{aligned}$$ (hint: $Q_4 = \frac{1+\alpha}{\beta}$)
-:::
 
-::: answer
+
+### answer
 **题目解答 8**. $$\begin{array}{lllll}
             Q_0 &= \alpha & & &= \alpha\\
             Q_1 &= \beta  & & &= \beta\\
@@ -167,9 +167,9 @@ $$H(1) = J(2)-J(1) = 1 - 1 = 0 \neq 2$$
             Q_i &= \{ &\alpha ,& \beta ,& \cfrac{1+\beta}{\alpha} ,& \cfrac{1+\alpha+\beta}{\alpha\beta} ,& \cfrac{1+\alpha}{\beta} & \}\\
             (i\%n) &= \{ & 0 ,& 1 ,& 2 ,& 3 ,& 4 ,& \}\\
         \end{array}$$
-:::
 
-::: exercise
+
+### exercise
 **练习 9**. 反向归纳法, 从 $n$ 到 $n-1$ 证明命题
 $$P(n) : \; x_{1} \dots x_{n} \leqslant \left( \frac{x_{1}+\cdots+x_{n}}{n}\right) ^n, \quad x_i \geqslant 0, i=1,\dots,n$$
 $n=2$时为真
@@ -181,9 +181,9 @@ a)  $x_n = \frac{x_{1}+\cdots+x_{n-1}}{n-1}$, 证明只要 $n>1$ 时 $P(n)$
 b)  证明 $P(n)$和 $P(2)$蕴含 $P(2n)$
 
 c)  由 a), b) 说明这就蕴含了$P(n)$对所有$n$为真
-:::
 
-::: answer
+
+### answer
 **题目解答 9**. a) $P(n)$成立, $\forall n>1$\
 给定 $x_n = \frac{x_{1}+\cdots+x_{n-1}}{n-1}$, 则有 $$\begin{array}{ll}
             x_1 \dots x_{n-1} \cdot \cfrac{x_{1}+\dots+x_{n-1}}{n-1} 
@@ -208,15 +208,15 @@ c\) Cauchy 向前-向后方法。\
 1. $P(2)\Rightarrow P(4)\Rightarrow\cdots P(2^n)$.\
 2. $P(n)\Rightarrow P(n-1)$.\
 $\therefore \forall n\geqslant 1$, $P(n)$成立
-:::
 
-::: exercise
+
+### exercise
 **练习 10**. 圆盘只能在ABC三根柱子上 按照顺时针方向移动。记：\
 $Q_{n}$为$n$个盘从A到B最少移动的次数。\
 $R_{n}$为$n$个盘从B到A最少移动的次数。
-:::
 
-::: answer
+
+### answer
 **题目解答 10**. 先列出两种移动方式各自的迭代式： $$Q_{n} = \left\{
         \begin{array}{ll}
             0 ,& n = 0 \\
@@ -246,13 +246,13 @@ $R_{n}$为$n$个盘从B到A最少移动的次数。
                 &                                   & (n-1) B \Rightarrow A \; R_{n-1} \\
                 & Q_n = 2R_{n-1}+1                  & R_{n} = Q_{n-1}+2R_{n-1}+2 = Q_{n}+Q_{n-1}+1\\
         \end{array}$$
-:::
 
-::: exercise
+
+### exercise
 **练习 11**. 双重河内塔 2n 个圆盘, 第$2k-1$个与第$2k$个大小相同。
-:::
 
-::: answer
+
+### answer
 **题目解答 11**. a) 不区分相同尺寸 $$\begin{aligned}
             n=0 & S_0=0 & \\
             n=1 & S_1=2 & A \Rightarrow B, A \Rightarrow B\\
@@ -293,14 +293,14 @@ b\) 在最后排列中将圆盘恢复次序需要移动几次？ $$\begin{array}
                 &           & n-1\;             A \Rightarrow B\quad S_{n-1}\\
         \end{array}$$
 $$R_n = 4S_{n-1}+3 = 2^{n+2}-5 \quad(n\geqslant 1)$$
-:::
 
-::: exercise
-**练习 12**. 12 11推广, $m_k$个尺寸为$k$的圆盘, 不区分相同尺寸的圆盘
+
+### exercise
+**练习 12**.  11推广, $m_k$个尺寸为$k$的圆盘, 不区分相同尺寸的圆盘
 移动一个塔最少次数 $A(m_1, \dots, m_n)$
-:::
 
-::: answer
+
+### answer
 **题目解答 12**. $$\begin{aligned}
         F(0)    &= 0    \\
         F(1)    &= m_1  \\
@@ -313,13 +313,13 @@ $$R_n = 4S_{n-1}+3 = 2^{n+2}-5 \quad(n\geqslant 1)$$
         &= 2^{n-1}m_1+2^{n-2}m_2+\cdots+m_n\\
         &= \sum_{k=1}^{n} 2^{n-k} m_{k}
     \end{aligned}$$
-:::
 
-::: exercise
-**练习 13**. 13
-:::
 
-::: answer
+### exercise
+**练习 13**. 
+
+
+### answer
 **题目解答 13**. $$\begin{array}{ll}
             k=1 & ZZ_1 = 2+0 = 2\\
             k=2 & ZZ_2 = 4+8 = 12\\
@@ -333,13 +333,13 @@ $$R_n = 4S_{n-1}+3 = 2^{n+2}-5 \quad(n\geqslant 1)$$
                 &= 9\cfrac{n(n+1)}{2} - 8n+1\\
                 &= \frac{9}{2}n^2 - \frac{7}{2}n + 1\\
     \end{array}$$
-:::
 
-::: exercise
-**练习 14**. 14
-:::
 
-::: answer
+### exercise
+**练习 14**. 
+
+
+### answer
 **题目解答 14**. $$\begin{array}{ll}
             n=0 & P_0 = 1   \\
             n=1 & P_1 = 2   \\
@@ -361,23 +361,23 @@ $\therefore  P_n = P_{n-1}+1+\frac{n(n+1)}{2}$ $$\begin{array}{llll}
     &= 0 + \sum_{k=0}^{n-1}\left(1+\frac{k(k+1)}{2}\right)  \\
     &= n + \frac{(n-1)n(n+1)}{6} \\
     &= \frac{n(n^2+5)}{6}\end{aligned}$$
-:::
 
-::: exercise
-**练习 15**. 15 约瑟夫问题, 倒数第二个 $I(n)$
-:::
 
-::: {#tab:JNIN .answer}
-**题目解答 15**.
+### exercise
+**练习 15**.  约瑟夫问题, 倒数第二个 $I(n)$
 
-::: {#tab:JNIN}
-    n       1      2   3   4   5   6   7   8   9   10   11   12   13   14   15   16   17   18
-  ------ -------- --- --- --- --- --- --- --- --- ---- ---- ---- ---- ---- ---- ---- ---- ----
-   J(n)     1      1   3   1   3   5   7   1   3   5    7    9    11   13   15   1    3    5
-   I(n)   $\sim$   2   1   3   5   1   3   5   7   9    11   1    3    5    7    9    11   13
 
-  : 约瑟夫问题J(n)与I(n)
-:::
+### **题目解答 15**.
+
+
+|n|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|J(n)|1|1|3|1|3|5|7|1|3|5|7|9|11|13|15|1|3|5|
+|I(n)|$\sim$|2|1|3|5|1|3|5|7|9|11|1|3|5|7|9|11|13|
+
+
+约瑟夫问题 $J(n)$ 与 $I(n)$
+
 
 $n >1$时, $J(n), I(n)$有相同递归式 $$\begin{aligned}
     & I(2) = 2, I(1) = 1\\
@@ -389,29 +389,31 @@ $n >1$时, $J(n), I(n)$有相同递归式 $$\begin{aligned}
         J(n)-2^{m},     & 2^{m-1}   \leqslant l < 2^{m}     \\
     \end{array}
     \right.$$
-:::
 
-::: exercise
+
+### exercise
 **练习 16**. $$\left\{
         \begin{array}{rl}
             g(1)    &= \alpha   \\
             g(2n+j) &= 3g(n)+\gamma n + \beta_j, \quad j=0,1, n\leqslant 1\\
         \end{array}
         \right.$$ (提示, 用$g(n)=n$)
-:::
 
-::: {#tab:EX16 .answer}
-**题目解答 16**. Suppose $g(n) = n$ $$\begin{aligned}
+
+### **题目解答 16**. 
+
+Suppose $g(n) = n$ $$\begin{aligned}
             g(1)    &= 1 = \alpha,\\
             g(2n+j) &= 2n+j = 3n+\gamma n+\beta_j.
         \end{aligned}$$ 解得
-$\alpha = 1, \gamma = -1, \beta_j = \left\{ \begin{array}{l}
+        
+$$\alpha = 1, \gamma = -1, \beta_j = \left\{ \begin{array}{l}
     0,\quad j=0\\
     1,\quad j=1\\
-\end{array}\right.$
+\end{array}\right.$$
 
 (题解) $$g(n) = a(n)\alpha + b(n)\beta_0 + c(n)\beta_1+d(n)\gamma$$
-$n = (1 b_{m-1}\dots b_1b_0)_2$ 将$n$以基数2展开(写成二进制)。\
+$n = (1 b_{m-1}\dots b_1b_0)_2$ 将$n$以基数2展开(写成二进制)。
 $$a(n)\alpha + b(n)\beta_0 + c(n)\beta_1 =  (\alpha\beta_{m-1}\beta_{m-2}\dots\beta_{b_1}\beta_{b_0})_3$$
 $g(n) = n.\quad (\alpha=1,\beta_0 = 0,\beta_1=1,  \gamma = -1 )$
 $$a(n)+c(n)-d(n)=n$$
@@ -441,26 +443,29 @@ $$g(n)=g(2^m+k)=3^m,\quad a(n)=3^m$$ 继续计算$d(n)$ 遇到困难
     \right.$$ $g(2)=0$ , $g(3)=1$ , $g(4)=0$ , $g(5)=1$ , $g(6)=3g(3)=3$
 , $g(7)=3g(3)+1=4$ , $g(8)=0$, $g(9)=1 \dots$
 
-::: {#tab:EX16}
-   n   1   2   3   4   5   6   7   8   9   10   11   12   13   14   15   16   17   18   19
-  --- --- --- --- --- --- --- --- --- --- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
-       0   0   1   0   1   3   4   0   1   3    4    9    10   12   13   0    1    3    4
-   m   0   1       2               3                                     4             
-   k           1       1   2   3       1   2    3    4    5    6    7         1    2    3
+### EX16
 
-  : m,k变化规律
-:::
+
+| n   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     | 0   | 0   | 1   | 0   | 1   | 3   | 4   | 0   | 1   | 3   | 4   | 9   | 10  | 12  | 13  | 0   | 1   | 3   | 4   |
+| m   | 0   | 1   |     | 2   |     |     |     | 3   |     |     |     |     |     |     |     | 4   |     |     |     |
+| k   |     |     | 1   |     | 1   | 2   | 3   |     | 1   | 2   | 3   | 4   | 5   | 6   | 7   |     | 1   | 2   | 3   |
+  
+
+  m,k变化规律
+
 
 $$g(2^{m}+k)=g(\left( 1 b_{m-1}b_{m-2}\dotsb_1b_0 \right)_2)$$
-:::
+
 
 复习和重做16题的部分暂不录入
 
-::: exercise
+### exercise
 **练习 17**. $$W_{n(n+1)/2} \leqslant 2W_{n(n-1)/2}+T_n, \quad n>0$$
-:::
 
-::: answer
+
+### answer
 **题目解答 17**. In general we have
 $W_m\leqslant 2W_{m-k}+T_k, \; 0\leqslant k \leqslant M$ ( This relation
 corresponds to transferring the top $m-k$. then using only three pegs to
@@ -478,31 +483,31 @@ If we set $Y_n = (W_{n(n+1)/2}-1)/2^n$
 
 we find that $Y_n \leqslant Y_{n-1}+1$ . hence
 $W_{n(n+1)/2} \leqslant 2^n(n-1)+1$
-:::
 
-::: exercise
+
+### exercise
 **练习 18**. 证明如下的一组$n$ 条折线定义$Z_n$ 个区域 $$\begin{aligned}
             Z_n = L_{2n}-2n &= \frac{2n(2n+1)}{2}+1-2n \\
             &=2n^2-n+1. \quad n\geqslant 0.
         \end{aligned}$$ 第$j$ 条折线$(1\leqslant j\leqslant n)$
 的锯齿点在$(n^{kj},0)$ . 并向上经过点$(n^{2j}-n^j,1)$ 与
 $(n^{2j}-n^j-n^{-n}, 1)$
-:::
 
-::: answer
+
+### answer
 **题目解答 18**.
-:::
 
-::: exercise
+
+### exercise
 **练习 19**. 当每一个锯齿的角度为$30^{\circ}$ 时, 有可能由$n$
 条折线得到$Z_n$ 个区域吗?
-:::
 
-::: answer
+
+### answer
 **题目解答 19**.
-:::
 
-::: exercise
+
+### exercise
 **练习 20**. 利用成套方法解递归式： $$\left\{
             \begin{array}{llll}
                 h(1) &= \alpha &&\\
@@ -510,9 +515,9 @@ $(n^{2j}-n^j-n^{-n}, 1)$
                 h(2n) &= 4h(n) &+\gamma_1 n&+\beta_1\\
             \end{array}
         \right.\quad n\geqslant 1$$
-:::
 
-::: answer
+
+### answer
 **题目解答 20**.
 $$h(n)=\alpha A(n)+\beta_0 B(n)+ \gamma_0 C(n)+\beta_1 D(n) + \gamma_1 E(n)$$ 1.
 $h(1)=1$ $$\left\{
@@ -540,40 +545,40 @@ $$n = A(n)-2C(n)+D(n)-2E(n)$$ 3. $h(n)=n^2$ $$\left\{
         \right.$$ 解得
 $(\alpha, \beta_0,\gamma_0,\beta_1,\gamma_1)=(1,0,0,1,4)$
 $$n^2 = A(n)+D(n)+4E(n)$$ 最终结果???
-:::
 
-::: exercise
+
+### exercise
 **练习 21**. $2 n$ 个人围成圈, 前$n$ 个好伙计后 $n$ 个坏家伙. 证明:
 总存在一 个整数$q$ (与 $n$ 有关), 使得若在绕圆圈走时每隔 $q - 1$
 个人处死一个, 那么所有坏家伙首先出局.\
 (例如, $n=3$ 时取$q=5$, $n=4$ 时取$q=30$ )
-:::
 
-::: answer
+
+### answer
 **题目解答 21**. We can let $m$ be the least (or any) common multiple of
 $2n, 2n-1, \dots, n+1$.\
 a non-rigorous argument suggests that \"random\" value of m will succeed
 with probability
 $$\frac{n}{2n} \frac{n-1}{2n-1} \dots \frac{1}{n+1} = \frac{1}{\binom{2n}{n}} \sim \frac{\sqrt{\pi n}}{4^n}$$
-:::
+
 
 ## 附加题
 
-::: exercise
-**练习 22**. 22
-:::
+### exercise
+**练习 22**. 
 
-::: answer
-**题目解答 22**. 22
-:::
 
-::: exercise
+### answer
+**题目解答 22**. 
+
+
+### exercise
 **练习 23**. 假如 约瑟夫发现自己处在$j$, 但能指定 $q$, 隔 $q-1$
 人处死一人. 他是否能保全自己?
-:::
 
-::: answer
+
+### answer
 **题目解答 23**.
-:::
+
 
 [^1]: Venn 图之后会补上

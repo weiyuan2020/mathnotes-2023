@@ -226,7 +226,7 @@ integrate x->y ${I=-\frac{1}{2}}$
 integrate y->x ${I=\frac{1}{2}}$
  why they aren’t equal?
  
-[[202305111101 极限 微分 积分次序交换]]
+[[../极限 微分 积分次序交换 202305111101]]
 这里
 $$
 F(x) = \int_{0}^{1} \frac{x-y}{(x+y)^{3}} \, \mathrm{d}y = \frac{1}{(1+x)^{2}}

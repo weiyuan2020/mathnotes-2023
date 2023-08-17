@@ -9,27 +9,27 @@ Definition：a precise and unambiguous description of the meaning of a mathemati
 
 前些日子和朋友讨论高数书及一些高中教科书出现的极值定义时，发现有不同的说法，大家觉得哪些是对的？  
 
-![图片|500](attachments/00c5531d3bf9a67a9ea372b8c2384a3f_MD5.png)
+![图片|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--14.png)
 
 某济高数教材
 
-![图片|500](attachments/32c7dc688c0d48af081d64b756b8c9d2_MD5.png)
+![图片|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456-.png)
 
 华老的《高等数学引论》
 
-![|500](attachments/202307031456%20%20Definition：a%20precise%20and%20unambiguous%20description%20of%20a%20term.-.png)
+![|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--15.png)
 
 刘玉琏《数学分析讲义》
 
-![图片|500](attachments/b5dff448e819c09701888cb4748c547e_MD5.png)
+![图片|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--16.png)
 
 某《数学分析》讲义
 
-![图片|500](attachments/4a98f33664a32ebf2c5ec0ba66b9bc64_MD5.png)
+![图片|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--17.png)
 
 baby Rudin中文版
 
-![图片|500](attachments/f5904af4c0eb6f4f9dfee1654741157b_MD5.png)
+![图片|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--18.png)
 
 胡适耕《数学分析定理·问题·方法》
 
@@ -45,7 +45,7 @@ baby Rudin中文版
 
 大家都熟知，中学数学就出现了极值的概念，我们找来了现行的教材，比较一下  
 
-![图片|500](attachments/b9277f83bcd62ce4942705ad6afa46e6_MD5.png)
+![图片|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--19.png)
 
 某A版教材
 
@@ -53,13 +53,13 @@ baby Rudin中文版
 
   
 
-![|500](attachments/202307031456--1.png)
+![|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--20.png)
 
 湖某版教材
 
 隐含了严格的不等号。  
 
-![|500](attachments/202307031456--2.png)
+![|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--21.png)
 
 某师大版教材
 
@@ -72,7 +72,7 @@ baby Rudin中文版
   
 
   
-![|500](attachments/202307031456--3.png)
+![[attachments/【Definition】 a precise and unambiguous description of a term 202307031456--22.png|500]]
 
 湖某版教材  
 
@@ -80,21 +80,21 @@ baby Rudin中文版
 
   
 
-![|500](attachments/202307031456--4.png)
+![|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--23.png)
 某B版教材早期
 
 这里是严格不等号，但发现在随后修订的版本里，这里进行了修改
 
-![|500](attachments/202307031456--5.png)
+![|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--24.png)
 看来编者发现了问题，及时修订。
 
 
-![|500](attachments/202307031456--6.png)
+![|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--25.png)
 某苏版教材  
 
 嗯嗯，很好。  
 
-![|500](attachments/202307031456--7.png)
+![|500](attachments/【Definition】%20a%20precise%20and%20unambiguous%20description%20of%20a%20term%20202307031456--26.png)
 某海版教材  
 
 隐含了带等号的不等号，定义准确。  

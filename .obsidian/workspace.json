@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7f098138e3d48a84",
+        "id": "8b7d79c52e297e53",
         "type": "tabs",
         "children": [
           {
-            "id": "f86cb8683dd5626f",
+            "id": "8d04fabbeccdb045",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目 25-31.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5db41b4059f907b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "qianchangben_calculus/钱昌本 练习题目 32-35.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2e929b945252dccf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "介值定理 及证明.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aded1c779776b98d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
+                "file": "具体数学/CMChap1_repertoiremethod.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -75,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -98,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5,
-    "collapsed": true
+    "width": 299.5
   },
   "right": {
     "id": "1e4e6f8c85937a0f",
@@ -115,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
+                "file": "具体数学/CMChap1_repertoiremethod.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "【数学杂谈】自学数学如何获取教育资源 202308160929.md"
+                "file": "具体数学/CMChap1_repertoiremethod.md"
               }
             }
           }
@@ -153,44 +115,44 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "aded1c779776b98d",
+  "active": "8d04fabbeccdb045",
   "lastOpenFiles": [
-    "202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法.md",
-    "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
-    "qianchangben_calculus/钱昌本 练习题目 32-35.md",
-    "qianchangben_calculus/钱昌本 练习题目 25-31.md",
-    "介值定理 及证明.md",
-    "qianchangben_calculus/qianchangben_calculus_010.md",
-    "qianchangben_calculus/钱昌本 练习题目 16-24.md",
-    "qianchangben_calculus/钱昌本 练习题目 1-15.md",
-    "202307261622 一道积分方程求解 一题多解.md",
-    "控制系统 李雅普诺夫稳定性 第一法与第二法.md",
-    "mathematica/202305051055 mathematica 显示计算过程.md",
+    "具体数学/CMChap1Ex.md",
+    "具体数学/CMChap1.md",
+    "具体数学/CMChap1_repertoiremethod.md",
+    "rudin/bbr/chap00.md",
+    "【Definition】 a precise and unambiguous description of a term 202307031456.md",
+    "【网页】 some useful net 202305112009.md",
+    "逆矩阵引理 matrix inversion lemma  (Woodbury matrix Identity) 202307031124.md",
+    "【网页】 线性矩阵不等式 LMI linear matrix inequality.md",
+    "【网页】 巴塞尔问题 Basel problem solution of Euler.md",
+    "【网页】 这辈子读过最好的论文 论文推荐 202307261031.md",
+    "富比尼定理 Fubini Theorem 202305111124.md",
+    "【网页】 斐波那契数列.md",
+    "点到直线的距离公式 202306031501.md",
+    "对数均值不等式 202307200935.md",
+    "代码 多维牛顿迭代法 202304252115.md",
+    "【网页】 2023高考数学北京卷压轴题 202306120846.md",
+    "【book】 proofs without words PWW 202307201125.md",
+    "算术-几何平均值不等式 202306021542.md",
+    "【网页】 202306120918 一些有帮助的网址.md",
+    "【网页】 巴比伦石板.md",
+    "【网页】 单墫 三元不等式问题一例 202008150900.md",
+    "【网页】 单墫 不定方程问题一例 202306070842.md",
+    "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然2.md",
+    "【网页】 费曼 求解复杂导数的方法.md",
+    "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然.md",
+    "【网页】  巴塞尔问题(Basel problem)的多种解法.md",
     "attachments/202307261034 painless-conjugate-gradient 没有痛苦的共轭梯度下降法-.png",
-    "202307261031 这辈子读过最好的论文 论文推荐.md",
     "attachments/202307261031-.png",
     "conway/conway_ong-md/attachments",
-    "conway/conway_ong-md/Part0_chap00.md",
-    "conway/Donald E. Knuth - Surreal numbers(1974).md",
-    "conway/21-11-14 johnConway_OneNumberAndGames.md",
-    "conway/conway_ong-md/Part0_0.md",
-    "conway/conway_ong-md/Part_prologue.md",
-    "其他/202307041637 段子一则.md",
-    "其他/202305162118 粟裕.md",
-    "其他/黑吃四寸膘.md",
-    "其他/故事一则.md",
     "其他",
     "新建文件夹",
-    "202307221351 知乎题目解答.md",
-    "202307031456 Definition：a precise and unambiguous description of a term..md",
-    "202307210950 Circles rolling on circles.md",
-    "202306031501 点到直线的距离公式.md",
     "attachments/bg2022123004.webp",
     "attachments/bg2022123003.webp",
     "attachments/bg2022123002.webp",
     "attachments/bg2022123001.webp",
     "attachments/bg2022123005.webp",
-    "巴比伦石板.md",
     "attachments/202307210950  Circles rolling on circles-.webp",
     "attachments/202307201125 proofs without words PWW--1.png",
     "attachments/202307201125 proofs without words PWW-.png",
