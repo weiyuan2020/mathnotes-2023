@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lectures on generating functions/Chap 2 Lectures on generating functions.md",
+                "file": "直线在平面上的投影方程.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lectures on generating functions/Chap 2 Lectures on generating functions.md",
+                "file": "直线在平面上的投影方程.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lectures on generating functions/Chap 2 Lectures on generating functions.md"
+                "file": "直线在平面上的投影方程.md"
               }
             }
           }
@@ -115,10 +115,18 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "b92f09b65dcb2e9d",
+  "active": "8d04fabbeccdb045",
   "lastOpenFiles": [
-    "rudin/bbr/chap01sec01.md",
+    "微分形式交换位置要变号 改变积分顺序是否也需要 202305111128.md",
+    "直线在平面上的投影方程.md",
+    "【book】 波利亚 polya 数学与猜想 读书笔记.md",
+    "逆矩阵引理 matrix inversion lemma  (Woodbury matrix Identity) 202307031124.md",
+    "平均数不等式 均值不等式 202306021538.md",
+    "【网页】【知乎】 用均值不等式解决一个极值问题 202306041157.md",
+    "attachments/直线在平面上的投影方程--1.png",
+    "attachments/直线在平面上的投影方程-.png",
     "Lectures on generating functions/Chap 2 Lectures on generating functions.md",
+    "rudin/bbr/chap01sec01.md",
     "Lectures on generating functions/Chap 1 Lectures on generating functions.md",
     "Inside Interesting Integrals/III_chap_1.x.md",
     "Inside Interesting Integrals/III_chap_1-ex.md",
@@ -143,19 +151,11 @@
     "attachments/卡塔兰数--6.png",
     "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_006.md",
     "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_002.md",
-    "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_001.md",
     "具体数学/attachments/卡塔兰数--1.jpg",
     "具体数学/attachments/3bf69ecc83e3c7fbeb189c682e73fbb3_MD5.png",
     "具体数学/attachments/卡塔兰数--2.png",
-    "mathematica/attachments/卡塔兰数--30.png",
-    "mathematica/attachments/卡塔兰数--29.png",
     "mathematica/attachments",
     "具体数学/attachments",
-    "具体数学/成套方法 repertoire method.md",
-    "rudin/bbr/chap00.md",
-    "【Definition】 a precise and unambiguous description of a term 202307031456.md",
-    "【网页】 some useful net 202305112009.md",
-    "逆矩阵引理 matrix inversion lemma  (Woodbury matrix Identity) 202307031124.md",
     "conway/conway_ong-md/attachments",
     "其他",
     "新建文件夹",
