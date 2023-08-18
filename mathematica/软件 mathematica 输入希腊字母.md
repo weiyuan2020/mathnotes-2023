@@ -7,5 +7,5 @@ Wolfram 语言允许在符号名称、字符串和图形中使用希腊字母—
 
 ### 大写希腊字母
 
-Wolfram 语言的符号 π (可以输入 ![](https://reference.wolframcloud.com/language/guide/Files/GreekLetters.zh/49.png)p![](https://reference.wolframcloud.com/language/guide/Files/GreekLetters.zh/52.png))
+Wolfram 语言的符号 π (可以输入 ![[mathematica/attachments/530870b1928ffe91976c9ca1cbb26963_MD5.png]]p![[mathematica/attachments/530870b1928ffe91976c9ca1cbb26963_MD5.png]]
 两个esc之间夹读音即可

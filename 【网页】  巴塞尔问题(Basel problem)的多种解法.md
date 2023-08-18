@@ -245,7 +245,7 @@ $$
 
  从而有$(x,y)=\left(\frac{\sin{u}}{\cos{v}},\frac{\sin{v}}{\cos{u}}\right)$
 
-[![](https://images0.cnblogs.com/blog/601002/201401/241304441792.png) 
+[![[attachments/13a675cc65a6d27fd70b1acc9730bec9_MD5.png]] 
 
 雅可比行列式即为
 
@@ -275,7 +275,7 @@ $$
 
 这个证明在很多复分析书上都有。我们同样可以利用留数计算该结果,考虑$f(x)=z^{-2}\cot{\pi z}$,积分路径$P_n$为在中心为原点的长形如图
 
-![](https://images0.cnblogs.com/blog/601002/201401/241310013197.png)
+![[attachments/376084e7583d25814b6bfd349b268346_MD5.png]]
  
 
 实轴交点为$\pm(n+1/2)$,复轴为$\pm ni$,而若$\pi z=x+iy$,直接计算可得

@@ -6,13 +6,13 @@ The cross-spectral density (CSD) is one of several [advanced graph functions](h
 
 Put simply, the CSD can be used to find mutual resonant frequencies in a pair of signals. It shows how correlated (“related,” “statistically connected,” “influenced”) two signals are in reference to another.
 
-![cross spectral density graph](https://vibrationresearch.com/wp-content/uploads/2020/12/cross_spectral_density.png)
+![[attachments/ec3d279360a19569de44ad69f1ae844e_MD5.png]]
 
 Cross spectral density analysis option in [ObserVIEW](https://vibrationresearch.com/products/obserview/) software.
 
 ### Association with the Power Spectral Density (PSD)
 
-![Power spectral density](https://vibrationresearch.com/wp-content/uploads/2020/04/PSD_icon.png)
+![[attachments/a9fa542abd54037f39ec9610b0c876fb_MD5.png]]
 
 Power spectral density.
 
@@ -74,7 +74,7 @@ An engineer tested a product on a shaker in the X, Y, and Z-axis. As the product
 
 Figure 1 contains three CSD plots where the three linear axes are compared to the drive. In the first plot, the three axes’ accelerations are compared to the drive acceleration on the X-axis. In the second, they are compared to the drive acceleration on the Y-axis; in the third, the Z-axis.
 
-[![cross-spectral density](https://vibrationresearch.com/wp-content/uploads/2020/12/cross-spectral-density.png)](https://vibrationresearch.com/wp-content/uploads/2020/12/cross-spectral-density.png)
+[![[attachments/860ddac8b22ec44958731281cf404d9c_MD5.png]]](https://vibrationresearch.com/wp-content/uploads/2020/12/cross-spectral-density.png)
 
 Figure 1. Cross-spectral density plot for a multi-axis system.
 
@@ -82,7 +82,7 @@ In the top plot, the X-axis (black trace) and the drive acceleration vibrate sim
 
 An examination of the coherence plot for the same data set results in a similar conclusion (Figure 2). In the top plot, the correlation value is 1 for much of the frequency spectrum. This value indicates that the X-axis vibrates perfectly with the drive except for the 300Hz and 800Hz resonances.
 
-[![coherence plot](https://vibrationresearch.com/wp-content/uploads/2020/12/cross-spectral-density-Figure-2.png)](https://vibrationresearch.com/wp-content/uploads/2020/12/cross-spectral-density-Figure-2.png)
+[![[attachments/89583b4873bd938229d4c519e927d57b_MD5.png]]](https://vibrationresearch.com/wp-content/uploads/2020/12/cross-spectral-density-Figure-2.png)
 
 Figure 2: Coherence plot for a multi-axis system.
 
