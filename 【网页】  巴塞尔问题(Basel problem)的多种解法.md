@@ -1,25 +1,18 @@
 
 
-[数学搬运工](https://www.cnblogs.com/misaka01034/){#Header1_HeaderTitle
-.headermaintitle .HeaderMainTitle}\
+[数学搬运工](https://www.cnblogs.com/misaka01034/)
 数学成果而非题目的集散地
 
 
-[巴塞尔问题(Baselproblem)的多种解法——怎么计算$\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\cdots$](https://www.cnblogs.com/misaka01034/p/BaselProof.html)
+### 巴塞尔问题(Baselproblem)的多种解法——怎么计算$\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\cdots$
 
-<div id="cnblogs_post_description" style="display: none">
+https://www.cnblogs.com/misaka01034/p/BaselProof.html
+
 如何计算$\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\cdots$?
 本文给出了多种解法
-</div>
-
-
-（PS：本文会不断更新）
-
-<!-- $\newcommand\R{\operatorname{Res}}$ -->
 
 如何计算 $\zeta(2)=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\cdots$ ?
-这个问题是在1644年由意大利数学家蒙哥利（Pietro
-Mengoli）提出的，而大数学家欧拉于1735年第一次解决了这个问题。他得出著名的结果：\
+这个问题是在1644年由意大利数学家蒙哥利（Pietro Mengoli）提出的，而大数学家欧拉于1735年第一次解决了这个问题。他得出著名的结果：
 
 $$
 \sum_{k=1}^{\infty}\frac{1}{k^2}=\frac{\pi^2}{6}
@@ -28,22 +21,22 @@ $$
 
 解决这个问题的方法在近代不断涌现。这里我从各处摘抄到一些方法，列举在此，仅供大家参考。
 
-如有错误，请向我指出，谢谢！（PS：最近发现忻州师范学院[某网页](http://jxdw.xztc.edu.cn/maths2/lanwssite/basel/basel15.htm)抄了我博客后不给Reference，希望大家[明辨是非](http://www.math.org.cn/forum.php?mod=viewthread&tid=30001)）
+如有错误，请向我指出，谢谢！
 
-首先，我们需要知道这个问题的等价形式,将这个数列除以4，我们自然得到$\sum_{k=1}^{\infty}
-\frac{1}{(2k)^2}=\frac{\pi^2}{24}$,从而我们只需证明\
+首先，我们需要知道这个问题的等价形式,将这个数列除以4，我们自然得到
+$\sum_{k=1}^{\infty}\frac{1}{(2k)^2}=\frac{\pi^2}{24}$,从而我们只需证明
 
 $$
 \sum_{k=1}^{\infty}\frac{1}{(2k-1)^2}=\frac{\pi^2}{8}
 $$
-\
+
 而以下某些证明会用到这一点。
 
 
 
 ### 证明1：欧拉的证明
 
-欧拉的证明是十分聪明的。他只是将幂级数同有限的多项式联系到了一起，就得到了答案。首先注意到\
+欧拉的证明是十分聪明的。他只是将幂级数同有限的多项式联系到了一起，就得到了答案。首先注意到
 
 $$
 \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} -
@@ -78,15 +71,13 @@ $$
 \end{align}
 $$
 
-（PS:欧拉似乎没有证明这个无穷积，直到100年后魏尔斯特拉斯得到了他著名的“魏尔斯特拉斯分解定理”（Weierstrass
-factorization
-theorem，详情可见wiki相应条目）。利用这个方法得到函数时要特别小心，我以前看到的一个[反例](http://tieba.baidu.com/p/1083636713)就可以说明这个问题)
+（PS:欧拉似乎没有证明这个无穷积，直到100年后魏尔斯特拉斯得到了他著名的“魏尔斯特拉斯分解定理”（Weierstrass factorization theorem，详情可见wiki相应条目）。利用这个方法得到函数时要特别小心，我以前看到的一个[反例](http://tieba.baidu.com/p/1083636713)就可以说明这个问题)
 
 从而我们对这个无穷乘积的$x^2$项进行研究，可以知道
 
 $$
 -\left(\frac{1}{\pi^2} + \frac{1}{4\pi^2} +
-\frac{1}{9\pi^2} + \cdots \right) =\
+\frac{1}{9\pi^2} + \cdots \right) =
 -\frac{1}{\pi^2}\sum_{n=1}^{\infty}\frac{1}{n^2}.
 $$
 
@@ -99,16 +90,14 @@ $$
 
 这样就得到了答案。
 
-注:欧拉给出过严谨的证明，但是由于他的第一个证明太广为人知，所以有时候会认为他没给出真正的证明。不过贴吧里的
-tq唐乾
-吧友提醒了我，实际上，欧拉有他真正的证明。是通过如下方式:首先令$N$为奇数
+注:欧拉给出过严谨的证明，但是由于他的第一个证明太广为人知，所以有时候会认为他没给出真正的证明。不过贴吧里的 tq唐乾 吧友提醒了我，实际上，欧拉有他真正的证明。是通过如下方式:首先令$N$为奇数
 
 
 $$
 z^n-a^n=(z-1)\prod_{k=1}^{(n-1)/2}(z^2-2az\cos{\frac{2k\pi}{n}}+a^2)
 $$
 
-令$z=1+x/N,a=1-x/N$,且n=N,有\
+令$z=1+x/N,a=1-x/N$,且n=N,有
 
 $$
 \begin{align*}\left(1+\frac{x}N\right)^N-\left(1+\frac{x}N\right)^N
@@ -134,8 +123,7 @@ $$
 
 
 ### 证明2:一个初等的证明
-以下证明第一次来自Ioannis Papadimitriou于1973年在American Math Monthly
-80(4):424-425页发表的。Apostol在同一份杂志425-430发表了用这个方法计算$\zeta(2n)$的方法。
+以下证明第一次来自 Ioannis Papadimitriou 于1973年在 American Math Monthly 80(4):424-425页发表的。 Apostol 在同一份杂志425-430发表了用这个方法计算$\zeta(2n)$的方法。
 
 
 这似乎是这个问题最“初等”的一个证明了，只需要知道三角函数相应知识就能够完成。我们先证明一个恒等式:
@@ -158,7 +146,7 @@ $$
 \end{align*}
 $$
 
-很显然，令$n=2m+1$,则我们有$\cot^2{\omega_m},\cot^2{(2\omega_m)}\cdots \cot^2{(m\omega_m)}$为多项式\
+很显然，令$n=2m+1$,则我们有$\cot^2{\omega_m},\cot^2{(2\omega_m)}\cdots \cot^2{(m\omega_m)}$为多项式
 
 $$
 \binom{n}{1}x^{m}-\binom{n}{3}x^{m-1}+\cdots \pm 1
@@ -208,10 +196,10 @@ $$
 $S$是由点$(0,0),(1/2,-1/2),(1,0),(1/2,1/2)$构成的正方形，利用正方形的对称性，那么
 
 $$
-\begin{align*}\
+\begin{align*}
 2\iint_S\frac{1}{1-u^2+v^2}dudv&=4\int_{0}^{1/2}\int_{0}^{u}\frac{1}{1-u^2+v^2}dvdu+4\int_{1/2}^{1}\int_{0}^{1-u}\frac{1}{1-u^2+v^2}dvdu\\
 &=4\int_{0}^{1/2}\frac{1}{\sqrt{1-u^2}}\arctan{\left(\frac{u}{\sqrt{1-u^2}}\right)}du +4\int_{1/2}^{1}\frac{1}{\sqrt{1-u^2}}\arctan{\left(\frac{1-u}{\sqrt{1-u^2}}\right)}du\\
-\end{align*}\
+\end{align*}
 
 $$
 
@@ -251,12 +239,12 @@ $$
 
 
 $$
-\begin{align*}\
-\frac{\partial (x,y)}{\partial(u,v)}&=\begin{vmatrix}\
+\begin{align*}
+\frac{\partial (x,y)}{\partial(u,v)}&=\begin{vmatrix}
 \cos{u}/\cos{v} & \sin{u}\sin{v}/\cos{v}^2 \\
 \sin{u}\sin{v}/\cos{u}^2 & \cos{v}/\cos{u} \\
 \end{vmatrix}\\
-&=1-\frac{\sin^2u\sin^2v}{\cos^2u\cos^2v}=1-x^2y^2\
+&=1-\frac{\sin^2u\sin^2v}{\cos^2u\cos^2v}=1-x^2y^2
 \end{align*}
 $$
 
@@ -325,7 +313,7 @@ $$
 
 那么利用$\cos$的欧拉公式
 
-$2\cos{x}=e^{ix}+e^{-ix}=e^{ix}(1+e^{-2ix})$从而$\ln(2\cos{x})=\ln(e^{ix})+\ln(1+e^{-2ix})=ix+\ln(1+e^{-2ix})$在积分中代换得\
+$2\cos{x}=e^{ix}+e^{-ix}=e^{ix}(1+e^{-2ix})$从而$\ln(2\cos{x})=\ln(e^{ix})+\ln(1+e^{-2ix})=ix+\ln(1+e^{-2ix})$在积分中代换得
 
 $$
 \begin{align*}
@@ -459,7 +447,7 @@ $$
 
 $$
 f(x)=\dfrac{\pi ^{2}}{3}+\sum_{n=1}^{\infty }\left(
-(-1)^{n}\dfrac{4}{n^{2}}\
+(-1)^{n}\dfrac{4}{n^{2}}
 \cos nx\right)
 $$
 
@@ -474,7 +462,7 @@ $$
 
 
 $$
-f(x)=2\sum_{n=1}^{\infty }\left( \dfrac{(-1)^{n+1}}{n}\
+f(x)=2\sum_{n=1}^{\infty }\left( \dfrac{(-1)^{n+1}}{n}
 \sin nx\right)
 $$
 
@@ -504,7 +492,7 @@ $$
 f(t)=\sum_{n=1}^{\infty}\frac{\cos{nt}}{n^2}
 $$
 
-在实轴上一致收敛，对于在$t\in -\epsilon,2\pi-\epsilon$,我们有\
+在实轴上一致收敛，对于在$t\in -\epsilon,2\pi-\epsilon$,我们有
 
 $$
 \sum_{n=1}^N\sin{nt}=\frac{e^{it}-e^{i(N+1)t}}{2i(1-e^{it})}+\frac{1-e^{iN)t}}{2i(1-e^{it})}
@@ -699,7 +687,7 @@ $$
  
 又由于$\sin ^{-2}x < x ^{-2} < \tan ^{-2}x$对$x\in(0,\pi/2)$成立
 
-令$x=(2k+1)\pi/(2N)$,对$k=0,1,\cdots,N/2-1(N=2 ^n)$对不等式求和，就变为\
+令$x=(2k+1)\pi/(2N)$,对$k=0,1,\cdots,N/2-1(N=2 ^n)$对不等式求和，就变为
 
 
 $$
