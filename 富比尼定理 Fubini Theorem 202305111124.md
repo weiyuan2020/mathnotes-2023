@@ -8,7 +8,7 @@ $$
 \iint _{R} f(x,y)  \, \mathrm{d}(x,y)  = 
 \int_{a}^{b} \int_{c}^{d} f(x,y) \, \mathrm{d}y  \, \mathrm{d}x 
 $$
-![intint_Rf(x,y)d(x,y)=int_a^bint_c^df(x,y)dydx|300](https://mathworld.wolfram.com/images/equations/FubiniTheorem/NumberedEquation1.svg)
+![[attachments/f5f84f1272faf90fb35885a2915ace38_MD5.svg]]
 
 holds (Thomas and Finney 1996, p. 919).
 
