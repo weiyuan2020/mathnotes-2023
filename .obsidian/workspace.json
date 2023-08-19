@@ -13,13 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "【网页】 变分法解最速降线问题 202306230951.md",
+                "file": "【网页】 巴塞尔问题 Basel problem solution of Euler.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ]
+      },
+      {
+        "id": "e67999bdd963b1e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01a7a6b4b7fd269b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "【网页】  巴塞尔问题(Basel problem)的多种解法.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2385d7e6c262ddf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "【网页】 一些有帮助的网址 202306120918.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "【网页】 变分法解最速降线问题 202306230951.md",
+                "file": "【网页】 一些有帮助的网址 202306120918.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "【网页】 变分法解最速降线问题 202306230951.md"
+                "file": "【网页】 一些有帮助的网址 202306120918.md"
               }
             }
           }
@@ -115,11 +146,17 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "8d04fabbeccdb045",
+  "active": "2385d7e6c262ddf4",
   "lastOpenFiles": [
+    "【网页】  巴塞尔问题(Basel problem)的多种解法.md",
+    "【book】 王竹溪 特殊函数概论 ex 202305171116.md",
+    "【网页】 巴塞尔问题 Basel problem solution of Euler.md",
+    "【网页】【Definition】 a precise and unambiguous description of a term 202307031456.md",
+    "【book】 how to think about analysis (lara alcock) 202307150120.md",
+    "【book】 painless-conjugate-gradient 没有痛苦的共轭梯度下降法 202307261034.md",
+    "【网页】 变分法解最速降线问题 202306230951.md",
     "【网页】 一些有帮助的网址 202306120918.md",
     "【网页】 2023高考数学北京卷压轴题 202306120846.md",
-    "【网页】  巴塞尔问题(Basel problem)的多种解法.md",
     "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
     "直线在平面上的投影方程.md",
     "微分形式交换位置要变号 改变积分顺序是否也需要 202305111128.md",
@@ -140,12 +177,6 @@
     "conway/conway_ong-md/Part_prologue.md",
     "conway/conway_ong-md/fig0.pdf",
     "具体数学/CMChap1Ex.md",
-    "具体数学/CMChap2.md",
-    "具体数学/CMChap1 成套方法 repertoiremethod.md",
-    "具体数学/CMChap1.md",
-    "conway/conway_ong-md/Part0_chap00.md",
-    "具体数学/CMChap3.md",
-    "具体数学/CMChap2Ex.md",
     "attachments/卡塔兰数-.jpg",
     "attachments/54ccc793c2314473b33051677d00d2a9_MD5.png",
     "attachments/3bf69ecc83e3c7fbeb189c682e73fbb3_MD5.png",
