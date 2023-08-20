@@ -13,44 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "【网页】 巴塞尔问题 Basel problem solution of Euler.md",
+                "file": "Napkin/reading notes 22.01.14.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ]
-      },
-      {
-        "id": "e67999bdd963b1e8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "01a7a6b4b7fd269b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "【网页】  巴塞尔问题(Basel problem)的多种解法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2385d7e6c262ddf4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "【网页】 一些有帮助的网址 202306120918.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "【网页】 一些有帮助的网址 202306120918.md",
+                "file": "Napkin/reading notes 22.01.14.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "【网页】 一些有帮助的网址 202306120918.md"
+                "file": "Napkin/reading notes 22.01.14.md"
               }
             }
           }
@@ -146,37 +115,37 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "2385d7e6c262ddf4",
+  "active": "8d04fabbeccdb045",
   "lastOpenFiles": [
-    "【网页】  巴塞尔问题(Basel problem)的多种解法.md",
-    "【book】 王竹溪 特殊函数概论 ex 202305171116.md",
-    "【网页】 巴塞尔问题 Basel problem solution of Euler.md",
-    "【网页】【Definition】 a precise and unambiguous description of a term 202307031456.md",
-    "【book】 how to think about analysis (lara alcock) 202307150120.md",
-    "【book】 painless-conjugate-gradient 没有痛苦的共轭梯度下降法 202307261034.md",
-    "【网页】 变分法解最速降线问题 202306230951.md",
-    "【网页】 一些有帮助的网址 202306120918.md",
-    "【网页】 2023高考数学北京卷压轴题 202306120846.md",
-    "【数学杂谈】自学数学如何获取教育资源 202308160929.md",
-    "直线在平面上的投影方程.md",
-    "微分形式交换位置要变号 改变积分顺序是否也需要 202305111128.md",
-    "【book】 波利亚 polya 数学与猜想 读书笔记.md",
+    "mathematical English/American Pronunciation of Mathematics.pdf",
+    "Lectures on generating functions/Chap 1 Lectures on generating functions.md",
+    "拉丁方阵 202304251350.md",
+    "其他/黑吃四寸膘.md",
+    "其他/故事一则.md",
+    "黎曼ζ函数 202307182100.md",
     "逆矩阵引理 matrix inversion lemma  (Woodbury matrix Identity) 202307031124.md",
-    "平均数不等式 均值不等式 202306021538.md",
-    "【网页】【知乎】 用均值不等式解决一个极值问题 202306041157.md",
+    "三角函数定积分的一个重要结论 递推式 202306081627.md",
+    "20年笔记 20-08-07.md",
+    "【控制】【book】控制系统 能控性 能观性 现代控制理论笔记.md",
+    "【控制】 控制系统 李雅普诺夫稳定性 第一法与第二法.md",
+    "【控制】【book】控制系统 控制工程手册.md",
+    "【控制】【book】线性鲁棒控制 阅读笔记 202307061639.md",
+    "【控制】 交叉频谱 What is the Cross Spectral Density (CSD).md",
+    "【控制】【book】工程控制论 chap 01.md",
+    "【控制】【book】 工程控制论 钱学森 英文版及翻译 阅读笔记.md",
+    "【控制】 非线性系统 nonlinear systems -khalil reading notes.md",
+    "【几何】直线在平面上的投影方程.md",
+    "算术-几何平均值不等式 202306021542.md",
+    "【几何】点到直线的距离公式 202306031501.md",
+    "极限 微分 积分次序交换 202305111101.md",
+    "对数均值不等式 202307200935.md",
+    "代码 多维牛顿迭代法 202304252115.md",
+    "卡塔兰数.md",
+    "【网页】 2023高考数学北京卷压轴题 202306120846.md",
+    "【网页】 巴塞尔问题 Basel problem solution of Euler.md",
     "attachments/直线在平面上的投影方程--1.png",
     "attachments/直线在平面上的投影方程-.png",
-    "Lectures on generating functions/Chap 2 Lectures on generating functions.md",
-    "rudin/bbr/chap01sec01.md",
-    "Lectures on generating functions/Chap 1 Lectures on generating functions.md",
-    "Inside Interesting Integrals/III_chap_1.x.md",
-    "Inside Interesting Integrals/III_chap_1-ex.md",
-    "conway/21-11-14 johnConway_OneNumberAndGames.md",
-    "conway/Donald E. Knuth - Surreal numbers(1974).md",
-    "conway/conway_tbn-md/chap00.md",
-    "conway/conway_ong-md/Part_prologue.md",
     "conway/conway_ong-md/fig0.pdf",
-    "具体数学/CMChap1Ex.md",
     "attachments/卡塔兰数-.jpg",
     "attachments/54ccc793c2314473b33051677d00d2a9_MD5.png",
     "attachments/3bf69ecc83e3c7fbeb189c682e73fbb3_MD5.png",
@@ -192,7 +161,6 @@
     "新建文件夹",
     "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
     "mathematical English/Pronunciation of mathematical expressions.pdf",
-    "mathematical English/Mathematical English (a brief summary).pdf",
-    "mathematical English/American Pronunciation of Mathematics.pdf"
+    "mathematical English/Mathematical English (a brief summary).pdf"
   ]
 }

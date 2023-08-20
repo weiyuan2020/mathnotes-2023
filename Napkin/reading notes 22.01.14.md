@@ -17,8 +17,6 @@ This is sometimes accomplished with a complete rigorous proof; in other cases, i
 # Advice for the reader
 ## Prerequisites
 
-[[数学成熟度 Mathematical maturity]]
-
 1. Readers need to know how to read and write a proof, follow logical arguments, and so on.
 2. Readers also need to familiar with basic terminology about sets and functions
 (e.g. “what is a bijection?”). If not, one should consult Appendix E.
@@ -31,3 +29,4 @@ I suggest that you simply pick a chapter you find interesting, and then find the
 ## Paper
 Read this book with pencil and paper.
 You are not God. You cannot keep everything in your head.
+
