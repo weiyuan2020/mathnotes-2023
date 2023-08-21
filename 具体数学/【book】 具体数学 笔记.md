@@ -1,4 +1,6 @@
-chap 7 
+
+# chap 7 
+
 参考文献 46
 William G. Brown, \Historical note on a recurrent combinatorial problem," American Mathematical Monthly 72 (1965), 973{977.
 

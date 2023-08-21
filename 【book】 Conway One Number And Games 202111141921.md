@@ -235,6 +235,6 @@ We forgot to check that $1 \ge 1$. Why not do this yourself.
 
 *Proof.* Is $1 \ge 1$? This will happen unless there is $1^R \le 1$ or
 $1^L \le 1$. By the definition, 1 = {0\|}, so $1^L = 0$ and
-$1^R = \emptyset$. $1^R \le 1$ is $\emptyset le 1$(there is),
+$1^R = \emptyset$. $1^R \le 1$ is $\emptyset \le 1$(there is),
 $1^L \le 1$ is $0 \le 1$(there is). So we have $1 \ge 1$. ◻
 

@@ -8,9 +8,7 @@ Publisher: American Mathematical Society, Year: 2003
 
 ISBN: 0-8218-3481-9,9780821834817
 
-#Reading-notes 
-
-# preface
+## preface
 
 A **permutation** is an arrangement of objects in a definite order. The members or elements of sets are arranged here in a sequence or linear order. For example, the permutation of set A={1,6} is 2, such as {1,6}, {6,1}. As you can see, there are no other ways to arrange the elements of set A.
 
@@ -36,8 +34,8 @@ explicit 显性的, 清楚明白的
 
 The elegant method of matrix integration invented by physicists leads to explicit results only in a few cases.
 
-# chapter 1
-## 1.1 The lucky tickets problem
+## Chap 1 Lectures on generating functions
+#### 1.1 The lucky tickets problem
 Question
 The tickets had a 6-digit number. A ticket is said to be *lucky* if the sum of first three digits of its number coincides with the sum of the last three digits. *How many lucky tickets are there?*
 
@@ -71,10 +69,10 @@ $$
 The product $A_3(s)A_3(\frac{1}{s})$ also is a Laurent polynomial.
 *The number of lucky tickets coincides with the free term of the Laurent polynomial $A_3(s)A_3(\frac{1}{s})$*
 
-## 1.7 problems
+#### 1.7 problems
 1.2 Find an expression for the number of 2r-figure lucky tickets in the number system to the base q
 
-### 1.3 
+###### 1.3 
 a $\sin^2 s + \cos^2s=1$
 $$
 \sin s = s - \frac{s^3}{3!}+\cdots+(-1)^{n}\frac{s^{2n+1}}{(2n+1)!}
@@ -142,7 +140,7 @@ $$
 &=1+s+s^2+\cdots
 \end{align}
 $$
-### 1.4. 
+###### 1.4. 
 Suppose a function $B = B(s) = b_1s + b_2s^2 + b_3s^3 +\cdots$ is such
 that $b_1\neq 0$. Prove that the left inverse function $A(t)$ and the right
 inverse function $C(t)$ to it coincide. This common inverse function is
@@ -163,30 +161,30 @@ $b_1c_2+b_2c_1=0, c_2=-b_2/b_1^2$
 
 $\therefore A(t)=C(t)=B^{-1}(t)$
 
-### 1.6 
+###### 1.6 
 Prove there is no power series $A(s)$ satisfying the question $sA(s)=1$.
 $A(s)=a_0+a_1s+a_2s^2+\cdots$
 $sA(s)=a_0s+a_1s^2+a_2s^3+\cdots\neq 1$
 
-### 1.7
+###### 1.7
 $A(s)=a_0+a_1s+a_2s^2+\cdots\neq0$
 $B(s)=b_0+b_1s+b_2s^2+\cdots\neq 0$
 $A(s)B(s)=(a_0+a_1s+a_2s^2+\cdots)(b_0+b_1s+b_2s^2+\cdots)\neq0$
 
-### 1.8
+###### 1.8
 $A(s)=1+s+s^2+\dots=\frac{1}{1-s}$
 $\frac{1}{A(s)}=1-s$
 
 $B(B^{-1}(s))=s$
 $B(s)=s, B^{-1}(s)=s$
 
-### 1.9
+###### 1.9
 a $$\frac{1}{(1-z)^2}$$
 b $$\frac{2}{(1-z)^3}$$
 c $$\frac{1+z}{(1-z)^3}$$
 
 
-### 1.10 
+###### 1.10 
 $$
 (\int A)(B(t)) = \int(A(B(t))B'(t))
 $$
@@ -198,7 +196,7 @@ $$
 \end{align}
 $$
 
-### 1.11 Prvoe the Newton-Leibniz identity
+###### 1.11 Prvoe the Newton-Leibniz identity
 $$
 (A(s)B(s))' = A'(s)B(s) + A(s)B'(s)
 $$
@@ -212,7 +210,7 @@ $$
 \end{align}
 $$
 
-### 1.12 Prove the integration by parts formula
+###### 1.12 Prove the integration by parts formula
 $$
 \int (A(s)B'(s)+A'(s)B(s)) = A(s)B(s) - A(0)B(0)
 $$
@@ -227,5 +225,156 @@ $$
 \end{align}
 $$
 
-### 1.13
+###### 1.13
 I don't know
+
+
+## Chap 2 Lectures on generating functions
+
+### gf for well-known sequence
+
+#### 2.1 geometric series
+$<1,1,1,...>$
+$$G(z) = \frac{1}{1-z}$$
+
+$<a,ar,ar^2,\dots>$
+$$G_{a,r}(z) = \frac{a}{1-rz}$$
+
+#### 2.2 Fibonacci sequence
+
+$$f_{n+2} = f_{n+1} + f_{n}$$
+$<1,1,2,3,5,8,13,21,34,\dots>$
+$F(z) = 1+z+2z^2+3z^3+5z^4+\cdots$
+
+$$
+\begin{align}
+(z+z^2)F(z)&=z+z^2+2z^3+3z^4+5z^5+\cdots\\
+&\qquad \quad z^2+\;\;z^3+2z^4+3z^5+\cdots
+\end{align}
+$$
+$$(z+z^2)F(z)=F(z)-1$$
+$$F(z)=\frac{1}{1-z-z^2}$$
+$$
+F(z) = 1+(z+z^2) +(z+z^2)^2+(z+z^2)^3+\cdots
+$$
+
+linear algebra way to deduce the gf for Fibonacci sequence
+
+$$
+\Phi:
+\begin{pmatrix}
+f_n\\
+f_{n+1}
+\end{pmatrix}
+\to
+\begin{pmatrix}
+f_{n+1}\\
+f_{n+2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+f_n+f_{n+1}\\
+f_{n+1}
+\end{pmatrix}
+,\begin{pmatrix}
+f_n\\
+f_{n+1}
+\end{pmatrix}
+\in\mathbb{R}^2
+$$
+
+$$
+\Phi:
+\begin{pmatrix}
+f_n\\
+f_{n+1}
+\end{pmatrix}
+\mapsto%左箭头
+\begin{pmatrix}
+0&1\\
+1&1\\
+\end{pmatrix}
+\begin{pmatrix}
+f_n\\
+f_{n+1}
+\end{pmatrix}
+=\Phi
+\begin{pmatrix}
+f_n\\
+f_{n+1}
+\end{pmatrix}
+$$
+
+$$
+ L^{-1}\Phi L = \Lambda ,\Phi = L\Lambda L^{-1}
+$$
+
+$$
+\begin{pmatrix}
+a&b\\
+c&d\\
+\end{pmatrix}^{-1} =
+\frac{1}{ad-bc}
+\begin{pmatrix}
+d&-b\\
+-c&a\\
+\end{pmatrix}
+$$
+
+#### 2.3 F(s)推广
+recurrence relations and rational
+$a_{n+k} = c_1a_{n+k-1} + c_2a_{n+k-2}+\cdots+c_ka_{n}$
+
+let $a_0,a_1,\dots,a_{k-1}$ be given
+gf of <$a_k$ > is 
+$$
+A(s) = \frac{P(s)}{Q(s)}
+$$
+rational
+
+$(c_1s+c_2s^2+\dots+c_ks^k)A(s) = P(s) + A(s)$
+$Q(s) = 1-c_1s-c_2s^2-\dots-c_ks^k$
+
+linear algebra way
+$$
+\begin{pmatrix}
+a_n\\
+a_{n+1}\\
+\vdots\\
+a_{n+k-1}
+\end{pmatrix}
+\in\mathbb{R}^k. \quad
+\begin{pmatrix}
+a_{n+1}\\
+a_{n+2}\\
+\vdots\\
+a_{n+k}
+\end{pmatrix}
+=
+\begin{pmatrix}
+0&1&\cdots&&0\\
+0&0&1&&\vdots\\
+\vdots&&&\ddots&\vdots\\
+\vdots&&&&1\\
+c_k&c_{k-1}&\cdots&\cdots&c_1
+\end{pmatrix}
+\begin{pmatrix}
+a_n\\
+a_{n+1}\\
+\ldots\\
+a_{n+k-1}
+\end{pmatrix}
+$$
+$\bar A(s) = (I-sA)^{-1}\begin{pmatrix}a_0\\a_{1}\\\vdots\\a_{k-1}\end{pmatrix}$
+
+Jordan normal form
+
+coprime 互质
+
+#### 2.4 Hadmard product of $gf$
+
+def :(Hadamrad product)
+$A\circ B(s) = a_0b_0 + a_1b_1s+a_2b_2s^2+\cdots$
+对应项的系数相乘
+quasipolunomial in the var $n$
+

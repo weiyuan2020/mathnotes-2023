@@ -59,7 +59,7 @@ $$
 \int_{0}^{\pi} \frac{\cos n\theta - \cos n\alpha}{\cos\theta-\cos\alpha} \, \mathrm{d}\theta = \frac{\pi\sin n\alpha}{\sin\alpha} 
 $$
 
-use recursive equation, ref[[具体数学 笔记]]
+use recursive equation, ref[[../具体数学/【book】 具体数学 笔记]]
 
 
 $$

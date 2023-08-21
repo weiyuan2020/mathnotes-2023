@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Napkin/reading notes 22.01.14.md",
+                "file": "【book】 于品 数学分析讲义 1 202305221712.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Napkin/reading notes 22.01.14.md",
+                "file": "【book】 于品 数学分析讲义 1 202305221712.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Napkin/reading notes 22.01.14.md"
+                "file": "【book】 于品 数学分析讲义 1 202305221712.md"
               }
             }
           }
@@ -115,10 +115,30 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "8d04fabbeccdb045",
+  "active": "b92f09b65dcb2e9d",
   "lastOpenFiles": [
+    "Inside Interesting Integrals/a.bat",
+    "Inside Interesting Integrals/a.txt",
+    "【book】 于品 数学分析讲义 2 202305221725.md",
+    "【book】 于品 数学分析讲义 1 202305221712.md",
+    "具体数学/【book】 具体数学 笔记.md",
+    "202307041637 段子一则.md",
+    "【def】 欧拉方程 Euler formula 202205141105.md",
+    "【book】 Conway One Number And Games 202111141921.md",
+    "【book】 Lectures on generating functions.md",
+    "Lectures on generating functions/Chap 2 Lectures on generating functions.md",
+    "mathematica/软件 mathematica 规则与模式.md",
+    "mathematica/软件 mathematica 使用记录 202304222209.md",
+    "mathematica/软件 mathematica 输入希腊字母.md",
+    "mathematica/软件 mathematica 显示计算过程 202305051055.md",
+    "mathematica/attachments/cb669c76d26e08eff91a35a3c603984b_MD5.png",
+    "mathematica/attachments/a883f713623b586568a994e271cd795c_MD5.png",
+    "mathematica/attachments/2ead976cac4f3be76c1f3ee118820409_MD5.png",
+    "mathematica/软件 mathematica NDSolve 绘制相图.md",
+    "mathematica/202305011455 mathematica 有理函数处理.md",
+    "【book】proofs from the book 1.1.md",
+    "【book】napkin reading notes 22.01.14.md",
     "mathematical English/American Pronunciation of Mathematics.pdf",
-    "Lectures on generating functions/Chap 1 Lectures on generating functions.md",
     "拉丁方阵 202304251350.md",
     "其他/黑吃四寸膘.md",
     "其他/故事一则.md",
@@ -128,21 +148,6 @@
     "20年笔记 20-08-07.md",
     "【控制】【book】控制系统 能控性 能观性 现代控制理论笔记.md",
     "【控制】 控制系统 李雅普诺夫稳定性 第一法与第二法.md",
-    "【控制】【book】控制系统 控制工程手册.md",
-    "【控制】【book】线性鲁棒控制 阅读笔记 202307061639.md",
-    "【控制】 交叉频谱 What is the Cross Spectral Density (CSD).md",
-    "【控制】【book】工程控制论 chap 01.md",
-    "【控制】【book】 工程控制论 钱学森 英文版及翻译 阅读笔记.md",
-    "【控制】 非线性系统 nonlinear systems -khalil reading notes.md",
-    "【几何】直线在平面上的投影方程.md",
-    "算术-几何平均值不等式 202306021542.md",
-    "【几何】点到直线的距离公式 202306031501.md",
-    "极限 微分 积分次序交换 202305111101.md",
-    "对数均值不等式 202307200935.md",
-    "代码 多维牛顿迭代法 202304252115.md",
-    "卡塔兰数.md",
-    "【网页】 2023高考数学北京卷压轴题 202306120846.md",
-    "【网页】 巴塞尔问题 Basel problem solution of Euler.md",
     "attachments/直线在平面上的投影方程--1.png",
     "attachments/直线在平面上的投影方程-.png",
     "conway/conway_ong-md/fig0.pdf",
@@ -151,16 +156,12 @@
     "attachments/3bf69ecc83e3c7fbeb189c682e73fbb3_MD5.png",
     "attachments/0f60322da063d6c9b9d9b19bd337cf11_MD5.png",
     "attachments/卡塔兰数--6.png",
-    "具体数学/attachments/卡塔兰数--1.jpg",
-    "具体数学/attachments/3bf69ecc83e3c7fbeb189c682e73fbb3_MD5.png",
-    "具体数学/attachments/卡塔兰数--2.png",
     "mathematica/attachments",
     "具体数学/attachments",
     "conway/conway_ong-md/attachments",
     "其他",
     "新建文件夹",
     "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
-    "mathematical English/Pronunciation of mathematical expressions.pdf",
-    "mathematical English/Mathematical English (a brief summary).pdf"
+    "mathematical English/Pronunciation of mathematical expressions.pdf"
   ]
 }
