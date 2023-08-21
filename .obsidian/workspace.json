@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8d04fabbeccdb045",
+            "id": "e9dfe2e327f1f0a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_001.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae2580669690fb28",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,14 +128,27 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "b92f09b65dcb2e9d",
+  "active": "ae2580669690fb28",
   "lastOpenFiles": [
+    "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_001.md",
+    "微分形式交换位置要变号 改变积分顺序是否也需要 202305111128.md",
+    "202307041637 段子一则.md",
+    "卡塔兰数.md",
+    "【网页】 费曼 求解复杂导数的方法.md",
+    "attachments/【网页】 费曼 求解复杂导数的方法--2.png",
+    "attachments/【网页】 费曼 求解复杂导数的方法--1.png",
+    "attachments/【网页】 费曼 求解复杂导数的方法-.png",
+    "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然.md",
+    "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然2.md",
+    "Inside Interesting Integrals/III_chap_2.1.md",
+    "Inside Interesting Integrals/III_chap_2-ex.md",
+    "Inside Interesting Integrals/III_chap_1.x.md",
+    "Inside Interesting Integrals/III_chap_1-ex.md",
+    "【book】 于品 数学分析讲义 1 202305221712.md",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
     "【book】 于品 数学分析讲义 2 202305221725.md",
-    "【book】 于品 数学分析讲义 1 202305221712.md",
     "具体数学/【book】 具体数学 笔记.md",
-    "202307041637 段子一则.md",
     "【def】 欧拉方程 Euler formula 202205141105.md",
     "【book】 Conway One Number And Games 202111141921.md",
     "【book】 Lectures on generating functions.md",
@@ -139,29 +165,16 @@
     "【book】proofs from the book 1.1.md",
     "【book】napkin reading notes 22.01.14.md",
     "mathematical English/American Pronunciation of Mathematics.pdf",
-    "拉丁方阵 202304251350.md",
-    "其他/黑吃四寸膘.md",
-    "其他/故事一则.md",
-    "黎曼ζ函数 202307182100.md",
-    "逆矩阵引理 matrix inversion lemma  (Woodbury matrix Identity) 202307031124.md",
-    "三角函数定积分的一个重要结论 递推式 202306081627.md",
-    "20年笔记 20-08-07.md",
-    "【控制】【book】控制系统 能控性 能观性 现代控制理论笔记.md",
-    "【控制】 控制系统 李雅普诺夫稳定性 第一法与第二法.md",
     "attachments/直线在平面上的投影方程--1.png",
     "attachments/直线在平面上的投影方程-.png",
     "conway/conway_ong-md/fig0.pdf",
     "attachments/卡塔兰数-.jpg",
     "attachments/54ccc793c2314473b33051677d00d2a9_MD5.png",
-    "attachments/3bf69ecc83e3c7fbeb189c682e73fbb3_MD5.png",
-    "attachments/0f60322da063d6c9b9d9b19bd337cf11_MD5.png",
-    "attachments/卡塔兰数--6.png",
     "mathematica/attachments",
     "具体数学/attachments",
     "conway/conway_ong-md/attachments",
     "其他",
     "新建文件夹",
-    "attachments/202307150120 how to think about analysis  lara alcock-.pdf",
-    "mathematical English/Pronunciation of mathematical expressions.pdf"
+    "attachments/202307150120 how to think about analysis  lara alcock-.pdf"
   ]
 }
