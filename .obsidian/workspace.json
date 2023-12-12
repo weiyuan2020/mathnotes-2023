@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202312111057 有理函数积分.md",
+                "file": "202312122059 latex 长等号.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202312111127 费曼积分法 留数定理 应用.md",
+                "file": "202312122057 两个积分相等的证明 椭圆积分.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6b7daf6639136566",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "202312121311 latex公式输入 mathematica.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202312111127 费曼积分法 留数定理 应用.md",
+                "file": "202312122057 两个积分相等的证明 椭圆积分.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202312111127 费曼积分法 留数定理 应用.md"
+                "file": "202312122057 两个积分相等的证明 椭圆积分.md"
               }
             }
           }
@@ -144,9 +156,12 @@
   "active": "963fcdb68180b56c",
   "lastOpenFiles": [
     "202312121311 latex公式输入 mathematica.md",
+    "202312122057 两个积分相等的证明 椭圆积分.md",
+    "202312122059 latex 长等号.md",
     "202312111057 有理函数积分.md",
-    "202312111039 费曼求导法.md",
     "202312111127 费曼积分法 留数定理 应用.md",
+    "202312122051 一道复杂有理函数积分 使用特殊技巧.md",
+    "202312111039 费曼求导法.md",
     "attachments/202312111127 费曼积分法 留数定理 应用--4.png",
     "attachments/202312111127 费曼积分法 留数定理 应用--3.png",
     "attachments/202312111127 费曼积分法 留数定理 应用--2.png",
@@ -176,9 +191,6 @@
     "【book】 Conway One Number And Games 202111141921.md",
     "【book】 Lectures on generating functions.md",
     "Lectures on generating functions/Chap 2 Lectures on generating functions.md",
-    "mathematica/软件 mathematica 规则与模式.md",
-    "mathematica/软件 mathematica 使用记录 202304222209.md",
-    "mathematica/软件 mathematica 输入希腊字母.md",
     "mathematica/attachments/cb669c76d26e08eff91a35a3c603984b_MD5.png",
     "mathematica/attachments/a883f713623b586568a994e271cd795c_MD5.png",
     "mathematical English/American Pronunciation of Mathematics.pdf",
