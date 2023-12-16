@@ -4,7 +4,7 @@
   "showLineNumber": true,
   "foldIndent": false,
   "showIndentGuide": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "newFileLocation": "current",
   "newFileFolderPath": "attachments",
   "promptDelete": false,
