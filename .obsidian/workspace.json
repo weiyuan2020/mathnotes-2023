@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f720541007fa3140",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "202312181436 三角平方差公式证明.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202312161716 Gamma 函数.md",
+                "file": "202312181436 三角平方差公式证明.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202312161716 Gamma 函数.md"
+                "file": "202312181436 三角平方差公式证明.md"
               }
             }
           }
@@ -116,9 +129,10 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "6b7daf6639136566",
+  "active": "f720541007fa3140",
   "lastOpenFiles": [
     "202312161708 n倍角公式.md",
+    "202312181436 三角平方差公式证明.md",
     "202312161716 Gamma 函数.md",
     "202312171034 斯特林公式.md",
     "attachments/202312161716 Gamma 函数-.png",
@@ -154,7 +168,6 @@
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
     "【book】 于品 数学分析讲义 2 202305221725.md",
-    "具体数学/【book】 具体数学 笔记.md",
     "mathematica/attachments/cb669c76d26e08eff91a35a3c603984b_MD5.png",
     "mathematical English/American Pronunciation of Mathematics.pdf",
     "conway/conway_ong-md/fig0.pdf",
