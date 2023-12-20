@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202312161716 Gamma 函数.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f720541007fa3140",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
+                "file": "202312210019 常数变易法 计算常微分方程.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
+                "file": "202312210019 常数变易法 计算常微分方程.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202312201417 一个不等式证明，使用切比雪夫联合技术.md"
+                "file": "202312210019 常数变易法 计算常微分方程.md"
               }
             }
           }
@@ -129,9 +116,14 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "f720541007fa3140",
+  "active": "fbadcdcb6fcd6b7d",
   "lastOpenFiles": [
+    "202312210016 矩阵论.md",
+    "202312210019 常数变易法 计算常微分方程.md",
+    "attachments/202312210016 矩阵论--1.png",
+    "attachments/202312210016 矩阵论-.png",
     "202312161716 Gamma 函数.md",
+    "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
     "202312191538 Beta 函数.md",
     "202312191114 麻省理工积分决赛第二题怎么做.md",
     "202312122059 latex 长等号.md",
@@ -154,17 +146,14 @@
     "attachments/202312111127 费曼积分法 留数定理 应用--3.png",
     "attachments/202312111127 费曼积分法 留数定理 应用--2.png",
     "attachments/202312111127 费曼积分法 留数定理 应用--1.png",
-    "attachments/202312111127 费曼积分法 留数定理 应用-.png",
     "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_001.md",
     "极限 微分 积分次序交换 202305111101.md",
     "【book】 于品 数学分析讲义 1 202305221712.md",
     "202307041637 段子一则.md",
     "卡塔兰数.md",
-    "attachments/【网页】 费曼 求解复杂导数的方法--2.png",
     "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然.md",
     "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然2.md",
     "Inside Interesting Integrals/III_chap_2.1.md",
-    "Inside Interesting Integrals/III_chap_2-ex.md",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
     "mathematical English/American Pronunciation of Mathematics.pdf",
