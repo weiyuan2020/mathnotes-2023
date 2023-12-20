@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202312191114 麻省理工积分决赛第二题怎么做.md",
+                "file": "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202312191114 麻省理工积分决赛第二题怎么做.md",
+                "file": "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202312191114 麻省理工积分决赛第二题怎么做.md"
+                "file": "202312201417 一个不等式证明，使用切比雪夫联合技术.md"
               }
             }
           }
@@ -131,11 +131,18 @@
   },
   "active": "f720541007fa3140",
   "lastOpenFiles": [
+    "202312201505高数课积分顺序 反对幂指三.md",
+    "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
+    "202312201433 example of jensen inequality.md",
+    "202312201409 曲面积分公式.md",
+    "202312191114 麻省理工积分决赛第二题怎么做.md",
+    "【book】 Lectures on generating functions.md",
+    "微分形式交换位置要变号 改变积分顺序是否也需要 202305111128.md",
+    "【网页】一道积分方程求解 一题多解 202307261622.md",
     "attachments/202312191114 麻省理工积分决赛第二题怎么做--2.png",
     "attachments/202312191114 麻省理工积分决赛第二题怎么做--1.png",
     "attachments/202312191114 麻省理工积分决赛第二题怎么做-.png",
     "202312191040 费曼积分法练习.md",
-    "202312191114 麻省理工积分决赛第二题怎么做.md",
     "202312111127 费曼积分法 留数定理 应用.md",
     "202312181436 三角平方差公式证明.md",
     "202312161716 Gamma 函数.md",
@@ -157,16 +164,9 @@
     "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_001.md",
     "极限 微分 积分次序交换 202305111101.md",
     "【book】 于品 数学分析讲义 1 202305221712.md",
-    "微分形式交换位置要变号 改变积分顺序是否也需要 202305111128.md",
     "202307041637 段子一则.md",
     "卡塔兰数.md",
-    "【网页】 费曼 求解复杂导数的方法.md",
     "attachments/【网页】 费曼 求解复杂导数的方法--2.png",
-    "attachments/【网页】 费曼 求解复杂导数的方法--1.png",
-    "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然.md",
-    "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然2.md",
-    "Inside Interesting Integrals/III_chap_2.1.md",
-    "Inside Interesting Integrals/III_chap_2-ex.md",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
     "mathematical English/American Pronunciation of Mathematics.pdf",
