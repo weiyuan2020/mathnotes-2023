@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202312210019 常数变易法 计算常微分方程.md",
+                "file": "具体数学/CMChap3.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202312210019 常数变易法 计算常微分方程.md",
+                "file": "具体数学/CMChap3.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202312210019 常数变易法 计算常微分方程.md"
+                "file": "具体数学/CMChap3.md"
               }
             }
           }
@@ -111,15 +111,16 @@
     "hiddenItems": {
       "switcher:打开快速切换": false,
       "command-palette:打开命令面板": false,
+      "zk-prefixer:创建时间戳笔记": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false,
-      "zk-prefixer:创建时间戳笔记": false
+      "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
   "active": "fbadcdcb6fcd6b7d",
   "lastOpenFiles": [
-    "202312210016 矩阵论.md",
+    "具体数学/attachments",
     "202312210019 常数变易法 计算常微分方程.md",
+    "202312210016 矩阵论.md",
     "attachments/202312210016 矩阵论--1.png",
     "attachments/202312210016 矩阵论-.png",
     "202312161716 Gamma 函数.md",
@@ -153,13 +154,11 @@
     "卡塔兰数.md",
     "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然.md",
     "【网页】 费曼 使用代数方法证明欧拉公式 自然底数因何自然2.md",
-    "Inside Interesting Integrals/III_chap_2.1.md",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
     "mathematical English/American Pronunciation of Mathematics.pdf",
     "conway/conway_ong-md/fig0.pdf",
     "mathematica/attachments",
-    "具体数学/attachments",
     "conway/conway_ong-md/attachments",
     "其他",
     "新建文件夹",

@@ -103,3 +103,35 @@ $$
 
 4. ${\lceil \sqrt{ \lfloor x \rfloor } \rceil =? \lceil \sqrt{ x } \rceil }$, ${(x\geq 0, x \in \mathbb{R})}$ 
 
+${ x = \phi = \frac{\sqrt{ 5 }+1}{2} \approx 1.618\dots }$ 
+${ \lceil \sqrt{ x } \rceil = 2 }$ 
+${ \lceil \sqrt{ \lfloor x \rfloor } \rceil = 1 }$ 
+矛盾，上述等式不成立
+
+
+数学书中有可能出现的不同⽔平的问题
+⽔平1 对宣称的 某个事实寻求⼀个证明 (算术)
+给定⼀个显式对象x 和⼀个显式性质， 证明${ P(x) }$ 为真
+ex 证明 ${ \lfloor \pi \rfloor = 3 }$ 
+
+⽔平2 寻求⼀个具有⼀般性的证明 (代数)
+给定⼀个显式集合X 和⼀个显式性质 ${ P(X) }$  
+证明 ${ \forall x \in X, P(X) }$ 为真
+ex 证明 ${ \forall x \in \mathbb{R}, \lfloor x \rfloor \leq x }$ 
+
+⽔平3 结果不确定
+给定⼀个显式集合X 和⼀个显式性质 ${ P(X) }$  
+证明或推翻 ${ \forall x \in X, P(X) }$ 为真
+ex 证明对所有实数 ${ x \geq 0 }$ ，有 ${ \lceil \sqrt{ \lfloor x \rfloor } \rceil = \lceil \sqrt{ x } \rceil}$ 
+
+⽔平4 条件 也不知道, 条件尽可能简单
+给定⼀个显式集合X 和⼀个显式性质 ${ P(X) }$  
+寻求一个使${ P(X) }$ 为真的必要且充分的条件（充分必要条件，充要条件 iff） ${ Q(X) }$ 
+ex 求使 ${ \lceil  x \rceil \geq \lfloor x \rfloor }$ 成立的充分必要条件
+找到使${ P(X) \Longleftrightarrow Q(x)  }$ 成立的${ Q(X) }$ 
+1. 找到Q
+2. 证明 P为真iffQ为真
+
+⽔平5 给定⼀个显式集合X，寻求其元素的⼀个有趣性质P(X)
+
+%%todo
