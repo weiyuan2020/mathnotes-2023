@@ -109,7 +109,8 @@ ${ \lceil \sqrt{ \lfloor x \rfloor } \rceil = 1 }$
 矛盾，上述等式不成立
 
 
-数学书中有可能出现的不同⽔平的问题
+#### 数学书中有可能出现的不同⽔平的问题
+
 ⽔平1 对宣称的 某个事实寻求⼀个证明 (算术)
 给定⼀个显式对象x 和⼀个显式性质， 证明${ P(x) }$ 为真
 ex 证明 ${ \lfloor \pi \rfloor = 3 }$ 
@@ -134,4 +135,50 @@ ex 求使 ${ \lceil  x \rceil \geq \lfloor x \rfloor }$ 成立的充分必要条
 
 ⽔平5 给定⼀个显式集合X，寻求其元素的⼀个有趣性质P(X)
 
+
+
+
+4.${ \lceil \sqrt{ \lfloor x \rfloor } \rceil ?= \lceil \sqrt{ x } \rceil, (x \geq 0, x \in \mathbb{R}) }$ 成立的条件？
+
+${ x = \lfloor x \rfloor + \{ x \} = k^{2} + \underbrace{ (\lfloor x \rfloor - k^{2}) }_{ < 2k + 1 } + \underbrace{ \{ x \} }_{ <1 } }$ 
+
+${ \lceil \sqrt{ \lfloor x \rfloor } \rceil = \lceil \sqrt{ x } \rceil }$ 
+
+${ \sqrt{ \lfloor x \rfloor } = \sqrt{  k^{2} + (\lfloor x \rfloor - k^{2}) } }$ 
+
+${ \lceil \sqrt{ \lfloor x \rfloor } \rceil = k+1 }$ 
+
+${ \sqrt{ x } = \sqrt{ k^{2} + (\lfloor x \rfloor - k^{2}) + \{ x \} } }$
+
+
+
+${ m^{2}+1 \leq x \leq (m+1)^{2} }$  等式成立充要条件
+
+当 ${ x \in (m^{2}, \dots, m^{2}+1) }$ 时
+
+${ \lceil \sqrt{ \lfloor x \rfloor } \rceil = m }$ 
+
+${ \lceil \sqrt{ x } \rceil = m + 1 }$ 
+
+
+当 ${ x \in [ m^{2}+1,\dots,(m+1)^{2}] }$ 
+
+${ \lceil \sqrt{ \lfloor x \rfloor } \rceil = m + 1 }$ 
+
+${ \lceil \sqrt{ x } \rceil = m + 1 }$ 
+
+
+闭区间 closed interval ${ [\alpha..\beta] }$ 
+开区间 open interval ${ (\alpha..\beta) }$ 
+半开区间 half-open interval ${ (\alpha..\beta] }$ 
+
+${ \alpha,\beta, n\in \mathbb{N}, \alpha \leq \beta }$ 
+${ [\alpha..\beta)  }$ 包含 ${ \beta-\alpha }$ 个整数
+${ (\alpha..\beta]  }$ 包含 ${ \beta-\alpha }$ 个整数
+
+${ \alpha,\beta \in \mathbb{R}, n \in \mathbb{N} }$ 
+${ \alpha \leq n < \beta \Leftrightarrow \lceil \alpha \rceil \leq n < \lceil \beta \rceil }$ 顶用于左闭区间
+${ \alpha < n \leq \beta \Leftrightarrow \lceil \alpha \rceil < n \leq \lceil \beta \rceil }$ 底用于右闭区间
+
+${ [\alpha..\beta) }$ 包含 ${ \lceil \beta \rceil - \lceil \alpha \rceil }$ 个整数
 %%todo
