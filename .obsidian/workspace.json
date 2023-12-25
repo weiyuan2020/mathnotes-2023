@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8b7d79c52e297e53",
+        "id": "cfa0a28f17ec05fc",
         "type": "tabs",
         "children": [
           {
-            "id": "fbadcdcb6fcd6b7d",
+            "id": "98e6515f08c66ef1",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "具体数学/attachements/Concrete Mathematics.pdf"
+                "file": "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -75,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "具体数学/attachements/Concrete Mathematics.pdf",
+                "file": "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "具体数学/attachements/Concrete Mathematics.pdf"
+                "file": "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md"
               }
             }
           }
@@ -113,53 +115,53 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "fbadcdcb6fcd6b7d",
+  "active": "98e6515f08c66ef1",
   "lastOpenFiles": [
-    "具体数学/attachements/repertoire.pdf",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--9.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--8.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--7.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--6.png",
+    "202312251128 微分中值定理 罗尔定理 拉格朗日中值定理 柯西中值定理.md",
+    "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--5.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--4.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--3.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--2.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--1.png",
+    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式-.png",
+    "202312210019 常数变易法 计算常微分方程.md",
     "具体数学/attachements/Concrete Mathematics.pdf",
+    "具体数学/attachements/repertoire.pdf",
     "具体数学/attachements/CMChap3-.png",
-    "具体数学/attachements/CMChap2_table-P1.png",
     "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_010.md",
     "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_001.md",
     "钱昌本 高等数学解题过程的分析和研究/钱昌本 练习题目 1-15.md",
     "具体数学/CMChap3.md",
     "具体数学/attachments",
-    "202312210019 常数变易法 计算常微分方程.md",
     "202312210016 矩阵论.md",
-    "attachments/202312210016 矩阵论--1.png",
-    "attachments/202312210016 矩阵论-.png",
     "202312161716 Gamma 函数.md",
     "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
     "202312191538 Beta 函数.md",
     "202312191114 麻省理工积分决赛第二题怎么做.md",
     "202312122059 latex 长等号.md",
-    "attachments/202312191114 麻省理工积分决赛第二题怎么做--2.png",
-    "attachments/202312191114 麻省理工积分决赛第二题怎么做--1.png",
-    "attachments/202312191114 麻省理工积分决赛第二题怎么做-.png",
     "202312191040 费曼积分法练习.md",
     "202312111127 费曼积分法 留数定理 应用.md",
     "202312181436 三角平方差公式证明.md",
     "202312161708 n倍角公式.md",
     "202312171034 斯特林公式.md",
-    "attachments/202312161716 Gamma 函数-.png",
     "202312161745 欧拉常数 gamma.md",
     "202312121311 latex公式输入 mathematica.md",
     "202312111039 费曼求导法.md",
     "202312122057 两个积分相等的证明 椭圆积分.md",
     "202312111057 有理函数积分.md",
     "202312122051 一道复杂有理函数积分 使用特殊技巧.md",
-    "attachments/202312111127 费曼积分法 留数定理 应用--4.png",
-    "attachments/202312111127 费曼积分法 留数定理 应用--3.png",
     "极限 微分 积分次序交换 202305111101.md",
-    "【book】 于品 数学分析讲义 1 202305221712.md",
-    "202307041637 段子一则.md",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
     "mathematical English/American Pronunciation of Mathematics.pdf",
     "conway/conway_ong-md/fig0.pdf",
     "mathematica/attachments",
     "conway/conway_ong-md/attachments",
-    "其他",
-    "新建文件夹"
+    "其他"
   ]
 }
