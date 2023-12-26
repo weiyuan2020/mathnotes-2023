@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md",
+                "file": "book/王竹溪 特殊函数概论 chap1 202305171009.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1d62f29f523d5e4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "book/严镇军 复变函数 题目 202305172040.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b44c668b52351b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "book/严镇军 复变函数.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "607f4597ecb014bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "book/严镇军 复变函数 chap2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -77,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md",
+                "file": "book/严镇军 复变函数 chap2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md"
+                "file": "book/严镇军 复变函数 chap2.md"
               }
             }
           }
@@ -103,8 +140,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5,
-    "collapsed": true
+    "width": 233.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -115,53 +151,53 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "98e6515f08c66ef1",
+  "active": "607f4597ecb014bf",
   "lastOpenFiles": [
+    "book/严镇军 复变函数.md",
+    "book/严镇军 复变函数 chap2.md",
+    "book/严镇军 复变函数 题目 202305172040.md",
+    "book/王竹溪 特殊函数概论 chap3.md",
+    "book/王竹溪 特殊函数概论 chap1 202305171009.md",
+    "book/王竹溪 特殊函数概论.md",
+    "book/于品 数学分析讲义 1 202305221712.md",
+    "book/【book】 how to think about analysis (lara alcock) 202307150120.md",
+    "book/于品 数学分析讲义 2 202305221725.md",
+    "book/【book】 proofs without words PWW 202307201125.md",
+    "book/【book】proofs from the book 1.1.md",
+    "book/Polya怎样解题.md",
+    "book/【book】 严镇军 数学物理方程 202305011957.md",
+    "book/王竹溪 特殊函数概论 chap1 ex 202305171116.md",
+    "Folder/微分形式交换位置要变号 改变积分顺序是否也需要 202305111128.md",
+    "Folder/算术-几何平均值不等式 202306021542.md",
+    "Folder/三角函数定积分的一个重要结论 递推式 202306081627.md",
+    "Folder/平均数不等式 均值不等式 202306021538.md",
+    "Folder/逆矩阵引理 matrix inversion lemma  (Woodbury matrix Identity) 202307031124.md",
+    "Folder/黎曼ζ函数 202307182100.md",
+    "Folder/拉丁方阵 202304251350.md",
+    "Folder/卡塔兰数.md",
+    "Folder/介值定理 及证明.md",
+    "Folder/极限 微分 积分次序交换 202305111101.md",
+    "Folder/富比尼定理 Fubini Theorem 202305111124.md",
+    "Folder/对数均值不等式 202307200935.md",
+    "Folder",
+    "book",
+    "mathematical English/American Pronunciation of Mathematics.pdf",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--9.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--8.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--7.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--6.png",
-    "202312251128 微分中值定理 罗尔定理 拉格朗日中值定理 柯西中值定理.md",
-    "202312251110 牛顿插值 泰勒展开 埃尔米特多项式.md",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--5.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--4.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--3.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--2.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--1.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式-.png",
-    "202312210019 常数变易法 计算常微分方程.md",
     "具体数学/attachements/Concrete Mathematics.pdf",
     "具体数学/attachements/repertoire.pdf",
-    "具体数学/attachements/CMChap3-.png",
-    "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_010.md",
-    "钱昌本 高等数学解题过程的分析和研究/qianchangben_calculus_001.md",
-    "钱昌本 高等数学解题过程的分析和研究/钱昌本 练习题目 1-15.md",
-    "具体数学/CMChap3.md",
     "具体数学/attachments",
-    "202312210016 矩阵论.md",
-    "202312161716 Gamma 函数.md",
-    "202312201417 一个不等式证明，使用切比雪夫联合技术.md",
-    "202312191538 Beta 函数.md",
-    "202312191114 麻省理工积分决赛第二题怎么做.md",
-    "202312122059 latex 长等号.md",
-    "202312191040 费曼积分法练习.md",
-    "202312111127 费曼积分法 留数定理 应用.md",
-    "202312181436 三角平方差公式证明.md",
-    "202312161708 n倍角公式.md",
-    "202312171034 斯特林公式.md",
-    "202312161745 欧拉常数 gamma.md",
-    "202312121311 latex公式输入 mathematica.md",
-    "202312111039 费曼求导法.md",
-    "202312122057 两个积分相等的证明 椭圆积分.md",
-    "202312111057 有理函数积分.md",
-    "202312122051 一道复杂有理函数积分 使用特殊技巧.md",
-    "极限 微分 积分次序交换 202305111101.md",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
-    "mathematical English/American Pronunciation of Mathematics.pdf",
     "conway/conway_ong-md/fig0.pdf",
-    "mathematica/attachments",
-    "conway/conway_ong-md/attachments",
-    "其他"
+    "mathematica/attachments"
   ]
 }
