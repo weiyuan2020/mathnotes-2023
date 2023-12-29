@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "98e6515f08c66ef1",
+            "id": "aa57fc8ccdb7da82",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "book/王竹溪 特殊函数概论 chap1 202305171009.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1d62f29f523d5e4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "book/严镇军 复变函数 题目 202305172040.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b44c668b52351b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "book/严镇军 复变函数.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "607f4597ecb014bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "book/严镇军 复变函数 chap2.md",
+                "file": "book/严镇军 复变函数 chap3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/严镇军 复变函数 chap2.md",
+                "file": "book/严镇军 复变函数 chap3.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "book/严镇军 复变函数 chap2.md"
+                "file": "book/严镇军 复变函数 chap3.md"
               }
             }
           }
@@ -140,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 233.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,13 +115,17 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "607f4597ecb014bf",
+  "active": "aa57fc8ccdb7da82",
   "lastOpenFiles": [
-    "book/严镇军 复变函数.md",
+    "book/attachments/严镇军 复变函数 chap3-.png",
+    "book/attachments",
+    "book/王竹溪 特殊函数概论 chap1 202305171009.md",
     "book/严镇军 复变函数 chap2.md",
+    "book/严镇军 复变函数 chap2 ex.md",
+    "book/严镇军 复变函数 chap3.md",
+    "book/严镇军 复变函数.md",
     "book/严镇军 复变函数 题目 202305172040.md",
     "book/王竹溪 特殊函数概论 chap3.md",
-    "book/王竹溪 特殊函数概论 chap1 202305171009.md",
     "book/王竹溪 特殊函数概论.md",
     "book/于品 数学分析讲义 1 202305221712.md",
     "book/【book】 how to think about analysis (lara alcock) 202307150120.md",
@@ -176,9 +144,6 @@
     "Folder/拉丁方阵 202304251350.md",
     "Folder/卡塔兰数.md",
     "Folder/介值定理 及证明.md",
-    "Folder/极限 微分 积分次序交换 202305111101.md",
-    "Folder/富比尼定理 Fubini Theorem 202305111124.md",
-    "Folder/对数均值不等式 202307200935.md",
     "Folder",
     "book",
     "mathematical English/American Pronunciation of Mathematics.pdf",
@@ -197,7 +162,6 @@
     "具体数学/attachments",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
-    "conway/conway_ong-md/fig0.pdf",
-    "mathematica/attachments"
+    "conway/conway_ong-md/fig0.pdf"
   ]
 }
