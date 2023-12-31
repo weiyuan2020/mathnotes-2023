@@ -72,6 +72,11 @@ $$
 & = \sum_{n = 1}^{+\infty }  a_{-n}(z-a)^{ -n } + \sum_{n = 0}^{+\infty } a_{n}(z-a)^{ n } \\
 \end{align}
 $$
+`双边幂级数`
+
+双边幂级数正幂项与负幂项排在常数项两侧，没有首项，也不能像幂级数那样用前n项部分和的极限定义它的敛散性。
+
+洛朗级数（双边幂级数敛散性）
 
 ${ \sum_{n = 0}^{+\infty}a_{n}(z-a)^{ n } }$
 ${ \sum_{n = 1}^{+\infty}a_{-n}(z-a)^{ -n } = \frac{a_{-1}}{z-a} + \frac{a_{-2}}{(z-a)^{2}} + \dots + \frac{a_{-n}}{(z-a)^{ n }} + \dots }$
@@ -81,8 +86,13 @@ ${ \sum_{n = 1}^{+\infty}a_{-n}(z-a)^{ -n } = \frac{a_{-1}}{z-a} + \frac{a_{-2}}
 收敛域
 ${ \lvert z-a \rvert < R }$
 ${ \left\lvert  \frac{1}{z-a}  \right\rvert < \frac{1}{r}, \lvert z-a \rvert > r }$
+![[attachments/严镇军 复变函数 chap5-.png]]
 
 收敛域 ${ r < \lvert z-a \rvert < R }$
+
+
+洛朗级数定理
+
 设f(z)在圆环域 ${ r < \lvert z-a \rvert < R }$中解析，则${ f(z) }$一定能在圆环中展开成洛朗级数
 $$
 f(z) =
@@ -108,9 +118,113 @@ f(z) = \sum_{n = -\infty }^{+\infty} a_{n}(z-a)^{ n }
 = \sum_{n = -\infty }^{-1} a_{n}(z-a)^{ n } + \sum_{n = 0}^{+\infty } a_{n}(z-a)^{ n } 
 $$
 
-它称为f(z)在孤立奇点a的罗朗展开.其中,带负次幂的部分称为这级数的主要部分;而幂级数部分称为这级数的正则部分.我们先根据主要部分可能出现的三种情况,对孤立奇点进行分类:
+它称为f(z)在孤立奇点a的罗朗展开.其中,带负次幂的部分称为这级数的主要部分;而幂级数部分称为这级数的正则部分（`解析部分`）.我们先根据主要部分可能出现的三种情况,对孤立奇点进行分类:
 
 1. 可去奇点 只有正则部分  
-2. m阶奇点 主要部分仅-m阶
+2. m阶奇点（极点） 主要部分仅-m阶
 3. 本性奇点 主要部分无穷多项
+
+
+
+##### 将函数展开成洛朗级数的方法
+
+直接展开、间接展开
+
+ex 4.8 ${ f(z) = \frac{e^{ z }-1}{z^{3}} }$ ${ 0 < \lvert z \rvert < +\infty }$
+
+直接展开法
+$$
+c_{n} = \frac{1}{2\pi i} \oint_{C} \frac{(e^{ \zeta }-1) / \zeta^{3}}{\zeta^{n+1}} \, \mathrm{d}\zeta,  (n = 0,\pm 1, \pm 2,\dots )
+$$
+
+当${ n+4 \leq 0,(n \leq -4) }$ 
+${ (e^{ z }-1) z^{ -n-4 } }$ 在圆环域内解析， 由柯西古萨定理， ${ c_{n} = 0 , (n \leq -4)}$ 
+${ n \geq-3 }$时，由高阶导数公式知
+$$
+c_{n} = \frac{1}{2\pi i} \oint_{C} \frac{e^{ \zeta }-1}{\zeta^{ n+4 }}\, \mathrm{d}\zeta = \frac{1}{(n+3)!} (e^{ \zeta }-1)^{ (n+3) } \bigg|_{\zeta=0} = 
+\begin{cases}
+0, & n=-3 \\
+\frac{1}{(n+3)!}, & n \geq -2 
+\end{cases}
+$$
+
+$$
+\frac{e^{ z }-1}{z^{3}} = 
+\sum_{n = -2}^{\infty} \frac{z^{ n }}{(n+3)!} 
+= \frac{1}{z^{2}} + \frac{1}{2!} \frac{1}{z} + \frac{1}{3!} + \frac{1}{4!} z + \frac{1}{5!}z^{2} + \dots  (0<\lvert z \rvert <+\infty )
+$$
+
+
+间接展开法
+
+$$
+e^{ z } - 1 = \sum_{n = 0}^{\infty} \frac{z^{ n }}{n!} - 1 
+= z + \frac{z^{2}}{2!} + \frac{z^{3}}{3!} + \dots 
+$$
+
+$$
+\frac{e^{ z }-1}{z^{3}} = \frac{1}{z^{3}}\left(  z + \frac{z^{2}}{2!} + \frac{z^{3}}{3!} + \dots \right)
+$$
+
+直接展开法较为复杂，一般使用间接展开法计算
+
+
+ex 4.9 ${ f(z) = \frac{1}{(z+1)(2-z)} }$
+在 圆环域
+a ${ 0<\lvert z \rvert<1 }$
+b ${ 1<\lvert z \rvert<2 }$
+c ${ 2<\lvert z \rvert<+\infty }$
+展开成洛朗级数
+
+首先判断能否展开为洛朗级数
+
+由于函数f(z)在三个给定圆环域内处处解析，所以可以在这些区域内展开为洛朗级数
+
+$$
+f(z) = \frac{1}{3}\left( \frac{1}{2-z} + \frac{1}{1+z} \right)
+$$
+
+a 在圆环域${ 0 < \lvert z \rvert < 1 }$ 内 ， ${ \lvert z \rvert<1, \left\lvert  \frac{z}{2}  \right\rvert< 1 }$
+
+$$
+\frac{1}{1+z} = 
+1-z+z^{2}-z^{3} + \dots +(-1)^{ n }z^{ n } + \cdots 
+$$
+$$
+\frac{1}{2-z} = 
+\frac{1}{2} \frac{1}{1- \frac{z}{2}} = 
+\frac{1}{2}\left( 1 + \frac{z}{2} + \left( \frac{z}{2} \right)^{2} + \left( \frac{z}{2} \right)^{3} + \cdots + \left( \frac{z}{2} \right)^{n} + \cdots  \right)
+$$
+
+$$
+\begin{align}
+f(z) & = \frac{1}{3} \left[ 1-z+z^{2}-z^{3} + \dots +(-1)^{ n }z^{ n } + \cdots   \right. \\
+ & \left. +\frac{1}{2}\left( 1 + \frac{z}{2} + \left( \frac{z}{2} \right)^{2} + \left( \frac{z}{2} \right)^{3} + \cdots + \left( \frac{z}{2} \right)^{n} + \cdots  \right) \right] \\
+& = \frac{1}{3} \sum_{n = 0}^{\infty} \left[ (-1)^{ n } + \frac{1}{2^{ n+1 }} \right] z^{ n }
+\end{align}
+$$
+
+b 圆环域 ${ 1<\lvert z \rvert<2 }$ 内， ${ \left\lvert  \frac{1}{z}  \right\rvert <1, \left\lvert  \frac{z}{2}  \right\rvert<1 }$ 所以
+$$
+\frac{1}{z+1} = \frac{1}{z} \frac{1}{1 + \frac{1}{z}} = \frac{1}{z} \sum_{n = 0}^{\infty} \frac{(-1)^{ n }}{z^{ n }}
+$$
+$$
+\frac{1}{2-z} = \frac{1}{2} \frac{1}{1-\frac{z}{2}} = \frac{1}{2} \sum_{n = 0}^{\infty} \left( \frac{z}{2} \right)^{n}
+$$
+
+$$
+f(z) = \frac{1}{3} \sum_{n = 0}^{\infty} \frac{(-1)^{ n }}{z^{ n+1 }} + \frac{1}{3} \sum_{n = 0}^{\infty} \frac{z^{ n }}{2^{ n+1 }}
+$$
+
+c 圆环域 ${ 2<\lvert z \rvert <+\infty}$ 内， ${ \left\lvert  \frac{1}{z}  \right\rvert<1, \left\lvert  \frac{2}{z}<1  \right\rvert }$
+
+$$
+\frac{1}{z+1} = \frac{1}{z} \frac{1}{1+\frac{1}{z}} = \frac{1}{z} \sum_{n = 0}^{\infty} \frac{(-1)^{ n }}{z^{ n }}
+$$
+$$
+\frac{1}{2-z} = -\frac{1}{z} \frac{1}{1 - \frac{2}{z}} = -\frac{1}{z} \sum_{n = 0}^{\infty} \left( \frac{2}{z} \right)^{ n }
+$$
+$$
+f(z) = \frac{1}{3}\sum_{n = 0}^{\infty} \frac{[(-1)^{ n } - 2^{ n }]}{z^{ n+1 }}
+$$
 
