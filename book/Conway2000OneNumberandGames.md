@@ -1,11 +1,19 @@
+
+Conway 
+One Number And Games 
+202111141921
+
+# zeroth part on numbers
+
+
 # All numbers gerat and small
 
 ## Construction
 
-Two sets of numbers $L,R$\
-no member of $L$ is $\ge$ any members of $\mathbb{R}$\
-then there is a number$\{L|R\}$\
-All numbers are constructed in this way.\
+Two sets of numbers $L,R$， no member of $L$ is $\ge$ any members of $\mathbb{R}$，then there is a number$\{L|R\}$。
+All numbers are constructed in this way.
+
+使用左集、右集 定义数字，通俗的说法可以参考Knuth的 Surreal number
 
 ## Convension
 
@@ -18,12 +26,12 @@ $$
 $$
  means that
 $x\in \{L|R\}$, where $a,b,c,\dots$ are the typical members of $L$, and
-$d,e,f,\dots$ the typical members of $R$\
+$d,e,f,\dots$ the typical members of $R$
 
 ## Definitions
 
 
-**Definition 1.1**. *$x \ge y, x \le y$\
+**Definition 1.1**. *$x \ge y, x \le y$
 
 $$
 \begin{gathered}
@@ -34,7 +42,7 @@ $$
 mean that $x \le y$ does not hold
 
 
-**Definition 1.2**. *$x=y, x>y, x<y$\
+**Definition 1.2**. *$x=y, x>y, x<y$
 
 $$
 \begin{gathered}
@@ -46,7 +54,7 @@ $$
 
 
 
-**Definition 1.3**. *$x+y$\
+**Definition 1.3**. *$x+y$
 
 $$
 \begin{gathered}
@@ -56,7 +64,7 @@ $$
 
 
 
-**Definition 1.4**. *$-x$\
+**Definition 1.4**. *$-x$
 
 $$
 \begin{gathered}
@@ -66,7 +74,7 @@ $$
 
 
 
-**Definition 1.5**. *$x\cdot y$\
+**Definition 1.5**. *$x\cdot y$
 
 $$
 \begin{gathered}
