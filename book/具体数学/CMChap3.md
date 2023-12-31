@@ -5,7 +5,7 @@
 $\lfloor x \rfloor$ 小于等于 ${x}$ 的最大整数
 $\lceil x \rceil$ 大于等于 ${x}$ 的最小整数
 
-![[CMChap3-.png]]
+![[attachements/CMChap3-.png]]
 
 $$
 \lfloor x \rfloor = x \iff

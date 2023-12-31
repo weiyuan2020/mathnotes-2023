@@ -37,7 +37,7 @@ $$
 = \frac{\pi^{2}}{6}
 $$
 ref [[Eulers Miracle.pdf]]
-[[../【网页】 巴塞尔问题 Basel problem solution of Euler]]
+[[../../Folder/【网页】 巴塞尔问题 Basel problem solution of Euler]]
 
 and 
 $$

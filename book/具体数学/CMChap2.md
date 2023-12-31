@@ -934,7 +934,7 @@ $$
 $$
 
 有限微积分和无限微积分中的运算对比
-![[CMChap2_table-P1.png]]
+![[attachements/CMChap2_table-P1.png]]
 
 
 $$

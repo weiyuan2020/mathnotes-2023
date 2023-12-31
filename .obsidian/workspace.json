@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "cfa0a28f17ec05fc",
+        "id": "605ffd9008f9e7db",
         "type": "tabs",
         "children": [
           {
-            "id": "aa57fc8ccdb7da82",
+            "id": "65a7ac756841fa05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "book/严镇军 复变函数 chap3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bdee40ff0db02762",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "book/严镇军 复变函数 chap4.md",
+                "file": "book/严镇军 复变函数 chap6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/严镇军 复变函数 chap4.md",
+                "file": "book/严镇军 复变函数 chap6.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "book/严镇军 复变函数 chap4.md"
+                "file": "book/严镇军 复变函数 chap6.md"
               }
             }
           }
@@ -129,17 +116,19 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "bdee40ff0db02762",
+  "active": "65a7ac756841fa05",
   "lastOpenFiles": [
-    "book/attachments/严镇军 复变函数 chap4-.png",
-    "book/严镇军 复变函数 chap3.md",
+    "book/严镇军 复变函数 chap6.md",
+    "book/严镇军 复变函数.md",
+    "book/严镇军 复变函数 chap5.md",
     "book/严镇军 复变函数 chap4.md",
+    "book/严镇军 复变函数 chap3.md",
+    "book/attachments/严镇军 复变函数 chap4-.png",
     "book/attachments/严镇军 复变函数 chap3-.png",
     "book/attachments",
     "book/王竹溪 特殊函数概论 chap1 202305171009.md",
     "book/严镇军 复变函数 chap2.md",
     "book/严镇军 复变函数 chap2 ex.md",
-    "book/严镇军 复变函数.md",
     "book/严镇军 复变函数 题目 202305172040.md",
     "book/王竹溪 特殊函数概论 chap3.md",
     "book/王竹溪 特殊函数概论.md",
@@ -158,10 +147,9 @@
     "Folder/逆矩阵引理 matrix inversion lemma  (Woodbury matrix Identity) 202307031124.md",
     "Folder/黎曼ζ函数 202307182100.md",
     "Folder/拉丁方阵 202304251350.md",
-    "Folder/卡塔兰数.md",
     "Folder",
     "book",
-    "mathematical English/American Pronunciation of Mathematics.pdf",
+    "book/mathematical English/American Pronunciation of Mathematics.pdf",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--9.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--8.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--7.png",
@@ -170,10 +158,9 @@
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--4.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--3.png",
     "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--2.png",
-    "attachments/202312251110 牛顿插值 泰勒展开 埃尔米特多项式--1.png",
-    "具体数学/attachements/Concrete Mathematics.pdf",
-    "具体数学/attachements/repertoire.pdf",
-    "具体数学/attachments",
+    "book/具体数学/attachements/Concrete Mathematics.pdf",
+    "book/具体数学/attachements/repertoire.pdf",
+    "book/具体数学/attachments",
     "Inside Interesting Integrals/a.bat",
     "Inside Interesting Integrals/a.txt",
     "conway/conway_ong-md/fig0.pdf"
