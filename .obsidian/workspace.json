@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "605ffd9008f9e7db",
+        "id": "299a0e4ded948165",
         "type": "tabs",
         "children": [
           {
-            "id": "65a7ac756841fa05",
+            "id": "ee8f850e1f99fbb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -116,13 +116,13 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "65a7ac756841fa05",
+  "active": "ee8f850e1f99fbb7",
   "lastOpenFiles": [
+    "book/严镇军 复变函数 chap3.md",
     "book/严镇军 复变函数 chap6.md",
     "book/严镇军 复变函数.md",
     "book/严镇军 复变函数 chap5.md",
     "book/严镇军 复变函数 chap4.md",
-    "book/严镇军 复变函数 chap3.md",
     "book/attachments/严镇军 复变函数 chap4-.png",
     "book/attachments/严镇军 复变函数 chap3-.png",
     "book/attachments",

@@ -1,6 +1,21 @@
 
 ## 3.1 复变函数积分
 
+有向曲线  起点->终点 ， 对闭曲线，内部位于P点左侧
+${ w = f(z) }$ 沿曲线C可积
+$$
+\int _{C} f(z) \, \mathrm{d}z = \lim_{ \delta \to 0 } \sum_{k = 1}^{n} f(\zeta_{k}) \Delta z_{k}
+$$
+C 积分路径
+对闭曲线 ${ \oint_{C} f(z) \; \mathrm{d}z}$
+
+$$
+\int _{C}f(z) \, \mathrm{d}z = 
+\int _{C} (u + iv) \, (\mathrm{d}x + i\mathrm{d}y) =
+\int _{C} u \, \mathrm{d}x - v \; \mathrm{d}y +
+i\int _{C} v \, \mathrm{d}x + u \; \mathrm{d}y 
+$$
+
 $$
 \int _{C}f(z) \, \mathrm{d}z 
 $$
@@ -26,7 +41,7 @@ i\int _{C} v \, \mathrm{d}x + x \, \mathrm{d}y \\
   & = \int_{a}^{b} f(z(t))z'(t) \, \mathrm{d}t
 \end{align}
 $$
-
+参数方程法
 
 常用结果
 ${ C: z = a + e^{ i\theta }, \theta:(0,2\pi) }$ 
@@ -45,12 +60,15 @@ $$
 长大不等式？？ %%todo%%
 
 
-## 3.2 柯西积分定理
+
+## 3.2 柯西积分定理(柯西-古萨Goursat定理)
 
 闭路C围成单联通区域D，${ f(z) }$ 在区间C+D上解析，则
 $$
 \int _{C}f(z) \, \mathrm{d}z = 0 
 $$
+
+
 
 https://t.bilibili.com/880588743781646376?share_source=pc_native
 ```
@@ -66,6 +84,30 @@ https://t.bilibili.com/880588743781646376?share_source=pc_native
 好一点的笔记形式是：
 问：柯西积分公式是什么结论的推论，它的上级结论有哪些假设，这些假设为什么是必要的？柯西积分公式在处理哪些问题上会发挥怎样的作用？这个公式的证明用到了怎样的策略/技巧，这种策略/技巧有什么值得借鉴的地方(举例别的什么地方也可以用这样的技巧)
 ```
+
+`柯西积分公式提出的原因，是什么结论的推论`
+一般来说，复平面上给定两点，复变函数${ w = f(z) }$沿着一点到另一点不同曲线的积分值是不同的
+(0,0)->(1,i), C1 = x+iy, C2 = x(x=0); y(x=1)折线
+${ f(z) = \bar{z} }$
+${ \int_{C_{1}} \bar{z}  \, \mathrm{d}z = \int_{0}^{1} (t-it) \, \mathrm{d}t+it = 1 }$
+${ \int _{C_{2}} \bar{z} \, \mathrm{d}z = \int_{0}^{1} x \, \mathrm{d}x + \int_{0}^{1} 1-iy \, \mathrm{d}(1+iy) = 1 + i }$
+
+然而，对某些函数，积分值与两点间连接曲线无关，即积分与积分路径无关，类比实变函数第二类线积分
+线积分与路径无关 ${ \iff }$ 沿任意闭曲线积分等于零
+green公式
+平面单连通域D，P,Q,${ \frac{ \partial P }{ \partial y }, \frac{ \partial Q }{ \partial x } }$ 在D内连续
+线积分${ \int_{A}^{B} P(x,y)  \, \mathrm{d}x + Q(x,y)\,\mathrm{d}y }$ 在D内与路径无关的充要条件 
+${ \frac{ \partial P }{ \partial y } = \frac{ \partial Q }{ \partial x } }$
+
+`柯西积分公式所需的假设`
+推广到复变函数 ${ u,v,u_{x},u_{y},v_{x},v_{y}}$ 在复平面上简单闭曲线C围成的单连通域D内连续，且 ${ u_{y} = -v_{x}, u_{x} = v_{y} }$(C-R 条件) 
+则上述两个线积分均与路径无关，复变函数积分与路径无关。
+进一步研究表明${ f'(z) }$在D内连续这个条件是可以去掉的。
+
+`柯西积分公式的推广` 
+复路闭合定理
+（依托于）闭路变形原理 （转换为单连通域内的柯西积分定理）
+
 
 ## 3.3 原函数
 
@@ -106,6 +148,8 @@ $$
 $$
 \left\lvert  \int _{C} \frac{f(\zeta)-f(z)}{\zeta-z} \, \mathrm{d}\zeta \right\rvert \leq \frac{\varepsilon}{\rho} {2}\pi\rho = 2\pi\varepsilon
 $$
+
+
 
 
 ## 3.5 解析函数性质
