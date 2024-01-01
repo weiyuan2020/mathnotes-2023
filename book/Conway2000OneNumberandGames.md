@@ -3,8 +3,36 @@ Conway
 One Number And Games 
 202111141921
 
-# zeroth part on numbers
+surreal number 超限数  类比戴德金分割 Dedekind theory
 
+
+目录
+
+Zeroth Part . . . On Numbers 1
+Chapter 0: AIl Numbers Great and Small . 3
+Chapter 1: The Class No is a Field . 15
+Chapter 2: The Real and Ordinal Numbers 23
+Chapter 3: The Structure of the Genral Surreal Number . 29
+Chapter 4: Aigebra and Analysis of Numbers 39
+Chapter 5: Number Theory in the Land of Oz . 45
+Chapter 6: The Curious Field On2 . 50
+Appendix to Part Zero 64
+
+First Part. . . and Games 69
+Chapter 7: Playing Several Games at Once 71
+Chapter 8 : Some Games are Already Numbers . 81
+Chapter 9: On Games and Numbers 97
+Chapter 10: Simplifying Games 109
+Chapter Il: Impartial Games and the Game of Nim 122
+Chapter 12: How to Lose when you Must . 136
+Chapter 13: Animating Functions, Welter's Game and
+Hackenbush Unrestrained 153
+Chapter 14: How to Play Several Games at Once in a Dozen
+Different Ways 173
+Chapter 15: Ups, Downs and Bynumbers . 188
+Chapter 16: The Long and the Short and the Small 205
+
+# zeroth part on numbers
 
 # All numbers gerat and small
 
@@ -14,6 +42,12 @@ Two sets of numbers $L,R$， no member of $L$ is $\ge$ any members of $\mathbb{R
 All numbers are constructed in this way.
 
 使用左集、右集 定义数字，通俗的说法可以参考Knuth的 Surreal number
+使用这种方法可以将无穷大${ \omega }$，无穷小${ \frac{1}{\omega} }$ 纳入现有计数系统，保留偏序性。
+但是没有i，（复数没有偏序性，而戴德金分割依托于序关系）
+
+偏序关系 （Eudoxus -> Dedekind -> surreal number ${ \{ L|R \} }$ ）
+
+
 
 ## Convension
 
