@@ -55,14 +55,9 @@ $$
 $$
 \int_{1}^{\infty} \frac{1}{\sqrt{ x^{3}-1 }} \, \mathrm{d}x 
 $$
-finite upper-bound, less than 4
-
-$t = x+1$
+finite upper-bound, less than 4 %% todo %%
 $$
-I = \int_{2}^{\infty} \frac{1}{\sqrt{ t^{3} + 3t^{2} + 3t }} \, \mathrm{d}t 
-$$
-$$
-I = \int_{2}^{\infty} \frac{2}{\sqrt{ t^{2}+3t+3 }}  \, \mathrm{d}\sqrt{ t } 
+\frac{2 \sqrt{\pi } \Gamma \left(\frac{7}{6}\right)}{\Gamma \left(\frac{2}{3}\right)}
 $$
 
 ### C1.3
