@@ -889,12 +889,12 @@ $$
 
 $$
 
-\begin{equation*}
+\begin{align}
 \begin{array}{ll}
 Df(x) = \lim_{h \to 0}\frac{f(x+h)-f(x)}{h}  &  \Delta f(x) = f(x+1)-f(x) \\ 
 D(x^m)=mx^{m-1} & \Delta (x^3) = 3x^2+3x+1\\ 
 \end{array}
-\end{equation*}
+\end{align}
 
 $$
 
@@ -904,9 +904,9 @@ $$
 
 $$
 
-\begin{equation*}
+\begin{align}
 x^\underline{m} = \underbrace{x(x-1)\dots(x-m+1)}_{\textit{m个因子}}, \quad (m\leqslant 0, m\in\mathbb{N}) 
-\end{equation*}
+\end{align}
 
 $$
 
@@ -914,9 +914,9 @@ $$
 
 $$
 
-\begin{equation*}
+\begin{align}
 x^\overline{m} = \underbrace{x(x+1)\dots(x+m-1)}_{\textit{m个因子}}, \quad (m\leq 0, m\in\mathbb{N}) 
-\end{equation*}
+\end{align}
 
 $$
 
