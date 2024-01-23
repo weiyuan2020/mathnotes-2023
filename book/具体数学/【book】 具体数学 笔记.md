@@ -1,0 +1,51 @@
+
+# chap 7 
+
+参考文献 46
+William G. Brown, \Historical note on a recurrent combinatorial problem," American Mathematical Monthly 72 (1965), 973{977.
+
+Lo and behold 进一步探索
+
+parentheses 括号
+
+parentheses
+
+avoid 避免 防止
+
+`[]` 内代表判断 成立为1, 不成立为0
+采用这种方式可以简化很多需要分类讨论的算式
+
+
+加法
+$$
+\sum_{k=0}^n s_k= \sum_{0\le k < n}s_k
+$$
+这里是小于n而不是小于等于n, 在有限差分的逆运算 求和中经常出现
+
+有限差分与无限微分的对比
+
+mod
+
+二项式系数 广义二项式系数 超几何级数
+
+特殊的数 
+Stirling Numbers
+Euler Numbers
+Harmonic numbers
+
+生成函数 Generating function 简写为 gf
+生成函数的卷积 
+Exponential Generating function 指数生成函数 简写为 egf 
+
+22/05/19
+第7章的 9 10 题还没有解决
+11题的a 审题错误 c 不熟悉 1/(1-z) 的导数 与组合数之间的关系
+
+$$
+\begin{align}
+&\frac{1}{1-z} = 1+z+z^2+\dots\\
+&\Big(\frac{1}{1-z}\Big)' = \frac{1}{(1-z)^2} = 1+2z+3z^2+\dots\\
+&\Big(\frac{1}{1-z}\Big)^{(r)} = \frac{1}{(1-z)^{r+1}} = \binom{r}{r}+\binom{r+1}{r}z+\binom{r+2}{r}z^2+\dots\\
+\end{align}
+$$
+
