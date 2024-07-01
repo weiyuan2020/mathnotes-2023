@@ -19,9 +19,9 @@
 第10章 微分形式的积分
 第11章 LEBESGUE 理论
 
-![[book/鲁丁数学分析原理babyrudin/attachments/StandardTori701.svg]]
+![[StandardTori701.svg]]
 
-![[book/鲁丁数学分析原理babyrudin/attachments/function-mapping.svg]]
+![[function-mapping.svg]]
 
 ---
 

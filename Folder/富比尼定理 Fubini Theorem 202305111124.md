@@ -8,7 +8,6 @@ $$
 \iint _{R} f(x,y)  \, \mathrm{d}(x,y)  = 
 \int_{a}^{b} \int_{c}^{d} f(x,y) \, \mathrm{d}y  \, \mathrm{d}x 
 $$
-![[attachments/f5f84f1272faf90fb35885a2915ace38_MD5.svg]]
 
 holds (Thomas and Finney 1996, p. 919).
 
