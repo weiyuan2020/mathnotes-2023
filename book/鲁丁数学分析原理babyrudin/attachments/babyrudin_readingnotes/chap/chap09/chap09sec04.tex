@@ -1,0 +1,125 @@
+% chap09sec04
+\section{The inverse function theorem}
+
+The inverse function theorem states, roughly speaking, that a continuously
+differentiable mapping $\mathbf{f}$ is invertible in a neighborhood of any point $\mathbf{x}$ at which
+the linear transformation $\mathbf{f'(x)}$ is invertible:
+
+\begin{thm}
+    \label{thm:9.24}
+    Suppose $\mathbf{f}$ is a $\mathscr{C}'$-mapping of an open set $E \subset \R^n$ into $\R^n$, 
+    $\mathbf{f'(a)}$ is invertible for some $\mathbf{a} \in E$, 
+    and $\mathbf{b = f(a)}$. Then
+    \begin{asparaenum}[(a)]
+        \item there exist open sets $U$ and $V$ in $\R^n$ 
+        such that $\mathbf{a} \in U$, $\mathbf{b} \in V$, 
+        $\mathbf{f}$ is one-to-one on $U$, and $\mathbf{f}(U) = V$;
+        \item if $\mathbf{g}$ is the inverse of $f$ [which exists, by (a)], defined in $V$ by
+        \begin{equation*}
+            \mathbf{g(f(x)) = x}
+            \quad
+            (\mathbf{x} \in U),
+        \end{equation*}
+        then $\mathbf{g} \in \mathscr{C}'(V)$.
+    \end{asparaenum}
+\end{thm}
+
+Writing the equation $\mathbf{y = f(x)}$ in component form, we arrive at the following interpretation of the conclusion of the theorem: 
+The system of $n$ equations
+\begin{equation*}
+    y_i = f_i(x_1,\dots,x_n)
+    \quad
+    (1 \leq i \leq n)
+\end{equation*}
+can be solved for $x_1, \dots , x_n$ in terms of $y_1, \dots , y_n$, if we restrict $\mathbf{x}$ and $\mathbf{y}$ to small enough neighborhoods of $\mathbf{a}$ and $\mathbf{b}$; 
+the solutions are unique and continuously
+differentiable.
+
+% todo add proof
+
+\begin{equation}
+    \label{eq:9.46}
+    2\lambda \left\| A^{-1} \right\| = 1.
+\end{equation}
+
+\begin{equation}
+    \label{eq:9.47}
+    \left\| \mathbf{f'(x)}-A \right\| < \lambda 
+    \quad 
+    (\mathbf{x} \in U).
+\end{equation}
+
+\begin{equation}
+    \label{eq:9.48}
+    \phi(\mathbf{x}) = \mathbf{x} + A^{-1} (\mathbf{y-f(x)})
+    \quad 
+    (\mathbf{x} \in E).
+\end{equation}
+
+
+\begin{equation}
+    \label{eq:9.49}
+    \left\| \phi'(\mathbf{x}) \right\| < \frac{1}{2}
+    \quad 
+    (\mathbf{x} \in U).
+\end{equation}
+
+\begin{equation}
+    \label{eq:9.50}
+    \left| 
+        \phi(\mathbf{x}_1)-
+        \phi(\mathbf{x}_2)
+     \right| \leq 
+     \frac{1}{2}
+     \left| \mathbf{x}_1 - \mathbf{x}_2 \right| 
+     \quad 
+     (\mathbf{x}_1, \mathbf{x}_2 \in U).
+\end{equation}
+
+
+\begin{equation}
+    \label{eq:9.51}
+    \left| \mathbf{h} \right| \leq
+    2 \left\| A^{-1} \right\| \left| \mathbf{k} \right| =
+    \lambda^{-1} \left| \mathbf{k} \right| .
+\end{equation}
+
+\begin{equation*}
+    \mathbf{g(y+k)-g(y)}-T\mathbf{k} =
+    \mathbf{h} - T\mathbf{k} =
+    -T\left[ 
+        \mathbf{f(x+h)-f(x)-f'(x)h}
+     \right],
+\end{equation*}
+
+\begin{equation*}
+    \frac{|\mathbf{g(y+k)-g(y)}-T\mathbf{k}|}{|\mathbf{k}|} \leq
+    \frac{\|T\|}{\lambda}\cdot \frac{|\mathbf{f(x+h)-f(x)-f'(x)h}|}{|\mathbf{h}|}.
+\end{equation*}
+
+
+\begin{equation}
+    \label{eq:9.52}
+    \mathbf{g'(y)} = 
+    \left\{ \mathbf{f'(g(y))} \right\}^{-1}
+    \quad 
+    (\mathbf{y} \in V).
+\end{equation}
+
+
+\begin{thm}
+    \label{thm:9.25}
+    If $\mathbf{f}$ is a $\mathscr{C}'$-mapping of an open set $E \subset \R^n$ into $\R^n$ 
+    and if $\mathbf{f'(x)}$ is invertible for every $\mathbf{x} \in E$, 
+    then $\mathbf{f}(W)$ is an open subset of $\R^n$ for every open set
+    $W \subset E$
+\end{thm}
+
+In other words, $\mathbf{f}$ is an \emph{open mapping} of $E$ into $\R^n$
+
+The hypotheses made in this theorem ensure that each point $\mathbf{x} \in E$ has a
+neighborhood in which $\mathbf{f}$ is 1-1. 
+This may be expressed by saying that $\mathbf{f}$ is
+\emph{locally} one-to-one in $E$. 
+But $\mathbf{f}$ need not be 1-1 in $E$ under these circumstances.
+for an example, see Exercise \ref{ex:9.17}.

@@ -1,0 +1,569 @@
+% chap08exercise
+\section{Exercises}
+
+\begin{myexercise}
+    \label{ex:8.1}
+    Define
+    \begin{equation*}
+        f(x) = \left\{
+        \begin{array}{ll}
+            e^{-1/x^2} & (x \neq 0) , \\
+            0          & (x = 0) .    \\
+        \end{array}
+        \right.
+    \end{equation*}
+    Prove that $f$ has derivatives of all orders at $x=0$,
+    and that $f^{(n)}(0)=0$ for $n=1,2,3,...$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.2}
+    Let $a_{ij}$ be the number in the $i$th row and $j$th column of the array
+    \begin{equation*}
+        \begin{array}{ccccc}
+            -1          & 0           & 0           & 0     & \dots \\
+            \frac{1}{2} & -1          & 0           & 0     & \dots \\
+            \frac{1}{4} & \frac{1}{2} & -1          & 0     & \dots \\
+            \frac{1}{8} & \frac{1}{4} & \frac{1}{2} & -1    & \dots \\
+            \dots       & \dots       & \dots       & \dots & \dots \\
+        \end{array}
+    \end{equation*}
+    so that
+    \begin{equation*}
+        a_{ij} = \left\{
+        \begin{array}{ll}
+            0       & (i<j), \\
+            1       & (i=j), \\
+            2^{j-i} & (i>j). \\
+        \end{array}
+        \right.
+    \end{equation*}
+    Prove that
+    \begin{equation*}
+        \sum_i \sum_j a_{ij} = -2, \quad
+        \sum_j \sum_i a_{ij} = 0.
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.3}
+    Prove that
+    \begin{equation*}
+        \sum_i \sum_j a_{ij} =
+        \sum_j \sum_i a_{ij}
+    \end{equation*}
+    if $a_{ij} \geq 0$ for all $i$ and $j$ (the case $+\infty=+\infty$ may occur).
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.4}
+    Prove the following limit relations:
+    \begin{enumerate}[(a)]
+        \item $\lim_{x \to 0} \frac{b^x-1}{x}=\log b$  $(b>0)$.
+        \item $\lim_{x \to 0} \frac{\log(1+x)}{x}=1$.
+        \item $\lim_{x \to 0} (1+x)^{1/x}=e$.
+        \item $\lim_{n \to \infty} \left( 1+\frac{x}{n} \right)^n=e^x$.
+    \end{enumerate}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.5}
+    Find the following limits
+    \begin{enumerate}[(a)]
+        \item $\lim_{x \to 0} \frac{e-(1+x)^{1/x}}{x}$.
+        \item $\lim_{n \to \infty} \frac{n}{\log n}\left[ n^{1/n}-1 \right]$.
+        \item $\lim_{x \to 0} \frac{\tan x-x}{x(1-\cos x)}$.
+        \item $\lim_{x \to 0} \frac{x-\sin x}{\tan x-x}$.
+    \end{enumerate}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.6}
+    Suppose  $f(x) f(y) = f(x + y)$ for all real $x$ and $y$.
+    \begin{asparaenum}[(a)]
+        \item Assuming that $f$ is differentiable and not zero, prove that
+        \begin{equation*}
+            f(x) = e^{cx}
+        \end{equation*}
+        where $c$ is a constant.
+        \item Prove the same thing, assuming only that $f$ is continuous.
+    \end{asparaenum}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.7}
+    If $0<x<\frac{\pi}{2}$, prove that
+    \begin{equation*}
+        \frac{2}{\pi}<\frac{\sin x}{x}<1.
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.8}
+    For $n=0,1,2,\dots$, and $x$ real, prove that
+    \begin{equation*}
+        \left| \sin nx \right| \leq
+        n \left| \sin x \right| .
+    \end{equation*}
+    Note that this inequality may be false for other values of $n$.
+    For instance,
+    \begin{equation*}
+        \left| \sin \frac{1}{2}\pi \right| >
+        \frac{1}{2}\left| \sin \pi \right| .
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.9}
+    \begin{asparaenum}[(a)]
+        \item Put $s_N=1+\left( \frac{1}{2} \right)+\cdots+\left( 1/N \right)$.
+        Prove that
+        \begin{equation*}
+            \lim_{N \to \infty} \left( s_N - \log N \right)
+        \end{equation*}
+        exists.
+        (The limit, often denoted by $\gamma$, is called Euler's constant.
+        Its numerical value is $0.5772\dots$.
+        It is not known whether $\gamma$ is rational or not.)
+        \item Roughly how large must $m$ be so that $N=10^m$ satisfies $s_N>100$?
+    \end{asparaenum}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.10}
+    Prove that $\sum 1/p$ diverges;
+    the sum extends over all primes.
+
+    (This shows that the primes form a fairly substantial subset of the positive integers.)
+
+    \emph{Hint:} Given $N$, let $p_1,\dots,p_k$ be those primes that divide at least one integer $\leq N$.
+    Then
+    \begin{align*}
+        \sum_{n=1}^{N}\frac{1}{n}
+         & \leq \prod_{j=1}^{k} \left( 1+\frac{1}{p_j}+\frac{1}{p_j^2}+\cdots \right) \\
+         & = \prod_{j=1}^{k} \left( 1-\frac{1}{p_j} \right)^{-1}                      \\
+         & \leq \exp \sum_{j=1}^{k} \frac{2}{p_j} .
+    \end{align*}
+    The last inequality holds because
+    \begin{equation*}
+        (1-x)^{-1} \leq e^{2x}
+    \end{equation*}
+    if $0 \leq x \leq \frac{1}{2}$.
+
+    (There are many proofs of this result. See, for instance, the article by I. Niven in \emph{Amer. Math. Monthly}, vol. 78, 1971, pp. 272-273, and the one by R. Bellman in \emph{Amer. Math. Monthly}, vol. 50, 1943, pp. 318-319.)
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.11}
+    Suppose $f \in \mathscr{R}$ on $[0,A]$ for all $A<\infty$, and $f(x) \rightarrow 1$ as $x \rightarrow +\infty$.
+    Prove that
+    \begin{equation*}
+        \lim_{t \to 0} t \int_{0}^{\infty} e^{-tx} f(x) \d x = 1
+        \quad
+        (t>0).
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.12}
+    Suppose $0 < \delta < \pi$, $f(x) = 1$ if $|x | \leq \delta$,
+    $f(x) = 0$ if $\delta < |x | \leq \pi$,
+    and $f(x + 2\pi) = f(x)$ for all $x$.
+    \begin{asparaenum}[(a)]
+        \item Compute the Fourier coefficients of $f$.
+        \item Conclude that
+        \begin{equation*}
+            \sum_{n=1}^{\infty} \frac{\sin(n\delta)}{n} = \frac{\pi-\delta}{2}
+            \quad
+            (0 < \delta < \pi) .
+        \end{equation*}
+        \item Deduce from Parseval's theorem that
+        \begin{equation*}
+            \sum_{n=1}^{\infty} \frac{\sin^2(n\delta)}{n^2\delta} = \frac{\pi-\delta}{2} .
+        \end{equation*}
+        \item Let $\delta \rightarrow 0$ and prove that
+        \begin{equation*}
+            \int_{0}^{\infty} \left( \frac{\sin x}{x} \right)^2 \d x = \frac{\pi}{2}.
+        \end{equation*}
+        \item Put $\delta = \pi/2$ in (c). What do you get?
+    \end{asparaenum}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.13}
+    Put $f(x) = x$ if $0 \leq x < 2\pi$, and apply Parseval's theorem to conclude that
+    \begin{equation*}
+        \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} .
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.14}
+    If $f(x) = (\pi - |x|)^2$ on $[-\pi, \pi]$, prove that
+    \begin{equation*}
+        f(x) = \frac{\pi^2}{3} + \sum_{n=1}^{\infty}\frac{4}{n^2}\cos nx
+    \end{equation*}
+    and deduce that
+    \begin{equation*}
+        \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6},
+        \quad
+        \sum_{n=1}^{\infty} \frac{1}{n^4} = \frac{\pi^4}{90}.
+    \end{equation*}
+    (A recent article by E. L. Stark contains many references to series of the form $\sum n^{-s}$,
+    where $s$ is a positive integer. See \emph{Math. Mag.}, vol. 47, 1974, pp. 197-202.)
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.15}
+    With $D_n$ as defined in (\ref{eq:8.77}), put
+    \begin{equation*}
+        K_N(x) = \frac{1}{N+1} \sum_{n=0}^{N} D_n(x).
+    \end{equation*}
+    Prove that
+    \begin{equation*}
+        K_N(x) = \frac{1}{N+1} \cdot \frac{1-\cos(N+1)x}{1-\cos x}
+    \end{equation*}
+    and that
+    \begin{enumerate}[(a)]
+        \item $K_N \geq 0$,
+        \item $\frac{1}{2\pi} \int_{-\pi}^{\pi} K_N(x) \d x = 1$,
+        \item $K_N(x) \leq \frac{1}{N+1}\cdot \frac{2}{1-\cos \delta}$ if $0<\delta\leq|x|\leq\pi$.
+    \end{enumerate}
+    If $s_N = s_N(f; x)$ is the $N$th partial sum of the Fourier series of $f$, consider the arithmetic means
+    \begin{equation*}
+        \sigma_N = \frac{s_0+s_1+\cdots+s_N}{N+1}.
+    \end{equation*}
+    Prove that
+    \begin{equation*}
+        \sigma_N(f;x) = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x-t)K_N(t) \d t,
+    \end{equation*}
+    and hence prove Fej\'{e}r's theorem:
+
+    \emph{If $f$ is continuous, with period $2\pi$, then $\sigma_N(f;x)\rightarrow f(x)$ uniformly on $[-\pi,\pi]$.}
+
+    \emph{Hint:} Use properties (a), (b), (c) to proceed as in Theorem \ref{thm:7.26}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.16}
+    Prove a pointwise version of Fej\'{e}r's theorem:
+
+    \emph{If $f \in \mathscr{R}$ and $f(x+)$, $f(x-)$ exist for some $x$, then}
+    \begin{equation*}
+        \lim_{N \to \infty} \sigma_N (f;x) = \frac{1}{2}\left[ f(x+)-f(x-) \right].
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.17}
+    Assume $f$ is bounded and monotonic on $[-\pi, \pi)$,
+    with Fourier coefficients $c_n$, as given by (\ref{eq:8.62}).
+    \begin{asparaenum}[(a)]
+        \item Use Exercise \ref{ex:6.17} to prove that $\{nc_n\}$ is a bounded sequence.
+        \item Combine (a) with Exercise \ref{ex:3.16} and with Exercise \ref{ex:3.14}(e), to conclude that
+        \begin{equation*}
+            \lim_{N \to \infty} s_N(f;x) = \frac{1}{2}\left[ f(x+)-f(x-) \right].
+        \end{equation*}
+        for every $x$.
+        \item Assume only that $f \in \mathscr{R}$ on $[-\pi,\pi]$ and that $f$ is monotonic in some segment
+        $(\alpha, \beta) \in  [-\pi, \pi]$.
+        Prove that the conclusion of (b) holds for every $x \in (\alpha, \beta)$.
+    \end{asparaenum}
+    (This is an application of the localization theorem.)
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.18}
+    Define
+    \begin{align*}
+        f(x) & = x^3 - \sin^2 x \tan x      \\
+        g(x) & = 2x^2 - \sin^2 x - x\tan x.
+    \end{align*}
+    Find out, for each of these two functions,
+    whether it is positive or negative for all $x \in (0, \pi/2)$,
+    or whether it changes sign.
+    Prove your answer.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.19}
+    Suppose $f$ is a continuous function on $\R^1$,
+    $f(x + 2\pi) = f(x)$, and $\alpha/\pi$ is irrational.
+    Prove that
+    \begin{equation*}
+        \lim_{N \to \infty} \frac{1}{N} \sum_{n=1}^{N} f(x+n\alpha) = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(t) \d t
+    \end{equation*}
+    for every $x$.
+
+    \emph{Hint:} Do it first for $f(x) = e^{ikx}$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.20}
+    The following simple computation yields a good approximation to Stirling's formula.
+
+    For $m=1,2,3,\dots$, define
+    \begin{equation*}
+        f(x) = (m+1-x) \log m + (x-m) \log (m+1)
+    \end{equation*}
+    if $m \leq x \leq m+1$, and define
+    \begin{equation*}
+        g(x) = \frac{x}{m} - 1 + \log m
+    \end{equation*}
+    if $m-\frac{1}{2} \leq x \leq m+\frac{1}{2}$.
+    Draw the graphs of $f$ and $g$.
+    Note that $f(x) \leq \log{x} \leq g(x)$ \\
+    if $x \geq 1$ and that
+    \begin{equation*}
+        \int_{1}^{n} f(x) \d x =
+        \log (n!) - \frac{1}{2} \log n >
+        -\frac{1}{8} + \int_{1}^{n} g(x) \d x.
+    \end{equation*}
+    Integrate $\log x$ over $[1,n]$.
+    Conclude that
+    \begin{equation*}
+        \frac{7}{8} < \log(n!) - (n+\frac{1}{2}) \log n + n <1
+    \end{equation*}
+    for $n=2,3,4,\dots$. (\emph{Note:} $\log \sqrt{2\pi}\sim 0.918\dots$.) Thus
+    \begin{equation*}
+        e^{7/8}<\frac{n!}{(n/e)^n\sqrt{n}}<e.
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.21}
+    Let
+    \begin{equation*}
+        L_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} \left| D_n(t) \right| \d t
+        \quad
+        (n=1,2,3,\dots).
+    \end{equation*}
+    Prove that there exists a constant $C>0$ such that
+    \begin{equation*}
+        L_n > C \log n
+        \quad
+        (n=1,2,3,\dots),
+    \end{equation*}
+    or, more precisely, that the sequence
+    \begin{equation*}
+        \left\{ L_n - \frac{4}{\pi^2}\log n \right\}
+    \end{equation*}
+    is bounded.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.22}
+    If $\alpha$ is real and $-1 < x < 1$, prove Newton's binomial theorem
+    \begin{equation*}
+        (1+x)^{\alpha} = 1 + \sum_{n=1}^{\infty}\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n .
+    \end{equation*}
+    \emph{Hint:} Denote the right side by $f(x)$.
+    Prove that the series converges.
+    Prove that
+    \begin{equation*}
+        (1+x)f'(x) = \alpha f(x)
+    \end{equation*}
+    ans solve this differential equation.
+
+    Show also that
+    \begin{equation*}
+        (1-x)^{-\alpha} = \sum_{n=0}^{\infty}\frac{\Gamma(n+\alpha)}{n!\Gamma(\alpha)}x^n
+    \end{equation*}
+    if $-1<x<1$ and $\alpha>0$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.23}
+    Let $\gamma$ be a continuously differentiable \myKeywordblue{closed} curve in the complex plane,
+    with parameter interval $[a, b]$,
+    and assume that $\gamma(t) \neq 0$ for every $t \in [a, b]$.
+    Define the \myKeywordblue{index} of $\gamma$ to be
+    \begin{equation*}
+        \Ind(\gamma) = \frac{1}{2\pi i}
+        \int_{a}^{b} \frac{\gamma'(t)}{\gamma(t)} \d t.
+    \end{equation*}
+    Prove that $\Ind (\gamma)$ is always an integer.
+
+    \emph{Hint:} There exists $\varphi$ on $[a,b]$ with $\varphi' = \gamma'/\gamma$, $\varphi(a)=0$.
+    Hence $\gamma \exp(-\varphi)$ is constant.
+    Since $\gamma(a)=\gamma(b)$ it follows that $\exp\varphi(b)=\exp\varphi(a)=1$.
+    Note that $\varphi(b)=2\pi i \Ind (\gamma)$.
+
+    Compute $\Ind (\gamma)$ when $\gamma(t)=e^{int}$,$a=0$,$b=2\pi$.
+
+    Explain why $\Ind (\gamma)$ is often called the \myKeywordblue{winding number} of $\gamma$ around 0.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.24}
+    Let $\gamma$ be as in Exercise \ref{ex:8.23},
+    and assume in addition that the range of $\gamma$ does not intersect the negative real axis.
+    Prove that $\Ind  (\gamma) = 0$.
+
+    \emph{Hint:} For $0 \leq c < \infty$ ,
+    $\Ind  (\gamma + c)$ is a continuous integer-valued function of $c$.
+    Also, $\Ind  (\gamma + c) \rightarrow 0$
+    as $c \rightarrow \infty$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.25}
+    Suppose $\gamma_1$ and $\gamma_2$ are curves as in Exercise \ref{ex:8.23}, and
+    \begin{equation*}
+        | \gamma_1(t) - \gamma_2(t) | < | \gamma_1(t) |
+        \quad
+        (a \leq t \leq b).
+    \end{equation*}
+    Prove that $\Ind  (\gamma_1) = \Ind  (\gamma_2)$,
+
+    \emph{Hint:} Put $\gamma = \gamma_2/\gamma_1$, Then $|1 - \gamma| < 1$,
+    hence $\Ind  (\gamma) = 0$, by Exercise \ref{ex:8.24}.
+    Also,
+    \begin{equation*}
+        \frac{\gamma'}{\gamma} =
+        \frac{\gamma'_2}{\gamma_2} -
+        \frac{\gamma'_1}{\gamma_1} .
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.26}
+    Let $\gamma$ be a closed curve in the complex plane
+    (not necessarily differentiable)
+    with parameter interval $[0, 2\pi]$,
+    such that $\gamma(t) \neq 0$ for every $t \in [0, 2\pi]$.
+
+    Choose $\delta > 0$ so that $| y(t) | > \delta$ for all $t \in [0, 2\pi]$.
+    If $P_1$ and $P_2$ are trigonometric polynomials
+    such that $|P_1(t) -y(t) | < \delta/4$ for all $t \in [0, 2\pi]$
+    (their existence is assured by Theorem \ref{thm:8.15}),
+    prove that
+    \begin{equation*}
+        \Ind (P_1) =
+        \Ind (P_2)
+    \end{equation*}
+    by applying Exercise \ref{ex:8.25}
+
+    Define this common value to be $\Ind (\gamma)$.
+
+    Prove that the statements of Exercises \ref{ex:8.24} and \ref{ex:8.25}
+    hold without any differentiability assumption.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.27}
+    Let $f$ be a continuous complex function defined in the complex plane.
+    Suppose there is a positive integer $n$ and a complex number $c \neq 0$ such that
+    \begin{equation*}
+        \lim_{|x| \to \infty} z^{-n} f(z) = c.
+    \end{equation*}
+    Prove that $f(z) = 0$ for at least one complex number $z$.
+
+    Note that this is a generalization of Theorem \ref{thm:8.8}.
+
+    \emph{Hint:} Assume $f(z) \neq 0$ for all $z$, define
+    \begin{equation*}
+        \gamma_r(t) = f(re^{it})
+    \end{equation*}
+    for $0 \leq r < \infty$ , $0 \leq t \leq 2\pi$,
+    and prove the following statements about the curves $\gamma_r$:
+    \begin{enumerate}[(a)]
+        \item $\Ind (\gamma_0)=0$.
+        \item $\Ind (\gamma_r)=n$ for all sufficiently large $r$.
+        \item $\Ind (\gamma_r)$ is a continuous function of $r$, on $[0, \infty)$.
+    \end{enumerate}
+    [In (b) and (c), use the last part of Exercise \ref{ex:8.26}.]
+
+    Show that (a), (b), and (c) are contradictory, since $n > 0$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.28}
+    Let $\overline{D}$ be the closed unit disc in the complex plane.
+    (Thus $z \in \overline{D}$ if and only if $| z | \leq 1$.)
+    Let $g$ be a continuous mapping of $\overline{D}$ into the unit circle $T$.
+    (Thus, $|g(z)| = 1$ for every $z \in \overline{D}$.)
+
+    Prove that $g(z) = - z$ for at least one $z \in T$.
+
+    \emph{Hint:} For $0 \leq r \leq 1$, $0 \leq t \leq 2\pi$, put
+    \begin{equation*}
+        \gamma_r(t) = g(r e^{it}),
+    \end{equation*}
+    and put $\psi(t) = e^{-it} \gamma_1(t)$.
+    If $g(z) \neq -z$ for every $z \in T$,
+    then $\psi(t) \neq -1$ for every $t \in [0, 2\pi]$.
+    Hence $\Ind  (\psi) = 0$, by Exercises \ref{ex:8.24} and \ref{ex:8.26}.
+    It follows that $\Ind  (\gamma_1) = 1$.
+    But $\Ind  (\gamma_0)= 0$.
+    Derive a contradiction, as in Exercise \ref{ex:8.27}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.29}
+    Prove that every continuous mapping $f$ of $\overline{D}$ into $\overline{D}$ has a fixed point in $\overline{D}$.
+
+    (This is the 2-dimensional case of Brouwer's fixed-point theorem.)
+
+    \emph{Hint:} Assume $f(z) \neq  z$ for every z $\in \overline{D}$.
+    Associate to each $z \in \overline{D}$ the point
+    $g(z) \in T$ which lies on the ray that starts at $f(z)$ and passes through $z$.
+    Then $g$ maps $\overline{D}$ into $T$, $g(z) = z$ if $z \in T$, and $g$ is continuous, because
+    \begin{equation*}
+        g(z) = z - s(z)[f(z) - z],
+    \end{equation*}
+    where $s(z)$ is the unique nonnegative root of a certain
+    quadratic equation whose coefficients are continuous functions of $f$ and $z$.
+    Apply Exercise \ref{ex:8.28}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.30}
+    Use Stirling's formula to prove that
+    \begin{equation*}
+        \lim_{x \to \infty} \frac{\Gamma(x+c)}{x^c \Gamma(x)} = 1
+    \end{equation*}
+    for every real constant $c$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:8.31}
+    In the proof of Theorem \ref{thm:7.26} it was shown that
+    \begin{equation*}
+        \int_{-1}^{1} (1-x^2)^n \d x \geq \frac{4}{3\sqrt{n}}
+    \end{equation*}
+    for $n = 1, 2, 3, ...$. Use Theorem \ref{thm:8.20} and Exercise \ref{ex:8.30} to show the more precise result
+    \begin{equation*}
+        \lim_{n \to \infty} \sqrt{n} \int_{-1}^{1} (1-x^2)^n \d x = \sqrt{\pi} .
+    \end{equation*}
+\end{myexercise}

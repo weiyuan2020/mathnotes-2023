@@ -1,0 +1,58 @@
+% chap11sec08
+
+\section{Integration of complex functions}
+
+Suppose $f$ is a complex-valued function defined on a measure space $X$,
+and $f = u + iv$,
+where $u$ and $v$ are real.
+We say that $f$ is measurable if and only if
+both $u$ and $v$ are measurable.
+
+It is easy to verify that sums and products of complex measurable functions
+are again measurable. Since
+\begin{equation*}
+    \left| f \right| = (u^2 + v^2)^{1/2},
+\end{equation*}
+Theorem \ref{thm:11.18} shows that $|f|$ is measurable for every complex measurable $f$.
+
+Suppose $\mu$ is a measure on $X$,
+$E$ is a measurable subset of $X$,
+and $f$ is a complex function on $X$.
+We say that $f \in \mathscr{L}(\mu)$ on $E$ provided that $f$ is measurable
+and
+\begin{equation}
+    \label{eq:11.97}
+    \int_E \left| f \right| \d \mu < +\infty ,
+\end{equation}
+and we define
+\begin{equation*}
+    \int_E f \d \mu =
+    \int_E u \d \mu + i
+    \int_E v \d \mu
+\end{equation*}
+if (\ref{eq:11.97}) holds.
+Since $|u| \leq |f|$, $|v| \leq |f|$, and $|f | \leq | u | + | v |$,
+it is clear that
+(\ref{eq:11.97}) holds if and only if $u \in \mathscr{L}(\mu)$ and $v \in \mathscr{L}(\mu)$ on $E$.
+
+Theorems \ref{myremark:11.23}(a), (d), (e), (f), \ref{thm:11.24}(b), \ref{thm:11.26}, \ref{thm:11.27}, \ref{thm:11.29}, and \ref{thm:11.32}
+can now be extended to Lebesgue integrals of complex functions.
+The proofs are quite straightforward.
+That of Theorem \ref{thm:11.26} is the only one that offers
+anything of interest:
+
+If $f \in \mathscr{L}(\mu)$ on $E$, there is a complex number $c$, $|c| = 1$, such that
+\begin{equation*}
+    c \int_E f \d \mu \geq 0 .
+\end{equation*}
+Put $g = cf = u + iv$, $u$ and $v$ real.
+Then
+\begin{equation*}
+    \left| \int_E f \d \mu \right| =
+    c \int_E f \d \mu =
+    \int_E g \d \mu =
+    \int_E u \d \mu \leq
+    \int_E | f | \d \mu .
+\end{equation*}
+The third of the above equalities holds since the preceding ones show that
+$\int f \d \mu$ is real.

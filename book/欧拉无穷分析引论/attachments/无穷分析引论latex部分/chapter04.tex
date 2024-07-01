@@ -1,0 +1,530 @@
+\chapter{第四章 函数的无穷级数展开}
+
+\section{$\S 59$}
+
+对于 $z$ 的分数函数和无理函数, 人们常常寻求它们的整函数那样的, 但项数无穷的 表达式
+\[
+A+B z+C z^{2}+D z^{3}+\cdots
+\]
+即使是超越函数, 用这种无穷表达式表示出来, 其性质也更清楚.
+
+整函数的性质是最为清楚的. 如果一个函数展成了 $z$ 的幂, 并整理成形状
+\[
+A+B z+C z^{2}+D z^{3}+\cdots
+\]
+那么即使项数无穷, 这也是函数的性质最易掌握的形式. 显然, 变量 $z$ 的任何一个非整函 数都不能用状如
+\[
+A+B z+C z^{2}+D z^{3}+\cdots
+\]
+的有限项表示出来, 否则它就是整函数了. 但是可以用这种形状的无穷多项把一个非整 函数表示出来. 如果对这一点有怀疑, 那么通过下面对具体函数的展开, 这一怀疑会消除 的. 为更具一般性, 我们不限制 $z$ 的指数必须为正整数, 允许它为任何实数. 这样 $z$ 的任何 一个函数, 就都可以用状如
+\[
+A z^{\alpha}+B z^{\beta}+C z^{\gamma}+D z^{\delta}+\cdots
+\]
+的表达式表示出来, 其中指数 $\alpha, \beta, \gamma, \delta, \cdots$ 为任何实数.
+
+\section{$\S 60$}
+
+连续进行除法可以化分数函数
+\[
+\frac{a}{\alpha+\beta z}
+\]
+为无穷级数
+\[
+\frac{a}{\alpha}-\frac{a \beta z}{\alpha^{2}}+\frac{a \beta^{2} z^{2}}{\alpha^{3}}-\frac{a \beta^{3} z^{3}}{\alpha^{4}}+\frac{a \beta^{4} z^{4}}{\alpha^{5}}-\cdots
+\]
+这是一个几何级数,邻项的比都为 $-1: \frac{\beta z}{\alpha}$.
+
+这一级数也可以用比较系数的方法求得. 
+
+令
+\[
+\frac{a}{\alpha+\beta z}=A+B z+C z^{2}+D z^{3}+E z^{4}+\cdots
+\]
+去分母,得
+\[
+a=(\alpha+\beta z)\left(A+B z+C z^{2}+D z^{3}+\cdots\right)
+\]
+展开,得
+\[
+\begin{aligned}
+a= & \alpha A+\alpha B z+\alpha C z^{2}+\alpha D z^{3}+\alpha E z^{4}+\cdots+ \\
+& \beta A z+\beta B z^{2}+\beta C z^{3}+\beta D z^{4}+\cdots
+\end{aligned}
+\]
+比较零次幂的系数得 $a=\alpha A$ 或 $A=\frac{a}{\alpha}$. 由 $z$ 的其余各次幂的系数都应该为零, 得
+\[
+\begin{aligned}
+& \alpha B+\beta A=0 \\
+& \alpha C+\beta B=0 \\
+& \alpha D+\beta C=0 \\
+& \alpha E+\beta D=0
+\end{aligned}
+\]
+类推.
+
+知道了任何一个系数都可以求出它后面的一个. 例如系数 $P$ 已知, 它后面的一个为 $Q$, 则 $\alpha Q+\beta P=0$, 从而 $Q=-\frac{\beta P}{\alpha}$. 由于已知第一个系数为 $A=\frac{a}{\alpha}$, 从它我们可以依次求出 $B, C, D, \cdots$. 结果与连续进行除去所得一致. 我们看到在 $\frac{\alpha}{\alpha+\beta z}$ 展成的无穷级数中 $z^{n}$ 的系 数为 $\pm \frac{a \beta^{n}}{\alpha^{n+1}}, n$ 为偶数时取正号, $n$ 为奇数时取负号. 也即 $z^{n}$ 的系数为 $\frac{a}{\alpha}\left(-\frac{\beta}{\alpha}\right)^{n}$.
+
+\section{$\S 61$}
+
+类似上一节, 连续进行除法也可以化分数函数
+\[
+\frac{a+b z}{\alpha+\beta z+\gamma z^{2}}
+\]
+为无穷级数.
+
+这里除法太繁, 且从得到的级数中找不到简单的规律, 所以我们采用比较系数法. 令
+\[
+\frac{a+b z}{\alpha+\beta z+\gamma z^{2}}=A+B z+C z^{2}+D z^{3}+E z^{4}+\cdots
+\]
+两边乘 $\alpha+\beta z+\gamma z^{2}$, 得
+\[
+\begin{aligned}
+a+b z= & \alpha A+\alpha B z+\alpha C z^{2}+\alpha D z^{3}+\alpha E z^{4}+\cdots+ \\
+& \beta A z+\beta B z^{2}+\beta C z^{3}+\beta D z^{4}+\cdots+ \\
+& \gamma A z^{2}+\gamma B z^{3}+\gamma C z^{4}+\cdots
+\end{aligned}
+\]
+比较系数得 $\alpha A=a, \alpha B+\beta A=b$. 从而 $A=\frac{a}{\alpha}, B=\frac{b}{\alpha}-\frac{a \beta}{\alpha^{2}}$. 接下去的系数可以从下面的方 程求得 
+\[
+\begin{gathered}
+\alpha C+\beta B+\gamma A=0 \\
+\alpha D+\beta C+\gamma B=0 \\
+\alpha E+\beta D+\gamma C=0 \\
+\alpha F+\beta E+\gamma D=0
+\end{gathered}
+\]
+类推.
+
+我们看到, 知道了相邻的两个系数, 就可以求出它们下面的一个. 例如相邻的两个系 数 $P, Q$ 已知, 它们下面的一个为 $R$, 则
+\[
+\alpha R+\beta Q+\gamma P=0 \text { 或 } R=\frac{-\beta Q-\gamma P}{\alpha}
+\]
+由于开始的两个系数 $A, B$ 已经求出, 所以接下来的 $C, D, E, F, \cdots$ 都可求得. 这样我们就 求出了等于分数函数 $\frac{a+b z}{\alpha+\beta z+\gamma z^{2}}$ 的无穷级数 $A+B z+C z^{2}+D z^{3}+\cdots$.
+
+例 分数函数为
+\[
+\frac{1+2 z}{1-z-z^{2}}
+\]
+记它展成的级数为
+\[
+A+B z+C z^{2}+D z^{3}+\cdots
+\]
+这里
+\[
+a=1, b=2, \alpha=1, \beta=-1, \gamma=-1
+\]
+从而
+\[
+A=1, B=3
+\]
+接下去我们有
+\[
+\begin{aligned}
+C & =B+A \\
+D & =C+B \\
+E & =D+C \\
+F & =E+D
+\end{aligned}
+\]
+类推.
+
+我们看到, 每一个系数都是它前两个系数的和. 即如果 $P, Q$ 是相邻的两个系数,则它 们后面的那个系数 $R=P+Q$. 由于 $A, B$ 已经求得, 所以分数函数
+\[
+\frac{1+2 z}{1-z-z^{2}}
+\]
+展成的无穷级数为
+\[
+1+3 z+4 z^{2}+7 z^{3}+11 z^{4}+18 z^{5}+\cdots
+\]
+可以无休止地写下去.
+
+\section{$\S 62$}
+
+关于分数函数展开为无穷级数的讨论, 已经够清楚了. 我们已经找到了由一个或相邻几个系数决定下一个系数的规律. 展成级数为
+
+%%03p041-060
+\[
+A+B z+C z^{2}+\cdots+P z^{n}+Q z^{n+1}+R z^{n+2}+S z^{n+3}+\cdots
+\]
+分母为 $\alpha+\beta z$ 时, 任何一个系数 $Q$ 都由它的前一个系数 $P$ 决定, $P, Q$ 间关系为
+\[
+\alpha Q+\beta P=0
+\]
+分母为 $\alpha+\beta z+\gamma z^{2}$ 时, 任何一个系数 $R$ 都由它的前两个系数 $Q$ 和 $P$ 决定, $P, Q, R$ 间关系 为 $\alpha R+\beta Q+\gamma P=0$; 分母是四项式 $\alpha+\beta z+\gamma z^{2}+\delta z^{3}$ 时, 任何一个系数 $S$ 由它的前三 个系数 $P, Q, R$ 决定, $P, Q, R, S$ 间关系为
+\[
+\alpha S+\beta R+\gamma Q+\delta P=0
+\]
+对次数更高的分母, 这关系类似. 也即对任何一个分数函数, 根据它的分母, 我们都可以 立即写出一个公式, 根据这个公式, 展成级数的项可由它的前几项决定. 著名数学家 A 棣美弗详细考察了这类级数, 并给它起了一个名字叫递推级数, 意思是从前面的项可传 递式地堆出后面的项.
+
+\section{$\S 63$}
+
+在这些级数的形成过程中都要求分母中的常数项 $\alpha$ 不为零. 如果 $\alpha=0$, 则第一项 $A=\frac{a}{\alpha}$, 因而所有的项都为无穷. $\alpha=0$ 的情形留待以后讨论.
+
+任何一个分母第一项不为零的分数函数, 我们都可以把它展成无穷级数. 而任何一 个这样的函数我们都可以把它化成分母第一项为 1 的分数函数
+\[
+\frac{a+b z+c z^{2}+d z^{3}+\cdots}{1-\alpha z-\beta z^{2}-\gamma z^{3}-\delta z^{4}-\cdots}
+\]
+分母中第一项之外各项都带负号, 这是为了使得在无穷级数的系数公式中不含负号. 设 该函数的递推级数为
+\[
+A+B z+C z^{2}+D z^{3}+E z^{4}+\cdots
+\]
+则系数
+\[
+\begin{gathered}
+A=a \\
+B=\alpha A+b \\
+C=\alpha B+\beta A+c \\
+D=\alpha C+\beta B+\gamma A+d \\
+E=\alpha D+\beta C+\gamma B+\delta A+e
+\end{gathered}
+\]
+类推. 可见每一个系数都是它前几个系数的加权组合加上分子中的一个数. 如果分子的 项数有限, 那么可以加上去的数很快被用尽. 这以后, 一个系数由前几个系数决定的规律 就固定了. 为了这规律不被破坏, 还要求这分数函数为真分数函数. 否则, 整函数部分的 各项应回到相应的项上去, 或者从相应的项中减去. 这都使固定规律被破坏. 例如, 假分 式 $\frac{1+2 z-z^{3}}{1-z-z^{2}}$ 的展开级数为
+\[
+1+3 z+4 z^{2}+6 z^{3}+10 z^{4}+16 z^{5}+26 z^{6}+42 z^{7}+\cdots
+\]
+按固定规律, 每一个系数都应该是其前两个系数的和, 但这里第四项 $6 z^{3}$ 的系数就不是.
+
+\section{$\S 64$}
+
+对分母是二项式的幂的公式, 我们单独地讨论它的递推级数. 先看分数函数
+\[
+\frac{a+b z}{(1-a z)^{2}}
+\]
+它的展开级数为
+\[
+\begin{aligned}
+& a+2 \alpha a z+3 \alpha^{2} a z^{2}+4 \alpha^{3} a z^{3}+5 \alpha^{4} a z^{4}+\cdots+ \\
+& b z+2 \alpha b z^{2}+3 \alpha^{2} b z^{3}+4 \alpha^{3} b z^{4}+\cdots
+\end{aligned}
+\]
+$z^{n}$ 的系数为 $(n+1) \alpha^{n} a+n \alpha^{n-1} b$. 这是一个递推级数,每一项都由其前两项推出. 把分母 展成 $1-2 \alpha z+\alpha^{2} z^{2}$, 就可以清楚地看出这递推规则. 令 $\alpha=1, z=1$, 则这里的级数成为一 般的算术级数
+\[
+a+(2 a+b)+(3 a+2 b)+(4 a+3 b)+\cdots
+\]
+邻项差都相等. 算术级数都是递推级数. 如果 $A+B+C+D+E+F+\cdots$ 是算术级数,则
+\[
+C=2 B-A, D=2 C-B, E=2 D-C, \cdots
+\]
+\section{$\S 65$}
+
+再看函数
+\[
+\frac{a+b z+c z^{2}}{(1-\alpha z)^{3}}
+\]
+由
+\[
+\frac{1}{(1-\alpha z)^{3}}=(1-\alpha z)^{-3}=1+3 \alpha z+6 \alpha^{2} z^{2}+10 \alpha^{3} z^{3}+15 \alpha^{4} z^{4}+\cdots
+\]
+得该函数展成的无穷级数为
+\[
+\begin{aligned}
+& a+3 \alpha a z+6 \alpha^{2} a z^{2}+10 \alpha^{3} a z^{3}+15 \alpha^{4} a z^{4}+\cdots+ \\
+& b z+3 \alpha b z^{2}+6 \alpha^{2} b z^{3}+10 \alpha^{3} b z^{4}+\cdots+ \\
+& c z^{2}+3 \alpha c z^{3}+6 \alpha^{2} c z^{4}+\cdots
+\end{aligned}
+\]
+其中 $z^{n}$ 的系数为
+\[
+\frac{(n+1)(n+2)}{1 \cdot 2} \alpha^{n} a+\frac{n(n+1)}{1 \cdot 2} \alpha^{n-1} b+\frac{(n-1) n}{1 \cdot 2} \alpha^{n-2} c
+\]
+令 $\alpha=1, z=1$, 则该无穷级数成为一般二阶级数, 其二阶差分为常数. 记这一般二阶级数 为
+\[
+A+B+C+D+E+\cdots
+\]
+它是一个递推级数,每一项都由其前三项决定,关系式是
+\[
+D=3 C-3 B+A, E=3 D-3 C+B, F=3 E-3 D+C, \cdots
+\]
+由于算术级数的二阶差分也为常数,都等于零. 所以算术级数的项也满足这个关系式. 
+
+\section{$\S 66$}
+
+类似地, 考虑函数
+\[
+\frac{a+b z+c z^{2}+d z^{3}}{(1-\alpha z)^{4}}
+\]
+它展成的无穷级数中 $z^{n}$ 的系数为
+\[
+\begin{gathered}
+\frac{(n+1)(n+2)(n+3)}{1 \cdot 2 \cdot 3} \alpha^{n} a+\frac{n(n+1)(n+2)}{1 \cdot 2 \cdot 3} \alpha^{n-1} b+ \\
+\quad \frac{(n-1) n \cdot(n+1)}{1 \cdot 2 \cdot 3} \alpha^{n-2} c+\frac{(n-2)(n-1) n}{1 \cdot 2 \cdot 3} \alpha^{n-3} d
+\end{gathered}
+\]
+令 $\alpha=1, z=1$, 这个级数就代表三阶差分都为常数的所有这种三阶代数级数. 事实上, 由 分母为 $1-4 z+6 z^{2}-4 z^{3}+z^{4}$ 的分数函数所产生的三阶级数
+\[
+A+B+C+D+E+F+\cdots
+\]
+都是递推的,其项间关系都是
+\[
+E=4 D-6 C+4 B-A, F=4 E-6 D+4 C-B, \cdots
+\]
+更低阶级数的项也都满足这一关系.
+
+\section{$\S 67$}
+
+用这一方法可以证明, 其差分最终为常数的这种代数级数, 不管是几阶的, 都是递推 级数. 项的形成规则由分母 $(1-z)^{n}$ 决定. $n$ 比级数的阶数大 1 . 由于
+\[
+a^{m}+(a+b)^{m}+(a+2 b)^{m}+(a+3 b)^{m}+\cdots
+\]
+是 $m$ 阶级数,依照递推级数的性质我们有
+\[
+\begin{aligned}
+0= & a^{m}-\frac{n}{1}(a+b)^{m}+\frac{n(n-1)}{1 \cdot 2}(a+2 b)^{m}-\frac{n(n-1)(n-2)}{1 \cdot 2 \cdot 3} . \\
+& (a+3 b)^{m}+\cdots \pm \frac{n}{1}[a+(n-1) b]^{m} \mp(a+n b)^{m}
+\end{aligned}
+\]
+双重符号处, $n$ 为偶数时取上面的, $n$ 为奇数时取下面的. $n$ 为大于 $m$ 的整数时这个方程恒 成立. 由此可以看出递推级数的范围之广.
+
+\section{$\S 68$}
+
+分母不是二项式的幂, 而是多项式的幂时, 级数的性质要用另一种方法来阐明. 设函 数为
+\[
+\frac{1}{\left(1-\alpha z-\beta z^{2}-\gamma z^{3}-\delta z^{4}-\cdots\right)^{m+1}}
+\]
+展成的无穷级数为 
+\[
+\begin{aligned}
+& 1+\frac{m+1}{1} \alpha z+\frac{(m+1)(m+2)}{1 \cdot 2} \alpha^{2} z^{2}+ \\
+& \frac{(m+1)(m+2)(m+3)}{1 \cdot 2 \cdot 3} \alpha^{3} z^{3}+\cdots+ \\
+& \frac{m+1}{1} \beta z^{2}+\frac{(m+1)(m+2)}{1 \cdot 2} 2 \alpha \beta z^{3}+\cdots+\frac{m+1}{1} \gamma z^{3}+\cdots+
+\end{aligned}
+\]
+为便于考察,记这个级数为
+\[
+1+A z+B z^{2}+C z^{3}+\cdots+K z^{n-3}+L z^{n-2}+M z^{n-1}+N z^{n}+\cdots
+\]
+在这样的记法之下, 任何一个系数 $N$ 都由它的前若干个系数决定. 这“若干” 等于字母 $\alpha$, $\beta, \gamma, \delta, \cdots$ 的个数,关系式为
+\[
+N=\frac{m+n}{n} \alpha M+\frac{2 m+n}{n} \beta L+\frac{3 m+n}{n} \gamma K+\frac{4 m+n}{n} \delta J+\cdots
+\]
+这规律依赖于 $z$ 的指数, 不固定, 但接近于递推级数的项由分母决定的规律. 这一不固定 的规律只适用于分子为 1 或某个常数的情形,如果分子包含 $z$ 的另外一个或几个幂,那时 这规律要复杂得多. 学了微积分再去考察它就变得容易了.
+
+\section{$\S 69$}
+
+到现在为止, 我们一直假定分母的常数项不为零, 并令它为 1 . 现在我们允许分母的 常数项为零, 看看级数是怎样的. 此时分数函数的形状为
+\[
+\frac{a+b z+c z^{2}+\cdots}{z\left(1-\alpha z-\beta z^{2}-\cdots\right)}
+\]
+去掉分母的因式 $z$, 函数的剩下部分为
+\[
+\frac{a+b z+c z^{2}+\cdots}{1-\alpha z-\beta z^{2}-\cdots}
+\]
+记它展成的递推级数为
+\[
+A+B z+C z^{2}+D z^{3}+\cdots
+\]
+用 $z$ 除,得
+\[
+\frac{a+b z+c z^{2}+\cdots}{z\left(1-\alpha z-\beta z^{2}-\cdots\right)}=\frac{A}{z}+B+C z+D z^{2}+E z^{3}+\cdots
+\]
+类似地,我们有
+\[
+\frac{a+b z+c z^{2}+\cdots}{z^{2}\left(1-\alpha z-\beta z^{2}-\cdots\right)}=\frac{A}{z^{2}}+\frac{B}{z}+C+D z+E z^{2}+\cdots
+\]
+一般地,我们有
+\[
+\frac{a+b z+c z^{2}+\cdots}{z^{m}\left(1-\alpha z-\beta z^{2}-\cdots\right)}=\frac{A}{z^{m}}+\frac{B}{z^{m-1}}+\frac{C}{z^{m-2}}+\frac{D}{z^{m-3}}+\cdots
+\]
+$m$ 为任何正整数. 
+
+\section{$\S 70$}
+
+我们可以用另一个变量 $x$ 来代换分数函数中的 $z$. 这代换的方式有无穷多种,因而一 个分数函数可展成的递推级数也有无穷多个. 例如函数
+\[
+y=\frac{1+z}{1-z-z^{2}}
+\]
+其递推级数为
+\[
+y=1+2 z+3 z^{2}+5 z^{3}+8 z^{4}+\cdots
+\]
+如果令 $z=\frac{1}{x}$, 则
+\[
+y=\frac{x^{2}+x}{x^{2}-x-1}=\frac{-x(1+x)}{1+x-x^{2}}
+\]
+由
+\[
+\frac{1+x}{1+x-x^{2}}=1+0 \cdot x+x^{2}-x^{3}+2 x^{4}-3 x^{5}+5 x^{6}-\cdots
+\]
+得
+\[
+y=-x+0 \cdot x^{2}-x^{3}+x^{4}-2 x^{5}+3 x^{6}-5 x^{7}+\cdots
+\]
+如果令 $z=\frac{1-x}{1+x}$, 则
+\[
+y=\frac{-2-2 x}{1-4 x-x^{2}}
+\]
+从而
+\[
+y=-2-10 x-42 x^{2}-178 x^{3}-754 x^{4}-\cdots
+\]
+我们可以得到表示这个 $y$ 的无数个这样的递推级数.
+
+\section{$\S 71$}
+
+利用定理
+\[
+(P+Q)^{\frac{m}{n}}=P^{\frac{m}{n}}+\frac{m}{n} P^{\frac{m-n}{n}} Q+\frac{m(m-n)}{n \cdot 2 n} P^{\frac{m-2 n}{n}} Q^{2}+\frac{m(m-n)(m-2 n)}{n \cdot 2 n \cdot 3 n} P^{\frac{m-3 n}{n}} Q^{3}+\cdots
+\]
+可以把无理函数展成无穷级数, 只要 $\frac{m}{n}$ 不是整数,定理中的项数就是无穷的. 取确定的 $m$ 和 $n$, 我们得到
+\[
+\begin{aligned}
+& (P+Q)^{\frac{1}{2}}=P^{\frac{1}{2}}+\frac{1}{2} P^{-\frac{1}{2}} Q-\frac{1 \cdot 1}{2 \cdot 4} P^{-\frac{3}{2}} Q^{2}+\frac{1 \cdot 1 \cdot 3}{2 \cdot 4 \cdot 6} P^{-\frac{5}{2}} Q^{3}-\cdots \\
+& (P+Q)^{-\frac{1}{2}}=P^{-\frac{1}{2}}-\frac{1}{2} P^{-\frac{3}{2}} Q+\frac{1 \cdot 3}{2 \cdot 4} P^{-\frac{5}{2}} Q^{2}-\frac{1 \cdot 3 \cdot 5}{2 \cdot 4 \cdot 6} P^{-\frac{7}{2}} Q^{3}+\cdots \\
+& (P+Q)^{\frac{1}{3}}=P^{\frac{1}{3}}+\frac{1}{3} P^{-\frac{2}{3}} Q-\frac{1 \cdot 2}{3 \cdot 6} P^{-\frac{5}{3}} Q^{2}+\frac{1 \cdot 2 \cdot 5}{3 \cdot 6 \cdot 9} P^{-\frac{8}{3}} Q^{3}-\cdots
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& (P+Q)^{-\frac{1}{3}}=P^{-\frac{1}{3}}-\frac{1}{3} P^{-\frac{4}{3}} Q+\frac{1 \cdot 4}{3 \cdot 6} P^{-\frac{7}{3}} Q^{2}-\frac{1 \cdot 4 \cdot 7}{3 \cdot 6 \cdot 9} P^{-\frac{10}{3}} Q^{3}+\cdots \\
+& (P+Q)^{\frac{2}{3}}=P^{\frac{2}{3}}+\frac{2}{3} P^{-\frac{1}{3}} Q-\frac{2 \cdot 1}{3 \cdot 6} P^{-\frac{4}{3}} Q^{2}+\frac{2 \cdot 1 \cdot 4}{3 \cdot 6 \cdot 9} P^{-\frac{7}{3}} Q^{3}-\cdots
+\end{aligned}
+\]
+等等.
+
+\section{$\S 72$}
+
+前节级数的每一项都可由它的前一项求出. 如果 $(P+Q)^{\frac{m}{n}}$ 产生的级数的某一项为
+\[
+M P^{\frac{m-K n}{n}} Q^{K}
+\]
+则下一项为
+\[
+\frac{m-K n}{(K+1) n} M P^{\frac{m-(K+1) n}{n}} Q^{K+1}
+\]
+我们看到, 后项比前项, $P$ 的指数减 $1, Q$ 的指数加 1 , 在一些情况下把 $(P+Q)^{\frac{m}{n}}$ 表示成 $P^{\frac{m}{n}}\left(1+\frac{Q}{P}\right)^{\frac{m}{n}}$ 更为方便, 乘 $\left(1+\frac{Q}{P}\right)^{\frac{m}{n}}$ 的级数以 $P^{\frac{m}{n}}$, 就得到 $(P+Q)^{\frac{m}{n}}$ 的级数; 再一点, 如 果 $m$ 不仅可为整数, 而且可为分数, 则可取 $n$ 恒为 1 . 这样, 如果记 $z$ 的函数 $\frac{Q}{P}$ 为 $Z$, 则
+\[
+(1+Z)^{m}=1+\frac{m}{1} Z+\frac{m(m-1)}{1 \cdot 2} Z^{2}+\frac{m(m-1)(m-2)}{1 \cdot 2 \cdot 3} Z^{3}+\cdots
+\]
+将该式中的 $m$ 换为 $m-1$, 得
+\[
+(1+z)^{m-1}=1+\frac{m-1}{1} Z+\frac{(m-1)(m-2)}{1 \cdot 2} Z^{2}+\frac{(m-1)(m-2)(m-3)}{1 \cdot 2 \cdot 3} Z^{3}+\cdots
+\]
+规律性更明显.
+
+\section{$\S 73$}
+
+先令 $Z=\alpha z$, 则
+\[
+\begin{aligned}
+(1+\alpha z)^{m-1}= & 1+\frac{m-1}{1} \alpha z+\frac{(m-1)(m-2)}{1 \cdot 2} \alpha^{2} z^{2}+ \\
+& \frac{(m-1)(m-2)(m-3)}{1 \cdot 2 \cdot 3} \alpha^{3} z^{3}+\cdots
+\end{aligned}
+\]
+记它为
+\[
+1+A z+B z^{2}+C z^{3}+\cdots+M z^{n-1}+N z^{n}+\cdots
+\]
+那么任何一个系数 $N$ 由它的前一项决定的公式为
+\[
+N=\frac{m-n}{n} \alpha M
+\]
+$n=1$ 时 $M=1$, 得 
+\[
+N=A=\frac{m-1}{1} \alpha
+\]
+$n=2$ 时 $M=A=\frac{m-1}{1} \alpha$, 得
+\[
+N=B=\frac{m-2}{2} \alpha M=\frac{(m-1)(m-2)}{1 \cdot 2} \alpha^{2}
+\]
+类似地
+\[
+C=\frac{m-3}{3} \alpha B=\frac{(m-1)(m-2)(m-3)}{1 \cdot 2 \cdot 3} \alpha^{3}
+\]
+与原级数一致.
+
+\section{$\S 74$}
+
+令 $Z=\alpha z+\beta z^{2}$, 则
+\[
+\left(1+\alpha z+\beta z^{2}\right)^{m-1}=1+\frac{m-1}{1}\left(\alpha z+\beta z^{2}\right)+\frac{(m-1)(m-2)}{1 \cdot 2}\left(\alpha z+\beta z^{2}\right)^{2}+\cdots
+\]
+展开按 $z$ 的升幂排列, 得
+\[
+\begin{aligned}
+\left(1+\alpha z+\beta z^{2}\right)^{m-1}= & 1+\frac{m-1}{1} \alpha z+\frac{(m-1)(m-2)}{1 \cdot 2} \alpha^{2} z^{2}+ \\
+& \frac{(m-1)(m-2)(m-3)}{1 \cdot 2 \cdot 3} \alpha^{3} z^{3}+\cdots+\frac{m-1}{1} \beta z^{2}+ \\
+& \frac{(m-1)(m-2)}{1 \cdot 2} 2 \alpha \beta z^{3}+\cdots
+\end{aligned}
+\]
+记它为
+\[
+1+A z+B z^{2}+C z^{3}+\cdots+L z^{n-2}+M z^{n-1}+N z^{n}+\cdots
+\]
+那么任何一个系数 $N$ 由它的前两个系数决定的公式是
+\[
+N=\frac{m-n}{n} \alpha M+\frac{2 m-n}{n} \beta L
+\]
+从第一项为 1 出发,利用该公式我们可求出所有的项. 我们有
+\[
+\begin{gathered}
+A=\frac{m-1}{1} \alpha \\
+B=\frac{m-2}{2} \alpha A+\frac{2 m-2}{2} \beta \\
+C=\frac{m-3}{3} \alpha B+\frac{2 m-3}{3} \beta A \\
+D=\frac{m-4}{4} \alpha C+\frac{2 m-4}{4} \beta B
+\end{gathered}
+\]
+等等. 
+
+\section{$\S 75$}
+
+若 $Z=\alpha z+\beta z^{2}+\gamma z^{3}$, 则
+\[
+\begin{aligned}
+\left(1+\alpha z+\beta z^{2}+\gamma z^{3}\right)^{m-1}= & 1+\frac{m-1}{1}\left(\alpha z+\beta z^{2}+\gamma z^{3}\right)+ \\
+& \frac{(m-1)(m-2)}{1 \cdot 2}+\left(\alpha z+\beta z^{2}+\gamma z^{3}\right)^{2}+\cdots
+\end{aligned}
+\]
+展开按 $z$ 的升幂排列得
+\[
+\begin{aligned}
+& \left(1+\alpha z+\beta z^{2}+\gamma z^{3}\right)^{m-1}=1+\frac{m-1}{1} \alpha z+\frac{(m-1)(m-2)}{1 \cdot 2} \alpha^{2} z^{2}+ \\
+& \frac{(m-1)(m-2)(m-3)}{1 \cdot 2 \cdot 3} \alpha^{3} z^{3}+\cdots+\frac{m-1}{1} \beta z^{2}+ \\
+& \frac{(m-1)(m-2)}{1 \cdot 2} 2 \alpha \beta z^{3}+\cdots+\frac{m-1}{1} \gamma z^{3}+\cdots
+\end{aligned}
+\]
+为使系数由前几项决定的公式易于表示, 记它为
+\[
+1+A z+B z^{2}+C z^{3}+\cdots+K z^{n-3}+L z^{n-2}+M z^{n-1}+N z^{n}+\cdots
+\]
+这样每一项的系数由它的前三项系数决定的公式为
+\[
+N=\frac{m-n}{n} \alpha M+\frac{2 m-n}{n} \beta L+\frac{3 m-n}{n} \gamma K
+\]
+第一项为 1 , 它前面的项为零, 利用公式我们得到
+\[
+\begin{gathered}
+A=\frac{m-1}{1} \alpha \\
+B=\frac{m-2}{2} \alpha A+\frac{2 m-2}{2} \beta \\
+C=\frac{m-3}{3} \alpha B+\frac{2 m-3}{3} \beta A+\frac{3 m-3}{3} \gamma \\
+D=\frac{m-4}{4} \alpha C+\frac{2 m-4}{4} \beta B+\frac{3 m-4}{4} \gamma A \\
+E=\frac{m-5}{5} \alpha D+\frac{2 m-5}{5} \beta C+\frac{3 m-5}{5} \gamma B
+\end{gathered}
+\]
+等等.
+
+\section{$\S 76$}
+
+一般地,记
+\[
+\left(1+\alpha z+\beta z^{2}+\gamma z^{3}+\delta z^{4}+\cdots\right)^{m-1}=1+A z+B z^{2}+C z^{3}+D z^{4}+E z^{5}+\cdots
+\]
+则
+\[
+A=\frac{m-1}{1} \alpha
+\]
+\[
+\begin{aligned}
+& \qquad B=\frac{m-2}{2} \alpha A+\frac{2 m-2}{2} \beta \\
+& C=\frac{m-3}{3} \alpha B+\frac{2 m-3}{3} \beta A+\frac{3 m-3}{3} \gamma \\
+& E=\frac{m-4}{4} \alpha C+\frac{2 m-4}{4} \beta B+\frac{3 m-4}{4} \gamma A+\frac{4 m-4}{4} \delta \\
+& E=\frac{m}{5} \alpha D+\frac{2 m-5}{5} \beta C+\frac{3 m-5}{5} \gamma B+\frac{4 m-5}{5} \delta A+\frac{5 m-5}{5} \varepsilon
+\end{aligned}
+\]
+类推.
+
+每一项都由它的前若干项确定,这“若干”等于分母中系数 $\alpha, \beta, \gamma, \delta, \cdots$ 的个数. 这 里所得与 $\S 68$ 是一致的,那里我们把类似地表达式
+\[
+\left(1-\alpha z-\beta z^{2}-\gamma z^{3}-\cdots\right)^{-m-1}
+\]
+展成了无穷级数. 将 $m$ 换为 $-m$, 将系数 $\alpha, \beta, \gamma, \delta, \cdots$ 前面的符号都换成负的, 这里的结 果跟那里就完全一样了. 对这里的规律我们不做证明, 利用微分学的某些原理进行证明 要容易得多. 通过前面那么多例子, 大家对它的成立不会怀疑的. 
+

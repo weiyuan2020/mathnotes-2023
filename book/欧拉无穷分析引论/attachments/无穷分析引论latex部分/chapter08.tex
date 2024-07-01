@@ -1,0 +1,605 @@
+\chapter{第八章 来自圆的超越量}
+
+\section{$\S 126$}
+
+讨论过对数和指数这两种超越量之后, 我们应该来讨论弧及其正弦和余弦. 所以应 该讨论这几种量, 不仅因为它们也是超越量, 还因为借助复数, 它们可由对数和指数这两 种量产生. 怎样产生,后面讲.
+
+如果圆的半径 (或完整的正弦) 为 1 , 周长就不能为有理数, 这是清楚的. 半径为 1 的 圆, 其半周长的近似值为
+
+3. 141592653589793238462643383279502884197169
+
+399375105820974944592307816406286208998628
+
+$0348253421170679821480865132823066470938446 \cdots$
+
+为简便起见, 我们用符号 $\pi$ 代表这个数. 我们说:单位圆的半周长为 $\pi$, 或者单位圆 $180^{\circ}$ 弧的长为 $\pi$.
+
+\section{$\$ 127$}
+
+用 $z$ 表示半径为 1 的圆的一段弧, 我们关心最多的是这段弧的正弦和余弦. 弧 $z$ 的正 弦记为 $\sin \cdot A \cdot z$ 或简记为 $\sin \cdot z$, 余弦记为 $\cos \cdot A \cdot z$ 或简记为 $\cos \cdot z^{\mathbb{1}}$.
+
+$\pi$ 是 $180^{\circ}$ 的弧,首先我们有
+\[
+\sin 0 \pi=0, \cos 0 \pi=1
+\]
+和
+\[
+\begin{aligned}
+\sin \frac{1}{2} \pi & =1, \cos \frac{1}{2} \pi=0 \\
+\sin \pi & =0, \cos \pi=-1 \\
+\sin \frac{3}{2} \pi & =-1, \cos \frac{3}{2} \pi=0 \\
+\sin 2 \pi & =0, \cos 2 \pi=1
+\end{aligned}
+\]
+(1) 以下凡三角函数都采用现在的通用记法, 字母 $A$ 和圆点都略去.一一 译者 
+
+正弦和余弦的值都在 $+1$ 和 $-1$ 之间.
+
+其次我们有
+\[
+\cos z=\sin \left(\frac{1}{2} \pi-z\right), \sin z=\cos \left(\frac{1}{2} \pi-z\right)
+\]
+再次我们有
+\[
+\sin ^{2} z+\cos ^{2} z=1
+\]
+还有从三角学中我们知道, 弧 $z$ 的正切记为 $\tan z$, 余切记为 $\cot z$.
+\[
+\tan z=\frac{\sin z}{\cos z}, \cot z=\frac{\cos z}{\sin z}=\frac{1}{\tan z}
+\]
+\section{$\S 128$}
+
+我们知道, 如果有 $y, z$ 两段弧, 则
+\[
+\begin{aligned}
+& \sin (y+z)=\sin y \cos z+\cos y \sin z \\
+& \cos (y+z)=\cos y \cos z-\sin y \sin z \\
+& \sin (y-z)=\sin y \cos z-\cos y \sin z \\
+& \cos (y-z)=\cos y \cos z+\sin y \sin z
+\end{aligned}
+\]
+将这四个公式中的弧 $y$ 依次换为 $\frac{1}{2} \pi, \pi, \frac{3}{2} \pi$ 等, 我们得到:
+
+\[
+\begin{array}{c|c}
+\hline \sin \left(\frac{1}{2} \pi+z\right)=+\cos z & \sin \left(\frac{1}{2} \pi-z\right)=+\cos z \\
+\cos \left(\frac{1}{2} \pi+z\right)=-\sin z & \cos \left(\frac{1}{2} \pi-z\right)=+\sin z \\
+\hline \sin (\pi+z)=-\sin z & \sin (\pi-z)=+\sin z \\
+\cos (\pi+z)=-\cos z & \cos (\pi-z)=-\cos z \\
+\hline \sin \left(\frac{3}{2} \pi+z\right)=-\cos z & \sin \left(\frac{3}{2} \pi-z\right)=-\cos z \\
+\cos \left(\frac{3}{2} \pi+z\right)=+\sin z & \cos \left(\frac{3}{2} \pi-z\right)=-\sin z \\
+\hline \sin (2 \pi+z)=+\sin z & \sin (2 \pi-z)=-\sin z \\
+\cos (2 \pi+z)=+\cos z & \cos (2 \pi-z)=+\cos z \\
+\hline
+\end{array}
+\]
+
+如果 $n$ 表示某个整数,则:
+
+\begin{tabular}{c|c}
+\hline $\sin \left(\frac{4 n+1}{2} \pi+z\right)=+\cos z$ & $\sin \left(\frac{4 n+1}{2} \pi-z\right)=+\cos z$ \\
+$\cos \left(\frac{4 n+1}{2} \pi+z\right)=-\sin z$ & $\cos \left(\frac{4 n+1}{2} \pi-z\right)=+\sin z$ \\
+\hline $\sin \left(\frac{4 n+2}{2} \pi+z\right)=-\sin z$ & $\sin \left(\frac{4 n+2}{2} \pi-z\right)=+\sin z$ \\
+$\cos \left(\frac{4 n+2}{2} \pi+z\right)=-\cos z$ & $\cos \left(\frac{4 n+2}{2} \pi-z\right)=-\cos z$ \\
+\hline
+\end{tabular}
+
+\begin{tabular}{c|c}
+\hline $\sin \left(\frac{4 n+3}{2} \pi+z\right)=-\cos z$ & $\sin \left(\frac{4 n+3}{2} \pi-z\right)=-\cos z$ \\
+$\cos \left(\frac{4 n+3}{2} \pi+z\right)=+\sin z$ & $\cos \left(\frac{4 n+3}{2} \pi-z\right)=-\sin z$ \\
+\hline $\sin \left(\frac{4 n+4}{2} \pi+z\right)=+\sin z$ & $\sin \left(\frac{4 n+4}{2} \pi-z\right)=-\sin z$ \\
+$\cos \left(\frac{4 n+4}{2} \pi+z\right)=+\cos z$ & $\cos \left(\frac{4 n+4}{2} \pi-z\right)=+\cos z$ \\
+\hline
+\end{tabular}
+
+这些公式对正整数 $n$ 和负整数 $n$ 都成立.
+
+\section{$\S 129$}
+记
+\[
+\sin z=p, \cos z=q
+\]
+则
+\[
+p^{2}+q^{2}=1
+\]
+记
+\[
+\sin y=m, \cos y=n
+\]
+则
+\[
+m^{2}+n^{2}=1
+\]
+这样我们有下列结果:
+
+\begin{tabular}{l|l}
+\hline $\sin z=p$ & $\cos z=q$ \\
+\hline $\sin (y+z)=m q+n p$ & $\cos (y+z)=n q-m p$ \\
+\hline $\sin (2 y+z)=2 m n q+\left(n^{2}-m^{2}\right) p$ & $\cos (2 y+z)=\left(n^{2}-m^{2}\right) q-2 m n p$ \\
+\hline $\sin (3 y+z)=\left(3 n^{2} m-m^{3}\right) q+\left(n^{3}-3 m^{2} n\right) p$ & $\cos (3 y+z)=\left(n^{2}-3 m^{2} n\right) q-\left(3 m n^{3}-m^{3}\right) p$ \\
+\hline
+\end{tabular}
+
+式中弧
+\[
+z, y+z, 2 y+z, 3 y+z, \cdots
+\]
+成算术级数, 它们的正弦和余弦都构成由分母
+\[
+1-2 n x+\left(m^{2}+n^{2}\right) x^{2}
+\]
+所产生的递推序列. 事实上
+\[
+\sin (2 y+z)=2 n \sin (y+z)-\left(m^{2}+n^{2}\right) \sin z
+\]
+或
+\[
+\sin (2 y+z)=2 \cos y \sin (y+z)-\sin z
+\]
+类似地
+\[
+\cos (2 y+z)=2 \cos y \cos (y+z)-\cos z
+\]
+进一步
+\[
+\sin (3 y+z)=2 \cos y \sin (2 y+z)-\sin (y+z)
+\]
+
+\[
+\cos (3 y+z)=2 \cos y \cos (2 y+z)-\cos (y+z)
+\]
+
+再进一步
+\[
+\begin{aligned}
+\sin (4 y+z) & =2 \cos y \sin (3 y+z)-\sin (2 y+z) \\
+\cos (4 y+z) & =2 \cos y \cos (3 y+z)-\cos (2 y+z)
+\end{aligned}
+\]
+类推. 当弧成算术序列时, 利用这里的规律, 易于写出弧的正弦和余弦表达式.
+
+\section{$\S 130$}
+
+表达式
+\[
+\begin{aligned}
+& \sin (y+z)=\sin y \cos z+\cos y \sin z \\
+& \sin (y-z)=\sin y \cos z-\cos y \sin z
+\end{aligned}
+\]
+相加相减,得
+\[
+\begin{aligned}
+& \sin y \cos z=\frac{\sin (y+z)+\sin (y-z)}{2} \\
+& \cos y \sin z=\frac{\sin (y+z)-\sin (y-z)}{2}
+\end{aligned}
+\]
+表达式
+\[
+\begin{aligned}
+& \cos (y+z)=\cos y \cos z-\sin y \sin z \\
+& \cos (y-z)=\cos y \cos z+\sin y \sin z
+\end{aligned}
+\]
+相加相减,得
+\[
+\begin{aligned}
+\cos y \cos z & =\frac{\cos (y-z)+\cos (y+z)}{2} \\
+\sin y \sin z & =\frac{\cos (y-z)-\cos (y+z)}{2}
+\end{aligned}
+\]
+如果 $y=z=\frac{v}{2}$, 则从最后这两个公式得
+\[
+\begin{aligned}
+& \cos ^{2} \frac{v}{2}=\frac{1+\cos v}{2}, \cos \frac{v}{2}=\sqrt{\frac{1+\cos v}{2}} \\
+& \sin ^{2} \frac{v}{2}=\frac{1-\cos v}{2}, \sin \frac{v}{2}=\sqrt{\frac{1-\cos v}{2}}
+\end{aligned}
+\]
+可见, 知道了弧的余弦, 我们就可以求出半弧的正弦和余弦.
+
+\section{$\S 131$}
+
+设弧
+\[
+y+z=a, y-z=b
+\]
+则
+\[
+y=\frac{a+b}{2}, z=\frac{a-b}{2}
+\]
+将这里的 $y, z$ 代入前节的公式, 我们得到下面的四个等式, 这每一个等式都是一个定理.
+\[
+\begin{aligned}
+\sin a+\sin b & =2 \sin \frac{a+b}{2} \cos \frac{a-b}{2} \\
+\sin a-\sin b & =2 \cos \frac{a+b}{2} \sin \frac{a-b}{2} \\
+\cos a+\cos b & =2 \cos \frac{a+b}{2} \cos \frac{a-b}{2} \\
+\cos b-\cos a & =2 \sin \frac{a+b}{2} \sin \frac{a-b}{2}
+\end{aligned}
+\]
+从这四个等式, 用除法,得定理
+\[
+\begin{gathered}
+\frac{\sin a+\sin b}{\sin a-\sin b}=\tan \frac{a+b}{2} \cdot \cot \frac{a-b}{2}=\frac{\tan \frac{a+b}{2}}{\tan \frac{a-b}{2}} \\
+\frac{\sin a+\sin b}{\cos a+\cos b}=\tan \frac{a+b}{2} \\
+\frac{\sin b+\sin a}{\cos b-\cos b}=\cot \frac{a-b}{2} \\
+\frac{\sin a-\sin b}{\cos a+\cos b}=\tan \frac{a-b}{2} \\
+\frac{\sin a-\sin b}{\cos b-\cos b}=\cot \frac{a+b}{2} \\
+\frac{\cos a+\cos b}{\cos b-\cos b}=\cot \frac{a+b}{2} \cdot \cot \frac{a-b}{2}
+\end{gathered}
+\]
+由此我们又推出定理
+\[
+\begin{gathered}
+\frac{\sin a+\sin b}{\cos b+\cos b}=\frac{\cos b-\cos a}{\sin a-\sin b} \\
+\frac{\sin a+\sin b}{\sin a-\sin b} \cdot \frac{\cos a+\cos b}{\cos b-\cos a}=\cot ^{2} \frac{a-b}{2} \\
+\frac{\sin a+\sin b}{\sin a-\sin b} \cdot \frac{\cos b-\cos a}{\cos a+\cos b}=\tan ^{2} \frac{a+b}{2} \\
+\S \mathbf{1 3 2}
+\end{gathered}
+\]
+\section{$\S 132$}
+从
+\[
+\sin ^{2} z+\cos ^{2} z=1
+\]
+分解因式得
+\[
+(\cos z+\sqrt{-1} \sin z)(\cos z-\sqrt{-1} \sin z)=1
+\]
+这因式是虚的, 但它们在关于弧的和与弧的积的讨论中很有用. 考虑乘积
+\[
+(\cos z+\sqrt{-1} \sin z)(\cos y+\sqrt{-1} \sin y)
+\]
+%%05p081-100
+展开,得
+\[
+\cos y \cos z-\sin y \sin z+(\cos y \sin z+\sin y \cos z) \sqrt{-1}
+\]
+由于
+\[
+\begin{aligned}
+& \cos y \cos z-\sin y \sin z=\cos (y+z) \\
+& \sin y \cos z+\cos y \sin z=\sin (y+z)
+\end{aligned}
+\]
+从而所给乘积可表示成
+\[
+(\cos y+\sqrt{-1} \sin y)(\cos z+\sqrt{-1} \sin z)=\cos (y+z)+\sqrt{-1} \sin (y+z)
+\]
+类似地
+\[
+(\cos y-\sqrt{-1} \sin y)(\cos z-\sqrt{-1} \sin z)=\cos (y+z)-\sqrt{-1} \sin (y+z)
+\]
+进一步,我们有
+\[
+(\cos x \pm \sqrt{-1} \sin x)(\cos y \pm \sqrt{-1} \sin y)(\cos z \pm \sqrt{-1} \sin z)= \\
+\cos (x+y+z) \pm \sqrt{-1} \sin (x+y+z) 
+\]
+\section{$\S 133$}
+
+利用上节结果, 得
+\[
+\begin{aligned}
+& (\cos z \pm \sqrt{-1} \sin z)^{2}=\cos 2 z \pm \sqrt{-1} \sin 2 z \\
+& (\cos z \pm \sqrt{-1} \sin z)^{3}=\cos 3 z \pm \sqrt{-1} \sin 3 z
+\end{aligned}
+\]
+一般地
+\[
+(\cos z \pm \sqrt{-1} \sin z)^{n}=\cos n z \pm \sqrt{-1} \sin n z
+\]
+从而由于两重符号, 我们得到
+\[
+\begin{aligned}
+& \cos n z=\frac{(\cos z+\sqrt{-1} \sin z)^{n}+(\cos z-\sqrt{-1} \sin z)^{n}}{2} \\
+& \sin n z=\frac{(\cos z+\sqrt{-1} \sin z)^{n}-(\cos z-\sqrt{-1} \sin z)^{n}}{2 \sqrt{-1}}
+\end{aligned}
+\]
+将二项式的幂展开,得
+\[
+\begin{aligned}
+& \cos n z= \cos ^{n} z-\frac{n(n-1)}{1 \cdot 2} \cos ^{n-2} z \sin ^{2} z+ \\
+& \frac{n(n-1)(n-2)(n-3)}{1 \cdot 2 \cdot 3 \cdot 4} \cos ^{n-4} z \sin ^{4} z- \\
+& \frac{n(n-1)(n-2)(n-3)(n-4)(n-5)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6} \cos ^{n-6} z \sin ^{6} z+\cdots \\
+& \sin n z= \frac{n}{1} \cos ^{n-1} z \sin z-\frac{n(n-1)(n-2)}{1 \cdot 2 \cdot 3} \cos ^{n-3} z \sin ^{3} z+ \\
+& \frac{n(n-1)(n-2)(n-3)(n-4)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} \cos ^{n-5} z \sin ^{5} z-\cdots
+\end{aligned}
+\]
+\section{$\S 134$}
+
+设弧 $z$ 为无穷小, 则 $\sin z=z, \cos z=1$. 又设 $n$ 为无穷大, 则 $n z$ 为有限数. 记 $n z=v$, 由 $\sin z=z=\frac{v}{n}$, 得
+\[
+\begin{gathered}
+\cos v=1-\frac{v^{2}}{1 \cdot 2}+\frac{v^{4}}{1 \cdot 2 \cdot 3 \cdot 4}-\frac{v^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}+\cdots \\
+\sin v=v-\frac{v^{3}}{1 \cdot 2 \cdot 3}+\frac{v^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}-\frac{v^{7}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7}+\cdots
+\end{gathered}
+\]
+给了弧 $v$, 我们可以用这两个级数来求它的正弦和余弦. 为了使这两个公式用起来更 清楚, 我们取 $v$ 比四分之一圆周, 或 $90^{\circ}$ 等于 $m$ 比 $n$, 也即 $v=\frac{m}{n} \cdot \frac{\pi}{2} \cdot \pi$ 的值已知, 代入 公式,得
+\[
+\begin{aligned}
+\sin \frac{m}{n} 90^{\circ}= & \frac{m}{n} \cdot 1.5707963267948966192313216916- \\
+& \frac{m^{3}}{n^{3}} \cdot 0.6459640975062462536557565636+ \\
+& \frac{m^{5}}{n^{5}} \cdot 0.0796926262461670451205055488- \\
+& \frac{m^{7}}{n^{7}} \cdot 0.0046817541353186881006854632+ \\
+& \frac{m^{9}}{n^{9}} \cdot 0.0001604411847873598218726605- \\
+& \frac{m^{11}}{n^{11}} \cdot 0.0000035988432352120853404580+ \\
+& \frac{m^{13}}{n^{13}} \cdot 0.0000000569217292196792681171- \\
+& \frac{m^{15}}{n^{15}} \cdot 0.0000000006688035109811467224+ \\
+& \frac{m^{17}}{n^{17}} \cdot 0.0000000000060669357311061950- \\
+& \frac{m^{19}}{n^{19}} \cdot 0.0000000000000437706546731370+ \\
+& \frac{m^{21}}{n^{21}} \cdot 0.0000000000000002571422892856- \\
+& \frac{m^{23}}{n^{23}} \cdot 0.0000000000000000012538995403+ \\
+& 0000000000000000051564550- \\
+& 0 .
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{m^{27}}{n^{27}} \cdot 0.0000000000000000000000181239+ \\
+& \frac{m^{29}}{n^{29}} \cdot 0.0000000000000000000000000549 \\
+& \cos \frac{m}{n} 90^{\circ}=1.0000000000000000000000000000- \\
+& \frac{m^{2}}{n^{2}} \cdot 1.2337005501361698273543113745+ \\
+& \frac{m^{4}}{n^{4}} \cdot 0.2536695079010480136365633659- \\
+& \frac{m^{6}}{n^{6}} \cdot 0.0208634807633529608730516364+ \\
+& \frac{m^{8}}{n^{8}} \cdot 0.0009192602748394265802417158- \\
+& \frac{m^{10}}{n^{10}} \cdot 0.0000252020423730606054810526+ \\
+& \frac{m^{12}}{n^{12}} \cdot 0.0000004710874778818171503665- \\
+& \frac{m^{14}}{n^{14}} \cdot 0.0000000063866030837918522408+ \\
+& \frac{m^{16}}{n^{16}} \cdot 0.0000000000656596311497947230- \\
+& \frac{m^{18}}{n^{18}} \cdot 0.0000000000005294400200734620+ \\
+& \frac{m^{20}}{n^{20}} \cdot 0.0000000000000034377391790981 \text { - } \\
+& \frac{m^{22}}{n^{22}} \cdot 0.0000000000000000183599165212+ \\
+& \frac{m^{24}}{n^{24}} \cdot 0.0000000000000000000820675327- \\
+& \frac{m^{26}}{n^{26}} \cdot 0.0000000000000000000003115285+ \\
+& \frac{m^{28}}{n^{28}} \cdot 0.0000000000000000000000010165- \\
+& \frac{m^{30}}{n^{30}} \cdot 0.0000000000000000000000000026
+\end{aligned}
+\]
+只需求出 $45^{\circ}$ 以内的正弦和余弦, 从而只需对小于 $\frac{1}{2}$ 的 $\frac{m}{n}$ 求级数的和. 此时 $\frac{m}{n}$ 的幂, 次数越高值越小. 级数收玫很快. 如果要求的小数位数不多, 取少数几项即可. 
+
+\section{$\S 135$}
+
+正切和余切都是正弦与余弦的比, 所以有了正弦和余弦就可以算出正切和余切. 但 大数的相乘相除太繁, 所以我们还是要想法导出正切和余切的方便的展开式. 我们有
+\[
+\begin{aligned}
+\tan v=\frac{\sin v}{\cos v} & =\frac{v-\frac{v^{3}}{1 \cdot 2 \cdot 3}+\frac{v^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}-\frac{v^{7}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7}+\cdots}{1-\frac{v^{2}}{1 \cdot 2}+\frac{v^{4}}{1 \cdot 2 \cdot 3 \cdot 4}-\frac{v^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}+\cdots} \\
+\cot v=\frac{\cos v}{\sin v} & =\frac{1-\frac{v^{2}}{1 \cdot 2}+\frac{v^{4}}{1 \cdot 2 \cdot 3 \cdot 4}-\frac{v^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}+\cdots}{v-\frac{v^{3}}{1 \cdot 2 \cdot 3}+\frac{v^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}-\frac{v^{7}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7}+\cdots}
+\end{aligned}
+\]
+如果 $v=\frac{m}{n} 90^{\circ}$, 那么类似于上一节, 我们有
+\[
+\begin{aligned}
+\tan \frac{m}{n} 90^{\circ}= & \frac{2 m n}{n^{2}-m^{2}} \cdot 0.6366197723675+ \\
+& \frac{m}{n} \cdot 0.2975567820597+ \\
+& \frac{m^{3}}{n^{3}} \cdot 0.0186886502773+ \\
+& \frac{m^{5}}{n^{5}} \cdot 0.0018424752034+ \\
+& \frac{m^{7}}{n^{7}} \cdot 0.0001975800714+ \\
+& \frac{m^{9}}{n^{9}} \cdot 0.0000216977245+ \\
+& \frac{m^{11}}{n^{11}} \cdot 0.0000024011370+ \\
+& \frac{m^{13}}{n^{13}} \cdot 0.0000002664132+ \\
+& \frac{m^{15}}{n^{15}} \cdot 0.0000000295864+ \\
+& \frac{m^{17}}{n^{17}} \cdot 0.0000000032867+ \\
+& \frac{m^{19}}{n^{19}} \cdot 0.0000000003651+ \\
+& \frac{m^{21}}{n^{21}} \cdot 0.0000000000405+ \\
+& \frac{m^{23}}{n^{23}} \cdot 0.0000000000045+
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{m^{25}}{n^{25}} \cdot 0.0000000000005 \\
+& \cot \frac{m}{n} 90^{\circ}=\frac{n}{m} \cdot 0.6366197723675- \\
+& \frac{4 m n}{4 n^{2}-m^{2}} \cdot 0.3183098861837- \\
+& \frac{m}{n} \cdot 0.2052888894145- \\
+& \frac{m^{3}}{n^{3}} \cdot 0.0065510747882- \\
+& \frac{m^{5}}{n^{5}} \cdot 0.0003450292554- \\
+& \frac{m^{7}}{n^{7}} \cdot 0.0000202791060- \\
+& \frac{m^{9}}{n^{9}} \cdot 0.0000012366527- \\
+& \frac{m^{11}}{n^{11}} \cdot 0.0000000764959- \\
+& \frac{m^{13}}{n^{13}} \cdot 0.0000000047597- \\
+& \frac{m^{15}}{n^{15}} \cdot 0.0000000002969- \\
+& \frac{m^{17}}{n^{17}} \cdot 0.0000000000185- \\
+& \frac{m^{19}}{n^{19}} \cdot 0.0000000000011
+\end{aligned}
+\]
+这两个级数的导出方法见 $\$ 197$.
+
+\section{$\S 136$}
+
+前面讲了, 有了半直角以内的角的正弦和余弦, 我们就可以写出任何一个更大的角 的正弦和余弦. 事实上, 用不了那么多, 有了 $30^{\circ}$ 以内的角的正弦和余弦, 用加法和减法 我们就可以求出所有更大的角的正弦和余弦. 令 $\$ 130$ 公式中的 $y=30^{\circ}$, 由于 $\sin 30^{\circ}=$ $\frac{1}{2}$, 我们得到
+\[
+\cos z=\sin \left(30^{\circ}+z\right)+\sin \left(30^{\circ}-z\right)
+\]
+和
+\[
+\sin z=\cos \left(30^{\circ}-z\right)-\cos \left(30^{\circ}+z\right)
+\]
+这样一来, 由角 $z$ 和 $30^{\circ}-z$ 的正弦和余弦, 我们得到 
+\[
+\sin \left(30^{\circ}+z\right)=\cos z-\sin \left(30^{\circ}-z\right)
+\]
+和
+\[
+\cos \left(30^{\circ}+z\right)=\cos \left(30^{\circ}-z\right)-\sin z
+\]
+由此我们可以得到 $30^{\circ}$ 到 $60^{\circ}$ 的正弦和余弦, 也就可以得到一切更大的角的正弦和余弦.
+
+\section{$\S 137$}
+
+也可以用类似地方法来求正切和余切. 由
+\[
+\tan (a+b)=\frac{\tan a+\tan b}{1-\tan a \tan b}
+\]
+得
+\[
+\tan 2 a=\frac{2 \tan a}{1-(\tan a)^{2}}, \cot 2 a=\frac{\cot a-\tan a}{2}
+\]
+利用这两个等式, 由小于 $30^{\circ}$ 的弧的正切和余切, 我们可以求出直到 $60^{\circ}$ 的弧的所有角的 正切和余切.
+
+如果 $a=30^{\circ}-b$, 则
+\[
+2 a=60^{\circ}-2 b, \cot 2 a=\tan \left(30^{\circ}+2 b\right)
+\]
+从而
+\[
+\tan \left(30^{\circ}+2 b\right)=\frac{\cot \left(30^{\circ}-b\right)-\tan \left(30^{\circ}-b\right)}{2}
+\]
+利用这个公式也可以得到大于 $30^{\circ}$ 的弧的正切和余切.
+
+正割和余割可以从正切用减法得到. 这只需利用
+\[
+\csc z=\cot \frac{z}{2}-\cot z
+\]
+和
+\[
+\sec z=\cot \left(45^{\circ}-\frac{z}{2}\right)-\tan z
+\]
+从以上所讲,正弦表的造法应该清楚了.
+
+\section{$\S 138$}
+
+我们再一次应用 $\S 133$ 的公式. 令弧 $z$ 为无穷小, 令 $n$ 为无穷大数 $i$, 从而 $i z$ 为有限数 $v$. 这样一来, 我们有 $n z=v, z=\frac{v}{i}$, 从而 $\sin z=\frac{v}{i}, \cos z=1$. 将这些代入 $\S 133$ 节公式, 得
+\[
+\cos v=\frac{\left(1+\frac{v \sqrt{-1}}{i}\right)^{i}+\left(1-\frac{v \sqrt{-1}}{i}\right)^{i}}{2}
+\]
+和 
+\[
+\begin{aligned}
+& \qquad \sin v=\frac{\left(1+\frac{v \sqrt{-1}}{i}\right)^{i}-\left(1-\frac{v \sqrt{-1}}{i}\right)^{i}}{2 \sqrt{-1}}
+\end{aligned}
+\]
+前一章中我们得到
+\[
+\left(1+\frac{z}{i}\right)^{i}=\mathrm{e}^{z}
+\]
+$\mathrm{e}$ 为自然对数的底, 分别令 $z$ 等于 $+v \sqrt{-1}$ 和 $-v \sqrt{-1}$, 我们得到
+\[
+\cos v=\frac{\mathrm{e}^{+v \sqrt{-1}}+\mathrm{e}^{-v \sqrt{-1}}}{2}
+\]
+和
+\[
+\sin v=\frac{\mathrm{e}^{+v \sqrt{-1}}-\mathrm{e}^{-v \sqrt{-1}}}{2 \sqrt{-1}}
+\]
+从这两个方程得
+\[
+\mathrm{e}^{+v \sqrt{-1}}=\cos v+\sqrt{-1} \sin v
+\]
+和
+\[
+\mathrm{e}^{-v \sqrt{-1}}=\cos v-\sqrt{-1} \sin v
+\]
+即虚指数量可以用实弧的正弦和余弦表示.
+
+\section{$\S 139$}
+
+令 $\S 133$ 公式中的 $n$ 为无穷小数, 即 $n=\frac{1}{i}, i$ 为无穷大, 则
+\[
+\cos n z=\cos \frac{z}{i}=1, \sin n z=\sin \frac{z}{i}=\frac{z}{i}
+\]
+这是因为 $i$ 为无穷大, 所以 $\frac{z}{i}$ 是接近于消失的弧, 这种弧的正弦等于弧本身, 余弦等于 1 . 代入 $\S 133$ 的公式,得
+\[
+1=\frac{(\cos z+\sqrt{-1} \sin z)^{\frac{1}{i}}+(\cos z-\sqrt{-1} \sin z)^{\frac{1}{i}}}{2}
+\]
+和
+\[
+\frac{z}{i}=\frac{(\cos z+\sqrt{-1} \sin z)^{\frac{1}{i}}-(\cos z-\sqrt{-1} \sin z)^{\frac{1}{i}}}{2 \sqrt{-1}}
+\]
+$\S 125$ 节中证明了, 取自然对数, 我们有
+\[
+\log (1+x)=i(1+x)^{\frac{1}{i}}-i
+\]
+或者换 $1+x$ 为 $y$, 我们有
+\[
+y^{\frac{1}{i}}=\frac{1}{i} \log y+1
+\]
+现在先用 $\cos z+\sqrt{-1} \sin z$, 再用 $\cos z-\sqrt{-1} \sin z$ 代换 $y$, 结果相加, 得 
+\[
+ 1=\frac{1+\frac{1}{i} \log (\cos z+\sqrt{-1} \sin z)+1+\frac{1}{i} \log (\cos z-\sqrt{-1} \sin z)}{2}=1
+\]
+由于有对数的项消失, 成为 $1=1$, 因而从这一方程我们一无所获. 结果相减, 得
+\[
+\frac{z}{i}=\frac{\frac{1}{i} \log (\cos z+\sqrt{-1} \sin z)-\frac{1}{i} \log (\cos z-\sqrt{-1} \sin z)}{2 \sqrt{-1}}
+\]
+从而
+\[
+z=\frac{1}{2 \sqrt{-1}} \log \frac{\cos z+\sqrt{-1} \sin z}{\cos z-\sqrt{-1} \sin z}
+\]
+由此我们看到,虚数的对数如何地化成了圆的弧.
+
+\section{$\S 140$}
+
+由于 $\frac{\sin z}{\cos z}=\tan z$, 从上节末的等式我们得到, 弧 $z$ 可用它的正切表示为
+\[
+z=\frac{1}{2 \sqrt{-1}} \log \frac{1+\sqrt{-1} \tan z}{1-\sqrt{-1} \tan z}
+\]
+$\S 123$ 我们看到
+\[
+\begin{aligned}
+& \log \frac{1+x}{1-x}=\frac{2 x}{1}+\frac{2 x^{3}}{3}+\frac{2 x^{5}}{5}+\frac{2 x^{7}}{7}+\cdots \\
+& z=\frac{\tan z}{1}-\frac{\tan ^{3} z}{3}+\frac{\tan ^{5} z}{5}-\frac{\tan ^{7} z}{7}+\cdots
+\end{aligned}
+\]
+令 $x=\sqrt{-1} \tan z$, 得
+
+记正切为 $t$ 的弧为 $\arctan t^{(1)}$, 即 $t=\tan z$ 时
+\[
+z=\arctan t
+\]
+则
+\[
+z=\arctan t=\frac{t}{1}-\frac{t^{3}}{3}+\frac{t^{5}}{5}-\frac{t^{7}}{7}+\frac{t^{9}}{9}-\cdots
+\]
+$45^{\circ}$ 或 $\frac{\pi}{4}$ 的正切等于 1 ,从而
+\[
+\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\cdots
+\]
+莱布尼兹最先导出这个级数, 并用它作为圆周长的表示式.
+
+(1) 欧拉用的符号为 A. tang $t$. — 中译者 
+
+\section{$\S 141$}
+
+我们来实践一下用上节所给级数法求弧长. 为此我们将级数中的正切 $t$ 换成一个足 够小的分数, 比如 $\frac{1}{10}$, 则对应的弧
+\[
+z=\frac{1}{10}-\frac{1}{3000}+\frac{1}{500000}-\cdots
+\]
+不难用小数写出这个级数的近似值. 但从求得的这段弧长, 我们得不到关于圆周长的任 何东西, 因为我们完全不知道正切为 $\frac{1}{10}$ 的弧与整个圆周的比. 为了同时求得圆周长, 我 们找这样一段弧, 它本身是圆周的若干分之一, 它的正切小而且容易表示, 通常认为正切 为 $\frac{1}{\sqrt{3}}$ 的 $30^{\circ}$ 弧是合乎要求的, 因为与圆周有公度的更小的弧, 其正切都是太过复杂的无 理数. 由 $30^{\circ}=\frac{\pi}{6}$ 得
+\[
+\frac{\pi}{6}=\frac{1}{\sqrt{3}}-\frac{1}{3 \cdot 3 \sqrt{3}}+\frac{1}{5 \cdot 3^{2} \sqrt{3}}-\cdots
+\]
+和
+\[
+\pi=\frac{2 \sqrt{3}}{1}-\frac{2 \sqrt{3}}{3 \cdot 3}+\frac{2 \sqrt{3}}{5 \cdot 3^{2}}-\frac{2 \sqrt{3}}{7 \cdot 3^{3}}+\cdots
+\]
+$\S 126$ 所列的那个 $\pi$ 值, 就是利用这个级数, 花费了难以想象的那么多劳动算出来的.
+
+\section{$\S 142$}
+
+上节所提那劳动量之所以巨大,一则因为每项都是无理数, 再则因为每项都是前项 的约三分之一. 为降低劳动量, 我们取 $45^{\circ}$ 弧或 $\frac{\pi}{4}$. 表示它的级数为
+\[
+1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\cdots
+\]
+这个级数收玫极慢. 我们取这段弧, 不做更改,但分它为 $a, b$ 两部分,使得
+\[
+a+b=\frac{\pi}{4}=45^{\circ}
+\]
+由
+\[
+\tan (a+b)=\frac{\tan a+\tan b}{1-\tan a \cdot \tan b}
+\]
+得
+\[
+1-\tan a \cdot \tan b=\tan a+\tan b
+\]
+从而 
+\[
+\tan b=\frac{1-\tan a}{1+\tan a}
+\]
+这样,令 $\tan a=\frac{1}{2}$, 则 $\tan b=\frac{1}{3}$. 弧 $a$ 和弧 $b$ 的级数都是有理的,且其收玫速度比原来要 快得多. 它们的和就是 $\frac{\pi}{4}$ 的值. 即
+\[
+\pi=4\left\{\begin{array}{l}
+\frac{1}{1 \cdot 2}-\frac{1}{3 \cdot 2^{3}}+\frac{1}{5 \cdot 2^{5}}-\frac{1}{7 \cdot 2^{7}}+\frac{1}{9 \cdot 2^{9}}-\cdots \\
+\frac{1}{1 \cdot 3}-\frac{1}{3 \cdot 3^{3}}+\frac{1}{5 \cdot 3^{5}}-\frac{1}{7 \cdot 3^{7}}+\frac{1}{9 \cdot 3^{9}}-\cdots
+\end{array}\right\}
+\]
+用这样两个级数求半圆周 $\pi$, 比用原来的一个级数,速度要快得多. 
+

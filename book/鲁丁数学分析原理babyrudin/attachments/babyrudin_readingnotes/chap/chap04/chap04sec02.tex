@@ -1,0 +1,163 @@
+% chap04sec02
+
+\section{Continuous functions}
+
+\begin{mydef}
+    \label{mydef:4.5}
+    Suppose $X$ and $Y$ are metric spaces, $E \subset X$, $p \in E$, and $f$ maps $E$ into $Y$. Then $f$ is said to be \emph{continuous at $p$} if for every $\varepsilon > 0$ there exists a $\varepsilon > 0$ such that
+    \begin{equation*}
+        d_Y (f(x), f(p)) < \varepsilon
+    \end{equation*}
+    for all points $x \in  E$ for which $d_X(x, p) < \delta$.
+    
+    If $f$ is continuous at every point of $E$, then $f$ is said to be \emph{continuous on $E$}.
+    
+    It should be noted that $f$ has to be defined at the point $p$ in order to be continuous at $p$. (Compare this with the remark following Definition \ref{mydef:4.1}.)
+
+    If $p$ is an isolated point of $E$, then our definition implies that every function $f$ which has $E$ as its domain of definition is continuous at $p$. For, no matter which $\varepsilon > 0$ we choose, we can pick $\delta > 0$ so that the only point $x \in  E$ for which $d_X(x,p) <\delta$ is $x = p$; then
+    \begin{equation*}
+        d_Y(f(x),f(p)) = 0 < \varepsilon.
+    \end{equation*}
+\end{mydef}
+
+\begin{thm}
+    \label{thm:4.6}
+    In the situation given in Definition \ref{mydef:4.5}, assume also that $p$ is a limit point of $E$. Then $f$ is continuous at $p$ if and only if $\lim_{x \to p}  f(x) = f(p)$.
+\end{thm}
+\begin{proof}
+    This is clear if we compare Definitions \ref{mydef:4.1} and \ref{mydef:4.5}.
+\end{proof}
+
+
+We now turn to compositions of functions. 
+A brief statement of the following theorem is that a continuous function of a continuous function is continuous.
+\begin{thm}
+    \label{thm:4.7}
+    Suppose $X, Y, Z$ are metric spaces, $E \subset X$, $f$ maps $E$ into $Y$, $g$ maps the range of $f$, $f(E)$, into $Z$, and $h$ is the mapping of $E$ into $Z$ defined by 
+    \begin{equation*}
+        h(x) = g(f(x)) \quad
+    (x \in  E).
+    \end{equation*}
+    If $f$ is continuous at a point $p \in E$ and if $g$ is continuous at the point $f(p)$, then $h$ is continuous at $p$.
+
+    This function his called the composition or the composite of $f$ and $g$. The notation
+    \begin{equation*}
+        h = g \circ f
+    \end{equation*}
+    is frequently used in this context.
+\end{thm}
+
+\begin{proof}
+    Let $\varepsilon > 0$ be given. Since $g$ is continuous at $f(p)$, there exists $\eta > 0$ such that 
+    \begin{equation*}
+        d_Z(g(y), g(f(p))) < \varepsilon \text{ if } d_Y(y,f(p)) < \eta, \text{ and } y \in f(E).
+    \end{equation*}
+Since $f$ is continuous at $p$, there exists $\delta > 0$ such that
+\begin{equation*}
+    d_Y(f(x),f(p)) < \eta, \text{ if } d_X(x, p) <\delta \text{ and } x \in E.
+\end{equation*}
+It follows that
+\begin{equation*}
+    d_Z(h(x), h(p)) = d_Z(g(f(x)), g(f(p))) < \varepsilon
+\end{equation*}
+if $d_X(x, p) < \delta$ and $x \in E$. Thus $h$ is continuous at $p$.
+\end{proof}
+
+\begin{thm}
+    \label{thm:4.8}
+    A mapping $f$ of a metric space $X$ into a metric space $Y$ is continuous on $X$ if and only if $f^{-1}(V)$ is open in $X$ for every open set $V$ in $Y$.
+\end{thm}
+
+(Inverse images are defined in Definition \ref{mydef:2.2}.) 
+This is a very useful characterization of continuity.
+
+\begin{myCorollary*}
+    A mapping $f$ of a metric space $X$ into a metric space $Y$ is continuous if and only if $f^{-1} (C)$ is closed in $X$ for every closed set $C$ in $Y$.
+\end{myCorollary*}
+
+This follows from the theorem, since a set is closed if and only if its complement is open, and since $f^{-1}(E^c) = [f^{-1}(E)]^c$ for every $E \subset Y$.
+
+We now turn to complex-valued and vector-valued functions, and to
+functions defined on subsets of $\R^{k}$.
+
+\begin{thm}
+    \label{thm:4.9}
+    Let $f$ and $g$ be complex continuous functions on a metric space $X$.
+    Then $f + g,fg$, and $f/g$ are continuous on $X$.
+    
+    In the last case, we must of course assume that $g(x) \neq 0$, for all $x \in  X$.
+\end{thm}
+\begin{proof}
+    At isolated points of $X$ there is nothing to prove. At limit points,
+    the statement follows from Theorems \ref{thm:4.4} and \ref{thm:4.6}.
+\end{proof}
+
+\begin{thm}
+    \label{thm:4.10}
+    (a) Let $f_1, \dots , f_k$ be real functions on a metric space $X$, and let $\mathbf{f}$ be the mapping of $X$ into $\R^{k}$ defined by
+    \begin{equation}
+        \label{eq:4.7}
+        \mathbf{f}(x) = (f_1(x), ... ,f_k(x)) \quad    (x \in  X);
+    \end{equation}
+    then $\mathbf{f}$ is continuous if and only if each of the functions $f_1, ... , f_k$ is continuous.
+
+    (b) If $\mathbf{f}$ and $\mathbf{g}$ are continuous mappings of $X$ into $\R^{k}$, 
+    then $\mathbf{f + g}$ and $\mathbf{f \cdot g}$ are continuous on $X$.
+\end{thm}
+The functions $f_1, ... , f_k$ are called the \emph{components} of $\mathbf{f}$. 
+Note that $\mathbf{f + g}$ is a mapping into $\R^{k}$, whereas $\mathbf{f \cdot g}$ is a \emph{real} function on $X$.
+\begin{proof}
+    Part (a) follows from the inequalities
+    \begin{equation*}
+        \left| f_j(x) -f_j(x) \right| \leq
+        \left| \mathbf{f}(x) - \mathbf{f}(y) \right| =
+        \left\{
+            \sum_{i=1}^{k} \left| f_i(x) - f_i(y) \right|^2
+        \right\}^{\frac{1}{2}},
+    \end{equation*}
+    for $j=1,2,...,k$ . Part (b) follows form (a) and Theorem \ref{thm:4.9}.
+\end{proof}
+
+\begin{newexample}
+    \label{newexample:4.11}
+    \begin{equation}
+        \phi_i (\mathbf{x}) = x_i 
+        \quad (\mathbf{x} \in \R^{k})
+    \end{equation}
+
+    \begin{equation}
+        x_{1}^{n_1}
+        x_{2}^{n_2}
+        \dots
+        x_{k}^{n_k}
+    \end{equation}
+
+    \begin{equation}
+        P(\mathbf{x}) = \sum c_{n_1 \dots n_k} 
+        x_{1}^{n_1}
+        x_{2}^{n_2}
+        \dots
+        x_{k}^{n_k}
+        \quad (\mathbf{x} \in \R^{k})
+    \end{equation}
+
+    \begin{equation}
+        \left| 
+            \left| \mathbf{x} \right| -
+            \left| \mathbf{y} \right|  
+        \right| \leq
+        \left| \mathbf{x-y} \right| 
+        \quad (\mathbf{x,y} \in \R^{k})
+    \end{equation}
+\end{newexample}
+
+\begin{myremark}
+    \label{myremark:4.12}
+We defined the notion of continuity for functions defined on a subset $E$ of a metric space $X$. 
+However, the complement of $E$ in $X$ plays no role whatever in this definition 
+(note that the situation was somewhat different for limits of functions). 
+Accordingly, we lose nothing of interest by discarding the complement of the domain of $f$.
+This means that we may just as well talk only about continuous mappings of one metric space into another, rather than
+of mappings of subsets. This simplifies statements and proofs of some theorems.
+We have already made use of this principle in Theorems \ref{thm:4.8} to \ref{thm:4.10}, and will continue to do so in the following section on compactness.
+\end{myremark}

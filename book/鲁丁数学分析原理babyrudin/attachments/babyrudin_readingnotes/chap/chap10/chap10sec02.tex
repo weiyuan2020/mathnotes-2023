@@ -1,0 +1,108 @@
+% chap10sec02
+
+\section{Primitive mappings}
+
+\mybox{本原映射}
+
+\begin{mydef}
+    \label{mydef:10.5}
+    If $\mathbf{G}$ maps an open set $E \subset \R^n$ into $\R^n$,
+    and if there is an integer $m$ and a real function $g$ with domain $E$ such that
+    \begin{equation}
+        \label{eq:10.9}
+        \mathbf{G(x)} = \sum_{i \neq m} x_i \mathbf{e}_i + g(\mathbf{x}) \mathbf{e}_m
+        \quad
+        (\mathbf{x} \in E) ,
+    \end{equation}
+    then we call $\mathbf{G}$ \myKeywordblue{primitive}.
+    A primitive mapping is thus one that changes at most one coordinate.
+    Note that (\ref{eq:10.9}) can also be written in the form
+    \begin{equation}
+        \label{eq:10.10}
+        \mathbf{G(x)} = \mathbf{x} + \left[ g(\mathbf{x}) - x_m \right] \mathbf{e}_m .
+    \end{equation}
+
+    If $g$ is differentiable at some point $\mathbf{a} \in E$, so is $\mathbf{G}$.
+    The matrix $[\alpha_{ij}]$ of the operator $\mathbf{G'(a)}$ has
+    \begin{equation}
+        \label{eq:10.11}
+        (D_1 g)(\mathbf{a}),...
+        (D_m g)(\mathbf{a}),...
+        (D_n g)(\mathbf{a})
+    \end{equation}
+    as ots $m$th row.
+    For $j \neq m$, we have $\alpha_{jj} = 1$ and $\alpha_{ij} = 0$ if $i \neq j$.
+    The Jacobian of $\mathbf{G}$ at $\mathbf{a}$ is thus given by
+    \begin{equation}
+        \label{eq:10.12}
+        J_{\mathbf{G}}(\mathbf{a}) =
+        \det [\mathbf{G'(a)}] =
+        (D_m g)(\mathbf{a}),
+    \end{equation}
+    and we see (by Theorem \ref{thm:9.36}) that $\mathbf{G'(a)}$ is
+    \myKeywordblue{invertible if and only if} $(D_m g)(\mathbf{a}) \neq 0$.
+\end{mydef}
+
+\begin{mydef}
+    \label{mydef:10.6}
+    A linear operator $B$ on $\R^n$ that interchanges some pair of members of the standard basis and leaves the others fixed will be called a \myKeywordblue{flip}.
+
+    For example, the flip $B$ on $\R^4$ that interchanges $e_2$ and $e_4$ has the form
+    \begin{equation}
+        \label{eq:10.13}
+        B(x_1 \mathbf{e}_1 +
+        x_2 \mathbf{e}_2 +
+        x_3 \mathbf{e}_3 +
+        x_4 \mathbf{e}_4) =
+        x_1 \mathbf{e}_1 +
+        x_2 \mathbf{e}_4 +
+        x_3 \mathbf{e}_3 +
+        x_4 \mathbf{e}_2
+    \end{equation}
+    or, equivalently,
+    \begin{equation}
+        \label{eq:10.14}
+        B(x_1 \mathbf{e}_1 +
+        x_2 \mathbf{e}_2 +
+        x_3 \mathbf{e}_3 +
+        x_4 \mathbf{e}_4) =
+        x_1 \mathbf{e}_1 +
+        x_4 \mathbf{e}_2 +
+        x_3 \mathbf{e}_3 +
+        x_2 \mathbf{e}_4 .
+    \end{equation}
+    Hence $B$ can also be thought of as interchanging two of the coordinates,
+    rather that two basis vectors.
+
+    In the proof that follows, we shall use the projections $P_0,\dots,P_n$ in $\R^n$, defined by $P_0 \mathbf{x = 0}$ and
+    \begin{equation}
+        \label{eq:10.15}
+        P_m \mathbf{x} =
+        x_1 \mathbf{e}_1 + \dots
+        x_m \mathbf{e}_m
+    \end{equation}
+    for $1 \leq m \leq n$.
+    Thus $P_m$ is the projection whose range and null space are spanned by $\{\mathbf{e_1,...,e_m}\}$ and $\{\mathbf{e_{m+1},...,e_n}\}$,
+    respectively.
+\end{mydef}
+
+\begin{thm}
+    \label{thm:10.7}
+    Suppose $\mathbf{F}$ is a $\mathscr{C}'$-mapping of an open set $E \subset \R^n$ into $\R^n$, $\mathbf{0} \in E$, $\mathbf{F(0) = 0}$, and $\mathbf{F'(0)}$ is invertible.
+
+    Then there is a neighborhood of $0$ in $\R^n$ in which a representation
+    \begin{equation}
+        \label{eq:10.16}
+        \mathbf{F(x)} = B_1 \cdots B_{n-1} \mathbf{G_n \circ \cdots \circ G_1(x)}
+    \end{equation}
+    is valid.
+
+    In (\ref{eq:10.16}), each $\mathbf{G}_i$ is a primitive $\mathscr{C}'$-mapping in some neighborhood of $\mathbf{0}$;
+    $\mathbf{G}_i(\mathbf{0})=\mathbf{0}$, $\mathbf{G}'_i(\mathbf{0})$ is invertible, and each $B_i$ is either a flip or the identity operator.
+\end{thm}
+
+Briefly, (\ref{eq:10.16}) represents $\mathbf{F}$ locally as a composition of primitive mappings and flips
+
+% todo add proof
+
+

@@ -1,0 +1,843 @@
+\chapter{第十四章 多倍角和等分角}
+
+\section{$\S 234$}
+
+设 $z$ 为单位圆的一个角或一段弧, 其正弦为 $x$, 余弦为 $y$, 正切为 $t$, 则
+\[
+x^{2}+y^{2}=1, t=\frac{x}{y}
+\]
+前面我们讲了, 角序列 $z, 2 z, 3 z, 4 z, 5 z, \cdots$ 对应的正弦序列和余弦序列, 都构成递推尺度(1) 为 $2 y,-1$ 的递推级数, 我们先看正弦序列
+\[
+\begin{gathered}
+\sin 0 z=0 \\
+\sin 1 z=x \\
+\sin 2 z=2 x y \\
+\sin 3 z=4 x y^{2}-x \\
+\sin 4 z=8 x y^{3}-4 x y \\
+\sin 5 z=16 x y^{4}-12 x y^{2}+x \\
+\sin 6 z=32 x y^{5}-32 x y^{3}+6 x y \\
+\sin 7 z=64 x y^{6}-80 x y^{4}+24 x y^{2}-x \\
+\sin 8 z=128 x y^{7}-192 x y^{5}+80 x y^{3}-8 x y
+\end{gathered}
+\]
+由此得
+\[
+\begin{aligned}
+\sin n z= & x\left(2^{n-1} y^{n-1}-(n-2) 2^{n-3} y^{n-3}+\frac{(n-3)(n-4)}{1 \cdot 2}\right) 2^{n-5} y^{n-5}- \\
+& \frac{(n-4)(n-5)(n-6)}{1 \cdot 2 \cdot 3} 2^{n-7} y^{n-7}+ \\
+& \left.\frac{(n-5)(n-6)(n-7)(n-8)}{1 \cdot 2 \cdot 3 \cdot 4} 2^{n-9} y^{n-9}-\cdots\right)
+\end{aligned}
+\]
+\section{$\S 235$}
+
+令弧 $n z=s$, 则
+
+(1) 递推尺度的定义见 $\$ 224$ 一 译者 
+
+$\sin n z=\sin s=\sin (\pi-s)=\sin (2 \pi+s)=\sin (3 \pi-s)=\cdots$
+
+这些正弦都相等. 由此我们得到 $x$ 的值
+\[
+\sin \frac{s}{n}, \sin \frac{\pi-s}{n}, \sin \frac{2 \pi+s}{n}, \sin \frac{3 \pi-s}{n}, \sin \frac{4 \pi+s}{n}, \cdots
+\]
+总共 $n$ 个, 它们都满足上节最后的方程. 也即这 $n$ 个值都是上节最后那个方程的根. 这里 要注意的一点是, 不能取相同的值做我们方程的根, 即所得表达式只能取用一次. 取定, 则方程的根已知, 比较方程的根与系数, 我们可以得到一些有价值的结果, 这种比较需要 在方程只含末知数 $x$ 时才能进行, 因而我们将 $y$ 换成 $\sqrt{1-x^{2}}$. 这代换因 $n$ 的奇偶而结果 不同.
+
+\section{$\S 236$}
+
+我们先考虑 $n$ 为奇数的情形. 弦序列 $-z,+z,+3 z,+5 z, \cdots$ 公差为 $2 z$, 而 $2 z$ 的余弦 为 $1-2 x^{2}$, 所以对应正弦序列的递推尺度为 $2-4 x^{2},-1$, 由此得
+\[
+\begin{gathered}
+\sin (-z)=-x \\
+\sin z=x \\
+\sin 3 z=3 x-4 x^{3} \\
+\sin 5 z=5 x-20 x^{3}+16 x^{5} \\
+\sin 7 z=7 x-56 x^{3}+112 x^{5}-64 x^{7} \\
+\sin 9 z=9 x-120 x^{3}+432 x^{5}-576 x^{7}+256 x^{9}
+\end{gathered}
+\]
+从而, $n$ 为奇数时
+\[
+\begin{aligned}
+\sin n z= & n x-\frac{n\left(n^{2}-1\right)}{1 \cdot 2 \cdot 3} x^{3}+\frac{n\left(n^{2}-1\right)\left(n^{2}-9\right)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} x^{5}- \\
+& \frac{n\left(n^{2}-1\right)\left(n^{2}-9\right)\left(n^{2}-25\right)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7} x^{7}+\cdots
+\end{aligned}
+\]
+该方程的根为
+\[
+\sin z, \sin \left(\frac{2 \pi}{n}+z\right), \sin \left(\frac{4 \pi}{n}+z\right), \sin \left(\frac{6 \pi}{n}+z\right), \sin \left(\frac{8 \pi}{n}+z\right), \cdots
+\]
+\section{$\S 237$}
+
+从上节方程得
+
+$0=1-\frac{n x}{\sin n z}+\frac{n\left(n^{2}-1\right)}{1 \cdot 2 \cdot 3} \frac{x^{3}}{\sin n z}-\frac{n\left(n^{2}-1\right)\left(n^{2}-9\right)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} \frac{x^{5}}{\sin n z}+\cdots \pm 2^{n-1} \frac{x^{n}}{\sin n z}$
+
+(双重符号处, $n$ 为 4 的倍数减 1 时取正, 否则取负), 其右端的因式形式为
+\[
+\left(1-\frac{x}{\sin z}\right)\left(1-\frac{x}{\sin \left(\frac{2 \pi}{n}+z\right)}\right)\left(1-\frac{x}{\sin \left(\frac{4 \pi}{n}+z\right)}\right) \cdots
+\]
+由此得
+\[
+\frac{n}{\sin n z}=\frac{1}{\sin z}+\frac{1}{\sin \left(\frac{2 \pi}{n}+z\right)}+\frac{1}{\sin \left(\frac{4 \pi}{n}+z\right)}+\frac{1}{\sin \left(\frac{6 \pi}{n}+z\right)}+\cdots
+\]
+共 $n$ 项. 由根的积得
+\[
+\mp \frac{2^{n-1}}{\sin n z}=\frac{1}{\sin z \cdot \sin \left(\frac{2 \pi}{n}+z\right) \sin \left(\frac{4 \pi}{n}+z\right) \sin \left(\frac{6 \pi}{n}+z\right) \cdots}
+\]
+或
+\[
+\sin n z=\mp 2^{n-1} \sin z \sin \left(\frac{2 \pi}{n}+z\right) \sin \left(\frac{4 \pi}{n}+z\right) \sin \left(\frac{6 \pi}{n}+z\right) \cdots
+\]
+由方程的倒数第二项为零得
+\[
+0=\sin z+\sin \left(\frac{2 \pi}{n}+z\right)+\sin \left(\frac{4 \pi}{n}+z\right)+\sin \left(\frac{6 \pi}{n}+z\right)+\cdots
+\]
+例 $1 n=3$ 时, 得
+\[
+\begin{aligned}
+& 0=\sin z+\sin \left(120^{\circ}+z\right)+\sin \left(240^{\circ}+z\right)=\sin z+\sin \left(60^{\circ}-z\right)-\sin \left(60^{\circ}+z\right) \\
+& \frac{3}{\sin 3 z}=\frac{1}{\sin z}+\frac{1}{\sin \left(120^{\circ}+z\right)}+\frac{1}{\sin \left(240^{\circ}+z\right)}= \\
+& \frac{1}{\sin z}+\frac{1}{\sin \left(60^{\circ}-z\right)}-\frac{1}{\sin \left(60^{\circ}+z\right)} \\
+& \sin 3 z=-4 \sin z \sin \left(120^{\circ}+z\right) \sin \left(240^{\circ}+z\right)= \\
+& 4 \sin z \sin \left(60^{\circ}-z\right) \cdot \sin \left(60^{\circ}+z\right)
+\end{aligned}
+\]
+跟前面我们注意到的一样, 这里也有
+\[
+\begin{gathered}
+\sin \left(60^{\circ}+z\right)=\sin z+\sin \left(60^{\circ}-z\right) \\
+3 \csc z=\csc z+\csc \left(60^{\circ}-z\right)-\csc \left(60^{\circ}+z\right)
+\end{gathered}
+\]
+例 $2 n=5$ 时, 有
+\[
+0=\sin z+\sin \left(\frac{2}{5} \pi+z\right)+\sin \left(\frac{4}{5} \pi+z\right)+\sin \left(\frac{6}{5} \pi+z\right)+\sin \left(\frac{8}{5} \pi+z\right)
+\]
+或
+\[
+0=\sin z+\sin \left(\frac{2}{5} \pi+z\right)+\sin \left(\frac{1}{5} \pi-z\right)-\sin \left(\frac{1}{5} \pi+z\right)-\sin \left(\frac{2}{5} \pi-z\right)
+\]
+或
+\[
+0=\sin z+\sin \left(\frac{1}{5} \pi-z\right)-\sin \left(\frac{1}{5} \pi+z\right)-\sin \left(\frac{2}{5} \pi-z\right)+\sin \left(\frac{2}{5} \pi+z\right)
+\]
+还有
+\[
+\begin{aligned}
+\frac{5}{\sin 5 z}= & \frac{1}{\sin z}+\frac{1}{\sin \left(\frac{1}{5} \pi-z\right)}-\frac{1}{\sin \left(\frac{1}{5} \pi+z\right)} \\
+& \frac{1}{\sin \left(\frac{2}{5} \pi-z\right)}+\frac{1}{\sin \left(\frac{2}{5} \pi+z\right)}
+\end{aligned}
+\]
+和
+\[
+\sin 5 z=16 \sin z \sin \left(\frac{1}{5} \pi-z\right) \sin \left(\frac{1}{5} \pi+z\right) \sin \left(\frac{2}{5} \pi-z\right) \sin \left(\frac{2}{5} \pi+z\right)
+\]
+例 $3 n=2 m+1$ 时, 则
+\[
+\begin{aligned}
+0= & \sin z+\sin \left(\frac{\pi}{n}-z\right)-\sin \left(\frac{\pi}{n}+z\right)- \\
+& \sin \left(\frac{2 \pi}{n}-z\right)+\sin \left(\frac{2 \pi}{n}+z\right)+ \\
+& \sin \left(\frac{3 \pi}{n}-z\right)-\sin \left(\frac{3 \pi}{n}+z\right)-\cdots \pm \\
+& \sin \left(\frac{m}{n} \pi-z\right) \mp \sin \left(\frac{m}{n} \pi+z\right)
+\end{aligned}
+\]
+双重符号处, $m$ 为奇数时取上, $m$ 为偶数时取下.
+
+另一个方程是
+\[
+\begin{aligned}
+\frac{n}{\sin n z}= & \frac{1}{\sin z}+\frac{1}{\sin \left(\frac{\pi}{n}-z\right)}-\frac{1}{\sin \left(\frac{\pi}{n}+z\right)} \\
+& \frac{1}{\sin \left(\frac{2 \pi}{n}-z\right)}+\frac{1}{\sin \left(\frac{2 \pi}{n}+z\right)}+ \\
+& \frac{1}{\sin \left(\frac{3 \pi}{n}-z\right)}-\frac{1}{\sin \left(\frac{3 \pi}{n}+z\right)}-\cdots \pm \\
+& \frac{1}{\sin \left(\frac{m \pi}{n}-z\right)} \mp \frac{1}{\sin \left(\frac{m \pi}{n}+z\right)}
+\end{aligned}
+\]
+该方程不难用余割写出.
+
+再一个是由剩积得到的
+\[
+\begin{aligned}
+& \sin n z=2^{2 m} \sin z \sin \left(\frac{\pi}{n}-z\right) \sin \left(\frac{\pi}{n}+z\right) \text {. } \\
+& \sin \left(\frac{2 \pi}{n}-z\right) \sin \left(\frac{2 \pi}{n}+z\right) \text {. } \\
+& \sin \left(\frac{3 \pi}{n}-z\right) \sin \left(\frac{3 \pi}{n}+z\right) \cdot \ldots . \\
+& \sin \left(\frac{m \pi}{n}-z\right) \sin \left(\frac{m \pi}{n}+z\right)
+\end{aligned}
+\]
+\section{$\S 238$}
+
+现在考虑 $n$ 为偶数的情形. 由 
+\[
+y=\sqrt{1-x^{2}} \text { 和 } \cos 2 z=1-2 x^{2}
+\]
+知此时递推尺度为 $2-4 x^{2},-1$, 从而
+\[
+\begin{gathered}
+\sin 0 z=0 \\
+\sin 2 z=2 x \sqrt{1-x^{2}} \\
+\sin 4 z=\left(4 x-8 x^{3}\right) \sqrt{1-x^{2}} \\
+\sin 6 z=\left(6 x-32 x^{3}+32 x^{5}\right) \sqrt{1-x^{2}} \\
+\sin 8 z=\left(8 x-80 x^{3}+192 x^{5}-128 x^{7}\right) \sqrt{1-x^{2}}
+\end{gathered}
+\]
+一般地，我们有
+\[
+\begin{aligned}
+\sin n z= & \left(n x-\frac{n\left(n^{2}-4\right)}{1 \cdot 2 \cdot 3}\right) x^{3}+\frac{n\left(n^{2}-4\right)\left(n^{2}-16\right)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} x^{5}- \\
+& \frac{n\left(n^{2}-4\right)\left(n^{2}-16\right)\left(n^{2}-36\right)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7} x^{7}+\cdots \pm \\
+& \left.2^{n-1} x^{n-1}\right) \cdot \sqrt{1-x^{2}}
+\end{aligned}
+\]
+$n$ 为任何偶数.
+
+\section{$\S 239$}
+
+为脱去上节方程中的根号, 两边平方, 得
+\[
+\sin ^{2} n z=n^{2} x^{2}+P x^{4}+Q x^{6}+\cdots-2^{2 n-2} x^{2 n}
+\]
+或
+\[
+x^{2 n}-\cdots-\frac{n^{2}}{2^{2 n-2}} x^{2}+\frac{1}{2^{2 n-2}} \sin ^{2} n z=0
+\]
+该方程的根为
+\[
+\pm \sin z, \pm \sin \left(\frac{\pi}{n}-z\right), \pm \sin \left(\frac{2 \pi}{n}+z\right), \pm \sin \left(\frac{3 \pi}{n}-z\right), \pm \sin \left(\frac{4 \pi}{n}+z\right) \cdots
+\]
+共计 $n$ 个, 每个都具有双重符号. 由最后一项等于全体根的积, 开方得
+\[
+\sin n z=\pm 2^{n-1} \sin z \sin \left(\frac{\pi}{n}-z\right) \sin \left(\frac{2 \pi}{n}+z\right) \sin \left(\frac{3 \pi}{n}-z\right) \cdots
+\]
+利用该公式时,每次都应该考虑双重符号取正或取负.
+
+例 $4 n$ 依次取 $2,4,6, \cdots$, 我们得到
+\[
+\begin{gathered}
+\sin 2 z=2 \sin z \sin \left(\frac{\pi}{2}-z\right) \\
+\sin 4 z=8 \sin z \sin \left(\frac{\pi}{4}-z\right) \sin \left(\frac{\pi}{4}+z\right) \sin \left(\frac{\pi}{2}-z\right) \\
+\sin 6 z=32 \sin z \sin \left(\frac{\pi}{6}-z\right) \sin \left(\frac{\pi}{6}+z\right) \sin \left(\frac{2 \pi}{6}-z\right) \sin \left(\frac{2 \pi}{6}+z\right) \sin \left(\frac{3 \pi}{6}-z\right) \\
+\sin 8 z=128 \sin z \sin \left(\frac{\pi}{8}-z\right) \sin \left(\frac{\pi}{8}+z\right) \sin \left(\frac{2 \pi}{8}-z\right) \sin \left(\frac{2 \pi}{8}+z\right)
+\end{gathered}
+\]
+\[
+\sin \left(\frac{3 \pi}{8}-z\right) \sin \left(\frac{3 \pi}{8}+z\right) \sin \left(\frac{4 \pi}{8}-z\right) 
+\]
+\section{$\S 240$}
+
+从刚才的例子可以看出,一般地, $n$ 为偶数时, 我们有
+\[
+\begin{aligned}
+\sin n z= & 2^{n-1} \sin z \sin \left(\frac{\pi}{n}-z\right) \sin \left(\frac{\pi}{n}+z\right) . \\
+& \sin \left(\frac{2 \pi}{n}-z\right) \sin \left(\frac{2 \pi}{n}+z\right) \cdot \\
+& \sin \left(\frac{3 \pi}{n}-z\right) \sin \left(\frac{3 \pi}{n}+z\right) \cdots \cdots . \\
+& \sin \left(\frac{\pi}{2}-z\right)
+\end{aligned}
+\]
+与前面得到的 $n$ 为奇数时的公式相比较, 我们看到, 这两种情况可用同一个公式表示. 即 $n$ 为奇数和 $n$ 为偶数我们都有
+\[
+\begin{aligned}
+\sin n z= & 2^{n-1} \sin z \sin \left(\frac{\pi}{n}-z\right) \sin \left(\frac{\pi}{n}+z\right) \cdot \\
+& \sin \left(\frac{2 \pi}{n}-z\right) \sin \left(\frac{2 \pi}{n}+z\right) \sin \left(\frac{3 \pi}{n}-z\right) \sin \left(\frac{3 \pi}{n}+z\right) .
+\end{aligned}
+\]
+因式的个数为 $n$.
+
+\section{$\S 241$}
+
+多倍角正弦的这种乘积公式, 不仅可以用于求多倍角正弦的对数, 并且可用于求正 弦的类似于 §184 那样的乘积公式. 现在我们有
+\[
+\begin{gathered}
+\sin z=1 \sin z \\
+\sin 2 z=2 \sin z \sin \left(\frac{\pi}{2}-z\right) \\
+\sin 3 z=4 \sin z \sin \left(\frac{\pi}{3}-z\right) \sin \left(\frac{\pi}{3}+z\right) \\
+\sin 4 z=8 \sin z \sin \left(\frac{\pi}{4}-z\right) \sin \left(\frac{\pi}{4}+z\right) \sin \left(\frac{2 \pi}{4}-z\right) \\
+\sin 5 z=16 \sin z \sin \left(\frac{\pi}{5}-z\right) \sin \left(\frac{\pi}{5}+z\right) \sin \left(\frac{2 \pi}{5}-z\right) \sin \left(\frac{2 \pi}{5}+z\right) \\
+\sin 6 z=32 \sin z \sin \left(\frac{\pi}{6}-z\right) \sin \left(\frac{\pi}{6}+z\right) \sin \left(\frac{2 \pi}{6}-z\right) \sin \left(\frac{2 \pi}{6}+z\right) \sin \left(\frac{3 \pi}{6}-z\right)
+\end{gathered}
+\]
+\section{$\S 242$}
+
+利用 $\frac{\sin 2 n z}{\sin n z}=2 \cos n z$ 可以把多倍角的余弦表示为乘积
+\[
+\begin{gathered}
+\cos z=1 \sin \left(\frac{\pi}{2}-z\right) \\
+\cos 2 z=2 \sin \left(\frac{\pi}{4}-z\right) \sin \left(\frac{\pi}{4}+z\right) \\
+\cos 3 z=4 \sin \left(\frac{\pi}{6}-z\right) \sin \left(\frac{\pi}{6}+z\right) \sin \left(\frac{3 \pi}{6}-z\right) \\
+\cos 4 z=8 \sin \left(\frac{\pi}{8}-z\right) \sin \left(\frac{\pi}{8}+z\right) \sin \left(\frac{3 \pi}{8}-z\right) \sin \left(\frac{3 \pi}{8}+z\right) \\
+\cos 5 z=16 \sin \left(\frac{\pi}{10}-z\right) \sin \left(\frac{\pi}{10}+z\right) \sin \left(\frac{3 \pi}{10}-z\right) \sin \left(\frac{3 \pi}{10}+z\right) \sin \left(\frac{5 \pi}{10}-z\right)
+\end{gathered}
+\]
+一般地
+\[
+\begin{aligned}
+\cos n z= & 2^{n-1} \sin \left(\frac{\pi}{2 n}-z\right) \sin \left(\frac{\pi}{2 n}+z\right) \cdot \\
+& \sin \left(\frac{3 \pi}{2 n}-z\right) \sin \left(\frac{3 \pi}{2 n}+z\right) \cdot \\
+& \sin \left(\frac{5 \pi}{2 n}-z\right) \sin \left(\frac{5 \pi}{2 n}+z\right) \cdot
+\end{aligned}
+\]
+因式个数为 $n$.
+
+\section{$\S 243$}
+
+从多倍角余弦本身也可以推出上节的公式. 事实上, 令 $\cos z=y$, 则
+\[
+\begin{gathered}
+\cos 0 z=1 \\
+\cos 1 z=y \\
+\cos 2 z=2 y^{2}-1 \\
+\cos 3 z=4 y^{3}-3 y \\
+\cos 4 z=8 y^{4}-8 y^{2}+1 \\
+\cos 5 z=16 y^{5}-20 y^{3}+5 y \\
+\cos 6 z=32 y^{6}-48 y^{4}+18 y^{2}-1 \\
+\cos 7 z=64 y^{7}-112 y^{5}+56 y^{3}-7 y
+\end{gathered}
+\]
+一般地
+\[
+\cos n z=2^{n-1} y^{n}-\frac{n}{1} 2^{n-3} y^{n-2}+
+\]
+\[
+\begin{aligned}
+& \frac{n(n-3)}{1 \cdot 2} 2^{n-5} y^{n-4}- \\
+& \frac{n(n-4)(n-5)}{1 \cdot 2 \cdot 3} 2^{n-7} y^{n-6}+ \\
+& \frac{n(n-5)(n-6)(n-7)}{1 \cdot 2 \cdot 3 \cdot 4} 2^{n-9} y^{n-8}-\cdots
+\end{aligned}
+\]
+由
+\[
+\cos n z=\cos (2 \pi-n z)=\cos (2 \pi+n z)=\cos (4 \pi \pm n z)=\cos (6 \pi \pm n z)=\cdots
+\]
+知表达式
+\[
+\cos z, \cos \left(\frac{2 \pi}{n} \pm z\right), \cos \left(\frac{4 \pi}{n} \pm z\right), \cos \left(\frac{6 \pi}{n} \pm z\right), \cdots
+\]
+都是上面方程的根,这里不同表达式的个数, 等于方程根的个数 $n$.
+
+\section{$\S 244$}
+
+首先我们指出, 由于缺少第二项, 所以只需 $n \neq 1$, 全体根的和就应该等于零, 即
+\[
+0=\cos z+\cos \left(\frac{2 \pi}{n}-z\right)+\cos \left(\frac{2 \pi}{n}+z\right)+\cos \left(\frac{4 \pi}{n}-z\right)+\cos \left(\frac{4 \pi}{n}+z\right)+\cdots
+\]
+右端共 $n$ 项. $n$ 为偶数时, 这等号的成立可直接看出, 每一个正项都与一个等于它的负项 对消. 下面多们考虑 $n$ 为奇数但不等于 1 的情形. 由于
+\[
+\cos v=-\cos (\pi-v)
+\]
+我们得到
+\[
+\begin{gathered}
+0=\cos z-\cos \left(\frac{\pi}{3}-z\right)-\cos \left(\frac{\pi}{3}+z\right) \\
+0=\cos z-\cos \left(\frac{\pi}{5}-z\right)-\cos \left(\frac{\pi}{5}+z\right)+\cos \left(\frac{2 \pi}{5}-z\right)+\cos \left(\frac{2 \pi}{5}+z\right) \\
+0=\cos z-\cos \left(\frac{\pi}{7}-z\right)-\cos \left(\frac{\pi}{7}+z\right)+\cos \left(\frac{2 \pi}{7}-z\right)+ \\
+\cos \left(\frac{2 \pi}{7}+z\right)-\cos \left(\frac{3 \pi}{7}-z\right)-\cos \left(\frac{3 \pi}{7}+z\right)
+\end{gathered}
+\]
+一般地, 当 $n$ 为任何一个大于 1 的奇数时, 我们有
+\[
+\begin{aligned}
+0= & \cos z-\cos \left(\frac{\pi}{n}-z\right)-\cos \left(\frac{\pi}{n}+z\right)+ \\
+& \cos \left(\frac{2 \pi}{n}-z\right)+\cos \left(\frac{2 \pi}{n}+z\right)- \\
+& \cos \left(\frac{3 \pi}{n}-z\right)-\cos \left(\frac{3 \pi}{n}+z\right)+ \\
+& \cos \left(\frac{4 \pi}{n}-z\right)+\cos \left(\frac{4 \pi}{n}+z\right)-
+\end{aligned}
+\]
+%%10p181-200
+右端项数为 $n$.
+
+\section{$\S 245$}
+
+关于所有项的积的公式, 它们将因 $n$ 为奇数, 奇偶数(1) 和偶偶数 ${ }^{(2)}$ 而不同. 但都包含 在 $\S 242$ 的公式之中, 只需将那里的正弦化为余弦,得
+\[
+\begin{gathered}
+\cos z=1 \cos z \\
+\cos 2 z=2 \cos \left(\frac{\pi}{4}+z\right) \cos \left(\frac{\pi}{4}-z\right) \\
+\cos 3 z=4 \cos \left(\frac{2 \pi}{6}+z\right) \cos \left(\frac{2 \pi}{6}-z\right) \cos z \\
+\cos 4 z=8 \cos \left(\frac{3 \pi}{8}+z\right) \cos \left(\frac{3 \pi}{8}-z\right) \cos \left(\frac{\pi}{8}+z\right) \cos \left(\frac{\pi}{8}-z\right) \\
+\cos 5 z=16 \cos \left(\frac{4 \pi}{10}+z\right) \cos \left(\frac{4 \pi}{10}-z\right) \cos \left(\frac{2 \pi}{10}+z\right) \cdot \cos \left(\frac{2 \pi}{10}-z\right) \cos z
+\end{gathered}
+\]
+一般地, 我们有
+\[
+\begin{aligned}
+\cos n z= & z^{n-1} \cos \left(\frac{n-1}{2 n} \pi+z\right) \cos \left(\frac{n-1}{2 n} \pi-z\right) . \\
+& \cos \left(\frac{n-3}{2 n} \pi+z\right) \cos \left(\frac{n-3}{2 n} \pi-z\right) . \\
+& \cos \left(\frac{n-5}{2 n} \pi+z\right) \cos \left(\frac{n-5}{2 n} \pi-z\right) . \\
+& \cos \left(\frac{n-7}{2 n} \pi+z\right) \cdots
+\end{aligned}
+\]
+右端因式的个数为 $n$.
+
+\section{$\S 246$}
+
+当 $n$ 为奇数,使方程的第一项为 1 , 则
+\[
+0=1 \mp \frac{n y}{\cos n z}+\cdots
+\]
+双重符号处, $n=4 m+1$ 时取上, $n=4 m-1$ 时取下. 由此我们得到
+\[
+\begin{gathered}
+\frac{1}{\cos z}=\frac{1}{\cos z} \\
+-\frac{3}{\cos 3 z}=\frac{1}{\cos z}-\frac{1}{\cos \left(\frac{\pi}{3}-z\right)}-\frac{1}{\cos \left(\frac{\pi}{3}+z\right)}
+\end{gathered}
+\]
+(1) 4 除不尽的偶数 - 译者.
+
+(2) 4 除得尽的偶数 一一 译者. 
+\[
+\begin{aligned}
+& \frac{5}{\cos 5 z}= \frac{1}{\cos z}-\frac{1}{\cos \left(\frac{\pi}{5}-z\right)}-\frac{1}{\cos \left(\frac{\pi}{5}+z\right)} \\
+& \frac{1}{\cos \left(\frac{2 \pi}{5}-z\right)}+\frac{1}{\cos \left(\frac{2 \pi}{5}+z\right)}
+\end{aligned}
+\]
+一般地, 当 $n=2 m+1$ 时, 我们有
+\[
+\begin{aligned}
+\frac{n}{\cos n z}= & \frac{2 m+1}{\cos (2 m+1) z}=\frac{1}{\cos \left(\frac{m}{n} \pi+z\right)}+\frac{1}{\cos \left(\frac{m}{n} \pi-z\right)} \\
+& \frac{1}{\cos \left(\frac{m-1}{n} \pi+z\right)}-\frac{1}{\cos \left(\frac{m-1}{n} \pi-z\right)}+ \\
+& \frac{1}{\cos \left(\frac{m-2}{n} \pi+z\right)}+\frac{1}{\cos \left(\frac{m-2}{n} \pi-z\right)}- \\
+& \frac{\cos \left(\frac{m-3}{n} \pi+z\right)}{\cdots}
+\end{aligned}
+\]
+右端项数为 $n$.
+
+\section{$\S 247$}
+
+利用 $\frac{1}{\cos v}=\sec v$, 我们可以推出下面这些有关正割的性质
+\[
+\sec z=\sec z
+\]
+\[
+\begin{aligned}
+& 3 \sec 3 z=\sec \left(\frac{\pi}{3}+z\right)+\sec \left(\frac{\pi}{3}-z\right)-\sec \left(\frac{0 \pi}{3}+z\right)
+\end{aligned}
+\]
+$5 \sec 5 z=\sec \left(\frac{2 \pi}{5}+z\right)+\sec \left(\frac{2 \pi}{5}-z\right)-\sec \left(\frac{\pi}{5}+z\right)-\sec \left(\frac{\pi}{5}-z\right)+\sec \left(\frac{0 \pi}{5}+z\right)$
+\[
+\begin{aligned}
+7 \sec 7 z= & \sec \left(\frac{3 \pi}{7}+z\right)+\sec \left(\frac{3 \pi}{7}-z\right)-\sec \left(\frac{2 \pi}{7}+z\right)- \\
+& \sec \left(\frac{2 \pi}{7}-z\right)+\sec \left(\frac{\pi}{7}+z\right)+\sec \left(\frac{\pi}{7}-z\right)-\sec \left(\frac{0 \pi}{7}+z\right)
+\end{aligned}
+\]
+一般地, $n=2 m+1$, 则
+\[
+\begin{aligned}
+n \sec n z= & \sec \left(\frac{m}{n} \pi+z\right)+\sec \left(\frac{m}{n} \pi-z\right)- \\
+& \sec \left(\frac{m-1}{n} \pi+z\right)-\sec \left(\frac{m-1}{n} \pi-z\right)+ \\
+& \sec \left(\frac{m-2}{n} \pi+z\right)+\sec \left(\frac{m-2}{n} \pi-z\right)-
+\sec \left(\frac{m-3}{n} \pi+z\right)-\sec \left(\frac{m-3}{n} \pi-z\right)+ \\
+\sec \left(\frac{m-4}{n} \pi+z\right)+\cdots \pm \sec z 
+\end{aligned}
+\]
+\section{$\S 248$}
+
+关于余割, 从 $\S 237$ 我们得到
+\[
+\begin{gathered}
+\csc z=\csc z \\
+3 \csc 3 z=\csc z+\csc \left(\frac{\pi}{3}-z\right)-\csc \left(\frac{\pi}{3}+z\right) \\
+5 z=\csc z+\csc \left(\frac{\pi}{5}-z\right)-\csc \left(\frac{\pi}{5}+z\right)-\csc \left(\frac{2 \pi}{5}-z\right)+\csc \left(\frac{2 \pi}{5}+z\right) \\
+7 \csc 7 z=\csc z+\csc \left(\frac{\pi}{7}-z\right)-\csc \left(\frac{\pi}{7}+z\right)-\csc \left(\frac{2 \pi}{7}-z\right)+ \\
+\csc \left(\frac{2 \pi}{7}+z\right)+\csc \left(\frac{3 \pi}{7}-z\right)-\csc \left(\frac{3 \pi}{7}+z\right)
+\end{gathered}
+\]
+一般地, $n=2 m+1$ 时, 我们有
+\[
+\begin{aligned}
+n \csc n z= & \csc z+\csc \left(\frac{\pi}{n}-z\right)-\csc \left(\frac{\pi}{n}+z\right)- \\
+& \csc \left(\frac{2 \pi}{n}-z\right)+\csc \left(\frac{2 \pi}{n}+z\right)+ \\
+& \csc \left(\frac{3 \pi}{n}-z\right)-\csc \left(\frac{3 \pi}{n}+z\right)-\cdots \mp \\
+& \csc \left(\frac{m \pi}{n}-z\right) \pm \csc \left(\frac{m \pi}{n}+z\right)
+\end{aligned}
+\]
+双重符号处, $m$ 为偶数时取上, $m$ 为奇数时取下.
+
+\section{$\S 249$}
+
+$\S 133$我们看到
+\[
+\cos n z \pm \sqrt{-1} \sin n z=(\cos z \pm \sqrt{-1} \sin z)^{n}
+\]
+从而
+\[
+\begin{aligned}
+\cos n z & =\frac{(\cos z+\sqrt{-1} \sin z)^{n}+(\cos z-\sqrt{-1} \sin z)^{n}}{2} \\
+\sin n z & =\frac{(\cos z+\sqrt{-1} \sin z)^{n}-(\cos z-\sqrt{-1} \sin z)^{n}}{2 \sqrt{-1}}
+\end{aligned}
+\]
+进而 
+\[
+\tan n z=\frac{(\cos z+\sqrt{-1} \sin z)^{n}-(\cos z-\sqrt{-1} \sin z)^{n}}{(\cos z+\sqrt{-1} \sin z)^{n} \sqrt{-1}+(\cos z-\sqrt{-1} \sin z)^{n} \sqrt{-1}}
+\]
+$\hat{\imath}$
+\[
+\tan z=\frac{\sin z}{\cos z}=t
+\]
+则
+\[
+\tan n z=\frac{(1+t \sqrt{-1})^{n}-(1-t \sqrt{-1})^{n}}{(1+t \sqrt{-1})^{n} \sqrt{-1}+(1-t \sqrt{-1})^{n} \sqrt{-1}}
+\]
+由此我们得到下列多倍角的正切
+\[
+\begin{gathered}
+\tan z=t \\
+\tan 2 z=\frac{2 t}{1-t^{2}} \\
+\tan 3 z=\frac{3 t-t^{3}}{1-3 t^{2}} \\
+\tan 4 z=\frac{4 t-4 t^{3}}{1-6 t^{2}+t^{4}} \\
+\tan 5 z=\frac{5 t-10 t^{3}+t^{5}}{1-10 t^{2}+5 t^{4}}
+\end{gathered}
+\]
+一般地
+
+由
+\[
+\tan n z=\frac{n t-\frac{n(n-1)(n-2)}{1 \cdot 2 \cdot 3} t^{3}+\frac{n(n-1)(n-2)(n-3)(n-4)}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} t^{5}-\cdots}{1-\frac{n(n-1)}{1 \cdot 2} t^{2}+\frac{n(n-1)(n-2)(n-3)}{1 \cdot 2 \cdot 3 \cdot 4} t^{4}-\cdots}
+\]
+知
+\[
+\tan (n z)=\tan (\pi+n z)=\tan (2 \pi+n z)=\tan (3 \pi+n z)=\cdots
+\]
+\[
+\tan z, \tan \left(\frac{\pi}{n}+z\right), \tan \left(\frac{2 \pi}{n}+z\right), \tan \left(\frac{3 \pi}{n}+z\right), \cdots
+\]
+为 $t$ 的值或方程的根, 个数为 $n$.
+
+\section{$\S 250$}
+
+使方程的第一项为 1 , 我们得到
+\[
+0=1-\frac{n}{\tan n z} t-\frac{n(n-1)}{1 \cdot 2} t^{2}+\frac{n(n-1)(n-2)}{1 \cdot 2 \cdot 3 \cdot \tan n z} t^{3}+\cdots
+\]
+将该方程的系数与根比较, 得
+\[
+\begin{aligned}
+n \cot n z= & \cot z+\cot \left(\frac{\pi}{n}+z\right)+\cot \left(\frac{2 \pi}{n}+z\right)+\cot \left(\frac{3 \pi}{n}+z\right)+ \\
+& \cot \left(\frac{4 \pi}{n}+z\right)+\cdots+\cot \left(\frac{n-1}{n} \pi+z\right)
+\end{aligned}
+\]
+由此得这些余切的平方和等于
+\[
+\frac{n^{2}}{\sin ^{2} n z}-n
+\]
+更高次幂也可用类似地方法确定. 将 $n$ 换为确定的数, 得
+\[
+\begin{gathered}
+\cot z=\cot z \\
+2 \cot 2 z=\cot z+\cot \left(\frac{\pi}{2}+z\right) \\
+3 \cot 3 z=\cot z+\cot \left(\frac{\pi}{3}+z\right)+\cot \left(\frac{2 \pi}{3}+z\right) \\
+4 \cot 4 z=\cot z+\cot \left(\frac{\pi}{4}+z\right)+\cot \left(\frac{2 \pi}{4}+z\right)+\cot \left(\frac{3 \pi}{4}+z\right) \\
+5 \cot 5 z=\cot z+\cot \left(\frac{\pi}{5}+z\right)+\cot \left(\frac{2 \pi}{5}+z\right)+\cot \left(\frac{3 \pi}{5}+z\right)+\cot \left(\frac{4 \pi}{5}+z\right) 
+\end{gathered}
+\]
+\section{$\S 251$}
+
+由 $\cot v=-\cot (\pi-v)$ 得
+\[
+\begin{gathered}
+\cot z=\cot z \\
+2 \cot 2 z=\cot z-\cot \left(\frac{\pi}{2}-z\right) \\
+3 \cot 3 z=\cot z-\cot \left(\frac{\pi}{3}-z\right)+\cot \left(\frac{\pi}{3}+z\right) \\
+4 \cot 4 z=\cot z-\cot \left(\frac{\pi}{4}-z\right)+\cot \left(\frac{\pi}{4}+z\right)-\cot \left(\frac{2 \pi}{4}-z\right) \\
+5 \cot 5 z=\cot z-\cot \left(\frac{\pi}{5}-z\right)+\cot \left(\frac{\pi}{5}+z\right)-\cot \left(\frac{2 \pi}{5}-z\right)+\cot \left(\frac{2 \pi}{5}+z\right)
+\end{gathered}
+\]
+一般地
+\[
+\begin{aligned}
+n \cot n z= & \cot z-\cot \left(\frac{\pi}{n}-z\right)+\cot \left(\frac{\pi}{n}+z\right)- \\
+& \cot \left(\frac{2 \pi}{n}-z\right)+\cot \left(\frac{2 \pi}{n}+z\right)- \\
+& \cot \left(\frac{3 \pi}{n}-z\right)+\cot \left(\frac{3 \pi}{n}+z\right)-
+\end{aligned}
+\]
+取够 $n$ 项为止.
+
+\section{$\S 252$}
+
+考虑高次方程, 先看奇数, 即 $n=2 m+1$ 的情形. 从 $\$ 249$ 得
+\[
+t-\tan z=0
+\]
+\[
+\begin{aligned}
+& \qquad t^{3}-3 t^{2} \tan 3 z-3 t+\tan 3 z=0 \\
+& t^{5}-5 t^{4} \tan 5 z-10 t^{3}+10 t^{2} \tan 5 z+5 t-\tan 5 z=0
+\end{aligned}
+\]
+一般地
+\[
+t^{n}-n t^{n-1} \tan n z-\cdots \mp \tan n z=0
+\]
+双重符号处, $m$ 为偶数时取负, $m$ 为奇数时取正. 从第二项系数得
+\[
+\begin{gathered}
+\tan z=\tan z \\
+3 \tan 3 z=\tan z+\tan \left(\frac{\pi}{3}+z\right)+\tan \left(\frac{2 \pi}{3}+z\right) \\
+5 z=\tan z+\tan \left(\frac{\pi}{5}+z\right)+\tan \left(\frac{2 \pi}{5}+z\right)+\tan \left(\frac{3 \pi}{5}+z\right)+\tan \left(\frac{4 \pi}{5}+z\right) \\
+\vdots
+\end{gathered}
+\]
+\section{$\S 253$}
+
+利用 $\tan v=-\tan (\pi-v)$ 可将大于直角的角的正切化为小于直角的角的正切, 有
+\[
+\begin{gathered}
+\tan z=\tan z \\
+3 \tan 3 z=\tan z-\tan \left(\frac{\pi}{3}-z\right)+\tan \left(\frac{\pi}{3}+z\right) \\
+5 \tan 5 z=\tan z-\tan \left(\frac{\pi}{5}-z\right)+\tan \left(\frac{\pi}{5}+z\right)-\tan \left(\frac{2 \pi}{5}-z\right)+\tan \left(\frac{2 \pi}{5}+z\right) \\
+7 \tan 7 z=\tan z-\tan \left(\frac{\pi}{7}-z\right)+\tan \left(\frac{\pi}{7}+z\right)-\tan \left(\frac{2 \pi}{7}-z\right)+ \\
+\tan \left(\frac{2 \pi}{7}+z\right)-\tan \left(\frac{3 \pi}{7}-z\right)+\tan \left(\frac{3 \pi}{7}+z\right)
+\end{gathered}
+\]
+一般地, $n=2 m+1$ 时, 有
+\[
+\begin{aligned}
+& n \tan n z=\tan z-\tan \left(\frac{\pi}{n}-z\right)+\tan \left(\frac{\pi}{n}+z\right)- \\
+& \tan \left(\frac{2 \pi}{n}-z\right)+\tan \left(\frac{2 \pi}{n}+z\right)- \\
+& \tan \left(\frac{3 \pi}{n}-z\right)+\cdots \\
+& \tan \left(\frac{m \pi}{n}-z\right)+\tan \left(\frac{m \pi}{n}+z\right)
+\end{aligned}
+\]
+\section{$\S 254$}
+
+由于上节各式, 其右端负号个数依次偶奇交替, 所以这些正切的积就等于 $\tan n z$, 不 带双重符号. 即
+\[
+\tan z=\tan z
+\]
+\[
+\begin{aligned}
+& \qquad \tan 3 z=\tan z \tan \left(\frac{\pi}{3}-z\right) \tan \left(\frac{\pi}{3}+z\right) \\
+& \tan 5=\tan z \tan \left(\frac{\pi}{5}-z\right) \tan \left(\frac{\pi}{5}+z\right) \tan \left(\frac{2 \pi}{5}-z\right) \tan \left(\frac{2 \pi}{5}+z\right)
+\end{aligned}
+\]
+一般地 $n=2 m+1$ 时
+\[
+\begin{aligned}
+& \tan n z= \tan z \tan \left(\frac{\pi}{n}-z\right) \tan \left(\frac{\pi}{n}+z\right) \\
+& \tan \left(\frac{2 \pi}{n}-z\right) \tan \left(\frac{2 \pi}{n}+z\right) \\
+& \tan \left(\frac{3 \pi}{n}-z\right) \cdot \cdots \\
+& \tan \left(\frac{m \pi}{n}-z\right) \tan \left(\frac{m \pi}{n}+z\right) 
+\end{aligned}
+\]
+\section{$\S 255$}
+
+现在讨论 $n$ 为偶数的情形, 考虑高次方程, 得
+\[
+\begin{gathered}
+t^{2}+2 t \cot 2 z-1=0 \\
+t^{4}+4 t^{3} \cot 4 z-6 t^{2}-4 t \cot 4 z+1=0
+\end{gathered}
+\]
+一般地, $n=2 m$ 时
+\[
+t^{n}+n t^{n-1} \cot n z-\cdots \mp 1=0
+\]
+双重符号外, $m$ 为奇数时取负, $m$ 为偶数时取正, 将第二项的系数与根比较, 得
+\[
+\begin{gathered}
+-2 \cot 2 z=\tan z+\tan \left(\frac{\pi}{2}+z\right) \\
+-4 \cot 4 z=\tan z+\tan \left(\frac{\pi}{4}+z\right)+\tan \left(\frac{2 \pi}{4}+z\right)+\tan \left(\frac{3 \pi}{4}+z\right) \\
+-6 \cot 6 z=\tan z+\tan \left(\frac{\pi}{6}+z\right)+\tan \left(\frac{2 \pi}{6}+z\right)+\tan \left(\frac{3 \pi}{6}+z\right)+ \\
+\tan \left(\frac{4 \pi}{6}+z\right)+\tan \left(\frac{5 \pi}{6}+z\right) \\
+\vdots
+\end{gathered}
+\]
+\section{$\S 256$}
+
+利用 $\tan v=-\tan (\pi-v)$, 得
+\[
+\begin{gathered}
+2 \cot 2 z=-\tan z+\tan \left(\frac{\pi}{2}-z\right) \\
+4 \cot 4 z=-\tan z+\tan \left(\frac{\pi}{4}-z\right)-\tan \left(\frac{\pi}{4}+z\right)+\tan \left(\frac{2 \pi}{4}-z\right)
+\end{gathered}
+\]
+\[
+\begin{aligned}
+& 6 \cot 6 z=-\tan z+\tan \left(\frac{\pi}{6}-z\right)-\tan \left(\frac{\pi}{6}+z\right)+\tan \left(\frac{2 \pi}{6}-z\right)- \\
+& \qquad \tan \left(\frac{2 \pi}{6}+z\right)+\tan \left(\frac{3 \pi}{6}-z\right)
+\end{aligned}
+\]
+一般地,$n=2 m$ 时
+\[
+\begin{aligned}
+n \cot n z= & -\tan z+\tan \left(\frac{\pi}{n}-z\right)-\tan \left(\frac{\pi}{n}+z\right)+ \\
+& \tan \left(\frac{2 \pi}{n}-z\right)-\tan \left(\frac{2 \pi}{n}+z\right)+ \\
+& \tan \left(\frac{3 \pi}{n}-z\right)-\tan \left(\frac{3 \pi}{n}+z\right)+\cdots+ \\
+& \tan \left(\frac{m \pi}{n}-z\right)
+\end{aligned}
+\]
+\section{$\S 257$}
+
+类似 $\S 254$, 从上节表达式我们也得到全体根的不带双重符号的积
+\[
+\begin{gathered}
+1=\tan z \tan \left(\frac{\pi}{2}-z\right) \\
+1=\tan z \tan \left(\frac{\pi}{4}-z\right) \tan \left(\frac{\pi}{4}+z\right) \tan \left(\frac{2 \pi}{4}-z\right) \\
+1=\tan z \tan \left(\frac{\pi}{6}-z\right) \tan \left(\frac{\pi}{6}+z\right) \tan \left(\frac{2 \pi}{6}-z\right) \tan \left(\frac{2 \pi}{6}+z\right) \tan \left(\frac{3 \pi}{6}-z\right)
+\end{gathered}
+\]
+容易看出, 各式中角度都成对出现, 每对互余, 互余角正切的积为 1 , 因而全体的乘 积也为 1 .
+
+\section{$\S 258$}
+
+成等差序列的角, 其正弦和余弦都成递推级数. 利用前一章的结果,不管这种正弦和 余弦的个数是多少,它们的和我们都会求. 设成等差序列的角为
+\[
+a, a+b, a+2 b, a+3 b, a+4 b, a+5 b, \cdots
+\]
+我们先求这种角正弦所成级数之和
+\[
+s=\sin a+\sin (a+b)+\sin (a+2 b)+\sin (a+3 b)+\cdots
+\]
+该递推级数的递推尺度为 $2 \cos b,-1$, 因而其和等于一个以
+\[
+1-2 z \cos b+z^{2}
+\]
+为分母的分式在 $z=1$ 时的值. 这个分式为
+\[
+\frac{\sin a+z(\sin (a+b)-2 \sin a \cos b)}{1-2 z \cos b+z^{2}}
+\]
+令 $z=1$, 得 
+\[
+s=\frac{\sin a+\sin (a+b)-2 \sin a \cos b}{2-2 \cos b}=\frac{\sin a-\sin (a-b)}{2(1-\cos b)}
+\]
+这里应用了
+\[
+2 \sin a \cos b=\sin (a+b)+\sin (a-b)
+\]
+由
+\[
+\sin f-\sin g=\cos \frac{f+g}{2} \sin \frac{f-g}{2}
+\]
+得
+\[
+\sin a-\sin (a-b)=2 \cos \left(a-\frac{1}{2} b\right) \sin \frac{b}{2}
+\]
+又
+\[
+1-\cos b=2 \sin ^{2} \frac{b}{2}
+\]
+这样我们得到
+\[
+s=\frac{\cos \left(a-\frac{1}{2} b\right)}{2 \sin \frac{b}{2}}
+\]
+\section{$\S 259$}
+
+利用上节结果我们可求出成等差序列的随便多少个角的正弦之和. 例如我们求下面 这个和
+\[
+\sin a+\sin (a+b)+\sin (a+2 b)+\sin (a+3 b)+\cdots+\sin (a+n b)
+\]
+将这个级数延长到无穷, 那么它的和为 $\frac{\cos \left(a-\frac{b}{2}\right)}{2 \sin \frac{b}{2}}$, 我们考虑延长出来的部分
+\[
+\sin (a+(n+1) b)+\sin (a+(n+2) b)+\sin (a+(n+3) b)+\cdots
+\]
+这延长出来的部分, 其和为 $\frac{\cos \left(a+\left(n+\frac{1}{2}\right) b\right)}{2 \sin \frac{1}{2} b}$. 前一个和减去后一个和, 得到的就是我们所求的和. 也即, 记
+\[
+s=\sin a+\sin (a+b)+\sin (a+2 b)+\sin (a+3 b)+\cdots+\sin (a+n b)
+\]
+则
+\[
+s=\frac{\cos \left(a-\frac{1}{2} b\right)-\cos \left(a+\left(n+\frac{1}{2}\right) b\right)}{2 \sin \frac{1}{2} b}=
+\]
+\[
+\begin{aligned}
+& \text { Infinite analysis } \\
+& \frac{\sin \left(a+\frac{1}{2} n b\right) \sin \frac{1}{2}(n+1) b}{\sin \frac{1}{2} b} 
+\end{aligned}
+\]
+\section{$\S 260$}
+
+余弦的这样的和, 求法类似. 记
+\[
+s=\cos a+\cos (a+b)+\cos (a+2 b)+\cos (a+3 b)+\cdots
+\]
+则 $s$ 等于
+\[
+\frac{\cos a+z(\cos (a+b)-2 \cos a \cos b)}{1-2 z \cos b+z^{2}}
+\]
+在 $z=1$ 时的值. 由
+\[
+2 \cos a \cos b=\cos (a-b)+\cos (a+b)
+\]
+得
+\[
+s=\frac{\cos a-\cos (a-b)}{2(1-\cos b)}
+\]
+由
+\[
+\cos f-\cos g=2 \sin \frac{f+g}{2} \sin \frac{g-f}{2}
+\]
+得
+\[
+\cos -\cos (a-b)=-2 \sin \left(a-\frac{1}{2} b\right) \sin \frac{1}{2} b
+\]
+又
+\[
+1-\cos b=2 \sin ^{2} \frac{b}{2}
+\]
+这样我们得到
+\[
+s=-\frac{\sin \left(a-\frac{1}{2} b\right)}{2 \sin \frac{1}{2} b}
+\]
+类似地, 我们得到, 级数
+\[
+\cos (a+(n+1) b)+\cos (a+(n+2) b)+\cos (a+(n+3) b)+\cdots
+\]
+的和为
+\[
+-\frac{\sin \left(a+\left(n+\frac{1}{2}\right) b\right)}{2 \sin \frac{1}{2} b}
+\]
+从第一个和减第二个和, 我们得到级数
+\[
+\cos a+\cos (a+b)+\cos (a+2 b)+\cos (a+3 b)+\cdots+\cos (a+n b) \text { 的和为 }
+\]
+\[
+-\sin \left(a-\frac{1}{2} b\right)+\sin \left[a+\left(n+\frac{1}{2}\right) b\right]}=\frac{\cos \left(a+\frac{1}{2} n b\right) \sin \frac{1}{2}(n+1) b}{2 \sin \frac{1}{2} b
+\]
+\section{$\S 261$}
+
+利用前面指出的原理, 可以解决很多有关正弦和正切的问题. 例如求正弦和正切的 二次和更高次幂的和就是其中的一类. 所有这些和都可以由前面方程其余的系数, 用类 似地方法推出, 所以我们不再讲. 但关于提到的问题我们指出一点: 正弦和余弦的任何次 幂都可以用正弦和余弦表示. 为清楚起见, 我们稍做说明.
+
+\section{$\S 262$}
+
+为此我们列出几个弓理
+\[
+\begin{aligned}
+& 2 \sin a \sin z=\cos (a-z)-\cos (a+z) \\
+& 2 \cos a \sin z=\sin (a+z)-\sin (a-z) \\
+& 2 \sin a \cos z=\sin (a+z)+\sin (a-z) \\
+& 2 \cos a \cos z=\cos (a-z)+\cos (a+z)
+\end{aligned}
+\]
+先求正弦的幂
+\[
+\begin{gathered}
+\sin z=\sin z \\
+2 \sin ^{2} z=1-\cos 2 z \\
+4 \sin ^{3} z=3 \sin z-\sin 3 z \\
+8 \sin ^{4} z=3-4 \cos 2 z+\cos 4 z \\
+16 \sin ^{5} z=10 \sin z-5 \sin 3 z+\sin 5 z \\
+32 \sin ^{6} z=10-15 \cos 2 z+6 \cos 4 z-\cos 6 z \\
+64 \sin ^{7} z=35 \sin z-21 \sin 3 z+7 \sin 5 z-\sin 7 z \\
+128 \sin ^{8} z=35-56 \cos 2 z+28 \cos 4 z-8 \cos 6 z+\cos 8 z \\
+256 \sin ^{9} z=126 \sin z-84 \sin 3 z+36 \sin 5 z-9 \sin 7 z+\sin 9 z
+\end{gathered}
+\]
+这里的系数, 是二项式对应幂展开式的右半,只是偶次幂时自由项等于二项式幂展开式 对应系数的一半.
+
+\section{$\S 263$}
+
+余弦幂类似
+\[
+\begin{gathered}
+\cos z=\cos z \\
+2 \cos ^{2} z=1+\cos 2 z
+\end{gathered}
+\]
+\[
+\begin{gathered}
+4 \cos ^{3} z=3 \cos z+\cos 3 z \\
+8 \cos ^{4} z=3+4 \cos 2 z+\cos 4 z \\
+16 \cos ^{5} z=10 \cos z+5 \cos 3 z+\cos 5 z \\
+32 \cos ^{6} z=10+15 \cos 2 z+6 \cos 4 z+\cos 6 z \\
+64 \cos ^{7} z=35 \cos z+21 \cos 3 z+7 \cos 5 z+\cos 7 z
+\end{gathered}
+\]
+系数规律同于正弦. 
+

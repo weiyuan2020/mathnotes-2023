@@ -1,0 +1,92 @@
+% chap11sec04
+
+\section{Measurable functions}
+
+\begin{mydef}
+    \label{mydef:11.13}
+    measurable function
+    \begin{equation}
+        \label{eq:11.42}
+        \{x|f(x) > a\}
+    \end{equation}
+    is measurable for every real $a$.
+\end{mydef}
+
+\begin{newexample}
+    If $X = \R^P$ and $\mathfrak{M} = \mathfrak{M}(\mu)$ 
+    % (µ) 
+    as defined in Definition \ref{mydef:11.9}, every continuous $f$ is measurable, since then (\ref{eq:11.42}) is an open set.
+\end{newexample}
+
+\begin{thm}
+    \label{thm:11.15}
+    Each of the following four conditions implies the other three:
+    \begin{enumerate}[(a)]
+        \item $\{x|f(x) >    a\}$ is measurable for every real $a$.
+        \item $\{x|f(x) \geq a\}$ is measurable for every real $a$.
+        \item $\{x|f(x) <    a\}$ is measurable for every real $a$.
+        \item $\{x|f(x) \leq a\}$ is measurable for every real $a$.
+    \end{enumerate}
+\end{thm}
+
+\begin{thm}
+    \label{thm:11.16}
+    If $f$ is measurable, then $\left| f \right|$ is measurable. 
+\end{thm}
+
+\begin{proof}
+    \begin{equation*}
+        \{x | \left| f(x) \right| < a\} = 
+        \{x | f(x) <  a\} \cap 
+        \{x | f(x) > -a\} .
+    \end{equation*}
+\end{proof}
+
+\begin{thm}
+    \label{thm:11.17}
+    Let $\{f_n\}$ be a sequence of measurable functions. 
+    For $x \in X$, put
+    \begin{align*}
+        g(x) &= \sup f_n(x) \quad (n=1,2,3,\dots), \\
+        f(x) &= \limsup_{n \rightarrow \infty} f_n (x) .
+    \end{align*}
+    Then $g$ and $h$ are measurable.
+\end{thm}
+
+The same is of course true of the $\inf$ and $\liminf$.
+
+\begin{proof}
+    \begin{align*}
+        \{x | g(x) > a\} &= \bigcup_{n=1}^{\infty} \{x | f_n(x) > a\} , \\
+        h(x) &= \inf g_m (x),
+    \end{align*}
+    where $g_m (x) = \sup f_n (x) (n \geq m)$.
+\end{proof}
+
+\begin{myCorollary*}
+    \begin{asparaenum} [(a)]
+        \item If $f$ and $g$ are measurable, then $\max(f, g)$ and $\min(f, g)$ are measurable. 
+        If
+        \begin{equation}
+            \label{eq:11.47}
+            f^+ =  \max (f, 0), \quad
+            f^- = -\min (f, 0),
+        \end{equation}
+        it follows, in particular, that $f^+$ and $f^-$ are measurable.
+        \item The limit of a convergent sequence of measurable functions is measurable.
+    \end{asparaenum}
+\end{myCorollary*}
+
+\begin{thm}
+    \label{thm:11.18}
+    Let $f$ and $g$ be measurable real-valued functions defined on $X$,
+    let $F$ be real and continuous on $\R^2$ , and put
+    \begin{equation*}
+        h(x) = F(f (x), g(x))
+        \quad (x \in X)
+    \end{equation*}
+    Then $h$ is measurable.
+
+    In particular, $f + g$ and $fg$ are measurable.
+\end{thm}
+

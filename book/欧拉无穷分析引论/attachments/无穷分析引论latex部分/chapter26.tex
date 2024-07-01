@@ -1,0 +1,422 @@
+\chapter{第八章 关于渐近线}
+
+\section{$\S 198$}
+
+前一章我们看到, 渐近直线之外还有方程 $u^{\mu}=C t^{\nu}$ 表示的渐近曲线, 从渐近直线又可 导出渐近曲线,导出的渐近曲线比渐近直线更贴近曲线. 从曲线的任何一条渐近直线我 们都可导出一条曲线, 这曲线以渐近直线为渐近线, 而它本身又是原曲线的渐近线. 这种 渐近曲线能更加准确地表示原曲线的性质, 它不仅能指明曲线的逼近于渐近直线的分支 的条数,还能指明分支是从上面还是从下面,或者是从左面还是从右面逼近渐近直线.
+
+\section{$\S 199$}
+
+渐近线的种类无穷,最方便的讨论方式是按我们得到它的顺序进行. 首先是产生于 最高次部分单因式的,即不与别的因式相等的因式的渐近线;其次是产生于两个相等因 式的渐近线;再次是产生于三个相等因式的渐近线;接下去是产生于四个相等因式的渐 近线, 等等. 假定所给是 $x, y$ 间的 $n$ 次方程,形状为
+\[
+P+Q+R+S+\cdots=0
+\]
+$P$ 是最高次部分,包含所有次数为 $n$ 的项, $Q$ 为次高次部分,包含所有次数为 $n-1$ 的项, $R, S$ 等类推.
+
+\section{$\S 200$}
+
+设 $a y-b x$ 为 $P$ 的线性因式, 且 $P$ 没有与这个因式相等的另外的因式. 记 $P=(a y-$ $b x$ ) $M, M$ 是不被 $a y-b x$ 整除的 $n-1$ 次齐次函数. 设 $A Z$ 为轴 (图 35), 取横标 $A P=x$, 纵 标 $P M=y$. 为简单地表示因式 $a y-b x$, 我们取另外一条直线 $A X$ 为轴, $A X$ 交原轴于 $A$, 与原轴所成角 $\angle X A Z$ 的正切为 $\frac{b}{a}$, 从而正弦、余弦为 $\frac{b}{\sqrt{a^{2}+b^{2}}}, \frac{a}{\sqrt{a^{2}+b^{2}}}$. 在新轴上取横 标 $A Q=t$, 纵标 $Q M=u$, 平行于新坐标引 $P g, P f$, 得
+\[
+\begin{aligned}
+& P g=Q f=\frac{b x}{\sqrt{a^{2}+b^{2}}}, \quad A g=\frac{a x}{\sqrt{a^{2}+b^{2}}} \\
+& M f=\frac{a y}{\sqrt{a^{2}+b^{2}}}, \quad P f=Q g=\frac{b y}{\sqrt{a^{2}+b^{2}}}
+\end{aligned}
+\]
+从而 
+\[
+\begin{aligned}
+& \text { Sifinite analysios } \text { 无穷分析与论) Intraduclian } \\
+& t=A g+Q g=\frac{a x+b y}{\sqrt{a^{2}+b^{2}}}, \quad u=M f-Q f=\frac{a y-b x}{\sqrt{a^{2}+b^{2}}}
+\end{aligned}
+\]
+现在纵标 $u$ 就是最高次部分 $P$ 的因式.
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-06.jpg?height=376&width=509&top_left_y=458&top_left_x=588)
+
+图 35
+
+\section{$\S 201$}
+
+反之,从前节关系式得
+\[
+y=\frac{a u+b t}{\sqrt{a^{2}+b^{2}}}, \quad x=\frac{a t-b u}{\sqrt{a^{2}+b^{2}}}
+\]
+将这两个表达式代入方程 $P+Q+R+\cdots=0$,得同一曲线以 $A X$ 为轴的 $t, u$ 间方程,为了 避免过多的系数,用 $\alpha, \beta, \gamma, \delta, \cdots$ 代替之后得
+\[
+\begin{aligned}
+& M=\alpha t^{n-1}+\alpha t^{n-2} u+\alpha t^{n-3} u^{2}+\cdots \\
+& Q=\beta t^{n-1}+\beta t^{n-2} u+\beta t^{n-3} u^{2}+\cdots \\
+& R=\gamma t^{n-2}+\gamma t^{n-3} u+\gamma t^{n-4} u^{2}+\cdots \\
+& S=\delta t^{n-3}+\delta t^{n-4} u+\delta t^{n-5} u^{2}+\cdots \\
+& T=\varepsilon t^{n-4}+\varepsilon t^{n-5} u+\varepsilon t^{n-6} u^{2}+\cdots
+\end{aligned}
+\]
+等. 我们要做的是求渐近线, 应取横标 $t$ 为无穷, 从而这些表达式中与第一项相比较, 其他 项都可忽略, 也即只要第一项不为零, 其他项都可略去. 第一项为零, 取第二项,第一、二 项都为零, 则取第三项.
+
+\section{$\S 202$}
+
+函数 $M$ 不被 $u$ 所整除, 所以它的第一项不能为零, 因而有 $\alpha t^{n-1} u+\beta t^{n-1}=0$, 由此得 $u$ 的有限值, 设为 $c$. 这表明平行于 $A X$ 轴至 $A X$ 轴的距离为 $c$ 的直线是渐近线. 为得到更贴 近原曲线的渐近曲线, 换第一项以外的 $u$ 为 $c$, 得
+\[
+\alpha t^{n-1} u+\beta t^{n-1}+t^{n-2}\left(\alpha c^{2}+\beta c+\gamma\right)+t^{n-3}\left(\alpha c^{3}+\beta c^{2}+\gamma c+\delta\right)+\cdots=0
+\]
+或者由 $\alpha u+\beta=u-c$ 得
+\[
+(u-c) t^{n-1}+t^{n-2}\left(\alpha c^{2}+\beta c+\gamma\right)+t^{n-3}\left(\alpha c^{3}+\beta c^{2}+\gamma c+\delta\right)+\cdots=0
+\]
+如果第二项不为零, 则可以略去后继项,得 
+\[
+\begin{aligned}
+& (u-c)+\frac{A}{t}=0
+\end{aligned}
+\]
+如果第二项为零, 取第三项,得
+\[
+(u-c)+\frac{A}{t^{2}}=0
+\]
+如果第三项为零, 得
+\[
+(u-c)+\frac{A}{t^{3}}=0
+\]
+类推. 如果常数项以外的后继项都为零, 则
+\[
+(u-c)+\frac{A}{t^{n-1}}=0
+\]
+如果常数项也为零, 则整个方程被 $u-c$ 整除. 直线 $u-c=0$ 是曲线的一部分.
+
+\section{$\S 203$}
+
+如果令 $u-c=z$, 即置横标于渐近直线上, 则最高次部分单因式所给出的渐近曲线全 都包含在通用方程 $z=\frac{C}{t^{k}}$ 之中, $k$ 是小于指数 $n$ 的整数. 现在我们来看看横标 $t$ 无穷时这 些渐近线的形状. 设 $X Y$ 为取作轴的渐近直线 (图 36 ), $A$ 为原点. 引直线 $C D$, 得到记为 $P, Q, R, S$ 的四个区域. 先令 $z=\frac{C}{t}$, 则 $t$ 取负值时, $z$ 为负, 因而曲线有两个分支, $E X$ 和 $F Y$, 位于对顶区域 $P$ 和 $S$ 中, 逼近于直线 $X Y, k$ 为任何奇数时, 情况都是这样. 如果 $k=2$, 即 $z=\frac{C}{t^{2}}$, 则不管 $t$ 为正为负, $z$ 恒为正. 因而曲线有位于区域 $P$ 和 $Q$ 中的逼近于直线 $X Y$ 的两个分支 $E X$ 和 $F Y$ (图 37). $k$ 为任何偶数时, 情况都是这样, 但 $k$ 越大, 逼近于 $X Y$ 的速 度越快.
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-07.jpg?height=380&width=350&top_left_y=1605&top_left_x=378)
+
+图 36
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-07.jpg?height=394&width=421&top_left_y=1591&top_left_x=881)
+
+图 37 
+
+\section{$\S 204$}
+
+设最高次部分$P$有相等的两个因式$ay-bx$照前面做过的那样，改变轴得
+\[
+\begin{aligned}
+& P=\alpha t^{n-2} u^{2}+\alpha t^{n-3} u^{3}+\cdots \\
+& Q=\beta t^{n-1}+\beta t^{n-2} u+\beta t^{n-3} u^{2}+\beta t^{n-4} u^{3}+\cdots \\
+& R=\gamma t^{n-2}+\gamma t^{n-3} u+\gamma t^{n-4} u^{2}+\gamma t^{n-5} u^{3}+\cdots \\
+& S=\delta t^{n-3}+\delta t^{n-4} u+\delta t^{n-5} u^{2}+\delta t^{n-6} u^{3}+\cdots
+\end{aligned}
+\]
+等. 由 $Q$ 的第一项的有无, 我们得到两个方程:
+\[
+\begin{aligned}
+& \text { I } \cdot \alpha t^{n-2} u^{2}+\beta t^{n-1}=0 \text {, 即 } \alpha u^{2}+\beta t=0 . \\
+& \text { II } \cdot \alpha t^{n-2} u^{2}+\beta t^{n-2} u+\gamma t^{n-2}=0 \text {, 即 } \alpha u^{2}+\beta u+\gamma=0 .
+\end{aligned}
+\]
+第一个方程 $\alpha u^{2}+\beta t=0$ 成立时, 渐近线是抛物线 (图 38), 在无穷远处它的两个分支 与曲线的两个分支相合. 因而曲线在两个区域 $P$ 和 $R$ 中有分支,这两个分支最终都与抛 物线 $E A F$ 的分支相合.
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-08.jpg?height=438&width=380&top_left_y=832&top_left_x=650)
+
+图 38
+
+$\S 205$
+
+得到的是第二个方程 $\alpha u^{2}+\beta u+\gamma=0$ 的时候,应区分该方程有无实根: 无实根, 则曲 线没有伸向无穷的分支; 有相异实根 $u=c, u=d$, 则曲线有两条相平行的渐近直线. 我们 应像做过的那样, 对每条线的性质进行考察. 例如,由
+\[
+\alpha u^{2}+\beta u+\gamma=(u-c)(u-d)
+\]
+我们令因式 $u-c$ 之外的 $u$ 都为 $c$, 得
+\[
+\begin{aligned}
+& (c-d) t^{n-2}(u-c)+t^{n-3}\left(\alpha c^{3}+\beta c^{2}+\gamma c+\delta\right)+ \\
+& t^{n-4}\left(\alpha c^{4}+\beta c^{3}+\gamma c^{2}+\delta c+\varepsilon\right)+\cdots=0
+\end{aligned}
+\]
+如果第二项不为零, 则 $t=\infty$ 时后继项都可略去, 从而得到渐近线
+\[
+(u-c)+\frac{A}{t}=0
+\]
+如果第二项为零, 第三项不为零, 得
+\[
+(u-c)+\frac{A}{t^{2}}=0
+\]
+类推. 第一个不为零的后继项是常数项时,得
+\[
+(u-c)+\frac{A}{t^{n-2}}=0
+\]
+
+$t=\infty$ 时这些曲线的形态前面我们都已经讨论过了.
+
+\section{$\S 206$}
+
+如果方程 $\alpha u^{2}+\beta u+\gamma=0$ 的两个实根相等, 也即如果 $\alpha u^{2}+\beta u+\gamma=(u-c)^{2}$, 那么把 $u=c$ 代入其余各项,得
+\[
+\begin{aligned}
+& t^{n-2}(u-c)^{2}+t^{n-3}\left(\alpha c^{3}+\beta c^{2}+\gamma c+\delta\right)+ \\
+& t^{n-4}\left(\alpha c^{4}+\beta c^{3}+\gamma c^{2}+\delta c+\varepsilon\right)+\cdots=0
+\end{aligned}
+\]
+如果第二项不为零, 或者第二项为零第三项不为零, 或者第二第三项为零第四项不为零, 则我们依次得到渐近线方程
+\[
+\begin{aligned}
+& (u-c)^{2}+\frac{A}{t}=0 \\
+& (u-c)^{2}+\frac{A}{t^{2}}=0 \\
+& (u-c)^{2}+\frac{A}{t^{3}}=0
+\end{aligned}
+\]
+类推, 直至遇到的第一个不为零的项为常数项时, 得渐近线方程
+\[
+(u-c)^{2}+\frac{A}{t^{n-2}}=0
+\]
+常数项也为零, 得 $(u-c)^{2}=0$, 直线是曲线的一部分, 曲线是复合的.
+
+\section{$\S 207$}
+
+有两个相等因式的各种情形似乎我们都考虑过了. 其实不然, 最后一个方程可以取 另外几种形式, 从而得到另外的渐近线. 当 $t^{n-3}$ 的系数被 $u-c$ 整除时, 第二项由于因式 $u-c$ 而保留, 再加上最近的非零后继项,这样得到方程
+\[
+\begin{aligned}
+& (u-c)^{2}+\frac{A(u-c)}{t}+\frac{B}{t^{2}}=0 \\
+& (u-c)^{2}+\frac{A(u-c)}{t}+\frac{B}{t^{3}}=0
+\end{aligned}
+\]
+直到
+\[
+(u-c)^{2}+\frac{A(u-c)}{t}+\frac{B}{t^{n-2}}=0
+\]
+如果第二项为零, 或者被 $(u-c)^{2}$ 整除, 那就得看第三项; 如果第三项被 $u-c$ 整除, 则它 由于 $u-c$ 而保留,再加上最靠近的非零后继项, 这时得到的方程为
+\[
+\begin{aligned}
+& (u-c)^{2}+\frac{A(u-c)}{t^{2}}+\frac{B}{t^{3}}=0 \\
+& (u-c)^{2}+\frac{A(u-c)}{t^{2}}+\frac{B}{t^{4}}=0
+\end{aligned}
+\]
+直到
+\[
+(u-c)^{2}+\frac{A(u-c)}{t^{2}}+\frac{B}{t^{n-2}}=0
+\]
+如果第三项为零, 第四项被 $u-c$ 整除, 或者第四项为零, 第五项被 $u-c$ 整除, 等等, 那么 我们得到渐近线方程
+\[
+(u-c)^{2}+\frac{A(u-c)}{t^{p}}+\frac{B}{t^{q}}=0
+\]
+指数 $p$ 恒小于 $q, q$ 小于 $n-1$.
+
+\section{$\S 208$}
+ 令 $ u-c=z $, 则上面的所有方程就都成了 
+\[
+z^{2}-\frac{A z}{t^{p}}+\frac{B}{t^{q}}=0
+\]
+我们对 $q$ 大于、等于和小于 $2 p$ 三种情形分别进行讨论.
+
+$q$ 大于 $2 p$ 时, 原方程可分解为两个方程
+\[
+z-\frac{A}{t^{p}}=0, \quad A z-\frac{B}{t^{q-p}}=0
+\]
+$t=\infty$ 时这两个方程都成立, 令 $z=\frac{A}{t^{p}}$, 原方程成为
+\[
+\frac{A^{2}}{t^{2 p}}-\frac{A^{2}}{t^{2 p}}+\frac{B}{t^{q}} \text { 或 } A^{2}-A^{2}+\frac{B}{t^{q-2 p}}=0
+\]
+由 $q$ 大于 $2 p, p$ 小于 $\frac{n-2}{2}$, 知该方程成立, 令 $z=\frac{B}{A t^{q-p}}$,得
+\[
+\frac{B^{2}}{A^{2} t^{2 q-2 p}}-\frac{B}{t^{q}}+\frac{B}{t^{q}} \text { 或 } \frac{B^{2}}{A^{2} t^{q-2 p}}-B+B=0
+\]
+$t=\infty$ 时第一项为零, 该方程成立. 因而 $q$ 大于 $2 p$ 时, 渐近直线之外还有两条渐近曲线, 这 样就有四条伸向无穷的分支.
+
+$q=2 p$ 时, 方程为
+\[
+z^{2}-\frac{A z}{t^{p}}+\frac{B}{t^{2 p}}=0
+\]
+$A^{2}$ 小于 $4 B$ 时, 根为虚数, 没有渐近线; $A^{2}$ 大于 $4 B$ 时, 有两条相似的渐近线 $z=\frac{C}{t^{p}}$.
+
+$q$ 小于 $2 p$ 情况下 $t=\infty$ 时, 中间项为零, 得渐近线方程 $z^{2}+\frac{B}{t^{q}}=0$. 前面的渐近线的形 状我们都已经讨论过,下面讨论方程为
+\[
+z^{2}=\frac{C}{t^{k}}
+\]
+的渐近线. 
+
+\section{$\S 209$}
+
+取渐近直线 $u=c$ 为轴, 记纵标 $u-c$ 为 $z$, 则前面的渐近曲线全都包含在方程 $z^{2}=\frac{C}{t^{k}}$ 之中, $k$ 为小于 $n-1$ 的整数. $t=\infty$ 时, 这些曲线的趋向无穷的分支可以用下面的方法来 求. 如果 $k=1$, 即 $z^{2}=\frac{C}{t}$, 那么由 $t$ 不能为负, 知曲线有两个分支 $E X$ 和 $F X$, 分别位于区域 $P$ 和 $R$ 中 (图 39). $k$ 为任何奇数时情况都是这样. 如果 $k$ 为偶数, 例如为 2 , 即 $z^{2}=\frac{C}{t^{2}}$, 那么 首先要看 $C$ 为正还是为负, $C$ 为负, 则方程没有实根, 因而曲线没有伸向无穷的分支; $C$ 为 正, 则曲线有四条趋向无穷并与渐近线 $X Y$ 相合的分支 (图 40), 这四个分支 $E X, F X$, $G Y, H Y$ 分别位于区域 $P, R, Q, S$ 中.
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-11.jpg?height=438&width=368&top_left_y=939&top_left_x=321)
+
+图 39
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-11.jpg?height=440&width=599&top_left_y=936&top_left_x=780)
+
+图 40
+
+\section{$\S 210$}
+
+假定最高次部分 $P$ 有三个相等的因式, 且方程已经化成以 $t, u$ 为坐标, 使得 $u$ 为 $P$ 的 这三重因式,我们有
+\[
+\begin{gathered}
+P=\alpha t^{n-3} u^{3}+\alpha t^{n-4} u^{4}+\cdots \\
+Q=\beta t^{n-1}+\beta t^{n-2} u+\beta t^{n-3} u^{2}+\beta t^{n-4} u^{3}+\beta t^{n-5} u^{4}+\cdots \\
+R=\gamma t^{n-2}+\gamma t^{n-3} u+\gamma t^{n-4} u^{2}+\gamma t^{n-5} u^{3}+\gamma t^{n-6} u^{4}+\cdots \\
+S=\delta t^{n-3}+\delta t^{n-4} u+\delta t^{n-5} u^{2}+\delta t^{n-6} u^{3}+\delta t^{n-7} u^{4}+\cdots
+\end{gathered}
+\]
+等. 由此从 $Q, R$ 的不同情况得:
+\[
+\begin{aligned}
+& \text { I . } \alpha t^{n-3} u^{3}+\beta t^{n-1}=0 . \\
+& \text { II } . \alpha t^{n-3} u^{3}+\beta t^{n-2} u+\gamma t^{n-2}=0 . \\
+& \text { III } . \alpha t^{n-3} u^{3}+\beta t^{n-3} u^{2}+\gamma t^{n-2}=0 . \\
+& \text { IV . } \alpha t^{n-3} u^{3}+\beta t^{n-3} u^{2}+\gamma t^{n-3}+\delta t^{n-3}=0 .
+\end{aligned}
+\]
+\section{$\S 211$}
+
+方程 $\mathrm{I}$ 可化为 $\alpha u^{3}+\beta t^{2}=0$, 也即这渐近线是三阶线, 取横标 $t$ 在 $X Y$ 轴上, 取 $A$ 为原 点, 则这三阶线的形状如图 41 所示, 有两条伸向无穷的分支 $E$ 和 $F$, 分别位于区域 $P$ 和 $Q$.
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-12.jpg?height=347&width=579&top_left_y=616&top_left_x=536)
+
+图 41
+
+方程 II 可化为 $\alpha u^{3}+\beta t u+\gamma t=0, t=\infty$, 从该方程可以得到两个 $u$ 值, 一个有限, 一个 无穷, 与之对应的方程可分解为 $\beta u+\gamma=0$ 和 $\alpha u^{2}+\beta t=0$. 后一个是抛物线方程, 由前面 进行过的讨论知, 曲线有两条伸向无穷并逼近抛物线的分支. 前一个方程给出 $u-c=0$, 是渐近直线方程. 将 $\beta u+\gamma=u-c$ 以外的 $u$ 都换为 $c$, 即可确定该渐近线的性质, 换过之 后得
+\[
+\begin{gathered}
+t^{n-2}(u-c)+t^{n-3}\left(\alpha c^{3}+\beta c^{2}+\gamma c+\delta\right)+ \\
+t^{n-4}\left(\alpha c^{4}+\beta c^{3}+\gamma c^{2}+\delta c+\varepsilon\right)+\cdots=0
+\end{gathered}
+\]
+由此, 照前面讨论的得到或 $(u-c)+\frac{A}{t}=0$, 或 $(u-c)+\frac{A}{t^{2}}=0$, 或 $\cdots$, 最后一个可能的方 程为 $(u-c)+\frac{A}{t^{n-2}}=0$. 因而这种情况下曲线有两条渐近线, 一条是这里的直线, 另一条是 抛物线.
+
+\section{$\S 212$}
+
+方程 III , $\alpha u^{3}+\beta u^{2}+\gamma t=0, t=\infty$ 时, 如果 $u$ 不等于 $\infty$, 它不成立. $u$ 等于 $\infty$ 时, 与 $\alpha u^{3}$ 比较, $\beta u^{2}$ 略去, 得三阶渐近线方程 $\alpha u^{3}+\gamma t=0$. 渐近线的形状如图 42 所示, 有两个伸向 无穷的分支 $A E$ 和 $A F$, 分别位于对顶区域 $P$ 和 $S$.
+
+方程 IV,$\alpha u^{3}+\beta u^{2}+\gamma u+\delta=0$, 给出一条或三条相平行的渐近直线, 这里假定它们中 的任何两个都不相等, 为讨论这渐近直线的性质, 我们先假定 $u=c$ 是方程的单根, 且
+\[
+\alpha u^{3}+\beta u^{2}+\gamma u+\delta=(u-c)\left(f u^{2}+g u+h\right)
+\]
+将因式 $a-c$ 以外的 $u$ 换为 $c$, 得
+\[
+t^{n-3}(u-c)+A t^{n-4}+B t^{n-5}+C t^{n-6}+\cdots=0
+\]
+由此求得状如 $u-c=\frac{K}{t^{*}}$ 的渐近线,其中 $\kappa$ 小于 $n-2$.
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-13.jpg?height=464&width=366&top_left_y=376&top_left_x=650)
+
+图 42
+
+\section{$\S 213$}
+
+如果方程 $\alpha u^{3}+\beta u^{2}+\gamma u+\delta=0$ 的两个根相等, 表达式成为 $(u-c)^{2}(f u+g)$, 将因式 $u-c$ 以外的 $u$ 换为 $c$, 得
+\[
+(u-c)^{2}+\frac{A(u-c)}{t^{p}}+\frac{B}{t^{q}}=0
+\]
+其中 $q$ 小于 $n-2, p$ 小于 $q$, 这种情况我们前面讨论过, 只剩下方程 $\alpha u^{3}+\beta u^{2}+\gamma u+\delta=0$ 的三个根都相等, 即 $(u-c)^{3}$ 这一种情形了. 此时我们得到方程
+\[
+(u-c)^{3} t^{n-3}+P t^{n-4}+Q t^{n-5}+R t^{n-6}+S t^{n-7}+\cdots=0
+\]
+$P$ 不被 $u-c$ 整除时, 换 $u$ 为 $c$ 得
+\[
+(u-c)^{3}+\frac{A}{t}=0
+\]
+$u-c$ 是 $P$ 的单因式时, 将 $u-c$ 以外的 $u$ 换为 $c$, 得
+\[
+(u-c)^{3}+\frac{A(u-c)}{t}+\frac{B}{t^{q}}=0
+\]
+其中 $q$ 小于 $n-2, \frac{B}{t^{q}}$ 是 $u=c$ 时第一个不为零的后继项. $P$ 被 $(u-c)^{2}$ 整除, $Q$ 不含因式 $u-$ $c$ 时，得
+\[
+(u-c)^{3}+\frac{A(u-c)^{2}}{t}+\frac{B}{t^{2}}=0
+\]
+如果第二项被 $(u-c)^{3}$ 整除, 则应依次继续向后,直至遇到不被 $(u-c)^{3}$ 整除的项. 如果遇 到的这一项被 $u-c$ 整除, 则再向后, 直至遇到不被 $u-c$ 整除的项. 如果遇到的项被 $(u-$ $c)^{2}$ 整除, 也应继续向后, 直至遇到不被 $u-c$ 整除的项. 这样我们必能得到一个形状为
+\[
+(u-c)^{3}+\frac{A(u-c)^{2}}{t^{p}}+\frac{B(u-c)}{t^{q}}+\frac{C}{t^{r}}=0
+\]
+的方程, 其中 $r$ 小于 $n-2, q$ 小于 $r, p$ 小于 $q$.
+
+\section{$\S 214$}
+
+该方程或者包含三个状如 $u-c=\frac{K}{t^{\kappa}}$ 的方程,或者包含一个这样的方程和一个状如 $(u-c)^{2}=\frac{K}{t^{*}}$ 的方程, 或者只包含一个状如 $(u-c)^{3}=\frac{K}{t^{*}}$ 的方程. 最后一种情况发生在 $3 p$ 大于 $r$, 且 $3 q$ 大于 $2 r$ 时, 可以有两个方程是虚的, 不指示渐近线. 前两种情况下渐近线的 形状我们都已讨论过. 第三种情况 $(u-c)^{3}=\frac{K}{t^{\kappa}}, \kappa$ 为奇数时, 曲线的形状如图 36 所示, 有 伸向无穷的两个分支 $E X$ 和 $F Y$, 位于区域 $P$ 和 $S$ 内; $\kappa$ 为偶数时,曲线的形状如图 37 所 示,有伸向无穷的两个分支 $E X$ 和 $F Y$,位于渐近直线 $X Y$ 的同侧,在区域 $P$ 和 $Q$ 中.
+
+\section{$\S 215$}
+
+最高次部分的四个或更多个实线性因式相等时, 渐近线的形状应如何进行考察, 这 从以上所讲易于看出. 进一步的考察我们不进行, 作为本章的结束, 我们举一个例子来运 用本章所得结果.
+
+例 设已给曲线的方程为
+\[
+y^{3} x^{2}(y-x)-x y\left(y^{2}+x^{2}\right)+1=0
+\]
+最高次部分 $y^{3} x^{2}(y-x)$ 有单因式 $y-x$, 两个相等因式 $x^{2}$ 和三个相等因式 $y^{3}$.
+
+我们先考虑单因式 $y-x$, 此时置 $y=x$, 得 $y-x-\frac{2}{x}=0, x=\infty$ 时得 $y-x=0$. 这是 图 43 上渐近直线 $B A C$ 的方程. $B A C$ 与 $X Y$ 轴在原点处相交成半直角. 做变换 $y=\frac{u+t}{\sqrt{2}}$, $x=\frac{t-u}{\sqrt{2}}$, 使渐近线 $B A C$ 为轴,方程变为
+\[
+\frac{(u+t)\left(t^{2}-u^{2}\right)^{2} u}{4}-\frac{\left(t^{2}-u^{2}\right)\left(t^{2}+u^{2}\right)}{2}+1=0
+\]
+乘 4 , 得
+\[
+\begin{aligned}
+0= & t^{5} u+t^{4} u^{2}-2 t^{3} u^{3}-2 t^{2} u^{4}+t u^{5}+u^{6}- \\
+& 2 t^{4}+2 u^{4}+4
+\end{aligned}
+\]
+$t=\infty$ 时从该方程求得 $u=0$, 这样 $t^{5} u$ 和 $-2 t^{4}$ 以外的项都略去, 得渐近曲线 $u=\frac{2}{t}$. 即单因 式使所给曲线有伸向无穷的分支 $b B$ 和 $c C$.
+
+\section{$\S 216$}
+
+现在考虑两个相等因式 $x x$. 我们有
+\[
+x x=\frac{x y\left(y^{2}+x^{2}\right)-1}{y^{3}(y-x)}
+\]
+取垂直于原轴 $X Y$ 的直线 $A D$ 作轴, 为此做变换 $y=t, x=u$,得方程
+\[
+0=t^{4} u^{4}-t^{3} u^{3}+t^{3} u-t u^{3}+1
+\]
+$t=\infty$ 时该方程变为 $t^{4} u^{2}-t^{3} u+1=0$. 由此得两个方程
+\[
+u=\frac{1}{t}, \quad u=\frac{1}{t^{3}}
+\]
+这样两个相等因式 $x x$ 给出四条伸向无穷的分支,两条 $d D$ 和 $e E$, 来自方程 $u=\frac{1}{t}$, 另外两 条 $\delta D$ 和 $\varepsilon E$,来自方程 $u=\frac{1}{t^{3}}$.
+
+
+【图，待补】
+%%![](https://cdn.mathpix.com/cropped/2023_02_05_99a9a4502532b1a3cb9ag-15.jpg?height=658&width=680&top_left_y=822&top_left_x=493)
+
+图 43
+
+\section{$\S 217$}
+
+最后考虑三个相等因式 $y^{3}$, 取 $X Y$ 为轴, 为此令 $x=t, y=u$,方程变为
+\[
+0=-t^{3} u^{3}+t^{2} u^{4}-t^{3} u-t u^{3}+1
+\]
+$t=\infty$ 时给出 $t^{3} u^{3}+t^{3} u=0$, 也即 $u\left(u^{2}+1\right)=0 \cdot u^{2}+1=0$ 没有实根,因而 $u=0$ 是唯一的渐 近直线, 它与轴 $X Y$ 相合. 这条渐近线的性质由方程 $t^{3} u=1$ 或 $u=\frac{1}{t^{3}}$ 表示. 结论是三重因 式给出两条伸向无穷的分支 $y Y$ 和 $x X$. 本例中曲线共有八条伸向无穷的分支. 至于这八 条分支在有界范围中彼此相对位置的情况, 这里不进行讨论. 
+
+\section{$\S 218$}
+
+从本章和前一章我们清楚地看到了伸向无穷的分支的多样性.首先，曲线伸向无穷的分支,必定或者像双曲线那样逼近于一条作为渐近线的直线,或者像抛物线那样, 没有 渐近直线. 前一种情况下, 曲线的分支叫双曲分支, 后一种情况下, 曲线的分支叫抛物分 支,这每一种分支的形状都有无穷多种. 双曲分支的性质由 $t, u$ 间的下列方程表示, 其中 $t$ 趋向无穷
+\[
+\begin{aligned}
+u & =\frac{A}{t}, \quad u=\frac{A}{t^{2}}, \quad u=\frac{A}{t^{3}}, \quad u=\frac{A}{t^{4}}, \quad \cdots \\
+u^{2} & =\frac{A}{t}, \quad u^{2}=\frac{A}{t^{2}}, \quad u^{2}=\frac{A}{t^{3}}, \quad u^{2}=\frac{A}{t^{4}}, \quad \cdots \\
+u^{3} & =\frac{A}{t}, \quad u^{3}=\frac{A}{t^{2}}, \quad u^{3}=\frac{A}{t^{3}}, \quad u^{3}=\frac{A}{t^{4}}, \quad \cdots
+\end{aligned}
+\]
+等. 抛物分支的性质由下列方程表示
+\[
+\begin{array}{rrr}
+u^{2}=A t, & u^{3}=A t, \quad u^{4}=A t, \quad u^{5}=A t, \quad \cdots \\
+u^{3}=A t^{2}, \quad u^{4}=A t^{2}, \quad u^{5}=A t^{2}, \quad u^{6}=A t^{2}, \quad \cdots \\
+u^{4}=A t^{3}, \quad u^{5}=A t^{3}, \quad u^{6}=A t^{3}, \quad u^{7}=A t^{3}, \quad \cdots
+\end{array}
+\]
+等. $t$ 和 $u$ 的指数不都为偶数时, 这些方程中的每一个都至少给出两条趋向无穷的分支. 两个指数都为偶数时, 看方程有无实根, 无实根时没有趋向无穷的分支, 有实根时有四条 趋向无穷的分支.
+

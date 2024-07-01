@@ -1,0 +1,862 @@
+\chapter{第十八章 连分数}
+
+\section{$\S 356$}
+
+我们已经讨论了两类无穷——无穷级数和无穷乘积,现在讨论第三类一—连分数. 到目前为止, 对于连分数的研究还不多, 但它将广泛地应用于无穷分析, 这是无疑的. 我 们已经举过使这种应用成为可能的例子. 本章所讲, 对算术和普通代数都颇为有益.
+
+\section{$\S 357$}
+
+连分数是这样的分数, 分母是整数与分数的和, 这分数的分母又是整数与分数的和, 类推下去, 这过程可以无穷地向下延续, 也可以在某一点停止. 连分数分为两类, 一类为
+\[
+a+\frac{1}{b+\frac{1}{c+\frac{1}{d+\frac{1}{e+\frac{1}{f+\cdots}}}}}
+\]
+另一类为
+\[
+a+\frac{\alpha}{b+\frac{\beta}{c+\frac{\gamma}{d+\frac{\delta}{e+\frac{\varepsilon}{f+\cdots}}}}}
+\]
+第一类, 分子全是 1 , 我们要考察的主要是这一类. 第二类, 分子可以是任何数.
+
+\section{$\S 358$}
+
+前面给出了连分数的形状, 接着要做的第一件事, 是怎样把连分数化为分数. 为了能 找出规律, 第一步只取一个整数, 接下去每步增加一层分数. 这样我们得到
+\[
+a=a
+\]
+\[
+\begin{aligned}
+& \qquad a+\frac{1}{b}=\frac{a b+1}{b} \\
+& \qquad a+\frac{1}{b+\frac{1}{c}}=\frac{a b c+a+c}{b c+1} \\
+& a+\frac{1}{b+\frac{1}{c+\frac{1}{d}}}=\frac{a b c d+a b+a d+c d+1}{b c d+b+d} \\
+& b \frac{1}{c+\frac{1}{d+\frac{1}{e}}}
+\end{aligned}
+\]
+\section{$\S 359$}
+
+从这些分数本身我们看不出, 分子分母是依怎样的规律由字母 $a, b, c, d, \cdots$ 形成. 但 细心的读者可能已经看出了, 一个分数是怎样由前两个分数形成的. 方法是: 分子等于前 一个分子与新字母的积加上再前一个分子. 分母依同样的规律由前两个分母和新字母形 成. 按顺序写出字母 $a, b, c, d, \cdots$, 作分数的上标. 在字母下面写出相应的分数, 成为
+\[
+\begin{array}{ccc}
+a, b, c, & d, \\
+\frac{1}{0}, \frac{a}{1}, \frac{a b+1}{b}, & \frac{a b c+a+c}{b c+1}, & \frac{a b c d+a b+a d+c d+1}{b c d+b+d}, \cdots
+\end{array}
+\]
+从第三个分数开始, 每一个分子都等于前一个分子与其上标之积加上再前一个分子. 分 母也依同样的规律由前两个分母和上标形成. 为了一开始就能使用我们的规律, 我们加 上了分数 $\frac{1}{0}$, 它不属于连分数. 这每一个分数都给出连分数到前个上标字母处为止的值.
+
+\section{$\S 360$}
+
+对第二类连分数
+\[
+a+\frac{\alpha}{b+\frac{\beta}{c+\frac{\gamma}{d+\frac{\delta}{e+\frac{\varepsilon}{f+\cdots}}}}}
+\]
+类似地, 我们有
+\[
+a=a
+\]
+\[
+\begin{gathered}
+a+\frac{\alpha}{b}=\frac{a b+\alpha}{b} \\
+a+\frac{\alpha}{b+\frac{\beta}{c}}=\frac{a b c+\beta a+\alpha c}{b c+\beta} \\
+a+\frac{\alpha}{b+\frac{\beta}{c+\frac{\gamma}{d}}}=\frac{a b c d+\beta a d+\alpha c d+\gamma a b+\alpha \gamma}{b c d+\beta d+\gamma b}
+\end{gathered}
+\]
+和
+\[
+\begin{aligned}
+& a, b, c, \\
+& d \text {, } \\
+& e \\
+& \frac{1}{0}, \frac{a}{1}, \frac{a b+\alpha}{b}, \quad \frac{a b c+\beta a+\alpha c}{b c+\beta}, \quad \frac{a b c d+\beta a d+\alpha c d+\gamma a b+\alpha \gamma}{b c d+\beta d+\gamma b}, \cdots \\
+& \alpha, \beta, \gamma ,\delta,\varepsilon
+\end{aligned}
+\]
+\section{$\S 361$}
+
+第二类比第一类, 在上标字母 $a, b, c, d, \cdots$ 之外, 添上了下标字母 $\alpha, \beta, \gamma, \delta, \cdots$. 第 一二二两个分数也为 $\frac{1}{0}$ 和 $\frac{a}{1}$. 之后的每一个分数, 分子都等于前一个分子与其上标之积, 加上再前一个分子与其下标之积, 也即新分子是两个积之和; 分母的形成规律与分子相 同, 等于前一个分母与其上标之积, 加上再前一个分母与其下标之积. 这样得到的每一个 分数,给出的都是连分数到前一个分数上标处(含上标) 的值.
+
+\section{$\S 362$}
+
+如果分数继续到用完最后的上下标, 那么这最后一个分数给出的, 就是连数的真值. 前面的分数都是连分数的近似值, 离最后一个分数越近的近似程度越高. 假定连分数
+\[
+a+\frac{\alpha}{b+\frac{\beta}{c+\frac{\gamma}{d+\frac{\varepsilon}{e+\cdots}}}}=x
+\]
+显然第一个分数 $\frac{1}{0}$ 比 $x$ 大, 第二个分数 $\frac{a}{1}$ 比 $x$ 小, 第三个分数 $a+\frac{a}{b}$ 又比 $x$ 大, 第四个又 比 $x$ 小, 等等. 也即, 这些分数比 $x$ 大比 $x$ 小交替. 显然, 每一个分数都比前一个更靠近真 值. 这样一来, 即使连分数继续到无穷, 只要分子 $\alpha, \beta, \gamma, \delta, \cdots$ 不是太大, 我们都可以迅速 简便地得到 $x$ 的近似值, 如果分子都是 1 , 那就更不成问题. 
+
+\section{$\S 363$}
+
+为进一步看清算出的分数对真值的逼近, 我们考察算出的分数的差. 第一个分数 $\frac{1}{0}$ 不考虑. 第三减第二, 差为
+\[
+\frac{\alpha}{b}
+\]
+第三减第四,差为
+\[
+\frac{\alpha \beta}{b(b c+\beta)}
+\]
+第五减第四,差为
+\[
+\frac{\alpha \beta \gamma}{(b c+\beta)(b c d+\beta d+\gamma b)}
+\]
+等等. 由此得到连分数的值可以用级数
+\[
+x=a+\frac{a}{b}-\frac{\alpha \beta}{b(b c+\beta)}+\frac{\alpha \beta \gamma}{(b c+\beta)(b c d+\beta d+\gamma b)}-\cdots
+\]
+表示. 如果连分数不继续到无穷, 这级数的项数就也是有限的.
+
+\section{$\S 364$}
+
+这样, 我们就找到了一种方法, 将去掉了字母 $a$ 的连分数展开成符号交错的级数. 例 如
+\[
+x=\frac{\alpha}{b+\frac{\beta}{c+\frac{\gamma}{d+\frac{\delta}{e+\frac{\varepsilon}{f+\cdots}}}}}
+\]
+从上节结果我们有
+\[
+\begin{gathered}
+x=\frac{\alpha}{b}-\frac{\alpha \beta}{b(b c+\beta)}+\frac{\alpha \beta \gamma}{(b c+\beta)(b c d+\beta d+\gamma b)}-\cdots \\
+\frac{\alpha \beta \gamma \delta}{(b c+\beta)(b c d e+\beta d e+\gamma b e+\delta b c+\beta \delta)}+\cdots
+\end{gathered}
+\]
+如果 $\alpha, \beta, \gamma, \delta, \cdots$ 不是递增的,例如全为 1 , 又如果分母中的 $a, b, c, d, \cdots$ 全为正整数, 则 连分数可展成一个收玫很快的级数表示. 
+
+\section{$\S 365$}
+
+我们考虑反问题:化交错级数为连分数.设交错级数为
+\[
+x=A-B+C-D+E-F+\cdots
+\]
+将这里的 $A, B, C, \cdots$ 与连分数化成的级数的项相比较,那么从得到的下列左式推出对应 的右式
+\[
+\begin{array}{ll}
+A=\frac{\alpha}{b} & \alpha=A b \\
+\frac{B}{A}=\frac{\beta}{b c+\beta} & \beta=\frac{B b c}{A-B} \\
+\frac{C}{B}=\frac{\gamma b}{b c d+\beta d+\gamma b} & \gamma=\frac{C d(b c+\beta)}{b(B-C)} \\
+\frac{D}{C}=\frac{\delta(b c+\beta)}{b c d e+\beta a e+\gamma b e+\delta b c+\beta \delta} & \delta=\frac{D e(b c d+\beta d+\gamma b)}{(b c+\beta)(C-D)}
+\end{array}
+\]
+由
+\[
+\beta=\frac{B b c}{A-B}
+\]
+得
+\[
+b c+\beta=\frac{A b c}{A-B}
+\]
+从而
+\[
+\gamma=\frac{A C c d}{(A-B)(B-C)}
+\]
+由
+\[
+b c d+\beta d+\gamma b=(b c+\beta) d+\gamma b=\frac{A b c d}{A-B}+\frac{A C b c d}{(A-B)(B-C)}=\frac{A B b c d}{(A-B)(B-C)}
+\]
+得
+\[
+\frac{b c d+\beta d+\gamma b}{b c+\beta}=\frac{B d}{B-C}
+\]
+从而
+\[
+\delta=\frac{B D d e}{(B-C)(C-D)}
+\]
+类似地, 我们得到
+\[
+\varepsilon=\frac{C E e f}{(C-D)(D-E)}
+\]
+等等.
+
+\section{$\S 366$}
+
+为了更清楚地说明这规律, 我们令
+\[
+P=b
+\]
+\[
+\begin{aligned}
+& Q=b c+\beta \\
+& R=b c d+\beta d+\gamma b \\
+& S=b c d e+\beta d e+\gamma b e+\delta b c+\beta \delta \\
+& T=b c d e f+\beta d e f+\gamma b e f+\delta b c f+\varepsilon b c d+\varepsilon \beta d+\varepsilon \gamma b+\beta \delta f \\
+& V=b c d e f g+\beta d e f g+\gamma b e f g+\delta b c f g+\varepsilon b c d g+\varepsilon b c d e+ \\
+& \varepsilon \beta d g+\varepsilon \beta d e+\varepsilon \gamma b g+\varepsilon \gamma b e+\beta \delta f g+\varepsilon \delta b c+\varepsilon \beta \delta
+\end{aligned}
+\]
+这些表达式可写成
+\[
+\begin{gathered}
+Q=P c+\beta \\
+R=Q d+\gamma P \\
+S=R e+\delta Q \\
+T=S f+\varepsilon R \\
+V=T g+\zeta S
+\end{gathered}
+\]
+利用字母 $P, Q, R, \cdots$ 我们有
+\[
+x=\frac{\alpha}{P}-\frac{\alpha \beta}{P Q}+\frac{\alpha \beta \gamma}{Q R}-\frac{\alpha \beta \gamma \delta}{R S}+\frac{\alpha \beta \gamma \delta \varepsilon}{S T}-\cdots
+\]
+\section{$\S 367$}
+
+由假设
+\[
+x=A-B+C-D+E-F+\cdots
+\]
+得
+\[
+\begin{aligned}
+& A=\frac{\alpha}{P}, \alpha=A P \\
+& \frac{B}{A}=\frac{\beta}{Q}, \beta=\frac{B Q}{A} \\
+& \frac{C}{B}=\frac{\gamma P}{R}, \gamma=\frac{C R}{B P} \\
+& \frac{D}{C}=\frac{\delta Q}{S}, \delta=\frac{D S}{C Q} \\
+& \frac{E}{D}=\frac{\varepsilon R}{T}, \varepsilon=\frac{E T}{D R}
+\end{aligned}
+\]
+求差,得
+\[
+\begin{gathered}
+A-B=\frac{\alpha(Q-\beta)}{P Q}=\frac{\alpha c}{Q}=\frac{A P c}{Q} \\
+B-C=\frac{\alpha \beta(R-\gamma P)}{P Q R}=\frac{\alpha \beta d}{P R}=\frac{B Q d}{R}
+\end{gathered}
+\]
+\[
+\begin{aligned}
+& C-D=\frac{\alpha \beta \gamma(S-\delta Q)}{Q R S}=\frac{\alpha \beta \gamma e}{Q S}=\frac{C R e}{S} \\
+& D-E=\frac{\alpha \beta \gamma \delta(T-\varepsilon R)}{R S T}=\frac{\alpha \beta \gamma \delta f}{R T}=\frac{D S f}{T}
+\end{aligned}
+\]
+使每个差与它下面的一个相乘,得
+\[
+\begin{aligned}
+& (A-B)(B-C)=A B c d \cdot \frac{P}{R}, \frac{R}{P}=\frac{A B c d}{(A-B)(B-C)} \\
+& (B-C)(C-D)=B C d e \cdot \frac{Q}{S}, \frac{S}{Q}=\frac{B C d e}{(B-C)(C-D)} \\
+& (C-D)(D-E)=C D e f \cdot \frac{R}{T}, \frac{T}{R}=\frac{C D e f}{(C-D)(D-E)}
+\end{aligned}
+\]
+由
+\[
+P=b, Q=\frac{\alpha c}{A-B}=\frac{A b c}{A-B}
+\]
+得
+\[
+\begin{gathered}
+\alpha=A b \\
+\beta=\frac{B b c}{A-B} \\
+\delta=\frac{A C c d}{(A-B)(B-C)} \\
+\delta=\frac{B D d e}{(B-C)(C-D)} \\
+\qquad=\frac{C E e f}{(C-D)(D-E)} \\
+\vdots
+\end{gathered}
+\]
+\section{$\S 368$}
+
+上节求出了分子 $\alpha, \beta, \gamma, \delta, \cdots$. 分母 $b, c, d, e, \cdots$ 由我们选定, 我们选择整数的 $b, c, d$, $e, \cdots$, 要求使得 $\alpha, \beta, \gamma, \delta, \cdots$ 为整数. 当然这以 $A, B, C, D, \cdots$ 为整数作前提. 假定这前提 具备,下面逐行都取左得右
+\[
+\begin{gathered}
+b=1, \alpha=A \\
+c=A-B, \beta=B \\
+d=B-C, \gamma=A C \\
+e=C-D, \delta=B D \\
+f=D-E, \varepsilon=C E
+\end{gathered}
+\]
+即交错级数
+\[
+x=A-B+C-D+E-F+\cdots
+\]
+可表示成连分数
+\[
+x=\frac{A}{1+\frac{B}{A-B+\frac{A C}{B-C+\frac{B D}{C-D+\frac{C E}{D-E+\cdots}}}}}
+\]
+\section{$\S 369$}
+
+如果交错级数的每一项都是分数, 例如
+\[
+x=\frac{1}{A}-\frac{1}{B}+\frac{1}{C}-\frac{1}{D}+\frac{1}{E}-\cdots
+\]
+则 $\alpha, \beta, \gamma, \delta, \cdots$ 的值为
+\[
+\begin{gathered}
+\alpha=\frac{b}{A} \\
+\beta=\frac{A b c}{B-A} \\
+\gamma=\frac{B^{2} c d}{(B-A)(C-B)} \\
+\delta=\frac{C^{2} d e}{(C-B)(D-C)} \\
+\varepsilon=\frac{D^{2} e f}{(D-C)(E-D)}
+\end{gathered}
+\]
+下面逐行都取左得右
+\[
+\begin{gathered}
+b=A, \alpha=1 \\
+c=B-A, \beta=A^{2} \\
+d=C-B, \gamma=B^{2} \\
+e=D-C, \delta=C^{2}
+\end{gathered}
+\]
+从而 $x$ 化成的连分数为
+\[
+x=\frac{1}{A+\frac{A^{2}}{B-A+\frac{B^{2}}{C-B+\frac{C^{2}}{D-C+\cdots}}}}
+\]
+例 1 化无穷级数
+\[
+1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\cdots
+\]
+为连分数.
+
+这里
+\[
+A=1, B=2, C=3, D=4, \cdots
+\]
+所给级数的值为 $\log 2$, 我们得到
+\[
+\log 2=\frac{1}{1+\frac{1}{1+\frac{4}{1+\frac{9}{1+\frac{16}{1+\frac{25}{1+\cdots}}}}}}
+\]
+例 2 化无穷级数
+\[
+\frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}-\cdots
+\]
+为连分数. $\pi$ 表示直径为 1 的圆的周长.
+
+依次取
+\[
+A, B, C, D, \cdots
+\]
+为
+\[
+1,3,5,7, \cdots
+\]
+我们得到
+\[
+\frac{\pi}{4}=\frac{1}{1+\frac{1}{2+\frac{9}{2+\frac{25}{2+\frac{49}{2+\cdots}}}}}
+\]
+取倒数, 得
+\[
+\frac{4}{\pi}=1+\frac{1}{2+\frac{9}{2+\frac{25}{2+\frac{49}{2+\cdots}}}}
+\]
+这是 Lord Brouncker 给出的圆周率, $\pi$ 的表达式.
+
+例 3 设给定的无穷级数为
+\[
+x=\frac{1}{m}-\frac{1}{m+n}+\frac{1}{m+2 n}-\frac{1}{m+3 n}+\cdots
+\]
+那么由
+\[
+A=m, B=m+n, C=m+2 n, \cdots
+\]
+我们得到该级数化成的连分数为
+\[
+x=\frac{1}{m+\frac{m^{2}}{n+\frac{(m+n)^{2}}{n+\frac{(n+2 n)^{2}}{n+\frac{(m+3 n)^{2}}{n+\cdots}}}}}
+\]
+取倒数,得
+\[
+\frac{1}{x}-m=\frac{m^{2}}{n+\frac{(m+n)^{2}}{n+\frac{(m+2 n)^{2}}{n+\frac{(m+3 n)^{2}}{n+\cdots}}}}
+\]
+例 $4 \S 178$ 我们得到
+\[
+\frac{\pi \cos \frac{m \pi}{n}}{n \sin \frac{m \pi}{n}}=\frac{1}{m}-\frac{1}{n-m}+\frac{1}{n+m}-\frac{1}{2 n-m}+\frac{1}{2 n+m}-\cdots
+\]
+这里
+\[
+A=m, B=n-m, C=n+m, D=2 n-m, \cdots
+\]
+从而
+
+\[\frac{\pi \cos \frac{m\pi}{n}}{n \sin \frac{m\pi}{n}}=\frac{1}{m+\frac{m^2}{n-2m+\frac{(n-m)^2}{2m+\frac{(n+m)^2}{n-2m+\frac{(2n-m)^2}{2m+\frac{(2n+m)^2}{n-2m+...}}}}}} \]
+
+\section{$\S 370$}
+
+如果级数的项由逐项添加因式的乘积构成, 即
+\[
+x=\frac{1}{A}-\frac{1}{A B}+\frac{1}{A B C}-\frac{1}{A B C D}+\frac{1}{A B C D E}-\cdots
+\]
+则
+\[
+\begin{gathered}
+\alpha=\frac{b}{A} \\
+\beta=\frac{b c}{B-1}
+\end{gathered}
+\]
+\[
+\begin{aligned}
+\gamma & =\frac{B c d}{(B-1)(C-1)} \\
+\delta & =\frac{C d e}{(C-1)(D-1)} \\
+\varepsilon & =\frac{D e f}{(D-1)(E-1)}
+\end{aligned}
+\]
+$\hat{\nabla}$
+\[
+\begin{gathered}
+b=A \text {, 则 } \alpha=1 \\
+c=B-1 \text {, 则 } \beta=A \\
+d=C-1 \text {, 则 } \gamma=B \\
+e=D-1 \text {, 则 } \delta=C \\
+f=E-1 \text {, 则 } \varepsilon=D
+\end{gathered}
+\]
+我们得到
+\[
+x=\frac{1}{A+\frac{A}{B-1+\frac{C}{C-1+\frac{D}{D-1+\frac{1+\cdots}{E-1+\cdots}}}}}
+\]
+例 5 化 $\S 123$ 求得的级数
+\[
+\frac{1}{\mathrm{e}}=1-\frac{1}{1}+\frac{1}{1 \cdot 2}-\frac{1}{1 \cdot 2 \cdot 3}+\frac{1}{1 \cdot 2 \cdot 3 \cdot 4}-\cdots
+\]
+或
+\[
+1-\frac{1}{e}=\frac{1}{1}-\frac{1}{1 \cdot 2}+\frac{1}{1 \cdot 2 \cdot 3}-\frac{1}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+为连分数.
+
+这里
+\[
+A=1, B=2, C=3, D=4, \cdots
+\]
+我们得到
+\[
+1-\frac{1}{e}=\frac{1}{1+\frac{1}{1+\frac{2}{2+\frac{3}{3+\frac{4}{4+\frac{5}{5+\cdots}}}}}}
+\]
+为摆脱开始部分的不规律, 我们求得 
+\[
+\begin{aligned}
+& \frac{1}{e-1}=\frac{1}{1+\frac{2}{2+\frac{3}{3+\frac{4}{4+\frac{5}{5+\cdots}}}}}
+\end{aligned}
+\]
+例 $6 \S 134$ 得到, 等于半径的弧, 其余弦等于
+\[
+1-\frac{1}{2}+\frac{1}{2 \cdot 12}-\frac{1}{2 \cdot 12 \cdot 30}+\frac{1}{2 \cdot 12 \cdot 30 \cdot 56}-\cdots
+\]
+我们化它为连分数.
+
+这里
+\[
+A=, B=2, C=12, D=30, E=56, \cdots
+\]
+记所给级数为 $x$,则
+\[
+x=\frac{1}{1+\frac{1}{1+\frac{2}{11+\frac{12}{29+\frac{30}{55+\cdots}}}}}
+\]
+或
+\[
+\frac{1}{x}-1=\frac{1}{1+\frac{2}{11+\frac{12}{29+\frac{30}{55+\cdots}}}}
+\]
+\section{$\S 371$}
+
+设级数的形状为
+\[
+x=A-B z+C z^{2}-D z^{3}+E z^{4}-F z^{5}+\cdots
+\]
+闪
+\[
+\begin{gathered}
+\alpha=A b \\
+\beta=\frac{B b c z}{A-B z} \\
+\gamma=\frac{A C c d z}{(A-B z)(B-C z)} \\
+\delta=\frac{B D d e z}{(B-C z)(C-D z)} \\
+\varepsilon=\frac{C E e f z}{(C-D z)(D-E z)}
+\end{gathered}
+\]
+%%14p261-280
+令
+\[
+\begin{gathered}
+b=1 \text {, 则 } \alpha=A \\
+c=A-B z \text {, 则 } \beta=B z \\
+d=B-C z \text {, 则 } \gamma=A C z \\
+e=C-D z \text {, 则 } \delta=B D z
+\end{gathered}
+\]
+从而
+\[
+x=\frac{A}{1+\frac{B z}{A-B z+\frac{A c z}{B-C z+\frac{B D z}{C-D z+\cdots}}}}
+\]
+\section{$\S 372$}
+
+为得到更一般些的结果, 我们取
+\[
+x=\frac{A}{L}-\frac{B y}{M z}+\frac{C y^{2}}{N z^{2}}-\frac{D y^{3}}{O z^{3}}+\frac{E y^{4}}{P z^{4}}-\cdots
+\]
+与前面比较, 得
+\[
+\begin{gathered}
+\alpha=\frac{A b}{L} \\
+\beta=\frac{B L b c y}{A M z-B L y} \\
+\gamma=\frac{A C M^{2} c d y z}{(A M z-B L y)(B N z-C M y)} \\
+\delta=\frac{B D N^{2} d e y z}{(B N z-C M y)(C O z-D N y)}
+\end{gathered}
+\]
+令
+\[
+\begin{gathered}
+b=L \text {, 则 } \alpha=A \\
+c=A M z-B L y \text {, 则 } \beta=B L^{2} y \\
+d=B N z-C M y \text {, 则 } \gamma=A C M^{2} y z \\
+e=C O z-D N y \text {, 则 } \delta=B D N^{2} y z \\
+f=D P z-E O y \text {, 则 } \varepsilon=C E O^{2} y z
+\end{gathered}
+\]
+所给级数化为连分数 
+\[
+x=\frac{A}{L+\frac{B L^{2} y}{A M z-B L y+\frac{A C M^{2} y z}{B N z-C M y+\frac{B D N^{2} y z}{C O z-D N y+\cdots}}}}
+\]
+\section{$\S 373$}
+
+最后取级数的形状为
+\[
+x=\frac{A}{L}-\frac{A B y}{L M z}+\frac{A B C y^{2}}{L M N z^{2}}-\frac{A B C D y^{3}}{L M N O z^{3}}+\cdots
+\]
+这时我们得到
+\[
+\begin{gathered}
+\alpha=\frac{A b}{L} \\
+\beta=\frac{B b c y}{M z-B y} \\
+\gamma=\frac{C M c d y z}{(M z-B y)(N z-C y)} \\
+\delta=\frac{D N d e y z}{(N z-C y)(O z-D y)} \\
+\varepsilon=\frac{E O e f y z}{(O z-D y)(P z-E y)}
+\end{gathered}
+\]
+为得到整数值, 我们取
+\[
+\begin{gathered}
+b=L z, \text { 从而 } \alpha=A z \\
+d=N z-C y, \text { 从而 } \gamma=C M y z \\
+e=O z-D y, \text { 从而 } \delta=D N y z \\
+f=P z-E y, \text { 从而 } \varepsilon=E O y z
+\end{gathered}
+\]
+我们得到连分数
+\[
+x=\frac{A z}{L z+\frac{B L y z}{M z-B y+\frac{C M y z}{N z-C y+\frac{D N y z}{O z-D y+\cdots}}}}
+\]
+或
+\[
+\frac{A z}{z}-A y=L z-A y+\frac{B L y z}{M z-B y+\frac{C M y z}{N z-C y+\frac{D N y z}{O z-D y+\cdots}}}
+\]
+\section{$\S 374$}
+
+用化级数为连分数的方法, 可以得到无数个连分数, 项数无穷, 值已知. 前几章讨论 过的级数, 其中一些就可以化为连分数, 我们已经举了不少化级数为连分数的例子. 反过 来, 连分数也可化为级数, 级数的和, 当然就是连分数的值. 但我们还是需要一种方法, 能 直接算出连分数的值. 因为很多级数, 甚至是简单的级数, 它们的和根本求不出, 或者虽 能求出, 但太麻烦.
+
+\section{$\S 375$}
+
+值用别的方法易求, 化成的级数, 其和根本求不出, 连分数
+\[
+x=\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+\cdots}}}}
+\]
+就是这样的. 这个连分数分母都相等. 用前面给出的化连分数为级数的方法, 得分数序列
+\[
+\begin{gathered}
+0,2,2,2,2,2,2, \cdots \\
+\frac{1}{0}, \frac{0}{1}, \frac{1}{2}, \frac{2}{5}, \frac{5}{12}, \frac{12}{29}, \frac{29}{70}, \cdots
+\end{gathered}
+\]
+从该序列得级数
+\[
+x=0+\frac{1}{2}-\frac{1}{2 \cdot 5}+\frac{1}{5 \cdot 12}-\frac{1}{12 \cdot 29}+\frac{1}{29 \cdot 70}-\cdots
+\]
+两项两项合并,得
+\[
+x=\frac{2}{1 \cdot 5}+\frac{2}{5 \cdot 29}+\frac{2}{29 \cdot 169}+\cdots
+\]
+或
+\[
+x=\frac{1}{2}-\frac{2}{2 \cdot 12}-\frac{2}{12 \cdot 70}-\cdots
+\]
+又由
+\[
+\begin{gathered}
+x=\frac{1}{4}-\frac{1}{2 \cdot 2 \cdot 5}+\frac{1}{2 \cdot 5 \cdot 12}-\frac{1}{2 \cdot 12 \cdot 29}+\cdots+ \\
+\frac{1}{4}-\frac{1}{2 \cdot 2 \cdot 5}+\frac{1}{2 \cdot 5 \cdot 12}-\frac{1}{2 \cdot 12 \cdot 29}+\cdots
+\end{gathered}
+\]
+我们有
+\[
+x=\frac{1}{4}+\frac{1}{1 \cdot 5}-\frac{1}{2 \cdot 12}+\frac{1}{5 \cdot 29}-\frac{1}{12 \cdot 70}+\cdots
+\]
+虽然这个级数强收玫, 但关于它的和, 我们一无所知. 
+
+\section{$\S 376$}
+
+我们考虑分母都相等或分母循环的连分数. 这种连分数, 按循环节去掉开头若干项, 其值不变. 例如上一节的连分数
+\[
+x=\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+\cdots}}}}
+\]
+我们有
+\[
+x=\frac{1}{2+x}
+\]
+或
+\[
+x^{2}+2 x=1
+\]
+从而
+\[
+x+1=\sqrt{2}
+\]
+我们得到这个连分数的值为
+\[
+\sqrt{2}-1
+\]
+上节化这个连分数为级数的那个序列, 它的分数越来越靠近本节得到的这个值, 而 且速度很快. 用有理数逼近这个无理数, 恐怕很难找到更快的方法. $\sqrt{2}-1$ 与 $\frac{29}{70}$ 是很靠近 的
+\[
+\sqrt{2}-1=0.41421356236
+\]
+而
+\[
+\frac{29}{70}=0.41428571428
+\]
+误差是在十万分位上.
+
+\section{$\S 377$}
+
+连分数逼近 2 的方根 $\sqrt{2}$, 这速度之快我们看到了. 下面我们看看它对另外一些数的 方根的逼近, 同样是很快的.
+\[
+x=\frac{1}{a+\frac{1}{a+\frac{1}{a+\frac{1}{a+\frac{1}{a+\cdots}}}}}
+\]
+我们有
+\[
+x=\frac{1}{a+x}
+\]
+或
+\[
+x^{2}+a x=1
+\]
+从而
+\[
+x=-\frac{1}{2} a+\sqrt{1+\frac{a^{2}}{4}}=\frac{\sqrt{a^{2}+4}-a}{2}
+\]
+根据这一结果, 就可以用连分数化成的分数去逼近方根 $\sqrt{a^{2}+4}$, 令 $a$ 取 $1,2,3,4, \cdots$, 我 们就可以逼近方根 $\sqrt{5}, \sqrt{2}, \sqrt{13}, \sqrt{5}, \sqrt{29}, \sqrt{10}, \sqrt{53}, \cdots$. 即
+\[
+\begin{gathered}
+1,1,1,1,1,1, \cdots \\
+\frac{0}{1}, \frac{1}{1}, \frac{1}{2}, \frac{2}{3}, \frac{3}{5}, \frac{5}{8}, \cdots=\frac{\sqrt{5}-1}{2} \\
+2,2,2,2,2,2, \cdots \\
+\frac{0}{1}, \frac{1}{2}, \frac{2}{5}, \frac{5}{12}, \frac{12}{29}, \frac{29}{70}, \cdots=\sqrt{2}-1 \\
+3,3,3,3,3,3, \cdots \\
+\frac{0}{1}, \frac{1}{3}, \frac{3}{10}, \frac{10}{33}, \frac{33}{109}, \frac{109}{360}, \cdots=\frac{\sqrt{13}-3}{2} \\
+\frac{0}{1}, \frac{1}{4}, \frac{4}{17}, \frac{17}{72}, \frac{72}{305}, \frac{305}{1292}, \cdots=\sqrt{5}-2
+\end{gathered}
+\]
+需要指出, $a$ 的值越大逼近的速度越快. 例如在我们列出的这最后一行中
+\[
+\sqrt{5}=2+\frac{305}{1292}
+\]
+误差小于 $\frac{1}{1292 \cdot 5473}, 5473$ 是下一个分数 $\frac{1292}{5473}$ 的分母.
+
+\section{$\S 378$}
+
+上节方法只能求两平方之和的平方根, 为推广到其他数, 我们取
+\[
+x=\frac{1}{a+\frac{1}{b+\frac{1}{a+\frac{1}{b+\frac{1}{a+\frac{1}{b+\cdots}}}}}}
+\]
+这时
+\[
+x=\frac{1}{a+\frac{1}{b+x}}=\frac{b+x}{a b+1+a x}
+\]
+或
+\[
+a x^{2}+a b x=b
+\]
+从而
+\[
+x=-\frac{1}{2} b \pm \sqrt{\frac{1}{4} b^{2}+\frac{b}{a}}=\frac{-a b+\sqrt{a^{2} b^{2}+4 a b}}{2 a}
+\]
+有了该式, 我们就可以求所有数的平方根. 例如, 令 $a=2, b=7$, 则
+\[
+x=\frac{-14+\sqrt{14 \cdot 18}}{4}=\frac{-7+3 \sqrt{7}}{2}
+\]
+逼近这个 $x$ 的分数序列为
+\[
+\begin{gathered}
+2,7,2,7,2,7, \cdots \\
+\frac{0}{1}, \frac{1}{2}, \frac{7}{15}, \frac{15}{32}, \frac{112}{239}, \frac{239}{510}, \cdots
+\end{gathered}
+\]
+从而近似地有
+\[
+\frac{-7+3 \sqrt{7}}{2}=\frac{239}{510}
+\]
+或
+\[
+\sqrt{7}=\frac{2024}{765}=2.6457516
+\]
+实际上
+\[
+\sqrt{7}=2.64575131
+\]
+误差是 $\frac{3}{10000000}$.
+
+\section{$\S 379$}
+
+我们把循环节进一步扩大成三个数, 取
+\[
+x=\frac{1}{a+\frac{1}{b+\frac{1}{c+\frac{1}{a+\frac{1}{b+\frac{1}{c+\frac{1}{a+\cdots}}}}}}}
+\]
+则 
+\[
+x=\frac{1}{a+\frac{1}{b+\frac{1}{c+x}}}=\frac{1}{a+\frac{c+x}{b c+1+b x}}=\frac{b x+b c+1}{(a b+1) x+a b c+a+c}
+\]
+或
+\[
+(a b+1) x^{2}+(a b c+a-b+c) x=b c+1
+\]
+从而
+\[
+x=\frac{-a b c-a+b-c+\sqrt{(a b c+a+b+c)^{2}+4}}{2(a b+1)}
+\]
+根号下又是两平方之和, 同于第一种情形. 类似地, 扩大循环节成四字母 $a, b, c, d$, 效果同 于含两字母的第二种情形. 类推.
+
+\section{$\S 380$}
+
+连分数既然可以用来求平方根, 事实上就是它可以用来解二次方程. 我们进行的几 个开平方运算,那里的 $x$ 就都是一个二次方程的根. 反过来, 我们也可以把二次方程的根 表示成连分数. 设二次方程为
+\[
+x^{2}=a x+b
+\]
+则
+\[
+x=a+\frac{b}{x}
+\]
+把分母 $x$ 换成我们求得的 $x$,得
+\[
+x=a+\frac{b}{a+\frac{b}{x}}
+\]
+再换,继续下去,就得到 $x$ 的无穷连分数表达式
+\[
+x=a+\frac{b}{a+\frac{b}{a+\frac{b}{a+\cdots}}}
+\]
+但是这个连分式用起来不方便,因为分子不是 1 .
+
+\section{$\S 381$}
+
+连分数在算术中有着应用. 首先分数都可以化成连分数. 设分数为
+\[
+x=\frac{A}{B}
+\]
+这里 $A>B$. 用 $B$ 除 $A$, 记商为 $a$, 记余数为 $C$; 再用余数 $C$ 除除数 $B$, 记商为 $b$, 记余数为 $D$; 接下去, 用余数 $D$ 除除数 $C$; 将这用余数除除数的过程继续下去, 到余数为零停止. 事实 上这是计算 $A, B$ 最大公因数的算法, 可以写成
+\[
+\begin{gathered}
+B \mid \underline{A}=a \\
+C \mid \underline{B}=b \\
+D \mid \underline{C}=c \\
+E \mid \underline{D}=d \\
+F \cdots
+\end{gathered}
+\]
+根据除法性质我们有
+\[
+\begin{gathered}
+A=a B+C, \text { 从而 } \frac{A}{B}=a+\frac{C}{B} \\
+B=b C+D, \text { 从而 } \frac{B}{C}=b+\frac{D}{C}, \frac{C}{B}=\frac{1}{b+\frac{D}{C}} \\
+C=c D+E, \text { 从而 } \frac{C}{D}=c+\frac{E}{D}, \frac{D}{C}=\frac{1}{c+\frac{E}{D}} \\
+D=d E+F, \text { 从而 } \frac{D}{E}=d+\frac{F}{E}, \frac{E}{D}=\frac{1}{d+\frac{F}{E}}
+\end{gathered}
+\]
+自上而下逐级代入,得
+\[
+x=\frac{A}{B}=a+\frac{C}{B}=a+\frac{1}{b+\frac{D}{C}}=a+\frac{1}{b+\frac{1}{c+\frac{E}{D}}}
+\]
+最后 $x$ 可用求得的商 $a, b, c, d, \cdots$ 表示成
+\[
+x=a+\frac{1}{b+\frac{1}{c+\frac{1}{d+\frac{1}{e+\frac{1}{f+\cdots}}}}}
+\]
+例 7 化分数 $\frac{1461}{59}$ 成分子都为 1 的连分数. 先进行求 1461 和 59 的最大公约数的运算
+\[
+\text { 59) } \begin{aligned}
+& \mid 461=24 \\
+& \frac{1188}{281} \\
+& \frac{236}{45} \mid=1 \\
+&\left|\frac{45}{14}\right| 45=3
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \text { 142 } \\
+& \text { 3| } 14=4 \\
+& \text { I } 12 \\
+& \text { 2) } 3=1 \\
+& \text { | } 2 \\
+& \text { 1| } 2=2 \\
+& \text { 1 } 2 \\
+& 0
+\end{aligned}
+\]
+由此我们得到
+\[
+\frac{1461}{59}=24+\frac{1}{1+\frac{1}{3+\frac{1}{4+\frac{1}{1+\frac{1}{2}}}}}
+\]
+例 8 小数可以化成分数, 因而也可以化成连分数. 我们化
+\[
+\sqrt{2}=1.41421356=\frac{141421356}{100000000}
+\]
+为连分数, 先进行求最大公约数运算
+
+\begin{tabular}{c|c|l}
+100000000 & 141421356 & 1 \\
+82842712 & 100000000 & 2 \\
+\hline 17157288 & 41421356 & 2 \\
+14213560 & 34314576 & 2 \\
+\hline 2943728 & 7106780 & 2 \\
+2438648 & 5887456 & 2 \\
+\hline 505080 & 1219324 & 2 \\
+418328 & 1010160 & 2 \\
+\hline 86752 & 209164 & \\
+\hline & $\vdots$ &
+\end{tabular}
+
+我们看到, 化成的连分数, 分母将都是 2 , 即
+\[
+\sqrt{2}=1+\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{\cdots}}}}}
+\]
+这是我们已经知道了的.
+
+例 9 数 $\mathrm{e}$ 是一个特别值得注意的数, 它的自然对数为 1 , 它的值为
+\[
+\mathrm{e}=2.718281828459
+\]
+我们化
+\[
+\frac{\mathrm{e}-1}{2}=0.8591409142295
+\]
+为连分数. 先进行求最大公约数运算
+
+\begin{tabular}{c|c|c|c}
+8591409142295 & 10000000000000 & 1 \\
+8451545146224 & 8591409142295 & 6 \\
+\cline { 1 - 3 } 139863996071 & 1408590857704 & 10 \\
+139312557916 & 1398639960710 & 14 \\
+\cline { 1 - 3 } 551438155 & 9950896994 & 18 \\
+550224488 & 9925886790 & 22 \\
+\hline 1213667 & 25010204 & \multicolumn{1}{|c}{} \\
+\cline { 1 - 3 } & $\vdots$
+\end{tabular}
+
+继续下去,我们得到商
+\[
+1,6,10,14,18,22,26,30,34, \cdots
+\]
+从第二个开始,这商构成算术级数. 由此我们得到
+\[
+\frac{\mathrm{e}-1}{2}=\frac{1}{1+\frac{1}{6+\frac{1}{10+\frac{1}{14+\frac{1}{18+\frac{1}{22+\frac{1}{\cdots}}}}}}}
+\]
+这一结果可由无穷分析给以证实.
+
+\section{$\S 382$}
+
+小数可写为分数, 分数可化为连分数, 从连分数我们可以得到一个分数序列, 序列中 分数近似于这连分数, 当然也近似于这小数. $J$. Wallis 讨论过用分子分母更小的分数去 近似给定的分数. 我们的方法得到的结果最好, 最好的含意是, 分子分母如不加大, 这结 果最接近给定分数.
+
+例 10 求直径与圆周之比,求得的比,如果分子分母不加大,应该是最精确的. 从小 数 3.141 $5926535 \cdots$ 用辗转相除法得到的商所成序列为
+\[
+3,7,15,1,292,1,1, \cdots
+\]
+由该序列构成的分数为
+\[
+\frac{1}{0}, \frac{3}{1}, \frac{22}{7}, \frac{333}{106}, \frac{355}{113}, \frac{103993}{33102}, \cdots
+\]
+第二个分数给出直径与圆之比为 $1: 3$, 如果分子分母不加大, 这当然是最精确的近似; 第三个分数给出阿基米德比 $7: 22$; 第五个分数给出的是 Adrianus Metius 比, 其误差比 $\frac{1}{113 \cdot 33102}$ 还小. 提一句, 序列中的分数比真值大比真值小是交替的.
+
+例 11 用最小的数表示一天与一个平均太阳年的比. 一年是 365 天 5 小时 48 分 55 秒. 写成分数,一年是
+\[
+365 \frac{20935}{86400}
+\]
+天. 我们关心的只是这分数, 它给出的商序列为
+\[
+4,7,1,6,1,2,2,4
+\]
+由此得到的分数序列是
+\[
+\frac{0}{1}, \frac{1}{4}, \frac{7}{29}, \frac{8}{33}, \frac{55}{227}, \frac{63}{260}, \frac{181}{747}, \cdots
+\]
+每年比 365 天多出 5 小时 48 分 55 秒, 第二个分数告诉我们, 每 4 年多出约一天, 儒略历就 是这样的, 4 年一闰, 400 年 100 闰. 精确些取第四个分数, 是每 33 年多出 8 天. 再精确些, 取第七个分数, 是每 747 年多出 181 天, 照此计算, 每 400 年多出 97 天, 格列历(即公历) 就是这样的, 它把儒略历 400 年中的 3 个闰年改成了平年,即 400 年 97 闰.
+

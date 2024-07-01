@@ -1,0 +1,273 @@
+\chapter{数列极限}
+\section{数列极限的基本概念}
+\subsection{2.1.5 练习题}
+\date{2021.5.5}
+%\begin{qs}
+1. prove by Limit definition:\\
+(1). $ \lim_{n\rightarrow\infty}\frac{3n^2}{n^2-4} = 3 $.\\
+(2). $ \lim_{n\rightarrow\infty}\frac{\sin n}{n} = 0 $.\\
+(3). $ \lim_{n\rightarrow\infty}(1+n)^\frac{1}{n} = 0 $.\\
+(4). $ \lim_{n\rightarrow\infty}\frac{a^n}{n!} = 0, (a>0) $.\\
+%\end{qs}
+
+%\begin{qs}
+2. Suppose $ a_n, n\in\mathbb{N}_+ $. sequence {$ a_n $} converge to $ a $.\\ Prove $ \lim_{n\rightarrow\infty}\sqrt{a_n} = \sqrt{a} $.
+
+%\end{qs}
+\begin{proof}
+$ n\rightarrow\infty  a_n \rightarrow a $.\\
+$ \forall \epsilon >0, \exists N(\epsilon) \in \mathbb{N}^+, \forall n>N(\epsilon), |a_n - a|<\epsilon $.
+\begin{equation*}
+	|\sqrt{a_n}-\sqrt{a}| = \Big|\frac{a_n-a}{\sqrt{a_n}+\sqrt{a}}\Big| < \frac{\epsilon}{\sqrt{a_n}+\sqrt{a}}
+\end{equation*}
+$ \therefore \lim_{n\rightarrow\infty}\sqrt{a_n} = \sqrt{a}. \qquad\square  $
+(check, not consider the condition$ a=0 $)
+add $ a=0, \forall \epsilon \in (0,1), \exists N(\epsilon) \in \mathbb{N}^+, \forall n>N(\epsilon), |a_n - a|<\epsilon $. s.t $ a_n<\epsilon^2 <\epsilon $, $ \sqrt{a_n} < \epsilon $.
+\end{proof}
+
+%\begin{qs}
+3. If $ \lim_{n\rightarrow\infty} a_n = a $.\\ Prove $ \lim_{n\rightarrow\infty} |a_n| = |a| $. Vice versa?\\
+
+%\end{qs}
+\begin{proof}
+$ \forall \epsilon>0, \exists N(\epsilon) \in \mathbb{N}^+, \forall n>N(\epsilon), |a_n - a| <\epsilon$. 
+\begin{equation*}
+	\Big| |a_n| - |a| \Big| \leqslant|a_n - a| <\epsilon
+\end{equation*}
+$ \therefore \lim_{n\rightarrow\infty} |a_n| = |a| $\\
+If We know $ \lim_{n\rightarrow\infty} |a_n| = |a| $.\\
+$ \forall \epsilon>0, \exists N(\epsilon) \in \mathbb{N}^+, \forall n>N(\epsilon), \big||a_n| - |a|\big| <\epsilon$.  We can't get $ \lim_{n\rightarrow\infty} a_n = a $. For example: $ a_n = \frac{1}{n}+1, a = -1 $, $ \lim_{n\rightarrow\infty} |a_n| = |a| $ is $ \lim_{n\rightarrow\infty} |\frac{1}{n}+1| = |-1| $, but $ \lim_{n\rightarrow\infty} \frac{1}{n}+1 \neq -1 \qquad\square $\\
+\end{proof}
+
+%\begin{qs}
+(1). Suppose $ p(x) $ is a polynomial of $ x $, if $ \lim_{n\rightarrow\infty} a_n = a $, Prove $ \lim_{n\rightarrow\infty} p(a_n) = p(a) $.\\
+(2). Suppose $ b > 0, \lim\limits_{n\rightarrow\infty} a_n = a $. Prove $ b^{a_n} = b^a $.\\
+(3). Suppose $ b>0 $, $ \{a_n\}, a_n>0,\forall n\in\mathbb{N} $. $ \lim\limits_{n\rightarrow\infty} a_n = a $.$ a>0 $. Prove $ \lim\limits_{n\rightarrow\infty} \log_{b} a_n = \log_{b} a$.\\
+(4) Suppose $ b\in\mathbb{R} $, $ \{a_n\}, a_n>0 $ when $ n\in\mathbb{N} $. $ \lim\limits_{n\rightarrow\infty}a_n=a $. Prove $ \lim\limits_{n\rightarrow\infty} {a_n}^b = a^b $.\\
+(5) Suppose  $ \lim\limits_{n\rightarrow\infty}a_n=a $. Prove $ \lim\limits_{n\rightarrow\infty}\sin{a_n} = \sin a $.\\
+%\end{qs}
+\begin{proof}4.(1)\\
+	$ \forall \epsilon>0, \exists N(\epsilon) \in \mathbb{N}^+, \forall n \geqslant N(\epsilon), $
+	$ |a_n-a| <\epsilon $.\\
+	$ p(a) = k_{m}a^{m} + k_{m-1}a^{m-1} + \dots +  k_{0}a^{0} $.\\
+	$ \therefore p(a_n) - p(a) =  k_{m}(a_n^{m}-a^{m}) + k_{m-1}(a_n^{m-1}-a^{m-1}) + \dots +  k_{0}(a_n^{0}-a^{0}) $.
+	\begin{align*}
+		|a_n^m - a^m| 
+		&= |a_n-a|\cdot |a_n^{m-1} + a_n^{m-2}a + \cdots + a^{m-1}|\\
+		&< \epsilon \cdot |a_n^{m-1} + a_n^{m-2}a + \cdots + a^{m-1}|\\
+		&< \epsilon (m-1)\cdots(a+\delta)^{m-1}
+	\end{align*}
+	$ \therefore \lim_{n\rightarrow\infty} p(a_n) = p(a).\qquad\square  $  
+\end{proof}
+
+
+\begin{proof}4.(2)\\
+	$\forall \epsilon >0, \exists N \in \mathbb{N}^+. \forall n \geqslant N, |a_n-a| < \epsilon$.\\
+	If $ b=1 $, $ 1^{a_n} =1^a = 1 $.\\
+	If $ b>1 $, $ b^{a_n}-b^a = b^a(b^{a_n-a}-1)<b^a(b^\epsilon-1) $
+	$ 0<|b^{a_n}-b^a|<b^a\cdot(b^\epsilon-1) $
+	$ \because b>0, \epsilon\rightarrow 0 $, $ \therefore b^\epsilon-1 \rightarrow 0 $.
+	$ \therefore \lim\limits_{n\rightarrow\infty}b^a_n = b^a $.\\
+	If $ b<1 $, $ b^{a_n} = \frac{1}{(\frac{1}{b})^{a_n}} $, we can prove this condition by considering $ \frac{1}{b} >1 $.
+\end{proof}
+
+
+\begin{proof}4.(3)\\
+	$\forall \epsilon >0, \exists N \in \mathbb{N}^+. \forall n \geqslant N, |a_n-a| < \epsilon$.\\
+	\begin{align*}
+		\log_{b}a_n-\log_{b}a
+		&=\log_{b}\frac{a_n}{a}\\
+		&=\log_{b}(\frac{a_n-a}{a}+1) < \log_{b}(\frac{\epsilon}{a}+1)
+	\end{align*}
+	$ 0<\log_{b}a_n-\log_{b}a|<\log_{b}(1+\frac{\epsilon}{a}) $.
+	$ \because b>0, a\neq 0$,  $ a_n>0 $ when $ \epsilon\rightarrow0 $. $ \therefore \log_{b}(1+\frac{\epsilon}{a})\rightarrow0 $.\\
+	$ \therefore \lim\limits_{n\rightarrow\infty}\log_{b}a_n=\log_{b}a $	
+\end{proof} 
+
+\begin{proof}4.(4)\\
+	$\forall \epsilon >0, \exists N \in \mathbb{N}^+. \forall n \geqslant N, |a_n-a| < \epsilon$.\\
+	$ a_n^b = e^{b\ln a_n} $, $ a_n^b-a^b = e^{b\ln a_n}-e^{b\ln a} $.
+	\begin{align*}
+			e^{b\ln a_n}-e^{b\ln a}
+			&=e^{b\ln a}(e^{b\ln a_n-b\ln a}-1)\\
+			&=e^{b\ln a}(e^{b\ln \frac{a_n}{a}}-1)
+	\end{align*}
+	$ 0 < |a_n^b-a^b| < e^{b\ln a}(e^{b\ln (1+\frac{\epsilon}{a})}-1) $\\
+	$ \therefore \lim\limits_{n\rightarrow\infty}a_n^b = a^b $
+\end{proof}
+
+
+\begin{proof}4.(5)\\
+	$\forall \epsilon >0, \exists N \in \mathbb{N}^+. \forall n \geqslant N, |a_n-a| < \epsilon$.\\
+	\begin{align*}
+		\sin(A+B)-\sin(A-B) &= \sin{A}\cos{B}+\cos{A}\sin{B} \\
+		&\quad- (\sin{A}\cos{B}-\cos{A}\sin{B}) \\
+		&= 2\cos{A}\sin{B}
+	\end{align*}
+	\begin{equation*}
+		\sin a_n - \sin a  = 2\cos\frac{a_n+a}{2}\sin\frac{a_n-a}{2}
+	\end{equation*}
+	$|\sin a_n-\sin a| = |2\cos\frac{a_n+a}{2}\sin\frac{a_n-a}{2}|< |2\sin\frac{a_n-a}{2}|$\\
+	$ |2\sin\frac{a_n-a}{2}|<|2\frac{a_n-a}{2}|=\epsilon $\\
+	$ |\sin{a_n}-\sin{a}|<\epsilon $, $ \therefore \lim\limits_{n\rightarrow\infty}\sin{a_n} = \sin a  $
+\end{proof}
+
+%\begin{qs}
+	assume $ a>1 $. Prove$ \lim\limits_{n\rightarrow\infty}\frac{\log_a n}{n} = 0 $
+%\end{qs}
+\begin{proof}
+	$\frac{1}{n}\log_a n = \log_a \sqrt[n]{n}$. We already know that $  \lim\limits_{n\rightarrow\infty}\sqrt[n]{n} = 1 $, $ \log_a 1 = 0 $.\\
+	$\forall \epsilon >0, \exists N \in \mathbb{N}^+, N = \max\{2,[\frac{4}{\epsilon^2}]\}. \forall n \geqslant N, |\sqrt[n]{n}-1| < \epsilon$.\\
+	\color{red}$ a>1 $, and $ \lim\limits_{n\rightarrow\infty}\sqrt[n]{n} = 1 $. $ \therefore  $ when $ n\rightarrow \infty $, $ \sqrt[n]{n}<a^\epsilon $, take logarithm on base of a, we can get $ \frac{1}{n}\log_a {n}<\epsilon $ 	\\
+	\color{black}
+%	$ \log_a \sqrt[n]{n} < \log_a(1+\epsilon) $.
+	$ \therefore \lim\limits_{n\rightarrow\infty} \frac{\log_a n}{n} = 0 $
+\end{proof}
+
+
+
+\section{收敛数列的基本性质}
+\date{2021.5.6}
+收敛数列的性质
+\begin{enumerate}
+	\item 收敛数列的极限是唯一的
+	\item 收敛数列一定有界
+	\item 收敛数列的比较定理，包括保号性定理
+	\item 收敛数列满足一定的四则运算规则
+	\item 收敛数列的每一个子列一定收敛于同一极限
+\end{enumerate}
+\subsection{思考题}
+%\begin{qs}
+	1. $ \{a_n\} $ 收敛, $ \{b_n\} $ 发散, $ \{a_n+b_n\} $ 发散,  $ \{a_n\cdot b_n\} $ 可能收敛，可能发散.\\
+	2. $ \{a_n\}, \{b_n\} $ 都发散, $ \{a_n+b_n\} $ 可能收敛，可能发散 (ex: $ n+-n $,   $n+-2n $),  $ \{a_n\cdot b_n\} $ 发散(?).\\
+	3. $ a_n\leqslant b_n \leqslant c_n $, $ n\in\mathbb{N}_+ $. 已知$ \lim\limits_{n\rightarrow\infty}(c_n-a_n)=0 $. 问数列$ \{b_n\} $是否收敛？\\
+	4. $ \lim\limits_{n\rightarrow\infty}(\frac{1}{n+1} + \cdots + \frac{1}{2n}) $\\
+	5. $ a_n\rightarrow a(n\rightarrow 0) $. $ \forall n, b<a_n<c $. 是否成立$ b<a<c $?\\
+	6. $ a_n \rightarrow a(n\rightarrow 0) $. and $ b\leqslant a\leqslant c  $, 是否存在$ N\in\mathbb{N}_+ $, s.t. 当$ n>N $时，成立$ b\leqslant a_n \leqslant c$\\
+	7. 已知$ \lim\limits_{n\rightarrow\infty}a_n = 0 $, 问:是否有$ \lim\limits_{n\rightarrow\infty} (a_1a_2\dots a_n) = 0 $. 反之如何?
+%\end{qs}
+\begin{proof}5.4\\
+	\begin{equation*}
+		 \frac{n}{2n} \leqslant \frac{1}{n+1} + \cdots + \frac{1}{2n}  \leqslant \frac{n}{n+1}
+	\end{equation*}
+	$ \because 
+	\lim\limits_{n\rightarrow\infty} 
+	\frac{n}{2n} = \frac{1}{2}
+	\lim\limits_{n\rightarrow\infty} 
+	\frac{n}{n+1} = 1
+	$, $ \therefore \lim\limits_{n\rightarrow\infty}(\frac{1}{n+1} + \cdots + \frac{1}{2n} ) $ 收敛.
+	\begin{align*}
+		\frac{1}{n+1} + \cdots + \frac{1}{2n}
+		&= \frac{1}{n}(\frac{1}{1+\frac{1}{n}} + \frac{1}{1+\frac{2}{n}} + \cdots + \frac{1}{1+\frac{n}{n}})\\
+		&= \int_{0}^{1}\frac{1}{1+x}\text{d}x\\
+		&= \ln(1+x)|_0^1 = \ln{2}
+	\end{align*}
+	$ \lim\limits_{n\rightarrow\infty}(\frac{1}{n+1} + \cdots + \frac{1}{2n})=\ln{2}  $	
+\end{proof}
+\begin{proof}5.5\\
+	不成立，应当为小于等于号。b=0, c=2, $ a_n = \frac{1}{n} $, $ \lim_{n\rightarrow\infty}a_n = 0 = c $.
+\end{proof}
+\begin{proof}5.6\\
+	不成立。$ a=0,b=0,c=2 $, $ a_n = (-1)^n\frac{1}{n} $.\\
+	$ b\leqslant a\leqslant c $, but $ (-1)^{2n+1}\frac{1}{2n+1}<0=b $.
+\end{proof}
+\begin{proof}
+	$ \lim\limits_{n\rightarrow\infty}a_n=0, a_n = \frac{1}{n} $.$ a_1a_2\dots a_n = \frac{1}{n!}, \lim\limits_{n\rightarrow\infty}\frac{1}{n!}=0 $.\\
+	$ \lim\limits_{n\rightarrow\infty}a_n=0 \rightarrow \lim\limits_{n\rightarrow\infty}(a_1a_2\dots a_n)=0 \qquad\checkmark$\\
+	$ \lim\limits_{n\rightarrow\infty}(a_1a_2\dots a_n)=0 \rightarrow \lim\limits_{n\rightarrow\infty}a_n=0 \qquad\times$\\
+	$ |a_n|<\epsilon $, $ |a_{N+1}\dots a_n|<\epsilon^{n-N}<\epsilon $,	$ a_n <\sqrt[n]{\epsilon} $.\\
+	for example, $ a_n = \frac{n}{n+1}, a_1 = \frac{1}{2}, a_2=\frac{2}{3},\dots,a_n=\frac{n}{n+1} $.\\
+	\begin{align*}
+	 a_1a_2\dots a_n = \frac{1}{2}\cdot\frac{2}{3}\cdots\frac{n}{n+1} = \frac{1}{n+1} . \\
+	\lim\limits_{n\rightarrow\infty}
+	(a_1a_2\dots a_n) \\=  
+	\lim\limits_{n\rightarrow\infty}
+	\frac{1}{n}
+	=0
+\end{align*}	
+but $ 	\lim\limits_{n\rightarrow\infty}a_n=$  $	\lim\limits_{n\rightarrow\infty}
+\frac{n}{n+1} = 1 \neq 0  $
+\end{proof}
+
+研究数列收敛方面的两个基本工具:\\
+1. 夹逼定理.\\
+2. 单调有界数列的收敛定理.
+
+\begin{example}{2.2.2}
+	$ \lim_{n\rightarrow\infty}\frac{x_n-1}{x_n+a} = 0 $, \\
+	prove $ \lim_{n\rightarrow\infty}x_n=a $
+\end{example}
+\begin{proof}
+	$\forall \epsilon >0, \exists N \in \mathbb{N}^+. \forall n \geqslant N, |\frac{x_n-1}{x_n+a}- 0| < \epsilon$.\\
+	$ |{x_n-1}|< \epsilon|{x_n+a}| < 4a\cdot \epsilon $.(这个4是怎么取得的?)\\
+	$ |x_n-a|<\epsilon|x_n+a| = \epsilon|(x_n-a)+2a|\leqslant \epsilon(|x_n-a|+2a) $.\\
+	限制 $ \epsilon<1 $, $ |x_n-a|<2\epsilon|a|/(1-\epsilon) $.\\
+	限制 $ \epsilon<\frac{1}{2} $, $ |x_n-a|<2\epsilon|a|/(1-\epsilon)<4|a|\epsilon $.\\
+	Let $ \epsilon'=4a\epsilon  $, $ |{x_n-1}|<\epsilon' $. $ \therefore \lim\lim_{n\rightarrow\infty}x_n = a $.	
+\end{proof}
+
+\begin{example}2.2.3
+	$ a>0, b>0$ , 计算$ \lim\limits_{n\rightarrow\infty}(a_n+b_n)^\frac{1}{n} $.
+\end{example}
+\begin{proof}
+	Suppose $ a\leqslant b $.\\
+	$ b = (b^b)^{\frac{1}{n}}<(a^n+b^n)^{\frac{1}{n}} \leqslant (2b^n)^{\frac{1}{n}}$.\\
+	$ b<(a^n+b^n)^\frac{1}{n}\leqslant\sqrt[n]{2}b, \lim\limits_{n\rightarrow\infty} = 1 $.夹逼定理.\\
+	$ \lim\limits_{n\rightarrow\infty}(a^n+b^n)^{\frac{1}{n}} = \max\{a,b\} $.\\
+	两数n次方之和再开n次根号的结果由较大的值决定, a,b中较大的值为这个数的主要部分.
+\end{proof}
+
+\begin{example}2.2.4
+	$ a_n  =\frac{1!+2!+\dots+n!}{n!}, n\in\mathbb{N}^+ $
+\end{example}
+$ \lim\limits_{n\rightarrow\infty} a_n= 1 $
+
+\begin{example}
+	$ \lim\limits_{n\rightarrow\infty}\frac{n^3+n-7}{n+3} = +\infty $
+\end{example}
+
+\begin{example}
+	$ H_n = 1+\frac{1}{2}+\dots+\frac{1}{n} $
+\end{example}
+调和级数$ H_n $ 发散.
+
+\subsection{练习2.2.4}
+
+\begin{proof}1.\\
+	$ \{a_n \}$收敛于$ a $, $ \rightarrow $ 两个子列$ \{a_{2n}\}, \{a_{2n+1}\} $均收敛于$ a $.\\
+	两个子列$ \{a_{2n}\}, \{a_{2n+1}\} $均收敛于$ a $, $ \rightarrow $ $ \{a_n \}$收敛于$ a $.\\
+\end{proof}
+
+2.
+应用夹逼定理\\
+(1). 给定$ p $个正数$ a_1, a_2, \dots ,a_p $. 求$ \lim\limits_{n\rightarrow\infty}\sqrt[n]{a_1^n+a_2^n+\dots a_p^n} $.\\
+Let$ a_s = \max_{1\leqslant i \leqslant p}\{a_1,a_2,\dots, a_p\} $.\\
+
+%\begin{solve}(1).
+	\begin{equation*}\label{ex2.2.4Ex2}
+		a_s = (a_s^n)^\frac{1}{n}
+		<
+		(a_1^n+a_2^n+\dots a_p^n)^\frac{1}{n}
+		\leqslant
+		(p a_s^n)^\frac{1}{n}=p^\frac{1}{n}a_s
+	\end{equation*}
+$ n\rightarrow\infty, p^\frac{1}{n}\rightarrow 1 $.$ \lim\limits_{n\rightarrow\infty}(a_1^n+a_2^n+\dots a_p^n)^\frac{1}{n} = a_s $
+%\end{solve}
+
+(2). $ x_n= \frac{1}{\sqrt{n^2+1}}+\frac{1}{\sqrt{n^2+2}}+\dots+\frac{1}{\sqrt{n^2+n}} $, $ n\in \mathbb{N}_+ $. 求$ \lim\limits_{n\rightarrow\infty} x_n $
+%\begin{solve}(2).
+\begin{equation*}
+	\frac{2n+1}{(n+1)}\leqslant x_n\leqslant \frac{2n+1}{\sqrt{n^2+1}}
+\end{equation*}
+$ \lim\limits_{n\rightarrow\infty}\frac{2n+1}{n+1}=2 $, 
+$ \lim\limits_{n\rightarrow\infty}\frac{2n+1}{\sqrt{n^2+1}}=2 $.
+$ \therefore \lim\limits_{n\rightarrow\infty} x_n = 2 $
+%\end{solve}
+
+(3). $ a_n = (1+\frac{1}{2}+\dots+\frac{1}{n})^{\frac{1}{n}} $, $ n\in\mathbb{N}_+ $. 求$ \lim\limits_{n\rightarrow\infty}a_n $
+%\begin{solve}(3).
+	\begin{equation*}
+		1=(\frac{n}{n})^\frac{1}{n} < a_n \leqslant (1\cdot n)^\frac{1}{n}=\sqrt[n]{n}
+	\end{equation*}
+$ \lim\limits_{n\rightarrow\infty} \sqrt[n]{n}=1 $, $ \therefore \lim\limits_{n\rightarrow\infty} a_n = 1$
+%\end{solve}

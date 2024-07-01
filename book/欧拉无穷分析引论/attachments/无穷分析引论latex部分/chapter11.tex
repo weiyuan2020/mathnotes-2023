@@ -1,0 +1,447 @@
+\chapter{第十一章 弧和正弦的几种无穷表示}
+
+\section{$\S 184$}
+
+$\S 158$ 中我们看到, 对任何的圆弧 $z$ 我们都有
+\[
+\sin z=\left(1-\frac{z^{2}}{\pi^{2}}\right)\left(1-\frac{z^{2}}{4 \pi^{2}}\right)\left(1-\frac{z^{2}}{9 \pi^{2}}\right)\left(1-\frac{z^{2}}{16 \pi^{2}}\right) \cdots
+\]
+和
+\[
+\cos z=\left(1-\frac{4 z^{2}}{\pi^{2}}\right)\left(1-\frac{4 z^{2}}{9 \pi^{2}}\right)\left(1-\frac{4 z^{2}}{25 \pi^{2}}\right)\left(1-\frac{4 z^{2}}{49 \pi^{2}}\right) \cdots
+\]
+令 $z=\frac{m \pi}{n}$, 得
+\[
+\begin{aligned}
+& \sin \frac{m \pi}{n}=\frac{m \pi}{n}\left(1-\frac{m^{2}}{n^{2}}\right)\left(1-\frac{m^{2}}{4 n^{2}}\right)\left(1-\frac{m^{2}}{9 n^{2}}\right)\left(1-\frac{m^{2}}{16 n^{2}}\right) \cdots \\
+& \cos \frac{m \pi}{n}=\left(1-\frac{4 m^{2}}{n^{2}}\right)\left(1-\frac{4 m^{2}}{9 n^{2}}\right)\left(1-\frac{4 m^{2}}{25 n^{2}}\right)\left(1-\frac{4 m^{2}}{49 n^{2}}\right) \cdots
+\end{aligned}
+\]
+用 $2 n$ 代 $n$, 得
+\[
+\begin{gathered}
+\sin \frac{m \pi}{2 n}=\frac{m \pi}{2 n}\left(\frac{4 n^{2}-m^{2}}{4 n^{2}}\right)\left(\frac{16 n^{2}-m^{2}}{16 n^{2}}\right)\left(\frac{36 n^{2}-m^{2}}{36 n^{2}}\right)\left(\frac{64 n^{2}-m^{2}}{64 n^{2}}\right) \cdots \\
+\cos \frac{m \pi}{2 n}=\left(\frac{n^{2}-m^{2}}{n^{2}}\right)\left(\frac{9 n^{2}-m^{2}}{9 n^{2}}\right)\left(\frac{25 n^{2}-m^{2}}{25 n^{2}}\right)\left(\frac{49 n^{2}-m^{2}}{49 n^{2}}\right) \cdots
+\end{gathered}
+\]
+分解成线性因式, 得
+\[
+\begin{gathered}
+\sin \frac{m \pi}{2 n}=\frac{m \pi}{2 n}\left(\frac{2 n-m}{2 n}\right)\left(\frac{2 n+m}{2 n}\right)\left(\frac{4 n-m}{4 n}\right)\left(\frac{4 n+m}{4 n}\right)\left(\frac{6 n-m}{6 n}\right) \cdots \\
+\cos \frac{m \pi}{2 n}=\left(\frac{n-m}{n}\right)\left(\frac{n+m}{n}\right)\left(\frac{3 n-m}{3 n}\right)\left(\frac{3 n+m}{3 n}\right)\left(\frac{5 n-m}{5 n}\right)\left(\frac{5 n+m}{5 n}\right) \cdots
+\end{gathered}
+\]
+用 $n-m$ 代 $m$,并利用
+\[
+\sin \frac{(n-m) \pi}{2 n}=\cos \frac{m \pi}{2 n}, \cos \frac{(n-m) \pi}{2 n}=\sin \frac{m \pi}{2 n}
+\]
+得
+\[
+\cos \frac{m \pi}{2 n}=\left(\frac{(n-m) \pi}{2 n}\right)\left(\frac{n+m}{2 n}\right)\left(\frac{3 n-m}{2 n}\right)\left(\frac{3 n+m}{4 n}\right)\left(\frac{5 n-m}{4 n}\right)\left(\frac{5 n+m}{6 n}\right) \cdots
+\]
+\[
+ \sin \frac{m \pi}{2 n}=\frac{m}{n}\left(\frac{2 n-m}{n}\right)\left(\frac{2 n+m}{3 n}\right)\left(\frac{4 n-m}{3 n}\right)\left(\frac{4 n+m}{5 n}\right)\left(\frac{6 n-m}{5 n}\right) \cdots
+\]
+\section{$\S 185$}
+
+对弧 $\frac{m \pi}{2 n}$ 的正弦和余弦都导出了两个表达式, 两者相除, 得
+\[
+1=\frac{\pi}{2} \cdot \frac{1}{2} \cdot \frac{3}{2} \cdot \frac{3}{4} \cdot \frac{5}{4} \cdot \frac{5}{6} \cdot \frac{7}{6} \cdot \frac{7}{8} \cdot \frac{9}{8} \cdot \cdots
+\]
+从而
+\[
+\frac{\pi}{2}=\frac{2 \cdot 2 \cdot 4 \cdot 4 \cdot 6 \cdot 6 \cdot 8 \cdot 7 \cdot 8 \cdot 10 \cdot 10 \cdot 12 \cdot 12 \cdot \cdots}{1 \cdot 3 \cdot 3 \cdot 5 \cdot 5 \cdot 7 \cdot 7 \cdot 9 \cdot 9 \cdot 11 \cdot 11 \cdot 13 \cdot \cdots}
+\]
+这里 Wallis 在他的《无穷算术》中导出的 $\pi$ 的表达式. 从正弦的前一个表达式, 可以推出 许多类似地表达式. 例如, 从它我们推得
+\[
+\frac{\pi}{2}=\frac{n}{m} \sin \frac{m \pi}{2 n} \cdot\left(\frac{2 n}{2 n-m}\right)\left(\frac{2 n}{2 n+m}\right)\left(\frac{4 n}{4 n-m}\right)\left(\frac{4 n}{4 n+m}\right)\left(\frac{6 n}{6 n-m}\right) \cdots
+\]
+令 $\frac{m}{n}=1$, 得 Wallis 公式, 令 $\frac{m}{n}=\frac{1}{2}$, 则由 $\sin \frac{\pi}{4}=\frac{1}{\sqrt{2}}$ 得
+\[
+\frac{\pi}{2}=\frac{\sqrt{2}}{1} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{8}{7} \cdot \frac{8}{9} \cdot \frac{12}{11} \cdot \frac{12}{13} \cdot \frac{16}{15} \cdot \frac{16}{17} \cdot \cdots
+\]
+令 $\frac{m}{n}=\frac{1}{3}$, 则由 $\sin \frac{\pi}{6}=\frac{1}{2}$, 得
+\[
+\frac{\pi}{2}=\frac{3}{2} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{12}{11} \cdot \frac{12}{13} \cdot \frac{18}{17} \cdot \frac{18}{19} \cdot \frac{24}{23} \cdot \cdots
+\]
+除 Wallis 公式以 $\frac{m}{n}=\frac{1}{2}$ 时的表达式, 得
+\[
+\sqrt{2}=\frac{2 \cdot 2 \cdot 6 \cdot 6 \cdot 10 \cdot 10 \cdot 14 \cdot 14 \cdot 18 \cdot 18 \cdot \cdots}{1 \cdot 3 \cdot 5 \cdot 7 \cdot 9 \cdot 11 \cdot 13 \cdot 15 \cdot 17 \cdot 19 \cdot \cdots}
+\]
+\section{$\S 186$}
+
+角的正切都等于正弦除以余弦. 因而正切也可以表示成无穷乘积. 用正弦的前一个 表达式除上余弦的后一个表达式, 我们得到
+\[
+\begin{aligned}
+\tan \frac{m \pi}{2 n} & =\frac{m}{n-m}\left(\frac{2 n-m}{n+m}\right)\left(\frac{2 n+m}{3 n-m}\right)\left(\frac{4 n-m}{3 n+m}\right)\left(\frac{4 n+m}{5 n-m}\right) \cdots \\
+\cot \frac{m \pi}{2 n} & =\frac{n-m}{m}\left(\frac{n+m}{2 n-m}\right)\left(\frac{3 n-m}{2 n+m}\right)\left(\frac{3 n+m}{4 n-m}\right)\left(\frac{5 n-m}{4 n+m}\right) \cdots
+\end{aligned}
+\]
+类似地,我们得到正割和余割的表达式
+\[
+\sec \frac{m \pi}{2 n}=\left(\frac{n}{n-m}\right)\left(\frac{n}{n+m}\right)\left(\frac{3 n}{3 n-m}\right)\left(\frac{3 n}{3 n+m}\right)\left(\frac{5 n}{5 n-m}\right)\left(\frac{5 n}{5 n+m}\right) \cdots
+\]
+如果正弦和余弦都用第二表达式,那么我们得到
+\[
+\begin{aligned}
+\tan \frac{m \pi}{2 n} & =\frac{\pi}{2} \cdot \frac{m}{n-m} \cdot \frac{1(2 n-m)}{2(n+m)} \cdot \frac{3(2 n+m)}{2(3 n-m)} \cdot \frac{3(4 n-m)}{4(3 n+m)} \cdot \cdots \\
+\cot \frac{m \pi}{2 n} & =\frac{\pi}{2} \cdot \frac{n-m}{m} \cdot \frac{1(n+m)}{2(2 n-m)} \cdot \frac{3(3 n-m)}{2(2 n+m)} \cdot \frac{3(3 n+m)}{4(4 n-m)} \cdot \cdots \\
+\sec \frac{m \pi}{2 n} & =\frac{2}{\pi} \cdot \frac{n}{n-m} \cdot \frac{2 n}{n+m} \cdot \frac{2 n}{3 n-m} \cdot \frac{4 n}{3 n+m} \cdot \frac{4 n}{5 n-m} \cdot \cdots \\
+\csc \frac{m \pi}{2 n} & =\frac{2}{\pi} \cdot \frac{n}{m} \cdot \frac{2 n}{2 n-m} \cdot \frac{2 n}{2 n+m} \cdot \frac{4 n}{4 n-m} \cdot \frac{4 n}{4 n+m} \cdot \cdots
+\end{aligned}
+\]
+\section{$\S 187$}
+
+将正弦和余弦原表达式中的 $m$ 换成 $K$, 得到新表达式,用新表达式除原表达式,我们 得到公式
+\[
+\begin{aligned}
+& \frac{\sin \frac{m \pi}{2 n}}{\sin \frac{K \pi}{2 n}}=\frac{m}{K} \cdot \frac{2 n-m}{2 n-K} \cdot \frac{2 n+m}{2 n+K} \cdot \frac{4 n-m}{4 n-K} \cdot \frac{4 n+m}{4 n+K} \cdot \cdots \\
+& \frac{\sin \frac{m \pi}{2 n}}{\cos \frac{K \pi}{2 n}}=\frac{m}{n-K} \cdot \frac{2 n-m}{n+K} \cdot \frac{2 n+m}{3 n-K} \cdot \frac{4 n-m}{3 n+K} \cdot \frac{4 n+m}{5 n-K} \cdot \cdots \\
+& \frac{\cos \frac{m \pi}{2 n}}{\sin \frac{K \pi}{2 n}}=\frac{n-m}{K} \cdot \frac{n+m}{2 n-K} \cdot \frac{3 n-m}{2 n+K} \cdot \frac{3 n+m}{4 n-K} \cdot \frac{5 n-m}{4 n+K} \cdot \cdots \\
+& \frac{\cos \frac{m \pi}{2 n}}{\sin \frac{K \pi}{2 n}}=\frac{n-m}{n-K} \cdot \frac{n+m}{n+K} \cdot \frac{3 n-m}{3 n-K} \cdot \frac{3 n+m}{3 n+K} \cdot \frac{5 n-m}{5 n-K} \cdot \cdots
+\end{aligned}
+\]
+如果取一个角 $\frac{K \pi}{2 n}$, 其正弦和余弦都已知, 那么利用上面的公式, 我们可以求出另外任何 一个角 $\frac{m \pi}{2 n}$ 的正弦和余弦.
+
+\section{$\S 188$}
+
+这些无穷多个因式相乘形式的表达式, 可以用来计算 $\pi$ 的值, 也可以用来计算给定 角的正弦和余弦. 其价值在于, 到现在为止, 我们还没有计算这些值的更好的方法. 我们 也掌握另外一些稍具实用价值的无穷乘积, 可以用来计算 $\pi$ 或正弦和余弦的值. 例如
+\[
+\frac{\pi}{2}=2\left(1-\frac{1}{9}\right)\left(1-\frac{1}{25}\right)\left(1-\frac{1}{49}\right) \cdots
+\]
+该乘积的因式不难变为小数, 但要得到 $\pi$ 的精确到小数点后 10 位的值, 那因子的个数就 已经多得不得了.
+
+\section{$\S 189$}
+
+这些乘积的主要应用是计算对数. 没有这些表达式, 对数的计算是很困难的. 首先我 们有
+\[
+\pi=4\left(1-\frac{1}{9}\right)\left(1-\frac{1}{25}\right)\left(1-\frac{1}{49}\right) \cdots
+\]
+取对数,得
+\[
+\log \pi=\log 4+\log \left(1-\frac{1}{9}\right)+\log \left(1-\frac{1}{25}\right)+\log \left(1-\frac{1}{49}\right)+\cdots
+\]
+或
+\[
+\log \pi=\log 2-\log \left(1-\frac{1}{4}\right)-\log \left(1-\frac{1}{16}\right)-\log \left(1-\frac{1}{36}\right)-\cdots
+\]
+这里取常用对数或自然对数都可以. 但从自然对数易于求出常用对数, 所以我们介绍求 $\pi$ 的自然对数的方法.
+
+\section{$\S 190$}
+
+对于自然对数我们有
+\[
+\log (1-x)=-x-\frac{x^{2}}{2}-\frac{x^{3}}{3}-\frac{x^{4}}{4}-\cdots
+\]
+将上节中表达式的项照此式展开,得
+\[
+\begin{aligned}
+\log \pi= & \log 4-\frac{1}{9}-\frac{1}{2 \cdot 9^{2}}-\frac{1}{3 \cdot 9^{3}}-\frac{1}{4 \cdot 9^{4}}-\cdots \\
+& -\frac{1}{25}-\frac{1}{2 \cdot 25^{2}}-\frac{1}{3 \cdot 25^{3}}-\frac{1}{4 \cdot 25^{4}}-\cdots \\
+& -\frac{1}{49}-\frac{1}{2 \cdot 49^{2}}-\frac{1}{3 \cdot 49^{3}}-\frac{1}{4 \cdot 49^{4}}-\cdots
+\end{aligned}
+\]
+展开式中每坚列含有一个无穷级数. 含有的这些无穷级数的和, 是我们前面已经算了出 来的. 为简便起见, 我们记
+\[
+A=1+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{9^{2}}+\cdots
+\]
+\[
+\begin{gathered}
+B=1+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\frac{1}{7^{4}}+\frac{1}{9^{4}}+\cdots \\
+C=1+\frac{1}{3^{6}}+\frac{1}{5^{6}}+\frac{1}{7^{6}}+\frac{1}{9^{6}}+\cdots \\
+D=1+\frac{1}{3^{8}}+\frac{1}{5^{8}}+\frac{1}{7^{8}}+\frac{1}{9^{8}}+\cdots
+\end{gathered}
+\]
+使用这些记号展开式就成了
+\[
+\log \pi=\log 4-(A-1)-\frac{1}{2}(B-1)-\frac{1}{3}(C-1)-\frac{1}{4}(D-1)-\cdots
+\]
+利用前面求出的近似值, 我们有
+\[
+\begin{aligned}
+& A=1.23370055013616982735431 \\
+& B=1.01467803160419205454625 \\
+& C=1.00144707664094212190647 \\
+& D=1.00015517902529611930298 \\
+& E=1.00001704136304482550816 \\
+& F=1.00000188584858311957590 \\
+& G=1.00000020924051921150010 \\
+& H=1.00000002323715737915670 \\
+& J=1.00000000258143755665977 \\
+& K=1.00000000028680769745558 \\
+& L=1.00000000003186677514044 \\
+& M=1.00000000000354072294392 \\
+& N=1.00000000000039341246691 \\
+& O=1.00000000000004371244859 \\
+& P=1.00000000000000485693682 \\
+& Q=1.00000000000000053965957 \\
+& R=1.00000000000000005996217 \\
+& S=1.00000000000000000666246 \\
+& T=1.00000000000000000074027 \\
+& V=1.00000000000000000008225 \\
+& W=1.00000000000000000000913 \\
+& X=1.00000000000000000000101
+\end{aligned}
+\]
+将它们代入展开式, 经过不太麻烦的计算, 我们得到 $\pi$ 的自然对数值
+\[
+\log \pi=1.14472988584940017414342 \ldots
+\]
+乘这个值以 $0.43429 \cdots$, 得到 $\pi$ 的常用对数值
+\[
+\log \pi=0.49714987269413385435126
+\]
+\section{$\S 191$}
+
+我们已经把角 $\frac{m \pi}{2 n}$ 的正弦和余弦都表示成了无穷乘积, 因而不难写出它们的对数表 示式. 从 §184 的公式得
+\[
+\begin{aligned}
+& \log \sin \frac{m \pi}{2 n}=\log \pi+\log \frac{m}{2 n}+\log \left(1-\frac{m^{2}}{4 n^{2}}\right)+\log \left(1-\frac{m^{2}}{16 n^{2}}\right)+\log \left(1-\frac{m^{2}}{36 n^{2}}\right)+\cdots \\
+& \log \cos \frac{m \pi}{2 n}=\log \left(1-\frac{m^{2}}{n^{2}}\right)+\log \left(1-\frac{m^{2}}{9 n^{2}}\right)+\log \left(1-\frac{m^{2}}{25 n^{2}}\right)+\log \left(1-\frac{m^{2}}{49 n^{2}}\right)+\cdots
+\end{aligned}
+\]
+跟前面一样, 取自然对数可以把它们表示成收玫很快的级数. 为避免不必要的无穷级数 相乘, 我们保留前几项为对数形式
+\[
+\begin{aligned}
+& \log \sin \frac{m \pi}{2 n}=\log \pi+\log m+\log (2 n-m)+\log (2 n+m)-\log 8-3 \log n- \\
+& \frac{m^{2}}{16 n^{2}}-\frac{m^{4}}{2 \cdot 16^{2} n^{4}}-\frac{m^{6}}{3 \cdot 16^{3} n^{6}}-\frac{m^{8}}{4 \cdot 16^{4} n^{8}}-\cdots- \\
+& \frac{m^{2}}{36 n^{2}}-\frac{m^{4}}{2 \cdot 36^{2} n^{4}}-\frac{m^{6}}{3 \cdot 36^{3} n^{6}}-\frac{m^{8}}{4 \cdot 36^{4} n^{8}}-\cdots- \\
+& \frac{m^{2}}{64 n^{2}}-\frac{m^{4}}{2 \cdot 64^{2} n^{4}}-\frac{m^{6}}{3 \cdot 64^{3} n^{6}}-\frac{m^{8}}{4 \cdot 64^{4} n^{8}}-\cdots \\
+& \log \cos \frac{m \pi}{2 n}=\log (n-m)+\log (n+m)-2 \log n- \\
+& \frac{m^{2}}{9 n^{2}}-\frac{m^{4}}{2 \cdot 9^{4} n^{4}}-\frac{m^{6}}{3 \cdot 9^{3} n^{6}}-\frac{m^{8}}{4 \cdot 9^{4} n^{8}}-\cdots- \\
+& \frac{m^{2}}{25 n^{2}}-\frac{m^{4}}{2 \cdot 25^{4} n^{4}}-\frac{m^{6}}{3 \cdot 25^{3} n^{6}}-\frac{m^{8}}{4 \cdot 25^{4} n^{8}}-\cdots- \\
+& \frac{m^{2}}{49 n^{2}}-\frac{m^{4}}{2 \cdot 49^{2} n^{4}}-\frac{m^{6}}{3 \cdot 49^{3} n^{6}}-\frac{m^{8}}{4 \cdot 49^{4} n^{8}}-\cdots
+\end{aligned}
+\]
+\section{$\S 192$}
+
+这两个级数都含有 $\frac{m}{n}$ 的所有偶次幂, 且这每一个幂都与一个其和已知的级数相乘, 即
+\[
+\begin{aligned}
+\log \sin \frac{m \pi}{2 n}= & \log m+\log (2 n-m)+\log (2 n+m)-3 \log n+\log \pi-\log 8- \\
+& \frac{m^{2}}{n^{2}}\left(\frac{1}{4^{2}}+\frac{1}{6^{2}}+\frac{1}{8^{2}}+\frac{1}{10^{2}}+\frac{1}{12^{2}}+\cdots\right)-
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{m^{4}}{2 n^{2}}\left(\frac{1}{4^{4}}+\frac{1}{6^{4}}+\frac{1}{8^{4}}+\frac{1}{10^{4}}+\frac{1}{12^{4}}+\cdots\right)- \\
+& \frac{m^{6}}{3 n^{6}}\left(\frac{1}{4^{6}}+\frac{1}{6^{6}}+\frac{1}{8^{6}}+\frac{1}{10^{6}}+\frac{1}{12^{6}}+\cdots\right)- \\
+& \frac{m^{8}}{4 n^{2}}\left(\frac{1}{4^{8}}+\frac{1}{6^{2}}+\frac{1}{8^{8}}+\frac{1}{10^{8}}+\frac{1}{12^{8}}+\cdots\right) \\
+& \log \cos \frac{m \pi}{2 n}=\log (n-m)+\log (n+m)-2 \log n- \\
+& \frac{m^{2}}{n^{2}}\left(\frac{1}{3^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{9^{2}}+\cdots\right)- \\
+& \frac{m^{4}}{2 n^{4}}\left(\frac{1}{3^{4}}+\frac{1}{5^{4}}+\frac{1}{7^{4}}+\frac{1}{9^{4}}+\cdots\right)- \\
+& \frac{m^{6}}{3 n^{6}}\left(\frac{1}{3^{6}}+\frac{1}{5^{6}}+\frac{1}{7^{6}}+\frac{1}{9^{6}}+\cdots\right)- \\
+& \frac{m^{8}}{4 n^{8}}\left(\frac{1}{3^{8}}+\frac{1}{5^{8}}+\frac{1}{7^{8}}+\frac{1}{9^{8}}+\cdots\right)-
+\end{aligned}
+\]
+第二表达式中级数的和已知 $(\S 190)$, 第一表达式中级数的和可以从第二表达式中级数 的和推出. 为使用方便, 下面列出它们中一部分的和.
+
+\section{$\S 193$}
+
+为简单起见,置
+\[
+\begin{aligned}
+& \alpha=\frac{1}{2^{2}}+\frac{1}{4^{2}}+\frac{1}{6^{2}}+\frac{1}{8^{2}}+\cdots \\
+& \beta=\frac{1}{2^{4}}+\frac{1}{4^{4}}+\frac{1}{6^{4}}+\frac{1}{8^{4}}+\cdots \\
+& \gamma=\frac{1}{2^{6}}+\frac{1}{4^{6}}+\frac{1}{6^{6}}+\frac{1}{8^{6}}+\cdots \\
+& \delta=\frac{1}{2^{8}}+\frac{1}{4^{8}}+\frac{1}{6^{8}}+\frac{1}{8^{8}}+\cdots
+\end{aligned}
+\]
+它们的近似值为
+\[
+\begin{aligned}
+& \alpha=0.41123351671205660911810 \\
+& \beta=0.06764520210694613696975 \\
+& \gamma=0.01589598534350701780804 \\
+& \delta=0.00392217717264822007571 \\
+& \varepsilon=0.00097753376477325984898 \\
+& \zeta=0.00024420070472492872274 
+\end{aligned}
+\]
+\[
+\begin{aligned}
+\text { Srfinite analysies }
+\end{aligned}
+\]
+继续写下去, 这近似值的下降速度很快, 每一个都约为前一个的四分之一.
+
+\section{$\S 194$}
+
+利用这些结果, 我们得到
+\[
+\begin{aligned}
+\log \sin \frac{m \pi}{2 n}= & \log m+\log (2 n-m)+\log (2 n+m)-3 \log n+\log \pi-\log 8- \\
+& \frac{m^{2}}{n^{2}}\left(\alpha-\frac{1}{2^{2}}\right)-\frac{m^{4}}{2 n^{4}}\left(\beta-\frac{1}{2^{4}}\right)-\frac{m^{6}}{n^{6}}\left(\gamma-\frac{1}{2^{6}}\right)-\cdots \\
+\log \cos \frac{m \pi}{2 n}= & \log (n-m)+\log (n+m)-2 \log n- \\
+& \frac{m^{2}}{n^{2}}(A-1)-\frac{m^{4}}{2 n^{4}}(B-1)-\frac{m^{6}}{3 n^{6}}(C-1)-\cdots
+\end{aligned}
+\]
+$\log \pi$ 和 $\log 8$ 已知, 所以角 $\frac{m}{n} 90^{\circ}$ 的正弦的自然对数为
+\[
+\begin{aligned}
+\log \sin \frac{m}{n} 90^{\circ}= & \log m+\log (2 n-m)+\log (2 n+m)-3 \log n- \\
+& 0.93471165583043575410- \\
+& \frac{m^{2}}{n^{2}} 0.16123351671205660911-
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{m^{4}}{n^{4}} 0.00257260105347306848- \\
+& \frac{m^{6}}{n^{6}} 0.00009032844783567260- \\
+& \frac{m^{8}}{n^{8}} 0.00000398179316205501- \\
+& \frac{m^{10}}{n^{10}} 0.00000019425295465196- \\
+& \frac{m^{12}}{n^{12}} 0.00000001001328748812- \\
+& \frac{m^{14}}{n^{14}} 0.00000000053404135618- \\
+& \frac{m^{16}}{n^{16}} 0.00000000002914859658- \\
+& \frac{m^{18}}{n^{18}} 0.00000000000161797979- \\
+& \frac{m^{20}}{n^{20}} 0.00000000000009097690- \\
+& \frac{m^{22}}{n^{22}} 0.00000000000000516827- \\
+& \frac{m^{24}}{n^{24}} 0.00000000000000029607- \\
+& \frac{m^{26}}{n^{26}} 0.00000000000000001708- \\
+& \frac{m^{28}}{n^{28}} 0.00000000000000000099- \\
+& \frac{m^{30}}{n^{30}} 0.00000000000000000005
+\end{aligned}
+\]
+角 $\frac{m}{n} 90^{\circ}$ 的余弦的自然对数为
+\[
+\begin{aligned}
+\log \cos \frac{m}{n} 90^{\circ}= & \log (n-m)+\log (n+m)-2 \log n- \\
+& \frac{m^{2}}{n^{2}} 0.23370055013616982735- \\
+& \frac{m^{4}}{n^{4}} 0.00733901580209602727- \\
+& \frac{m^{6}}{n^{6}} 0.00048235888031404063- \\
+& \frac{m^{8}}{n^{8}} 0.00003879475632402982-
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{m^{10}}{n^{10}} 0.00000340827260896510- \\
+& \frac{m^{12}}{n^{12}} 0.00000031430809718659- \\
+& \frac{m^{14}}{n^{14}} 0.00000002989150274450- \\
+& \frac{m^{16}}{n^{16}} 0.00000000290464467239- \\
+& \frac{m^{18}}{n^{18}} 0.00000000028682639518- \\
+& \frac{m^{20}}{n^{20}} 0.00000000002868076974- \\
+& \frac{m^{22}}{n^{22}} 0.00000000000289697956- \\
+& \frac{m^{24}}{n^{24}} 0.00000000000029506024- \\
+& \frac{m^{26}}{n^{26}} 0.00000000000003026249- \\
+& \frac{m^{28}}{n^{28}} 0.00000000000000312232- \\
+& \frac{m^{30}}{n^{30}} 0.00000000000000032379- \\
+& \frac{m^{32}}{n^{32}} 0.00000000000000003373- \\
+& \frac{m^{34}}{n^{34}} 0.00000000000000000352- \\
+& \frac{m^{36}}{n^{36}} 0.00000000000000000037- \\
+& \frac{m^{38}}{n^{38}} 0.00000000000000000004
+\end{aligned}
+\]
+\section{$\S 195$}
+
+前节中正弦和余弦的自然对数乘上 $0.4342944819 \cdots$ 就得到相应的常用对数. 我们 照习惯作法, 相乘之后, 给正弦和余弦的对数加上 10. 这样我们得到角 $\frac{m}{n} 90^{\circ}$ 的正弦的常 用对数为
+\[
+\begin{aligned}
+\log \sin \frac{m}{n} 90^{\circ}= & \log m+\log (2 n-m)+\log (2 n+m)-3 \log n+ \\
+& 9.594059885702190-
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{m^{2}}{n^{2}} 0.070022826605901- \\
+& \frac{m^{4}}{n^{4}} 0.001117266441661- \\
+& \frac{m^{6}}{n^{6}} 0.000039229146453- \\
+& \frac{m^{8}}{n^{8}} 0.000001729270798- \\
+& \frac{m^{10}}{n^{10}} 0.000000084362986- \\
+& \frac{m^{12}}{n^{12}} 0.000000004348715- \\
+& \frac{m^{14}}{n^{14}} 0.000000000231931- \\
+& \frac{m^{16}}{n^{16}} 0.000000000012659- \\
+& \frac{m^{18}}{n^{18}} 0.000000000000702- \\
+& \frac{m^{20}}{n^{20}} 0.000000000000039
+\end{aligned}
+\]
+角 $\frac{m}{n} 90^{\circ}$ 的余弦的常用对数为
+\[
+\begin{aligned}
+\log \cos \frac{m}{n} 90^{\circ}= & \log (n-m)+\log (n+m)-2 \log n+ \\
+& 10.000000000000000- \\
+& \frac{m^{2}}{n^{2}} 0.101494859341892- \\
+& \frac{m^{4}}{n^{4}} 0.003187294065451- \\
+& \frac{m^{6}}{n^{6}} 0.000209485800017- \\
+& \frac{m^{8}}{n^{8}} 0.000016848348597- \\
+& \frac{m^{10}}{n^{10}} 0.000001480193986- \\
+& \frac{m^{12}}{n^{12}} 0.000000136502272- \\
+& \frac{m^{14}}{n^{14}} 0.000000012981715-
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{m^{16}}{n^{16}} 0.000000001261471- \\
+& \frac{m^{18}}{n^{18}} 0.000000000124567- \\
+& \frac{m^{20}}{n^{20}} 0.000000000012456- \\
+& \frac{m^{12}}{n^{22}} 0.000000000001258- \\
+& \frac{m^{24}}{n^{24}} 0.000000000000128- \\
+& \frac{m^{26}}{n^{26}} 0.000000000000013
+\end{aligned}
+\]
+\section{$\S 196$}
+
+利用前两节的公式, 我们可以越过正弦和余弦, 直接求出任何角度的正弦和余弦的 自然和常用两种对数. 我们指出一点, 从一个角的正弦和余弦的对数, 用简单的减法, 我 们就可以求出正切、余切、正割和余割的对数. 因此对正弦、余弦之外的三角函数, 就没有 必要去寻求专门的对数公式. 再指出一点, 公式中 $m, n, n-m, n+m, \cdots$ 的对数, 在求哪种 对数的公式中, 就应该是哪种对数. 最后一点是, 比 $\frac{m}{n}$ 表示给定角与直角的比. 我们知道 大于半直角的角的正弦, 等于一个小于半直角的角的余弦, 反之亦然. 所以分数 $\frac{m}{n}$ 必定 不大于 $\frac{1}{2}$. 由此可以级数收玫很快.
+
+\section{$\S 197$}
+
+结束这个题目之前, 我们讲一种更好的求任意角正切和正割的方法. 虽然正切和正 割都可以由正弦和余弦求得, 但要用除法, 多位数除法是很麻烦的. 在 §135 中我们给出 了正切和余切的公式, 但末做推导, 这里给补充.
+
+\section{$\S 198$}
+
+首先由 $\S 181$ 角 $\frac{m}{2 n} \pi$ 的正切表达式
+\[
+\frac{1}{n^{2}-m^{2}}+\frac{1}{9 n^{2}-m^{2}}+\frac{1}{25 n^{2}-m^{2}}+\cdots=\frac{\pi}{4 m n} \tan \frac{m}{2 n} \pi
+\]
+得 
+\[
+\begin{aligned}
+& \tan \frac{m}{2 n} \pi=\frac{4 m n}{\pi}\left(\frac{1}{n^{2}-m^{2}}+\frac{1}{9 n^{2}-m^{2}}+\frac{1}{25 n^{2}-m^{2}}+\cdots\right)
+\end{aligned}
+\]
+再将
+\[
+\frac{1}{n^{2}-m^{2}}+\frac{1}{4 n^{2}-m^{2}}+\frac{1}{9 n^{2}-m^{2}}+\cdots=\frac{1}{2 m^{2}}-\frac{\pi}{2 m n} \cot \frac{m}{n} \pi
+\]
+中的 $n$ 换为 $2 n$, 得
+\[
+\cot \frac{m}{2 n} \pi=\frac{2 n}{m \pi}-\frac{4 m n}{\pi}\left(\frac{1}{4 n^{2}-m^{2}}+\frac{1}{16 n^{2}-m^{2}}+\frac{1}{36 n^{2}-m^{2}}+\cdots\right)
+\]
+两式中的分数, 开始的一两个易于计算, 将其余的展成无穷级数,得
+\[
+\begin{aligned}
+& \tan \frac{m}{2 n} \pi= \frac{m n}{n^{2}-m^{2}} \frac{4}{\pi}+ \\
+& \frac{4}{\pi}\left(\frac{m}{3^{2} n}+\frac{m^{3}}{3^{4} n^{3}}+\frac{m^{5}}{3^{6} n^{5}}+\cdots\right)+ \\
+& \frac{4}{\pi}\left(\frac{m}{5^{2} n}+\frac{m^{3}}{5^{4} n^{3}}+\frac{m^{5}}{5^{6} n^{5}}+\cdots\right)+ \\
+& \frac{4}{\pi}\left(\frac{m}{7^{2} n}+\frac{m^{3}}{7^{4} n^{3}}+\frac{m^{5}}{7^{6} n^{5}}+\cdots\right) \\
+& \cot \frac{m}{2 n} \pi= \frac{n}{m} \frac{2}{\pi}-\frac{m n}{4 n^{2}-m^{2}} \frac{4}{\pi}- \\
+& \frac{4}{\pi}\left(\frac{m}{4^{2} n}+\frac{m^{3}}{4^{4} n^{3}}+\frac{m^{5}}{4^{6} n^{5}}+\cdots\right)- \\
+& \frac{4}{\pi}\left(\frac{m}{6^{2} n}+\frac{m^{3}}{6^{4} n^{3}}+\frac{m^{5}}{6^{6} n^{5}}+\cdots\right)- \\
+& \frac{4}{\pi}\left(\frac{m}{8^{2} n}+\frac{m^{3}}{8^{4} n^{3}}+\frac{m^{5}}{8^{6} n^{5}}+\cdots\right) \\
+& \vdots
+\end{aligned}
+\]
+\section{$\S 198a$}
+
+从已知的 $\pi$ 值得
+\[
+\frac{1}{\pi}=0.318309886183790671537767926745028724
+\]
+我们已求得了我们记为 $A, B, C, D, \cdots$ 和 $\alpha, \beta, \gamma, \delta, \cdots$ 的各级数的和, 用这两套记号可将 上节公式改写为
+\[
+\tan \frac{m}{2 n} \pi=\frac{m n}{n^{2}-m^{2}} \frac{4}{\pi}+\frac{m}{n} \frac{4}{n}(A-1)+
+\]
+(1) 原书误编两个 $\S 198$, 参照俄译本改第二个 $\S 198$ 为 $\S 198 \mathrm{a}$. 一— 中译者. 
+\[
+\begin{aligned}
+& \frac{m^{3}}{n^{3}} \frac{4}{\pi}(B-1)+\frac{m^{5}}{n^{5}} \frac{4}{\pi}(C-1)+\frac{m^{7}}{n^{7}} \frac{4}{\pi}(D-1)+\cdots
+\end{aligned}
+\]
+和
+\[
+\begin{aligned}
+\cot \frac{m}{2 n} \pi= & \frac{n}{m} \frac{2}{\pi}-\frac{m n}{4 n^{2}-m^{2}} \frac{4}{\pi}-\frac{m}{n} \frac{4}{\pi}\left(\alpha-\frac{1}{2^{2}}\right)- \\
+& \frac{m^{3}}{n^{3}} \frac{4}{\pi}\left(\beta-\frac{1}{2^{4}}\right)-\frac{m^{5}}{n^{5}} \frac{4}{\pi}\left(\gamma-\frac{1}{2^{6}}\right)-\frac{m^{7}}{n^{7}} \frac{4}{\pi}\left(\delta-\frac{1}{2^{8}}\right)-\cdots
+\end{aligned}
+\]
+从这两个公式可以得到 $\$ 135$ 的正切和余切表达式. §137 我们讲了如何从正切和余切 经过简单的加减法得到正割和余割. 利用这些规则, 造正弦、正切、正割表, 造它们的对数 表,都比原来容易很多. 
+

@@ -1,0 +1,473 @@
+\chapter{第九章 三阶线的分类}
+
+\section{$\S 219$}
+
+伸向无穷的分支, 其性质和条数, 是曲线间的根本区别, 可作为各阶线分类的依据. 对二阶线,以此和以二阶线本身性质为依据所得类相同.
+
+设二阶线的通用方程为
+\[
+\alpha y^{2}+\beta y x+\gamma x^{2}+\delta y+\varepsilon x+\zeta=0
+\]
+先考虑最高次部分 $\alpha y^{2}+\beta y x+\gamma x^{2}$ 有无实线性因式. 无, 则二阶线归为第一类, 称为椭 圆; 有, 则要进一步看这因式是否相重, 重, 则二阶线为抛物线, 不重, 则为双曲线.
+
+\section{$\S 220$}
+
+最高次部分的两个因式为实, 且不相重时, 二阶线有两条渐近线. 为分析其性质, 令
+\[
+\alpha y^{2}+\beta y x+\gamma x^{2}=(a y-b x)(c y-d x)
+\]
+得
+\[
+(a y-b x)(c y-d x)+\delta y+\varepsilon x+\zeta=0
+\]
+先看因式 $a y-b x$, 在无穷远处它给出 $\frac{y}{x}=\frac{b}{a}$. 那时我们有
+\[
+a y-b x+\frac{b b+\varepsilon a}{b c-a d}+\frac{\zeta}{c y-d x}=0
+\]
+从而方程
+\[
+a y-b x+\frac{\partial b+\varepsilon a}{b c-a d}=0
+\]
+确定一条渐近直线的位置. 类似地, 方程
+\[
+c y-d x+\frac{\delta d+\varepsilon c}{a d-b c}=0
+\]
+给出另一条渐近线.
+
+\section{$\S 221$}
+
+为研究每条渐近线的性质, 作变换
+\[
+y=\frac{a u+b t}{\sqrt{a^{2}+b^{2}}}, \quad x=\frac{a t-b u}{\sqrt{a^{2}-b^{2}}}
+\]
+令 $\sqrt{a^{2}-b^{2}}=g$, 则
+\[
+u[(a c+b d) u+(b c-a d) t]+\frac{(\delta a-\varepsilon b) u+(\delta b+\varepsilon a) t}{g}+\zeta=0
+\]
+从而
+\[
+g(b c-a d) t u+g(a c+b d) u^{2}+(\delta b+\varepsilon a) t+(\delta a+\varepsilon b) u+\zeta g=0
+\]
+换第一项以外的 $u$ 为
+\[
+u=\frac{\partial b+\varepsilon a}{g(b c-a d)}
+\]
+得
+\[
+[g(b c-a d) u+\delta b+\varepsilon a] t+\frac{(a c+b d)(\delta b+\varepsilon a)^{2}}{g(b c-a d)^{2}}+\frac{(\delta a-\varepsilon b)(\delta b+\varepsilon a)}{g(b c-a d)}+\zeta g=0
+\]
+或
+\[
+g(b c-a d) u+\delta b+\varepsilon a+\frac{g(\delta b+\varepsilon c)(\delta b+\varepsilon a)}{(b c-a d)^{2} t}+\frac{\zeta g}{t}=0
+\]
+这样得方程形状如 $u=\frac{A}{t}$ 的双曲渐近线. 类似地, 从因式 $c y-d x$ 得到另一条渐近线. 从 而, 最高次部分的因式为实且相异时, 二阶线有两对伸向无穷的分支, 每对都由一个状如 $u=\frac{A}{t}$ 的方程表示.
+
+\section{$\S 222$}
+
+现在设两因式相重,即
+\[
+\alpha y^{2}+\beta x y+\gamma x^{2}=(a y-b x)^{2}
+\]
+作变换
+\[
+y=\frac{a u+b t}{g}, \quad x=\frac{a t-b u}{g}
+\]
+得
+\[
+g^{2} u^{2}+\frac{(\delta a-\varepsilon b) u}{g}+\frac{(\delta b+\varepsilon a) t}{g}+\zeta=0
+\]
+$t$ 无穷时, 得
+\[
+u^{2}+\frac{(\delta b+\varepsilon a) t}{g^{2}}=0
+\]
+该方程状如 $u^{2}=A t$, 表示两条抛物分支, 即曲线本身和它的渐近线都是抛物线. 如果 $\delta b+$ $\varepsilon a=0$,则方程成为
+\[
+g^{2} u^{2}+\frac{\delta g u}{a}+\zeta=0
+\]
+这是两条相平行的直线的方程,是整个二阶方程可分解为两个线性因式的情形.
+
+这样, 我们的方法对于不曾讨论过的二阶线也可以确定其类别. 
+
+\section{$\S 223$}
+
+下面用该方法考察三阶线,三阶线的通用方程为
+\[
+\alpha y^{3}+\beta y^{2} x+\gamma y x^{2}+\delta x^{3}+\varepsilon y^{2}+\zeta y x+\eta x^{2}+\theta y^{2}+\omega x+\kappa=0
+\]
+最高次部分为 $\alpha y^{3}+\beta y^{2} x+\gamma y x^{2}+\delta x^{3}$, 次数为奇数, 因而它或者有一个实因式, 或者三 个因式全是实的, 可能的情况是：
+
+$\mathrm{I}$. 只有一个实线性因式.
+
+II. 三个因式全是实的,且不重.
+
+III. 二重因式.
+
+IV. 三重因式.
+
+由于不管有无重因式,我们都只需对一个因式 $a y-b x$ 进行计算,因而我们可以照做 过的那样, 改变坐标轴的位置,使通用方程变为
+\[
+\alpha t^{2} u+\beta t u^{2}+\gamma u^{3}+\delta t^{2}+\varepsilon t u+\zeta u^{2}+\eta t+\theta u+\iota=0
+\]
+其最高次部分 $\alpha t^{2} u+\beta t u^{2}+\gamma u^{3}$ 有因式 $u$.
+
+情况 I
+
+\section{$\S 224$}
+
+最高次部分只有一个实线性因式, 这是在 $\beta^{2}$ 小于 $4 \alpha \gamma$ 时, $t=\infty$ 我们有 $\alpha u+\delta=0$, 这是 渐近直线方程, 从该方程得 $u=c$, 我们有
+\[
+\alpha t^{2}(u-c)+t\left(\beta c^{2}+\varepsilon c+\eta\right)+\gamma c^{2}+\zeta c^{2}+\theta c+\iota=0
+\]
+该方程表示的是渐近线, 从而由 $\beta c^{2}+\varepsilon c+\eta$ 是否为零得到状如
+\[
+u-c=\frac{A}{t}, \quad u-c=\frac{A}{t^{2}}
+\]
+的两类渐近线,也即情况 I 之下,三阶线有两类:
+
+1
+
+第一类, 有单一的渐近线
+\[
+u=\frac{A}{t}
+\]
+2
+
+第二类, 有单一的渐近线
+\[
+u=\frac{A}{t^{2}}
+\]
+情况 II
+
+\section{$\S 225$}
+
+三个因式全是实的,且不重,这是在方程
+\[
+\alpha t^{2} u+\beta t u^{2}+\gamma u^{3}+\delta t^{2}+\varepsilon t u+\zeta u^{2}+\eta t+\theta u+\iota=0
+\]
+中的 $\beta^{2}$ 大于 $4 \alpha \gamma$ 的时候, 这种情况下, 每一个因式都给出前节的结果, 也即都给出状如 $u=\frac{A}{t}$ 或 $u=\frac{A}{t^{2}}$ 的两个双曲分支. 因而这种情况下共给出四类形状不同的三阶线. 每一类 有彼此倾角任意的三条渐近直线,这四类是:
+
+3
+
+第三类, 有三条状如 $u=\frac{A}{t}$ 的渐近线.
+
+4
+
+第四类, 有两条状如 $u=\frac{A}{t}$ 和一条状如 $u=\frac{A}{t^{2}}$ 的渐近线.
+
+第五类, 有一条状如 $u=\frac{A}{t}$ 和两条状如 $u=\frac{A}{t^{2}}$ 的渐近线 (参见 $\$ 227$ ).
+
+第六类, 有三条状如 $u=\frac{A}{t^{2}}$ 的渐近线.
+
+\section{$\S 226$}
+
+我们来考虑这每种类型是否都实际可能, 为此取最高次部分有三个因式的通用方程 $y(\alpha y-\beta x)(\gamma y-\delta x)+\varepsilon x y+\zeta y^{2}+\eta x+\theta y+\iota=0$
+
+方程中虽无 $x^{2}$ 项,但并不影响其一般性. 由进行过的讨论知,因式 $y$ 给出状如 $u=\frac{A}{t}$ 的渐 近线, 只要 $\eta$ 不等于零. 我们来考虑因式 $\alpha y-\beta x$ 给出的渐近线, 为此令 $y=\alpha u+\beta t, x=$ $\alpha t-\beta u$. 为简单起见, 令 $\alpha^{2}+\beta^{2}=1$, 这总是允许的, 这样,方程变为
+\[
+\begin{aligned}
+& \beta(\beta \gamma-\alpha \delta) t^{2} u+\left[2 \alpha \beta \gamma-\left(\alpha^{2}-\beta^{2}\right) \delta\right] t u^{2}+\alpha(\alpha \gamma+\beta \delta) u^{3}+ \\
+& \beta(\alpha \varepsilon+\beta \zeta) t^{2}+\left[2 \alpha \beta \gamma+\left(\alpha^{2}-\beta^{2}\right) \varepsilon\right] t u+\alpha(\alpha \zeta-\beta \varepsilon) u^{2}+ \\
+& (\alpha \eta+\beta \theta) t+(\alpha \theta-\beta \eta) u+\iota=0
+\end{aligned}
+\]
+因式 $\alpha y-\beta x$ 成为 $u . t$ 无穷,得
+\[
+u=\frac{\alpha \varepsilon+\beta \zeta}{\alpha \delta-\beta \gamma}=c
+\]
+将含 $t$ 第二项中的 $u$ 换成这个值, 我们看到, 只要
+\[
+\frac{\alpha \eta+\beta \theta}{\beta}+\frac{(\alpha \varepsilon+\beta \zeta)(\gamma \varepsilon+\delta \zeta)}{(\alpha \delta+\beta \gamma)}=0
+\]
+%%06p101-120
+不成立, 从因式 $u$ 或 $\alpha y-\beta x$ 就得到状如 $u=\frac{A}{t}$ 的渐近线. 类似地, 只要
+\[
+\frac{\gamma \eta+\delta \theta}{\delta}+\frac{(\alpha \varepsilon+\beta \zeta)(\gamma \varepsilon+\delta \zeta)}{(\alpha \delta+\beta \gamma)^{2}}=0
+\]
+不成立, 因式 $\gamma y-\delta x$ 就给出状如 $u=\frac{A}{t}$ 的渐近线.
+
+\section{$\S 227$}
+
+由此我们清楚地看到, $\eta$ 和刚才的这个表达式是可以同时不为零的, 即第三类是可以 确实存在的. 至于第四类, 先令 $\eta=0$, 我们就得到一条状如 $u=\frac{A}{t^{2}}$ 的渐近线. 另外两个表 达式相同,因而只要
+\[
+\theta+\frac{(\alpha \varepsilon+\beta \zeta)(\gamma \varepsilon+\delta \zeta)}{(\alpha \delta-\beta \gamma)^{2}}=0
+\]
+不成立, 剩下的两条渐近线, 其形状就都为 $u=\frac{A}{t}$. 我们得到结论, 第四类是可能的. 但是, 如果 $\eta=0$, 那么, 另外两个表达式中只要有一个为零, 则另一个必为零, 因此状如 $u=\frac{A}{t^{2}}$ 的渐近线, 有第二条, 则必有第三条, 即第五类不可能. $\eta=0$ 时, 得
+\[
+\theta=\frac{-(\alpha \varepsilon+\beta \zeta)(\gamma \varepsilon+\delta \zeta)}{(\alpha \delta-\beta \gamma)^{2}}
+\]
+所以第六类是可能的, 从这两种情况我们得到第五类三阶线, 前面列的第五类应该去掉.
+
+第五类,有三条状如 $u=\frac{A}{t^{2}}$ 的渐近线.
+
+情况 III
+
+\section{$\S 228$}
+
+最高次部分有二重因式 $u^{2}$, 即情况 II 方程中 $\alpha t^{2} u$ 为零得情况 III, 情况 III 的通用方 程为
+\[
+\alpha t u^{2}-\beta u^{3}+\gamma t^{2}+\delta t u+\varepsilon u^{2}+\zeta t+\eta u+\theta=0
+\]
+最高次部分含二重因式 $u^{2}$ 和单因式 $\alpha t-\beta u$, 单因式产生状如 $u=\frac{A}{t}$ 或 $u=\frac{A}{t^{2}}$ 的渐近线, 取决于
+\[
+(\alpha \delta+2 \beta \gamma)\left(\alpha^{2} \varepsilon+\alpha \beta \delta+\beta^{2} \gamma\right)-\alpha^{3}(\alpha \eta+\beta \zeta)
+\]
+不为零的成立与否.
+
+\section{$\S 229$}
+
+至于二重因式, $\gamma$ 不为零成第一种情况. 此时 $t=\infty$ 得 $\alpha u^{2}+\gamma t=0$, 这是状如 $u^{2}=A t$ 的抛物线方程, 由此得两类新的三阶线.
+
+6
+
+第六类, 有状如 $u=\frac{A}{t}$ 和 $u^{2}=A t$ 的渐近线各一条.
+
+7
+
+第七类, 有一条状如 $u=\frac{A}{t^{2}}$ 的渐近线和一条状如 $u^{2}=A t$ 的渐近抛物线.
+
+\section{$\S 230$}
+
+现在假定 $\gamma=0$, 第三个因式 $\alpha t-\beta u$ 给出状如 $u=\frac{A}{t^{2}}$ 的渐近线, 条件是
+\[
+\delta(\alpha \varepsilon+\beta \delta)=\alpha(\alpha \eta+\beta \zeta)
+\]
+这个等式不成立时, 渐近线的形状是 $u=\frac{A}{t}$. 因而我们有方程
+\[
+\left.\begin{array}{l}
++\alpha u^{2}-\beta u^{3} \\
++\delta t u+\varepsilon u^{2} \\
++\zeta t+\eta u \\
++\theta
+\end{array}\right\}=0
+\]
+令 $t=\infty$, 得 $\alpha u^{2}+\delta u+\zeta=0$.
+
+如果 $\delta^{2}<4 \alpha \zeta$, 则给不出任何渐近线, 从本情况我们得到下面两类:
+
+8
+
+第八类: 有一条状如 $u=\frac{A}{t}$ 的渐近线.
+
+9
+
+第九类: 有一条状如 $u=\frac{A}{t^{2}}$ 的渐近线.
+
+\section{$\S 231$}
+
+如果方程 $\alpha u^{2}+\delta u+\zeta=0$ 的两个根都为实数, 且相异, 即 $\delta^{2}>4 \alpha \zeta$, 那么, 我们有两条 相平行的渐近直线, 形状都为 $u=\frac{A}{t}$, 因而这种情况也给出两类线: 
+
+10
+
+第十类, 有一条状如 $u=\frac{A}{t}$ 的渐近直线和两条形状也为 $u=\frac{A}{t}$ 的相平行的渐近线.
+
+11
+
+第十一类,有一条状如 $u=\frac{A}{t^{2}}$ 的渐近线和两条相平行的状如 $u=\frac{A}{t}$ 的渐近线.
+
+\section{$\S 232$}
+
+设方程 $\alpha u^{2}+\delta u+\zeta=0$ 的两个根相等, 即 $\delta^{2}=4 \alpha \zeta$ 或 $\alpha u^{2}+\delta u+\zeta=\alpha(u-c)^{2}$, 则
+\[
+\alpha t(u-c)^{2}=\beta c^{3}-\varepsilon c^{2}-\eta c-\theta
+\]
+由此得到状如 $u^{2}=\frac{A}{t}$ 的渐近线, 从这种情况我们得到两类线.
+
+12
+
+第十二类, 有状如 $u=\frac{A}{t}$ 和 $u^{2}=\frac{A}{t}$ 的渐近线各一条.
+
+13
+
+第十三类, 有状如 $u=\frac{A}{t^{2}}$ 和 $u^{2}=\frac{A}{t}$ 的渐近线各一条.
+
+情况 IV
+
+\section{$\S 233$}
+
+最高次部分的三个因式全相等时,方程的形状为
+\[
+\alpha u^{3}+\beta t^{2}+\gamma t u+\delta u^{2}+\varepsilon t+\zeta u+\eta=0
+\]
+先考虑项 $\beta t^{2}$ 的有无. 有, 即 $\beta t^{2}$ 不为零, 则曲线有一条状如 $u^{3}=A t^{2}$ 的渐近抛物线, 我们 得到：
+
+14
+
+第十四类,只有一条状如 $u^{3}=A t^{2}$ 的渐近抛物线.
+
+\section{$\S 234$}
+
+没有项 $\beta t^{2}$, 即 $\beta t^{2}=0$, 则
+\[
+\alpha u^{3}+\gamma t u+\delta u^{2}+\varepsilon t+\zeta u+\eta=0
+\]
+如果这里的 $\gamma$ 和 $\varepsilon$ 都不为零, 那么, 令 $t=\infty$ 得 $\alpha u^{3}+\gamma t u+\varepsilon t=0$. 设 $\gamma$ 不等于零, 则该方程 包含两个方程: $\alpha u^{2}+\gamma t=0$ 和 $\gamma u+\varepsilon=0$. 前一个表示状如 $u^{2}=A t$ 的渐近抛物线. 置 $\frac{-\varepsilon}{\gamma}=c$, 后一个给出 
+\[
+\gamma t(u-c)+\alpha c^{2}+\delta c^{2}+\zeta c+\eta=0
+\]
+这是状如 $u=\frac{A}{t}$ 的渐近双曲线方程,由此得:
+
+15
+
+第十五类, 有状如 $u^{2}=A t$ 的渐近抛物线和状如 $u=\frac{A}{t}$ 的渐近直线各一条, 且抛物线 的轴平行于渐近直线.
+
+\section{$\S 235$}
+
+$\gamma=0$,则方程成为
+\[
+\alpha u^{3}+\delta u^{2}+\varepsilon t+\zeta u+\eta=0
+\]
+这里 $\varepsilon$ 不能为零, 否则所给线将不是曲线. $t$ 为无穷, 则 $u$ 必无穷, 由此得 $\alpha u^{3}+\varepsilon t=0$, 这 给出
+
+16
+
+第十六类,有一条状如 $u^{3}=A t$ 的渐近抛物线.
+
+\section{$\S 236$}
+
+牛顿分三阶线为 72 种,我们的分法分 72 种为 16 类. 两种分法的差别在于,我们只考 虑趋向无穷的分支的性质, 而牛顿同时考虑曲线在有限区域中的性质. 牛顿分成的种数 比我们分成的类多得多, 我们的分法能也只能对牛顿分了类的曲线进行分类.
+
+\section{$\S 237$}
+
+为了更好地了解各类曲线的形态和性质,下面我们列出各类的最简通用方程, 和各 类所包含的牛顿的种次.
+\[
+\begin{gathered}
+\text { 第一类 } \\
+y\left(x^{2}-2 m x y+n^{2} y^{2}\right)+a y^{2}+b x+c y+d=0
+\end{gathered}
+\]
+其中 $m^{2}<n^{2}, b \neq 0$.
+
+包含牛顿的第 $33,34,35,36,37,38$ 种.
+\[
+\begin{gathered}
+\text { 第二类 } \\
+y\left(x^{2}-2 m x y+n^{2} y^{2}\right)+a y^{2}+c y+d=0
+\end{gathered}
+\]
+其中 $m^{2}<n^{2}$.
+
+包含牛顿的第 $39,40,41,42,43,44,45$ 种.
+\[
+\begin{gathered}
+\text { 第三类 } \\
+y(x-m y)(x-n y)+a y^{2}+b x+c y+d=0
+\end{gathered}
+\]
+其中 $b \neq 0, m b+c+\frac{a^{2}}{(m-n)^{2}} \neq 0 . n b+c+\frac{a^{2}}{(m-n)^{2}} \neq 0, m \neq n$.
+
+包含牛顿的第 $1,2,3,4,5,6,7,8,9$ 种, $a=0$ 时还包含第 $24,25,26,27$ 种.
+
+第四类
+\[
+y(x-m y)(x-n y)+a y^{2}+c y+d=0
+\]
+其中 $c+\frac{a^{2}}{(m-n)^{2}} \neq 0, m \neq n$.
+
+包含牛顿的第 $10,11,12,13,14,15,16,17,18,19,20,21$ 种 , $a=0$ 时还包含第 28,29 , 30,31 种.
+
+第五类
+\[
+y(x-m y)(x-n y)+a y^{2}-\frac{a^{2} y}{(m-n)^{2}}+d=0
+\]
+其中 $m \neq n$.
+
+包含牛顿的第 22,23 和 32 种.
+\[
+\begin{gathered}
+\text { 第六类 } \\
+y^{2}(x-m y)+a x^{2}+b x+c y+d=0
+\end{gathered}
+\]
+其中 $a \neq 0,2 m^{3} a^{2}-m b-c \neq 0$.
+
+包含牛顿的第 $46,47,48,49,50,51,52$ 种.
+\[
+\begin{gathered}
+\text { 第七类 } \\
+y^{2}(x-m y)+a x^{2}+b x+m\left(2 m^{2} a^{2}-b\right) y+d=0
+\end{gathered}
+\]
+包含牛顿的第 $53,54,55,56$ 种.
+\[
+\begin{gathered}
+\text { 第八类 } \\
+y^{2}(x-m y)+b^{2} x+c y+d=0
+\end{gathered}
+\]
+其中 $c \neq-m b^{2}, b=0$.
+
+包含牛顿的第 61 和 62 种.
+\[
+\begin{gathered}
+\text { 第九类 } \\
+y^{2}(x-m y)+b^{2} x-m b^{2} y+d=0
+\end{gathered}
+\]
+其中 $b \neq 0$.
+
+包含牛顿的第 63 种.
+\[
+\begin{gathered}
+\text { 第十类 } \\
+y^{2}(x-m y)-b^{2} x+c y+d=0
+\end{gathered}
+\]
+其中 $c \neq m b^{2}, b \neq 0$.
+
+包含牛顿的第 $57,58,59$ 种.
+\[
+\begin{gathered}
+\text { 第十一类 } \\
+y^{2}(x-m y)-b^{2} x+m b^{2} y+d=0
+\end{gathered}
+\]
+其中 $b \neq 0$.
+
+包含牛顿的第 60 种.
+
+第十二类
+\[
+y^{2}(x-m y)+c y+d=0
+\]
+其中 $c \neq 0$.
+
+包含牛顿的第 64 种.
+\[
+\begin{gathered}
+\text { 第十三类 } \\
+y^{2}(x-m y)+d=0
+\end{gathered}
+\]
+包含牛顿的第 65 种.
+\[
+\begin{gathered}
+\text { 第十四类 } \\
+y^{3}+a x^{2}+b x y+c y+d=0
+\end{gathered}
+\]
+其中 $a \neq 0$.
+
+包含牛顿的第 $67,68,69,70,71$ 种.
+\[
+\begin{gathered}
+\text { 第十五类 } \\
+y^{3}+b x y+c y+d=0
+\end{gathered}
+\]
+其中 $b \neq 0$.
+
+包含牛顿的第 66 种.
+\[
+\begin{gathered}
+\text { 第十六类 } \\
+y^{3}+a y+b x=0
+\end{gathered}
+\]
+其中 $b \neq 0$.
+
+包含牛顿的第 72 种.
+
+\section{$\S 238$}
+
+如果考虑曲线在有界区域中的形状, 我们的十六类里的多数都再分为几种, 牛顿的 72 种就是这么产生的, 对四阶和更高阶线,我们的每类所含牛顿的种数更多. 
+

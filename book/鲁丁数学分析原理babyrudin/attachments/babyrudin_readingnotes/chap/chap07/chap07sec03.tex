@@ -1,0 +1,35 @@
+% chap07sec03
+\section{Uniform convergence and integration}
+\begin{thm}
+    \label{thm:7.16}
+    Let $\alpha$ be monotonically increasing on $[a, b]$. 
+    Suppose $f_n \in \mathscr{R}(\alpha)$ on $[a, b]$, 
+    for $n = 1, 2, 3, ...$ , 
+    and suppose $f_n \rightarrow f$ uniformly on $[a, b]$. 
+    Then $f \in \mathscr{R}(\alpha)$ on $[a, b]$, and
+    \begin{equation}
+        \label{eq:7.23}
+        \int_{a}^{b} f \d \alpha = 
+        \lim_{n \to \infty} \int_{a}^{b} f_n \d \alpha.
+    \end{equation}
+\end{thm}
+
+(The existence of the limit is part of the conclusion.)
+
+% todo add proof
+
+\begin{myCorollary*}
+    If $f_n \in \mathscr{R}(\alpha)$ on $[a, b]$ and if 
+    \begin{equation*}
+        f(x) = \sum_{n=1}^{\infty} f_n (x)
+        \quad
+        (a \leq x \leq b),
+    \end{equation*}
+    the series converging uniformly on $[a, b]$, then
+    \begin{equation*}
+        \int_{a}^{b} f \d \alpha = 
+        \sum_{n=1}^{\infty} \int_{a}^{b} f_n \d \alpha.
+    \end{equation*}
+\end{myCorollary*}
+
+In other words, the series may be integrated term by term.

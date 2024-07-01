@@ -1,0 +1,125 @@
+% chap05sec02
+\section{Mean value theorems}
+\begin{mydef}
+    \label{mydef:5.7}
+    Let $f$ be a real function defined on a metric space $X$.
+    We say that $f$ has a \emph{local maximum} at a point $p \in X$ 
+    if there exists $\delta > 0$ 
+    such that $f(q) \leq f(p)$ 
+    for all $q \in X$ with $d(p, q) < \delta$.
+\end{mydef}
+Local minima are defined likewise.
+\mybox{极大值与极小值的定义}
+
+Our next theorem is the basis of many applications of differentiation.
+\begin{thm}
+    \label{thm:5.8}
+    Let $f$ be defined on $[a, b]$;
+    if $f$ has a local maximum at a point $x \in (a, b)$, 
+    and if $f'(x)$ exists, then $f'(x) = 0$.
+\end{thm}
+
+The analogous statement for local minima is of course also true.
+\mybox{极值处可导, 则其导数为0}
+\begin{proof}
+    Choose $\delta$ in accordance with Definition \ref{mydef:5.7}, 
+    so that
+    \begin{equation*}
+        a < x - \delta < x < x + \delta < b.
+    \end{equation*}
+    If $x - \delta < t < x$, then
+    \begin{equation*}
+        \frac{f(t)-f(x)}{t-x} \geq 0,
+    \end{equation*}
+    Letting $t \rightarrow x$, we see that $f'(x) \geq 0$.
+    
+    If $x < t < x + \delta$, then 
+    \begin{equation*}
+        \frac{f(t) -f(x)}{t-x} \leq 0,
+    \end{equation*}
+    which shows that $f'(x) \leq 0$. Hence $f'(x) = 0$.
+\end{proof}
+\mybox{另一种证明相等的常用方式, 
+除了第一章所述的证明大于小于均不成立外, 
+还可以证明大于等于和小于等于同时成立}
+
+\begin{thm}
+    \label{thm:5.9}
+    If $f$ and $g$ are continuous real functions on $[a, b]$ 
+    which are differentiable in $(a, b)$, 
+    then there is a point $x \in (a, b)$ at which
+    \begin{equation*}
+        \left[ f(b) - f(a) \right]g'(x) = 
+        \left[ g(b) - g(a) \right]f'(x).
+    \end{equation*}
+\end{thm}
+
+Note that differentiability is not required at the endpoints.
+
+\begin{proof}
+    Put 
+    \begin{equation*}
+        h(t) = 
+        \left[ f(b) - f(a) \right]g(t) -
+        \left[ g(b) - g(a) \right]f(t)
+        \quad
+        (a \leq t \leq b).
+    \end{equation*}
+    Then $h$ is continuous on $[a,b]$, $h$ is differentiable in $(a, b)$, and
+    \begin{equation}
+        \label{eq:5.12}
+        h(a) = f(b)g(a) - f(a)g(b) = h(b).
+    \end{equation}
+    To prove the theorem, we have to show that $h'(x) = 0$ for some $x \in (a, b)$.
+    \mybox{先证明罗尔定理}
+
+    If $h$ is constant, this holds for every $x \in (a, b)$.
+    If $h(t) > h(a)$ for some $t \in (a, b)$, 
+    let $x$ be a point on $[a, b]$ 
+    at which $h$ attains its maximum (Theorem \ref{thm:4.16}).
+    By (\ref{eq:5.12}), $x \in (a, b)$, 
+    and Theorem \ref{thm:5.8} shows that $h'(x) \neq 0$.
+
+    If $h(t) < h(a)$ for some $t \in (a, b)$, 
+    the same argument applies if we choose for $x$ a point on $[a, b]$ 
+    where $h$ attains its minimum.
+\end{proof}
+
+This theorem is often called a \emph{generalized mean value theorem}; 
+the following special case is usually referred to as ``the'' mean value theorem:
+\begin{proof}
+    generalized mean value theorem; 广义中值定理
+\end{proof}
+
+\begin{thm}
+    \label{thm:5.10} 
+    If $f$ is a real continuous function on $[a, b]$ 
+    which is differentiable in $(a, b)$, 
+    then there is a point $x \in (a, b)$ at which 
+    \begin{equation*}
+        f(b) - f(a) = (b - a)f'(x).
+    \end{equation*}
+\end{thm}
+\mybox{中值定理}
+\begin{proof}
+    Take $g(x) = x$ in Theorem 5.9.
+\end{proof}
+
+\begin{thm}
+    \label{thm:5.11}
+    Suppose $f$ is differentiable in $(a, b)$.
+    \begin{enumerate}[(a)]
+        \item If $f'(x) \geq 0$ for all $x \in (a, b)$, then $f$ is monotonically increasing.
+        \item If $f'(x) = 0$ for all $x \in (a, b)$, then $f$ is constant.
+        \item If $f'(x) \leq 0$ for all $x \in (a, b)$, then $f$ is monotonically decreasing.
+    \end{enumerate}
+\end{thm}
+
+\begin{proof}
+    All conclusions can be read off from the equation
+    \begin{equation*}
+        f(x_2) - f(x_1) = (x_2 - x_1)f'(x),
+    \end{equation*}
+    which is valid, for each pair of numbers $x_1, x_2$ in $(a, b)$, 
+    for \emph{some} $x$ between $x_1$ and $x_2$ .
+\end{proof}

@@ -1,0 +1,67 @@
+% chap02sec05
+\section{Connected sets}
+
+\mybox{
+    A connected set is a set that cannot be partitioned into two nonempty subsets which are open in the relative topology induced on the set. Equivalently, it is a set which cannot be partitioned into two nonempty subsets such that each subset has no points in common with the set closure of the other.
+
+    Let $X$ be a topological space. A connected set in $X$ is a set $A \subseteq X$ which cannot be partitioned into two nonempty subsets which are open in the relative topology induced on the set $A$. Equivalently, it is a set which cannot be partitioned into two nonempty subsets such that each subset has no points in common with the set closure of the other. The space $X$ is a connected topological space if it is a connected subset of itself.
+
+    The real numbers are a connected set, as are any open or closed interval of real numbers. The (real or complex) plane is connected, as is any open or closed disc or any annulus in the plane. The topologist's sine curve is a connected subset of the plane. An example of a subset of the plane that is not connected is given by
+    \[B={z \in C:|z|<1 \text{ or } |z-2|<1}.\]
+
+    Geometrically, the set B is the union of two open disks of radius one whose boundaries are tangent at the number $1$.
+    \url{https://mathworld.wolfram.com/ConnectedSet.html}
+}
+
+\begin{mydef}\label{mydef:2.45}
+    % 2.45 Definition 
+    Two subsets $A$ and $B$ of a metric space $X$ are said to be
+    separated if both $A \cap \overline{B}$ and $\overline{A} \cap B$ are empty, i.e., if no point of $A$ lies in the
+    closure of $B$ and no point of $B$ lies in the closure of $A$.
+    
+    A set $E \subset X$ is said to be connected if $E$ is not a union of two nonempty separated sets.
+\end{mydef}
+
+\begin{myremark}\label{myremark:2.46}
+    % 2.46 Remark 
+    Separated sets are of course disjoint, but disjoint sets need not
+    be separated. For example, the interval $[0,1]$ and the segment $(1, 2) $ are not
+    separated, since $1$ is a limit point of $(1, 2)$. However, the segments $(0, 1)$ and $(1. 2)$ are separated.
+    
+    The connected subsets of the line have a particularly simple structure:
+\end{myremark}
+
+\begin{thm}
+    % 2.47 Theorem 
+    A subset $E$ of the real line $\R^1$ is connected if and only if it has the following property: If $x \in E$, $y \in E$, and $x < z <y$, then $z \in E$.
+\end{thm}
+
+\begin{proof}
+    % Proof 
+If there exist $x \in  E$, $y \in E$, and some $z \in (x, y)$ such that $z \not\in E$, then
+$E = A_z \cup B_z$ where
+
+\begin{equation*}
+    A_z = E \cap (-\infty, z),\quad
+    B_z = E \cap (z, \infty).
+\end{equation*}
+
+% BASIC TOPOLOGY 43
+
+Since $x \in A_z$ and $y \in B_z$, $A$ and $B$ are nonempty. Since $A_z = (-\infty, z)$ and $B_z = (z, \infty)$, they are separated. Hence $E$ is not connected.
+
+To prove the converse, suppose $E$ is not connected. Then there are
+nonempty separated sets $A$ and $B$ such that $A \cup B=E$. Pick $x \in  A_z$ $y \in  B_z$
+and assume (without loss of generality) that $x <y$. Define
+
+\begin{equation*}
+    z = \sup(A \cap [x, y]).
+\end{equation*}
+
+By Theorem 2.28, $z \in \overline{A}$; hence $z \not\in  B$. In particular, $x \leq z <y$.
+
+If $z \not\in A$, it follows that $x < z < y$ and $z \not\in E$.
+
+If $z \in  A$, then $z \not\in B$, hence there exists $z$, such that $z<z_1 <y$ and
+$z_1 \not\in  B$. Then $x<z_1 <y$ and $z_1 \not\in  E$.
+\end{proof}

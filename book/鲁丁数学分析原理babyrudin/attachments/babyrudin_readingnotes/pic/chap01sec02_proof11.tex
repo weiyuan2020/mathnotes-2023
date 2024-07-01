@@ -1,0 +1,77 @@
+
+\documentclass[border=15pt]{standalone}
+\usepackage{tikz}
+\usepackage{ctex}
+\usetikzlibrary{calc}%垂線を書くための計算に必要
+
+%% 色の設定
+\definecolor{mistyrose}{rgb}{1.0, 0.89, 0.88}
+\definecolor{lightcyan}{rgb}{0.88, 1.0, 1.0}
+\definecolor{lightgreen}{rgb}{0.6,1,0.6}
+
+\begin{document}
+
+% \begin{tikzpicture}[samples=200,scale=1.0]
+% %% 点の設定
+% \coordinate (O) at (0,0);%原点
+% \coordinate (C) at (2.3,2);%中心
+% \coordinate (P) at (3.1,3.0);%P
+% \coordinate (XMAX) at (4,0);
+% \coordinate (XMIN) at (-1,0);
+% \coordinate (YMAX) at (0,4);
+% \coordinate (YMIN) at (0,-1);
+
+% % x軸
+% \draw[->,>=stealth] (XMIN)--(XMAX) node [below left] {$x$};
+
+% % y軸
+% \draw[->,>=stealth] (YMIN)--(YMAX) node [below left] {$y$};
+
+% % 原点
+% \draw (0,0) node [below left] {$\mathrm{O}$};
+
+% % 円
+% \draw (C) circle [radius=1.3];
+% \fill (C) circle [radius=0.04];
+% \draw (C) node [below left] {C};
+
+% % P
+% \draw (P) node [above right] {P$(x,\ y)$};
+% \fill (P) circle [radius=0.04];
+
+% % CP
+% \draw (C)--(P);
+% \draw[dotted,thick,bend left,distance=0.9cm] (C) to node[fill=lightgreen] {$r$} (P);
+
+% % 中心Cから各軸へ垂線
+% \draw [dashed] (C)--($(O)!(C)!(XMAX)$) node [below] {\colorbox{mistyrose}{$a$}};
+% \draw [dashed] (C)--($(O)!(C)!(YMAX)$) node [left] {\colorbox{lightcyan}{$b$}};
+
+% \end{tikzpicture}
+
+% \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+% %Curve Left Arrow [id:dp8431437987703496] 
+% \draw  [fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ] (160.1,184.95) .. controls (123.33,185.08) and (93.44,161.75) .. (93.34,132.84) -- (109.04,132.78) .. controls (109.14,161.69) and (139.03,185.02) .. (175.8,184.89) ;\draw  [fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ] (175.8,184.89) .. controls (203.1,184.8) and (226.52,171.8) .. (236.73,153.27) -- (241.97,153.26) -- (234.35,132.35) -- (215.8,153.35) -- (221.03,153.33) .. controls (210.82,171.85) and (187.4,184.85) .. (160.1,184.95)(175.8,184.89) -- (160.1,184.95) ;
+% %Right Arrow [id:dp6325803700843252] 
+% \draw   (125.43,112.58) -- (188.43,112.58) -- (188.43,106) -- (230.43,119.15) -- (188.43,132.3) -- (188.43,125.73) -- (125.43,125.73) -- cycle ;
+
+% Text Node
+% \draw (0,0) node [anchor=north west][inner sep=0.75pt]   [align=left] {最小上界};
+\node (node001) at (  0,   0) [draw] {最小上界};
+\node (node002) at (200,   0) [draw] {最大下界};
+\node (node003) at (  0, 100) [draw] {L最小上界};
+\node (node004) at (200, 100) [draw] {B最大下界};
+
+
+\draw[-latex] (node001) -- (node002);
+\draw[-latex] (node001) -- (node003);
+\draw[-latex] (node003) -- (node004);
+\draw[-latex] (node004) -- (node002);
+
+\end{tikzpicture}
+
+\end{document}

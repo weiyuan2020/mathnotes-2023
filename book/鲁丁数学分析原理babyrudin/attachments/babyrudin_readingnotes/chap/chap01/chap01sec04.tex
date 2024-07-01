@@ -1,0 +1,222 @@
+
+\section{The real field}
+
+We now state the \myKeywordblue{existence theorem} which is the core of this chapter.
+
+\begin{thm}
+    \label{thm:1.19}
+    There exists an \myKeywordblue{ordered field} $\R$
+    which has the least-upper-bound property.
+
+    Moreover, $\R$ contains $\Q $ as a \myKeywordblue{subfield}.
+\end{thm}
+
+The second statement means that $\Q \subset \R$
+and that the operations of addition and multiplication in $\R$,
+when applied to members of $\Q $,
+coincide with the usual operations on rational numbers;
+also, the positive rational numbers are positive elements of $\R$.
+
+The members of $\R$ are called \myKeywordblue{real numbers}.
+
+The proof of Theorem \ref{thm:1.19} is rather long and a bit tedious
+and is therefore presented in an Appendix to Chap.
+1 .
+% Appendix\ref{chap01_app}.
+The proof actually constructs $\R$ from $\Q$.
+
+The next theorem could be extracted from this construction with very little extra effort.
+However, we prefer to derive it from Theorem \ref{thm:1.19} since this
+provides a good illustration of what one can do with the least-upper-bound property.
+
+\mybox{$\R$ 具有最小上界性质的有序域
+    least-upper-bound $\rightarrow$ upper bound in the sets.
+    ordered field (ordered set, field).
+
+    $\Q \in \R$ subfield
+
+    $x\in \R$, $x$ is a real number
+}
+\mybox{
+    proof of theorem \ref{thm:1.19} is tedious.
+    construct $\R$ from $\Q $
+
+    tedious 乏味的, 冗长的\\
+    derive 取得, 得到
+}
+
+\begin{thm}
+    \label{thm:1.20}
+    \myKeywordred{(archimedean property of $\R$)}
+    (a) If $x \in \R$, $y \in \R$, and $x > 0$, then there is a positive integer $n$ such that
+    \begin{equation*}
+        nx > y
+    \end{equation*}
+
+    (b) If $x \in \R$, $y \in \R$, and $x < y$, then there exists a $p \in Q$ such that $x < p < y$.
+\end{thm}
+\mybox{阿基米德公理
+
+    \url{https://mathworld.wolfram.com/ArchimedesAxiom.html}
+
+    Archimedes' axiom, also known as the continuity axiom or Archimedes' lemma, survives in the writings of Eudoxus (Boyer and Merzbach 1991), but the term was first coined by the Austrian mathematician Otto Stolz (1883). It states that, given two magnitudes having a ratio, one can find a multiple of either which will exceed the other. This principle was the basis for the method of exhaustion, which Archimedes invented to solve problems of area and volume.
+
+    Symbolically, the axiom states that
+    $a/b=c/d$
+
+    iff the appropriate one of following conditions is satisfied for integers $m$ and $n$:
+    \begin{enumerate}[1. ]
+        \item If $ma < nb$, then $mc < nd$.
+        \item If $ma = nb$, then $mc = nd$.
+        \item If $ma > nb$, then $mc > nd$.
+    \end{enumerate}
+
+    Formally, Archimedes' axiom states that if $AB$ and $CD$ are two line segments, then there exist a finite number of points $A_1, A_2, ..., A_n$ on $A$ union $B$ such that
+    \[CD \equiv AA_1 \equiv A_1A_2 \equiv ... \equiv A_{(n-1)}A_n,\]
+
+    and $B$ is between $A$ and $A_n$ (Itô 1986, p.611).
+    A geometry in which Archimedes' lemma does not hold is called a non-Archimedean Geometry.
+}
+
+\begin{proof}
+    \begin{asparaenum}[(a)]
+        \item Let $A$ be the set of all $nx$,
+        where $n$ runs through the positive integers.
+        If (a) were false, then $y$ would be an upper bound of $A$.
+        But then $A$ has a \emph{least} upper bound in $\R$.
+        Put $\alpha = \sup A$.
+        Since $x > 0$, $\alpha - x < \alpha$,
+        and $\alpha - x$ is not an upper bound of $A$.
+        Hence $\alpha - x < mx$ for some positive integer $m$.
+        But then $\alpha < (m + l)x \in A$,
+        which is impossible,
+        since $\alpha$ is an upper bound of $A$.
+        \item Since $x < y$, we have $y - x > $0,
+        and (a) furnishes a positive integer $n$
+        such that
+        \begin{equation*}
+            n(y - x) > 1.
+        \end{equation*}
+        Apply (a) again, to obtain positive integers $m_1$ and $m_2$
+        such that $m_1 > nx$, $m_2 > -nx$.
+
+        Then
+        \begin{equation*}
+            -m_2 < nx < m_1
+        \end{equation*}
+        Hence there is an integer $m$ (with $-m_2 \leq m \leq m_1$)
+        such that
+        \begin{equation*}
+            m - 1\leq n x < m.
+        \end{equation*}
+        If we combine these inequalities, we obtain
+        \begin{equation*}
+            nx < m \leq 1 + nx < ny.
+        \end{equation*}
+        Since $n > 0$, it follows that
+        \begin{equation*}
+            x < \frac{m}{n} < y.
+        \end{equation*}
+        This proves (b), with $p = m/n$.
+    \end{asparaenum}
+\end{proof}
+
+We shall now prove the existence of nth roots of positive reals.
+This proof will show how the difficulty pointed out in the Introduction
+(irrationality of $\sqrt{2}$) can be handled in $\R$.
+
+\begin{thm}
+    \label{thm:1.21}
+    For every real $x > 0$ and every integer $n> 0$
+    there is one and only one positive real $y$
+    such that $y^n = x$.
+\end{thm}
+
+This number $y$ is written $\sqrt[n]{x}$ or $x^{1/n}$.
+\mybox{
+    这里定义了$n$次根式, 最开始根式由二次方程的解引出, 将根式作为次方项处理.
+    有理数根式可以视为两个整数之比, 次方与开根号的顺序可以交换.
+    实数根式则视为有理数根式构成的序列的极限值.
+    复数根式需要通过欧拉公式 $e^{ix} = \cos x + i \sin x$ 理解.
+}
+\begin{proof}
+    That there is at most one such $y$ is clear,
+    since $0 < y_1 < y_2$ implies $y_1^n < y_2^n$.
+
+    Let $E$ be the set consisting of all positive real numbers $t$
+    such that $t^n < x$.
+
+    If $t = x/(1 + x)$ then $0 \leq t < 1$.
+    Hence $t^{n} \leq t < x$.
+    Thus $t \in E$, and $E$ is not empty.
+
+    If $t > 1 + x$ then $t^{n} \geq t > x$,
+    so that $t \not\in E$.
+    Thus $1 + x$ is an upper bound of $E$.
+
+    Hence Theorem \ref{thm:1.19} implies the existence of
+    \begin{equation*}
+        y = \sup E.
+    \end{equation*}
+    To prove that $y^{n} = x$ we will show that
+    each of the inequalities $y^{n} < x$ and $y^{n} > x$ leads to a contradiction.
+
+    The identity $b^{n} - a^{n}= (b - a)(b^{n-1} + b^{n}- 2a + \cdots + a^{n-1})$ yields the inequality
+    \begin{equation*}
+        b^{n} - a^{n} < (b - a)nb^{n-1}
+    \end{equation*}
+    when $0 < a < b$.
+
+    Assume $y^{n} < x$. Choose $h$ so that $0 < h < 1$ and
+    \begin{equation*}
+        h < \frac{x - y^n}{n(y + 1)^{n-1}}.
+    \end{equation*}
+    Put $a = y$, $b = y + h$. Then
+    \begin{equation*}
+        (y + h)^{n} - y^{n}
+        < hn(y + h)^{n-l}
+        < hn(y + l)^{n-1}
+        < x - y^{n}.
+    \end{equation*}
+    Thus $(y + h)^{n} < x$, and $y +h \in E$.
+    Since $y + h > y$,
+    this contradicts the fact that $y$ is an upper bound of $E$.
+
+    Assume $y^{n} > x$. Put
+    \begin{equation*}
+        k = \frac{y^n - x}{n y^{n-1}}
+    \end{equation*}
+    Then $0 < k < y$.
+    If $t \leq y - k$, we conclude that
+    \begin{equation*}
+        y^{n} - t^{n}
+        \leq y^{n} - (y - k)^{n}
+        < kny^{n-1}
+        = y^{n} - x.
+    \end{equation*}
+    Thus $t^{n} > x$, and $t \not\in E$.
+    It follows that $y - k$ is an upper bound of $E$.
+    But $y - k < y$,
+    which contradicts the fact that $y$ is the least upper bound of $E$.
+    Hence $y^{n} = x$, and the proof is complete.
+\end{proof}
+\mybox{
+    很经典的等式证明,
+    从两边的不等式不成立出发证明有且仅有等式成立.
+}
+
+\begin{myCorollary*}
+    If $a$ and $b$ are positive real numbers
+    and $n$ is a positive integer,
+    then
+    \begin{equation*}
+        (ab)^{1/n}= a^{1/n}b^{1/n}.
+    \end{equation*}
+\end{myCorollary*}
+
+\begin{mydef}
+    \label{mydef:1.22}
+    \myKeywordblue{(Decimals)}
+    We conclude this section by pointing out the relation between real numbers and decimals.
+\end{mydef}
+

@@ -1,0 +1,157 @@
+% chap10sec01
+
+\section{Integration}
+\begin{mydef}
+    \label{mydef:10.1}
+    Suppose $I^k$ is a $k$-cell in $\R^k$, consisting of all
+    \begin{equation*}
+        \mathbf{x} = (x_1,\dots,x_k)
+    \end{equation*}
+    such that
+    \begin{equation}
+        \label{eq:10.1}
+        a_i \leq x_i \leq b_i
+        \quad
+        (i = 1,\dots, k) ,
+    \end{equation}
+    $I^j$ is the $j$-cell in $\R^j$ defined by the first $j$ inequalities (\ref{eq:10.1}), and f is a real continuous function on $I^k$.
+
+    Put $f = f_k$, and define $f_{k-1}$ on $I^{k-1}$ by
+    \begin{equation*}
+        f_{k-1}(x_1,\dots,x_{k-1}) =
+        \int_{a_k}^{b_k} f_k (x_1,\dots,x_{k-1},x_k) \d x_k .
+    \end{equation*}
+    The uniform continuity of $f_k$ on $I^k$ shows that $f_{k-1}$ is continuous on $I^{k-1}$.
+    Hence we can repeat this process and obtain functions $f_j$, continuous on $I^j$,
+    such that $f_{j-1}$ is the integral of $f_j$, with respect to $x_j$, over $[a_j, b_j]$.
+    After $k$ steps we arrive at a \myKeywordblue{number} $f_0$,
+    which we call the \myKeywordblue{integral of $f$ over $I^k$};
+    we write it in the form
+    \begin{equation}
+        \label{eq:10.2}
+        \int_{I^k} f(\mathbf{x}) \d \mathbf{x}
+        \text{  or  }
+        \int_{I^k} f.
+    \end{equation}
+
+    A priori, this definition of the integral depends on the order in which the $k$ integrations are carried out.
+    However, this dependence is only apparent.
+    To prove this, let us introduce the temporary notation $L(f)$ for the integral (\ref{eq:10.2}) and $L'(f)$ for the result obtained by carrying out the $k$ integrations in some other order.
+\end{mydef}
+\mybox{
+    $L(f)$ 积分 (\ref{eq:10.2}) 暂时的记号
+
+    $L'(f)$ 用另外的次序求这 $k$ 个积分的结果
+}
+
+\begin{thm}
+    \label{thm:10.2}
+    For every $f \in \mathscr{C}(I^k)$, $L(f) = L'(f)$.
+\end{thm}
+\mybox{对区间上的连续函数, 积分结果与积分顺序无关}
+% todo add proof
+\mybox{Stone-Weierstrass 定理能够用到这些函数上}
+
+\begin{mydef}
+    \label{mydef:10.3}
+    The \myKeywordblue{support} of a (real or complex) function $f$ on $\R^k$ is the
+    closure of the set of all points $\mathbf{x} \in R^k$
+    at which $f(\mathbf{x}) \neq 0$.
+    If $f$ is a continuous function with compact support,
+    let $I^k$ be any $k$-cell which contains the support of $f$,
+    and define
+    \begin{equation}
+        \label{eq:10.3}
+        \int_{R^k} f =
+        \int_{I^k} f .
+    \end{equation}
+    The integral so defined is evidently independent of the choice of $I^k$, provided only that $I^k$ contains the support of $f$.
+
+\end{mydef}
+
+\mybox{support 支集}
+
+It is now tempting to extend the definition of the integral over $R^k$ to
+functions which are limits (in some sense) of continuous functions with compact support.
+We do not want to discuss the conditions under which this can be done;
+the proper setting for this question is the Lebesgue integral.
+
+\begin{newexample}
+    \label{newexample:10.4}
+    Let $Q^k$ be the $k$-simplex which consists of all points $\mathbf{x} = (x_1, \dots , x_k)$ in $\R^k$ for which $x_1 + \dots + x_k \leq 1$ and $x_i \geq 0$ for $i = 1, ... , k$.
+    If $k = 3$, for example, $Q^k$ is a tetrahedron, with vertices at $\mathbf{0, e_1, e_2, e_3}$.
+    If $f \in \mathscr{C}(Q^k)$,
+    extend $f$ to a function on $I^k$ by setting $f(\mathbf{x}) = \mathbf{0}$ off $Q^k$, and define
+    \begin{equation}
+        \label{eq:10.4}
+        \int_{Q^k} f =
+        \int_{I^k} f .
+    \end{equation}
+    Here $I^k$ is the ``unit cube'' defined by
+    \begin{equation*}
+        0 \leq x_i \leq 1
+        \quad
+        (1 \leq i \leq k).
+    \end{equation*}
+
+    Since $f$ may be discontinuous on $I^k$, the existence of the integral on the right of \eqref{eq:10.4} needs proof.
+    We also wish to show that this integral is independent of the order in which the $k$ single integrations are carried out.
+
+    To do this, suppose $0 < \delta < 1$, put
+    \begin{equation}
+        \label{eq:10.5}
+        \phi(t) = \left\{
+        \begin{array}{ll}
+            1                    & (t\leq 1-\delta)      \\
+            \frac{(1-t)}{\delta} & (1-\delta < t \leq 1) \\
+            0                    & (1<t),                \\
+        \end{array}
+        \right.
+    \end{equation}
+    and define
+    \begin{equation}
+        \label{eq:10.6}
+        F(\mathbf{x}) =
+        \phi(x_1+\cdots+x_k) f(\mathbf{x})
+        \quad
+        (\mathbf{x} \in I^k).
+    \end{equation}
+    Then $F \in \mathscr{C}(I^k)$.
+
+    Put $\mathbf{y} = (x_1, \dots , x_{k-1})$, $\mathbf{x} = (\mathbf{y}, x_k)$.
+    For each $\mathbf{y} \in I^{k-1}$, the set of all $x_k$ such that $F(\mathbf{y}, x_k) \neq f(\mathbf{y}; x_k)$ is either empty or is a segment whose length does not exceed $\delta$.
+    Since $0 \leq \phi \leq 1$, it follows that
+    \begin{equation}
+        \label{eq:10.7}
+        \left| F_{k-1}(\mathbf{y})-f_{k-1}(\mathbf{y}) \right| \leq \delta \left\| f \right\|
+        \quad
+        (\mathbf{y} \in I^{k-1}),
+    \end{equation}
+    where $\left\| f \right\|$ has the same meaning as in the proof of Theorem \ref{thm:10.2},
+    and $F_{k-1}$, $f_{k-1}$ are as in Definition \ref{mydef:10.1}.
+
+    As $\delta \rightarrow 0$, \eqref{eq:10.7} exhibits $f_{k-1}$ as a uniform limit of a sequence of continuous functions.
+    Thus $f \in \mathscr{C}(I^{k-1})$, and the further integrations present no problem.
+
+    This proves the existence of the integral \eqref{eq:10.4}.
+    Moreover, \eqref{eq:10.7} shows that
+    \begin{equation}
+        \label{eq:10.8}
+        \left|
+        \int_{I^k} F(\mathbf{x}) \d \mathbf{x} -
+        \int_{I^k} f(\mathbf{x}) \d \mathbf{x}
+        \right| \leq
+        \delta \left\| f \right\| .
+    \end{equation}
+    Note that \eqref{eq:10.8} is true, regardless of the order in which the $k$ single integrations are carried out.
+    Since $F \in \mathscr{C}(I^k)$, $\int F$ is unaffected by any change in this order.
+    Hence \eqref{eq:10.8} shows that the same is true of $\int f$
+
+    This completes the proof.
+
+    Our next goal is the change of variables formula stated in Theorem \ref{thm:10.9}.
+    To facilitate its proof, we first discuss so-called primitive mappings, and partitions of unity.
+    Primitive mappings will enable us to get a clearer picture of the local action of $\mathscr{C}'$-mapping with invertible derivative,
+    and partitions of unity are a very useful device that makes it possible to use local information in a global setting.
+\end{newexample}
+

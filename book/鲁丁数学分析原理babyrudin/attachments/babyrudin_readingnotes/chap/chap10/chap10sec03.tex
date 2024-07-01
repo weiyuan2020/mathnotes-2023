@@ -1,0 +1,33 @@
+% chap10sec03
+
+\section{Partitions of unity}
+
+\begin{thm}
+    \label{thm:10.8}
+    Suppose $K$ is a compact subset of $\R^n$,
+    and $\{V_{\alpha}\}$ is an open cover of $K$.
+    Then there exist functions $\psi_1, \dots, \psi_s \in \mathscr{C}(\R^n)$
+    such that
+    \begin{enumerate}
+        \item $0 \leq \psi_i \leq 1$ for $1 \leq i \leq s$;
+        \item each $\psi_i$ has its support in some $V_{\alpha}$, and
+        \item $\psi_1 (\mathbf{x}) + \cdots + \psi_s(\mathbf{x}) = 1$ for every $\mathbf{x} \in K$.
+    \end{enumerate}
+\end{thm}
+
+Because of (c), $\{\psi_i\}$ is called a partition of unity,
+and (b) is sometimes expressed by saying that $\{\psi_i\}$ is subordinate to the cover $\{V_{\alpha}\}$.
+
+\begin{myCorollary*}
+    If $f \in \mathscr{C}(\R^n)$ and the support of $f$ lies in $K$, then
+    \begin{equation}
+        \label{eq:10.25}
+        f = \sum_{i=1}^{s} \psi_i f .
+    \end{equation}
+    Each $\psi_i f$ has its support in some $V_{\alpha}$.
+\end{myCorollary*}
+
+The point of (\ref{eq:10.25}) is that it furnishes a representation of $f$ as a sum of continuous functions $\psi_i f$ with ``small'' supports.
+
+% todo add proof
+

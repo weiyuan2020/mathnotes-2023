@@ -1,0 +1,25 @@
+% chap10sec04
+\section{Change of variables}
+\mybox{变量代换}
+
+We can now describe the effect of a change of variables on a multiple integral.
+For simplicity, we confine ourselves here to continuous functions with compact
+support, although this is too restrictive for many applications.
+This is illustrated by Exercises \ref{ex:10.9} to \ref{ex:10.13}
+
+\begin{thm}
+    \label{thm:10.9}
+    Suppose $T$ is a 1-1 $\mathscr{C}'$-mapping of an open set $E \subset \R^k$ into $\R^k$
+    such that $J_T(\mathbf{x}) \neq 0$ for all $\mathbf{x} \in E$.
+    If $f$ is a continuous function on $\R^k$ whose support is compact and lies in $T(E)$, then
+    \begin{equation}
+        \label{eq:10.31}
+        \int_{\R^k} f(\mathbf{y}) \d \mathbf{y} =
+        \int_{\R^k} f(T \mathbf{x}) \left| J_T(\mathbf{x}) \right| \d \mathbf{x} .
+    \end{equation}
+\end{thm}
+
+% todo add words
+
+% todo add proof
+

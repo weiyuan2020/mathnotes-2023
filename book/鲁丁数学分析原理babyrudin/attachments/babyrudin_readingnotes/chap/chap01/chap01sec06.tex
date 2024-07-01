@@ -1,0 +1,228 @@
+
+\section{The complex field}
+
+\mybox{
+    rudin 引入复数定义的方法很奇怪, 
+    使用复数的代数定义直接引入(天上掉下来的定义).
+    理解起来比较困难.
+
+    我觉得使用几何方法引入复数更为合理且直观, 
+    rudin 这里对初学者不太友好.
+}
+
+\begin{mydef}
+    \label{mydef:1.24}
+    A complex number is an ordered pair $(a, b)$ of real numbers.
+    ``Ordered'' means that $(a, b)$ and $(b, a)$ are regarded as distinct if $a \neq b$.
+
+    Let$x = (a, b)$, $y = (c,d)$ be two complex numbers. 
+    We write $x =y$ if and only if $a =c$ and $b=d$. 
+    (Note that this definition is not entirely superfluous;
+    think of equality of rational numbers, 
+    represented as quotients of integers.) 
+    We define
+    \begin{align*}
+        x+y &= (a + c, b + d),\\
+        xy  &= (ac - bd, ad + bc).
+    \end{align*}
+\end{mydef}
+
+\begin{thm}
+    \label{thm:1.25}
+    These definitions of addition and multiplication 
+    turn the \emph{set} of all complex numbers into a field, 
+    with $(0, 0)$ and $(1, 0)$ in the role $0$ and $1$.
+\end{thm}
+
+\mybox{
+    proof (A1) $\sim$ (A5), (M1) $\sim$ (M5) and (D), 
+
+    then we can prove that $\mathbb{C}$ is a field.
+}
+
+\begin{thm}
+    \label{thm:1.26}
+    For any real numbers $a$ and $b$ we have
+    \begin{equation*}
+        (a,0)+ (b,0) = (a+ b,0),\quad
+        (a,0)(b,0) = (ab,0).
+    \end{equation*}
+\end{thm}
+The proof is trivial.
+
+show that the notation $(a, b)$ is equivalent to the more customary $a + bi$.
+
+\begin{mydef}
+    \label{mydef:1.27}
+    $i=(0,1)$    
+\end{mydef}
+
+\begin{thm}
+    \label{thm:1.28}
+    $i^2=-1$
+\end{thm}
+
+\begin{proof}
+    \begin{equation*}
+        i^2=(0,1)(0,1)=(-1,0)=-1.
+    \end{equation*}
+\end{proof}
+
+\begin{thm}
+    \label{thm:1.29}
+    If $a$ and $b$ are real, then $(a,b) =a + bi$.
+\end{thm}
+
+\begin{proof}
+    \begin{align*}
+        a+bi
+        &=(a,0)+(b,0)(0,1)\\
+        &=(a,0)+(0,b)=(a,b)\\
+    \end{align*}
+\end{proof}
+
+\begin{mydef}
+    \label{mydef:1.30}
+    $a,b\in \R$, $z = a + bi$,
+    the complex number $\bar{z} = a  -bi$ is called the conjugate of $z$.
+    the numbers $a$ and $b$ are the real part and imaginary part of $z$.
+    respectively.
+    \begin{equation*}
+        a=\Re(z), \quad
+        b=\Im(z)
+    \end{equation*}
+\end{mydef}
+
+\begin{thm}
+    \label{thm:1.31}
+    If $z$ and $w$ are complex, then
+    \begin{enumerate}[(a)]
+        \item $\bar{z+w}=\bar{z}+\bar{w}$,
+        \item $\bar{zw}=\bar{z}\cdot\bar{w}$,
+        \item $z+\bar{z}=2\Re(z)$, $z-\bar{z}=2\Im(z)$,
+        \item $z\bar{z}$ is real and positive (except when $z=0$).
+    \end{enumerate}
+\end{thm}
+
+\begin{proof}
+    (a), (b),and (c)are quite trivial.
+    To prove (d), write $z = a + bi$,
+    and note that $z\bar{z} = a^2 + b^2$.
+\end{proof}
+
+
+\begin{mydef}
+    \label{mydef:1.32}
+    If $z$ is a complex number, 
+    its absolute value $|z|$ is the nonnegative square root of $z\bar{z}$; 
+    that is, $|z| = (z\bar{z})^{1/2}$.
+\end{mydef}
+The existence (and uniqueness) of $|z|$ follows from Theorem \ref{thm:1.21} and part (d) of Theorem \ref{thm:1.31}.
+
+Note that when $x$ is real, then $\bar{x} = x$, 
+hence $|x| = \sqrt{x^2}$. Thus $|x| = x$
+if $x>0$, $|x| = -x$ if $x <0$.
+
+
+Properties of complex number.
+
+\begin{thm}
+    \label{thm:1.33}
+    Let $z$ and $w$ be complex numbers. Then
+    \begin{enumerate}[(a)]
+        \item $|z|>0$ unless $z=0$, $|0|=0$,
+        \item $\bar{z}=z$,
+        \item $|zw| = |z||w|$,
+        \item $| \Re(z)| \leq |z|$,
+        \item $|z+w| \leq|z|+|w|$.
+    \end{enumerate}
+\end{thm}
+
+
+\begin{myNotation}\myKeywordred{(Big sum)}
+    \label{myNotation:1.34}
+    $x_1,x_2,\dots,x_n \in \mathbb{C}$,
+    \begin{equation*}
+        x_1+x_2+\dots+x_n = \sum_{j=1}^{n} x_j.
+    \end{equation*}
+\end{myNotation}
+
+\begin{thm}\myKeywordred{(Schwarz Inequality)}
+    \label{thm:1.35}
+    If 
+    $a_1,\dots,a_n$, 
+    $b_1,\dots,b_n$, are complex numbers, then
+    \begin{equation*}
+        \left| \sum_{j=1}^{n}a_j \bar{b_j}\right|^2 \leq 
+        \sum_{j=1}^{n}\left|a_j\right|^2
+        \sum_{j=1}^{n}\left|b_j\right|^2.
+    \end{equation*}    
+\end{thm}
+
+\mybox{在正式证明之前, 先回忆 $\R$ 中的施瓦茨不等式是怎么证明的.}
+\begin{proof}
+    let $A = \sum a_j^2$, $B = \sum b_j^2$, $C = \sum a_j b_j$.
+    \begin{equation*}
+        \sum (a_j+\lambda b_j)^2 = 
+        \sum a_j^2 
+        + 2\sum a_j b_j \lambda
+        + \sum b_j^2 \lambda^2
+    \end{equation*}
+    由韦达定理, $\Delta \leq 0$, 
+    $\Delta= (2\sum a_j b_j )^2 - 4 \sum a_j^2\sum b_j^2$. 
+    因此 $(\sum a_j b_j )^2 \leq \sum a_j^2\sum b_j^2$.
+\end{proof}
+
+
+\begin{proof}
+    Put $A = \sum |a_j|^2$, $B = \sum |b_j|^2$, $C = \sum a_j \bar{b_j}$, $j = 1,2,\dots,n$. \\    
+    If $B = 0$, $b_1 = \dots = b_n = 0$, this conclusion is trivial.\\
+    If $B > 0$, 
+    \begin{align*}
+        \sum \left|B a_j - C b_j\right|^2
+        &= \sum (B a_j-C b_j)(B \bar{a_j} - \bar{C b_j})\\
+        &= B^2\sum \left|a_j\right|^2 - B\bar{C}\sum a_j \bar{b_j} - BC \sum \bar{a_j} b_j + \left|C\right|^2\sum |b_j|^2\\
+        &= B^2A-B|C|^2\\
+        &= B(AB-|C|^2).
+    \end{align*}
+    Since each term in the first sum is nonnegative, we see that
+    \begin{equation*}
+        B(AB-|C|^2) \geq 0.
+    \end{equation*}
+    Since $B>0$, it follows that $AB-|C|^2 \geq 0$. This is the desired inequality.
+\end{proof}
+
+\mybox{
+    \begin{proof}
+        我的想法
+        \begin{align*}
+            \sum (a_j + \lambda \bar{b_j})(\bar{a_j} + \lambda b_j)
+            &=\sum(
+                a_j\bar{a_j}
+                + \lambda(\bar{a_j}b_j+a_j\bar{b_j})
+                + \lambda^2 b_j\bar{b_j}
+                )\\
+            &= A + \lambda (C + \overline{C}) + \lambda^{2} B
+        \end{align*}
+        由韦达定理, $\Delta \leq 0$, 
+        % $\Delta = (\sum\Re(a_j\bar{b_j}))^2-4\sum a_j\bar{a_j}\sum b_j\bar{b_j}$, 
+        $\Delta = (C + \overline{C})^2-4AB \leq 0$, 
+        (这里推出的结论比原始结论弱？为什么？)
+    
+        $A = \sum \left| a_j \right|^2 $,
+        $B = \sum \left| b_j \right|^2 $,
+        $C = \sum a_j \bar{b}_j$.
+        \begin{align*}
+            \left| C \right|^2 
+            &= C \cdot \overline{C}\\
+            &= \left( \sum a_j \bar{b}_j \right) 
+            \overline{\left( \sum a_j \bar{b}_j \right)}.\\
+            &= \left( \sum a_j \bar{b}_j \right) 
+            \left( \sum \overline{a_j \bar{b}_j} \right).\\
+            &= \left( \sum a_j \bar{b}_j \right) 
+            \left( \sum \bar{a}_j {b}_j \right).
+        \end{align*}
+    
+        可不可以用 $C^2 + \overline{C}^2 \geq 2 C \overline{C}$?
+    \end{proof}
+}

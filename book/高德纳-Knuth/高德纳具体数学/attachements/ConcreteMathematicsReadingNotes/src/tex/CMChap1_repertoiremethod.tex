@@ -1,0 +1,587 @@
+\input{mydef.tex}
+\title{具体数学阅读笔记-chap1 repertoire method 参考}
+\author{weiyuan}
+\date{2022-07-03}
+\begin{document}
+\maketitle
+\section{Solve}
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= 1\\
+            r_n &= r_{n-1}+3n+5\\ 
+        \end{array}
+    \right.
+\end{equation*}
+
+First, get some cases
+\begin{align*}
+    r_0 &= 1 & \\
+    r_1 &= 1+3\times 1 + 5 &= 9  \\
+    r_2 &= 9+3\times 2 + 5 &= 20 \\
+    r_3 &= 20+3\times 3 + 5 &= 34 
+\end{align*}
+
+Unsimplified cases
+\begin{align*}
+    r_0 &= 1 & \\
+    r_1 &= r_0+3\times 1 + 5 &= 9  \\
+    r_2 &= r_1+3\times 2 + 5 &= 20 \\
+    r_3 &= r_2+3\times 3 + 5 &= 34 
+\end{align*}
+
+A pattern in unsimplified cases
+\begin{equation*}
+    r_n = 1 A(n) + 3 B(n) +5 C(n)
+\end{equation*}
+where $ A(n), B(n), C(n) $ are simple functions of n
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            A(n) &= 1\\
+            B(n) &= \frac{n(n+1)}{2}\\
+            C(n) &= n\\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{align*}
+    r_n &= 1 \times 3 \times \frac{n(n+1)}{2} +5 \times n\\
+        &= \frac{3}{2}n^2 +\frac{13}{2}+1
+\end{align*}
+
+Summarizing 
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= 1\\
+            r_n &= r_{n-1}+3n+5\\
+        \end{array}
+    \right.
+\end{equation*}
+is $ r_n=\frac{3}{2}n^2+\frac{13}{2}n+1 $ .
+
+Testing
+\begin{table}[htbp]
+	\centering
+	\small
+	\caption{r(n) 与 n 之间的关系}
+	\begin{tabular}{c|ccc ccc}
+		\toprule
+		n & 0 & 1 & 2 & 3 & 4 & 5 \\  
+		\midrule
+		$ r_n $ & 1 & 9 & 20 & 34 & 51 & 71\\
+        $ \frac{3}{2}n^2+\frac{13}{2}n+1 $ & 1 & 9 & 20 & 34 & 51 & 71\\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:rnCompare}%
+\end{table}%
+
+Prove it by induction.\\
+First we generalize:
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= 1\\
+            r_n &= r_{n-1}+3n+5\\
+        \end{array}
+    \right.
+\end{equation*}
+replace constants by variables $ \alpha, \beta,\gamma $ 
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+        \end{array}
+    \right.
+\end{equation*}
+Cases of our generalized version
+\begin{table}[htbp]
+	\centering
+	\small
+	\caption{Cases of our generalized version}
+	\begin{tabular}{cl}
+		\toprule
+		n & $ r_n $ \\  
+		\midrule
+        0   & $ \alpha $     \\
+        1   & $ \alpha + \beta + \gamma $    \\
+        2   & $ \alpha + \beta + \gamma + 2\times \beta + \gamma  $   \\
+            & $ = \alpha + 3\beta + 2\gamma $ \\
+        3   & $ \alpha + 3\beta + 2\gamma + 3\times \beta + \gamma $ \\
+            & $ = \alpha + 6\beta + 3\gamma $   \\
+        4   & $ \alpha + 10\beta + 4\gamma $ \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:casesofgene}%
+\end{table}%
+
+Wild assumption: \\
+Let's assume that there are three-fixed
+functions $ A, B, C $  such that the solution to 
+the above always has this form:
+\begin{equation*}
+    r_n = \alpha A(n) + \beta B(n) + \gamma C(n)
+\end{equation*}
+
+We don't know this is true but the evidence suggests it
+
+Can we figure out what A, B, and C are? Yes!
+
+Is this easier tha the original problem? Yes!
+
+Here's How\\
+We assume that any recurrence defined by:
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+        \end{array}
+    \right.
+\end{equation*}
+has a soluntion that looks like:
+\begin{equation*}
+    r_n = \alpha A(n) + \beta B(n) + \gamma C(n)
+\end{equation*}
+no matter what $ \alpha, \beta $ and $ \gamma $ are.
+
+Different $ \alpha, \beta $ and $ \gamma $ will define Different $ r_n $. But $ A(n), B(n) $ and $ C(n) $ are the same of all of them!
+
+What does this buy us?
+
+For any $ \alpha, \beta $ and $ \gamma $ , the equations
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+        \end{array}
+    \right.
+\end{equation*}
+are always solved by
+\begin{equation*}
+    r_n = \alpha A(n) + \beta B(n) + \gamma C(n)
+\end{equation*}
+
+If we pick up really simple functions (with really easy values for  $ \alpha, \beta $ and $ \gamma $) we can solve for A, B and C.
+
+And once we have A, B,and C, we have a solution to the general recurrence.
+
+
+\section{Easy Solutions}
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha A(n) + \beta B(n) + \gamma C(n)\\
+        \end{array}
+    \right.
+\end{equation*}
+
+First easy solution.\\
+Let's try $ r_n = 1 $ 
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            1 &= \alpha\\
+            1 &= 1+\beta n+\gamma\\
+            1 &= \alpha A(n) + \beta B(n) + \gamma C(n)\\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            \alpha = 1\\
+            \beta = 0\\
+            \gamma = 0\\
+        \end{array}
+    \right.
+    \rightarrow A(n) = 1
+\end{equation*}
+$ r_n=1 $ has consequences
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha A(n) + \beta B(n) + \gamma C(n)\\
+        \end{array}
+    \right.
+    \rightarrow
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha + \beta B(n) + \gamma C(n)\\
+        \end{array}
+    \right.
+\end{equation*}
+
+Let's try $ r_n = n $ 
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            0 &= \alpha\\
+            n &= n-1+\beta n+\gamma\\
+            n &= \alpha + \beta B(n) + \gamma C(n)\\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            \alpha = 0\\
+            \beta = 0\\
+            \gamma = 1\\
+        \end{array}
+    \right.
+    \rightarrow C(n) = n
+\end{equation*}
+$ r_n=1 $ has consequences
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha + \beta B(n) + \gamma C(n)\\
+        \end{array}
+    \right.
+    \rightarrow
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha + \beta B(n) + \gamma n\\
+        \end{array}
+    \right.
+\end{equation*}
+
+Let's try $ r_n = n^2 $ 
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            0 &= \alpha \\
+            n^2 &= (n-1)^2+\beta n+\gamma \\
+            n^2 &= \alpha + \beta B(n) + \gamma n \\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            \alpha = 0\\
+            \beta = 2\\
+            \gamma = -1\\
+        \end{array}
+    \right.
+    \rightarrow B(n) = \frac{n(n+1)}{2}
+\end{equation*}
+$ r_n=1 $ has consequences
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha + \beta B(n) + \gamma n\\
+        \end{array}
+    \right.
+    \rightarrow
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha + \beta \frac{n(n+1)}{2} + \gamma n\\
+        \end{array}
+    \right.
+\end{equation*}
+
+Let's try it out
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= \alpha\\
+            r_n &= r_{n-1}+\beta n+\gamma\\
+            r_n &= \alpha + \beta \frac{n(n+1)}{2} + \gamma n\\
+        \end{array}
+    \right.
+\end{equation*}
+
+Testing
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            r_0 &= 1\\
+            r_n &= r_{n-1}+3 n+5\\
+        \end{array}
+    \right.
+\end{equation*}
+$ \alpha = 1, \beta = 3, \gamma = 5 $ 
+\begin{equation*}
+    r_n = 1+3 \frac{n^2+n}{2}5n = \frac{3}{2}n^2+\frac{13}{2}n+1
+\end{equation*}
+
+Summations
+Recurrence like these $ \left\{
+    \begin{array}{ll}
+        r_0 &= \alpha \\
+        r_n &= r_{n-1}+\beta n+\gamma \\
+    \end{array}
+\right. $ \\
+with solution: $ r_n = \alpha + \beta \frac{n^2+n}{2}+ \gamma n $. \\
+Can be used to solve summations like these 
+\begin{equation*}
+    S_n = \sum_{i=0}^{n}(3i+2)
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            S_0 &= 2 \\
+            S_n &= S_{n-1}+3n+2 \\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            \alpha = 2\\
+            \beta=3\\
+            \gamma=2\\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{align*}
+    S_n &= 2+3\frac{n^2+n}{2}+2n\\
+        &= \frac{3}{2}n^2+\frac{7}{2}n+2
+\end{align*}
+
+\section{Let's try something harder.}
+
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            r_0 = 1\\
+            r_n = 2r_{n-1}+n\\
+        \end{array}
+    \right.
+\end{equation*}
+
+Case 
+\begin{table}[htbp]
+	\centering
+	\small
+	\caption{harder cases}
+	\begin{tabular}{c|cccccc}
+		\toprule
+		n & 0 & 1 & 2 & 3 & 4 & 5 \\
+		\midrule
+        $ r_n $  & 1 & 3 & 8 & 19 & 42 & 89 \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:casesofharder}%
+\end{table}%
+
+First generalize
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            r_0 = 1\\
+            r_n = 2r_{n-1}+n\\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            r_0 = \alpha\\
+            r_n = \beta r_{n-1}+\gamma \\
+        \end{array}
+    \right.
+\end{equation*}
+
+\begin{table}[htbp]
+	\centering
+	\small
+	\caption{generalize the harder cases}
+	\begin{tabular}{cl}
+		\toprule
+		n & $ r_n $ \\
+		\midrule
+        0 & $ \alpha $  \\
+        1 & $ \beta\alpha+\gamma $  \\
+        2 & $ \beta(\beta\alpha+\gamma)+2\gamma $  \\
+        3 & $ \beta(\beta(\beta\alpha+\gamma)+2\gamma)+3\gamma $  \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:casesofharderChange003}%
+\end{table}%
+In this case, $ \alpha, \beta, \gamma $ mixed up
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            r_0 = 1\\
+            r_n = 2r_{n-1}+n \\
+        \end{array}
+    \right. \rightarrow
+    \left\{
+        \begin{array}{l}
+            r_0 = \alpha \\
+            r_n = 2 r_{n-1} + \beta n + \gamma \\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{table}[htbp]
+	\centering
+	\small
+	\caption{generalize the harder cases(change)}
+	\begin{tabular}{cl}
+		\toprule
+		n & $ r_n $ \\
+		\midrule
+        0 & $ \alpha $  \\
+        1 & $ 2\alpha+\beta+\gamma $  \\
+        2 & $ 2(2\alpha+\beta+\gamma)+2\beta+\gamma $  \\
+          & $ 4\alpha + 4\beta + 3\gamma $ \\
+        3 & $ 2(4\alpha + 4\beta + 3\gamma)+3\beta+\gamma $  \\
+          & $ 8\alpha + 11\beta + 7\gamma $ \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:casesofharderChange}%
+\end{table}%
+没有$ \gamma $ 的情况
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            r_0 = \alpha\\
+            r_n = 2r_{n-1}+\beta n \\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{table}[htbp]
+	\centering
+	\small
+	\caption{generalize the harder cases($ \gamma = 0 $ )}
+	\begin{tabular}{cl}
+		\toprule
+		n & $ r_n $ \\
+		\midrule
+        0 & $ \alpha $  \\
+        1 & $ 2\alpha+\beta $  \\
+        2 & $ 2(2\alpha+\beta)+2\beta $  \\
+          & $ 4\alpha + 4\beta $ \\
+        3 & $ 2(4\alpha + 4\beta)+3\beta $  \\
+          & $ 8\alpha + 11\beta $ \\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:casesofharderChange002}%
+\end{table}%
+\begin{equation*}
+    r_n = \alpha A(n)+\beta B(n)
+\end{equation*}
+$ r_n=1 $ , $ \left\{\begin{array}{l}
+    1=\alpha\\
+    1=2\cdot 1+\beta n\\
+\end{array}\right. $ 
+这是不可能的。因此$ \gamma \neq 0 $ 
+
+$ r_n=1 $ 
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            1=\alpha\\
+            1=2\cdot 1+\beta n + \gamma\\
+        \end{array}
+    \right.
+\end{equation*}
+$ (\alpha, \beta, \gamma) = (1,0,-1) $ 
+\begin{equation*}
+    A(n)-C(n)=1
+\end{equation*}
+\begin{equation*}
+    C(n)=A(n)-1    
+\end{equation*}
+
+$ r_n = n $ 
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            0=\alpha\\
+            n=2(n-1) + \beta n + \gamma\\
+        \end{array}
+    \right.
+\end{equation*}
+$ (\alpha, \beta, \gamma) = (0,-1,2) $ 
+\begin{equation*}
+    -B(n)+2C(n)=n
+\end{equation*}
+\begin{equation*}
+    B(n)=2C(n)-n = 2A(n)-n-2
+\end{equation*}
+
+$ r_n = n^2 $ 不能推出有效信息, $ n^2 = 2(n-1)^2+\beta n + \gamma $ , 推不出合理的解.
+
+$ r_n = 2^n $ 
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            2^0=\alpha\\
+            2^n=2\times 2^{n-1} + \beta n + \gamma\\
+        \end{array}
+    \right.
+\end{equation*}
+$ (\alpha, \beta, \gamma) = (1,0,0) $ 
+\begin{equation*}
+    A(n)=2^n
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{ll}
+            A(n) &= 2^n \\
+            B(n) &= 2^{n+1}-2-n \\
+            C(n) &= 2^n-1 \\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{equation*}
+    r_n = \alpha 2^n + \beta(2^{n+1}-n-2)+\gamma(2^n-1)
+\end{equation*}
+
+Example: 
+$ (\alpha,\beta,\gamma)=(1,1,0) $ 
+\begin{equation*}
+    r_n = 1\times 2^n + 1\times (2^{n+1}-n-2) = 3\cdot 2^n-n-2
+\end{equation*}
+
+Reprise
+\begin{equation*}
+    \left\{
+        \begin{array}{l}
+            r_0 = 1\\
+            r_n=2r_{n-1}+n
+        \end{array}
+    \right. \rightarrow(\text{general})
+    \left\{
+        \begin{array}{l}
+            r_0 = \alpha\\
+            r_n = 2r_{n-1}+\beta n+ \gamma\\
+        \end{array}
+    \right.
+\end{equation*}
+\begin{equation*}
+    r_n = \alpha 2^n + \beta(2^{n+1}-n-2)+\gamma(2^n-1)
+\end{equation*}
+\begin{equation*}
+    \left\{
+        \begin{array}{llll}
+            1   &= A(n)     &       &-C(n)  \\
+            n   &=          &-B(n)  &+2C(n) \\
+            2^n &= A(n)     &       &       \\
+        \end{array}
+    \right.
+\end{equation*}
+\footnote{这份 ppt 非常详细, 
+我以后总结知识也应如此.
+将来回顾可以快速看懂.}
+\end{document}

@@ -1,0 +1,1012 @@
+\chapter{第十五章 源于乘积的级数}
+
+\section{$\S 264$}
+
+考虑状如
+\[
+(1+\alpha z)(1+\beta z)(1+\gamma z)(1+\delta z)(1+\varepsilon z)(1+\zeta z) \cdots
+\]
+的乘积, 因式个数可以有限, 也可以无穷. 记展开式所成级数为
+\[
+1+A z+B z^{2}+C z^{3}+D z^{4}+E z^{5}+F z^{6}+\cdots
+\]
+显然, 系数 $A, B, C, D, E, \cdots$ 都由数 $\alpha, \beta, \gamma, \delta, \varepsilon, \zeta, \cdots$ 构成, 方式是
+\[
+\begin{gathered}
+A=\alpha+\beta+\gamma+\delta+\varepsilon+\zeta+\cdots=\text { 所有单个数的和 } \\
+B=\text { 每两个之积的和 } \\
+C=\text { 每三个之积的和 } \\
+D=\text { 每四个之积的和 } \\
+E=\text { 每五个之积的和 }
+\end{gathered}
+\]
+等等,直至全体 $\alpha, \beta, \gamma, \delta, \cdots$ 之积.
+
+\section{$\S 265$}
+
+令 $z=1$, 则乘积
+\[
+(1+\alpha)(1+\beta)(1+\gamma)(1+\delta)(1+\varepsilon)
+\]
+等于 1 加上 $\alpha, \beta, \gamma, \delta, \varepsilon, \cdots$ 全体所构成的总和,这总和依次包含:单个数的和、每两个之 积的和、每三个之积的和, 直至 $\alpha, \beta, \gamma, \delta, \varepsilon, \cdots$ 全体的积. 总和中可以包含相同的数, 同 一个数由不同方式得到几次就包含几次.
+
+\section{$\$ 266$}
+
+令 $z=-1$, 同于上一节,乘积
+\[
+(1-\alpha)(1-\beta)(1-\gamma)(1-\delta)(1-\varepsilon) \cdots
+\]
+也等于 1 加上由 $\alpha, \beta, \gamma, \delta, \varepsilon, \cdots$ 全体所构成的总和,这总和也依次包含 : 单个数的和、每 两个之积的和、每三个之积的和, 直至 $\alpha, \beta, \gamma, \delta, \varepsilon, \cdots$ 全体的积. 不同的只是, 这里一般地, 单个、每三个、每五个,每奇数个之积都取负号;每两个、每四个、每偶数个之积, 同于 前节, 仍取正号.
+
+\section{$\S 267$}
+
+取所有的质数
+\[
+2,3,5,7,11,13, \cdots
+\]
+作 $\alpha, \beta, \gamma, \delta, \cdots$, 则乘积为
+\[
+(1+2)(1+3)(1+5)(1+7)(1+11)(1+13)=P
+\]
+源于这个 $P$ 的级数, 包含 1, 包含所有的质数, 还包含不同质数的乘积. 即
+\[
+P=1+2+3+5+6+7+10+11+13+14+15+17+\cdots
+\]
+它包含幂和幂的倍数以外的所有自然数. 它不包含 $4,8,9,12,16,18, \cdots$, 因为它们或者是 幂,如 $4,8,9,16, \cdots$, 或者是幂的倍数,如
+\[
+12,18, \cdots
+\]
+\section{$\S 268$}
+
+取质数的幂的倒数作 $\alpha, \beta, \gamma, \delta, \varepsilon, \cdots$, 结果类似. 令
+\[
+P=\left(1+\frac{1}{2^{n}}\right)\left(1+\frac{1}{3^{n}}\left(1+\frac{1}{5^{n}}\right)\left(1+\frac{1}{7^{n}}\right)\left(1+\frac{1}{11^{n}}\right) \cdots\right.
+\]
+展开得
+\[
+P=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\frac{1}{10^{n}}+\frac{1}{11^{n}}+\cdots
+\]
+分母中含有幂和幂的倍数以外的所有数. 整数中除了质数和不同质数的积, 剩下的都是 质数的幂或这种幂的倍数.
+
+\section{$\S 269$}
+
+如果照 $\S 266$ 那样, 取上节倒数的负数作 $\alpha, \beta, \gamma, \delta, \cdots$, 那么, 令
+\[
+P=\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots
+\]
+则展开得
+\[
+P=1-\frac{1}{2^{n}}-\frac{1}{3^{n}}-\frac{1}{5^{n}}+\frac{1}{6^{n}}-\frac{1}{7^{n}}+\frac{1}{10^{n}}-\frac{1}{11^{n}}-\frac{1}{13^{n}}+\frac{1}{14^{n}}+\frac{1}{15^{n}}-\cdots
+\]
+跟前节一样, 幂和幂的倍数以外的数都包含在这里的分母中. 一般地, 质数本身、三个、五 个, 奇数个质数的积, 前面的符号是负的; 两个、四个、六个, 偶数个质数的积, 前面的符号 是正的. 例如 $30=2 \cdot 3 \cdot 5$, 不含幂, 所以 $\frac{1}{30^{n}}$ 是我们级数的一项, 又由于 30 是三个不同质数的积, 所以 $\frac{1}{30^{n}}$ 前面是负号.
+
+\section{$\S 270$}
+
+考虑表达式
+\[
+\frac{1}{(1-\alpha z)(1-\beta z)(1-\gamma z)(1-\delta z)(1-\varepsilon z) \cdots}
+\]
+进行除法, 得级数
+\[
+1+A z+B z^{2}+C z^{3}+D z^{4}+E z^{5}+F z^{6}+\cdots
+\]
+系数 $A, B, C, D, E, \cdots$, 显然由 $\alpha, \beta, \gamma, \delta, \varepsilon, \cdots$ 组成, 方式是
+\[
+\begin{aligned}
+& A=\text { 全体单个数的和 } \\
+& B=\text { 每两个之积的和 } \\
+& C=\text { 每三个之积的和 } \\
+& D=\text { 每四个之积的和 }
+\end{aligned}
+\]
+等等. 这里的积,因子可相同.
+
+\section{$\S 271$}
+
+$z=1$ 时表达式
+\[
+\frac{1}{(1-\alpha)(1-\beta)(1-\gamma)(1-\delta)(1-\varepsilon) \cdots}
+\]
+等于 1 加上 $\alpha, \beta, \gamma, \delta, \varepsilon, \zeta, \cdots$ 产生的数, 产生的数包含它们自身, 以及两个和更多个的 积. 跟 $\S 265$ 不同, 那里积的因子不许相同, 这里积的因子中可以有两个或多个是相同 的; 那里不包含 $\alpha, \beta, \gamma, \delta, \cdots$ 的幂和幂的倍数,这里包含.
+
+\section{$\S 272$}
+
+不管上节表达式因式个数有限还是无穷, 它产生的级数, 其项数都是无穷的. 例如
+\[
+\frac{1}{1-\frac{1}{2}}=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+\cdots
+\]
+分母是 2 的所有的幂. 再如
+\[
+\frac{1}{\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)}=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{6}+\frac{1}{8}+\frac{1}{9}+\frac{1}{12}+\frac{1}{16}+\frac{1}{18}+\cdots
+\]
+这里分母不含 2 和 3 以外的因数. 
+
+\section{$\S 273$}
+
+取所有质数的倒数作 $\alpha, \beta, \gamma, \delta, \cdots$ 记
+\[
+P=\frac{1}{\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1-\frac{1}{7}\right)\left(1-\frac{1}{11}\right)\left(1-\frac{1}{13}\right) \cdots}
+\]
+展开,得
+\[
+P=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\cdots
+\]
+这里分母既包含质数本身, 也包含质数的乘积. 因为自然数无例外地, 都或者是质数, 或 者是质数的乘积. 所以全体自然数都必定在这里的分母中出现.
+
+\section{$\S 274$}
+
+将质数换成质数的幂, 结果类似. 记
+\[
+P=\frac{1}{\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots}
+\]
+展开,得
+\[
+P=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\frac{1}{8^{n}}+\cdots
+\]
+自然数无例外地都在这里出现. 如果将因式中的负号都换为正号, 即
+\[
+P=\frac{1}{\left(1+\frac{1}{2^{n}}\right)\left(1+\frac{1}{3^{n}}\right)\left(1+\frac{1}{5^{n}}\right)\left(1+\frac{1}{7^{n}}\right)\left(1+\frac{1}{11^{n}}\right) \cdots}
+\]
+那么我们有
+\[
+P=1-\frac{1}{2^{n}}-\frac{1}{3^{n}}+\frac{1}{4^{n}}-\frac{1}{5^{n}}+\frac{1}{6^{n}}-\frac{1}{7^{n}}-\frac{1}{8^{n}}+\frac{1}{9^{n}}+\frac{1}{10^{n}}-\cdots
+\]
+分母为单个质数的项为负, 分母为两个质数 (相同或相异) 积的项为正. 一般地, 分母为 偶数个质数积的项为正, 分母为奇数个质数积的项为负. 例如
+\[
+240=2 \cdot 2 \cdot 2 \cdot 2 \cdot 3 \cdot 5
+\]
+是六个质数的积, 所以项 $\frac{1}{240^{n}}$ 为正. 在 $\S 270$ 中置 $z=1$, 可以看出这一规律.
+
+\section{$\S 275$}
+
+将上节与 $\S 269$ 相比较, 我们有两个积为 1 的级数. 记 
+\[
+\begin{aligned}
+& P=\frac{1}{\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots} \\
+& Q=\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots
+\end{aligned}
+\]
+则
+\[
+\begin{aligned}
+& P=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\frac{1}{8^{n}}+\cdots \\
+& Q=1-\frac{1}{2^{n}}-\frac{1}{3^{n}}-\frac{1}{5^{n}}+\frac{1}{6^{n}}-\frac{1}{7^{n}}+\frac{1}{10^{n}}-\frac{1}{11^{n}}+\cdots
+\end{aligned}
+\]
+显然, 这两个级数的积 $P Q=1$.
+
+\section{$\S 276$}
+
+记
+\[
+\begin{aligned}
+& P=\frac{1}{\left(1+\frac{1}{2^{n}}\right)\left(1+\frac{1}{3^{n}}\right)\left(1+\frac{1}{5^{n}}\right)\left(1+\frac{1}{7^{n}}\right)\left(1+\frac{1}{11^{n}}\right) \cdots} \\
+& Q=\left(1+\frac{1}{2^{n}}\right)\left(1+\frac{1}{3^{n}}\right)\left(1+\frac{1}{5^{n}}\right)\left(1+\frac{1}{7^{n}}\right)\left(1+\frac{1}{11^{n}}\right) \cdots
+\end{aligned}
+\]
+则
+\[
+\begin{gathered}
+P=1-\frac{1}{2^{n}}-\frac{1}{3^{n}}+\frac{1}{4^{n}}-\frac{1}{5^{n}}+\frac{1}{6^{n}}-\frac{1}{7^{n}}-\frac{1}{8^{n}}+\frac{1}{9^{n}} \cdots \\
+Q=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\frac{1}{10^{n}}+\frac{1}{11^{n}}+\cdots
+\end{gathered}
+\]
+我们也有 $P Q=1$. 这样, 知道这两个级数中一个的和, 就可以求出另一个的和.
+
+\section{$\S 277$}
+
+反之, 从这些级数的和也可求出一些无穷乘积的值. 例如
+\[
+\begin{gathered}
+M=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\cdots \\
+N=1+\frac{1}{2^{2 n}}+\frac{1}{2^{2 n}}+\frac{1}{4^{2 n}}+\frac{1}{5^{2 n}}+\frac{1}{6^{2 n}}+\frac{1}{7^{2 n}}+\cdots
+\end{gathered}
+\]
+时我们有
+\[
+M=\frac{1}{\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots}
+\]
+\[
+ N=\frac{1}{\left(1-\frac{1}{2^{2 n}}\right)\left(1-\frac{1}{3^{2 n}}\right)\left(1-\frac{1}{5^{2 n}}\right)\left(1-\frac{1}{7^{2 n}}\right)\left(1-\frac{1}{11^{2 n}}\right) \cdots}
+\]
+相除得
+\[
+\frac{M}{N}=\left(1+\frac{1}{2^{n}}\right)\left(1+\frac{1}{3^{n}}\right)\left(1+\frac{1}{5^{n}}\right)\left(1+\frac{1}{7^{n}}\right)\left(1+\frac{1}{11^{n}}\right) \cdots
+\]
+进一步得
+\[
+\frac{M^{2}}{N}=\frac{2^{n}+1}{2^{n}-1} \cdot \frac{3^{n}+1}{3^{n}-1} \cdot \frac{5^{n}+1}{5^{n}-1} \cdot \frac{7^{n}+1}{7^{n}-1} \cdot \frac{11^{n}+1}{11^{n}-1} \cdots \cdots
+\]
+从 $M, N$ 得到了上面无穷乘积的值, 也可得到下列级数的和
+\[
+\begin{gathered}
+\frac{1}{M}=1-\frac{1}{2^{n}}-\frac{1}{3^{n}}-\frac{1}{5^{n}}+\frac{1}{6^{n}}-\frac{1}{7^{n}}+\frac{1}{10^{n}}-\frac{1}{11^{n}}-\cdots \\
+\frac{1}{N}=1-\frac{1}{2^{2 n}}-\frac{1}{3^{2 n}}-\frac{1}{5^{2 n}}+\frac{1}{6^{2 n}}-\frac{1}{7^{2 n}}+\frac{1}{10^{2 n}}-\frac{1}{11^{2 n}}-\cdots \\
+\frac{M}{N}=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\frac{1}{10^{n}}+\frac{1}{11^{n}}+\cdots \\
+\frac{N}{M}=1-\frac{1}{2^{n}}-\frac{1}{3^{n}}+\frac{1}{4^{n}}-\frac{1}{5^{n}}+\frac{1}{6^{n}}-\frac{1}{7^{n}}-\frac{1}{8^{n}}+\frac{1}{9^{n}}+\frac{1}{10^{n}}-\cdots
+\end{gathered}
+\]
+进行组合, 还可得到很多另外的级数之和.
+
+例 1 令 $n=1$, 前面我们看到
+\[
+\log \frac{1}{1-x}=x+\frac{x^{2}}{2}+\frac{x^{3}}{3}+\frac{x^{4}}{4}+\frac{x^{5}}{5}+\frac{x^{6}}{6}+\cdots
+\]
+从而令 $x=1$, 则
+\[
+\log \frac{1}{1-1}=\log \infty=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\cdots
+\]
+由无穷大的对数也是无穷大, 我们得到
+\[
+M=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\cdots=\infty
+\]
+从而由 $\frac{1}{M}=\frac{1}{\infty}=0$ 得
+\[
+0=1-\frac{1}{2}-\frac{1}{3}-\frac{1}{5}+\frac{1}{6}-\frac{1}{7}+\frac{1}{10}-\frac{1}{11}-\frac{1}{13}+\frac{1}{14}+\frac{1}{15}-\cdots
+\]
+继而,对乘积我们有
+
+由此得
+\[
+M=\infty=\frac{1}{\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1-\frac{1}{7}\right)\left(1-\frac{1}{11}\right) \cdots}
+\]
+\[
+\begin{aligned}
+& \infty=\frac{2}{1} \cdot \frac{3}{2} \cdot \frac{5}{4} \cdot \frac{7}{6} \cdot \frac{11}{10} \cdot \frac{13}{12} \cdot \frac{17}{16} \cdot \frac{19}{18} \cdots \cdots \\
+& 0=\frac{1}{2} \cdot \frac{2}{3} \cdot \frac{4}{5} \cdot \frac{6}{7} \cdot \frac{10}{11} \cdot \frac{12}{13} \cdot \frac{16}{17} \cdot \frac{18}{19} \cdot \cdots
+\end{aligned}
+\]
+$\S 167$ 
+
+我们看到
+\[
+N=1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{4^{2}}+\frac{1}{5^{2}}+\frac{1}{6^{2}}+\frac{1}{7^{2}}+\cdots=\frac{\pi^{2}}{6}
+\]
+由此得
+\[
+\begin{gathered}
+\frac{6}{\pi^{2}}=1-\frac{1}{2^{2}}-\frac{1}{3^{2}}-\frac{1}{5^{2}}+\frac{1}{6^{2}}-\frac{1}{7^{2}}+\frac{1}{10^{2}}-\frac{1}{11^{2}}-\cdots \\
+\infty=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{10}+\frac{1}{11}+\cdots \\
+0=1-\frac{1}{2}-\frac{1}{3}+\frac{1}{4}-\frac{1}{5}+\frac{1}{6}-\frac{1}{7}-\frac{1}{8}+\frac{1}{9}+\frac{1}{10}-\frac{1}{11}-\cdots
+\end{gathered}
+\]
+取乘积,得
+\[
+\frac{\pi^{2}}{6}=\frac{2^{2}}{2^{2}-1} \cdot \frac{3^{2}}{3^{2}-1} \cdot \frac{5^{2}}{5^{2}-1} \cdot \frac{7^{2}}{7^{2}-1} \cdot \frac{11^{2}}{11^{2}-1} \cdot \cdots
+\]
+或
+\[
+\frac{\pi^{2}}{6}=\frac{4}{3} \cdot \frac{9}{8} \cdot \frac{25}{24} \cdot \frac{49}{48} \cdot \frac{121}{120} \cdot \frac{169}{168} \cdot \cdots
+\]
+由 $\frac{M}{N}=\infty$ 或 $\frac{N}{M}=0$ 得
+\[
+\infty=\frac{3}{2} \cdot \frac{4}{3} \cdot \frac{6}{5} \cdot \frac{8}{7} \cdot \frac{12}{11} \cdot \frac{14}{13} \cdot \frac{18}{17} \cdot \frac{20}{19} \cdot \cdots
+\]
+或
+\[
+0=\frac{2}{3} \cdot \frac{3}{4} \cdot \frac{5}{6} \cdot \frac{7}{8} \cdot \frac{11}{12} \cdot \frac{13}{14} \cdot \frac{17}{18} \cdot \frac{19}{20} \cdot \cdots
+\]
+也得到
+\[
+\infty=\frac{3}{1} \cdot \frac{4}{2} \cdot \frac{6}{4} \cdot \frac{8}{6} \cdot \frac{12}{10} \cdot \frac{14}{12} \cdot \frac{18}{16} \cdot \frac{20}{18} \cdot \cdots
+\]
+或
+\[
+0=\frac{1}{3} \cdot \frac{1}{2} \cdot \frac{2}{3} \cdot \frac{3}{4} \cdot \frac{5}{6} \cdot \frac{6}{7} \cdot \frac{8}{9} \cdot \frac{9}{10} \cdot \cdots
+\]
+最后一个乘积中, 从第二个分数开始, 分子都比分母小 1 , 且分子分母的和构成质数序列 $3,5,7,11,13,17,19, \cdots$.
+
+例 2 令 $n=2$, 那么根据 $\S 167$ 的证明,我们有
+\[
+\begin{aligned}
+& M=1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{4^{2}}+\frac{1}{5^{2}}+\frac{1}{6^{2}}+\frac{1}{7^{2}}+\cdots=\frac{\pi^{2}}{6} \\
+& N=1+\frac{1}{2^{4}}+\frac{1}{3^{4}}+\frac{1}{4^{4}}+\frac{1}{5^{4}}+\frac{1}{6^{4}}+\frac{1}{7^{4}}+\cdots=\frac{\pi^{4}}{90}
+\end{aligned}
+\]
+由此首先得到下列级数的和
+\[
+\frac{6}{\pi^{2}}=1-\frac{1}{2^{2}}-\frac{1}{3^{2}}-\frac{1}{5^{2}}+\frac{1}{6^{2}}-\frac{1}{7^{2}}+\frac{1}{10^{2}}-\frac{1}{11^{2}}-\cdots
+\]
+\[
+\begin{aligned}
+& \frac{90}{\pi^{4}}=1-\frac{1}{2^{4}}-\frac{1}{3^{4}}-\frac{1}{5^{4}}+\frac{1}{6^{4}}-\frac{1}{7^{4}}+\frac{1}{10^{4}}-\frac{1}{11^{4}}-\cdots \\
+& \frac{15}{\pi^{2}}=1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\frac{1}{6^{2}}+\frac{1}{7^{2}}+\frac{1}{10^{2}}+\frac{1}{11^{2}}+\cdots \\
+& \frac{\pi^{2}}{15}=1-\frac{1}{2^{2}}-\frac{1}{3^{2}}+\frac{1}{4^{2}}-\frac{1}{5^{2}}+\frac{1}{6^{2}}-\frac{1}{7^{2}}-\frac{1}{8^{2}}+\frac{1}{9^{2}}+\frac{1}{10^{2}}-\cdots
+\end{aligned}
+\]
+继而得到下列乘积的值
+\[
+\begin{aligned}
+& \frac{\pi^{2}}{6}=\frac{2^{2}}{2^{2}-1} \cdot \frac{3^{2}}{3^{2}-1} \cdot \frac{5^{2}}{5^{2}-1} \cdot \frac{7^{2}}{7^{2}-1} \cdot \frac{11^{2}}{11^{2}-1} \cdot \cdots \\
+& \frac{\pi^{4}}{90}=\frac{2^{4}}{2^{4}-1} \cdot \frac{3^{4}}{3^{4}-1} \cdot \frac{5^{4}}{5^{4}-1} \cdot \frac{7^{4}}{7^{4}-1} \cdot \frac{11^{4}}{11^{4}-1} \cdot \cdots \\
+& \frac{15}{\pi^{2}}=\frac{2^{2}+1}{2^{2}} \cdot \frac{3^{2}+1}{3^{2}} \cdot \frac{5^{2}+1}{5^{2}} \cdot \frac{7^{2}+1}{7^{2}} \cdot \frac{11^{2}+1}{11^{2}} \cdot \cdots
+\end{aligned}
+\]
+或
+\[
+\frac{\pi^{2}}{15}=\frac{4}{5} \cdot \frac{9}{10} \cdot \frac{25}{26} \cdot \frac{49}{50} \cdot \frac{121}{122} \cdot \frac{169}{170} \cdot \cdots
+\]
+和
+\[
+\frac{5}{2}=\frac{2^{2}+1}{2^{2}-1} \cdot \frac{3^{2}+1}{3^{2}-1} \cdot \frac{5^{2}+1}{5^{2}-1} \cdot \frac{7^{2}+1}{7^{2}-1} \cdot \frac{11^{2}+1}{11^{2}-1} \cdot \cdots
+\]
+或
+\[
+\frac{5}{2}=\frac{5}{3} \cdot \frac{5}{4} \cdot \frac{13}{12} \cdot \frac{25}{24} \cdot \frac{61}{60} \cdot \frac{85}{84} \cdot \cdots
+\]
+或
+\[
+\frac{3}{2}=\frac{5}{4} \cdot \frac{13}{12} \cdot \frac{25}{24} \cdot \frac{61}{60} \cdot \frac{85}{84} \cdot \cdots
+\]
+最后一个乘积中分子都比分母大 1 , 且分子分母的和构成质数平方序列 $3^{2}, 5^{2}, 7^{2}$, $11^{2}, \cdots$
+
+例 $3 \S 167$ 求出了 $n$ 为偶数时 $M$ 的值, 取 $n=4$, 我们有
+\[
+\begin{gathered}
+M=1+\frac{1}{2^{4}}+\frac{1}{3^{4}}+\frac{1}{4^{4}}+\frac{1}{5^{4}}+\frac{1}{6^{4}}+\cdots=\frac{\pi^{4}}{90} \\
+N=1+\frac{1}{2^{8}}+\frac{1}{3^{8}}+\frac{1}{4^{8}}+\frac{1}{5^{8}}+\frac{1}{6^{8}}+\cdots=\frac{\pi^{8}}{9450}
+\end{gathered}
+\]
+由此首先我们得到下列级数的和
+\[
+\begin{gathered}
+\frac{90}{\pi^{4}}=1-\frac{1}{2^{4}}-\frac{1}{3^{4}}-\frac{1}{5^{4}}+\frac{1}{6^{4}}-\frac{1}{7^{4}}+\frac{1}{10^{4}}-\frac{1}{11^{4}}-\cdots \\
+\frac{9450}{\pi^{8}}=1-\frac{1}{2^{8}}-\frac{1}{3^{8}}-\frac{1}{5^{8}}+\frac{1}{6^{8}}-\frac{1}{7^{8}}+\frac{1}{10^{8}}-\frac{1}{11^{8}}-\cdots \\
+\frac{105}{\pi^{4}}=1+\frac{1}{2^{4}}+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\frac{1}{6^{4}}+\frac{1}{7^{4}}+\frac{1}{10^{4}}+\frac{1}{11^{4}}+\cdots
+\end{gathered}
+\]
+%%11p201-220
+\[
+\begin{aligned}
+& \frac{\pi^{4}}{105}=1-\frac{1}{2^{4}}-\frac{1}{3^{4}}+\frac{1}{4^{4}}-\frac{1}{5^{4}}+\frac{1}{6^{4}}-\frac{1}{7^{4}}-\frac{1}{8^{4}}+\frac{1}{9^{4}}+\cdots
+\end{aligned}
+\]
+接下去我们得到下列乘积的值
+\[
+\begin{aligned}
+& \frac{\pi^{4}}{90}=\frac{2^{4}}{2^{4}-1} \cdot \frac{3^{4}}{3^{4}-1} \cdot \frac{5^{4}}{5^{4}-1} \cdot \frac{7^{4}}{7^{4}-1} \cdot \frac{11^{4}}{11^{4}-1} \cdot \cdots \\
+& \frac{\pi^{8}}{9450}=\frac{2^{8}}{2^{8}-1} \cdot \frac{3^{8}}{3^{8}-1} \cdot \frac{5^{8}}{5^{8}-1} \cdot \frac{7^{8}}{7^{8}-1} \cdot \frac{11^{8}}{11^{8}-1} \cdot \cdots \\
+& \frac{105}{\pi^{4}}=\frac{2^{4}+1}{2^{4}} \cdot \frac{3^{4}+1}{3^{4}} \cdot \frac{5^{4}+1}{5^{4}} \cdot \frac{7^{4}+1}{7^{4}} \cdot \frac{11^{4}+1}{11^{4}} \cdot \cdots
+\end{aligned}
+\]
+和
+\[
+\frac{7}{6}=\frac{2^{4}+1}{2^{4}-1} \cdot \frac{3^{4}+1}{3^{4}-1} \cdot \frac{5^{4}+1}{5^{4}-1} \cdot \frac{7^{4}+1}{7^{4}-1} \cdot \frac{11^{4}+1}{11^{4}-1} \cdot \cdots
+\]
+或
+\[
+\frac{35}{34}=\frac{41}{40} \cdot \frac{313}{312} \cdot \frac{1201}{1200} \cdot \frac{7321}{7320} \cdot \cdots
+\]
+最后这个表达式右端的分数, 分子都比分母大 1 , 且分子分母的和依次是质数
+\[
+3,5,7,11, \cdots
+\]
+的四次方.
+
+\section{$\S 278$}
+
+我们可以将级数
+\[
+M=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\cdots
+\]
+的和表示为乘积, 这给利用对数带来方便. 由
+\[
+M=\frac{1}{\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots}
+\]
+我们得到
+
+取自然对数,得
+\[
+\log M=-\log \left(1-\frac{1}{2^{n}}\right)-\log \left(1-\frac{1}{3^{n}}\right)-\log \left(1-\frac{1}{5^{n}}\right)-\log \left(1-\frac{1}{7^{n}}\right)-\cdots
+\]
+\[
+\begin{aligned}
+\log M= & 1\left(\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{7^{n}}+\frac{1}{11^{n}}+\cdots\right)+ \\
+& \frac{1}{2}\left(\frac{1}{2^{2 n}}+\frac{1}{3^{2 n}}+\frac{1}{5^{2 n}}+\frac{1}{7^{2 n}}+\frac{1}{11^{2 n}}+\cdots\right)+ \\
+& \frac{1}{3}\left(\frac{1}{2^{3 n}}+\frac{1}{3^{3 n}}+\frac{1}{5^{3 n}}+\frac{1}{7^{3 n}}+\frac{1}{11^{3 n}}+\cdots\right)+
+\end{aligned}
+\]
+\[
+\frac{1}{4}\left(\frac{1}{2^{4 n}}+\frac{1}{3^{4 n}}+\frac{1}{5^{4 n}}+\frac{1}{7^{4 n}}+\frac{1}{11^{4 n}}+\cdots\right)+
+\]
+此外,令
+\[
+N=1+\frac{1}{2^{2 n}}+\frac{1}{3^{2 n}}+\frac{1}{4^{2 n}}+\frac{1}{5^{2 n}}+\frac{1}{6^{2 n}}+\cdots
+\]
+则
+\[
+N=\frac{1}{\left(1-\frac{1}{2^{2 n}}\right)\left(1-\frac{1}{3^{2 n}}\right)\left(1-\frac{1}{5^{2 n}}\right)\left(1-\frac{1}{7^{2 n}}\right)\left(1-\frac{1}{11^{2 n}}\right) \cdots}
+\]
+取自然对数, 得
+\[
+\begin{aligned}
+\log N= & 1\left(\frac{1}{2^{2 n}}+\frac{1}{3^{2 n}}+\frac{1}{5^{2 n}}+\frac{1}{7^{2 n}}+\frac{1}{11^{2 n}}+\cdots\right)+ \\
+& \frac{1}{2}\left(\frac{1}{2^{4 n}}+\frac{1}{3^{4 n}}+\frac{1}{5^{4 n}}+\frac{1}{7^{4 n}}+\frac{1}{11^{4 n}}+\cdots\right)+ \\
+& \frac{1}{3}\left(\frac{1}{2^{6 n}}+\frac{1}{3^{6 n}}+\frac{1}{5^{6 n}}+\frac{1}{7^{6 n}}+\frac{1}{11^{6 n}}+\cdots\right)+ \\
+& \frac{1}{4}\left(\frac{1}{2^{8 n}}+\frac{1}{3^{8 n}}+\frac{1}{5^{8 n}}+\frac{1}{7^{8 n}}+\frac{1}{11^{8 n}}+\cdots\right)+
+\end{aligned}
+\]
+由这两个结果我们得到
+\[
+\begin{aligned}
+& \log M=\frac{1}{2} \log N= 1\left(\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{7^{n}}+\frac{1}{11^{n}}+\cdots\right)+ \\
+& \frac{1}{3}\left(\frac{1}{2^{3 n}}+\frac{1}{3^{3 n}}+\frac{1}{5^{3 n}}+\frac{1}{7^{3 n}}+\frac{1}{11^{3 n}}+\cdots\right)+ \\
+& \frac{1}{5}\left(\frac{1}{2^{5 n}}+\frac{1}{3^{5 n}}+\frac{1}{5^{5 n}}+\frac{1}{7^{5 n}}+\frac{1}{11^{5 n}}+\cdots\right)+ \\
+& \frac{1}{7}\left(\frac{1}{2^{7 n}}+\frac{1}{3^{7 n}}+\frac{1}{5^{7 n}}+\frac{1}{7^{7 n}}+\frac{1}{11^{7 n}}+\cdots\right)+ \\
+& \vdots
+\end{aligned}
+\]
+\section{$\S 279$}
+
+如果 $n=1$, 我们有
+\[
+M=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\cdots=\log \infty
+\]
+和
+\[
+N=\frac{\pi^{2}}{6}
+\]
+由此得
+\[
+\begin{aligned}
+\log (\log \infty)-\frac{1}{2} \log \frac{\pi^{2}}{6}= & 1\left(\frac{1}{2}+\frac{1}{3}+\frac{1}{5}+\frac{1}{7}+\frac{1}{11}+\cdots\right)+ \\
+& \frac{1}{3}\left(\frac{1}{2^{3}}+\frac{1}{3^{3}}+\frac{1}{5^{3}}+\frac{1}{7^{3}}+\frac{1}{11^{3}}+\cdots\right)+ \\
+& \frac{1}{5}\left(\frac{1}{2^{5}}+\frac{1}{3^{5}}+\frac{1}{5^{5}}+\frac{1}{7^{5}}+\frac{1}{11^{5}}+\cdots\right)+ \\
+& \frac{1}{7}\left(\frac{1}{2^{7}}+\frac{1}{3^{7}}+\frac{1}{5^{7}}+\frac{1}{7^{7}}+\frac{1}{11^{7}}+\cdots\right)+
+\end{aligned}
+\]
+右端括号中的级数, 从第二个开始, 和都是有限数; 而且加起来, 和仍然是有限数, 还 相当小. 由此我们得到,第一个级数
+\[
+\frac{1}{2}+\frac{1}{3}+\frac{1}{5}+\frac{1}{7}+\frac{1}{11}+\cdots
+\]
+的和应该为无穷大, 也即与级数
+\[
+1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\cdots
+\]
+的自然对数之差应该是一个足够小的量.
+
+\section{$\S 280$}
+
+令 $n=2$, 则
+\[
+M=\frac{\pi^{2}}{6}, N=\frac{\pi^{4}}{90}
+\]
+由此得
+\[
+\begin{aligned}
+& 2 \log \pi-\log 6= 1\left(\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{11^{2}}+\cdots\right)+ \\
+& \frac{1}{2}\left(\frac{1}{2^{4}}+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\frac{1}{7^{4}}+\frac{1}{11^{4}}+\cdots\right)+ \\
+& \frac{1}{3}\left(\frac{1}{2^{6}}+\frac{1}{3^{6}}+\frac{1}{5^{6}}+\frac{1}{7^{6}}+\frac{1}{11^{6}}+\cdots\right)+ \\
+& \vdots \\
+& 4 \log \pi-\log 90= 1\left(\frac{1}{2^{4}}+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\frac{1}{7^{4}}+\frac{1}{11^{4}}+\cdots\right)+ \\
+& \frac{1}{2}\left(\frac{1}{2^{8}}+\frac{1}{3^{8}}+\frac{1}{5^{8}}+\frac{1}{7^{8}}+\frac{1}{11^{8}}+\cdots\right)+ \\
+& \frac{1}{3}\left(\frac{1}{2^{12}}+\frac{1}{3^{12}}+\frac{1}{5^{12}}+\frac{1}{7^{12}}+\frac{1}{11^{12}}+\cdots\right)+
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{1}{2} \log \frac{5}{2}=1\left(\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{11^{2}}+\cdots\right)+ \\
+& \frac{1}{3}\left(\frac{1}{2^{6}}+\frac{1}{3^{6}}+\frac{1}{5^{6}}+\frac{1}{7^{6}}+\frac{1}{11^{6}}+\cdots\right)+ \\
+& \frac{1}{5}\left(\frac{1}{2^{10}}+\frac{1}{3^{10}}+\frac{1}{5^{10}}+\frac{1}{7^{10}}+\frac{1}{11^{10}}+\cdots\right)+
+\end{aligned}
+\]
+\section{$\S 281$}
+
+虽然写出质数序列本身, 这规律末知, 但有办法指出质数高次幂倒数所成级数和的 近似值. 设
+\[
+\begin{gathered}
+M=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\cdots \\
+S=\frac{1}{2^{n}}+\frac{1}{3 n}+\frac{1}{5^{n}}+\frac{1}{7^{n}}+\frac{1}{11^{n}}+\frac{1}{13^{n}}+\cdots
+\end{gathered}
+\]
+则
+\[
+S=M-1-\frac{1}{4^{n}}-\frac{1}{6^{n}}-\frac{1}{8^{n}}-\frac{1}{9^{n}}-\frac{1}{10^{n}}-\cdots
+\]
+由
+\[
+\frac{M}{2^{n}}=\frac{1}{2^{n}}+\frac{1}{4^{n}}+\frac{1}{6^{n}}+\frac{1}{8^{n}}+\frac{1}{10^{n}}+\frac{1}{12^{n}}+\cdots
+\]
+得
+\[
+\begin{aligned}
+S= & M-\frac{M}{2^{n}}-1+\frac{1}{2^{n}}-\frac{1}{9^{n}}-\frac{1}{15^{n}}-\frac{1}{21^{n}}-\cdots= \\
+& (M-1)\left(1-\frac{1}{2^{n}}\right)-\frac{1}{9^{n}}-\frac{1}{15^{n}}-\frac{1}{21^{n}}-\frac{1}{25^{n}}-\frac{1}{27^{n}}-\cdots
+\end{aligned}
+\]
+又由
+\[
+M\left(1-\frac{1}{2^{n}}\right) \frac{1}{3^{n}}=\frac{1}{3^{n}}+\frac{1}{9^{n}}+\frac{1}{15^{n}}+\frac{1}{21^{n}}+\cdots
+\]
+得
+\[
+S=(M-1)\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)+\frac{1}{6^{n}}-\frac{1}{25^{n}}-\frac{1}{35^{n}}-\frac{1}{45^{n}}-\cdots
+\]
+$M$ 的值已知, 所以只要 $n$ 适当地大, 就可以方便地求出 $S$.
+
+\section{$\S 282$}
+
+求出了高次幂时的和, 用导出的公式就可以求出低次幂时的和. 级数 
+\[
+\begin{aligned}
+& \text { Snfinite analysios 无忿分析与论). Fulraductian } \\
+& \qquad \frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{7^{n}}+\frac{1}{11^{n}}+\frac{1}{13^{n}}+\frac{1}{17^{n}}+\cdots
+\end{aligned}
+\]
+的下面的和就是用这种方法求出的:
+\[
+\begin{aligned}
+& n \text { 为 级数的和为 } \\
+& n=2 \quad 0.452247420041222 \\
+& n=4 \quad 0.076993139764252 \\
+& n=6 \quad 0.017070086850639 \\
+& n=8 \quad 0.004061405366515 \\
+& n=10 \quad 0.000993603573633 \\
+& n=12 \quad 0.000246026470033 \\
+& n=14 \quad 0.000061244396725 \\
+& n=16 \quad 0.000015282026219 \\
+& n=18 \quad 0.000003817278702 \\
+& n=20 \quad 0.000000953961123 \\
+& n=22 \quad 0.000000238450446 \\
+& n=24 \quad 0.000000059608184 \\
+& n=26 \quad 0.000000014901555 \\
+& n=28 \quad 0.000000003725333 \\
+& n=30 \quad 0.000000000931323 \\
+& n=32 \quad 0.000000000232830 \\
+& n=34 \quad 0.000000000058207 \\
+& n=36 \quad 0.000000000014551
+\end{aligned}
+\]
+次数更高的偶次幂的和, 是下降的, 每前进一步约下降四分之三, 即后步约为前步的四分 之一.
+
+\section{$\S 283$}
+
+级数
+\[
+1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\cdots
+\]
+可以直接变为乘积,方法是:记
+\[
+A=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\frac{1}{5^{n}}+\frac{1}{6^{n}}+\frac{1}{7^{n}}+\frac{1}{8^{n}}+\cdots
+\]
+从 $A$ 减去
+\[
+\frac{1}{2^{n}} A=\frac{1}{2^{n}}+\frac{1}{4^{n}}+\frac{1}{6^{n}}+\frac{1}{8^{n}}+\cdots
+\]
+得 
+
+\[
+\left(1-\frac{1}{2^n}\right) A=1+\frac{1}{3^n}+\frac{1}{5^n}+\frac{1}{7^n}+\frac{1}{9^n}+\frac{1}{11 n}+\cdots=B
+\]
+消去了分母中被 2 除得尽的项. 从 $B$ 减去
+\[
+\frac{1}{3^{n}} B=\frac{1}{3^{n}}+\frac{1}{9^{n}}+\frac{1}{15^{n}}+\frac{1}{21^{n}}+\cdots
+\]
+得
+\[
+\left(1-\frac{1}{3^{n}}\right) B=1+\frac{1}{5^{n}}+\frac{1}{7^{n}}+\frac{1}{11^{n}}+\frac{1}{13^{n}}+\cdots=C
+\]
+消去了分母被 3 除得尽的项, 从 $C$ 减去
+\[
+\frac{1}{5^{n}} C=\frac{1}{5^{n}}+\frac{1}{25^{n}}+\frac{1}{35^{n}}+\frac{1}{55^{n}}+\cdots
+\]
+得
+\[
+\left(1-\frac{1}{5^{n}}\right) C=1+\frac{1}{7^{n}}+\frac{1}{11^{n}}+\frac{1}{13^{n}}+\frac{1}{17^{n}}+\cdots
+\]
+消去了分母被 5 除得尽的项. 类似地, 可依次再消去分母被 $7,11, \cdots$ 直至被所有质数除得 尽的项, 显然那时得到的是 1 . 对 $B, C, D, E, \cdots$ 进行反向回代, 得
+\[
+A\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots=1
+\]
+从而
+\[
+A=\frac{1}{\left(1-\frac{1}{2^{n}}\right)\left(1-\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1-\frac{1}{11^{n}}\right) \cdots}
+\]
+或
+\[
+A=\frac{2^{n}}{2^{n}-1} \cdot \frac{3^{n}}{3^{n}-1} \cdot \frac{5^{n}}{5^{n}-1} \cdot \frac{7^{n}}{7^{n}-1} \cdot \frac{11^{n}}{11^{n}-1} \cdot \cdots
+\]
+\section{$\S 284$}
+
+这种方法也可用于化另外一些和已知的级数为无穷乘积. 例如 $\S 175$ 我们求出了级 数
+\[
+1-\frac{1}{3^{n}}+\frac{1}{5^{n}}-\frac{1}{7^{n}}+\frac{1}{9^{n}}-\frac{1}{11^{n}}+\frac{1}{13^{n}}-\cdots
+\]
+的和, $n$ 为奇数时和为 $N \pi^{n}$, 那里给出了 $N$ 的一些值. 我们指出, 该级数分母中只出现奇 数, 且奇数为 $4 m+1$ 时, 所在项为正, 奇数为 $4 m-1$ 时, 所在项为负. 记
+\[
+A=1-\frac{1}{3^{n}}+\frac{1}{5^{n}}-\frac{1}{7^{n}}+\frac{1}{9^{n}}-\frac{1}{11^{n}}+\frac{1}{13^{n}}-\cdots
+\]
+加上
+\[
+\frac{1}{3^{n}} A=\frac{1}{3^{n}}-\frac{1}{9^{n}}+\frac{1}{15^{n}}-\frac{1}{21^{n}}+\frac{1}{27^{n}}-\cdots
+\]
+得
+\[
+\left(1+\frac{1}{3^{n}}\right) A=1+\frac{1}{5^{n}}-\frac{1}{7^{n}}-\frac{1}{11^{n}}+\frac{1}{13^{n}}+\frac{1}{17^{n}}-\cdots=B
+\]
+减去
+\[
+\frac{1}{5^{n}} B=\frac{1}{5^{n}}+\frac{1}{25^{n}}-\frac{1}{35^{n}}-\frac{1}{55^{n}}+\cdots
+\]
+得
+\[
+\left(1-\frac{1}{5^{n}}\right) B=1-\frac{1}{7^{n}}-\frac{1}{11^{n}}+\frac{1}{13^{n}}+\frac{1}{17^{n}}-\cdots=C
+\]
+消去了分母被 3 和 5 除的尽的项,加上
+\[
+\frac{1}{7^{n}} C=\frac{1}{7^{n}}-\frac{1}{49^{n}}-\frac{1}{77^{n}}+\cdots
+\]
+得
+\[
+\left(1+\frac{1}{7^{n}}\right) C=1-\frac{1}{11^{n}}+\frac{1}{13^{n}}+\frac{1}{17^{n}}-\cdots=D
+\]
+消去了分母被 7 除得尽的项,加上
+\[
+\frac{1}{11^{n}} D=\frac{1}{11^{n}}-\frac{1}{121^{n}}+\cdots
+\]
+得
+\[
+\left(1+\frac{1}{11^{n}}\right) D=1+\frac{1}{13^{n}}+\frac{1}{17^{n}}-\cdots=E
+\]
+消去了分母被 11 除得尽的项. 用这样的方法消去分母被一切质数除得尽的项,最后得
+\[
+A\left(1+\frac{1}{3^{n}}\right)\left(1-\frac{1}{5^{n}}\right)\left(1+\frac{1}{7^{n}}\right)\left(1+\frac{1}{11^{n}}\right)\left(1-\frac{1}{13^{n}}\right) \cdots=1
+\]
+或
+\[
+A=\frac{3^{n}}{3^{n}+1} \cdot \frac{5^{n}}{5^{n}-1} \cdot \frac{7^{n}}{7^{n}+1} \cdot \frac{11^{n}}{11^{n}+1} \cdot \frac{13^{n}}{13^{n}-1} \cdot \frac{17^{n}}{17^{n}-1} \ldots
+\]
+质数都在分子中出现. 质数形状为 $4 m-1$ 时, 分母比分子大 1 , 为 $4 m+1$ 时, 分母比分子 小 1 .
+
+\section{$\S 285$}
+
+令 $n=1$, 那么由 $A=\frac{\pi}{4}$, 我们得到
+\[
+\frac{\pi}{4}=\frac{3}{4} \cdot \frac{5}{4} \cdot \frac{7}{8} \cdot \frac{11}{12} \cdot \frac{13}{12} \cdot \frac{17}{16} \cdot \frac{19}{20} \cdot \frac{23}{24} \cdot \cdots
+\]
+$\S 277$ 我们得到
+\[
+\frac{\pi^{2}}{6}=\frac{4}{3} \cdot \frac{3^{2}}{2 \cdot 4} \cdot \frac{5^{2}}{4 \cdot 6} \cdot \frac{7^{2}}{6 \cdot 8} \cdot \frac{11^{2}}{10 \cdot 12} \cdot \frac{13^{2}}{12 \cdot 14} \cdot \frac{17^{2}}{16 \cdot 18} \cdot \frac{19^{2}}{18 \cdot 20} \cdot \cdots
+\]
+用第一式除第二式,得
+\[
+\frac{2 \pi}{3}=\frac{4}{3} \cdot \frac{3}{2} \cdot \frac{5}{6} \cdot \frac{7}{6} \cdot \frac{11}{10} \cdot \frac{13}{14} \cdot \frac{17}{18} \cdot \frac{19}{18} \cdot \frac{23}{22} \cdot \cdots
+\]
+或
+\[
+\frac{\pi}{2}=\frac{3}{2} \cdot \frac{5}{6} \cdot \frac{7}{6} \cdot \frac{11}{10} \cdot \frac{13}{14} \cdot \frac{17}{18} \cdot \frac{19}{18} \cdot \frac{23}{22} \cdot \cdots
+\]
+分子是质数, 分母是比分子大 1 或小 1 的奇偶数. 用第一式除最后这一式, 得
+\[
+2=\frac{4}{2} \cdot \frac{4}{6} \cdot \frac{8}{6} \cdot \frac{12}{10} \cdot \frac{12}{14} \cdot \frac{16}{18} \cdot \frac{20}{18} \cdot \frac{24}{22} \cdot \cdots
+\]
+或
+\[
+2=\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{8}{9} \cdot \frac{10}{9} \cdot \frac{12}{11} \cdots \cdots
+\]
+这里的分数由质数 $2,3,5,7, \cdots$ 产生, 方式是把每一个都分成一奇一偶相差为 1 的两个 数,偶数作分子,奇数作分母.
+
+\section{$\S 286$}
+
+Wallis 公式为
+\[
+\frac{\pi}{2}=\frac{2 \cdot 2 \cdot 4 \cdot 4 \cdot 6 \cdot 6 \cdot 8 \cdot 8 \cdot 10 \cdot 10 \cdot 12 \cdot \cdots}{1 \cdot 3 \cdot 3 \cdot 5 \cdot 5 \cdot 7 \cdot 7 \cdot 9 \cdot 9 \cdot 11 \cdot 11 \cdot \cdots}
+\]
+或
+\[
+\frac{4}{\pi}=\frac{3 \cdot 3}{2 \cdot 4} \cdot \frac{5 \cdot 5}{4 \cdot 6} \cdot \frac{7 \cdot 7}{6 \cdot 8} \cdot \frac{9 \cdot 9}{8 \cdot 10} \cdot \frac{11 \cdot 11}{10 \cdot 12} \cdot \frac{13 \cdot 13}{12 \cdot 14} \cdots \cdots
+\]
+由上节得
+\[
+\frac{\pi^{2}}{8}=\frac{3 \cdot 3}{2 \cdot 4} \cdot \frac{5 \cdot 5}{4 \cdot 6} \cdot \frac{7 \cdot 7}{6 \cdot 8} \cdot \frac{11 \cdot 11}{10 \cdot 12} \cdot \frac{13 \cdot 13}{12 \cdot 14} \cdot \cdots
+\]
+用第三式除第二式,得
+\[
+\frac{32}{\pi^{3}}=\frac{9 \cdot 9}{8 \cdot 10} \cdot \frac{15 \cdot 15}{14 \cdot 16} \cdot \frac{21 \cdot 21}{20 \cdot 22} \cdot \frac{25 \cdot 25}{24 \cdot 26} \cdots \cdots
+\]
+奇的合数都在分子中出现.
+
+\section{$\S 287$}
+
+令 $n=3$, 由 $\S 175$ 知, 此时 $A=\frac{\pi^{3}}{32}$, 即
+\[
+\frac{\pi^{3}}{32}=\frac{3^{3}}{3^{3}+1} \cdot \frac{5^{3}}{5^{3}-1} \cdot \frac{7^{3}}{7^{3}+1} \cdot \frac{11^{3}}{11^{3}+1} \cdot \frac{13^{3}}{13^{3}-1} \cdot \frac{17^{3}}{17^{3}-1} \cdot \cdots
+\]
+由 $\S 167$ 级数
+\[
+\frac{\pi^{6}}{945}=1+\frac{1}{2^{6}}+\frac{1}{3^{6}}+\frac{1}{4^{6}}+\frac{1}{5^{6}}+\cdots
+\]
+得
+\[
+\frac{\pi^{6}}{945}=\frac{2^{6}}{2^{6}-1} \cdot \frac{3^{6}}{3^{6}-1} \cdot \frac{5^{6}}{5^{6}-1} \cdot \frac{7^{6}}{7^{6}-1} \cdot \frac{11^{6}}{11^{6}-1} \cdot \frac{13^{6}}{13^{6}-1} \cdot \cdots
+\]
+或
+\[
+\frac{\pi^{6}}{960}=\frac{3^{6}}{3^{6}-1} \cdot \frac{5^{6}}{5^{6}-1} \cdot \frac{7^{6}}{7^{6}-1} \cdot \frac{11^{6}}{11^{6}-1} \cdot \frac{13^{6}}{13^{6}-1} \cdot \cdots
+\]
+用第一式除最后一式,得
+\[
+\frac{\pi^{3}}{30}=\frac{3^{3}}{3^{3}-1} \cdot \frac{5^{3}}{5^{3}+1} \cdot \frac{7^{3}}{7^{3}-1} \cdot \frac{11^{3}}{11^{3}-1} \cdot \frac{13^{3}}{13^{3}+1} \cdot \frac{17^{3}}{17^{3}+1} \cdot \cdots
+\]
+再用第一式除,得
+\[
+\frac{16}{15}=\frac{3^{3}+1}{3^{3}-1} \cdot \frac{5^{3}-1}{5^{3}+1} \cdot \frac{7^{3}+1}{7^{3}-1} \cdot \frac{11^{3}+1}{11^{3}-1} \cdot \frac{13^{3}-1}{13^{3}+1} \cdot \frac{17^{3}-1}{17^{3}+1} \cdot \cdots
+\]
+或
+\[
+\frac{16}{15}=\frac{14}{13} \cdot \frac{62}{63} \cdot \frac{172}{171} \cdot \frac{666}{665} \cdot \frac{1098}{1099} \cdot \cdots
+\]
+这里的分数由奇质数的立方构成, 方式是分它成相差为 1 的奇偶两数, 偶数作分子, 奇数 作分母.
+
+\section{$\S 288$}
+
+利用得到的表达式可推出新的、分母包含一切自然数的级数. 从 $\S 285$ 得
+\[
+\frac{\pi}{4}=\frac{3}{3+1} \cdot \frac{5}{5-1} \cdot \frac{7}{7+1} \cdot \frac{1}{11+1} \cdot \frac{13}{13-1} \cdot \cdots
+\]
+或
+\[
+\frac{\pi}{6}=\frac{1}{\left(1+\frac{1}{2}\right)\left(1+\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right)\left(1-\frac{1}{13}\right) \cdots}
+\]
+展开得
+\[
+\frac{\pi}{6}=1-\frac{1}{2}-\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}-\frac{1}{7}-\frac{1}{8}+\frac{1}{9}-\frac{1}{10}-\cdots
+\]
+这里的符号规律是: 2 的符号为负; 状如 $4 m-1$ 的质数, 符号为负; 状如 $4 m+1$ 的质数, 符 号为正; 合数的符号, 等于其质因数符号的积. 例如, 分数 $\frac{1}{60}$ 的符号为负, 因为
+\[
+-60=(-2)(-2)(-3)(+5)
+\]
+类似地, 我们有
+\[
+\frac{\pi}{2}=\frac{1}{\left(1-\frac{1}{2}\right)\left(1+\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right)\left(1-\frac{1}{13}\right) \cdots}
+\]
+展开得 
+
+这里 2 的符号为正; 状如 $4 m-1$ 的质数, 符号为负; 状如 $4 m+1$ 的质数, 符号为正; 合数的 符号等于其质因数符号的积.
+
+\section{$\S 289$}
+
+从 $\$ 285$ 得
+\[
+\frac{\pi}{2}=\frac{1}{\left(1-\frac{1}{3}\right)\left(1+\frac{1}{5}\right)\left(1-\frac{1}{7}\right)\left(1-\frac{1}{11}\right)\left(1+\frac{1}{13}\right) \cdots}
+\]
+展开得
+\[
+\frac{\pi}{2}=1+\frac{1}{3}-\frac{1}{5}+\frac{1}{7}+\frac{1}{9}+\frac{1}{11}-\frac{1}{13}-\frac{1}{15}-\cdots
+\]
+这里只出现奇数, 符号规律是: 状如 $4 m-1$ 的质数, 符号为正; 状如 $4 m+1$ 的质数, 符号为 负; 合数的符号等于其质因数符号的积.
+
+由此可以得到自然数都出现的两个级数. 先由
+\[
+\pi=\frac{1}{\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1+\frac{1}{5}\right)\left(1-\frac{1}{7}\right)\left(1-\frac{1}{11}\right)\left(1+\frac{1}{13}\right) \cdots}
+\]
+展开得
+\[
+\pi=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}-\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}+\frac{1}{9}-\frac{1}{10}+\cdots
+\]
+这里 2 的符号为正; 状如 $4 m-1$ 的质数, 符号为正; 状如 $4 m+1$ 的质数, 符号为负.
+
+再由
+\[
+\frac{\pi}{3}=\frac{1}{\left(1+\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1+\frac{1}{5}\right)\left(1-\frac{1}{7}\right)\left(1-\frac{1}{11}\right)\left(1+\frac{1}{13}\right) \cdots}
+\]
+得
+\[
+\frac{\pi}{3}=1-\frac{1}{2}+\frac{1}{3}+\frac{1}{4}-\frac{1}{5}-\frac{1}{6}+\frac{1}{7}-\frac{1}{8}+\frac{1}{9}+\frac{1}{10}+\cdots
+\]
+这里 2 的符号为负; 状如 $4 m-1$ 的质数, 符号为正; 状如 $4 m+1$ 的质数, 符号为负.
+
+\section{$\S 290$}
+
+可以推出无数个以
+\[
+1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \frac{1}{7}, \frac{1}{8}, \cdots
+\]
+为项, 但符号取法不同的级数. 例如, 用 $\frac{1+\frac{1}{3}}{1-\frac{1}{3}}=2$ 乘
+\[
+\frac{\pi}{2}=\frac{1}{\left(1-\frac{1}{2}\right)\left(1+\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right) \cdots}
+\]
+得
+\[
+\pi=\frac{1}{\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right) \cdots}
+\]
+展开,得
+\[
+\pi=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}-\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10}-\frac{1}{11}+\cdots
+\]
+2 的符号为正, 3 的符号为正; 3 以外的状如 $4 m-1$ 的质数, 符号为负; 状如 $4 m+1$ 的质数, 符号为正; 合数的符号由其质因数的符号决定.
+\[
+\begin{aligned}
+& \text { 又例如, 用 } \frac{1+\frac{1}{5}}{1-\frac{1}{5}}=\frac{3}{2} \text { 乘 } \\
+& \pi=\frac{1}{\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1+\frac{1}{5}\right)\left(1-\frac{1}{7}\right)\left(1-\frac{1}{11}\right) \cdots}
+\end{aligned}
+\]
+得
+\[
+\frac{3 \pi}{2}=\frac{1}{\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1-\frac{1}{7}\right)\left(1-\frac{1}{11}\right)\left(1+\frac{1}{13}\right)\left(1+\frac{1}{17}\right) \cdots}
+\]
+展开,得
+\[
+\frac{3 \pi}{2}=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10}+\frac{1}{11}+\frac{1}{12}-\frac{1}{13}+\cdots
+\]
+这里, 2 的符号为正; 状如 $4 m-1$ 的质数, 符号为正; 5 以外的状如 $4 m+1$ 的质数, 符号为 负.
+
+\section{$\S 291$}
+
+也可以构造无数个和等于零的级数. 例如, §277 的
+\[
+0=\frac{2}{3} \cdot \frac{3}{4} \cdot \frac{5}{6} \cdot \frac{7}{8} \cdot \frac{11}{12} \cdot \frac{13}{14} \cdot \frac{17}{18} \cdot \cdots
+\]
+可写成
+\[
+0=\frac{1}{\left(1+\frac{1}{2}\right)\left(1+\frac{1}{3}\right)\left(1+\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right)\left(1+\frac{1}{13}\right) \cdots}
+\]
+从而
+\[
+0=1-\frac{1}{2}-\frac{1}{3}+\frac{1}{4}-\frac{1}{5}+\frac{1}{6}-\frac{1}{7}-\frac{1}{8}+\frac{1}{9}+\frac{1}{10}-\cdots
+\]
+这里, 质数的符号都为负, 合数的符号等于其质因数符号的积. 又例如, 用 $\frac{1+\frac{1}{2}}{1-\frac{1}{2}}=3$ 乘上 面的乘积表达式,得
+\[
+0=\frac{1}{\left(1-\frac{1}{2}\right)\left(1+\frac{1}{3}\right)\left(1+\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right)\left(1+\frac{1}{13}\right) \cdots}
+\]
+展开,得
+\[
+0=1+\frac{1}{2}-\frac{1}{3}+\frac{1}{4}-\frac{1}{5}-\frac{1}{6}-\frac{1}{7}+\frac{1}{8}+\frac{1}{9}-\frac{1}{10}-\cdots
+\]
+这里, 2 的符号为正,其余的质数, 符号都为负.
+
+再例如
+\[
+0=\frac{1}{\left(1+\frac{1}{2}\right)\left(1-\frac{1}{3}\right)\left(1-\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1+\frac{1}{11}\right)\left(1+\frac{1}{13}\right) \cdots}
+\]
+从而
+\[
+0=1-\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}-\frac{1}{6}-\frac{1}{7}+\frac{1}{8}+\frac{1}{9}-\frac{1}{10}-\cdots
+\]
+这里, 3 和 5 以外的质数, 符号都为负.
+
+一般地, 符号为正的质数, 个数有限; 其余的质数, 符号都为负, 这种级数的和为零. 反之, 符号为负的质数, 个数有限; 其余的质数, 符号都为正, 这种级数的和为无穷大.
+
+\section{$\S 292$}
+
+$\S 176$ 对奇数 $n$ 我们得到了级数
+\[
+A=1-\frac{1}{2^{n}}+\frac{1}{4^{n}}-\frac{1}{5^{n}}+\frac{1}{7^{n}}-\frac{1}{8^{n}}+\frac{1}{10^{n}}-\frac{1}{11^{n}}+\frac{1}{13^{n}}-\cdots
+\]
+的和,加上
+\[
+\frac{1}{2^{n}} A=\frac{1}{2^{n}}-\frac{1}{4^{n}}+\frac{1}{8^{n}}-\frac{1}{10^{n}}+\frac{1}{14^{n}}-\cdots
+\]
+得
+\[
+B=\left(1+\frac{1}{2^{n}}\right) A=1-\frac{1}{5^{n}}+\frac{1}{7^{n}}-\frac{1}{11^{n}}+\frac{1}{13^{n}}-\frac{1}{17^{n}}+\frac{1}{19^{n}}-\frac{1}{23^{n}}+\frac{1}{25^{n}}-\cdots
+\]
+再加上
+\[
+\frac{1}{5^{n}} B=\frac{1}{5^{n}}-\frac{1}{25^{n}}+\frac{1}{35^{n}}-\frac{1}{55^{n}}+\cdots
+\]
+得
+\[
+C=\left(1+\frac{1}{5^{n}}\right) B=1+\frac{1}{7^{n}}-\frac{1}{11^{n}}+\frac{1}{13^{n}}-\frac{1}{17^{n}}+\frac{1}{19^{n}}-\frac{1}{23^{n}}+\cdots
+\]
+减去
+\[
+\frac{1}{7^{n}} C=\frac{1}{7^{n}}+\frac{1}{49^{n}}-\frac{1}{77^{n}}+\cdots
+\]
+得
+\[
+D=\left(1-\frac{1}{7^{n}}\right) C=1-\frac{1}{11^{n}}+\frac{1}{13^{n}}-\frac{1}{17^{n}}+\frac{1}{19^{n}}-\cdots
+\]
+继续下去,最后我们得到
+\[
+A\left(1+\frac{1}{2^{n}}\right)\left(1+\frac{1}{5^{n}}\right)\left(1-\frac{1}{7^{n}}\right)\left(1+\frac{1}{11^{n}}\right)\left(1-\frac{1}{13^{n}}\right) \cdots=1
+\]
+这里, 比 6 的倍数大 1 的质数, 符号为负; 比 6 的倍数小 1 的质数, 符号为正.
+
+从结果得
+\[
+A=\frac{2^{n}}{2^{n}+1} \cdot \frac{5^{n}}{5^{n}+1} \cdot \frac{7^{n}}{7^{n}-1} \cdot \frac{11^{n}}{11^{n}+1} \cdot \frac{13^{n}}{13^{n}-1}
+\]
+\section{$\S 293$}
+
+考虑 $n=1$ 的情形, 此时 $A=\frac{\pi}{3 \sqrt{3}}$, 我们得到
+\[
+\frac{\pi}{3 \sqrt{3}}=\frac{2}{3} \cdot \frac{5}{6} \cdot \frac{7}{6} \cdot \frac{11}{12} \cdot \frac{13}{12} \cdot \frac{17}{18} \cdot \frac{19}{18} \cdot \cdots
+\]
+这里, 3 以外的质数都在分子中出现, 分子与分母都相差为 1,3 以外的分母都是 6 的倍 数. 用此式除 $\S 277$ 的
+\[
+\frac{\pi^{2}}{6}=\frac{4}{3} \cdot \frac{9}{8} \cdot \frac{5 \cdot 5}{4 \cdot 6} \cdot \frac{7 \cdot 7}{6 \cdot 8} \cdot \frac{11 \cdot 11}{10 \cdot 12} \cdot \frac{13 \cdot 13}{12 \cdot 14} \cdots \cdots
+\]
+得
+\[
+\frac{\pi \sqrt{3}}{2}=\frac{9}{4} \cdot \frac{5}{4} \cdot \frac{7}{8} \cdot \frac{11}{10} \cdot \frac{13}{14} \cdot \frac{17}{16} \cdot \frac{19}{20} \cdot \cdots
+\]
+分母都不是 6 的倍数. 第一、三两式可化为
+\[
+\begin{aligned}
+& \frac{\pi}{2 \sqrt{3}}=\frac{5}{6} \cdot \frac{7}{6} \cdot \frac{11}{12} \cdot \frac{13}{12} \cdot \frac{17}{18} \cdot \frac{19}{18} \cdot \frac{23}{24} \cdots \cdots \\
+& \frac{2 \pi}{3 \sqrt{3}}=\frac{5}{4} \cdot \frac{7}{8} \cdot \frac{11}{10} \cdot \frac{13}{14} \cdot \frac{17}{16} \cdot \frac{19}{20} \cdot \frac{23}{22} \cdots \cdots
+\end{aligned}
+\]
+用前式除后式,得
+\[
+\frac{4}{3}=\frac{6}{4} \cdot \frac{6}{8} \cdot \frac{12}{10} \cdot \frac{12}{14} \cdot \frac{18}{16} \cdot \frac{18}{20} \cdot \frac{24}{22} \cdot \cdots
+\]
+或
+\[
+\frac{4}{3}=\frac{3}{2} \cdot \frac{3}{4} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{9}{8} \cdot \frac{9}{10} \cdot \frac{12}{11} \cdot \cdots
+\]
+其中分数都由质数 $5,7,11, \cdots$ 构成, 分质数为相差为 1 的两个数, 被 3 除得尽的数做分 子.
+
+\section{$\S 294$}
+
+$\S 285$ 中我们看到
+\[
+\frac{\pi}{4}=\frac{3}{4} \cdot \frac{5}{4} \cdot \frac{7}{8} \cdot \frac{11}{12} \cdot \frac{13}{12} \cdot \frac{17}{16} \cdots \cdots
+\]
+或
+\[
+\frac{\pi}{3}=\frac{5}{4} \cdot \frac{7}{8} \cdot \frac{11}{12} \cdot \frac{13}{12} \cdot \frac{17}{16} \cdot \frac{19}{20} \cdots \cdots
+\]
+用该式去除上节中 $\frac{\pi}{2 \sqrt{3}}$ 和 $\frac{2 \pi}{3 \sqrt{3}}$ 的表达式, 得
+\[
+\begin{aligned}
+& \frac{\sqrt{3}}{2}=\frac{2}{3} \cdot \frac{4}{3} \cdot \frac{8}{9} \cdot \frac{10}{9} \cdot \frac{14}{15} \cdot \frac{16}{15} \cdots \cdots \\
+& \frac{2}{\sqrt{3}}=\frac{6}{5} \cdot \frac{6}{7} \cdot \frac{12}{11} \cdot \frac{18}{19} \cdot \frac{24}{23} \cdot \frac{30}{29} \cdots \cdots
+\end{aligned}
+\]
+这两式的分数分别由状如 $12 m+6 \pm 1$ 和 $12 m \pm 1$ 的质数构成, 方式是分质数成相差为 1 的两部分, 偶数作分子, 奇数作分母.
+
+\section{$\S 295$}
+
+考察 $\S 179$ 得到的级数
+\[
+\frac{\pi}{2 \sqrt{2}}=1+\frac{1}{3}-\frac{1}{5}-\frac{1}{7}+\frac{1}{9}+\frac{1}{11}-\frac{1}{13}-\frac{1}{15}+\cdots=A
+\]
+减去
+\[
+\frac{1}{3} A=\frac{1}{3}+\frac{1}{9}-\frac{1}{15}-\frac{1}{21}+\frac{1}{27}+\frac{1}{33}-\cdots
+\]
+得
+\[
+\left(1-\frac{1}{3}\right) A=1-\frac{1}{5}-\frac{1}{7}+\frac{1}{11}-\frac{1}{13}+\frac{1}{17}+\frac{1}{19}-\cdots=B
+\]
+加上
+\[
+\frac{1}{5} B=\frac{1}{5}-\frac{1}{25}-\frac{1}{35}+\frac{1}{55}-\cdots
+\]
+得 
+
+继续这一过程,最后得等式
+\[
+\frac{\pi}{2 \sqrt{2}}\left(1-\frac{1}{3}\right)\left(1+\frac{1}{5}\right)\left(1+\frac{1}{7}\right)\left(1-\frac{1}{11}\right)\left(1+\frac{1}{13}\right)\left(1-\frac{1}{17}\right)\left(1-\frac{1}{19}\right) \cdots=1
+\]
+这里, 状如 $8 m+3$ 和 $8 m+1$ 的质数前是负号, 状如 $8 m+5$ 和 $8 m+7$ 的质数前是正号. 由 此式得
+\[
+\frac{\pi}{2 \sqrt{2}}=\frac{3}{2} \cdot \frac{5}{6} \cdot \frac{7}{8} \cdot \frac{11}{10} \cdot \frac{13}{14} \cdot \frac{17}{16} \cdot \frac{19}{18} \cdot \frac{23}{24} \cdot \cdots
+\]
+分母为 8 的倍数或奇偶数. 将 $\S 285$ 的
+\[
+\begin{aligned}
+& \frac{\pi}{4}=\frac{3}{4} \cdot \frac{5}{4} \cdot \frac{7}{8} \cdot \frac{11}{12} \cdot \frac{13}{12} \cdot \frac{17}{16} \cdot \frac{19}{20} \cdot \frac{23}{24} \cdots \cdots \\
+& \frac{\pi}{2}=\frac{3}{2} \cdot \frac{5}{6} \cdot \frac{7}{6} \cdot \frac{11}{10} \cdot \frac{13}{14} \cdot \frac{17}{18} \cdot \frac{19}{18} \cdot \frac{23}{22} \cdot \cdots
+\end{aligned}
+\]
+相乘, 得
+\[
+\frac{\pi^{2}}{8}=\frac{3 \cdot 3}{2 \cdot 4} \cdot \frac{5 \cdot 5}{4 \cdot 6} \cdot \frac{7 \cdot 7}{6 \cdot 8} \cdot \frac{11 \cdot 11}{10 \cdot 12} \cdot \frac{13 \cdot 13}{12 \cdot 14} \cdot \cdots
+\]
+用前面 $\frac{\pi}{2 \sqrt{2}}$ 的乘积表达式除该式,得
+\[
+\frac{\pi}{2 \sqrt{2}}=\frac{3}{4} \cdot \frac{5}{4} \cdot \frac{7}{6} \cdot \frac{11}{12} \cdot \frac{13}{12} \cdot \frac{17}{18} \cdot \frac{19}{20} \cdot \frac{23}{22} \cdot \cdots
+\]
+分母含 4 的倍数, 不含 8 的倍数, 分子分母相差为 1 . 用 $\frac{\pi}{2 \sqrt{2}}$ 的后式除前式, 得
+\[
+1=\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{3}{4} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{9}{8} \cdot \frac{10}{9} \cdot \frac{11}{12} \cdot \cdots
+\]
+这里的分数由质数构成. 方法是, 分质数成相差为 1 的两个数, 4 除得尽的偶数作分母, 4 除不尽的偶数作分子.
+
+\section{$\S 296$}
+
+$\S 179$ 及后面的 $\pi$ 的级数表达式, 都可以用类似地方法化为质数的乘积. 这可以导出 无穷乘积和无穷级数的许多重要性质,但对其中主要之点, 本章已经进行了讨论, 所以不 再继续. 本章我们讨论相乘积产生的数,下章我们讨论相加和产生的数. 
+

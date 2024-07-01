@@ -1,0 +1,818 @@
+% chap10exercise
+
+\section{Exercises}
+
+
+\begin{myexercise}
+    \label{ex:10.1}
+    Let $H$ be a compact convex set in $\R^k$, with nonempty interior.
+    Let $f \in \mathscr{C}(H)$, put $f(\mathbf{x}) = 0$ in the complement of $H$,
+    and define $\int_H f$ as in Definition \ref{mydef:10.3}.
+
+    Prove that $\int_H f$ is independent of the order in which the $k$ integrations are carried out.
+
+    \emph{Hint:} Approximate $f$ by functions that are continuous on $\R^k$ and whose supports are in $H$, as was done in Example \ref{newexample:10.47}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.2}
+    For $i = 1, 2, 3, ...$ , let $\phi_i \in \mathscr{C}(\R^1)$ have support in $(2^{-i} , 2^{1-i})$, such that $\int \phi_i = 1$.
+    Put
+    \begin{equation*}
+        f(x,y) = \sum_{i=1}^{\infty}
+        \left[
+            \phi_{i}(x) -
+            \phi_{i+1}(x)
+            \right] \phi_i (y)
+    \end{equation*}
+    Then $f$ has compact support in $\R^2$,
+    $f$ is continuous except at $(0,0)$,
+    and
+    \begin{equation*}
+        \int \d y \int f(x,y) \d x = 0
+        \quad \text{ but } \quad
+        \int \d x \int f(x,y) \d y = 1.
+    \end{equation*}
+    Observe that $f$ is unbounded in every neighborhood of $(0, 0)$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.3}
+    \begin{asparaenum}[(a)]
+        \item If $F$ is as in Theorem \ref{thm:10.7}, put
+        $\mathbf{A} = \mathbf{F}'(0)$,
+        $\mathbf{F_{1}(x)} = \mathbf{A^{-1}F(x)}$.
+        Then $\mathbf{F'_1(0)}=I$.
+        Show that
+        \begin{equation*}
+            \mathbf{F_1(x) = G_n \circ G_{n-1} \circ \cdots \circ G_1(x)}
+        \end{equation*}
+        in some neighborhood of $\mathbf{0}$,
+        for certain primitive mappings $\mathbf{G_n \circ \cdots \circ G_1(x)}$.
+        This gives another version of Theorem \ref{thm:10.7}:
+        \begin{equation*}
+            \mathbf{F(x) = F'(0) G_n \circ G_{n-1} \circ \cdots \circ G_1(x)}.
+        \end{equation*}
+        \item Prove that the mapping $(x, y) > (y, x)$ of $\R^2$ onto $\R^2$ is not the composition of any two primitive mappings, in any neighborhood of the origin.
+        (This shows that the flips $B_1$ cannot be omitted from the statement of Theorem \ref{thm:10.7}.)
+    \end{asparaenum}
+\end{myexercise}
+
+\begin{myexercise}
+    \label{ex:10.4}
+    For $(x,y) \in \R^2$, define
+    \begin{equation*}
+        \mathbf{F}(x,y) = (e^x \cos y - 1, e^x \sin y).
+    \end{equation*}
+    Prove that $\mathbf{F = G_2 \circ G_1}$, where
+    \begin{align*}
+        \mathbf{G}_1 (x,y) & = (e^x \cos y - 1, y) \\
+        \mathbf{G}_2 (u,v) & = (u, (1 + u) \tan v)
+    \end{align*}
+    are primitive in some neighborhood of $(0, 0)$.
+
+    Compute the Jacobians of $\mathbf{G_1, G_2, F}$ at $(0, 0)$.
+    Define
+    \begin{equation*}
+        \mathbf{H}_2 (x,y) = (x, e^x \sin y)
+    \end{equation*}
+    and find
+    \begin{equation*}
+        \mathbf{H}_1 (u,v) = (h(u,v), v)
+    \end{equation*}
+    so that $\mathbf{F = H_1 \circ H_2}$ is some neighborhood of $(0,0)$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.5}
+    Formulate and prove an analogue of Theorem \ref{thm:10.8},
+    in which $K$ is a compact subset of an arbitrary metric space.
+    (Replace the functions $\phi_i$ that occur in the
+    proof of Theorem \ref{thm:10.8}
+    by functions of the type constructed in Exercise \ref{ex:4.22})
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.6}
+    Strengthen the conclusion of Theorem \ref{thm:10.8} by showing that the functions $\psi_i$ can be made differentiable, and even infinitely differentiable.
+    (Use Exercise \ref{ex:8.1} in the construction of the auxiliary functions $\phi_i$.)
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.7}
+    \begin{enumerate}[(a)]
+        \item Show that the simplex $Q^k$ is the smallest convex subset of $\R^k$ that contains $\mathbf{0},\mathbf{e}_1,\dots,\mathbf{e}_k$.
+        \item Show that affine mappings take convex sets to convex sets.
+    \end{enumerate}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.8}
+    Let $H$ be the parallelogram in $\R^2$ whose vertices are $(1, 1), (3, 2), (4, 5), (2, 4)$.
+    Find the affine map $T$ which sends $(0, 0)$ to $(1, 1)$, $(1, 0)$ to $(3, 2)$, $(0, 1)$ to $(2, 4)$.
+    Show that $J_T = 5$.
+    Use $T$ to convert the integral
+    \begin{equation*}
+        \alpha = \int_H e^{x-y} \d x \d y
+    \end{equation*}
+    to an integral over $I^2$ and thus compute $\alpha$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.9}
+    Define $(x, y) = T(r, \theta)$ on the rectangle
+    \begin{equation*}
+        0 \leq r \leq a,
+        \quad
+        0 \leq \theta \leq 2\pi
+    \end{equation*}
+    by the equations
+    \begin{equation*}
+        x = r \cos \theta , \quad
+        y = r \sin \theta .
+    \end{equation*}
+    Show that $T$ maps this rectangle onto the closed disc $D$ with center at $(0, 0)$ and radius $a$,
+    that $T$ is one-to-one in the interior of the rectangle, and that $J_T(r, \theta) = r$.
+    If $f \in \mathscr{C}(D)$, prove the formula for integration in polar coordinates:
+    \begin{equation*}
+        \int_D f(x,y) \d x \d y =
+        \int_{0}^{a} \int_{0}^{2\pi} f(T(r,\theta)) r \d r \d \theta .
+    \end{equation*}
+    \emph{Hint:} Let Do be the interior of $D$, minus the interval from $(0, 0)$ to $(0, a)$.
+    As it stands, Theorem \ref{thm:10.9} applies to continuous functions $f$ whose support lies in $D_0$.
+    To remove this restriction, proceed as in Example \ref{newexample:10.4}.
+\end{myexercise}
+
+
+
+\begin{myexercise}
+    \label{ex:10.10}
+    Let $a \rightarrow \infty$ in \ref{ex:11.9} and prove that
+    \begin{equation*}
+        \int_{\R^2} f(x,y) \d x \d y =
+        \int_{0}^{\infty} \int_{0}^{2\pi} f(T(r,\theta)) r \d r \d \theta ,
+    \end{equation*}
+    for continuous functions f that decrease sufficiently rapidly as $|x | + | y | \rightarrow \infty$.
+    (Find a more precise formulation.)
+    Apply this to
+    \begin{equation*}
+        f(x, y) = \exp (-x^2 - y^2)
+    \end{equation*}
+    to derive formula \eqref{eq:8.101}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.11}
+    Define $(u,v)=T(s,t)$ on the strip
+    \begin{equation*}
+        0<s<\infty , \quad
+        0<t<1
+    \end{equation*}
+    by setting $u = s - st$, $v = st$.
+    Show that $T$ is a 1-1 mapping of the strip onto the positive quadrant $Q$ in $\R^2$.
+    Show that $J_T(s, t) = s$.
+
+    For x > 0, y > 0, integrate
+    \begin{equation*}
+        u^{x-1} e^{-u} v^{y-1} e^{-v}
+    \end{equation*}
+    over $Q$, use Theorem \ref{thm:10.9} to convert the integral to one over the strip, and derive formula \eqref{eq:8.96} in this way.
+    (For this application, Theorem \ref{thm:10.9} has to be extended so as to cover certain improper integrals.
+    Provide this extension.)
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.12}
+    Let $I^k$ be the set of all $\mathbf{u} = (u_1, ... , u_k) \in \R^k$ with $0 \leq u_i \leq 1$ for all $i$;
+    let $Q^k$ be the set of all $\mathbf{x} = (x_1, ... , x_k) \in  \R^k$ with $x_i \geq 0, \sum x_i \leq 1$.
+    ($I^k$ is the unit cube;
+    $Q^k$ is the standard simplex in $\R^k$.)
+    Define $\mathbf{x} = T(\mathbf{u})$ by
+    \begin{align*}
+        x_1   & = u_1                          \\
+        x_2   & = (1-u_1)u_2                   \\
+        \dots & \dots
+        x_k   & = (1-u_1)\cdots(1-u_{k-1})u_k.
+    \end{align*}
+    Show that
+    \begin{equation*}
+        \sum_{i=1}^{k} x_i = 1 - \prod_{i=1}^{k} (1-u_i) .
+    \end{equation*}
+
+    Show that $T$ maps $I^k$ onto $Q^k$,
+    that $T$ is 1-1 in the interior of $I^k$,
+    and that its inverse $S$ is defined in the interior of $Q^k$ by $u_1 = x_1$ and
+    \begin{equation*}
+        u_i = \frac{x_i}{1-x_1-\cdots-x_{i-1}}
+    \end{equation*}
+    for $i=2,\dots,k$.
+    Show that
+    \begin{equation*}
+        J_T(\mathbf{u}) =
+        (1-u_1)^{k-1}
+        (1-u_2)^{k-2}
+        \cdots
+        (1-u_{k-1}),
+    \end{equation*}
+    and
+    \begin{equation*}
+        J_S(\mathbf{x}) =
+        \left[
+            (1-x_1)
+            (1-x_1-x_2)
+            \cdots
+            (1-x_1-\cdots-x_{k-1})
+            \right]^{-1} .
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.13}
+    Let $r_1,\dots,r_k$ be nonnegative integers, and prove that
+    \begin{equation*}
+        \int_{Q^k}
+        x_1^{r_1}
+        \cdots
+        x_k^{r_k}
+        \d x =
+        \frac{r_1!\cdots r_k!}{(k+r_1+\cdots+r_k)!}
+    \end{equation*}
+    \emph{Hint:} Use Exercise \ref{ex:11.12}, Theorem \ref{thm:10.9} and \ref{thm:8.20}.
+
+    Note that the special case $r_1 = \cdots = r_k = 0$
+    shows that the volume of $Q^k$ is $1/k!$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.14}
+    Prove formula \eqref{eq:10.46}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.15}
+    If $\omega$ and $\lambda$ are $k$- and $m$-forms, respectively, prove that
+    \begin{equation*}
+        \omega \wedge \lambda =
+        (-1)^{km} \lambda \wedge \omega .
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.16}
+    If $k \geq 2$ and $\delta = [\mathbf{p}_0, \mathbf{p}_1, ... , \mathbf{p}_t]$ is an oriented affine $k$-simplex,
+    prove that $\partial^2 \sigma = 0$,
+    directly from the definition of the boundary operator $\partial$.
+    Deduce from this that $\partial^2 \Psi = 0$ for every chain $\Psi$.
+
+    \emph{Hint:} For orientation, do it first for $k= 2, k = 3$.
+    In general, if $i <j$, let $\sigma_{ij}$ be the $(k - 2)$-simplex obtained by deleting $\mathbf{p}_i$ and $\mathbf{p}_j$ from $u$.
+    Show that each $\sigma_{ij}$ occurs twice in $\partial^2 \sigma$, with opposite sign.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.17}
+    Put $J^2 = \tau_1 + \tau_2$, where
+    \begin{equation*}
+        \tau_1 =  \left[ \mathbf{0,e_1,e_1+e_2} \right],
+        \quad
+        \tau_2 = -\left[ \mathbf{0,e_2,e_2+e_1} \right].
+    \end{equation*}
+    Explain why it is reasonable to call $J^2$ the positively oriented unit square in $\R^2$ .
+    Show that $\partial J^2$ is the sum of 4 oriented affine 1-simplexes. Find these. What is $\partial (\tau_1 - \tau_2)$?
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.18}
+    Consider the oriented affine 3-simplex
+    \begin{equation*}
+        \sigma_1 =  \left[ \mathbf{0,e_1,e_1+e_2,e_1+e_2+e_3} \right]
+    \end{equation*}
+    in $\R^3$.
+    Show that $\sigma_1$
+    (regarded as a linear transformation) has determinant 1.
+    Thus $\sigma_1$ is positively oriented.
+
+    Let $\sigma_2 , ... , \sigma_6$ be five other oriented 3-simplexes, obtained as follows:
+    There are five permutations $(i_1, i_2, i_3)$ of $(1, 2, 3)$, distinct from $(1, 2, 3)$.
+    Associate with each $(i_1, i_2, i_3)$ the simplex
+    \begin{equation*}
+        s(i_1, i_2, i_3) \left[ \mathbf{0,e_{i_1},e_1+e_2} \right]
+    \end{equation*}
+    where $s$ is the sign that occurs in the definition of the determinant.
+    (This is how $\tau_2$ was obtained from $\tau_1$ in Exercise \ref{ex:11.17}.)
+
+    Show that $\sigma_2, \dots , \sigma_6$ are positively oriented.
+
+    Put $J^3 = \sigma_1 + \dots + \sigma_6$.
+    Then $J^3$ may be called the positively oriented unit cube in $\R^3$.
+
+    Show that $\partial J^3$ is the sum of 12 oriented affine 2-simplexes.
+    (These 12 triangles cover the surface of the unit cube $I^3$,)
+
+    Show that $\mathbf{x} = (\mathbf{x}_1, \mathbf{x}_2, \mathbf{x}_3)$ is in the range of $\sigma_1$ if and only if $0 \leq x_3 \leq x_2 \leq x_1 \leq 1$,
+
+    Show that the ranges of $\sigma_1, ... , \sigma_6$ have disjoint interiors, and that their union covers $I^3$.
+    (Compare with Exercise \ref{ex:11.13}; note that $3! = 6$.)
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.19}
+    Let $J^2$ and $J^3$ be as in Exercise \ref{ex:11.17} and \ref{ex:11.18}.
+    Define
+    \begin{align*}
+        B_{01}(u,v) = (0,u,v), & B_{11}(u,v) = (1,u,v), \\
+        B_{02}(u,v) = (u,0,v), & B_{12}(u,v) = (u,1,v), \\
+        B_{03}(u,v) = (u,v,0), & B_{13}(u,v) = (u,v,1), \\
+    \end{align*}
+    These are affine, and map $\R^2$ into $\R^3$.
+
+    Put $\beta_{ri} = B_{ri}(J^2)$, for $r = 0,1$, $i=1,2,3$.
+    Each $\beta_{ri}$ is an affine-oriented 2-chain.
+    (See Sec. \ref{mydef:10.30}.)
+    Verify that
+    \begin{equation*}
+        \partial J^3 = \sum_{i=1}^{3}(-1)^i (\beta_{0i}-\beta_{1i}),
+    \end{equation*}
+    in agreement with Exercise \ref{ex:10.18}.
+\end{myexercise}
+
+
+
+\begin{myexercise}
+    \label{ex:10.20}
+    State conditions under which the formula
+    \begin{equation*}
+        \int_{\Phi} f \d \omega =
+        \int_{\partial\Phi} f \omega -
+        \int_{\Phi} (\d f) \wedge \omega
+    \end{equation*}
+    is valid, and show that it generalizes the formula for integration by parts.
+
+    \emph{Hint:} $\d(f \omega) = (\d f) \wedge \omega + f d\omega$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.21}
+    As in Example \ref{newexample:10.36}, consider the 1-form
+    \begin{equation*}
+        \eta = \frac{x \d y - y \d x}{x^2+y^2}
+    \end{equation*}
+    in $\R^2 - \{\mathbf{0}\}$.
+    \begin{asparaenum}[(a)]
+        \item Carry out the computation that leads to formula \eqref{eq:10.113}, and prove that $\d \eta = 0$.
+        \item Let $\gamma(t) = (r \cos t, r \sin t)$, for some $r > 0$,
+        and let $r$ be a $\mathscr{C}''$-curve in $\R^2 - \{\mathbf{0}\}$,
+        with parameter interval $[0, 2\pi]$, with $\Gamma(0) = \Gamma(2\pi)$, such that the intervals $[\gamma(t), \Gamma(t)]$ do not contain $\mathbf{0}$ for any $t \in $$[0, 2\pi]$. Prove that
+            \begin{equation*}
+                \int_{\Gamma} \eta = 2 \pi .
+            \end{equation*}
+
+            \emph{Hint:} For $0 \leq t \leq 2\pi$, $0 \leq u \leq 1$, define
+            \begin{equation*}
+                \Phi(t,u)=(1-u)\Gamma(t)+u\gamma(t).
+            \end{equation*}
+            Then $\Phi$ is a 2-surface in $\R^2 - \{\mathbf{0}\}$ whose parameter domain is the indicated rectangle.
+            Because of cancellations (as in Example \ref{newexample:10.32}),
+            \begin{equation*}
+                \partial \Phi = \Gamma - \gamma .
+            \end{equation*}
+            Use Stokes' theorem to deduce that
+            \begin{equation*}
+                \int_{\Gamma} \eta =
+                \int_{\gamma} \eta
+            \end{equation*}
+            because $\d \eta = 0$.
+            \item Take $\Gamma(t)=(a \cos t, b \sin t)$ where $a>0,b>0$ are fixed. Use part (b) to show that
+            \begin{equation*}
+                \int_{0}^{2\pi} \frac{ab}{a^2\cos^2 t + b^2 \sin^2 t} \d t = 2 \pi .
+            \end{equation*}
+            \item Show that
+            \begin{equation*}
+                \eta = \d \left( \arctan\frac{y}{x} \right)
+            \end{equation*}
+            in any convex open set in which $x \neq 0$, and that
+            \begin{equation*}
+                \eta = \d \left( -\arctan\frac{x}{y} \right)
+            \end{equation*}
+            in any convex open set in which $y \neq 0$.
+            \item Show that (b) can be derived from (d).
+            \item If $\Gamma$ is any closed $\mathscr{C}'$-curve in $\R^2 - \{\mathbf{0}\}$, prove that
+        \begin{equation*}
+            \frac{1}{2\pi} \int_{\Gamma} \eta = \Ind (\Gamma).
+        \end{equation*}
+        (See Exercise \ref{ex:8.23} for the definition of the index of a curve.)
+    \end{asparaenum}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.22}
+    As in Example \ref{newexample:10.37}, define $\zeta$ in $\R^3 - \{\mathbf{0}\}$ by
+    \begin{equation*}
+        \zeta =
+        \frac{
+            x \d y \wedge \d z +
+            y \d z \wedge \d x +
+            z \d x \wedge \d y
+        }{r^3}
+    \end{equation*}
+    where $r = \left( x^2+y^2+z^2 \right)^{1/2}$,
+    let $D$ be the rectangle given by
+    $0 \leq u \leq \pi$,
+    $0 \leq v \leq \pi$,
+    and let $\sum$ be the 2-surface in $\R^3$,
+    with parameter domain in $D$, given by
+    \begin{equation*}
+        x = \sin u \cos v, \quad
+        y = \sin u \sin v, \quad
+        z = \cos u .
+    \end{equation*}
+    \begin{asparaenum}[(a)]
+        \item Prove that $\d \zeta = 0$ in $\R^3 - \{\mathbf{0}\}$.
+        \item Let $S$ denote the restriction of $\sum$ to a parameter domain $E \subset D$.
+        Prove that
+        \begin{equation*}
+            \int_S \zeta = \int_E \sin u \d u \d v = A(S),
+        \end{equation*}
+        where $A$ denotes area, as in Sec. \ref{thm:10.43}.
+        Note that this contains \eqref{eq:10.115} as a special case.
+        \item Suppose $g, h_1, h_2, h_3$, are $\mathscr{C}''$-functions on $[0, 1], g > 0$.
+        Let $(x, y, z) = \Phi(s, t)$
+        define a 2-surface $\Phi$, with parameter domain $I^2$, by
+        \begin{equation*}
+            x = g(t)h_1(s) , \quad
+            y = g(t)h_2(s) , \quad
+            z = g(t)h_3(s) .
+        \end{equation*}
+        Prove that
+        \begin{equation*}
+            \int_{\Phi} \zeta = 0 ,
+        \end{equation*}
+        directly from \eqref{eq:10.35}.
+
+        Note the shape of the range of $\Phi$:
+        For fixed $s$, $\Phi(s, t)$ runs over an interval on a line through 0.
+        The range of $\Phi$ thus lies in a ``cone'' with vertex at the origin.
+        \item Let $E$ be a closed rectangle in $D$, with edges parallel to those of $D$.
+        Suppose $f \in \mathscr{C}''(D), f> 0$.
+        Let $\Omega$ be the 2-surface with parameter domain $E$, defined by
+        \begin{equation*}
+            \Omega(u,v) = f(u,v)\sum(u,v).
+        \end{equation*}
+        Define $S$ as in (b) and prove that
+        \begin{equation*}
+            \int_{\Phi} \zeta =  \int_{S} \zeta = A(S).
+        \end{equation*}
+        (Since $S$ is the ``radial projection'' of $n$ into the unit sphere, this result makes it reasonable to call $\int_n \zeta$ the ``solid angle'' subtended by the range of $\Omega$ at the origin.)
+
+        \emph{Hint:} Consider the 3-surface $\Psi$ given by
+        \begin{equation*}
+            \Psi(t,u,v) = \left[ 1-t+t f(u,v) \right] \sum (u,v) ,
+        \end{equation*}
+        where $(u, v) \in E$, $0 \leq t \leq 1$.
+        For fixed $v$, the mapping $(t, u) \rightarrow \Psi(t, u, v)$ is a 2-surface $\Psi$ to which (c) can be applied to show that $\int_{\Phi} \zeta = 0$.
+        The same thing holds when $u$ is fixed.
+        By (a) and Stokes' theorem,
+        \begin{equation*}
+            \int_{\partial \Psi} \zeta =
+            \int_{\Psi} \d \zeta = 0.
+        \end{equation*}
+        \item Put $\lambda = -(z/r)\eta$, where
+        \begin{equation*}
+            \eta = \frac{x \d y - y \d x}{x^2+y^2} ,
+        \end{equation*}
+        as in Exercise \ref{ex:10.21}.
+        Then $\lambda$ is a 1-form in the open set $V \subset \R^3$ in which $x^2 + y^2 > 0$.
+        Show that $\zeta$ is \myKeywordblue{exact in} $V$ by showing that
+        \begin{equation*}
+            \zeta = \d \lambda .
+        \end{equation*}
+        \item Derive (d) from (e), without using (c).
+        \emph{Hint:} To begin with, assume $0 < u < \pi$ on $E$.
+        By (e),
+        \begin{equation*}
+            \int_{\Omega} \zeta = \int_{\partial \Omega} \lambda
+            \quad \text{ and } \quad
+            \int_{S} \zeta = \int_{\partial S} \lambda .
+        \end{equation*}
+        Show that the two integrals of $\lambda$ are equal, by using part (d) of Exercise \ref{ex:10.21},
+        and by noting that $z/r$ is the same at $\sum(u, v)$ as at $\Omega(u, v)$.
+        \item Is $\zeta$ exact in the complement of every line through the origin?
+    \end{asparaenum}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.23}
+    Fix $n$.
+    Define $r_k = (x_1^2 + \cdots + x_k^2)$ for $1 \leq k \leq n$, let $E_k$ be the set of all $\mathbf{x} \in \R^n$ at which $r_k > 0$, and let $\omega_k$ be the $(k - 1)$-form defined in $E_k$ by
+    \begin{equation*}
+        \omega_k = (r_k)^{-k} \sum_{i=1}^{k} (-1)^{i-1} x_i
+        \d x_1 \wedge \cdots \wedge
+        \d x_{i-1} \wedge
+        \d x_{i+1} \wedge \cdots \wedge
+        \d x_k .
+    \end{equation*}
+    Note that $\omega_2 = \eta$, $\omega_3 = \zeta$, in the terminology of Exercises \ref{ex:10.21} and \ref{ex:10.22}.
+    Note also that
+    \begin{equation*}
+        E_1 \subset
+        E_2 \subset
+        \cdots \subset
+        E_n = \R^n - \{\mathbf{0}\} .
+    \end{equation*}
+    \begin{asparaenum}[(a)]
+        \item Prove that $\d \omega_k = 0$ in $E_k$.
+        \item For $k=2,\dots,n$, prove that $\omega_k$ is exact in $E_{k-1}$, by showing that
+        \begin{equation*}
+            \omega_k = \d (f_k \omega_{k-1})
+            = (\d f_k) \wedge \omega_{k-1} ,
+        \end{equation*}
+        where $f_k(\mathbf{x})=(-1)^k g_k(x_k/r_k)$ and
+        \begin{equation*}
+            g_k(t)=\int_{-1}^{t}(1-s^2)^{(k-3)/2} \d s
+            \quad (-1<t<1).
+        \end{equation*}
+        \emph{Hint:} $f_k$ satisfies the differential equations
+        \begin{equation*}
+            \mathbf{x} \cdot (\nabla f_k)(\mathbf{x}) = 0
+        \end{equation*}
+        and
+        \begin{equation*}
+            (D_k f_k)(\mathbf{x}) = \frac{(-1)^k(r_{k-1})^{k-1}}{(r_k)^k}.
+        \end{equation*}
+        \item Is $\omega_n$ exact in $E_n$?
+        \item Note that (b) is a generalization of part (e) of Exercise \ref{ex:10.22}.
+        Try to extend some of the other assertions of Exercises \ref{ex:10.21} and \ref{ex:10.22} to $\omega_n$, for arbitrary $n$.
+    \end{asparaenum}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.24}
+    Let $\omega = \sum a_i(\mathbf{x}) \d x_i$ be a 1-form of class $\mathscr{C}''$ in a convex open set $E \subset \R^n$.
+    Assume $\d \omega = 0$ and prove that $\omega$ is exact in $E$, by completing the following outline:
+
+    Fix $\mathbf{p} \in E$.
+    Define
+    \begin{equation*}
+        f(\mathbf{x}) = \int_{[\mathbf{p,x}]} \omega
+        \quad
+        (\mathbf{x} \in E).
+    \end{equation*}
+    Apply Stokes' theorem to affine-oriented 2-simplexes $[\mathbf{p, x, y}]$ in $E$.
+    Deduce that
+    \begin{equation*}
+        f(\mathbf{y}) -
+        f(\mathbf{x}) =
+        \sum_{i=1}^{n} (y_i-x_i)
+        \int_{0}^{1} a_i ((1-t)\mathbf{x}+t\mathbf{y}) \d \mathbf{t}
+    \end{equation*}
+    for
+    $\mathbf{x} \in E$ ,
+    $\mathbf{y} \in E$ .
+    Hence $(D_i f)(\mathbf{x}) = a_i(\mathbf{x})$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.25}
+    Assume that $\omega$ is a 1-form in an open set $E \subset \R^n$ such that
+    \begin{equation*}
+        \int_{\gamma} \omega = 0
+    \end{equation*}
+    for every closed curve $\gamma$ in $E$, of class $\mathscr{C}'$.
+    Prove that $\omega$ is exact in $E$, by imitating part of the argument sketched in Exercise \ref{ex:10.24}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.26}
+    Assume $\omega$ is a 1-form in $\R^3-\{\mathbf{0}\}$, of class $\mathscr{C}'$ and $\d \omega =0$.
+    Prove that w is exact in $\R^3-\{\mathbf{0}\}$.
+
+    \emph{Hint:} Every closed continuously differentiable curve in $\R^3-\{\mathbf{0}\}$ is the boundary of a 2-surface in $\R^3-\{\mathbf{0}\}$.
+    Apply Stokes' theorem and Exercise \ref{ex:10.25}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.27}
+    Let $E$ be an open 3-cell in $\R^3$, with edges parallel to the coordinate axes.
+    Suppose $(a, b, c) \in E$, $f_i \in \mathscr{C}'(E)$ for $i = 1, 2, 3$,
+    \begin{equation*}
+        \omega =
+        f_1 \d y \wedge \d z +
+        f_2 \d z \wedge \d x +
+        f_3 \d x \wedge \d y ,
+    \end{equation*}
+    and assume that $\d \omega = 0$ in $E$.
+    Define
+    \begin{equation*}
+        \lambda = g_1 \d x + g_2 \d y
+    \end{equation*}
+    where
+    \begin{align*}
+        g_1(x,y,z) & = \int_{c}^{z} f_2(x,y,s) \d s - \int_{b}^{y} f_3(x,t,c) \d t \\
+        g_2(x,y,z) & = -\int_{c}^{z} f_1(x,y,s) \d s ,
+    \end{align*}
+    for $(x, y, z) \in E$.
+    Prove that $\d \lambda = \omega$ in $E$.
+
+    Evaluate these integrals when $\omega = \zeta$ and thus find the form $\lambda$ that occurs in part (e) of Exercise \ref{ex:10.22}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.28}
+    Fix $b > a > 0$, define
+    \begin{equation*}
+        \Phi(r, \theta) = (r \cos \theta, r \sin \theta)
+    \end{equation*}
+    for $a \leq r \leq b, 0 \leq \theta \leq 2\pi$.
+    (The range of $\Phi$ is an annulus in $\R^2$.)
+    Put $\omega = x^3 \d y$,
+    and compute both
+    \begin{equation*}
+        \int_{\Phi} \d \omega
+        \quad \text{and} \quad
+        \int_{\partial \Phi} \omega
+    \end{equation*}
+    to verify that they are equal.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.29}
+    Prove the existence of a function $\alpha$ with the properties needed in the proof of Theorem \ref{thm:10.38},
+    and prove that the resulting function $F$ is of class $\mathscr{C}'$.
+    (Both assertions become trivial if $E$ is an open cell or an open ball,
+    since $\alpha$ can then be taken to be a constant.
+    Refer to Theorem \ref{thm:9.42}.)
+\end{myexercise}
+
+
+
+\begin{myexercise}
+    \label{ex:10.30}
+    If $N$ is the vector given by \eqref{eq:10.135},
+    prove that
+    \begin{equation*}
+        \det
+        \begin{bmatrix}
+            \alpha_1 & \beta_1 & \alpha_2 \beta_3 - \alpha_3 \beta_2 \\
+            \alpha_2 & \beta_2 & \alpha_3 \beta_1 - \alpha_1 \beta_3 \\
+            \alpha_3 & \beta_3 & \alpha_1 \beta_2 - \alpha_2 \beta_1 \\
+        \end{bmatrix} =
+        \left| \mathbf{N} \right|^2 .
+    \end{equation*}
+    Also, verify Eq. \eqref{eq:10.137}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.31}
+    Let $E \subset \R^3$ be open,
+    suppose $g \in  \mathscr{C}''(E)$, $h \in \mathscr{C}''(E)$, and consider the vector field
+    \begin{equation*}
+        \mathbf{F} = g \nabla h .
+    \end{equation*}
+    \begin{asparaenum}[(a)]
+        \item Prove that
+        \begin{equation*}
+            \nabla \cdot F = g \nabla^2 h + (\nabla g) \cdot (\nabla h)
+        \end{equation*}
+        where $\nabla^2 h = \nabla \cdot (\nabla h) = \sum \partial^2 h/ \partial x_i^2$ is the so-called ``\myKeywordblue{Laplacian}'' of $h$.
+        \item If $\Omega$ is a closed subset of $E$ with positively oriented boundary $\partial\Omega$ (as in Theorem \ref{thm:10.51}), prove that
+        \begin{equation*}
+            \int_{\Omega} \left[
+                g \nabla^2 h +
+                (\nabla g) \cdot (\nabla h)
+                \right] \d V =
+            \int_{\Omega} \mathbf{g} \frac{\partial h}{\partial n} \d A
+        \end{equation*}
+        where (as is customary) we have written $\partial h/\partial n$ in place of $(\nabla h) \delta \mathbf{n}$.
+        (Thus $\partial h/\partial n$ is the directional derivative of $h$ in the direction of the outward normal to $\partial n$,
+        the so-called \myKeywordblue{normal derivative} of $h$.)
+        Interchange $g$ and $h$, subtract the resulting formula from the first one, to obtain
+        \begin{equation*}
+            \int_{\Omega} \left(
+            g \nabla^2 h -
+            h \nabla^2 g
+            \right) \d V =
+            \int_{\partial \Omega} \left(
+            g \frac{\partial h}{\partial n} -
+            h \frac{\partial g}{\partial n}
+            \right) \d A .
+        \end{equation*}
+        These two formulas are usually called \myKeywordblue{Green's identities}.
+        \item Assume that $h$ is \myKeywordblue{harmonic} in $E$; this means that $\nabla^2 h = 0$.
+        Take $g = 1$ and conclude that
+        \begin{equation*}
+            \int_{\partial\Omega} \frac{\partial h}{\partial n} \d A = 0.
+        \end{equation*}
+        Take $g = h$, and conclude that $h = 0$ in $\Omega$ if $h = 0$ on $\partial\Omega$.
+        \item Show that Green's identities are also valid in $\R^2$.
+    \end{asparaenum}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:10.32}
+    Fix $\delta$, $0 < \delta < 1$.
+    Let $D$ be the set of all $(0, t) \in \R^2$ such that $0 \leq \delta \leq \pi$, $-\delta \leq t \leq \delta$.
+    Let $\Phi$ be the 2-surface in $\R^3$, with parameter domain $D$, given by
+    \begin{align*}
+        x & = (1-t \sin \theta) \cos 2 \theta \\
+        y & = (1-t \sin \theta) \sin 2 \theta \\
+        z & = t \cos \theta
+    \end{align*}
+    where $(x, y, z) = \Phi(0, t)$.
+    Note that $\Phi(\pi, t) = \Phi(0, - t),$
+    and that $\Phi$ is one-to-one on the rest of $D$.
+
+    The range $M = \Phi(D)$ of $\Phi$ is known as a \myKeywordblue{M{\"o}bius band}.
+    It is the simplest example of a nonorientable surface.
+
+    Prove the various assertions made in the following description:
+    Put
+    $\mathbf{p}_1 = (0   , -\delta)$,
+    $\mathbf{p}_2 = (\pi , -\delta)$,
+    $\mathbf{p}_3 = (\pi ,  \delta)$,
+    $\mathbf{p}_4 = (0   ,  \delta)$,
+    $\mathbf{p}_5 = \mathbf{p}_1$,
+    Put $\gamma_i =[\mathbf{p}_{i}, \mathbf{p}_{i+1}]$,
+    $i = 1, ... , 4$, and put $\Gamma_i = \Phi \circ \gamma_i$.
+    Then
+    \begin{equation*}
+        \partial \Phi =
+        \Gamma_1 +
+        \Gamma_2 +
+        \Gamma_3 +
+        \Gamma_4 .
+    \end{equation*}
+    Put $\mathbf{a} = (1, 0, -\delta)$, $\mathbf{b} = (1, 0, \delta)$.
+    Then
+    \begin{equation*}
+        \Phi(\mathbf{p}_1) = \Phi(\mathbf{p}_3) = \mathbf{a}, \quad
+        \Phi(\mathbf{p}_2) = \Phi(\mathbf{p}_4) = \mathbf{b},
+    \end{equation*}
+    and $\partial\Phi$ can be described as follows.
+
+    $\Gamma_1$ spirals up from $\mathbf{a}$ to $\mathbf{b}$;
+    its projection into the $(x, y)$-plane has winding number $+1$ around the origin. (See Exercise \ref{ex:8.23}.)
+
+    $\Gamma_2 = [b, a]$.
+
+    $\Gamma_3$ spirals up from $\mathbf{a}$ to $\mathbf{b}$;
+    its projection into the $(x, y)$ plane has winding number $-1$ around the origin.
+
+    $\Gamma_4 = [b, a]$.
+
+    Thus $\partial\Phi =  \Gamma_1 +  \Gamma_3 + 2 \Gamma_2$.
+
+    If we go from $\mathbf{a}$ to $\mathbf{b}$ along $\Gamma_1$ and continue along the ``edge'' of $M$ until we return to $\mathbf{a}$,
+    the curve traced out is
+    \begin{equation*}
+        \Gamma =
+        \Gamma_1 -
+        \Gamma_3 ,
+    \end{equation*}
+    which may also be represented on the parameter interval $[0, 2\pi]$ by the equations
+    \begin{align*}
+        x & = (1 + \delta \sin \theta) \cos 2 \theta \\
+        y & = (1 + \delta \sin \theta) \sin 2 \theta \\
+        z & = -\delta \cos \theta .
+    \end{align*}
+    It should be emphasized that $\Gamma \neq \partial\Phi$:
+    Let $\eta$ be the 1-form discussed in Exercises \ref{ex:10.21} and \ref{ex:10.22}.
+    Since $d\eta = 0$, Stokes' theorem shows that
+    \begin{equation*}
+        \int_{\partial\Omega} \eta = 0,
+    \end{equation*}
+    But although $\Gamma$ is the ``geometric'' boundary of $M$, we have
+    \begin{equation*}
+        \int_{\Gamma} \eta = 4 \pi .
+    \end{equation*}
+    In order to avoid this possible source of confusion, Stokes' formula
+    (Theorem \ref{thm:10.50}) is frequently stated only for orientable surfaces $\Phi$.
+\end{myexercise}
+
+

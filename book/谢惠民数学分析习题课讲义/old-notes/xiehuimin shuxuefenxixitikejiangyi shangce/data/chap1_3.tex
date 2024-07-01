@@ -1,0 +1,106 @@
+\begin{proposition}
+{1.3.1 Bernoulli inequality}
+ Suppose that $ h>-1, n\in\mathbb{N} $, Then:
+	\begin{equation}\label{BernoulliIneq}
+		(1+h)^n\ge1+nh
+ 	\end{equation}
+ 	When $ n>1 $, the inequality became equation iff $ h=0 $.\\
+\end{proposition}
+ 	
+\begin{proof}
+ 	When $ n=1 $, $ 1+h=1+h $\\
+ 	$ h=0 $, $ 1^n=1 $\\
+ 	Let's consider the condition $ n>1, h\ne 0 $.\\
+ 	i). $ h>0 $, $ (1+h)^n = \binom{n}{0}h^0+\binom{n}{1}h^1+\binom{n}{2}h^2+\cdots + \binom{n}{n}h^n$.\\
+ 	$ \because \binom{n}{2}h^2+\cdots + \binom{n}{n}h^n >0 $, $ \therefore (1+h)^n > 1+nh $\\
+ 	ii). $ -1<h<0, 0<1+h<1 $.
+ 	\begin{align*}
+ 		(1+h)^n-1 &=(1+h-1)\Big(1+(1+h)+(1+h)^2+\dots+(1+h)^{n-1}\Big)\\
+ 		&=h\Big(1+(1+h)+(1+h)^2+\dots+(1+h)^{n-1}\Big)
+ 	\end{align*}
+ 	$ \because 1+(1+h)+(1+h)^2+\dots+(1+h)^{n-1} < n $ when$ h<0 $\\
+ 	$ \therefore (1+h)^n > 1+nh $
+
+ 	Two variable extension of the Bernoulli inequality, Suppose
+ 	$ h = \frac{B}{A}, A>0, A+B>0 $, Then$ 1+h>0 $ is established.
+\end{proof}	
+
+\begin{proposition} 	
+ 	{1.3.2 }Suppose $ A>0, A+B>0, n\in\mathbb{N} $, Then the inequality is true:
+ 	\begin{equation}\label{BernoulliIneqExts}
+ 		(A+B)^n\ge A^n+nA^{n-1}B
+ 	\end{equation}
+ 	The inequalty became equation iff $ B=0 $.
+\end{proposition}	
+
+\begin{proof}	
+ 	divide $ A^n $ on both side of the inequality \ref{BernoulliIneqExts}. Set$ h=\frac{B}{A} (A>0) $, Then the inequality became Eq \ref{BernoulliIneq}.
+ 	So we can prove Eq \ref{BernoulliIneqExts} by prove Eq \ref{BernoulliIneq}.
+ 	Eq \ref{BernoulliIneq} is true when $ h>-1 $. $ \therefore 1+h>0, 1+\frac{B}{A}>0 $, $ \because A>0 $, $ \therefore A+B>0 $. And when $ n>1 $ the equation is true iff $h=0 $.$ \frac{B}{A}=0,\therefore B=0 $.
+\end{proof}	 
+
+	
+\begin{example}{Ex 1.3.2}
+ 	exercise 8\\
+ 	$ a,c,t,g \ge 0, a+c+t+g =1 $. Prove that $ a^2+c^2+t^2+g^2 \ge \frac{1}{4} $.\\ The inequality became equatio iff $ a=c=t=g=\frac{1}{4} $.\\
+ 	\end{example}
+ 
+\begin{proof}
+ 	from A.G inequality,
+ 	\begin{equation}\label{AGofDNA}
+ 		\frac{a+c+t+g}{4} \ge \sqrt[4]{actg}, \quad a+c+t+g=1
+ 	\end{equation}
+ 	$ \therefore \sqrt[4]{actg} \leqslant \frac{1}{4} $
+% 	\begin{equation*}
+% 		\frac{a^2+c^2+t^2+g^2}{4} \ge \sqrt[4]{a^2c^2t^2g^2} = |actg|
+% 	\end{equation*}
+ 	\begin{equation*}
+ 		a+c+t+g=1, (a+c+t+g)^2=1
+ 	\end{equation*}
+ 	\begin{equation}\label{DNAeq2}
+ 		(a+c+t+g)^2=a^2+c^2+t^2+g^2+2ac+2at+2ag+2ct+2cg+2tg = 1
+ 	\end{equation}
+ 	\begin{align}
+ 		a^2+c^2 \ge 2ac &c^2+t^2 \ge 2ct \\
+ 		a^2+t^2 \ge 2at &c^2+g^2 \ge 2cg \\
+ 		a^2+g^2 \ge 2ag &t^2+g^2 \ge 2tg
+ 	\end{align}
+ 	substitude $ 2ac,2ag,\dots $ in equation \ref{DNAeq2}, we can get
+ 	\begin{equation*}
+ 		4(a^2+c^2+t^2+g^2)\ge a^2+c^2+t^2+g^2+2ac+2at+2ag+2ct+2cg+2tg
+ 	\end{equation*}
+ 	Then we get the inequality \ref{AGofDNA}.
+\end{proof}
+
+ 	\section{1.4 逻辑符号与对偶法则}
+ 	The law of duality: 
+ 	$ \forall(\exists) \rightarrow \exists(\forall) $
+ 	with negative statement
+ 	
+ 	Inverse proposition? 
+ 	
+ 	1. A have upper limit, $ \exists M>0. \forall x\in A, x\leqslant M $.\\
+ 	It's negative statement is 'A don't have upper limit'. $ \forall M >0, \exists x\in A, x>M $.
+ 	
+ 	2. the minum item in A is b, $ b\in A,\forall x\in A, x\ge b $.\\
+ 	It's negative statement is 'b is not the minum item in A'. $ b\in A, \exists x\in A, x< b $.
+ 	
+ 	3. $ f\in (a,b) $ is a monotonic augmentation function, $ \forall x,y \in (a,b), x<y, f(x)\leqslant f(y) $.(or $ f(x) < f(y) $, depends on monotonic function's definition)\\
+ 	It's negative statement is '$ f\in (a,b) $ isn't a monotonic augmentation function'. $ \exists x,y \in (a,b), x<y, f(x)>f(y) $ (or $ f(x)\ge f(y) $).
+ 	
+ 	4. $ f\in (a,b) $ is a monotonic function, $ \forall x,y,z \in (a,b), x<y<z, (f(x)-f(y))(f(y)-f(z))\ge 0 $.\\
+ 	It's negative statement is '$ f\in (a,b) $ isn't a monotonic function'. $ \exists x,y,z \in (a,b), x<y<z, (f(x)-f(y))(f(y)-f(z))< 0 $.\\
+ 	(Another way $ \forall x,y \in (a,b), x<y, f(x)-f(y)\ge 0 \text{ or } f(x)-f(y)\leqslant 0 $.)
+ 	
+ 	5. $ A \subset B $, $ \forall x\in A, x\in B $.\\
+ 	It's negative statement is $ A \subsetneq B $, $ \exists x\in A, x\notin B $.
+ 	
+ 	6. $ A-B\neq \emptyset $, $ \exists x\in A, x\in B $.\\
+ 	It's negative statement is $ A-B = \emptyset $, $ \forall x\in A, x\notin B $.
+ 	
+ 	7. {$ x_n $} is an infinitesimal amounts, $ \forall \epsilon >0, \exists N\in \mathbb{N}^+, \forall n>N, |x_n|<\epsilon $.\\
+ 	It's negative statement is '{$ x_n $} is not an infinitesimal amounts', $ \exists \epsilon >0, \forall N\in \mathbb{N}^+, \exists n>N, |x_n|\ge\epsilon $.
+ 	
+ 	8. {$ x_n $} is infinitely large, $ \forall M >0, \exists N\in \mathbb{N}^+, \forall n>N, x_n>M $.\\
+ 	It's negative statement is '{$ x_n $} is not infinitely large', $ \exists M >0, \forall N\in \mathbb{N}^+, \exists n>N, x_n\leqslant M $.
+ 	

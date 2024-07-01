@@ -1,0 +1,243 @@
+% chap11exercise
+
+\section{Exercises}
+
+\begin{myexercise}
+    \label{ex:11.1}
+    If $f \geq 0$ and $\int_E f \d = 0$, prove that $f(x) = 0$ almost everywhere on $E$.
+
+    \emph{Hint:} Let $E_n$ be the subset of $E$ on which $f(x) > 1/n$.
+    Write $A = \bigcup E_n$.
+    Then $\mu(A)= 0$ if and only if $\mu(E_n)= 0$ for every $n$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.2}
+    If $\int_A f d \mu = 0$ for every measurable subset $A$ of a measurable set $E$, then $f(x) = 0$ almost everywhere on $E$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.3}
+    If $\{f_n\}$ is a sequence of measurable functions, prove that the set of points $x$ at which $\{f_n(x)\}$ converges is measurable.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.4}
+    If $f \in \mathscr{L}(\mu)$ on $E$ and $g$ is bounded and measurable on $E$, then $fg \in \mathscr{L}(\mu)$ on $E$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.5}
+    Put
+    \begin{align*}
+        g(x)        & =
+        \left\{
+        \begin{array}{l}
+            0 \\
+            1 \\
+        \end{array}
+        \right.     \quad
+        \begin{array}{l}
+            (0 \leq x \leq \frac{1}{2}) \\
+            (\frac{1}{2} \leq x \leq 1) \\
+        \end{array}                    \\
+        f_{2k}(x)   & = g(x)   \quad (0 \leq x \leq 1) \\
+        f_{2k+1}(x) & = g(1-x) \quad (0 \leq x \leq 1)
+    \end{align*}
+    Show that
+    \begin{equation*}
+        \liminf_{n \to \infty} f_n(x) = 0
+        \quad
+        (0 \leq x \leq 1),
+    \end{equation*}
+    but
+    \begin{equation*}
+        \int_{0}^{1} f_n(x) \d x = \frac{1}{2}.
+    \end{equation*}
+    [Compare with \eqref{eq:11.77}.]
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.6}
+    \begin{equation*}
+        f_n(x) =
+        \left\{
+        \begin{array}{ll}
+            \frac{1}{n} & (|x| \leq n), \\
+            0           & (|x|    > n).
+        \end{array}
+        \right.
+    \end{equation*}
+    Then $f_n(x) \rightarrow 0$ uniformly on $\R^1$, but
+    \begin{equation*}
+        \int_{-\infty}^{\infty} f_n \d x = 2
+        \quad
+        (n = 1,2,3,\dots).
+    \end{equation*}
+    (We write $\int_{-\infty}^{\infty}$ in place of $\int_{\R 1}$.)
+    Thus uniform convergence does not imply dominated convergence in the sense of Theorem \ref{thm:11.32}.
+    However, on sets of finite measure, uniformly convergent sequences of bounded functions do satisfy Theorem \ref{thm:11.32}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.7}
+    Find a necessary and sufficient condition that $f \in \mathscr{R}(\alpha)$ on $[a, b]$.
+    \emph{Hint:} Consider Example \ref{neqexample:11.6}(b) and Theorem \ref{thm:11.33}.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.8}
+    If $f \in \mathscr{R}$ on $[a, b]$
+    and if $F(x) = \int_{a}^{b} f(t) \d t$,
+    prove that $F'(x) =f(x)$ almost everywhere on $[a, b]$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.9}
+    Prove that the function $F$ given by \eqref{eq:11.96} is continuous on $[a, b]$.
+\end{myexercise}
+
+
+
+\begin{myexercise}
+    \label{ex:11.10}
+    If $\mu(X)<+\infty$ and $f \in \mathscr{L}^2 (\mu)$ on $X$,
+    prove that $f \in \mathscr{L}(\mu)$ on $X$.
+    If
+    \begin{equation*}
+        \mu(X) = +\infty,
+    \end{equation*}
+    this is false.
+    For instance, if
+    \begin{equation*}
+        f(x) = \frac{1}{1+|x|},
+    \end{equation*}
+    then $f \in \mathscr{L}^2$ on $\R^1$,
+    but $f \in \mathscr{L}$ on $\R^1$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.11}
+    If $f,g \in \mathscr{L}(\mu)$ on $X$,
+    define the distance between $f$ and $g$ by
+    \begin{equation*}
+        \int_{X} \left| f-g \right| \d \mu .
+    \end{equation*}
+    Prove that $\mathscr{L}(\mu)$ is a complete metric space.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.12}
+    Suppose
+    \begin{enumerate}
+        \item $|f(X,y)|\leq 1$ if $0 \leq x \leq 1$, $0 \leq y \leq 1$,
+        \item for fixed $x$, $f(x,y)$ is a continuous function of $y$,
+        \item for fixed $y$, $f(x,y)$ is a continuous function of $x$.
+    \end{enumerate}
+    Put
+    \begin{equation*}
+        g(x) = \int_{0}^{1} f(x,y) \d y
+        \quad
+        (0 \leq x \leq 1).
+    \end{equation*}
+    Is $g$ continuous?
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.13}
+    Consider the functions
+    \begin{equation*}
+        f_n(x) = \sin n x
+        \quad
+        (n=1,2,3,\dots, -\pi \leq x \leq \pi)
+    \end{equation*}
+    as points of $\mathscr{L}^2$.
+    Prove that the set of these points is closed and bounded,
+    but not compact.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.14}
+    Prove that a complex function $f$ is measurable
+    if and only if $f^{-1}(V)$ is measurable
+    for every open set $V$ in the plane.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.15}
+    Let $\mathscr{R}$ be the ring of all elementary subset of $(0,1]$.
+    If $0 < a \leq b \leq 1$, define
+    \begin{equation*}
+        \phi([a,b]) =
+        \phi([a,b)) =
+        \phi((a,b]) =
+        \phi((a,b)) =
+        b-a,
+    \end{equation*}
+    but define
+    \begin{equation*}
+        \phi((0,b)) =
+        \phi((0,b]) =
+        1+b
+    \end{equation*}
+    if $0 < b \leq 1$.
+    Show that this gives an additive set function $\phi$ on $\mathscr{R}$,
+    which is not regular and which cannot be extended to a countably additive set function on a $\sigma$-ring.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.16}
+    Suppose $\{n_k\}$ is an increasing sequence of positive integers
+    and $E$ is the set of all $x \in (-\pi, \pi)$ at which $\{\sin n_kx\}$ converges.
+    Prove that $m(E) = 0$.
+
+    \emph{Hint:} For every $A \subset E$,
+    \begin{equation*}
+        \int_A \sin n_k x \d x \rightarrow 0,
+    \end{equation*}
+    and
+    \begin{equation*}
+        2\int_A (\sin n_k x)^2 \d x =
+        \int_A (1 - \cos 2 n_k x) \d x \rightarrow m(A)
+        \quad
+        \text{ as} k \rightarrow \infty .
+    \end{equation*}
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.17}
+    Suppose $E \subset (-\pi, \pi)$, $m(E) > 0$, $\delta > 0$.
+    Use the Bessel inequality to prove that there are at most finitely many integers $n$ such that $\sin n x \geq \delta$ for all $x \in E$.
+\end{myexercise}
+
+
+\begin{myexercise}
+    \label{ex:11.18}
+    Suppose
+    $f \in \mathscr{L}^2 (\mu)$,
+    $g \in \mathscr{L}^2 (\mu)$.
+    Prove that
+    \begin{equation*}
+        \left| \int f \bar{g} \d \mu \right|^2 =
+        \int |f|^2 \d \mu
+        \int |g|^2 \d \mu
+    \end{equation*}
+    if and only if there is a constant $c$ such that $g(x) = cf(x)$ almost everywhere.
+    (Compare Theorem \ref{thm:11.35}.)
+\end{myexercise}
+

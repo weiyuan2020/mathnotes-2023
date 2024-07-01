@@ -1,0 +1,147 @@
+{
+  "main": {
+    "id": "017f0bef3805b7c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d6aff0b2291aff9",
+        "type": "leaf",
+        "dimension": 82.07945900253593,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "文献搜索/发动机建模文献/ballinEngine1988-zotero.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        },
+        "group": "de487d839fe94698"
+      },
+      {
+        "id": "20143c92f0d28e56",
+        "type": "leaf",
+        "dimension": 17.920540997464073,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "文献搜索/发动机建模文献/ballinEngine1988-zotero.md"
+          }
+        },
+        "group": "de487d839fe94698"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6e40eb05362ea963",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccd0f992ba9b51d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5a8659e6ee3254a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d989d94bdec54f63",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "ballin",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 292.5
+  },
+  "right": {
+    "id": "c6c181e3dd265718",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b9ff5eb4dd3169c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b5b80d810c73d0b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "文献搜索/发动机建模文献/ballinEngine1988-zotero.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "01f7d0d5a6e1122d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "文献搜索/发动机建模文献/ballinEngine1988-zotero.md"
+              }
+            }
+          },
+          {
+            "id": "1c9b82ce7f66188b",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ab8ea2321a2e3017",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d5a8659e6ee3254a",
+  "lastOpenFiles": [
+    "文献搜索/发动机建模文献/attachments/发动机部件级模型彩图.png",
+    "文献搜索/发动机建模文献/ballinEngine1988-zotero.md",
+    "文献搜索/直升机建模/直发一体化/mihaloew1988-others-zotero.md",
+    "文献搜索/直升机建模/桨叶分段法建模 GENHEL/GENHELVol1/Howlett1981-VolumeI.md",
+    "文献搜索/直升机建模/积分法 公式推导文献/sheridan1982-zotero.md",
+    "文献搜索/直升机建模/桨叶分段法建模 GENHEL/Howlet1981FlCtrl.md",
+    "文献搜索/直升机建模/桨叶分段法建模 GENHEL/howlettUH60ABlackHawk1981.md",
+    "文献搜索/直升机建模/桨叶分段法建模 GENHEL/howlettUH60ABlackHawk1988.md",
+    "文献搜索/直升机建模/桨叶分段法建模 GENHEL/Howlett1988-VolumeII.md",
+    "文献搜索/直升机建模/桨叶分段法建模 GENHEL/Howlett1988Ctrl-zh.md"
+  ]
+}

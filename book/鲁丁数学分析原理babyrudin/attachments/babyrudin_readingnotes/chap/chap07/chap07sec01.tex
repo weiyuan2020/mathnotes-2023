@@ -1,0 +1,225 @@
+% chap07sec01
+\section{Discussion of main problem}
+
+\begin{mydef}
+    \label{mydef:7.1}
+    Suppose $\sequence{f_n}$, $n = 1,2,3,\dots,$ is a sequence of functions
+    defined on a set $E$,
+    and suppose that the sequence of numbers $\sequence{f_n\{x\}}$ converges
+    for every $x \in E$.
+    We can then define a function $f$ by
+    \begin{equation}
+        \label{eq:7.1}
+        f(x) = \lim_{n \to \infty} f_n (x)
+        \quad
+        (x \in E).
+    \end{equation}
+
+    Under these circumstances we say that $\sequence{f_n}$ converges on $E$ and that $f$ is the \emph{limit},
+    or the \emph{limit function}, of $\sequence{f_n}$.
+    Sometimes we shall use a more descriptive terminology and shall say that ``$\sequence{f_n}$ converges to $f$ \emph{pointwise} on $E$'' if (\ref{eq:7.1}) holds.
+    \mybox{pointwise convergence 逐点收敛}
+
+    Similarly, if $\sum f_n(x)$ converges for every $x \in E$, and if we define
+    \begin{equation}
+        \label{eq:7.2}
+        f(x) = \sum_{n=1}^{\infty} f_n (x)
+        \quad
+        (x \in E).
+    \end{equation}
+    the function $f$ is called the \emph{sum} of the series $\sum f_n$.
+
+    The main problem which arises is to determine whether important
+    properties of functions are preserved under the limit operations (\ref{eq:7.1}) and (\ref{eq:7.2}).
+    For instance, if the functions $f_n$. are continuous, or differentiable, or integrable,
+    is the same true of the limit function? What are the relations between $f'_n$ and $f'$,
+    say, or between the integrals of $f_n$. and that of $f$?
+
+    To say that $f$ is continuous at a limit point $x$ means
+    \begin{equation*}
+        \lim_{t \to x} f(t) = f(x).
+    \end{equation*}
+
+    Hence, to ask whether the limit of a sequence of continuous functions is continuous is the same as to ask whether
+    \begin{equation}
+        \label{eq:7.3}
+        \lim_{t \to x}  \lim_{n \to \infty}  f_n(t) =
+        \lim_{n \to \infty}  \lim_{t \to x}  f_n(t),
+    \end{equation}
+
+    i.e., whether the order in which limit processes are carried out is immaterial.
+    On the left side of (\ref{eq:7.3}), we first let $n \rightarrow \infty$, then $t \rightarrow x$;
+    on the right side, $t \rightarrow x$ first, then $n \rightarrow \infty$.
+    \mybox{求极限的顺序可否改变}
+
+    We shall now show by means of several examples that limit processes
+    cannot in general be interchanged without affecting the result.
+    Afterward, we shall prove that under certain conditions the order in which limit operations are carried out is immaterial.
+
+    Our first example, and the simplest one, concerns a ``double sequence.''
+\end{mydef}
+
+\begin{newexample}
+    For $m = 1,2,3,\dots,n = 1,2,3,...$, let
+    \begin{equation*}
+        s_{m,n} = \frac{m}{m+n}.
+    \end{equation*}
+    Then, for every fixed $n$,
+    \begin{equation*}
+        \lim_{m \to \infty} s_{m,n} = 1,
+    \end{equation*}
+    so that
+    \begin{equation}
+        \label{eq:7.4}
+        \lim_{m \to \infty} \lim_{n \to \infty} s_{m,n} = 1.
+    \end{equation}
+    On the other hand, for every fixed $m$,
+    \begin{equation*}
+        \lim_{n \to \infty} s_{m,n} = 0,
+    \end{equation*}
+    so that
+    \begin{equation}
+        \label{eq:7.5}
+        \lim_{m \to \infty} \lim_{n \to \infty} s_{m,n} = 0.
+    \end{equation}
+\end{newexample}
+\mybox{本例是一个二元函数数列(double sequence)收敛至不同值的例子}
+
+\begin{newexample}
+    Let
+    \begin{equation*}
+        f_n (x) = \frac{x^2}{(1+x^2)^n}
+        \quad
+        (x \text{ real }; n = 0,1,2,...),
+    \end{equation*}
+    and consider
+    \begin{equation}
+        \label{eq:7.6}
+        f(x) =
+        \sum_{n=0}^{\infty} f_n (x) =
+        \sum_{n=0}^{\infty} \frac{x^2}{(1+x^2)^n} .
+    \end{equation}
+    Since $f_n(0)=0$, we have $f(0) = 0$.
+    For $x \neq 0$, the last series in (\ref{eq:7.6}) is a convergent
+    geometric series with sum $1+x^2$ (Theorem \ref{thm:3.26}).
+    Hence
+    \begin{equation}
+        \label{eq:7.7}
+        f(x) = \left\{
+        \begin{array}{ll}
+            0       & (x \neq 0) \\
+            1 + x^2 & (x =    0) \\
+        \end{array}
+        \right.
+    \end{equation}
+    so that a convergent series of continuous functions may have a discontinuous sum.
+\end{newexample}
+\mybox{一个连续函数的收敛级数可能有一个不连续的和}
+
+\begin{newexample}
+    For $m = 1,2,3,\dots$, put
+    \begin{equation*}
+        f_m(x) = \lim_{n \to \infty} (\cos m! \pi x)^{2n}.
+    \end{equation*}
+    When $m!x$ is an integer, $f_m(x) = 1$.
+    For all other values of $x$, $f_m(x) = 0$.
+    Now let
+    \begin{equation*}
+        f(x) = \lim_{m \to \infty} f_m (x).
+    \end{equation*}
+    For irrational $x$, $f_m(x) = 0$ for every $m$; hence $f(x) = 0$.
+    For rational $x$, say $x = p/q$, where $p$ and $q$ are integers,
+    we see that $m!x$ is an integer if $m \geq q$, so that $f(x) = 1$.
+    Hence
+    \begin{equation}
+        \label{eq:7.8}
+        \lim_{m \to \infty} \lim_{n \to \infty} (\cos m!\pi x)^{2n} =
+        \left\{
+        \begin{array}{ll}
+            0 & (x \text{irrational}), \\
+            1 & (x \text{rational}).
+        \end{array}
+        \right.
+    \end{equation}
+    We have thus obtained an everywhere discontinuous limit function, which
+    is not Riemann-integrable (Exercise \ref{ex:6.4}).
+\end{newexample}
+\mybox{这个函数的有理数点与无理数点收敛至不同极限
+
+    本例为狄利克雷Direchlet函数, 该函数不是黎曼可积的.
+}
+
+\begin{newexample}
+    \label{newexample:7.5}
+    Let
+    \begin{equation}
+        \label{eq:7.9}
+        f_n(x) = \frac{\sin nx}{\sqrt{n}}
+        \quad
+        (x \text{ real}, n = 1,2,3,\dots),
+    \end{equation}
+    and
+    \begin{equation*}
+        f(x) = \lim_{n \to \infty} f_n (x) = 0.
+    \end{equation*}
+    Then $f'(x) = 0$, and
+    \begin{equation*}
+        f'_n (x) = \sqrt{n} \cos nx,
+    \end{equation*}
+    so that $\sequence{f'_n}$ does not converge to $f'$.
+    For instance
+    \begin{equation*}
+        f'_n(0) = \sqrt{n} \rightarrow +\infty
+    \end{equation*}
+    as $n \rightarrow \infty$, whereas $f'(0) = 0$.
+\end{newexample}
+
+\begin{newexample}
+    \label{newexample:7.6}
+    Let
+    \begin{equation}
+        \label{eq:7.10}
+        f_n(x) = n^2 x(1-x^2)^n
+        \quad
+        (0 \leq x \leq 1, n = 1,2,3,\dots).
+    \end{equation}
+    For $0 < x \leq 1$, we have
+    \begin{equation*}
+        \lim_{n \to \infty} f_n (x) = 0,
+    \end{equation*}
+    by Theorem \ref{thm:3.20}(d). Since $f_n(0) = 0$, we see that
+    \begin{equation}
+        \label{eq:7.11}
+        \lim_{n \to \infty} f_n (x) = 0
+        \quad
+        (0 \leq x \leq 1).
+    \end{equation}
+    A simple calculation shows that
+    \begin{equation*}
+        \int_{0}^{1} x(1-x^2)^n \d x = \frac{1}{2n+2}.
+    \end{equation*}
+    Thus, in spite of (\ref{eq:7.11}),
+    \begin{equation*}
+        \int_{0}^{1} f_n(x) \d x = \frac{n^2}{2n+2} \rightarrow +\infty
+    \end{equation*}
+    as $n \rightarrow \infty$.
+
+    If, in (\ref{eq:7.10}), we replace $n^2$ by $n$,
+    (\ref{eq:7.11}) still holds, but we now have
+    \begin{equation*}
+        \lim_{n \to \infty} \int_{0}^{1} f_n (x) \d x =
+        \lim_{n \to \infty} \frac{n}{2n+2} = \frac{1}{2},
+    \end{equation*}
+    whereas
+    \begin{equation*}
+        \int_{0}^{1} \left\{ \lim_{n \to \infty} f_n (x) \right\} \d x = 0.
+    \end{equation*}
+    Thus the limit of the integral need not be equal to the integral of the limit, even if both are finite.
+\end{newexample}
+\mybox{积分的极限不必等于极限的积分}
+After these examples, which show what can go wrong if limit processes
+are interchanged carelessly,
+we now define a new mode of convergence,
+stronger than pointwise convergence as defined in Definition {\ref{mydef:7.1}},
+which will enable us to arrive at positive results.
+\mybox{由于现有的逐点收敛存在不足, 因此需要提出一种更强的收敛. }

@@ -1,0 +1,319 @@
+\chapter{第七章 指数函数和对数函数的级数表示}
+
+\section{$\S 114$}
+
+$a$ 大于 1 时, $a$ 的幂随 $a$ 增加而增加, 而 $a^{0}=1$, 所以指数比零增加无穷小时, 幂比 1 增 加也为无穷小. 也就是说, 数 $\omega$ 是一个无穷小, 即它几乎就等于零时, 我们有
+\[
+a^{\omega}=1+\psi
+\]
+数 $\psi$ 也是无穷小. 从前一章我们知道, 如果数 $\psi$ 不是无穷小, $\omega$ 就也不为无穷小. 这就是 说, $\omega$ 与 $\psi$ 的关系, 或为 $\psi=\omega$, 或为 $\psi>\omega$, 或为 $\psi<\omega$. 究竟是哪一种, 由 $a$ 决定. 由 $a$ 暂 且还是末知的. 我们令 $\psi=K \omega$. 这样我们有
+\[
+a^{\omega}=1+K \omega
+\]
+取以 $a$ 为底的对数,得
+\[
+\omega=\log (1+K \omega)
+\]
+例 1 为看清 $K$ 对 $a$ 的依赖情形, 我们令 $a=10$, 取一个比 1 大得很小的数, 例如 $1+$ $\frac{1}{1000000}$ (即 $K \omega=\frac{1}{1000000}$ ), 从常用对数表中查出该数的对数, 得
+\[
+\log \left(1+\frac{1}{1000000}\right)=\log \frac{1000001}{1000000}=0.00000043429=\omega
+\]
+由 $K \omega=0.00000100000$ 得
+\[
+\frac{1}{K}=\frac{43429}{100000}, K=\frac{100000}{43429}=2.30258
+\]
+我们看到 $K$ 是一个依赖于底 $a$ 的有限数. 换一个底, 则数 $1+K \omega$ 的对数随着改变, 因而 $K$ 也随着改变.
+
+\section{$\S 115$}
+
+由 $a^{\omega}=1+K \omega$ 得
+\[
+a^{i \omega}=(1+K \omega)^{i}
+\]
+对任何的 $i$ 都成立, 从而
+\[
+a^{i \omega}=1+\frac{i}{1} K \omega+\frac{i(i-1)}{1 \cdot 2} K^{2} \omega^{2}+\frac{i(i-1)(i-2)}{1 \cdot 2 \cdot 3} K^{3} \omega^{3}+\cdots
+\]
+如果令 $i=\frac{z}{\omega}$, 其中 $z$ 为某个有限数, 那么由 $\omega$ 为无穷小, 知 $i$ 为无穷大. 由 $\omega=\frac{z}{i}$ 知 $\omega$ 是一个分母为无穷大的分数, 即 $\omega$ 为无穷小, 跟我们所取一致. 将 $\omega$ 换为 $\frac{z}{i}$, 得
+\[
+\begin{aligned}
+a^{z}= & 1+\frac{1}{1} K z+\frac{1(i-1)}{1 \cdot 2 i} K^{2} z^{2}+\frac{1(i-1)(i-2)}{1 \cdot 2 i \cdot 3 i} K^{3} z^{3}+ \\
+& \frac{1 \cdot(i-1)(i-2)(i-3)}{1 \cdot 2 i \cdot 3 i \cdot 4 i} K^{4} z^{4}+\cdots
+\end{aligned}
+\]
+换 $i$ 为无穷大, 该等式依然成立, $K$ 也如我们前面看到, 是一个确定的依赖于 $a$ 的数.
+
+\section{$\S 116$}
+
+$i$ 为无穷大时
+\[
+\frac{i-1}{i}=1
+\]
+事实上, $i$ 越大 $\frac{i-1}{i}$ 越接近于 1 , 如果 $i$ 大于任何给定的数, 则 $\frac{i-1}{i}$ 等于 1 . 类似地, 我们有
+\[
+\frac{i-2}{i}=1, \frac{i-3}{i}=1
+\]
+等等. 由此得
+\[
+\frac{i-1}{2 i}=\frac{1}{2}, \frac{i-2}{3 i}=\frac{1}{3}, \frac{i-3}{4 i}=\frac{1}{4}
+\]
+等等. 将它们代入上节 $a^{z}$ 的表达式, 得
+\[
+a^{z}=1+\frac{K z}{1}+\frac{K^{2} z^{2}}{1 \cdot 2}+\frac{K^{3} z^{3}}{1 \cdot 2 \cdot 3}+\frac{K^{4} z^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+该等式还表示 $a$ 与 $K$ 之间的关系. 事实上,如果令 $z=1$, 则
+\[
+a=1+\frac{K}{1}+\frac{K^{2}}{1 \cdot 2}+\frac{K^{3}}{1 \cdot 2 \cdot 3}+\frac{K^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+$a=10$ 时近似地有 $K=2.30258$, 跟前面求得的一致.
+
+\section{$\S 117$}
+
+设
+\[
+b=a^{n}
+\]
+那么以 $a$ 为底取对数, 得 $\log b=n$. 由 $b^{z}=a^{n z}$, 我们得到无穷级数
+\[
+b^{z}=1+\frac{K n z}{1}+\frac{K^{2} n^{2} z^{2}}{1 \cdot 2}+\frac{K^{3} n^{3} z^{3}}{1 \cdot 2 \cdot 3}+\frac{K^{4} n^{4} z^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+将 $n$ 换成 $\log b$,得
+\[
+b^{z}=1+\frac{K z}{1} \log b+\frac{K^{2} z^{2}}{1 \cdot 2}(\log b)^{2}+\frac{K^{3} z^{3}}{1 \cdot 2 \cdot 3}(\log b)^{3}+\frac{K^{4} z^{4}}{1 \cdot 2 \cdot 3 \cdot 4}(\log b)^{4}+\cdots
+\]
+$K$ 可由底 $a$ 求得. 可见任何一个指数函数 $b^{z}$ 都可以表示成按 $z$ 的幂排列的无穷级数. 下面 我们讲对数函数的无穷级数展开.
+
+\section{$\S 118$}
+
+由于 $a^{\omega}=1+K \omega$, 其中 $\omega$ 为无穷小分数, 且 $a$ 与 $K$ 之间有关系
+\[
+a=1+\frac{K}{1}+\frac{K^{2}}{1 \cdot 2}+\frac{K^{3}}{1 \cdot 2 \cdot 3}+\cdots
+\]
+于是以 $a$ 为底取对数, 得
+\[
+\omega=\log (1+K \omega), i \omega=\log (1+K \omega)^{i}
+\]
+显然 $i$ 取得越大, 幂 $(1+K \omega)^{i}$ 比 1 大得就越多, 让 $i$ 为无穷大, 则 $(1+K \omega)^{i}$ 可以成为大 于 1 的任何数. 令
+\[
+(1+K \omega)^{i}=1+x
+\]
+则
+\[
+\log (1+x)=i \omega
+\]
+$1+x$ 的对数 $i \omega$ 是有限数, 可见 $i$ 应该是无穷大, 否则 $i \omega$ 不能是有限数.
+
+\section{$\S 119$}
+
+由
+\[
+(1+K \omega)^{i}=1+x
+\]
+得
+\[
+1+K \omega=(1+x)^{\frac{1}{i}}, K \omega=(1+x)^{\frac{1}{i}}-1
+\]
+从而
+\[
+i \omega=\frac{i}{K}\left[(1+x)^{\frac{1}{i}}-1\right]
+\]
+而 $i \omega=\log (1+x)$, 所以
+\[
+\log (1+x)=\frac{i}{K}\left[(1+x)^{\frac{1}{i}}-1\right]
+\]
+这里的 $i$ 是无穷大. 我们有
+\[
+\begin{aligned}
+(1+x)^{\frac{1}{i}}= & 1+\frac{1}{i} x-\frac{1(i-1)}{i \cdot 2 i} x^{2}+\frac{1(i-1)(2 i-1)}{i \cdot 2 i \cdot 3 i} x^{3}- \\
+& \frac{1(i-1)(2 i-1)(3 i-1)}{i \cdot 2 i \cdot 3 i \cdot 4 i} x^{4}+\cdots
+\end{aligned}
+\]
+又 $i$ 为无穷大时我们有
+\[
+\frac{i-1}{2 i}=\frac{1}{2}, \frac{2 i-1}{3 i}=\frac{2}{3}, \frac{3 i-1}{4 i}=\frac{3}{4}, \cdots
+\]
+从而
+\[
+i(1+x)^{\frac{1}{i}}=i+\frac{x}{1}-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots
+\]
+继而
+\[
+\log (1+x)=\frac{1}{K}\left(\frac{x}{1}-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots\right)
+\]
+这里对数的底为 $a, K$ 是一个数, 它满足
+\[
+a=1+\frac{K}{1}+\frac{K^{2}}{1 \cdot 2}+\frac{K^{3}}{1 \cdot 2 \cdot 3}+\cdots
+\]
+\section{$\S 120$}
+
+上节我们求出了等于 $1+x$ 的对数的级数. 利用这个级数, 我们可以求出对应于给定 的底 $a$ 的 $K$ 值. 令 $1+x=a$, 则 $\log a=1$, 这样我们有
+\[
+1=\frac{1}{K}\left(\frac{a-1}{1}-\frac{(a-1)^{2}}{2}+\frac{(a-1)^{3}}{3}-\frac{(a-1)^{4}}{4}+\cdots\right)
+\]
+从而
+\[
+K=\frac{(a-1)}{1}-\frac{(a-1)^{2}}{2}+\frac{(a-1)^{3}}{3}-\frac{(a-1)^{4}}{4}+\cdots
+\]
+令 $a=10$, 则这个无穷级数的值应该近似地等于 $2.30258$, 也即应该有
+\[
+\text { 2. } 30258=\frac{9}{1}-\frac{9^{2}}{2}+\frac{9^{3}}{3}-\frac{9^{4}}{4}+\cdots
+\]
+该级数项的值不断增加, 前若干项的和也不趋向于某个极限, 所以很难看出这个等式成 立. 下面我们来推出这一不易看出的结果.
+
+\section{$\S 121$}
+
+已知
+\[
+\log (1+x)=\frac{1}{K}\left(\frac{x}{1}-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots\right)
+\]
+换 $x$ 为 $-x$, 得
+\[
+\log (1-x)=-\frac{1}{K}\left(\frac{x}{1}+\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots\right)
+\]
+前式减后式,得
+\[
+\log (1+x)-\log (1-x)=\log \frac{1+x}{1-x}=\frac{2}{K}\left(\frac{x}{1}+\frac{x^{3}}{5}+\frac{x^{5}}{5}+\frac{x^{7}}{7}+\cdots\right)
+\]
+置
+\[
+\frac{1+x}{1-x}=a
+\]
+则
+\[
+x=\frac{a-1}{a+1}
+\]
+由 $\log a=1$, 得
+\[
+K=2\left(\frac{a-1}{a+1}+\frac{(a-1)^{3}}{3(a+1)^{3}}+\frac{(a-1)^{5}}{5(a+1)^{5}}+\cdots\right)
+\]
+由这一等式可求出对应于给定底 $a$ 的 $K$.
+
+如果底 $a=10$,则
+\[
+K=2\left(\frac{9}{11}+\frac{9^{3}}{3 \cdot 11^{3}}+\frac{9^{5}}{5 \cdot 11^{5}}+\frac{9^{7}}{7 \cdot 11^{7}}+\cdots\right)
+\]
+该级数的项的值明显地递减, 很快就给出 $K$ 的满意的结果.
+
+\section{$\S 122$}
+
+对数的底 $a$ 可以根据需要选取. 现在我们取 $a$ 使 $K=1 . K=1$, 则 $\S 116$ 求得的级数成 为
+\[
+a=1+\frac{1}{1}+\frac{1}{1 \cdot 2}+\frac{1}{1 \cdot 2 \cdot 3}+\frac{1}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+将各项化为小数, 相加得
+\[
+a=2.71828182845904523536028
+\]
+精确到最后一位.
+
+称以这个数为底的对数为自然对数或双曲对数. 后一名称的采用, 是由于双曲线下 的面积, 可用这种对数来表示. 为简便起见, 我们记数 $2.718281828459 \cdots$ 为 e, 即 $\mathrm{e}$ 是自 然对数或双曲对数的底. 对应于这个底 $\mathrm{e}$ 的 $K=1$. e 是下面这个无穷级数的和
+\[
+1+\frac{1}{1}+\frac{1}{1 \cdot 2}+\frac{1}{1 \cdot 2 \cdot 3}+\frac{1}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+\section{$\S 123$}
+
+可见自然对数有这样的性质: $\omega$ 为无穷小量时, $1+\omega$ 的对数为 $\omega$. 由此可以得到 $K=$ 1 , 从而可以求出所有数的自然对数. 记上节求得的数为 $\mathrm{e}$, 则
+\[
+\mathrm{e}^{z}=1+\frac{z}{1}+\frac{z^{2}}{1 \cdot 2}+\frac{z^{3}}{1 \cdot 2 \cdot 3}+\frac{z^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+级数
+\[
+\begin{aligned}
+& \log (1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\frac{x^{5}}{5}-\frac{x^{6}}{6}+\cdots \\
+& \log \frac{1+x}{1-x}=\frac{2 x}{1}+\frac{2 x^{3}}{3}+\frac{2 x^{5}}{5}+\frac{2 x^{7}}{7}+\frac{2 x^{9}}{9}+\cdots
+\end{aligned}
+\]
+可用来计算自然对数. 当 $x$ 为很小的分数时,这两个级数都收玫很快. 利用后一个级数, 
+
+可以很容易地求出一些大于 1 的数的对数. 例如令 $x=\frac{1}{5}$, 得
+\[
+\log \frac{6}{4}=\log \frac{3}{2}=\frac{2}{1.5}+\frac{2}{3.5^{3}}+\frac{2}{5.5^{5}}+\frac{2}{7.5^{7}}+\cdots
+\]
+令 $x=\frac{1}{7}$, 得
+\[
+\log \frac{4}{3}=\frac{2}{1.7}+\frac{2}{3.7^{3}}+\frac{2}{5.7^{5}}+\frac{2}{7.7^{7}}+\cdots
+\]
+令 $x=\frac{1}{9}$, 得
+\[
+\log \frac{5}{4}=\frac{2}{1 \cdot 9}+\frac{2}{3 \cdot 9^{3}}+\frac{2}{5 \cdot 9^{5}}+\frac{2}{7 \cdot 9^{7}}+\cdots
+\]
+一些整数的对数, 可从这几个分数的对数求得. 由对数的性质, 我们得到
+\[
+\begin{gathered}
+\log \frac{3}{2}+\log \frac{4}{3}=\log 2, \log \frac{3}{2}+\log 2=\log 3 \\
+2 \log 2=\log 4, \log \frac{5}{4}+\log 4=\log 5 \\
+\log 2+\log 3=\log 6,3 \log 2=\log 8 \\
+2 \log 3=\log 9, \log 2+\log 5=\log 10
+\end{gathered}
+\]
+例 2 数 1 到 10 的自然对数为
+\[
+\begin{aligned}
+& \log 1=0.0000000000000000000000000 \\
+& \log 2=0.6931471805599453094172321 \\
+& \log 3=1.0986122886681096913952452 \\
+& \log 4=1.3862943611198906188344642 \\
+& \log 5=1.6094379124341003746007593 \\
+& \log 6=1.7917594692280550008124773 \\
+& \log 7=1.9459101490553133051054639 \\
+& \log 8=2.0794415416798359282516964 \\
+& \log 9=2.1972245773362193827904905 \\
+& \log 10=2.3025850929940456840179914
+\end{aligned}
+\]
+这 10 个对数, 除了 $\log 7$, 都是从刚举出的三个级数求得的. $\log 7$ 的求法是: 令后一个级数 中的 $x=\frac{1}{99}$, 得
+\[
+\log \frac{100}{98}=\log \frac{50}{49}=0.0202027073175194484078230
+\]
+从
+\[
+\log 50=2 \log 5+\log 2=3.9120230054281460586187508
+\]
+中减去 $\log \frac{50}{49}$, 得 $\log 49, \log 7=\frac{1}{2} \log 49$ 
+
+\section{$\S 124$}
+
+记 $1+x$ 的自然对数为 $y$, 即 $\log (1+x)=y$, 则
+\[
+y=\frac{x}{1}-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots
+\]
+记 $1+x$ 的以 $a$ 为底的对数为 $v$, 则
+\[
+v=\frac{1}{K}\left(\frac{x}{1}-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\cdots\right)=\frac{y}{K}
+\]
+从而
+\[
+K=\frac{y}{v}
+\]
+这是计算对应于 $a$ 的 $K$ 值的最方便的方法: 任一数, 其自然对数除以其以 $a$ 为底的对数, 商就是对应于 $a$ 的 $K$ 值. 取这任一数为 $a$, 则 $v=1, K$ 就等于 $a$ 的自然对数. 常用对数的底 为 10 . 对应于 10 的 $K$ 就等于 10 的自然对数.
+\[
+K=2.3025850929940456840179914 \cdots
+\]
+跟我们前面算出来的一样. 一个数的常用对数就等于它的自然对数除上这个 $K$ 值, 或者 乘上
+\[
+\text { 0. } 4342944819032518276511289
+\]
+\section{$\S 125$}
+
+已知
+\[
+\mathrm{e}^{z}=1+\frac{z}{1}+\frac{z^{2}}{1 \cdot 2}+\frac{z^{3}}{1 \cdot 2 \cdot 3}+\cdots
+\]
+令 $a^{y}=\mathrm{e}^{z}$, 两边取自然对数, 由于 $\log \mathrm{e}=1$, 得 $y \log a=z$. 将 $z$ 的这个值代入上面的级数, 得
+\[
+a^{y}=1+\frac{y \log a}{1}+\frac{y^{2}(\log a)^{2}}{1 \cdot 2}+\frac{y^{3}(\log a)^{3}}{1 \cdot 2 \cdot 3}+\cdots
+\]
+这样, 任何一个指数函数 $a^{y}$ 就都可以借助于自然对数表示成无穷级数. 如果 $i$ 为无穷大, 那么指数函数和对数函数就都可以表示成幂, 即
+\[
+\mathrm{e}^{z}=\left(1+\frac{z}{i}\right)^{i}
+\]
+从而
+\[
+a^{y}=\left(1+\frac{y \log a}{i}\right)^{i}
+\]
+对自然对数我们有
+\[
+\log (1+x)=i\left((1+x)^{\frac{1}{i}}-1\right)
+\]
+自然对数的另外一些应用在积分学中讨论. 
+

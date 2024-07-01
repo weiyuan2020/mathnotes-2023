@@ -1,0 +1,573 @@
+\chapter{第十章 利用已知因式求无穷级数的和}
+
+\section{$\S 165$}
+
+如果
+\[
+1+A z+B z^{2}+C z^{3}+D z^{4}+\cdots=(1+\alpha z)(1+\beta z)(1+\gamma z)(1+\delta z) \cdots
+\]
+那么不管这些因式的个数有穷与否, 它们的积都应该等于
+\[
+1+A z+B z^{2}+C z^{3}+D z^{4}+\cdots
+\]
+从而,系数 $A$ 等于单个量 $\alpha, \beta, \cdots$ 的和, 即
+\[
+A=\alpha+\beta+\gamma+\delta+\varepsilon+\cdots
+\]
+系数 $B$ 等于每两个之积的和, 即
+\[
+B=\alpha \beta+\alpha \gamma+\alpha \delta+\beta \gamma+\beta \delta+\gamma \delta+\cdots
+\]
+系数 $C$ 等于每三个之积的和, 即
+\[
+C=\alpha \beta \gamma+\alpha \beta \delta+\beta \gamma \delta+\alpha \gamma \delta+\cdots
+\]
+$D$ 是每四个之积的和, $E$ 是每五个之积的和, 类推. 这是代数里面讲过了的.
+
+\section{$\S 166$}
+
+单个量的和 $\alpha+\beta+\gamma+\delta+\cdots$ 和每两个之积的和都是已经知道了的. 利用这两个 和, 我们可以求出平方和 $\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}+\cdots$. 平方和等于单个量之和的平方减去每两 个之积的和的两倍. 用类似地方法可以求出三次、四次和更高次幂的和. 如果我们令
+\[
+\begin{gathered}
+P=\alpha+\beta+\gamma+\delta+\varepsilon+\cdots \\
+Q=\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}+\varepsilon^{2}+\cdots \\
+R=\alpha^{3}+\beta^{3}+\gamma^{3}+\delta^{3}+\varepsilon^{3}+\cdots \\
+S=\alpha^{4}+\beta^{4}+\gamma^{4}+\delta^{4}+\varepsilon^{4}+\cdots \\
+T=\alpha^{5}+\beta^{5}+\gamma^{5}+\delta^{5}+\varepsilon^{5}+\cdots \\
+V=\alpha^{6}+\beta^{6}+\gamma^{6}+\delta^{6}+\varepsilon^{6}+\cdots
+\end{gathered}
+\]
+那么 $P, Q, R, S, T, V, \cdots$ 就都可以用下面的方法, 从 $A, B, C, D, \cdots$ 求出
+\[
+P=A
+\]
+$Q=A P-2 B$
+
+$R=A Q-B P+3 C$
+
+$S=A R-B Q+C P-4 D$
+
+$T=A S-B R+C Q-D P+5 E$
+
+$V=A T-B S+C R-D Q+E P-6 F$
+
+可以直观地想象这些公式, 并验证它们成立, 严格的证明由微积分学给出.
+
+\section{$\S 167$}
+
+$\S 156$我们求出了
+
+$\frac{\mathrm{e}^{x}-\mathrm{e}^{-x}}{2}=x\left(1+\frac{x^{2}}{1 \cdot 2 \cdot 3}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}+\frac{x^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7}+\cdots\right)=$
+
+$x\left(1+\frac{x^{2}}{\pi^{2}}\right)\left(1+\frac{x^{2}}{4 \pi^{2}}\right)\left(1+\frac{x^{2}}{9 \pi^{2}}\right)\left(1+\frac{x^{2}}{16 \pi^{2}}\right)\left(1+\frac{x^{2}}{25 \pi^{2}}\right) \cdots$
+
+从而
+\[
+\begin{aligned}
+& 1+\frac{x^{2}}{1 \cdot 2 \cdot 3}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}+\frac{x^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7}+\cdots= \\
+& \left(1+\frac{x^{2}}{\pi^{2}}\right)\left(1+\frac{x^{2}}{4 \pi^{2}}\right)\left(1+\frac{x^{2}}{9 \pi^{2}}\right)\left(1+\frac{x^{2}}{16 \pi^{2}}\right) \cdots
+\end{aligned}
+\]
+$\hat{亽}$
+\[
+x^{2}=\pi^{2} z
+\]
+得
+\[
+\begin{aligned}
+& 1+\frac{\pi^{2}}{1 \cdot 2 \cdot 3} z+\frac{\pi^{4}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} z^{2}+\frac{\pi^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7^{3}} z^{3}+\cdots= \\
+& (1+z)\left(1+\frac{1}{4} z\right)\left(1+\frac{1}{9} z\right)\left(1+\frac{1}{16} z\right)\left(1+\frac{1}{25} z\right) \cdots
+\end{aligned}
+\]
+利用前面的记号, 我们有
+\[
+A=\frac{\pi^{2}}{6}, B=\frac{\pi^{4}}{120}, C=\frac{\pi^{6}}{5040}, D=\frac{\pi^{8}}{362880}
+\]
+和
+\[
+\begin{aligned}
+& P=1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\frac{1}{25}+\frac{1}{36}+\cdots \\
+& Q=1+\frac{1}{4^{2}}+\frac{1}{9^{2}}+\frac{1}{16^{2}}+\frac{1}{25^{2}}+\frac{1}{36^{2}}+\cdots \\
+& R=1+\frac{1}{4^{3}}+\frac{1}{9^{3}}+\frac{1}{16^{3}}+\frac{1}{25^{3}}+\frac{1}{36^{3}}+\cdots \\
+& S=1+\frac{1}{4^{4}}+\frac{1}{9^{4}}+\frac{1}{16^{4}}+\frac{1}{25^{4}}+\frac{1}{36^{4}}+\cdots\\
+T=1+\frac{1}{4^5}+\frac{1}{9^5}+\frac{1}{16^5}+\frac{1}{25^5}+\frac{1}{36^5}+\cdots\\
+\vdots
+\end{aligned}
+\]
+
+利用前面的规则, 从 $A, B, C, D, \cdots$ 我们求得
+\[
+\begin{array}{r}
+P=\frac{\pi^{2}}{6} \\
+Q=\frac{\pi^{4}}{90} \\
+R=\frac{\pi^{6}}{945} \\
+S=\frac{\pi^{8}}{9450} \\
+T=\frac{\pi^{10}}{93555}
+\end{array}
+\]
+\section{$\S 168$}
+
+可见, 当 $n$ 为偶数时, 状如
+\[
+1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\cdots
+\]
+的任何一个级数, 它的和都等于 $\pi^{n}$ 与一个有理数的积. 为了进一步清楚这些有理数, 我 们用一种更方便的形式写出一些这种级数的和
+\[
+\begin{gathered}
+1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{4^{2}}+\frac{1}{5^{2}}+\cdots=\frac{2^{0}}{1 \cdot 2 \cdot 3} \cdot \frac{1}{1} \pi^{2} \\
+1+\frac{1}{2^{4}}+\frac{1}{3^{4}}+\frac{1}{4^{4}}+\frac{1}{5^{4}}+\cdots=\frac{2^{2}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} \cdot \frac{1}{3} \pi^{4} \\
+1+\frac{1}{2^{6}}+\frac{1}{3^{6}}+\frac{1}{4^{6}}+\frac{1}{5^{6}}+\cdots=\frac{2^{4}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 7} \cdot \frac{1}{3} \pi^{6} \\
+1+\frac{1}{2^{8}}+\frac{1}{3^{8}}+\frac{1}{4^{8}}+\frac{1}{5^{8}}+\cdots=\frac{2^{6}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 9} \cdot \frac{3}{5} \pi^{8} \\
+1+\frac{1}{2^{10}}+\frac{1}{3^{10}}+\frac{1}{4^{10}}+\frac{1}{5^{10}}+\cdots=\frac{2^{8}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 11} \cdot \frac{5}{3} \pi^{10} \\
+1+\frac{1}{2^{12}}+\frac{1}{3^{12}}+\frac{1}{4^{12}}+\frac{1}{5^{12}}+\cdots=\frac{2^{10}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 13} \cdot \frac{691}{105} \pi^{12} \\
+1+\frac{1}{2^{14}}+\frac{1}{3^{14}}+\frac{1}{4^{14}}+\frac{1}{5^{14}}+\cdots=\frac{2^{12}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 15} \cdot \frac{35}{1} \pi^{14} \\
+1+\frac{1}{2^{16}}+\frac{1}{3^{16}}+\frac{1}{4^{16}}+\frac{1}{5^{16}}+\cdots=\frac{2^{14}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 17} \cdot \frac{3617}{15} \pi^{16}
+\end{gathered}
+\]
+\[
+\begin{gathered}
+\text { Snfinite analysio }(\text { 无忩分析与论) Onlxaductian } \\
+1+\frac{1}{2^{18}}+\frac{1}{3^{18}}+\frac{1}{4^{18}}+\frac{1}{5^{18}}+\cdots=\frac{2^{16}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 19} \cdot \frac{43867}{21} \pi^{18} \\
+1+\frac{1}{2^{20}}+\frac{1}{3^{20}}+\frac{1}{4^{20}}+\frac{1}{5^{20}}+\cdots=\frac{2^{18}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 21} \cdot \frac{1222277}{55} \pi^{20} \\
+1+\frac{1}{2^{22}}+\frac{1}{3^{22}}+\frac{1}{4^{22}}+\frac{1}{5^{22}}+\cdots=\frac{2^{20}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 23} \cdot \frac{854513}{3} \pi^{22} \\
+1+\frac{1}{2^{24}}+\frac{1}{3^{24}}+\frac{1}{4^{24}}+\frac{1}{5^{24}}+\cdots=\frac{2^{22}}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 25} \cdot \frac{1181820455}{273} \pi^{24} \\
+1+\frac{1}{2^{26}}+\frac{1}{3^{26}}+\frac{1}{4^{26}}+\frac{1}{5^{26}}+\cdots=\frac{76977927}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 27} \pi^{26}
+\end{gathered}
+\]
+有方法继续写下去, 所以写出这一部分, 是因为其中看上去全无规律的序列 $1, \frac{1}{3}$, $\frac{1}{3}, \frac{3}{5}, \frac{5}{3}, \frac{691}{105}, \frac{35}{1}, \cdots$ 有着很大的用处.
+
+\section{$\S 169$}
+
+现在我们用同样的方式来处理 $\$ 157$ 所求出的方程. 在那里我们看到
+\[
+\begin{aligned}
+& \frac{\mathrm{e}^{x}+\mathrm{e}^{-x}}{2}=1+\frac{x^{2}}{1 \cdot 2}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\frac{x^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}+\cdots= \\
+& \left(1+\frac{4 x^{2}}{\pi^{2}}\right)\left(1+\frac{4 x^{2}}{9 \pi^{2}}\right)\left(1+\frac{4 x^{2}}{25 \pi^{2}}\right)\left(1+\frac{4 x^{2}}{49 \pi^{2}}\right) \cdots
+\end{aligned}
+\]
+置 $x^{2}=\frac{\pi^{2}}{4} z$, 则
+\[
+\begin{aligned}
+& 1+\frac{\pi^{2}}{1 \cdot 2 \cdot 4} z+\frac{\pi^{4}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 4^{z}} z^{2}+\frac{x^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 4^{3}} z^{3}+\cdots= \\
+& (1+z)\left(1+\frac{1}{9} z\right)\left(1+\frac{1}{25} z\right)\left(1+\frac{1}{49} z\right) \cdots
+\end{aligned}
+\]
+利用前面讲的, 由
+\[
+A=\frac{\pi^{2}}{1 \cdot 2 \cdot 4}, B=\frac{\pi^{4}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 4^{2}}, C=\frac{\pi^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 4^{3}}, \cdots
+\]
+和
+\[
+\begin{aligned}
+& P=1+\frac{1}{9}+\frac{1}{25}+\frac{1}{49}+\frac{1}{81}+\cdots \\
+& Q=1+\frac{1}{9^{2}}+\frac{1}{25^{2}}+\frac{1}{49^{2}}+\frac{1}{81^{2}}+\cdots \\
+& R=1+\frac{1}{9^{3}}+\frac{1}{25^{3}}+\frac{1}{49^{3}}+\frac{1}{81^{3}}+\cdots \\
+& S=1+\frac{1}{9^{4}}+\frac{1}{25^{4}}+\frac{1}{49^{4}}+\frac{1}{81^{4}}+\cdots
+\end{aligned}
+\]
+得
+\[
+\begin{gathered}
+P=\frac{1}{1} \cdot \frac{\pi^{2}}{2^{3}} \\
+Q=\frac{2}{1 \cdot 2 \cdot 3} \cdot \frac{\pi^{4}}{2^{5}} \\
+R=\frac{16}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} \cdot \frac{\pi^{6}}{2^{7}} \\
+S=\frac{272}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 7} \cdot \frac{\pi^{8}}{2^{9}} \\
+T=\frac{7936}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 9} \cdot \frac{\pi^{10}}{2^{11}} \\
+V=\frac{353792}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 11} \cdot \frac{\pi^{12}}{2^{13}} \\
+W=\frac{22368256}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot 13} \cdot \frac{\pi^{14}}{2^{15}} \\
+\vdots 
+\end{gathered}
+\]
+\section{$\S 170$}
+
+从正整数幂的倒数和可以求出奇数幂的倒数和. 置
+\[
+M=1+\frac{1}{2^{n}}+\frac{1}{3^{n}}+\frac{1}{4^{n}}+\frac{1}{5^{n}}+\cdots
+\]
+两边乘 $\frac{1}{2^{n}}$, 得
+\[
+\frac{M}{2^{n}}=\frac{1}{2^{n}}+\frac{1}{4^{n}}+\frac{1}{6^{n}}+\frac{1}{8^{n}}+\cdots
+\]
+这是偶数幂的倒数和, 从 $M$ 中减去 $\frac{M}{2^{n}}$, 得
+\[
+M-\frac{M}{2^{n}}=\frac{2^{n}-1}{2^{n}} M=1+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{7^{n}}+\frac{1}{9^{n}}+\cdots
+\]
+是奇数的倒数和. 从 $M$ 减去 $\frac{M}{2^{n}}$ 的两倍, 得
+\[
+M-\frac{2 M}{2^{n}}=\frac{2^{n-1}-1}{2^{n-1}} M=1-\frac{1}{2^{n}}+\frac{1}{3^{n}}-\frac{1}{4^{n}}+\frac{1}{5^{n}}-\frac{1}{6^{n}}+\cdots
+\]
+是正整数幂的倒数正负号交替时的和, 即我们得到了下面三种级数的和
+\[
+\begin{gathered}
+1 \pm \frac{1}{2^{n}}+\frac{1}{3^{n}} \pm \frac{1}{4^{n}}+\frac{1}{5^{n}} \pm \frac{1}{6^{n}}+\frac{1}{7^{n}} \pm \cdots \\
+1+\frac{1}{3^{n}}+\frac{1}{5^{n}}+\frac{1}{7^{n}}+\frac{1}{9^{n}}+\frac{1}{11^{n}}+-
+\end{gathered}
+\]
+如果 $n$ 为偶数, 则和为 $A \pi^{n}, A$ 为有理数.
+
+\section{$\S 171$}
+
+从 $\S 164$ 的表达式, 我们也得到一些值得注意的级数的和. 在
+\[
+\cos \frac{v}{2}+\tan \frac{g}{2} \sin \frac{v}{2}=\left(1+\frac{v}{\pi-g}\right)\left(1-\frac{v}{\pi+g}\right)\left(1-\frac{v}{3 \pi-g}\right) \cdots
+\]
+中置 $v=\frac{x}{n} \pi, g=\frac{m}{n} \pi$, 得
+\[
+\begin{aligned}
+& \left(1+\frac{x}{n-m}\right)\left(1-\frac{x}{n+m}\right)\left(1+\frac{x}{3 n-m}\right) \cdot \\
+& \left(1-\frac{x}{3 n+m}\right)\left(1+\frac{x}{5 n-m}\right)\left(1-\frac{x}{5 n+m}\right) \cdots= \\
+& \cos \frac{x \pi}{2 n}+\tan \frac{m \pi}{2 n} \sin \frac{x \pi}{2 n}=1+\frac{x \pi}{2 n} \tan \frac{m \pi}{2 n}-\frac{\pi^{2} x^{2}}{2 \cdot 4 n^{2}}- \\
+& \frac{\pi^{3} x^{3}}{2 \cdot 4 \cdot 6 n^{3}} \tan \frac{m \pi}{2 n}+\frac{\pi^{4} x^{4}}{2 \cdot 4 \cdot 6 \cdot 8 n^{4}}+\cdots
+\end{aligned}
+\]
+利用 $\S 165$ 的符号, 我们有
+\[
+\begin{aligned}
+& A=\frac{\pi}{2 n} \tan \frac{m \pi}{2 n}, B=-\frac{\pi^{2}}{2 \cdot 4 n^{2}}, C=-\frac{\pi^{3}}{2 \cdot 4 \cdot 6 n^{3}} \tan \frac{m \pi}{2 n} \\
+& D=\frac{\pi^{4}}{2 \cdot 4 \cdot 6 \cdot 8 n^{4}}, E=\frac{\pi^{5}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 n^{5}} \tan \frac{m \pi}{2 n}, \cdots
+\end{aligned}
+\]
+这里
+\[
+\begin{aligned}
+\alpha=\frac{1}{n-m}, \beta & =-\frac{1}{n+m}, \gamma=\frac{1}{3 n-m}, \delta=-\frac{1}{3 n+m} \\
+\varepsilon & =\frac{1}{5 n-m}, \zeta=-\frac{1}{5 n+m}, \cdots
+\end{aligned}
+\]
+\section{$\S 172$}
+
+利用 $\S 166$ 的规则, 得
+\[
+\begin{gathered}
+P=\frac{1}{n-m}-\frac{1}{n+m}+\frac{1}{3 n-m}-\frac{1}{3 n+m}+\frac{1}{5 n-m}-\frac{1}{5 n+m}+\cdots \\
+Q=\frac{1}{(n-m)^{2}}+\frac{1}{(n+m)^{2}}+\frac{1}{(3 n-m)^{2}}+\frac{1}{(3 n+m)^{2}}+\frac{1}{(5 n-m)^{2}}+\frac{1}{(5 n+m)^{2}}+\cdots \\
+R=\frac{1}{(n-m)^{3}}-\frac{1}{(n+m)^{3}}+\frac{1}{(3 n-m)^{3}}-\frac{1}{(3 n+m)^{2}}+\frac{1}{(5 n-m)^{3}}-\frac{1}{(5 n+m)^{2}}+\cdots \\
+S=\frac{1}{(n-m)^{4}}+\frac{1}{(n+m)^{4}}+\frac{1}{(3 n-m)^{4}}+\frac{1}{(3 n+m)^{4}}+\frac{1}{(5 n-m)^{4}}+\frac{1}{(5 n+m)^{4}}+\cdots
+\end{gathered}
+\]
+\[
+\begin{aligned}
+& T=\frac{1}{(n-m)^{5}}-\frac{1}{(n+m)^{5}}+\frac{1}{(3 n-m)^{5}}-\frac{1}{(3 n+m)^{5}}+\frac{1}{(5 n-m)^{5}}-\frac{1}{(5 n+m)^{2}}+\cdots \\
+& V=\frac{1}{(n-m)^{6}}+\frac{1}{(n+m)^{6}}+\frac{1}{(3 n-m)^{6}}+\frac{1}{(3 n+m)^{6}}+\frac{1}{(5 n-m)^{6}}+\frac{1}{(5 n+m)^{6}}+\cdots
+\end{aligned}
+\]
+如果置 $\tan \frac{m \pi}{2 n}=K$, 那么像证明过的,我们得到
+\[
+\begin{gathered}
+P=A=\frac{K \pi}{2 n}=\frac{k \pi}{2 n} \\
+Q=\frac{\left(K^{2}+1\right) \pi^{2}}{4 n^{2}}=\frac{\left(2 K^{2}+2\right) \pi^{2}}{2 \cdot 4 \cdot n^{2}} \\
+R=\frac{\left(K^{3}+K\right) \pi^{3}}{8 n^{3}}=\frac{\left(6 K^{3}+6 K\right) \pi^{3}}{2 \cdot 4 \cdot 6 \cdot n^{3}} \\
+S=\frac{\left(3 K^{4}+4 K^{2}+1\right) \pi^{4}}{48 n^{4}}=\frac{\left(24 K^{4}+32 K^{3}+8\right) \pi^{4}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot n^{4}} \\
+T=\frac{\left(3 K^{5}+5 K^{3}+2 K\right) \pi^{5}}{96 n^{5}}=\frac{\left(120 K^{5}+200 K^{3}+80 K\right) \pi^{5}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdot n^{5}}
+\end{gathered}
+\]
+\section{$\S 173$}
+
+同样,置 $\S 164$ 最后一个表达式
+\[
+\begin{aligned}
+\cos \frac{v}{2}+\cot \frac{g}{2} \sin \frac{v}{2}= & \left(1+\frac{v}{g}\right)\left(1-\frac{v}{2 \pi-g}\right)\left(1+\frac{v}{2 \pi+g}\right) \cdot \\
+& \left(1-\frac{v}{4 \pi-g}\right)\left(1+\frac{v}{4 \pi+g}\right) \cdots
+\end{aligned}
+\]
+中的 $v=\frac{x}{n} \pi, g=\frac{m}{n} \pi, \tan \frac{m \pi}{2 n}=K$, 从而 $\cot \frac{g}{2}=\frac{1}{K}$, 我们得到
+\[
+\begin{aligned}
+\cos \frac{\pi x}{2 n}+\frac{1}{K} \sin \frac{\pi x}{2 n}= & 1+\frac{\pi x}{2 n K}-\frac{\pi^{2} x^{2}}{2 \cdot 4 \cdot n^{2}}-\frac{\pi^{3} x^{3}}{2 \cdot 4 \cdot 6 \cdot n^{3} K}+ \\
+& \frac{\pi^{4} x^{4}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot n^{4}}+\frac{\pi^{5} x^{5}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdot n^{5} K}= \\
+& \left(1+\frac{x}{m}\right)\left(1-\frac{x}{2 n-m}\right)\left(1+\frac{x}{2 n+m}\right) \cdot \\
+& \left(1-\frac{x}{4 n-m}\right)\left(1+\frac{x}{4 n+m}\right) \cdots
+\end{aligned}
+\]
+与 $\S 165$ 公式相比较,得
+\[
+\begin{gathered}
+A=\frac{\pi}{2 n K}, B=-\frac{\pi^{2}}{2 \cdot 4 \cdot n^{2}}, C=-\frac{\pi^{3}}{2 \cdot 4 \cdot 6 \cdot n^{3} K} \\
+D=\frac{\pi^{4}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot n^{4}}, E=\frac{\pi^{5}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdot n^{5} K}, \cdots
+\end{gathered}
+\]
+由因式得 
+\[
+\begin{gathered}
+\beta=-\frac{1}{2 n-m}, \gamma=\frac{1}{2 n+m}, \delta=-\frac{1}{4 n-m}, \varepsilon=\frac{1}{4 n+m}, \cdots \\
+\S \mathbf{1 7 4}
+\end{gathered}
+\]
+\section{$\S 174$}
+
+利用 $\$ 166$ 的规则, 我们列出级数
+\[
+\begin{gathered}
+P=\frac{1}{m}-\frac{1}{2 n-m}+\frac{1}{2 n+m}-\frac{1}{4 n-m}+\frac{1}{4 n+m}-\cdots \\
+Q=\frac{1}{m^{2}}+\frac{1}{(2 n-m)^{2}}+\frac{1}{(2 n+m)^{2}}+\frac{1}{(4 n-m)^{2}}+\frac{1}{(4 n+m)^{2}}+\cdots \\
+R=\frac{1}{m^{3}}-\frac{1}{(2 n-m)^{3}}+\frac{1}{(2 n+m)^{3}}-\frac{1}{(4 n-m)^{3}}+\frac{1}{(4 n+m)^{3}}-\cdots \\
+S=\frac{1}{m^{4}}+\frac{1}{(2 n-m)^{4}}+\frac{1}{(2 n+m)^{4}}+\frac{1}{(4 n-m)^{4}}+\frac{1}{(4 n+m)^{4}}+\cdots \\
+T=\frac{1}{m^{5}}-\frac{1}{(2 n-m)^{5}}+\frac{1}{(2 n+m)^{5}}-\frac{1}{(4 n-m)^{5}}+\frac{1}{(4 n+m)^{5}}-\cdots
+\end{gathered}
+\]
+并得到它们的和为
+\[
+\begin{aligned}
+& P=A=\frac{\pi}{2 n K}=\frac{1 \cdot \pi}{2 n K} \\
+& Q=\frac{\left(K^{2}+1\right) \pi^{2}}{4 n^{2} K^{2}}=\frac{\left(2+2 K^{2}\right) \pi^{2}}{2 \cdot 4 \cdot n^{2} K^{2}} \\
+& R=\frac{\left(K^{2}+1\right) \pi^{3}}{8 n^{3} K^{3}}=\frac{\left(6+6 K^{2}\right) \pi^{3}}{2 \cdot 4 \cdot 6 n^{3} K^{3}} \\
+& S=\frac{\left(K^{4}+4 K^{2}+3\right) \pi^{4}}{48 n^{4} K^{4}}=\frac{\left(24+32 K^{2}+8 K^{4}\right) \pi^{4}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot n^{4} K^{4}} \\
+& T=\frac{\left(2 K^{4}+5 K^{2}+3\right) \pi^{5}}{96 n^{5} K^{5}}=\frac{\left(120+200 K^{2}+80 K^{4}\right) \pi^{5}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdot n^{5} K^{5}} \\
+& V=\frac{\left(2 K^{6}+17 K^{4}+30 K^{2}+15\right) \pi^{6}}{960 n^{6} K^{6}}=\frac{\left(720+1440 K^{2}+816 K^{4}+96 K^{6}\right) \pi^{6}}{2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdot 12 \cdot n^{6} K^{6}}
+\end{aligned}
+\]
+\section{$\S 175$}
+
+对 $\S 172, \S 174$ 中一般形状的级数, 令 $m$ 和 $n$ 为特殊的值, 可以得到一些有价值的结 果. 置 $m=1, n=2$, 则 $K=\tan \frac{\pi}{4}=\tan 45^{\circ}=1$. 这时两节的结果相同
+\[
+\begin{aligned}
+& \frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}-\cdots \\
+& \frac{\pi^{2}}{8}=1+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{9^{2}}+\cdots
+\end{aligned}
+\]
+\[
+\begin{gathered}
+\frac{\pi^{2}}{32}=1-\frac{1}{3^{3}}+\frac{1}{5^{3}}-\frac{1}{7^{3}}+\frac{1}{9^{3}}-\cdots \\
+\frac{\pi^{4}}{96}=1+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\frac{1}{7^{4}}+\frac{1}{9^{4}}+\cdots \\
+\frac{5 \pi^{5}}{1536}=1-\frac{1}{3^{5}}+\frac{1}{5^{5}}-\frac{1}{7^{5}}+\frac{1}{9^{5}}-\cdots \\
+\frac{\pi^{6}}{960}=1+\frac{1}{3^{6}}+\frac{1}{5^{6}}+\frac{1}{7^{6}}+\frac{1}{9^{6}}+\cdots
+\end{gathered}
+\]
+得到的这些级数中:第一个, $\S 140$ 中我们见过; 指数为偶数的, $\S 169$ 中我们讨论过; 其 余, 指数为奇数的, 即
+\[
+1-\frac{1}{3^{2 n+1}}+\frac{1}{5^{2 n+1}}-\frac{1}{7^{2 n+1}}+\frac{1}{9^{2 n+1}}-\cdots
+\]
+这里我们得到了它们的用 $\pi$ 表示的和.
+
+\section{$\S 176$}
+\[
+\begin{aligned}
+& \text { 令 } m=1, n=3 \text {, 则 } K=\tan \frac{\pi}{6}=\tan 30^{\circ}=\frac{1}{\sqrt{3}} \text {, 这时 } \$ 172 \text { 的级数成为 } \\
+& \frac{\pi}{6 \sqrt{3}}=\frac{1}{2}-\frac{1}{4}+\frac{1}{8}-\frac{1}{10}+\frac{1}{14}-\frac{1}{16}+\cdots \\
+& \frac{\pi^{2}}{27}=\frac{1}{2^{2}}+\frac{1}{4^{2}}+\frac{1}{8^{2}}+\frac{1}{10^{2}}+\frac{1}{14^{2}}+\frac{1}{16^{2}}+\cdots \\
+& \frac{\pi^{3}}{162 \sqrt{3}}=\frac{1}{2^{3}}-\frac{1}{4^{3}}+\frac{1}{8^{3}}-\frac{1}{10^{3}}+\frac{1}{14^{3}}-\frac{1}{16^{3}}+\cdots
+\end{aligned}
+\]
+或
+\[
+\begin{aligned}
+& \frac{\pi}{3 \sqrt{3}}=1-\frac{1}{2}+\frac{1}{4}-\frac{1}{5}+\frac{1}{7}-\frac{1}{8}+\cdots \\
+& \frac{4 \pi^{2}}{27}=1+\frac{1}{2^{2}}+\frac{1}{4^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{8^{2}}+\cdots \\
+& \frac{4 \pi^{3}}{81 \sqrt{3}}=1-\frac{1}{2^{3}}+\frac{1}{4^{3}}-\frac{1}{5^{3}}+\frac{1}{7^{3}}-\frac{1}{8^{3}}+\cdots
+\end{aligned}
+\]
+它们都不含被 $\frac{1}{3}$ 除得尽的项. 我们可以求出含有这种项的级数, 至少可以求出偶指数的 这种级数. 做法是: 由
+\[
+\frac{\pi^{2}}{6}=1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{4^{2}}+\frac{1}{5^{2}}+\cdots
+\]
+\[
+ \qquad \frac{\pi^{2}}{6 \cdot 9}=\frac{1}{3^{2}}+\frac{1}{6^{2}}+\frac{1}{9^{2}}+\frac{1}{12^{2}}+\frac{1}{15^{2}}+\cdots
+\]
+它的项都被 $\frac{1}{3}$ 除得尽, 从原来的减去得到的这一个, 得
+\[
+\frac{8 \pi^{2}}{54}=\frac{4 \pi^{2}}{27}=1+\frac{1}{2^{2}}+\frac{1}{4^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\cdots
+\]
+是原来的一个,也不包含被 $\frac{1}{3}$ 除得尽的项.
+
+\section{$\S 177$}
+
+令 $m=1, n=3, K=\frac{1}{\sqrt{3}}$, 那么从$\S 174$我们得到 
+\[
+\begin{gathered}
+\frac{\pi}{2 \sqrt{3}}=1-\frac{1}{5}+\frac{1}{7}-\frac{1}{11}+\frac{1}{13}-\frac{1}{17}+\cdots \\
+\frac{\pi^{2}}{9}=1+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{11^{2}}+\frac{1}{13^{2}}+\frac{1}{17^{2}}+\cdots \\
+\frac{\pi^{3}}{18 \sqrt{3}}=1-\frac{1}{5^{3}}+\frac{1}{7^{3}}-\frac{1}{11^{3}}+\frac{1}{13^{3}}-\frac{1}{17^{3}}+\cdots
+\end{gathered}
+\]
+分母为被 3 除不尽的奇数的幂. 分母为被 3 除得尽的数的幂, 这种级数可以从已知级数求 得, 由
+\[
+\frac{\pi^{2}}{8}=1+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{9^{2}}+\cdots
+\]
+得
+\[
+\frac{\pi^{2}}{8 \cdot 9}=\frac{1}{3^{2}}+\frac{1}{9^{2}}+\frac{1}{15^{2}}+\frac{1}{21^{2}}+\frac{1}{27^{2}}+\cdots
+\]
+这个级数中, 分母都是被 3 除得尽的奇数的幂, 从上面的级数减它得到的级数
+\[
+\frac{\pi^{2}}{9}=1+\frac{1}{5^{2}}+\frac{1}{7^{2}}+\frac{1}{11^{2}}+\frac{1}{13^{2}}+\cdots
+\]
+其分母都是被 3 除不尽的奇数的幂.
+
+\section{$\S 178$}
+
+$\S 172$ 的级数与 $\S 174$ 的级数相加相减, 我们得到另外一些有价值的级数. 相加, 得
+\[
+\frac{K \pi}{2 n}+\frac{\pi}{2 n K}=\frac{1}{m}+\frac{1}{n-m}-\frac{1}{n+m}-\frac{1}{2 n-m}+\frac{1}{2 n+m}+\cdots=\frac{\left(K^{2}+1\right) \pi}{2 n K}
+\]
+由 
+\[
+K=\tan \frac{m \pi}{2 n}=\frac{\sin \frac{m \pi}{2 n}}{\cos \frac{m \pi}{2 n}}
+\]
+得
+\[
+1+K^{2}=\frac{1}{\cos ^{2}\left(\frac{m \pi}{2 n}\right)}
+\]
+从而
+\[
+\frac{2 K}{1+K^{2}}=2 \sin \frac{m \pi}{2 n} \cos \frac{m \pi}{2 n}=\sin \frac{m \pi}{n}
+\]
+代入, 得
+\[
+\frac{\pi}{n \sin \frac{m \pi}{n}}=\frac{1}{m}+\frac{1}{n-m}-\frac{1}{n+m}-\frac{1}{2 n-m}+\frac{1}{2 n+m}+\frac{1}{3 n-m}-\frac{1}{3 n+m}-\cdots
+\]
+类似地 , 相减, 得
+\[
+\begin{aligned}
+\frac{\pi}{2 n K}-\frac{K \pi}{2 n}= & \frac{\left(1-K^{2}\right) \pi}{2 n K}=\frac{1}{m}-\frac{1}{n-m}+\frac{1}{n+m}-\frac{1}{2 n-m}+\frac{1}{2 n+m}- \\
+& \frac{1}{3 n-m}+\frac{1}{3 n+m}-\cdots
+\end{aligned}
+\]
+由
+\[
+\frac{2 K}{1-K^{2}}=\tan 2 \frac{m \pi}{2 n}=\tan \frac{m \pi}{n}=\frac{\sin \frac{m \pi}{n}}{\cos \frac{m \pi}{n}}
+\]
+得
+\[
+\frac{\pi \cos \frac{m \pi}{n}}{n \sin \frac{m \pi}{n}}=\frac{1}{m}-\frac{1}{n-m}+\frac{1}{n+m}-\frac{1}{2 n-m}+\frac{1}{2 n+m}-\frac{1}{3 n-m}+\cdots
+\]
+用这种方法推出的二次和更高次级数, 留给微分学, 在那里推导起来更容易.
+
+\section{$\S 179$}
+
+我们已经考虑了 $m=1, n=2$ 或 3 的情形. 现在我们让 $m, n$ 取另外的几种值. $m=1, n=4$ 时
+\[
+\sin \frac{m \pi}{n}=\sin \frac{\pi}{4}=\frac{1}{\sqrt{2}}, \cos \frac{m \pi}{n}=\cos \frac{\pi}{4}=\frac{1}{\sqrt{2}}
+\]
+我们得到
+\[
+\frac{\pi}{2 \sqrt{2}}=1+\frac{1}{3}-\frac{1}{5}-\frac{1}{7}+\frac{1}{9}+\frac{1}{11}-\frac{1}{13}-\frac{1}{15}+\cdots
+\]
+%%07p121-140
+和
+\[
+\begin{aligned}
+& \frac{\pi}{4}=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}-\frac{1}{11}+\frac{1}{13}-\frac{1}{15}+\cdots \\
+& m=1, n=8 \text { 时 } \\
+& \frac{m \pi}{n}=\frac{\pi}{8}, \sin \frac{\pi}{8}=\sqrt{\frac{1}{2}-\frac{1}{2 \sqrt{2}}}, \cos \frac{\pi}{8}=\sqrt{\frac{1}{2}+\frac{1}{2 \sqrt{2}}}, \frac{\cos \frac{\pi}{8}}{\sin \frac{\pi}{8}}=1+\sqrt{2}
+\end{aligned}
+\]
+由此我们得到
+\[
+\begin{aligned}
+& \frac{\pi}{4 \sqrt{2-\sqrt{2}}}=1+\frac{1}{7}-\frac{1}{9}-\frac{1}{15}+\frac{1}{17}+\frac{1}{23}-\cdots \\
+& \frac{\pi}{8(\sqrt{2}-1)}=1-\frac{1}{7}+\frac{1}{9}-\frac{1}{15}+\frac{1}{17}-\frac{1}{23}+\cdots \\
+& m=3, n=8 \text { 时 } \\
+& \frac{m \pi}{n}=\frac{3 \pi}{8}, \sin \frac{3 \pi}{8}=\sqrt{\frac{1}{2}+\frac{1}{2 \sqrt{2}}}, \cos \frac{3 \pi}{8}=\sqrt{\frac{1}{2}-\frac{1}{2 \sqrt{2}}}, \frac{\cos \frac{3 \pi}{8}}{\sin \frac{3 \pi}{8}}=\frac{1}{\sqrt{2}+1}
+\end{aligned}
+\]
+我们得到
+\[
+\begin{aligned}
+& \frac{\pi}{4 \sqrt{2+\sqrt{2}}}=\frac{1}{3}+\frac{1}{5}-\frac{1}{11}-\frac{1}{13}+\frac{1}{19}+\frac{1}{21}-\cdots \\
+& \frac{\pi}{8(\sqrt{2}+1)}=\frac{1}{3}-\frac{1}{5}+\frac{1}{11}-\frac{1}{13}+\frac{1}{19}-\frac{1}{21}+\cdots
+\end{aligned}
+\]
+\section{$\S 180$}
+
+上面的级数相结合, 我们得到
+\[
+\begin{gathered}
+\frac{\pi \sqrt{2+\sqrt{2}}}{4}=1+\frac{1}{3}+\frac{1}{5}+\frac{1}{7}-\frac{1}{9}-\frac{1}{11}-\frac{1}{13}-\frac{1}{15}+\frac{1}{17}+\frac{1}{19}+\cdots \\
+\frac{\pi \sqrt{2-\sqrt{2}}}{4}=1-\frac{1}{3}-\frac{1}{5}+\frac{1}{7}-\frac{1}{9}+\frac{1}{11}+\frac{1}{13}-\frac{1}{15}+\frac{1}{17}+\frac{1}{19}+\cdots \\
+\frac{\pi(\sqrt{4+2 \sqrt{2}}+\sqrt{2}-1)}{8}=1+\frac{1}{3}-\frac{1}{5}+\frac{1}{7}-\frac{1}{9}+\frac{1}{11}-\frac{1}{13}-\frac{1}{15}+\frac{1}{17}+\frac{1}{19}+\cdots \\
+\frac{\pi(\sqrt{4+2 \sqrt{2}}-\sqrt{2}+1)}{8}=1-\frac{1}{3}+\frac{1}{5}+\frac{1}{7}-\frac{1}{9}-\frac{1}{11}+\frac{1}{13}-\frac{1}{15}+\frac{1}{17}-\frac{1}{19}+\cdots \\
+\frac{\pi(\sqrt{2}+1+\sqrt{4-2 \sqrt{2}})}{8}=1+\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}-\frac{1}{11}-\frac{1}{13}-\frac{1}{15}+\frac{1}{17}+\frac{1}{19}+\cdots
+\end{gathered}
+\]
+$\frac{\pi(\sqrt{2}+1-\sqrt{4-2 \sqrt{2}})}{8}=1-\frac{1}{3}-\frac{1}{5}-\frac{1}{7}+\frac{1}{9}+\frac{1}{11}+\frac{1}{13}-\frac{1}{15}+\frac{1}{17}-\frac{1}{19}-\cdots$
+
+用类似的方法可以继续对 $n=16, m=1,3,5$ 或 7 的情形进行结合, 得到的级数仍然 由 $1, \frac{1}{3}, \frac{1}{5}, \frac{1}{7}, \frac{1}{9}, \cdots$ 组成,但正负号规律完全不同.
+
+\section{$\S 181$}
+
+将 $\S 178$ 中的级数, 从第二项起每两项相结合, 得
+\[
+\frac{\pi}{n \sin \frac{m \pi}{n}}=\frac{1}{m}+\frac{2 m}{n^{2}-m^{2}}-\frac{2 m}{4 n^{2}-m^{2}}+\frac{2 m}{9 n^{2}-m^{2}}-\frac{2 m}{16 n^{2}-m^{2}}+\cdots
+\]
+从而
+\[
+\frac{1}{n^{2}-m^{2}}-\frac{1}{4 n^{2}-m^{2}}+\frac{1}{9 n^{2}-m^{2}}-\cdots=\frac{x}{2 m n \sin \frac{m \pi}{n}}-\frac{1}{2 m^{2}}
+\]
+从另一个级数是
+\[
+\frac{\pi}{n \tan \frac{m \pi}{n}}=\frac{1}{m}-\frac{2 m}{n^{2}-m^{2}}-\frac{2 m}{4 n^{2}-m^{2}}-\frac{2 m}{9 n^{2}-m^{2}}-\cdots
+\]
+从而
+\[
+\frac{1}{n^{2}-m^{2}}+\frac{1}{4 n^{2}-m^{2}}+\frac{1}{9 n^{2}-m^{2}}+\cdots=\frac{1}{2 m^{2}}-\frac{\pi}{2 m n \tan \frac{m \pi}{n}}
+\]
+得到的这两个级数相加, 得
+\[
+\frac{1}{n^{2}-m^{2}}+\frac{1}{9 n^{2}-m^{2}}+\frac{1}{25 n^{2}-m^{2}}+\cdots=\frac{\pi \tan \frac{m \pi}{2 n}}{4 m n}
+\]
+我们得到了三个级数, 在第三个中令 $n=1$, 令 $m$ 等于任何一个非零偶数 $2 K(K \neq 0)$, 则由 $\tan K \pi=0$, 我们恒有
+\[
+\frac{1}{1-4 K^{2}}+\frac{1}{9-4 K^{2}}+\frac{1}{25-4 K^{2}}+\frac{1}{49-4 K^{2}}+\cdots=0
+\]
+在第二个中令 $n=2, m$ 等于任何一个奇数 $2 K+1$, 那么由 $\frac{1}{\tan \frac{m \pi}{n}}=0$, 我们得到 $\frac{1}{4-(2 K+1)^{2}}+\frac{1}{16-(2 K+1)^{2}}+\frac{1}{36-(2 K+1)^{2}}+\cdots=\frac{1}{2(2 K+1)^{2}}$ 
+
+\section{$\S 182$}
+
+乘上节求得的前两个级数以 $n^{2}$, 并令 $\frac{m}{n}=P$, 我们得到表达式
+\[
+\begin{aligned}
+& \frac{1}{1-p^{2}}-\frac{1}{4-p^{2}}+\frac{1}{9-p^{2}}-\frac{1}{16-p^{2}}+\cdots=\frac{\pi}{2 p \sin p \pi}-\frac{1}{2 p^{2}} \\
+& \frac{1}{1-p^{2}}+\frac{1}{4-p^{2}}+\frac{1}{9-p^{2}}+\frac{1}{16-p^{2}}+\cdots=\frac{1}{2 p^{2}}-\frac{\pi}{2 p \tan p \pi}
+\end{aligned}
+\]
+令 $p^{2}=a$, 得
+\[
+\begin{aligned}
+& \frac{1}{1-a}-\frac{1}{4-a}+\frac{1}{9-a}-\frac{1}{16-a}+\cdots=\frac{\pi \sqrt{a}}{2 a \sin \pi \sqrt{a}}-\frac{1}{2 a} \\
+& \frac{1}{1-a}+\frac{1}{4-a}+\frac{1}{9-a}+\frac{1}{16-a}+\cdots=\frac{1}{2 a}-\frac{\pi \sqrt{a}}{2 a \tan \pi \sqrt{a}}
+\end{aligned}
+\]
+只要 $a$ 非负, 且不是整数的平方, 那么这两个级数的和, 就都可以用圆 (即 $\pi-$ 译者注) 表示.
+
+\section{$\S 183$}
+
+$a$ 为负数时, 可以用我们讨论过的化虚指数量为弧的正弦和余弦的方法, 求前节级 数的和. 事实上, 由于
+\[
+\begin{aligned}
+& \mathrm{e}^{x \sqrt{-1}}=\cos x+\sqrt{-1} \sin x \\
+& \mathrm{e}^{-x \sqrt{-1}}=\cos x-\sqrt{-1} \sin x
+\end{aligned}
+\]
+将 $x$ 换为 $y \sqrt{-1}$, 得
+\[
+\begin{aligned}
+& \cos y \sqrt{-1}=\frac{\mathrm{e}^{-y}+\mathrm{e}^{y}}{2} \\
+& \sin y \sqrt{-1}=\frac{\mathrm{e}^{-y}-\mathrm{e}^{y}}{2 \sqrt{-1}}
+\end{aligned}
+\]
+如果 $a=-b, y=\pi \sqrt{b}$, 则
+\[
+\begin{aligned}
+& \cos \pi \sqrt{-b}=\frac{\mathrm{e}^{-\pi / b}+\mathrm{e}^{\pi / b}}{2} \\
+& \sin \pi \sqrt{-b}=\frac{\mathrm{e}^{-\pi / b}-\mathrm{e}^{\pi / b}}{2 \sqrt{-1}}
+\end{aligned}
+\]
+从而
+\[
+\tan \pi \sqrt{-b}=\frac{\mathrm{e}^{-\pi / b}-\mathrm{e}^{\pi / b}}{\left(\mathrm{e}^{-\pi / b}+\mathrm{e}^{\pi / b}\right) \sqrt{-1}}
+\]
+由此得 利用所得结果, 我们得到
+\[
+\begin{gathered}
+\frac{\pi \sqrt{-b}}{\sin \pi \sqrt{-b}}=\frac{-2 \pi \sqrt{b}}{\mathrm{e}^{-\pi / b}-\mathrm{e}^{\pi / b}} \\
+\frac{\pi \sqrt{-b}}{\tan \pi \sqrt{-b}}=\frac{-\pi \sqrt{b}\left(\mathrm{e}^{-\pi / b}+\mathrm{e}^{\pi / b}\right)}{e^{-\pi / b}-\mathrm{e}^{\pi / b}}
+\end{gathered}
+\]
+\[
+\begin{gathered}
+\frac{1}{1+b}-\frac{1}{4+b}+\frac{1}{9+b}-\frac{1}{16+b}+\cdots=\frac{1}{2 b}-\frac{\pi \sqrt{b}}{\left(\mathrm{e}^{-\pi / b}-\mathrm{e}^{\pi / b}\right) b} \\
+\frac{1}{1+b}+\frac{1}{4+b}+\frac{1}{9+b}+\frac{1}{16+b}+\cdots=\frac{\left(\mathrm{e}^{-\pi / b}+\mathrm{e}^{\pi / b}\right) \pi \sqrt{b}}{2\left(\mathrm{e}^{-\pi / b}-\mathrm{e}^{\pi / b}\right)}-\frac{1}{2 b}
+\end{gathered}
+\]
+这里的级数, 可以从 §162 用本章的方法导出, 但我更喜欢现在这样, 因为它还告诉 我们,如何化虚数弧的正弦和余弦为实指数量. 
+

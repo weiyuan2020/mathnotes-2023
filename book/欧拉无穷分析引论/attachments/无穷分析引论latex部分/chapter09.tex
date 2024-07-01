@@ -1,0 +1,869 @@
+\chapter{第九章 三项式因式}
+
+\section{$\S 143$}
+
+我们讲了用解方程的方法求整函数的线性因式. 也即讲了求整函数
+\[
+\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\varepsilon z^{4}+\cdots
+\]
+的状如 $p-q z$ 的因式的方法, 当 $p-q z$ 是函数
+\[
+\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\varepsilon z^{4}+\cdots
+\]
+的因式时, 令 $z=\frac{p}{q}$, 则 $p-q z=0$, 从而整个函数为零. 也即, 如果 $p-q z$ 是整函数
+\[
+\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\varepsilon z^{4}+\cdots
+\]
+的因式,则
+\[
+\alpha+\frac{\beta p}{q}+\frac{\gamma p^{2}}{q^{2}}+\frac{\delta p^{3}}{q^{3}}+\frac{\varepsilon p^{4}}{q^{4}}+\cdots=0
+\]
+反之,这个方程的所有的根, 给出整函数
+\[
+\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\varepsilon z^{4}+\cdots
+\]
+的所有因式 $p-q z$. 显然, 线性因式的个数, 由 $z$ 的最高幂的次数决定.
+
+\section{$\S 144$}
+
+但上述方法不大适用于求虚线性因式. 因而本章我们讲一种常常可以用来求虚线性 因式的特殊方法. 由于虚线性因式是成对出现的,每对乘积是实的, 所以我们先考察其一 次因式是虚的那种二次因式, 即状如
+\[
+p-q z+r z^{2}
+\]
+的实二次因式. 如果函数 $\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\varepsilon z^{4}+\cdots$ 的因式, 都是这种类型的二次三项 式 $p-q z+r z^{2}$, 那么它的根就都是虚的.
+
+\section{$\S 145$}
+
+如果 $4 p r>q^{2}$, 或 
+\[
+\frac{q}{2 \sqrt{p r}}<1
+\]
+则三项式 $p-q z+r z^{2}$ 的因式是虚的. 因为角的正弦和余弦都是小于 1 的, 所以如果 $\frac{q}{2 \sqrt{p r}}$ 等于某个角的正弦或余弦, 则三项式 $p-q z+r z^{2}$ 的两个因式都是虚的. 设
+\[
+\frac{q}{2 \sqrt{p r}}=\cos \varphi \text { 或 } q=2 \sqrt{p r} \cos \varphi
+\]
+则三项式 $p-q z+r z^{2}$ 的因式是虚的, 为免得无理性带来麻烦, 我们假定三项式的形状为 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$, 它的虚因式为
+\[
+q z-p(\cos \varphi+\sqrt{-1} \sin \varphi) \text { 和 } q z-p(\cos \varphi-\sqrt{-1} \sin \varphi)
+\]
+显然, 如果 $\cos \varphi=\pm 1$, 则 $\sin \varphi=0$, 两个因式相等, 都是实的.
+
+\section{$\S 146$}
+
+对整函数 $\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\cdots$, 如果求出了其因式 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 中的字母 $p, q$ 和角度 $\varphi$, 也就等于求出了它的虚线性因式. 这时虚线性因式为
+\[
+q z-p(\cos \varphi+\sqrt{-1} \sin \varphi) \text { 和 } q z-p(\cos \varphi-\sqrt{-1} \sin \varphi)
+\]
+因此将
+\[
+\begin{aligned}
+& z=\frac{p}{q}(\cos \varphi+\sqrt{-1} \sin \varphi) \\
+& z=\frac{p}{q}(\cos \varphi-\sqrt{-1} \sin \varphi)
+\end{aligned}
+\]
+代入所给函数, 都得零. 每做一次这样的代入, 我们都得到关于分数 $\frac{p}{q}$ 和弧 $\varphi$ 的两个方 程.
+
+\section{$\S 147$}
+
+这种代入, 看上去可能会认为它太麻烦, 但利用前一章所得结果, 做起来相当容易. 事实上, 将 $z$ 的上述两个表达式代入 $z$ 的幂, 利用前章公式
+\[
+(\cos \varphi \pm \sqrt{-1} \sin \varphi)^{n}=\cos n \varphi \pm \sqrt{-1} \sin n \varphi
+\]
+我们得到下面的公式
+
+将第一式代入, 得
+
+$z=\frac{p}{q}(\cos \varphi+\sqrt{-1} \sin \varphi)$
+
+将第二式代入, 得
+
+$z^{2}=\frac{p^{2}}{q^{2}}(\cos 2 \varphi+\sqrt{-1} \sin 2 \varphi)$
+\[
+\begin{aligned}
+& z=\frac{p}{q}(\cos \varphi-\sqrt{-1} \sin \varphi) \\
+& z^{2}=\frac{p^{2}}{q^{2}}(\cos 2 \varphi-\sqrt{-1} \sin 2 \varphi)
+\end{aligned}
+\]
+\[
+\begin{aligned}
+z^{3} & =\frac{p^{3}}{q^{3}}(\cos 3 \varphi+\sqrt{-1} \sin 3 \varphi) & z^{3} & =\frac{p^{3}}{q^{3}}(\cos 3 \varphi-\sqrt{-1} \sin 3 \varphi) \\
+z^{4} & =\frac{p^{4}}{q^{4}}(\cos 4 \varphi+\sqrt{-1} \sin 4 \varphi) & z^{4} & =\frac{p^{4}}{q^{4}}(\cos 4 \varphi-\sqrt{-1} \sin 4 \varphi)
+\end{aligned}
+\]
+为简单起见, 记 $\frac{p}{q}=r$, 那么代入之后, 得到如下的两个方程
+\[
+\begin{aligned}
+& 0=\left\{\begin{array}{l}
+\alpha+\beta r \cos \varphi+\gamma r^{2} \cos 2 \varphi+\delta r^{3} \cos 3 \varphi+\cdots+ \\
+\beta r \sqrt{-1} \sin \varphi+\gamma r^{2} \sqrt{-1} \sin 2 \varphi+\delta r^{3} \sqrt{-1} \sin 3 \varphi+\cdots
+\end{array}\right\} \\
+& 0=\left\{\begin{array}{l}
+\alpha+\beta r \cos \varphi+\gamma r^{2} \cos 2 \varphi+\delta r^{3} \cos 3 \varphi+\cdots- \\
+\beta r \sqrt{-1} \sin \varphi-\gamma r^{2} \sqrt{-1} \sin 2 \varphi-\delta r^{3} \sqrt{-1} \sin 3 \varphi-\cdots
+\end{array}\right\}
+\end{aligned}
+\]
+\section{$\S 148$}
+
+将这两个方程先相加, 再相减, 并在相减之后除以 $2 \sqrt{-1}$, 这样我们得到两个实方程
+\[
+\begin{gathered}
+0=\alpha+\beta r \cos \varphi+\gamma r^{2} \cos 2 \varphi+\delta r^{3} \cos 3 \varphi+\cdots \\
+0=\beta r \sin \varphi+\gamma r^{2} \sin 2 \varphi+\delta r^{3} \sin 3 \varphi+\cdots
+\end{gathered}
+\]
+给了整函数
+\[
+\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\varepsilon z^{4}+\cdots
+\]
+我们立刻就可以写出这两个实方程, 这只需先置
+\[
+z^{n}=r^{n} \cos n \varphi
+\]
+再置
+\[
+z^{n}=r^{n} \sin n \varphi
+\]
+因为 $\sin 0 \varphi=0, \cos 0 \varphi=1$, 所以 $z^{0}$ 在第一个方程中为 1 , 在第二个方程中为 0 . 如果我们 能够从这两个方程求出末知数 $r$ 和 $\varphi$, 那么由于 $r=\frac{p}{q}$, 我们就可以得到所给函数的三项 式因式 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$. 从而也就得到了虚线性因式.
+
+\section{$\S 149$}
+
+分别乘上节第一、二两个方程以 $\sin m \varphi$ 和 $\cos m \varphi$, 积相加相减, 得
+\[
+\begin{aligned}
+0= & \alpha \sin m \varphi+\beta r \sin (m+1) \varphi+\gamma r^{2} \sin (m+2) \varphi+ \\
+& \delta r^{3} \sin (m+3) \varphi+\cdots \\
+0= & \alpha \sin m \varphi+\beta r \sin (m-1) \varphi+\gamma r^{2} \sin (m-2) \varphi+ \\
+& \delta r^{3} \sin (m-3) \varphi+\cdots
+\end{aligned}
+\]
+如果颠倒一下, 改为乘 $\cos m \varphi$ 和 $\sin m \varphi$, 则加减之后得
+\[
+0=\alpha \cos m \varphi+\beta r \cos (m-1) \varphi+\gamma r^{2} \cos (m-2) \varphi+
+\]
+ $\delta r^{3} \cos (m-3) \varphi+\cdots 0=\alpha \cos m \varphi+\beta r \cos (m+1) \varphi+\gamma r^{2} \cos (m+2) \varphi+ \delta r^{3} \cos (m+3) \varphi+\cdots$
+
+这四个方程中任何两个都可以决定末知数 $r$ 和 $\varphi$. 因为这样的两个方程常常有几组不同 的解, 我们也就得到同样多不同的三项式因式, 事实上是所求三项式因式全体.
+
+\section{$\S 150$}
+
+为了进一步弄清这些公式的应用, 我们来考察几种较为常见的函数的三项式因式. 所得结果可供需要时套用. 先求函数
+\[
+a^{n}+z^{n}
+\]
+的状如
+\[
+p^{2}-2 p q z \cos \varphi+q^{2} z^{2}
+\]
+的三项式因式. 令 $r=\frac{p}{q}$, 我们得到方程
+\[
+0=a^{n}+r^{n} \cos n \varphi \text { 和 } 0=r^{n} \sin n \varphi
+\]
+从后一个方程得
+\[
+\sin n \varphi=0
+\]
+从而 $n \varphi$ 等于 $(2 K+1) \pi$ 或 $2 K \pi, K$ 为整数, 我们把这两种情况分开, 是因为它们的余弦不 同 $\cos (2 K+1) \pi=-1, \cos 2 K \pi=+1$. 显然应取第一种情形
+\[
+n \varphi=(2 K+1) \pi
+\]
+因为它给出 $\cos n \varphi=-1$, 从而
+\[
+0=a^{n}-r^{n}
+\]
+进而
+\[
+r=a=\frac{p}{q}
+\]
+这样
+\[
+p=a, q=1, \varphi=\frac{(2 K+1) \pi}{n}
+\]
+从而函数 $a^{n}+z^{n}$ 的因式为
+\[
+a^{2}-2 a z \cos \frac{(2 K+1) \pi}{n}+z^{2}
+\]
+$K$ 可以为任何整数, 也即可以得到很多因式. 但由 $\cos (2 \pi \pm \varphi)=\cos \varphi$ 知, $2 K+1$ 增大到 大于 $n$ 时,因式开始重复, 所以因式的个数可以很多, 但不是无穷. 这一点从下面的例子 可以看得更清楚. 再一点, 如果 $n$ 为奇数, 则当 $2 K+1=n$ 时得到完全平方 $a^{2}+2 a z+z^{2}$. 但完全平方 $(a+z)^{2}$ 不是函数 $a^{n}+z^{n}$ 的因式. 这是因为 (根据 $\S 148$ ) 由 $(a+z)^{2}$ 我们只 能得到一个方程.
+
+例 1 为看得更清楚, 我们列出几种情形, 并按 $n$ 的奇偶分为两类: 
+\[
+\begin{array}{c|c}
+n=1 \text { 时, 函数为 } & n=2 \text { 时, 函数为 } \\
+a+z & a^{2}+z^{2}
+\end{array}
+\]
+因式为
+
+因式为
+\[
+a^{2}+z^{2}
+\]
+$a+z$
+
+$n=4$ 时, 函数为
+
+$n=3$ 时, 函数为
+
+$a^{3}+z^{3}$
+
+因式为
+
+$a^{2}-2 a z \cos \frac{\pi}{3}+z^{2}$
+
+$a+z$
+
+$n=5$ 时, 函数为
+
+$a^{5}+z^{5}$
+
+因式为
+
+$a^{2}-2 a z \cos \frac{\pi}{5}+z^{2}$
+
+$a^{2}-2 a z \cos \frac{3 \pi}{5}+z^{2}$
+
+$a+z$ $a^{4}+z^{4}$
+
+因式为
+
+$a^{2}-2 a z \cos \frac{\pi}{4}+z^{2}$
+
+$a^{2}-2 a z \cos \frac{3 \pi}{4}+z^{2}$
+
+$n=6$ 时, 函数为
+
+$a^{6}+z^{6}$
+
+因式为
+
+$a^{2}-2 a z \cos \frac{\pi}{6}+z^{2}$
+
+$a^{2}-2 a z \cos \frac{3 \pi}{6}+z^{2}$
+
+$a^{2}-2 a z \cos \frac{5 \pi}{6}+z^{2}$
+
+从这些例子我们看到将 $2 K+1$ 换为不大于指数 $n$ 的各个奇数, 就得到所有的因式. 得到 完全平方时,因式为这完全平方的方根.
+
+\section{$\S 151$}
+
+在函数
+\[
+a^{n}-z^{n}
+\]
+的状如
+\[
+p^{2}-2 p q z \cos \varphi+q^{2} z^{2}
+\]
+的三项式因式中, 令 $r=\frac{p}{q}$, 则
+\[
+0=a^{n}-r^{n} \cos n \varphi, 0=r^{n} \sin n \varphi
+\]
+我们又得到
+\[
+\sin n \varphi=0
+\]
+即 $n \varphi=(2 K+1) \pi$ 或 $n \varphi=2 K \pi$. 这里应该取第二个值,使 $\cos n \varphi=+1$, 从而得到
+\[
+0=a^{n}-r^{n}, r=\frac{p}{q}=a
+\]
+这样一来, 我们就有 
+\[
+p=a, q=1, \varphi=\frac{2 K \pi}{n}
+\]
+进而得到所给函数的三项式因式为
+\[
+a^{2}-2 a z \cos \frac{2 K \pi}{n}+z^{2}
+\]
+令该式中的 $2 K$ 取不大于 $n$ 的各个偶数, 我们就得到所有因式. 关于完全平方因式, 我们 照上节的办法处理. 首先 $K=0$ 时得 $a^{2}-2 a z+z^{2}$, 因此得到方根 $a-z$. 类似地, 如果 $n$ 是 偶数 $2 K=n$, 则我们得到 $a^{2}+2 a z+z^{2}$, 从而 $a+z$ 是 $a^{n}-z^{n}$ 的因式.
+
+例 2 跟前节的例一样,按数 $n$ 的奇偶分为两类:
+
+\begin{tabular}{c|c}
+\hline$n=1$ 时, 函数为 & $n=2$ 时, 函数为 \\
+$a-z$ & $a^{2}-z^{2}$ \\
+因式为 & 因式为 \\
+$a-z$ & $a-z$ \\
+& $a+z$ \\
+$n=3$ 时,函数为 & $n=4$ 时,函数为 \\
+$a^{3}-z^{3}$ & $a^{4}-z^{4}$ \\
+因式为 & 因式为 \\
+$a-z$ & $a-z$ \\
+$a^{2}-2 a z \cos \frac{2 \pi}{3}+z^{2}$ & $a^{2}-2 a z \cos \frac{2 \pi}{4}+z^{2}$ \\
+& $a+z$ \\
+$n=5$ 时, 函数为 & $n=6$ 时, 函数为 \\
+$a^{5}-z^{5}$ & $a^{6}-z^{6}$ \\
+因式为 & 因式为 \\
+$a-z$ & $a-z$ \\
+$a^{2}-2 a z \cos \frac{2 \pi}{5}+z^{2}$ & $a^{2}-2 a z \cos \frac{2 \pi}{6}+z^{2}$ \\
+$a^{2}-2 a z \cos \frac{4 \pi}{5}+z^{2}$ & $a^{2}-2 a z \cos \frac{4 \pi}{6}+z^{2}$ \\
+& $a+z$ \\
+\hline
+\end{tabular}
+
+\section{$\S 152$}
+
+我们说过,每一个整函数都可以表示成实线性和实二次因式的乘积. 前面举的是一 些具体实现的例子. 也即我们能够把状如 $a^{n} \pm z^{n}$ 的任何次数的整函数分解成实线性和实 二次因式的乘积. 现在我们转向更复杂的状如 $\alpha+\beta z^{n}+\gamma z^{2 n}$ 的函数. 如果能把它分解成 状如 $\eta+\theta z^{n}$ 的两个实因式, 那就成了前两节讲过的情形. 下面讲另外情形的 $\alpha+\beta z^{n}+$ $\gamma z^{2 n}$ 的分解. 
+
+\section{$\S 153$}
+
+考虑不能分解成状如 $\eta+\theta z^{n}$ 的两个实因式乘积的函数
+\[
+a^{2 n}-2 a^{n} z^{n} \cos g+z^{2 n}
+\]
+假定它的一个实二次因式为
+\[
+p^{2}-2 p q z \cos \varphi+q^{2} z^{2}
+\]
+那么令 $r=\frac{p}{q}$, 我们得到两个方程
+\[
+0=a^{2 n}-2 a^{n} r^{n} \cos g \cos n \varphi+r^{2 n} \cos 2 n \varphi
+\]
+和
+\[
+0=-2 a^{n} r^{n} \cos g \sin n \varphi+r^{2 n} \sin 2 n \varphi
+\]
+用 $\S 149$ 的方法, 置 $m=2 n$, 将第一个方程换成
+\[
+0=a^{2} \sin 2 n \varphi-2 a^{n} r^{n} \cos g \sin n \varphi
+\]
+这个方程与第二个方程联立,得
+\[
+r=a
+\]
+从而
+\[
+\begin{gathered}
+\sin 2 n \varphi=2 \cos g \sin n \varphi \\
+\sin 2 n \varphi=2 \sin n \varphi \cos n \varphi
+\end{gathered}
+\]
+但
+
+两式比较,得
+\[
+\cos n \varphi=\cos g
+\]
+由 $\cos (2 K \pi \pm g)=\cos g$ 得
+\[
+n \varphi=2 K \pi \pm g, \varphi=\frac{2 K \pi \pm g}{n}
+\]
+这样我们就得到了, 所给函数的二次因式的一般形状为
+\[
+a^{2}-2 a z \cos \frac{2 K \pi \pm g}{n}+z^{2}
+\]
+让 $2 K$ 依次等于不大于 $n$ 的各个偶数,就得到所有的因式.
+
+例 3 为弄清因式的具体求法, 我们考虑 $n$ 为 $1,2,3,4, \cdots$ 的情形. 函数 $a^{2}-2 a z \cos g+z^{2}$ 的因式为
+\[
+a^{2}-2 a z \cos g+z^{2}
+\]
+函数 $a^{4}-2 a^{2} z^{2} \cos g+z^{4}$ 的因式为
+\[
+\begin{gathered}
+a^{2}-2 a z \cos \frac{g}{2}+z^{2} \\
+a^{2}-2 a z \cos \frac{2 \pi \pm g}{2}+z^{2} \text { 或 } a^{2}+2 a z \cos \frac{g}{2}+z^{2}
+\end{gathered}
+\]
+函数 $a^{6}-2 a^{3} z^{3} \cos g+z^{6}$ 的因式为
+\[
+\begin{gathered}
+a^{2}-2 a z \cos \frac{g}{3}+z^{2} \\
+a^{2}-2 a z \cos \frac{2 \pi-g}{3}+z^{2} \\
+a^{2}-2 a z \cos \frac{2 \pi+g}{3}+z^{2}
+\end{gathered}
+\]
+函数 $a^{8}-2 a^{4} z^{4} \cos g+z^{8}$ 的因式为
+\[
+\begin{gathered}
+a^{2}-2 a z \cos \frac{g}{4}+z^{2} \\
+a^{2}-2 a z \cos \frac{2 \pi-g}{4}+z^{2} \\
+a^{2}-2 a z \cos \frac{2 \pi+g}{4}+z^{2} \\
+a^{2}-2 a z \cos \frac{4 \pi \pm g}{4}+z^{2} \text { 或 } a^{2}+2 a z \cos \frac{g}{4}+z^{2}
+\end{gathered}
+\]
+函数 $a^{10}-2 a^{5} z^{5} \cos g+z^{10}$ 的因式为
+\[
+\begin{gathered}
+a^{2}-2 a z \cos \frac{g}{5}+z^{2} \\
+a^{2}-2 a z \cos \frac{2 \pi-g}{5}+z^{2} \\
+a^{2}-2 a z \cos \frac{2 \pi+g}{5}+z^{2} \\
+a^{2}-2 a z \cos \frac{4 \pi-g}{5}+z^{2} \\
+a^{2}-2 a z \cos \frac{4 \pi+g}{5}+z^{2}
+\end{gathered}
+\]
+这是证实整函数都可以分解成实的线性和二次因式的又一批例子.
+
+\section{$\S 154$}
+
+接下去我们考虑函数
+\[
+\alpha+\beta z^{n}+\gamma z^{2 n}+\delta z^{3 n}
+\]
+它必定有一个状如 $\eta+\theta z^{n}$ 的因式. 这个因式的实线性和实二次因式的求法, 我们已经讲 过; 它的另一个因式, 形状为 $\iota+\chi z^{n}+\lambda z^{2 n}$, 这个因式的实线性和实二次因式的求法是上 节的内容. 
+
+下面考虑函数
+\[
+\alpha+\beta z^{n}+\gamma z^{2 n}+\delta z^{3 n}+\varepsilon z^{4 n}
+\]
+它必定可分解成两个状如 $\eta+\theta z^{n}+\iota z^{2 n}$ 的因式, 这每一个我们又都可以把它分解成实线 性和实二次因式.
+
+再考虑函数
+\[
+\alpha+\beta z^{n}+\gamma z^{2 n}+\delta z^{3 n}+\varepsilon z^{4 n}+\zeta z^{5 n}
+\]
+它必定有一个状如 $\eta+\theta z^{n}$ 的因式, 它的另一个因式是我们刚考虑过的. 因而这个函数可 以分解成实线性和实二次因式. 如果对每个整函数都可以分解成实线性和实二次因式的 乘积这一点有过什么怀疑, 那么现在可以完全消除了.
+
+\section{$\S 155$}
+
+我们可以把分解因式推广到无穷级数上去,例如,我们有
+\[
+1+\frac{x}{1}+\frac{x^{2}}{1 \cdot 2}+\frac{x^{3}}{1 \cdot 2 \cdot 3}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots=\mathrm{e}^{x}
+\]
+还有
+\[
+\mathrm{e}^{z}=\left(1+\frac{x}{i}\right)^{i}
+\]
+其中 $i$ 是无穷大数. 相比较, 得到级数
+\[
+1+\frac{x}{1}+\frac{x^{2}}{1 \cdot 2}+\frac{x^{3}}{1 \cdot 2 \cdot 3}+\cdots
+\]
+有无穷多个线性因式, 它们都等于 $1+\frac{x}{i}$, 减去级数的第一项, 我们得到
+\[
+\frac{x}{1}+\frac{x^{2}}{1 \cdot 2}+\frac{x^{3}}{1 \cdot 2 \cdot 3}+\cdots=\mathrm{e}^{x}-1=\left(1+\frac{x}{i}\right)^{i}-1
+\]
+置
+\[
+a=1+\frac{x}{i}, n=i, z=1
+\]
+再与 $\S 151$ 的表达式相比较, 我们看到: 去掉第一项所得级数, 其因式的形状都为
+\[
+\left(1+\frac{x}{i}\right)^{2}-2\left(1+\frac{x}{i}\right) \cos \frac{2 K \pi}{i}+1
+\]
+让 $2 K$ 依次等于所有的偶数, 我们就得到去掉第一项所得级数的所有因式. 但是当 $2 K=0$ 时, 因为完全平方 $\frac{x^{2}}{i^{2}}$. 前面说过, 此时只取方根 $\frac{x}{i}$. 这就是说, $x$ 是 $\mathrm{e}^{x}-1$ 的因式, 这从级数 本身也是看得清楚的. 求其余的因式时, 我们应注意弧 $\frac{2 K \pi}{i}$ 是无穷小数. 根据 $\S 134$ 我们 有
+\[
+\cos \frac{2 K \pi}{i}=1-\frac{2 K^{2} \pi^{2}}{i^{2}}
+\]
+后面的项都因 $i$ 为无穷大而略去. 从而 $x$ 以外的因式的形状都为
+\[
+\frac{x^{2}}{i^{2}}+\frac{4 K^{2}}{i^{2}} \pi^{2}+\frac{4 K^{2} \pi^{2}}{i^{3}} x
+\]
+从而 $\mathrm{e}^{x}-1$ 以
+\[
+1+\frac{x}{i}+\frac{x^{2}}{4 K^{2} \pi^{2}}
+\]
+为因式. 由此得到, 表达式
+\[
+\mathrm{e}^{x}-1=x\left(1+\frac{x}{1 \cdot 2}+\frac{x^{2}}{1 \cdot 2 \cdot 3}+\frac{x^{3}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots\right)
+\]
+在 $x$ 之外的无穷多个因式为
+\[
+\left(1+\frac{x}{i}+\frac{x^{2}}{4 \pi^{2}}\right)\left(1+\frac{x}{i}+\frac{x^{2}}{16 \pi^{2}}\right)\left(1+\frac{x}{i}+\frac{x^{2}}{36 \pi^{2}}\right)\left(1+\frac{x}{i}+\frac{x^{2}}{64 \pi^{2}}\right) \cdots
+\]
+\section{$\S 156$}
+
+这每一个因式中都含有 $\frac{x}{i}$, 因式个数为 $\frac{1}{2} i$, 从而因式相乘产生一个为 $\frac{x}{2}$ 的项, 所以 $\frac{x}{i}$ 虽为无穷小, 但不能略去, 为方便计, 我们考虑 $\mathrm{e}^{x}-\mathrm{e}^{-x}$. 由
+\[
+\begin{aligned}
+\mathrm{e}^{x} & =1+\frac{x}{1}+\frac{x^{2}}{1 \cdot 2}+\frac{x^{3}}{1 \cdot 2 \cdot 3}+\cdots \\
+\mathrm{e}^{-x} & =1-\frac{x}{1}+\frac{x^{2}}{1 \cdot 2}+\frac{x^{3}}{1 \cdot 2 \cdot 3}+\cdots
+\end{aligned}
+\]
+得
+\[
+\mathrm{e}^{x}-\mathrm{e}^{-x}=\left(1+\frac{x}{i}\right)^{i}-\left(1-\frac{x}{i}\right)^{i}=2\left(\frac{x}{1}+\frac{x^{3}}{1 \cdot 2 \cdot 3}+\frac{x^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}+\cdots\right)
+\]
+记
+\[
+n=i, a=1+\frac{x}{i}, z=1-\frac{x}{i}
+\]
+根据 §151 的结果, 得该级数的因式
+\[
+\begin{gathered}
+a^{2}-2 a z \cos \frac{2 K \pi}{n}+z^{2}=2+\frac{2 x^{2}}{i^{2}}-2\left(1-\frac{x^{2}}{i^{2}}\right) \cos \frac{2 K \pi}{i}= \\
+\frac{4 x^{2}}{i^{2}}+\frac{4 K^{2} \pi^{2}}{i^{2}}-\frac{4 K^{2} \pi^{2} x^{2}}{i^{4}}
+\end{gathered}
+\]
+这是利用了
+\[
+\cos \frac{2 K \pi}{i}=1-\frac{2 K^{2} \pi^{2}}{i^{2}}
+\]
+因而函数 $\mathrm{e}^{x}-\mathrm{e}^{-x}$ 被
+\[
+1+\frac{x^{2}}{K^{2} \pi^{2}}-\frac{x^{2}}{i^{2}}
+\]
+%%06p101-120
+除得尽. 我们略去该式中的 $\frac{x^{2}}{i^{2}}$, 因为即使乘上 $i$, 它也还是无穷小. 又利用前面的结果, 知 $K=0$ 时因式为 $x$. 依次写出 $K$ 等于 $0,1,2,3, \cdots$ 时的因式, 得
+\[
+\begin{aligned}
+\frac{\mathrm{e}^{x}-\mathrm{e}^{-x}}{2}= & x\left(1+\frac{x^{2}}{\pi^{2}}\right)\left(1+\frac{x^{2}}{4 \pi^{2}}\right)\left(1+\frac{x^{2}}{9 \pi^{2}}\right)\left(1+\frac{x^{2}}{16 \pi^{2}}\right)\left(1+\frac{x^{2}}{25 \pi^{2}}\right) \cdots= \\
+& x\left(1+\frac{x^{2}}{1 \cdot 2 \cdot 3}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}+\frac{x^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 7}+\cdots\right)
+\end{aligned}
+\]
+这里利用乘因式以相应常数的方法, 使得它们具有现在这样的形状. 因式相乘时, 其展开 式的第一项为 $x$.
+
+\section{$\S 157$}
+
+同样地, 我们有
+\[
+\frac{\mathrm{e}^{x}+\mathrm{e}^{-x}}{2}=1+\frac{x^{2}}{1 \cdot 2}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots=\frac{\left(1+\frac{x}{i}\right)^{i}+\left(1-\frac{x}{i}\right)^{i}}{2}
+\]
+令
+\[
+a=1+\frac{x}{i}, z=1-\frac{x}{i}, n=i
+\]
+再与 $a^{n}+z^{n}$ 的因式相比较, 我们得到这里的因式
+\[
+a^{2}-2 a z \cos \frac{2 K+1}{i} \pi+z^{2}=2+\frac{2 x^{2}}{i^{2}}-2\left(1-\frac{x^{2}}{i^{2}}\right) \cos \frac{2 K+1}{i} \pi
+\]
+由
+\[
+\cos \frac{2 K+1}{i} \pi=1-\frac{(2 K+1)^{2} \pi^{2}}{2 i^{2}}
+\]
+得因式的形状为
+\[
+\frac{4 x^{2}}{i^{2}}+\frac{(2 K+1)^{2} \pi^{2}}{i^{2}}
+\]
+我们略去了分母为 $i^{4}$ 的项
+\[
+1+\frac{x^{2}}{1 \cdot 2}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots
+\]
+的每一个因式的形状都应该为 $1+\alpha x^{2}$. 为使求得的因式为这种形状, 我们除它以 $\frac{(2 K+1)^{2} \pi^{2}}{i^{2}}$, 得
+\[
+1+\frac{4 x^{2}}{(2 K+1)^{2} \pi^{2}}
+\]
+令 $2 K+1$ 依次取所有的奇数, 得到无穷乘积形式
+\[
+\frac{\mathrm{e}^{x}+\mathrm{e}^{-x}}{2}=1+\frac{x^{2}}{1 \cdot 2}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\frac{x^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}+\cdots=
+\]
+\[
+\begin{aligned}
+& \qquad\left(1+\frac{4 x^{2}}{\pi^{2}}\right)\left(1+\frac{4 x^{2}}{9 \pi^{2}}\right)\left(1+\frac{4 x^{2}}{25 \pi^{2}}\right)\left(1+\frac{4 x^{2}}{49 \pi^{2}}\right) \cdots \\
+& 
+\end{aligned}
+\]
+\section{$\S 158$}
+$x$ 为虚数时,前两节的指数表达式可以用实弧的正弦和余弦表示. 事实上, 令 $x=z$ $\sqrt{-1}$, 则
+\[
+\frac{\mathrm{e}^{z \sqrt{-1}}-\mathrm{e}^{-z \sqrt{-1}}}{2 \sqrt{-1}}=\sin z=z-\frac{z^{3}}{1 \cdot 2 \cdot 3}+\frac{z^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}-\frac{z^{7}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7}+\cdots
+\]
+该表达式可以表示成无穷乘积
+\[
+z\left(1-\frac{z^{2}}{\pi^{2}}\right)\left(1-\frac{z^{2}}{4 \pi^{2}}\right)\left(1-\frac{z^{2}}{9 \pi^{2}}\right)\left(1-\frac{z^{2}}{16 \pi^{2}}\right)\left(1-\frac{z^{2}}{25 \pi^{2}}\right) \cdots
+\]
+或
+\[
+\sin z=z\left(1-\frac{z}{\pi}\right)\left(1+\frac{z}{\pi}\right)\left(1-\frac{z}{2 \pi}\right)\left(1+\frac{z}{2 \pi}\right)\left(1-\frac{z}{3 \pi}\right)\left(1+\frac{z}{3 \pi}\right) \cdots
+\]
+我们看到, 只要弧 $z$ 的长度使任何一个因式为零, 也即只要
+\[
+z=0, z=\pm \pi, z=\pm 2 \pi \cdots \text { 或 } z=\pm K \pi
+\]
+的时候, $K$ 为任何整数, 这段弧的正弦就为零. 反之亦可以此为根据写出所求因式.
+
+类似地，由
+\[
+\frac{\mathrm{e}^{z \sqrt{-1}}+\mathrm{e}^{-z \sqrt{-1}}}{2}=\cos z
+\]
+得
+\[
+\cos z=\left(1-\frac{4 z^{2}}{\pi^{2}}\right)\left(1-\frac{4 z^{2}}{9 \pi^{2}}\right)\left(1-\frac{4 z^{2}}{25 \pi^{2}}\right)\left(1-\frac{4 z^{2}}{49 \pi^{2}}\right) \cdots
+\]
+或者将每个因式再分解,得
+\[
+\cos z=\left(1-\frac{2 z}{\pi}\right)\left(1+\frac{2 z}{\pi}\right)\left(1-\frac{2 z}{3 \pi}\right)\left(1+\frac{2 z}{3 \pi}\right)\left(1-\frac{2 z}{5 \pi}\right)\left(1+\frac{2 z}{5 \pi}\right) \cdots
+\]
+由此我们看到 $z=\pm \frac{2 K+1}{2} \pi$ 时 $\cos z=0$. 这是我们熟悉的余弦性质.
+
+\section{$\S 159$}
+
+用 $\$ 153$ 的方法, 也可以将
+\[
+\mathrm{e}^{x}-2 \cos g+\mathrm{e}^{-x}=2\left(1-\cos g+\frac{x^{2}}{1 \cdot 2}+\frac{x^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\cdots\right)
+\]
+表示成无穷个因式的乘积. 该表达式可以写为
+\[
+\left(1+\frac{x}{i}\right)^{i}-2 \cos g+\left(1-\frac{x}{i}\right)^{i}
+\]
+
+令
+\[
+2 n=i, a=1+\frac{x}{i}, z=1-\frac{x}{i}
+\]
+则其因式的形状都为
+\[
+a^{2}-2 a z \cos \frac{2 K \pi \pm g}{n}+z^{2}=2+\frac{2 x^{2}}{i^{2}}-2\left(1-\frac{x^{2}}{i^{2}}\right) \cos \frac{2(2 K \pi \pm g)}{i}
+\]
+由
+\[
+\cos \frac{2(2 K \pi \pm g)}{i}=1-\frac{2(2 K \pi \pm g)^{2}}{i^{2}}
+\]
+进一步得到因式的形状为
+\[
+\frac{4 x^{2}}{i^{2}}+\frac{4(2 K \pi \pm g)^{2}}{i^{2}}
+\]
+或
+\[
+1+\frac{x^{2}}{(2 K \pi \pm g)^{2}}
+\]
+除所给表达式以 $2(1-\cos g)$, 使无穷级数的常数项为 1 , 写出所有的因式, 得
+\[
+\begin{aligned}
+\frac{\mathrm{e}^{x}-2 \cos g+\mathrm{e}^{-x}}{2(1-\cos g)}= & \left(1+\frac{x^{2}}{g^{2}}\right)\left(1+\frac{x^{2}}{(2 \pi-g)^{2}}\right) \cdot \\
+& \left(1+\frac{x^{2}}{(2 \pi+g)^{2}}\right)\left(1+\frac{x^{2}}{(4 \pi-g)^{2}}\right) \cdot \\
+& \left(1+\frac{x^{2}}{(4 \pi+g)^{2}}\right) \cdots
+\end{aligned}
+\]
+将 $x$ 换为 $z \sqrt{-1}$, 则
+\[
+\begin{aligned}
+\frac{\cos z-\cos g}{1-\cos g}= & \left(1-\frac{z}{g}\right)\left(1+\frac{z}{g}\right)\left(1-\frac{z}{2 \pi-g}\right)\left(1+\frac{z}{2 \pi-g}\right) \cdot \\
+& \left(1-\frac{z}{2 \pi+g}\right)\left(1+\frac{z}{2 \pi+g}\right)\left(1-\frac{z}{4 \pi-g}\right)\left(1+\frac{z}{4 \pi-g}\right) \cdots= \\
+& 1-\frac{z^{2}}{1 \cdot 2(1-\cos g)}+\frac{z^{4}}{1 \cdot 2 \cdot 3 \cdot 4(1-\cos g)}- \\
+& \frac{z^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6(1-\cos g)}+\cdots
+\end{aligned}
+\]
+这样,我们就求得了这个无穷级数的无穷乘积表达式.
+
+\section{$\S 160$}
+
+下面求函数
+\[
+\mathrm{e}^{b+x} \pm \mathrm{e}^{c-x}
+\]
+的无穷乘积表示. 先将它改写成
+\[
+\left(1+\frac{b+x}{i}\right)^{i} \pm\left(1+\frac{c-x}{i}\right)^{i}
+\]
+再与
+\[
+a^{i} \pm z^{j}
+\]
+相比较.
+
+$a^{i} \pm z^{i}$ 的因式为
+\[
+a^{2}-2 a z \cos \frac{m \pi}{i}+z^{2}
+\]
+原式中符号为正时, $m$ 取奇数, 为负时, $m$ 取偶数. 对无穷大 $i$ 有
+\[
+\cos \frac{m \pi}{i}=1-\frac{m^{2} \pi^{2}}{2 i^{2}}
+\]
+从而这因式的一般形状为
+\[
+(a-z)^{2}+\frac{m^{2} \pi^{2}}{i^{2}} a z
+\]
+我们这里
+\[
+a=1+\frac{b+x}{i}, z=1+\frac{c-x}{i}
+\]
+从而
+\[
+\begin{gathered}
+(a-z)^{2}=\frac{(b-c+2 x)^{2}}{i^{2}} \\
+a z=1+\frac{b+c}{i}+\frac{b c+(c-b) x-x^{2}}{i^{2}}
+\end{gathered}
+\]
+代入一般形状因式,并乘以 $i^{2}$,得
+\[
+(b-c)^{2}+4(b-c) x+4 x^{2}+m^{2} \pi^{2}
+\]
+我们略去了分母中含 $i$ 和含 $i^{2}$ 的项,因为与留下的项相比,它们可以不计. 用
+\[
+(b-c)^{2}+m^{2} \pi^{2}
+\]
+除得到的因式,得常数项为 1 的因式
+\[
+1+\frac{4(b-c) x+4 x^{2}}{m^{2} \pi^{2}+(b-c)^{2}}
+\]
+\section{$\S 161$}
+
+每个因式的常数项都为 1 , 因而应该用一个常数除函数 $\mathrm{e}^{b+x} \pm \mathrm{e}^{c-x}$, 使其展开式的常 数项, 或其本身 $x=0$ 时的值为 1 . 这个常数为 $\mathrm{e}^{b} \pm \mathrm{e}^{c}$. 这样, 我们要将它写为无穷乘积的函 数为
+\[
+\frac{\mathrm{e}^{b+x} \pm \mathrm{e}^{c-x}}{\mathrm{e}^{b} \pm \mathrm{e}^{c}}
+\]
+符号为正时, $m$ 取奇数, 乘积为
+\[
+\frac{\mathrm{e}^{b+x}+\mathrm{e}^{c-x}}{\mathrm{e}^{b}+\mathrm{e}^{c}}=\left(1+\frac{4(b-c) x+4 x^{2}}{\pi^{2}+(b-c)^{2}}\right)\left(1+\frac{4(b-c) x+4 x^{2}}{9 \pi^{2}+(b-c)^{2}}\right)\left(1+\frac{4(b-c) x+4 x^{2}}{25 \pi^{2}+(b-c)^{2}}\right) \cdots
+\]
+符号为负时, $m$ 取偶数, 且 $m=0$ 时因式为方根, 乘积为
+\[
+\begin{aligned}
+\frac{\mathrm{e}^{b+x}-\mathrm{e}^{c-x}}{\mathrm{e}^{b}-\mathrm{e}^{c}}= & \left(1+\frac{2 x}{b-c}\right)\left(1+\frac{4(b-c) x+4 x^{2}}{4 \pi^{2}+(b-c)^{2}}\right)\left(1+\frac{4(b-c) x+4 x^{2}}{16 \pi^{2}+(b-c)^{2}}\right) \cdot \\
+& \left(1+\frac{4(b-c) x+4 x^{2}}{36 \pi^{2}+(b-c)^{2}}\right) \cdots
+\end{aligned}
+\]
+\section{$\S 162$}
+
+不失一般性, 令 $b=0$, 则
+\[
+\begin{gathered}
+\frac{\mathrm{e}^{x}+\mathrm{e}^{c} \mathrm{e}^{-x}}{1+\mathrm{e}^{c}}=\left(1-\frac{4 c x-4 x^{2}}{\pi^{2}+c^{2}}\right)\left(1-\frac{4 c x-4 x^{2}}{9 \pi^{2}+c^{2}}\right)\left(1-\frac{4 c x-4 x^{2}}{25 \pi^{2}+c^{2}}\right) \cdots \\
+\frac{\mathrm{e}^{x}-\mathrm{e}^{c} \mathrm{e}^{-x}}{1-\mathrm{e}^{c}}=\left(1-\frac{2 x}{c}\right)\left(1-\frac{4 c x-4 x^{2}}{4 \pi^{2}+c^{2}}\right)\left(1-\frac{4 c x-4 x^{2}}{16 \pi^{2}+c^{2}}\right)\left(1-\frac{4 c x-4 x^{2}}{36 \pi^{2}+c^{2}}\right) \cdots
+\end{gathered}
+\]
+$c$ 取负号时, 得
+\[
+\begin{gathered}
+\frac{\mathrm{e}^{x}+\mathrm{e}^{-c} \mathrm{e}^{-x}}{1+\mathrm{e}^{-c}}=\left(1+\frac{4 c x+4 x^{2}}{\pi^{2}+c^{2}}\right)\left(1+\frac{4 c x+4 x^{2}}{9 \pi^{2}+c^{2}}\right)\left(1+\frac{4 c x+4 x^{2}}{25 \pi^{2}+c^{2}}\right) \cdots \\
+\frac{\mathrm{e}^{x}-\mathrm{e}^{-c} \mathrm{e}^{-x}}{1-\mathrm{e}^{c}}=\left(1+\frac{2 x}{c}\right)\left(1+\frac{4 c x+4 x^{2}}{4 \pi^{2}+c^{2}}\right)\left(1+\frac{4 c x+4 x^{2}}{16 \pi^{2}+c^{2}}\right)\left(1+\frac{4 c x+4 x^{2}}{36 \pi^{2}+c^{2}}\right) \cdots
+\end{gathered}
+\]
+这样,我们得到了四个等式. 一、三相乘,得
+\[
+\frac{\mathrm{e}^{2 x}+\mathrm{e}^{-2 x}+\mathrm{e}^{c}+\mathrm{e}^{-c}}{2+\mathrm{e}^{c}+\mathrm{e}^{-c}}
+\]
+换 $2 x$ 为 $y$, 得
+\[
+\frac{\mathrm{e}^{y}+\mathrm{e}^{-y}+c^{c}+\mathrm{e}^{-c}}{2+\mathrm{e}^{c}+\mathrm{e}^{-c}}=\left(1-\frac{2 c y-y^{2}}{\pi^{2}+c^{2}}\right)\left(1+\frac{2 c y+y^{2}}{\pi^{2}+c^{2}}\right)\left(1-\frac{2 c y-y^{2}}{9 \pi^{2}+c^{2}}\right)\left(1+\frac{2 c y+y^{2}}{9 \pi^{2}+c^{2}}\right) \cdots
+\]
+一、四相乘,得
+\[
+\frac{\mathrm{e}^{2 x}-\mathrm{e}^{-2 x}+\mathrm{e}^{c}-\mathrm{e}^{-c}}{\mathrm{e}^{c}-\mathrm{e}^{-c}}
+\]
+换 $2 x$ 为 $y$, 得
+\[
+\begin{aligned}
+& \frac{\mathrm{e}^{y}-\mathrm{e}^{-y}+c^{c}-\mathrm{e}^{-c}}{\mathrm{e}^{c}-\mathrm{e}^{-c}}=\left(1+\frac{y}{c}\right)\left(1-\frac{2 c y-y^{2}}{\pi^{2}+c^{2}}\right)\left(1+\frac{2 c y+y^{2}}{\pi^{2}+c^{2}}\right) \cdot \\
+&\left(1-\frac{2 c y-y^{2}}{9 \pi^{2}+c^{2}}\right)\left(1+\frac{2 c y+y^{2}}{16 \pi^{2}+c^{2}}\right)\left(1-\frac{2 c y-y^{2}}{25 \pi^{2}+c^{2}}\right) \cdots
+\end{aligned}
+\]
+二、三相乘,得
+\[
+\begin{aligned}
+\frac{\mathrm{e}^{c}-\mathrm{e}^{-c}-\mathrm{e}^{y}+\mathrm{e}^{-y}}{\mathrm{e}^{c}-\mathrm{e}^{-c}}= & \left(1-\frac{y}{c}\right)\left(1+\frac{2 c y+y^{2}}{\pi^{2}+c^{2}}\right) \cdot \\
+& \left(1-\frac{2 c y-y^{2}}{4 \pi^{2}+c^{2}}\right)\left(1+\frac{2 c y+y^{2}}{9 \pi^{2}+c^{2}}\right)\left(1-\frac{2 c y-y^{2}}{16 \pi^{2}+c^{2}}\right) \cdot \\
+& \left(1+\frac{2 c y+y^{2}}{25 \pi^{2}+c^{2}}\right)\left(1-\frac{2 c y-y^{2}}{36 \pi^{2}+c^{2}}\right) \cdots
+\end{aligned}
+\]
+同于前式中 $c$ 取负号. 最后, 二、四相乘, 得
+\[
+\begin{aligned}
+\frac{\mathrm{e}^{y}+\mathrm{e}^{-y}-\mathrm{e}^{c}-\mathrm{e}^{-c}}{2-\mathrm{e}^{c}-\mathrm{e}^{-c}}= & \left(1-\frac{y^{2}}{c^{2}}\right)\left(1-\frac{2 c y-y^{2}}{4 \pi^{2}+c^{2}}\right) \cdot \\
+& \left(1+\frac{2 c y+y^{2}}{4 \pi^{2}+c^{2}}\right)\left(1-\frac{2 c y-y^{2}}{16 \pi^{2}+c^{2}}\right)\left(1+\frac{2 c y+y^{2}}{16 \pi^{2}+c^{2}}\right) \cdot \\
+& \left(1-\frac{2 c y-y^{2}}{36 \pi^{2}+c^{2}}\right)\left(1+\frac{2 c y+y^{2}}{36 \pi^{2}+c^{2}}\right) \cdots
+\end{aligned}
+\]
+\section{$\S 163$}
+
+这四个等式不难用于圆函数. 令
+\[
+c=g \sqrt{-1}, y=v \sqrt{-1}
+\]
+则
+\[
+\begin{gathered}
+\mathrm{e}^{v \sqrt{-1}}+\mathrm{e}^{-v \sqrt{-1}}=2 \cos v \\
+\mathrm{e}^{v \sqrt{-1}}-\mathrm{e}^{-v \sqrt{-1}}=2 \sqrt{-1} \sin v \\
+\mathrm{e}^{\mathrm{g} \sqrt{-1}}+\mathrm{e}^{-\mathrm{g} \sqrt{-1}}=2 \cos g \\
+\mathrm{e}^{\mathrm{g} \sqrt{-1}}-\mathrm{e}^{-\mathrm{g} \sqrt{-1}}=2 \sqrt{-1} \sin g
+\end{gathered}
+\]
+这样一来,第一个等式成为
+\[
+\begin{aligned}
+\frac{\cos v+\cos g}{1+\cos g}= & 1-\frac{v^{2}}{1 \cdot 2(1+\cos g)}+\frac{v^{4}}{1 \cdot 2 \cdot 3 \cdot 4(1+\cos g)}- \\
+& \frac{v^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6(1+\cos g)}+\cdots= \\
+& \left(1+\frac{2 g v-v^{2}}{\pi^{2}-g^{2}}\right)\left(1-\frac{2 g v+v^{2}}{\pi^{2}-g^{2}}\right)\left(1+\frac{2 g v-v^{2}}{9 \pi^{2}-g^{2}}\right) \cdot \\
+& \left(1-\frac{2 g v+v^{2}}{9 \pi^{2}-g^{2}}\right)\left(1+\frac{2 g v-v^{2}}{25 \pi^{2}-g^{2}}\right)\left(1-\frac{2 g v+v^{2}}{25 \pi^{2}-g^{2}}\right) \cdots= \\
+& \left(1+\frac{v}{\pi-g}\right)\left(1-\frac{v}{\pi+g}\right)\left(1-\frac{v}{\pi-g}\right) \cdot \\
+& \left(1+\frac{v}{\pi+g}\right)\left(1+\frac{v}{3 \pi-g}\right)\left(1-\frac{v}{3 \pi+g}\right) \cdot \\
+& \left(1-\frac{v}{3 \pi-g}\right)\left(1+\frac{v}{3 \pi+g}\right) \cdots= \\
+& \left(1-\frac{v^{2}}{(\pi-g)^{2}}\right)\left(1-\frac{v^{2}}{(\pi+g)^{2}}\right)\left(1-\frac{v^{2}}{(3 \pi-g)^{2}}\right) \cdot \\
+& \left(1-\frac{v^{2}}{(3 \pi+g)^{2}}\right)\left(1-\frac{v^{2}}{(5 \pi-g)^{2}}\right)\left(1-\frac{v^{2}}{(5 \pi+g)^{2}}\right] \cdots
+\end{aligned}
+\]
+第四个等式成为
+\[
+\frac{\cos v-\cos g}{1-\cos g}=1-\frac{v^{2}}{1 \cdot 2(1-\cos g)}+\frac{v^{4}}{1 \cdot 2 \cdot 3 \cdot 4(1-\cos g)}-
+\]
+\[
+\begin{aligned}
+% & \text { Infinite analysis (无忩分析弓论). Intraductian } \\
+& \frac{v^{6}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6(1-\cos g)}+\cdots= \\
+& \left(1-\frac{v^{2}}{g^{2}}\right)\left(1+\frac{2 g v-v^{2}}{4 \pi^{2}-g^{2}}\right)\left(1-\frac{2 g v+v^{2}}{4 \pi^{2}-g^{2}}\right) \text {. } \\
+& \left(1+\frac{2 g v-v^{2}}{16 \pi^{2}-g^{2}}\right)\left(1-\frac{2 g v+v^{2}}{16 \pi^{2}-g^{2}}\right)\left(1+\frac{2 g v-v^{2}}{36 \pi^{2}-g^{2}}\right) \text {. } \\
+& \left(1-\frac{2 g v+v^{2}}{36 \pi^{2}-g^{2}}\right) \cdots= \\
+& \left(1-\frac{v}{g}\right)\left(1+\frac{v}{g}\right)\left(1+\frac{v}{2 \pi-g}\right)\left(1-\frac{v}{2 \pi+g}\right) \cdot \\
+& \left(1-\frac{v}{2 \pi-g}\right)\left(1+\frac{v}{2 \pi+g}\right) \text {. } \\
+& \left(1+\frac{v}{4 \pi-g}\right)\left(1-\frac{v}{4 \pi+g}\right) \cdots= \\
+& \left(1-\frac{v^{2}}{g^{2}}\right)\left(1-\frac{v^{2}}{(2 \pi-g)^{2}}\right)\left(1-\frac{v^{2}}{(2 \pi+g)^{2}}\right) \text {. } \\
+& \left(1-\frac{v^{2}}{(4 \pi-g)^{2}}\right)\left(1-\frac{v^{2}}{(4 \pi+g)^{2}}\right) \cdots
+\end{aligned}
+\]
+第二个等式成为
+\[
+\begin{aligned}
+\frac{\sin g+\sin v}{\sin g}= & +\frac{v}{\sin g}-\frac{v^{3}}{1 \cdot 2 \cdot 3 \sin g}+\frac{v^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \sin g}-\cdots= \\
+& \left(1+\frac{v}{g}\right)\left(1+\frac{2 g v-v^{2}}{\pi^{2}-g^{2}}\right)\left(1-\frac{2 g v+v^{2}}{4 \pi^{2}-g^{2}}\right) \cdot \\
+& \left(1+\frac{2 g v-v^{2}}{9 \pi^{2}-g^{2}}\right)\left(1-\frac{2 g v+v^{2}}{16 \pi^{2}-g^{2}}\right) \cdots= \\
+& \left(1+\frac{v}{g}\right)\left(1+\frac{v}{\pi-g}\right)\left(1-\frac{v}{\pi+g}\right)\left(1-\frac{v}{2 \pi-g}\right) \cdot \\
+& \left(1+\frac{v}{2 \pi+g}\right)\left(1+\frac{v}{3 \pi-g}\right)\left(1-\frac{v}{3 \pi+g}\right)\left(1-\frac{v}{4 \pi-g}\right) \cdots
+\end{aligned}
+\]
+$v$ 取负号时得第三个.
+
+\section{$\S 164$}
+
+$\S 162$ 的表达式也可用于圆弧. 在
+\[
+\begin{aligned}
+\frac{\mathrm{e}^{x}+\mathrm{e}^{c} \mathrm{e}^{-x}}{1+\mathrm{e}^{c}}= & \frac{\left(1+\mathrm{e}^{-c}\right)\left(\mathrm{e}^{x}+\mathrm{e}^{c} \mathrm{e}^{-x}\right)}{2+\mathrm{e}^{c}+\mathrm{e}^{-c}}= \\
+& \frac{\mathrm{e}^{x}+\mathrm{e}^{-x}+\mathrm{e}^{c-x}+\mathrm{e}^{-c+x}}{2+\mathrm{e}^{c}+\mathrm{e}^{-c}}
+\end{aligned}
+\]
+中置
+\[
+c=g \sqrt{-1}, x=z \sqrt{-1}
+\]
+得
+\[
+\frac{\cos z+\cos (g-z)}{1+\cos g}=\cos z+\frac{\sin g \sin z}{1+\cos g}
+\]
+由于 $\frac{\sin g}{1+\cos g}=\tan \frac{g}{2}$, 我们有
+
+$\cos z+\tan \frac{g}{2} \sin z=$
+
+$1+\frac{z}{1} \tan \frac{g}{2}-\frac{z^{2}}{1 \cdot 2}-\frac{z^{3}}{1 \cdot 2 \cdot 3} \tan \frac{g}{2}+\frac{z^{4}}{1 \cdot 2 \cdot 3 \cdot 4}+\frac{z^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} \tan \frac{g}{2}-\cdots=$ $\left(1+\frac{4 g z-4 z^{2}}{\pi^{2}-g^{2}}\right)\left(1+\frac{4 g z-4 z^{2}}{9 \pi^{2}-g^{2}}\right)\left(1+\frac{4 g z-4 z^{2}}{25 \pi^{2}-g^{2}}\right) \cdots=$
+
+$\left(1+\frac{2 z}{\pi-g}\right)\left(1-\frac{2 z}{\pi+g}\right)\left(1+\frac{2 z}{3 \pi-g}\right)\left(1-\frac{2 z}{3 \pi+g}\right)\left(1+\frac{2 z}{5 \pi-g}\right)\left(1-\frac{2 z}{5 \pi+g}\right) \cdots$
+
+类似地,第二个等式左端分子分母同乘 $1-\mathrm{e}^{-c}$, 得
+\[
+\frac{\mathrm{e}^{x}+\mathrm{e}^{-x}-\mathrm{e}^{e-x}-\mathrm{e}^{-c+x}}{2-\mathrm{e}^{c}-\mathrm{e}^{-c}}
+\]
+令这里的 $c=g \sqrt{-1}, x=z \sqrt{-1}$, 得
+\[
+\frac{\cos z-\cos (g-z)}{1-\cos g}=\cos z-\frac{\sin g \sin z}{1-\cos g}=\cos z-\frac{\sin z}{\tan \frac{g}{2}}
+\]
+这样一来
+\[
+\begin{aligned}
+\cos z-\cot \frac{g}{2} \sin z= & 1-\frac{z}{1} \cot \frac{g}{2}-\frac{z^{2}}{1 \cdot 2}+\frac{z^{3}}{1 \cdot 2 \cdot 3} \cot \frac{g}{2}+ \\
+& \frac{z^{4}}{1 \cdot 2 \cdot 3 \cdot 4}-\frac{z^{5}}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5} \cot \frac{g}{2}+\cdots= \\
+& \left(1-\frac{2 x}{g}\right)\left(1+\frac{4 g z-4 z^{2}}{4 \pi^{2}-g^{2}}\right) \cdot \\
+& \left(1+\frac{4 g z-4 z^{2}}{16 \pi^{2}-g^{2}}\right)\left(1+\frac{4 g z-4 z^{2}}{36 \pi^{2}-g^{2}}\right) \cdots= \\
+& \left(1-\frac{2 z}{g}\right)\left(1+\frac{2 z}{2 \pi-g}\right) \cdot \\
+& \left(1-\frac{2 z}{2 \pi+g}\right)\left(1+\frac{2 z}{4 \pi-g}\right)\left(1-\frac{2 z}{4 \pi+g}\right) \cdots
+\end{aligned}
+\]
+如果令 $v=2 z$, 或者 $z=\frac{1}{2} v$, 我们得到
+\[
+\begin{aligned}
+& \frac{\cos \frac{g-v}{2}}{\cos \frac{g}{2}}=\cos \frac{v}{2}+\tan \frac{g}{2} \sin \frac{v}{2}= \\
+&\left(1+\frac{v}{\pi-g}\right)\left(1-\frac{v}{\pi+g}\right)\left(1+\frac{v}{3 \pi-g}\right)\left(1-\frac{v}{3 \pi+g}\right) \cdots
+\end{aligned}
+\]
+\[
+\begin{aligned}
+& \frac{\cos \frac{g+v}{2}}{\cos \frac{g}{2}}=\cos \frac{v}{2}-\tan \frac{g}{2} \sin \frac{v}{2}= \\
+& \left(1-\frac{v}{\pi-g}\right)\left(1+\frac{v}{\pi+g}\right)\left(1-\frac{v}{3 \pi-g}\right)\left(1+\frac{v}{3 \pi+g}\right) \cdots \\
+& \frac{\sin \frac{g-v}{2}}{\sin \frac{g}{2}}=\cos \frac{v}{2}-\cot \frac{g}{2} \sin \frac{v}{2}= \\
+& \left(1-\frac{v}{g}\right)\left(1+\frac{v}{2 \pi-g}\right)\left(1-\frac{v}{2 \pi+g}\right) \text {. } \\
+& \left(1+\frac{v}{4 \pi-g}\right)\left(1-\frac{v}{4 \pi+g}\right) \cdots+\frac{\sin \frac{g+v}{2}}{\sin \frac{g}{2}}= \\
+& \cos \frac{v}{2}+\cot \frac{g}{2} \sin \frac{v}{2}= \\
+& \left(1+\frac{v}{g}\right)\left(1-\frac{v}{2 \pi-g}\right)\left(1+\frac{v}{2 \pi+g}\right) \\
+& \left(1-\frac{v}{4 \pi-g}\right)\left(1+\frac{v}{4 \pi+g}\right) \cdots
+\end{aligned}
+\]
+这些等式的构成规律都相当简单, 并且是类似地. 得到的这几个表达式相乘, 也得到 上节求出的表达式. 
+

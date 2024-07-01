@@ -1,0 +1,128 @@
+% chap11sec02
+
+\section{Constriction of the lebesgue measure}
+
+\begin{mydef}
+    \label{mydef:11.4}
+    Let $\R^p$ denote $p$-dimensional euclidean space.
+    By an \emph{interval} in $\R^p$ we mean the set of points $\mathbf{x} = (x_1 , ... , x_p)$ such that
+    \begin{equation}
+        \label{eq:11.10}
+        a_i \leq x_i \leq b_i
+        \quad
+        (i = 1,\dots,p),
+    \end{equation}
+    or the set of points which is characterized by (\ref{eq:11.10}) with any or all of the $\leq$ signs replaced by $<$.
+    The possibility that $a_i = b_i$ for any value of $i$ is not ruled out;
+    in particular, the empty set is included among the intervals.
+
+    If $A$ is the union of a finite number of intervals,
+    $A$ is said to be an \emph{elementary set}.
+
+    If $I$ is an interval, we define
+    \begin{equation*}
+        m(I) = \prod_{i=1}^{p} (b_i - a_i) ,
+    \end{equation*}
+    no matter whether equality is included or excluded in any of the inequalities (\ref{eq:11.10}).
+
+    If $A = I_1 \cup \cdots \cup I_n$, and if these intervals are pairwise disjoint, we set
+    \begin{equation}
+        \label{eq:11.11}
+        m(A) =
+        m(I_1) + \cdots +
+        m(I_n) .
+    \end{equation}
+
+    We let $\mathscr{E}$ denote the family of all elementary subsets of $\R^p$.
+
+    At this point, the following properties should be verified:
+    \begin{enumerate}[(a)]
+        \item $\mathscr{E}$ is a ring, but not a $\sigma$-ring.
+        \item If $A \in \mathscr{E}$, then $A$ is the union of a finite number of \emph{disjoint} intervals.
+        \item If $A \in \mathscr{E}$, $m(A)$ is well defined by (\ref{eq:11.11}); that is. if two different decompositions of $A$ into disjoint intervals are used, each gives rise to the same value of $m(A)$.
+        \item $m$ is additive on $\mathscr{E}$
+    \end{enumerate}
+
+    Note that if $p = 1,2,3$, then $m$ is length, area, and volume, respectively.
+\end{mydef}
+
+\mybox{原书这里的列表项使用公式编号记录...}
+
+\begin{mydef}
+    \label{mydef:11.5}
+    A nonnegative additive set function $\phi$ defined on $\mathscr{E}$ is said to be regular if the following is true:
+    To every $A \in \mathscr{E}$ and to every $\varepsilon > 0$
+    there exist sets $F \in \mathscr{E}$, $G \in \mathscr{E}$
+    such that $F$ is closed, $G$ is open, $F \subset A \subset G$,
+    and
+    \begin{equation}
+        \label{eq:11.16}
+        \phi(G) - \varepsilon \leq
+        \phi(A) \leq
+        \phi(F) + \varepsilon .
+    \end{equation}
+\end{mydef}
+
+\begin{newexample}
+    \label{neqexample:11.6}
+    \begin{asparaenum}[(a)]
+        \item \emph{The set function $m$ is regular.}
+        If $A$ is an interval, it is trivial that the requirements of Definition \ref{mydef:11.5} are satisfied. The general case follows from \ref{mydef:11.4} property (b).
+        \item Take $\R^p = \R^1$, and let $\alpha$ be a monotonically increasing function, defined for all real $x$. Put
+        \begin{align*}
+            \mu([a,b]) & = \alpha(b-)-\alpha(a-), \\
+            \mu([a,b]) & = \alpha(b+)-\alpha(a+), \\
+            \mu([a,b]) & = \alpha(b+)-\alpha(a+), \\
+            \mu([a,b]) & = \alpha(b-)-\alpha(a-).
+        \end{align*}
+        Here $[a,b)$ is the set $a \leq x < b$, etc.
+        Because of the possible discontinuities of $\alpha$, these cases have to be distinguished.
+        If $\mu$ is defined for elementary sets as in (\ref{eq:11.11}), $\mu$ is regular on $\mathscr{E}$.
+        The proof is just like that of (a)
+    \end{asparaenum}
+\end{newexample}
+
+Our next objective is to show that every regular set function on $\mathscr{E}$ can be
+extended to a countably additive set function on a $\sigma$-ring which contains $\mathscr{E}$.
+
+\begin{mydef}
+    \label{mydef:11.7}
+    outer measure $\mu^*(E)$
+    % Let µ be additive, regular, nonnegative, and finite on 8.
+    % Consider countable coverings of any set E c RP by open elementary sets An:
+\end{mydef}
+
+\begin{thm}
+    \label{thm:11.8}
+    \begin{asparaenum}[(a)]
+        \item For every $A \in \mathscr{E}$, $\mu^* (A) = \mu (A)$.
+        \item If $E = \cup_1^{\infty} E_n$, then
+        \begin{equation}
+            \label{eq:11.19}
+            \mu^* (E) \leq
+            \sum_{n=1}^{\infty} \mu^* (E_n) .
+        \end{equation}
+    \end{asparaenum}
+\end{thm}
+
+Note that (a) asserts that $\mu^*$ is an extension of $\mu$ from $\mathscr{E}$ to the family of all subsets of $\R^P$.
+The property (\ref{eq:11.19}) is called \emph{subadditivity}.
+
+% todo add proof 
+
+\begin{mydef}
+    \label{mydef:11.9}
+    finitely $\mu$-measurable
+    $A \in \mathfrak{M}_F(\mu)$
+\end{mydef}
+
+\begin{thm}
+    \label{thm:11.10}
+    $\mathfrak{M}(\mu)$ is a $\sigma$-ring, and $\mu^*$ is countably additive on $\mathfrak{M}(\mu)$.
+\end{thm}
+
+properties of $S(A, B)$ and $d(A, B)$.
+
+\begin{myremark}
+    \label{myremark:11.11}
+\end{myremark}

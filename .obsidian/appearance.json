@@ -1,0 +1,12 @@
+{
+  "baseFontSize": 21,
+  "theme": "moonstone",
+  "translucency": false,
+  "cssTheme": "",
+  "textFontFamily": "微软雅黑",
+  "interfaceFontFamily": "",
+  "monospaceFontFamily": "",
+  "accentColor": "#5c7df5",
+  "showViewHeader": true,
+  "nativeMenus": false
+}

@@ -1,0 +1,90 @@
+% chap06sec04
+\section{Integration of vector-valued functions}
+\mybox{向量函数积分}
+\begin{mydef}
+    \label{mydef:6.23}
+    Let $f_1,\dots,f_k$ be real functions on $[a, b]$, 
+    and let $\mathbf{f} = (f_1,\dots,f_k)$ be the corresponding mapping of $[a, b]$ into $\R^k$. 
+    If $\alpha$ increases monotonically on $[a, b]$, 
+    to say that $\mathbf{f} \in \mathscr{R}(\alpha)$ means that
+    $f_j \in \mathscr{R}(\alpha)$ for $j = 1, ... , k$. 
+    If this is the case, we define
+    \begin{equation*}
+        \int_{a}^{b} \mathbf{f} \d \alpha = 
+        \left( 
+            \int_{a}^{b} f_1 \d \alpha
+            , \dots,
+            \int_{a}^{b} f_k \d \alpha
+         \right).
+    \end{equation*}
+    In other words, $\int \mathbf{f} \d \alpha$ is the point in $\R^k$ whose $j$th coordinate is $\int f \d \alpha$.
+    
+    It is clear that parts (a), (c), and (e) of Theorem \ref{thm:6.12} are valid for these vector-valued integrals; 
+    we simply apply the earlier results to each coordinate. 
+    The same is true of Theorems \ref{thm:6.17}, \ref{thm:6.20}, and \ref{thm:6.21}. 
+    To illustrate, we state the analogue of Theorem \ref{thm:6.21}.
+\end{mydef}
+
+\begin{thm}
+    \label{thm:6.24}
+    If $\mathbf{f}$ and $\mathbf{F}$ map $[a, b]$ into $\R^k$ ,
+    if $\mathbf{f} \in \mathscr{R}$  on $[a, b]$, 
+    and if $\mathbf{F}' = \mathbf{f}$, then 
+    \begin{equation*}
+        \int_{a}^{b} \mathbf{f}(t) \d t = \mathbf{F}(b) - \mathbf{F}(a).
+    \end{equation*}
+\end{thm}
+    
+The analogue of Theorem \ref{thm:6.13}(b) offers some new features,
+however, at least in its proof.
+
+\begin{thm}
+    \label{thm:6.25}
+    If $\mathbf{f}$ maps $[a, b]$ into $\R^k$ and 
+    if $\mathbf{f} \in \mathscr{R}(\alpha)$ for some monotonically
+    increasing function $\alpha$ on $[a, b]$, 
+    then $\left| \mathbf{f} \right| \in \mathscr{R}(\alpha)$, and
+    \begin{equation}
+        \label{eq:6.40}
+        \left| \int_{a}^{b} \mathbf{f} \d \alpha \right| \leq
+        \int_{a}^{b} \left| \mathbf{f} \right| \d \alpha .
+    \end{equation}
+\end{thm}
+
+\begin{proof}
+    If $f_1,\dots,f_k$ are the components of $\mathbf{f}$, then
+    \begin{equation}
+        \label{eq:6.41}
+        \left| \mathbf{f} \right| = \left( f_1^2 + \cdots + f_k^2 \right)^{1/2}.
+    \end{equation}
+    By Theorem \ref{thm:6.11}, each of the functions $f_i^2$ belongs to $\mathscr{R}(\alpha)$; 
+    hence so does their sum. 
+    Since $x^2$ is a continuous function of $x$, 
+    Theorem \ref{thm:4.17} shows that the square-root function is continuous on $[0, M]$, for every real $M$. 
+    If we apply Theorem \ref{thm:6.11} once more, (\ref{eq:6.41}) shows that $\left| \mathbf{f} \right| \in \mathscr{R}(\alpha)$.
+
+    To prove (\ref{eq:6.40}), put $y = (y_1, \dots, y_k)$, 
+    where $y_j = \int f_j \d \alpha$. 
+    Then we have $\mathbf{y_j} = \int \mathbf{f_j} \d \alpha$, and
+    \begin{equation*}
+        \left| \mathbf{f} \right|^2 = 
+        \sum y_i^2 =
+        \sum y_j \int f_j \d \alpha = 
+        \int \left( \sum y_j f_j \right) \d \alpha .
+    \end{equation*}
+    By the Schwarz inequality,
+    \begin{equation}
+        \label{eq:6.42}
+        \sum y_j f_j (t) \leq \left| \mathbf{y} \right| \left| \mathbf{f}(t) \right| 
+        \quad 
+        (a \leq t \leq b);
+    \end{equation}
+    hence Theorem \ref{thm:6.12}(b) implies
+    \begin{equation}
+        \label{eq:6.43}
+        \left| \mathbf{y} \right|^2 \leq 
+        \left| \mathbf{y} \right| \int \left| \mathbf{f} \right| \d \alpha.
+    \end{equation}
+    If $\mathbf{y = 0}$, (\ref{eq:6.40}) is trivial.
+    If $\mathbf{y \neq 0}$, division of (\ref{eq:6.43}) gives (\ref{eq:6.40}).
+\end{proof}

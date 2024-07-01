@@ -1,0 +1,1092 @@
+\chapter{第十三章 递推级数}
+
+\section{$\S 211$}
+
+按分数函数表示的那样进行除法, 我们得到一种级数. 棣莫弗称这种级数为递推级 数. 递推级数的任何一项,都依某个固定的公式,由前几项推出.
+
+固定公式由分数函数的分母决定. 这我们前面讲过. 现在, 我们能够把分数函数分解 为更简单的部分分式. 因而分数函数的递推级数, 可用更简单的递推级数之和表示. 本章 我们就讲构成递推级数的更简递推级数.
+
+\section{$\S 212$}
+
+设用除法将真分数函数
+\[
+\frac{a+b z+c z^{2}+d z^{3}+\cdots}{1-\alpha z-\beta z^{2}-\gamma z^{3}-\delta z^{4}-\cdots}
+\]
+表示成了递推级数
+\[
+A+B z+C z^{2}+D z^{3}+E z^{4}+F z^{5}+\cdots
+\]
+这真分数函数的部分分式我们会求, 将部分分式表示成递推级数, 做起来简单, 其性质易 于考查. 部分分式的递推级数加起来就是这真分数函数的递推级数
+\[
+A+B z+C z^{2}+D z^{3}+E z^{4}+F z^{5}+\cdots
+\]
+\section{$\S 213$}
+
+设部分分式产生的递推级数为
+\[
+\begin{gathered}
+a+b z+c z^{2}+d z^{3}+e z^{4}+\cdots \\
+a^{\prime}+b^{\prime} z+c^{\prime} z^{2}+d^{\prime} z^{3}+e^{\prime} z^{4}+\cdots \\
+a^{\prime \prime}+b^{\prime \prime} z+c^{\prime \prime} z^{2}+d^{\prime \prime} z^{3}+e^{\prime \prime} z^{4}+\cdots \\
+a^{\prime \prime \prime}+b^{\prime \prime \prime} z+c^{\prime \prime \prime} z^{2}+d^{\prime \prime \prime} z^{3}+e^{\prime \prime \prime} z^{4}+\cdots
+\end{gathered}
+\]
+这些级数加起来应该等于 
+\[
+A+B z+C z^{2}+D z^{3}+E z^{4}+\cdots
+\]
+由此我们得到
+\[
+\begin{gathered}
+A=a+a^{\prime}+a^{\prime \prime}+a^{\prime \prime \prime}+\cdots \\
+B=b+b^{\prime}+b^{\prime \prime}+b^{\prime \prime \prime}+\cdots \\
+C=c+c^{\prime}+c^{\prime \prime}+c^{\prime \prime \prime}+\cdots \\
+D=d+d^{\prime}+d^{\prime \prime}+d^{\prime \prime \prime}+\cdots
+\end{gathered}
+\]
+这样一来, 如果能够求出部分分式产生的各个级数中 $z^{n}$ 的系数,那么这些系数的和就是 递推级数 $A+B z+C z^{2}+D z^{3}+\cdots$ 中 $z^{n}$ 的系数.
+
+\section{$\S 214$}
+
+这里可能产生一个疑问, 两个级数相等, 它们同次幂的系数一定相等吗, 即
+\[
+A+B z+C z^{2}+D z^{3}+\cdots=\mathfrak{A}+\mathfrak{B} z+\mathfrak{S}^{2}+\mathfrak{D} z^{3}+\cdots
+\]
+时,一定有 $A=\mathfrak{A}, B=\mathfrak{B}, C=\mathfrak{5}, D=\mathfrak{D}, \cdots$ 吗？我们利用等式对 $z$ 的任何值都成立这一点,就可消除这一疑问.如果$z=0,$则显然$A=\mathfrak{A},$两边去掉这相等的项，除剩下的方程以$z,$我们得到
+\[
+B+C z+D z^{2}+\cdots=\mathfrak{B}+\left(5 z+D z^{2}+\cdots\right.
+\]
+由此我们得到 $B=\mathfrak{B}$. 类似地, 我们得到 $C=\mathfrak{5}, D=\mathfrak{D}, \cdots$
+
+\section{$\S 215$}
+
+现在我们考察由分数函数的各种部分分式所产生的级数. 首先,分式
+\[
+\frac{\mathfrak{A}}{1-p z}
+\]
+产生的级数为
+\[
+\frac{\mathfrak{A}}{1-p z}=\mathfrak{U}+\mathfrak{U} p z+\mathfrak{U} p^{2} z^{2}+\mathfrak{A} p^{3} z^{3}+\cdots
+\]
+其通项为
+\[
+\mathfrak{A} p^{n} z^{n}
+\]
+称这个表达式为通项,是因为将其中的 $n$ 依次换为所有的整数, 我们就得到级数的所有 的项.
+
+其次,分式
+\[
+\frac{\mathfrak{A}}{(1-p z)^{2}}
+\]
+产生的级数为
+\[
+\frac{\mathfrak{A}}{(1-p z)^{2}}=\mathfrak{U}+2 \mathfrak{U} p z+3 \mathfrak{X} p^{2} z^{2}+4 \mathfrak{X} p^{3} z^{3}+\cdots
+\]
+其通项为
+\[
+(n+1) \mathfrak{A} p^{n} z^{n}
+\]
+再次
+\[
+\frac{\mathfrak{X}}{(1-p z)^{3}}=\mathfrak{U}+3 \mathfrak{A} p z+6 \mathfrak{X} p^{2} z^{2}+10 \mathfrak{A} p^{3} z^{3}+\cdots
+\]
+其通项为
+\[
+\frac{(n+1)(n+2)}{1 \cdot 2} \mathfrak{X} p^{n} z^{n}
+\]
+一般地, 分式
+\[
+\frac{\mathfrak{U}}{(1-p z)^{k}}
+\]
+产生的级数
+\[
+\frac{\mathfrak{A}}{(1-p z)^{k}}=\mathfrak{U}+k \mathfrak{X} p z+\frac{k(k+1)}{1 \cdot 2} \mathfrak{X} p^{2} z^{2}+\frac{k(k+1)(k+2)}{1 \cdot 2 \cdot 3} \mathfrak{X} p^{3} z^{3}+\cdots
+\]
+其通项为
+\[
+\frac{(n+1)(n+2)(n+3) \cdots(n+k-1)}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot(k-1)} \mathfrak{A} p^{n} z^{n}
+\]
+从级数的构成本身, 得到这通项为
+\[
+\frac{k(k+1)(k+2) \cdots(k+n-1)}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot n} \mathfrak{X} p^{n} z^{n}
+\]
+这两个通项的相等, 可由交叉相乘得出. 事实上, 交叉相乘得
+\[
+\begin{aligned}
+& 1 \cdot 2 \cdot 3 \cdot \cdots \cdot n(n+1) \cdot \cdots \cdot(n+k-1)= \\
+& 1 \cdot 2 \cdot 3 \cdot \cdots \cdot(k-1) \cdot k \cdot \cdots \cdot(k+n-1)
+\end{aligned}
+\]
+这是一个等式.
+
+\section{$\S 216$}
+
+这样, 每给一个分数函数, 我们先将它分解成状如 $\frac{\mathfrak{U}}{(1-p z)^{k}}$ 的部分分式, 再求出每 个部分分式的递推级数的通项, 最后将求得的通项加起来, 就得到所给分数函数的递推 级数
+\[
+A+B z+C z^{2}+D z^{3}+\cdots
+\]
+的通项.
+
+例 1 求分数函数
+\[
+\frac{1-z}{1-z-2 z^{2}}
+\]
+的递推级数的通项.
+
+由该函数得到的级数是 
+\[
+\begin{aligned}
+& 1+0 z+2 z^{2}+2 z^{3}+6 z^{4}+10 z^{5}+22 z^{6}+42 z^{7}+86 z^{8}+\cdots
+\end{aligned}
+\]
+为了求得通项的系数, 我们先将
+\[
+\frac{1-z}{1-z-2 z^{2}}
+\]
+分解成部分分式, 得
+\[
+\frac{\frac{2}{3}}{1+z}+\frac{\frac{1}{3}}{1-2 z}
+\]
+由此得到所求通项为
+\[
+\left(\frac{2}{3}(-1)^{n}+\frac{1}{3} 2^{n}\right) z^{n}=\frac{2^{n} \pm 2}{3} z^{n}
+\]
+$n$ 为偶数时取正号, $n$ 为奇数时取负号.
+
+例 2 求分式
+\[
+\frac{1-z}{1-5 z+6 z^{2}}
+\]
+产生的递推级数
+\[
+1+4 z+14 z^{2}+46 z^{3}+146 z^{4}+454 z^{5}+\cdots
+\]
+的通项.
+
+分母等于 $(1-2 z)(1-3 z)$, 从而分式分解为
+\[
+\frac{-1}{1-2 z}+\frac{2}{1-3 z}
+\]
+由此得通项为
+\[
+2 \cdot 3^{n} z^{n}-2^{n} z^{n}=\left(2 \cdot 3^{n}-2^{n}\right) z^{n}
+\]
+例 3 求分式
+\[
+\frac{1+2 z}{1-z-z^{2}}
+\]
+展成的级数
+\[
+1+3 z+4 z^{2}+7 z^{3}+11 z^{4}+18 z^{5}+29 z^{6}+47 z^{7}+\cdots
+\]
+的通项
+
+分母的因式为
+
+\[
+1-\frac{1+\sqrt{5}}{2} z \text { 和 } 1-\frac{1-\sqrt{5}}{2} z
+\]
+
+从而分式的分解式为
+\[
+\frac{\frac{1+\sqrt{5}}{2}}{1-\frac{1+\sqrt{5}}{2} z}+\frac{\frac{1-\sqrt{5}}{2}}{1-\frac{1-\sqrt{5}}{2} z}
+\]
+由此得通项为 
+\[
+\left(\frac{1+\sqrt{5}}{2}\right)^{n+1} z^n+\left(\frac{1-\sqrt{5}}{2}\right)^{n+1} z^n
+\]
+
+例 4 求分式
+\[
+\frac{a+b z}{1-\alpha z-\beta z^{2}}
+\]
+展成的级数
+\[
+a+(\alpha a+b) z+\left(\alpha^{2} a+\alpha b+\beta a\right) z^{2}+\left(\alpha^{3} a+a^{2} b+2 \alpha \beta a+\beta b\right) z^{3}+\cdots
+\]
+的通项.
+
+所给分式的部分分式表示式为
+\[
+\frac{\left(a\left(\sqrt{\alpha^{2}+4 \beta}+\alpha\right)+2 b\right): 2 \sqrt{\alpha^{2}+4 \beta}}{1-\frac{\alpha+\sqrt{\alpha^{2}+4 \beta}}{2}}+\frac{\left(a\left(\sqrt{\alpha^{2}+4 \beta}-\alpha\right)-2 b\right): 2 \sqrt{\alpha^{2}+4 \beta}}{1-\frac{\alpha-\sqrt{\alpha^{2}+4 \beta}}{2}}
+\]
+由此得所求通项为
+\[
+\begin{aligned}
+& \frac{a\left(\sqrt{\alpha^{2}+4 \beta}+\alpha\right)+2 b}{2 \sqrt{\alpha^{2}+4 \beta}}\left(\frac{\alpha+\sqrt{\alpha^{2}+4 \beta}}{2}\right)^{n} z^{n}+ \\
+& \frac{a\left(\sqrt{\alpha^{2}+4 \beta}-\alpha\right)-2 b}{2 \sqrt{\alpha^{2}+4 \beta}}\left(\frac{\alpha-\sqrt{\alpha^{2}+4 \beta}}{2}\right)^{n} z^{n}
+\end{aligned}
+\]
+这是通项的通用公式, 适用于每项都由前两项推出的递推级数.
+
+例 5 求分式
+\[
+\frac{1}{1-z-z^{2}+z^{3}}=\frac{1}{(1-z)^{2}(1+z)}
+\]
+展成的级数
+\[
+1+z+2 z^{2}+2 z^{3}+3 z^{4}+3 z^{5}+4 z^{6}+4 z^{7}+\cdots
+\]
+的通项.
+
+级数系数的规律性是显然的. 分式的部分分式表示成为
+\[
+\frac{\frac{1}{2}}{(1-z)^{2}}+\frac{\frac{1}{4}}{1-z}+\frac{\frac{1}{4}}{1+z}
+\]
+由此得通项为
+\[
+\frac{1}{2}(n+1) z^{n}+\frac{1}{4} z^{n}+\frac{1}{4}(-1)^{n} z^{n}=\frac{2 n+3 \pm 1}{4} z^{n}
+\]
+$n$ 为偶数时取正号, $n$ 为奇数时取负号.
+
+\section{$\S 217$}
+
+用上述方法我们可以求出一切递推级数的通项, 因为分式都可以分解成以线性因式 的幂为分母的部分分式. 但是如果我们想避开虚表达式, 那我们就得考虑状如 
+\[
+ \frac{\mathfrak{A}+\mathfrak{B} p z}{1-2 p z \cos \varphi+p^{2} z^{2}}, \frac{\mathfrak{A}+\mathfrak{B} p z}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{2}}, \frac{9(1+\mathfrak{B} p z}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{k}}
+\]
+的部分分式所展成的级数. 首先, 由于
+\[
+\cos n \varphi=2 \cos \varphi \cos (n-1) \varphi-\cos (n-2) \varphi
+\]
+我们得到
+\[
+\frac{9 \mathfrak{A}}{1-2 p z \cos \varphi+p^{2} z^{2}}
+\]
+展成的级数为
+\[
+\begin{aligned}
+& \mathfrak{A}+2 \mathfrak{A} p z \cos \varphi+2 \mathfrak{A} p^{2} z^{2} \cos 2 \varphi+2 \mathfrak{A} p^{3} z^{3} \cos 3 \varphi+ \\
+& 2 \mathfrak{A} p^{4} z^{4}+\cos 4 \varphi+\cdots+\mathfrak{A} p^{2} z^{2}+2 \mathfrak{A} p^{3} z^{3} \cos \varphi+ \\
+& 2 \mathfrak{A} p^{4} z^{4} \cos 2 \varphi+\cdots+9 \mathfrak{A} p^{4} z^{4}+\cdots
+\end{aligned}
+\]
+这个级数的通项求起来不那么容易.
+
+\section{$\S 218$}
+
+为了写出上节级数的通项, 我们考虑这样两个级数
+\[
+\begin{gathered}
+P p z \sin \varphi+P p^{2} z^{2} \sin 2 \varphi+P p^{3} z^{3} \sin 3 \varphi+P z^{4} z^{4} \sin 4 \varphi+\cdots \\
+Q+Q p z \cos \varphi+Q p^{2} z^{2} \cos 2 \varphi+Q p^{3} z^{3} \cos 3 \varphi+Q p^{4} z^{4} \cos 4 \varphi+\cdots
+\end{gathered}
+\]
+它们分别是分母同为
+\[
+1-2 p z \cos \varphi+p^{2} z^{2}
+\]
+的两个分式的展开式. 前一个分式为
+\[
+\frac{P p z \sin \varphi}{1-2 p z \cos \varphi+p^{2} z^{2}}
+\]
+后一个分式为
+\[
+\frac{Q-Q p z \cos \varphi}{1-2 p z \cos \varphi+p^{2} z^{2}}
+\]
+这两个分式相加, 和为
+\[
+\frac{Q+P p z \sin \varphi-Q p z \cos \varphi}{1-2 p z \cos \varphi+p^{2} z^{2}}
+\]
+这个和展成的级数,其通项为
+\[
+(P \sin n \varphi+Q \cos n \varphi) p^{n} z^{n}
+\]
+将分式
+\[
+\frac{\mathfrak{U}+\mathfrak{B} p z}{1-2 p z \cos \varphi+p^{2} z^{2}}
+\]
+与刚才的和相比较, 得
+\[
+Q=\mathfrak{A}, P=\mathfrak{A} \cos \varphi+\mathfrak{B} \csc \varphi
+\]
+从而,展开 
+\[
+\frac{\mathfrak{A}+\mathfrak{B} p z}{1-2 p z \cos \varphi+p^{2} z^{2}}
+\]
+所成的级数, 其通项为
+\[
+\frac{\mathfrak{A} \cos \varphi \sin n \varphi+\mathfrak{B} \sin n \varphi+\mathscr{A} \sin \varphi \cos n \varphi}{\sin \varphi} p^{n} z^{n}=\frac{\mathscr{A} \sin (n+1) \varphi+\mathfrak{B} \sin n \varphi}{\sin \varphi} p^{n} z^{n} 
+\]
+\section{$\S 219$}
+
+为了得到以幂
+\[
+\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{K}
+\]
+为分母情况下的通项, 我们把这种分式表示成两个含有虚数的分式之和
+\[
+\frac{a}{(1-(\cos \varphi+\sqrt{-1} \sin \varphi) p z)^{K}}+\frac{b}{(1-(\cos \varphi-\sqrt{-1} \sin \varphi) p z)^{K}}
+\]
+这个和展成的级数,其通项为
+\[
+\begin{aligned}
+& \frac{(n+1)(n+2)(n+3) \cdots(n+K-1)}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot(K-1)}(\cos n \varphi+\sqrt{-1} \sin n \varphi) a p^{n} z^{n}+ \\
+& \frac{(n+1)(n+2)(n+3) \cdots(n+K-1)}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot(K-1)}(\cos n \varphi-\sqrt{-1} \sin n \varphi) b p^{n} z^{n}
+\end{aligned}
+\]
+$\hat{亽}$
+\[
+a+b=f, a-b=\frac{g}{\sqrt{-1}}
+\]
+冊
+\[
+a=\frac{f \sqrt{-1}+g}{2 \sqrt{-1}}, b=\frac{f \sqrt{-1}-g}{2 \sqrt{-1}}
+\]
+那么,表达式
+\[
+\frac{(n+1)(n+2)(n+3) \cdots(n+K-1)}{1 \cdot 2 \cdot 3 \cdot \cdots \cdot(K-1)}(f \cos n \varphi+g \sin n \varphi) p^{n} z^{n}
+\]
+就是分式的和
+\[
+\frac{\frac{1}{2} f+\frac{1}{2 \sqrt{-1}} g}{(1-(\cos \varphi+\sqrt{-1} \sin \varphi) p z)^{K}}+\frac{\frac{1}{2} f-\frac{1}{2 \sqrt{-1}} g}{(1-(\cos \varphi-\sqrt{-1} \sin \varphi) p z)^{K}}
+\]
+或写成单个分式
+\[
+\frac{\left\{\begin{array}{l}
+f-K f p z \cos \varphi+\frac{K(K-1)}{1 \cdot 2} f p^{2} z^{2} \cos 2 \varphi-\frac{K(K-1)(K-2)}{1 \cdot 2 \cdot 3} f p^{3} z^{3} \cos 3 \varphi+\cdots+ \\
+K g p z \sin \varphi-\frac{K(K-1)}{1 \cdot 2} f p^{2} z^{2} \sin 2 \varphi+\frac{K(K-1)(K-2)}{1 \cdot 2 \cdot 3} f p^{3} z^{3} \sin 3 \varphi-\cdots
+\end{array}\right.}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{k}}
+\]
+展成的级数的通项. 
+
+\section{$\S 220$}
+
+如果 $k=2$, 那么分式
+\[
+\frac{f-2 p z(f \cos \varphi-g \sin \varphi)+p^{2} z^{2}(f \cos 2 \varphi-g \sin 2 \varphi)}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{2}}
+\]
+产生的级数, 其通项为
+\[
+(n+1)(f \cos n \varphi+g \sin n \varphi) p^{n} z^{n}
+\]
+但是,由分式
+\[
+\frac{a}{1-2 p z \cos \varphi+p^{2} z^{2}}=\frac{a-2 a p z \cos \varphi+a p^{2} z^{2}}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{2}}
+\]
+产生的级数, 其通项为
+\[
+\frac{a \sin (n+1) \varphi}{\sin \varphi} p^{n} z^{n}
+\]
+将这两个分式相加, 并令
+\[
+\begin{gathered}
+a+f=\mathfrak{A} \\
+2 a \cos \varphi+2 f \cos \varphi-2 g \sin \varphi=-\mathfrak{B} \\
+a+f \cos 2 \varphi-g \sin 2 \varphi=0
+\end{gathered}
+\]
+则
+\[
+\begin{gathered}
+g=\frac{\mathfrak{B}+2 \mathfrak{A} \cos \varphi}{2 \sin \varphi}=\frac{\mathfrak{B} \sin \varphi+\mathfrak{U} \sin 2 \varphi}{2 \sin ^{2} \varphi} \\
+a=\frac{\mathfrak{H}+\mathfrak{B} \cos \varphi}{1-\cos 2 \varphi}=\frac{\mathfrak{H}+\mathfrak{B} \cos \varphi}{2 \sin ^{2} \varphi} \\
+f=-\frac{\mathfrak{H} \cos 2 \varphi+\mathfrak{B} \cos \varphi}{2 \sin ^{2} \varphi}
+\end{gathered}
+\]
+由此, 分式
+\[
+\frac{\mathfrak{U}+\mathfrak{B} p z}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{2}}
+\]
+产生的级数,其通项为
+\[
+\begin{aligned}
+& \frac{\mathfrak{H}+\mathfrak{B} \cos \varphi \sin (n+1) \varphi p^{n} z^{n}+(n+1) \cdot}{2 \sin ^{3} \varphi} \\
+& \mathfrak{B} \sin \varphi \sin n \varphi+\mathfrak{U} \sin 2 \varphi \sin n \varphi-\mathfrak{B} \cos \varphi \cos n \varphi-\mathscr{U} \cos 2 \varphi \cos n \varphi p_{p^{n} z^{n}}= \\
+& 2 \sin ^{2} \varphi \\
+& -\frac{(n+1)(\mathfrak{X} \cos (n+2) \varphi+\mathfrak{B} \sin (n+1) \varphi)}{2 \sin ^{2} \varphi} p^{n} z^{n}+ \\
+& \frac{(\mathfrak{U}+\mathfrak{B} \cos \varphi) \sin (n+1) \varphi}{2 \sin ^{3} \varphi} p^{n}= \\
+& \frac{\frac{1}{2}(n+3) \sin (n+1) \varphi-\frac{1}{2}(n+1) \sin (n+3) \varphi}{2 \sin ^{3} \varphi}
+\end{aligned}
+\]
+\[
+ \frac{\frac{1}{2}(n+2) \sin n \varphi-\frac{1}{2} n \sin (n+2) \varphi}{2 \sin ^{3} \varphi} \mathfrak{B}_{p^{n} z^{n}}
+\]
+也即, 分式
+\[
+\frac{\mathfrak{U}+\mathfrak{B p z}}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{2}}
+\]
+产生的级数, 其通项为
+\[
+\begin{gathered}
+\frac{(n+3) \sin (n+1) \varphi-(n+1) \sin (n+3) \varphi}{4 \sin ^{3} \varphi} \mathfrak{X} p^{n} z^{n}+ \\
+\frac{(n+2) \sin n \varphi-n \sin (n+2) \varphi_{\mathfrak{B}} p^{n} z^{n}}{4 \sin ^{3} \varphi} 
+\end{gathered}
+\]
+\section{$\S 221$}
+
+$k=3 $ 时, 分式 
+\[\frac{f-3 p z(f \cos \varphi-g \sin \varphi)+3 p^{2} z^{2}(f \cos 2 \varphi-g \sin 2 \varphi)-p^{3} z^{3}(f \cos 3-g \sin 3 \varphi)}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{3}\]
+产生的级数,其通项为
+\[
+\frac{(n+1)(n+2)}{1 \cdot 2}(f \cos n \varphi+g \sin n \varphi) p^{n} z^{n}
+\]
+而分式
+\[
+\frac{a+b p z}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{2}}=\frac{a-p z(2 a \cos \varphi-b)+p^{2} z^{2}(a-2 b \cos \varphi)+b q^{3} z^{3}}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{3}}
+\]
+产生的级数,其通项为
+\[
+\begin{aligned}
+& \frac{(n+3) \sin (n+1) \varphi-(n+1) \sin (n+3) \varphi}{4 \sin ^{3} \varphi} a p^{n} z^{n}+ \\
+& \frac{(n+2) \sin n \varphi-n \sin (n+2) \varphi}{4 \sin ^{3} \varphi}
+\end{aligned}
+\]
+这两个分式相加, 并令分子等于 $\mathfrak{U}$, 则
+\[
+\begin{gathered}
+a+f=\mathfrak{A} \\
+3 f \cos \varphi-3 g \sin \varphi+2 a \cos \varphi-b=0 \\
+3 f \cos 2 \varphi-3 g \sin 2 \varphi+a-2 b \cos \varphi=0 \\
+f \cos 3 \varphi-g \sin 3 \varphi-b=0
+\end{gathered}
+\]
+从而得
+\[
+\begin{gathered}
+a=\frac{f \cos 3 \varphi-g \sin 3 \varphi-3 f \cos \varphi+3 g \sin \varphi}{2 \cos \varphi}= \\
+2 g \sin ^{2} \varphi \tan \varphi-f-2 \sin ^{2} \varphi
+\end{gathered}
+\]
+又得
+
+%%09p161-180
+\[
+\begin{aligned}
+& \text { Infinite analysies } \\
+& \qquad \frac{f}{g}=\frac{\sin 5 \varphi-2 \sin 3 \varphi+\sin \varphi}{\cos 5 \varphi-2 \cos 3 \varphi+\cos \varphi}
+\end{aligned}
+\]
+和
+\[
+a+f=\mathfrak{U}=2 g \sin ^{2} \varphi \tan \varphi-2 f \sin ^{2} \varphi
+\]
+也即
+\[
+\frac{\mathfrak{X}}{2 \sin ^{2} \varphi}=\frac{g \sin \varphi-f \cos \varphi}{\cos \varphi}
+\]
+由此最后得到
+\[
+\begin{aligned}
+& f=\frac{\mathfrak{A}(\sin \varphi-2 \sin 3 \varphi+\sin 5 \varphi)}{16 \sin ^{5} \varphi} \\
+& g=\frac{\mathfrak{A}(\cos \varphi-2 \cos 3 \varphi+\cos 5 \varphi)}{16 \sin ^{5} \varphi}
+\end{aligned}
+\]
+由于
+\[
+16 \sin ^{5} \varphi=\sin 5 \varphi-5 \sin 3 \varphi+10 \sin \varphi
+\]
+得到
+\[
+\begin{gathered}
+a=\frac{\mathfrak{U}(9 \sin \varphi-3 \sin 3 \varphi)}{16 \sin ^{5} \varphi} \\
+b=\frac{\mathfrak{U}(-\sin 2 \varphi+\sin 2 \varphi)}{16 \sin ^{5} \varphi}=0
+\end{gathered}
+\]
+又由于
+\[
+3 \sin \varphi-\sin 3 \varphi=4 \sin ^{3} \varphi
+\]
+得到
+\[
+a=\frac{3 \mathfrak{A}}{4 \sin ^{2} \varphi}
+\]
+这样一来, 通项为
+\[
+\begin{aligned}
+& \frac{(n+1)(n+2)}{1 \cdot 2} \mathscr{X} p^{n} z^{n} \frac{\sin (n+1) \varphi-2 \sin (n+3) \varphi+\sin (n+5) \varphi}{16 \sin ^{5} \varphi}+ \\
+& 3 \mathscr{M} p^{n} z^{n} \cdot \frac{(n+3) \sin (n+1) \varphi-(n+1) \sin (n+3) \varphi}{16 \sin ^{5} \varphi}= \\
+& \frac{9\left(p^{n} z^{n}\right.}{16 \sin ^{5} \varphi}\left\{\frac{(n+4)(n+5)}{1 \cdot 2} \sin (n+1) \varphi-\right. \\
+& \frac{2(n+1)(n+5)}{1 \cdot 2} \sin (n+3) \varphi+ \\
+& \left.\frac{(n+1)(n+2)}{1 \cdot 2} \sin (n+5) \varphi\right\}
+\end{aligned}
+\]
+\section{$\S 222$}
+
+这样,产生于 
+\[
+\frac{\mathfrak{A}+\mathfrak{B}_{p z}}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{3}}
+\]
+的级数,其通项为
+\[
+\begin{aligned}
+& \frac{\mathfrak{3} p^{n} z^{n}}{16 \sin ^{5} \varphi}\left\{\frac{(n+4)(n+5)}{1 \cdot 2} \sin (n+1) \varphi-\right. \\
+& \frac{2(n+1)(n+5)}{1 \cdot 2} \sin (n+3) \varphi+ \\
+& \left.\frac{(n+1)(n+2)}{1 \cdot 2} \sin (n+5) \varphi\right\}+ \\
+& \frac{\mathfrak{B} p^{n} z^{n}}{16 \sin ^{5} \varphi}\left\{\frac{(n+3)(n+4)}{1 \cdot 2} \sin n \varphi-\right. \\
+& \frac{2 n(n+4)}{1 \cdot 2} \sin (n+2) \varphi+ \\
+& \left.\frac{n(n+1)}{1 \cdot 2} \sin (n+4) \varphi\right\}
+\end{aligned}
+\]
+进一步,让 $k$ 的值加 1 , 我们有, 产生于
+\[
+\frac{\mathfrak{U}+\mathfrak{B} p z}{\left(1-2 p z \cos \varphi+p^{2} z^{2}\right)^{4}}
+\]
+的级数,其通项为
+\[
+\begin{aligned}
+& \frac{\mathfrak{A} p^{n} z^{n}}{64 \sin ^{7} \varphi}\left\{\frac{(n+7)(n+6)(n+5)}{1 \cdot 2 \cdot 3} \sin (n+1) \varphi-\right. \\
+& \frac{3(n+1)(n+7)(n+6)}{1 \cdot 2 \cdot 3} \sin (n+3) \varphi+ \\
+& \frac{3(n+1)(n+2)(n+7)}{1 \cdot 2 \cdot 3} \sin (n+5) \varphi- \\
+& \left.\frac{(n+1)(n+2)(n+3)}{1 \cdot 2 \cdot 3} \sin (n+7) \varphi\right\}+ \\
+& \frac{\mathfrak{B} p^{n} z^{n}}{64 \sin ^{7} \varphi}\left\{\frac{(n+6)(n+5)(n+4)}{1 \cdot 2 \cdot 3} \sin n \varphi-\right. \\
+& \frac{3 n(n+6)(n+5)}{1 \cdot 2 \cdot 3} \sin (n+2) \varphi+ \\
+& \frac{3 n(n+1)(n+6)}{1 \cdot 2 \cdot 3} \sin (n+4) \varphi- \\
+& \left.\frac{n(n+1)(n+2)}{1 \cdot 2 \cdot 3} \sin (n+6) \varphi\right\}
+\end{aligned}
+\]
+分母幂次更高时, 通项的求法, 不难从上面的讨论弄清. 我们列出下面的等式 ${ }^{(1}$, 供进一 步讨论时使用.
+\[
+\sin \varphi=\sin \varphi
+\]
+(1) 参见 $\S 262 .-$ 译者 
+\[
+\begin{aligned}
+& 4 \sin ^{3} \varphi=3 \sin \varphi-\sin 3 \varphi \\
+& 16 \sin ^{5} \varphi=10 \sin \varphi-5 \sin 3 \varphi+\sin 5 \varphi \\
+& 64 \sin ^{7} \varphi=35 \sin \varphi-21 \sin 3 \varphi+7 \sin 5 \varphi-\sin 7 \varphi \\
+& 256 \sin ^{9} \varphi=125 \sin \varphi-84 \sin 3 \varphi+36 \sin 5 \varphi-9 \sin 7 \varphi+\sin 9 \varphi-\cdots 
+\]
+\section{$\S 223$}
+
+部分分式级数的通项, 我们会求了. 部分分式级数通项之和, 就是分式级数的通项. 下面举例,具体说明.
+
+从分式
+\[
+\frac{1}{(1-z)\left(1-z^{2}\right)\left(1-z^{3}\right)}=\frac{1}{1-z-z^{2}+z^{4}+z^{5}-z^{6}}
+\]
+得递推级数
+\[
+1+z+2 z^{2}+3 z^{3}+4 z^{4}+5 z^{5}+7 z^{6}+8 z^{7}+10 z^{8}+12 z^{9}+\cdots
+\]
+求通项.
+
+分解分母为因式, 得
+\[
+\frac{1}{(1-z)^{3}(1+z)\left(1+z+z^{2}\right)}
+\]
+分解分式为部分分式, 得
+\[
+\begin{gathered}
+\frac{1}{6(1-z)^{3}}+\frac{1}{4(1-z)^{2}}+\frac{17}{72(1-z)}+\frac{1}{8(1+z)}+\frac{2+z}{9\left(1+z+z^{2}\right)} \\
+\text { 第一个部分分式 } \frac{1}{6(1-z)^{3}} \text { 给出通项 } \\
+\frac{(n+1)(n+2) 1}{1 \cdot 2} \frac{1}{6} z^{n}=\frac{n^{2}+3 n+2}{12} z^{n}
+\end{gathered}
+\]
+第二、三、四个部分分式
+\[
+\frac{1}{4(1-z)^{2}}, \frac{17}{72(1-z)}, \frac{1}{8(1+z)}
+\]
+给出的通项依次为
+\[
+\frac{n+1}{4} z^{n}, \frac{17}{72} z^{n}, \frac{1}{8}(-1)^{n} z^{n}
+\]
+第五个部分分式
+\[
+\frac{2+z}{9\left(1+z+z^{2}\right)}
+\]
+$\mapsto$
+\[
+\frac{\mathfrak{A}+\mathfrak{B} p z}{1-2 p z \cos \varphi+p^{2} z^{2}}(\S 218)
+\]
+相比较, 我们有 
+\[
+\begin{aligned}
+& \text { Infinite analysis } \text { 无爸分析与讷) Slxaductian } \\
+& \qquad p=-1, \varphi=\frac{\pi}{3}=60^{\circ}, \mathfrak{X}=\frac{2}{9}, \mathfrak{B}=-\frac{1}{9}
+\end{aligned}
+\]
+从而第五个部分分式给出的通项为
+\[
+\begin{aligned}
+\frac{2 \sin (n+1) \varphi-\sin n \varphi}{9 \sin \varphi}(-1)^{n} z^{n}= & \frac{4 \sin (n+1) \varphi-2 \sin n \varphi}{9 \sqrt{3}}(-1)^{n} z^{n}= \\
+& \frac{4 \sin (n+1) \frac{\pi}{3}-2 \sin n \frac{\pi}{3}}{9 \sqrt{3}}(-1)^{n} z^{n}
+\end{aligned}
+\]
+这五个通项的和
+\[
+\left(\frac{n^{2}}{12}+\frac{n}{2}+\frac{47}{72}\right) z^{n} \pm \frac{1}{8} z^{n} \pm \frac{4 \sin (n+1) \frac{\pi}{3}-2 \sin n \frac{\pi}{3}}{9 \sqrt{3}} z^{n}
+\]
+就是我们所求的通项. $n$ 为偶数时取正号, $n$ 为奇数时取负号, 我们指出, $n=3 m$ 时
+\[
+\frac{4 \sin \frac{1}{3}(n+1) \pi-2 \sin \frac{1}{3} n \pi}{9 \sqrt{3}}=\pm \frac{2}{9}
+\]
+$n=3 m+1$ 或 $n=3 m+2$ 时, 该表达式等于 $\mp \frac{1}{9}(n$ 为偶数时取负号, $n$ 为奇数时取正号 $)$. 由此我们得到:
+
+\begin{tabular}{l|l}
+\hline 如果 & 则通项为 \\
+\hline$n=6 m+0$ & $\left(\frac{n^{2}}{12}+\frac{n}{2}+1\right) z^{n}$ \\
+\hline$n=6 m+1$ & $\left(\frac{n^{2}}{12}+\frac{n}{2}+\frac{5}{12}\right) z^{n}$ \\
+\hline$n=6 m+2$ & $\left(\frac{n^{2}}{12}+\frac{n}{2}+\frac{2}{3}\right) z^{n}$ \\
+\hline$n=6 m+3$ & $\left(\frac{n^{2}}{12}+\frac{n}{2}+\frac{3}{4}\right) z^{n}$ \\
+\hline$n=6 m+4$ & $\left(\frac{n^{2}}{12}+\frac{n}{2}+\frac{2}{3}\right) z^{n}$ \\
+\hline$n=6 m+5$ & $\left(\frac{n^{2}}{12}+\frac{n}{2}+\frac{5}{12}\right) z^{n}$ \\
+\hline
+\end{tabular}
+
+例如 $n=50$, 此时 $n=6 m+2$, 级数的项为 $234 z^{50}$.
+
+例 6 从分式
+\[
+\frac{1+z+z^{2}}{1-z-z^{4}+z^{5}}
+\]
+得到递推级数
+\[
+1+2 z+3 z^{2}+3 z^{3}+4 z^{4}+5 z^{5}+6 z^{6}+6 z^{7}+7 z^{8}+\cdots
+\]
+求通项.
+
+该分式可化成
+\[
+\frac{1+z+z^{2}}{(1-z)^{2}(1+z)\left(1+z^{2}\right)}
+\]
+从而可分解成
+\[
+\frac{3}{4(1-z)^{2}}+\frac{3}{8(1-z)}+\frac{1}{8(1+z)}+\frac{-1+z}{4\left(1+z^{2}\right)}
+\]
+前三个部分分式
+\[
+\frac{3}{4(1-z)^{2}}, \frac{3}{8(1-z)}, \frac{1}{8(1+z)}
+\]
+给出的通项依次为
+\[
+\frac{3(n+1)}{4} z^{n}, \frac{3}{8} z^{n}, \frac{1}{8}(-1)^{n} z^{n}
+\]
+将第四个部分分式 $\frac{-1+z}{4\left(1+z^{2}\right)}$ 与表达式
+\[
+\frac{\mathfrak{U}+\mathfrak{B} p z}{1-2 p z \cos \varphi+p^{2} z^{2}}
+\]
+相比较,我们有
+\[
+p=1, \cos \varphi=0, \varphi=\frac{\pi}{2}, \mathfrak{U}=-\frac{1}{4}, \mathfrak{B}=+\frac{1}{4}
+\]
+从而,第四个部分分式对应的通项为
+\[
+\left(-\frac{1}{4} \sin \frac{n+1}{2} \pi+\frac{1}{4} \sin \frac{n}{2} \pi\right) z^{n}
+\]
+我们所求的通项就等于这四个通项的和
+\[
+\left(\frac{3}{4} n+\frac{9}{8}\right) z^{n} \pm \frac{1}{8} z^{n}-\frac{1}{4}\left(\sin \frac{n+1}{2} \pi-\sin \frac{n}{2} \pi\right) z^{n}
+\]
+由此我们得到:
+
+\begin{tabular}{l|l}
+\hline 如果 & 则通项为 \\
+\hline$n=4 m+0$ & $\left(\frac{3}{4} n+1\right) z^{n}$ \\
+\hline$n=4 m+1$ & $\left(\frac{3}{4} n+\frac{5}{4}\right) z^{n}$ \\
+\hline$n=4 m+2$ & $\left(\frac{3}{4} n+\frac{3}{2}\right) z^{n}$ \\
+\hline$n=4 m+3$ & $\left(\frac{3}{4} n+\frac{3}{4}\right) z^{n}$ \\
+\hline
+\end{tabular}
+
+例如, $n=50$, 此时 $n=4 m+2$, 级数的项为 $39 z^{50}$.
+
+\section{$\S 224$}
+
+由递推级数, 易于得到产生它的分式, 有了这分式, 就可以按刚讨论过的规则求出级数的通项. 从递推级数的递推性, 即每一项都可由它的前几项推出, 我们可直接写出产生 它的分式的分母. 这分母的因式决定通项的形状, 分子决定通项的系数. 设递推级数为
+\[
+A+B z+C z^{2}+D z^{3}+E z^{4}+F z^{5}+\cdots
+\]
+假定递推规律为
+\[
+D=\alpha C+\beta B+\gamma A, E=\alpha D+\beta C+\gamma B, F=\alpha E+\beta D+\gamma C, \cdots
+\]
+则分母为
+\[
+1-\alpha z-\beta z^{2}-\gamma z^{3}
+\]
+棣莫弗称
+\[
++\alpha,+\beta,+\gamma
+\]
+为递推尺度, 递推尺度决定递推规律, 并给出由递推级数所产生的分式的分母.
+
+\section{$\S 225$}
+
+为了求出通项, 也即求出任何幂 $z^{n}$ 的系数, 我们先求出 $1-\alpha z-\beta z^{2}-\gamma z^{3}$ 的线性因 式, 或者有时为避免虚数, 求出它的二次因式. 如果因式都是实的, 且相异, 为
+\[
+(1-p z)(1-q z)(1-r z)
+\]
+那么产生级数的分式可分解为
+\[
+\frac{\mathfrak{U}}{1-p z}+\frac{\mathfrak{B}}{1-q z}+\frac{\mathfrak{S}}{1-r z}
+\]
+因而级数的通项为
+\[
+\left(\mathfrak{A} p^{n}+\mathfrak{B} q^{n}+\mathfrak{C}^{n}\right) z^{n}
+\]
+如果因式中有两个相等, 例如 $q=p$, 则通项为
+\[
+\left((\mathfrak{U}(n+1)+\mathfrak{B}) p^{n}+\left(\mathfrak{r ^ { n }}\right) z^{n}\right.
+\]
+如果 $p=q=r$, 则通项为
+\[
+\left(\mathfrak{U} \frac{(n+1)(n+2)}{1 \cdot 2}+\mathfrak{B}(n+1)+\widetilde{5}\right) p^{n} z^{n}
+\]
+如果分母 $1-\alpha z-\beta z^{2}-\gamma z^{3}$ 有二次因式,即它等于
+\[
+(1-p z)\left(1-2 q z \cos \varphi+q^{2} z^{2}\right)
+\]
+则通项为
+\[
+\left(\mathfrak{A} p^{n}+\frac{\mathfrak{B} \sin (n+1) \varphi+\mathfrak{S} \sin n \varphi}{\sin \varphi} q^{n}\right) z^{n}
+\]
+令 $n$ 等于 $1,2,3$, 我们就应该得到 $A, B z, C z^{2}$, 由此即可求出 $\mathfrak{I}, \mathfrak{B}, \mathfrak{S}$ 的值.
+
+\section{$\S 226$}
+
+如果递推尺度只有两个数, 即级数的每一项都可由其前两项推出, 关系式为
+\[
+C=\alpha B-\beta A, D=\alpha C-\beta B, E=\alpha D-\beta C, \cdots
+\]
+则产生级数 
+
+\[
+A+B z+C z^2+D z^3+E z^4+\cdots+P z^n+Q z^{n+1}+\cdots
+\]
+
+的分式的分母为
+\[
+1-\alpha z+\beta z^{2}
+\]
+如果这分母的因式为
+\[
+(1-p z)(1-q z)
+\]
+则
+\[
+p+q=\alpha, p q=\beta
+\]
+且级数的通项为
+\[
+\left(\mathfrak{U} p^{n}+\mathfrak{B} q^{n}\right) z^{n}
+\]
+由此, $n=0$, 得
+\[
+A=\mathfrak{A}+\mathfrak{B}
+\]
+$n=1$ 得
+\[
+B=\mathfrak{X}_{p}+\mathfrak{B} q
+\]
+从而
+\[
+\begin{gathered}
+A q-B=\mathfrak{U}(q-p) \\
+\mathfrak{U}=\frac{A q-B}{q-p}, \mathfrak{B}=\frac{A p-B}{p-q}
+\end{gathered}
+\]
+有了 $\mathfrak{U}$ 和 $\mathfrak{B}$, 就可以得到
+\[
+\begin{gathered}
+P=\mathfrak{U} \mathfrak{p}^{\mathfrak{n}}+\mathfrak{B} q^{n}, Q=\mathfrak{U} \mathfrak{p}^{\mathfrak{n}+1}+\mathfrak{B} q^{n+1} \\
+\mathfrak{X} \mathfrak{B}=\frac{B^{2}-\alpha A B+\beta A^{2}}{4 \beta-\alpha^{2}} 
+\end{gathered}
+\]
+\section{$\S 227$}
+
+有了上节的准备, 我们可以找到方法, 使得每项都可以由它的前一项, 而不是前两项 推出,由
+\[
+P=\mathfrak{A} p^{n}+\mathfrak{B} q^{n}, Q=\mathfrak{A} p \cdot p^{n}+\mathfrak{B} q \cdot q^{n}
+\]
+得
+\[
+P q-Q=\mathfrak{U}(q-p) p^{n}, P q-Q=\mathfrak{B}(p-q) q^{n}
+\]
+两式相乘,得
+\[
+P^{2} p q-(p+q) P Q+Q^{2}+\mathfrak{X B}(p-q)^{2} p^{n} q^{n}=0
+\]
+但
+\[
+p+q=\alpha, p q=\beta,(p-q)^{2}=(p+q)^{2}-4 p q=\alpha^{2}-4 \beta, p^{n} q^{n}=\beta^{n}
+\]
+代入前式, 得
+\[
+\beta P^{2}-\alpha P Q+Q^{2}=\left(\beta A^{2}-\alpha A B+B^{2}\right) \beta^{n}
+\]
+或
+\[
+\frac{\beta P^{2}-\alpha P Q+Q^{2}}{\beta A^{2}-\alpha A B+\beta^{2}}=\beta^{n}
+\]
+每一项都是由前两项推出的, 这是递推级数的一条重要性质. 根据这条性质, 从任何一项 $P$ 都可推出其下一项 $Q$
+\[
+Q=\frac{1}{2} \alpha P+\sqrt{\left(\frac{1}{4} \alpha^{2}-\beta\right) P^{2}+\left(B^{2}-\alpha A B+\beta A^{2}\right) \beta^{n}}
+\]
+虽然式中有根号, 但不会得到无理数, 因为递推级数的项都是有理的.
+
+\section{$\S 228$}
+
+进一步, 从任给的相邻两项 $P z^{n}$ 和 $Q z^{n+1}$, 我们可以求出远离它们的项 $X z^{2 n}$. 令
+\[
+X=f P^{2}+g P Q-h \mathscr{\mathcal { X }} \mathfrak{B} \beta^{n}
+\]
+由
+\[
+\begin{gathered}
+P=\mathfrak{U} p^{n}+\mathfrak{B} q^{n} \\
+Q=\mathfrak{X} p^{n+1}+\mathfrak{B} q^{n+1} \\
+X=\mathfrak{A} p^{2 n}+\mathfrak{B} q^{2 n}
+\end{gathered}
+\]
+得
+\[
+\begin{gathered}
+f P^{2}=f \mathfrak{U}^{2} p^{2 n}+f \mathfrak{B}^{2} q^{2 n}+2 f \mathfrak{U} \mathfrak{B} \beta^{n} \\
+g P Q=g \mathfrak{U}^{2} p \cdot p^{2 n}+g \mathfrak{B}^{2} q \cdot q^{2 n}+g \mathfrak{U} \mathfrak{B} \alpha \beta^{n} \\
+-h \mathfrak{U} \mathfrak{B} \beta^{n}=-h \mathfrak{A} \mathfrak{B} \beta^{n} \\
+X=\mathfrak{U} P^{2 n}+\mathfrak{B} Q^{2 n}
+\end{gathered}
+\]
+比较右端, 得
+\[
+\begin{aligned}
+& f+g p=\frac{1}{\mathfrak{A}} \\
+& f+g p=\frac{1}{\mathfrak{B}} \\
+& h=2 f+g \alpha
+\end{aligned}
+\]
+从而
+\[
+g=\frac{\mathfrak{B}-\mathfrak{U}}{\mathfrak{H} \mathfrak{B}(p-q)}, f=\frac{\mathfrak{A} p-\mathfrak{B} q}{\mathfrak{U} \mathfrak{B}(p-q)}
+\]
+但
+\[
+\mathfrak{B}-\mathfrak{U}=\frac{\alpha A-2 B}{p-q}, \mathfrak{A} p-\mathfrak{B} q=\frac{\alpha B-2 \beta A}{p-q}
+\]
+代入上式,得
+\[
+f=\frac{\alpha B-2 \beta A}{\mathfrak{H} \mathfrak{B}\left(\alpha^{2}-4 \beta\right)}, g=\frac{\alpha A-2 B}{\mathfrak{H} \mathfrak{B}\left(\alpha^{2}-4 \beta\right)}
+\]
+或者
+\[
+\begin{aligned}
+& f=\frac{2 \beta A-\alpha B}{B^{2}-\alpha A B+\beta A^{2}} \\
+& g=\frac{2 B-\alpha A}{B^{2}-\alpha A B+\beta A^{2}}
+\end{aligned}
+\]
+\[
+h=\frac{\left(4 \beta-\alpha^{2}\right) A}{B^{2}-\alpha A B+\beta A^{2}}
+\]
+最后得到
+\[
+X=\frac{(2 \beta A-\alpha B) P^{2}+(2 B-\alpha A) P Q}{B^{2}-\alpha A B+\beta A^{2}}-A \beta^{n}
+\]
+用类似地方法我们得到
+\[
+X=\frac{\left(\alpha \beta A-\left(\alpha^{2}-2 \beta\right) B\right) P^{2}+(2 B-\alpha A) Q^{2}}{\alpha\left(B^{2}-\alpha A B+\beta A^{2}\right)}-\frac{2 B \beta^{n}}{\alpha}
+\]
+从 $X$ 的两个表达式中消去含 $\beta^{n}$ 的项, 得
+\[
+X=\frac{(\beta A-\alpha B) P^{2}+2 B P Q-A Q^{2}}{B^{2}-\alpha A B+\beta A^{2}} 
+\]
+\section{$\S 229$}
+
+用上节方法, 我们来确定更远的项,记级数为
+\[
+A+B z+C z^{2}+\cdots+P z^{n}+Q z^{n+1}+R z^{n+2}+\cdots+X z^{2 n}+Y z^{2 n+1}+Z z^{2 n+2}+\cdots
+\]
+那么由上节结果我们有
+\[
+Z=\frac{(\beta A-\alpha B) Q^{2}+2 B Q R-A R^{2}}{B^{2}-\alpha A B+\beta A^{2}}
+\]
+将
+\[
+R=\alpha Q-\beta P
+\]
+代入,得
+\[
+Z=\frac{-\beta^{2} A P^{2}+2 \beta(\alpha A-B) P Q+\left(\alpha B-\left(\alpha^{2}-\beta\right) A\right) Q^{2}}{B^{2}-\alpha A B+\beta A^{2}}
+\]
+由 $Z=\alpha Y-\beta X$, 从而 $Y=\frac{Z+\beta X}{\alpha}$; 由此得
+\[
+Y=\frac{-\beta B P^{2}+2 \beta A P Q+(B-\alpha A) Q^{2}}{B^{2}-\alpha A B+\beta A^{2}}
+\]
+这样, 用上节方法从 $X, Y$ 我们可以确定 $z^{4 n}$ 和 $z^{4 n+1}$ 的系数, 再进一步, 可以确定 $z^{8 n}$ 和 $z^{8 n+1}$ 的系数,类推.
+
+例 递推级数
+\[
+1+3 z+4 z^{2}+7 z^{3}+11 z^{4}+18 z^{5}+\cdots+P z^{n}+Q z^{n+1}+\cdots
+\]
+每一项的系数都等于其前两项系数的和, 从而产生这个级数的分式的分母为
+\[
+1-z-z^{2}
+\]
+继而
+\[
+\alpha=1, \beta=-1 \text {, 又 } A=1, B=3
+\]
+进而
+\[
+B^{2}-\alpha A B+\beta A^{2}=5
+\]
+这样我们得到
+\[
+Q=\frac{P+\sqrt{5 P^{2}+20(-1)^{n}}}{2}=\frac{P+\sqrt{5 P^{2} \pm 20}}{2}
+\]
+其中的双重符号, $n$ 为偶数时取正, $n$ 为奇数时取负. 取 $n=4$, 此时 $P=11$, 计算得
+\[
+Q=\frac{11+\sqrt{5 \cdot 121+20}}{2}=\frac{11+25}{2}=18
+\]
+记 $z^{2 n}$ 的系数为 $X$, 则
+\[
+X=\frac{-4 P^{2}+6 P Q-Q^{2}}{5}
+\]
+由此得到 $z^{8}$ 的系数为
+\[
+\frac{-4 \cdot 121+6 \cdot 198-324}{5}=76
+\]
+由
+\[
+Q=\frac{P+\sqrt{5 P^{2} \pm 20}}{2}
+\]
+得
+\[
+Q^{2}=\frac{3 P^{2} \pm 10+P \sqrt{5 P^{2} \pm 20}}{2}
+\]
+从而
+\[
+X=\frac{-P^{2} \mp 2+P \sqrt{5 P^{2} \pm 20}}{2}
+\]
+我们看到, 在本例中, 对任何的 $n$, 由 $P z^{n}$ 我们都得到
+\[
+\frac{P+\sqrt{5 P^{2} \pm 20}}{2} z^{n+1}, \frac{-P^{2} \mp 2+P \sqrt{5 P^{2} \pm 20}}{2} z^{2 n}
+\]
+\section{$\S 230$}
+
+类似地, 对每项都由其前三项推出的递推级数, 也可求出每项只由其前两项推出的 公式. 设级数
+\[
+A+B z+C z^{2}+D z^{3}+\cdots+P z^{n}+Q z^{n+1}+R z^{n+2}+\cdots
+\]
+每项都由其前三项推出, 递推尺度为 $\alpha,-\beta,+\gamma$, 也即产生该级数的那个分式, 其分母为
+\[
+1-\alpha z+\beta z^{2}-\gamma z^{3}
+\]
+借助分母的因式
+\[
+(1-p z)(1-q z)(1-r z)
+\]
+表示 $P, Q, R$ 时, 我们有
+\[
+\begin{gathered}
+P=\mathfrak{X} p^{n}+\mathfrak{B} q^{n}+\mathfrak{C}^{n} \\
+Q=\mathfrak{U} p p^{n}+\mathfrak{B} q q^{n}+\mathfrak{5} r r^{n}
+\end{gathered}
+\]
+\[
+ R=\mathfrak{A} p^{2} p^{n}+\mathfrak{B} q^{2} q^{n}+\mathscr{C} r^{2} r^{n}
+\]
+由于
+\[
+p+q+r=\alpha, p q+p r+q r=\beta, p q r=\gamma
+\]
+我们得到方程
+\[
+\begin{aligned}
+& R^{3}-(2 \alpha Q-\beta P) R^{2}+\left(\left(\alpha^{2}+\beta\right) Q^{2}-(\alpha \beta+3 \gamma) P Q+\alpha \gamma P^{2}\right) R- \\
+& \left((\alpha \beta-\gamma) Q^{3}-\left(\alpha \gamma+\beta^{2}\right) Q^{2} P+2 \beta \gamma P^{2} Q-\gamma^{2} P^{3}\right)= \\
+& \left(C^{3}-(2 \alpha B-\beta A) C^{2}+\left(\left(\alpha^{2}+\beta\right) B^{2}-(\alpha \beta+3 \gamma) A B+\alpha \gamma A^{2}\right) C-\right. \\
+& \left.\left((\alpha \beta-\gamma) B^{3}-\left(\alpha \gamma+\beta^{2}\right) A B^{2}+2 \beta \gamma A^{2} B-\gamma^{2} A^{3}\right)\right) \cdot \gamma^{n}
+\end{aligned}
+\]
+这是 $R$ 的三次方程,这个方程的解,就是由前两项 $P, Q$ 推出 $R$ 的公式.
+
+\section{$\S 231$}
+
+上面讨论了递推级数的通项. 现在我们来考察它的和. 先指出一点, 递推级数的和等 于产生它的那个分式. 这分式的分母可根据递推规律写出. 所以就只剩下求分子了. 设级 数为
+\[
+A+B z+C z^{2}+D z^{3}+E z^{4}+F z^{5}+G z^{6}+\cdots
+\]
+递推规律给出分母为
+\[
+1-\alpha z+\beta z^{2}-\gamma z^{3}+\delta z^{4}
+\]
+记级数的和, 也即产生级数的分式为
+\[
+\frac{a+b z+c z^{2}+d z^{3}}{1-\alpha z+\beta z^{2}-\gamma z^{3}+\delta z^{4}}
+\]
+相比较,我们得到
+\[
+\begin{gathered}
+a=A \\
+b=B-\alpha A \\
+c=C-\alpha B+\beta A \\
+d=D-\alpha C+\beta B-\gamma A
+\end{gathered}
+\]
+代入上式, 得级数的和为
+\[
+\frac{A+(B-\alpha A) z+(C-\alpha B+\beta A) z^{2}+(D-\alpha C+\beta B-\gamma A) z^{3}}{1-\alpha z+\beta z^{2}-\gamma z^{3}+\delta z^{4}} 
+\]
+\section{$\S 232$}
+
+有了级数和,求出到某项为止的部分和就不难了. 记部分和为
+\[
+s=A+B z+C z^{2}+D z^{3}+E z^{4}+\cdots+P z^{n}
+\]
+级数和已知, 现在求 $P z^{n}$ 后面那一部分的和,记它为
+\[
+t=Q z^{n+1}+R z^{n+2}+S z^{n+3}+T z^{n+4}+\cdots
+\]
+用 $z^{n+1}$ 除这个 $t$, 我们得到一个类似于整个级数的级数, 因而它的和为 
+\[
+\begin{aligned}
+& t=\frac{Q z^{n+1}+(R-\alpha Q) z^{n+2}+(S-\alpha R+\beta Q) z^{n+3}+(T-\alpha S+\beta R-\gamma Q) z^{n+4}}{1-\alpha z+\beta z^{2}-\gamma z^{3}+\delta z^{4}}
+\end{aligned}
+\]
+从整个级数的和减去后面那一部分的和, 就得到我们所要的部分和
+\[
+\begin{gathered}
+s=\frac{A+(B-\alpha A) z+(C-\alpha B+\beta A) z^{2}+(D-\alpha C+\beta B-\gamma A) z^{3}}{1-\alpha z+\beta z^{2}-\gamma z^{3}+\delta z^{4}}- \\
+\frac{Q z^{n+1}+(R-\alpha Q) z^{n+2}+(S-\alpha R+\beta Q) z^{n+3}+(T-\alpha S+\beta R-\gamma Q) z^{n+4}}{1-\alpha z+\beta z^{2}-\gamma z^{3}+\delta z^{4}}
+\end{gathered}
+\]
+\section{$\S 233$}
+
+如果递推尺度为两个数: $\alpha,-\beta$, 那么从分式
+\[
+\frac{A+(B-\alpha A) z}{1-\alpha z+\beta z^{2}}
+\]
+得到的
+\[
+A+B z+C z^{2}+D z^{3}+\cdots+P z^{n}
+\]
+的和为
+\[
+\frac{A+(B-\alpha A) z-Q z^{n+1}-(R-\alpha Q) z^{n+2}}{1-\alpha z+\beta z^{2}}
+\]
+由级数的性质我们有
+
+代入上式, 得
+\[
+R=\alpha Q-\beta P
+\]
+\[
+\frac{A+(B-\alpha A) z-Q z^{n+1}+\beta P z^{n+2}}{1-\alpha z+\beta z^{2}}
+\]
+例 7 设级数截止到 $P z^{n}$ 的这一部分为
+\[
+1+3 z+4 z^{2}+7 z^{3}+\cdots+P z^{n}
+\]
+这里
+\[
+\alpha=1, \beta=-1, A=1, B=3
+\]
+则这一部分的和为
+\[
+\frac{1+2 z-Q z^{n+1}-P z^{n+2}}{1-z-z^{2}}
+\]
+令 $z=1$, 则这和等于
+\[
+1+3+4+7+11+\cdots+P=P+Q-3
+\]
+将
+\[
+Q=\frac{P+\sqrt{5 P^{2} \pm 20}}{2}
+\]
+代入, 得
+\[
+1+3+4+7+11+\cdots+P=\frac{3 P-6+\sqrt{5 P^{2} \pm 20}}{2}
+\]
+也即这时的部分和可从最后一项求出. 
+

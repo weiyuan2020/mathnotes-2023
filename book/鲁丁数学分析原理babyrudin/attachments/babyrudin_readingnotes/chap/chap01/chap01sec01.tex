@@ -1,0 +1,213 @@
+\section{Introduction}
+First we use $\sqrt{2}$ to construct real number system from integer and rational numbers.
+
+\begin{newexample}
+    \label{newexample:1.1}
+    \begin{equation}
+        \label{eq:1.1}
+        p^2=2
+    \end{equation}
+    $p$ is not a rational number.
+\end{newexample}
+
+\begin{proof}
+    If $p$ is rational,  $\exists m,n \in \mathbf{N}$,
+    s.t. $p=m/n$. $\gcd (m,n) = 1$.
+    Then \ref{eq:1.1}
+    \begin{equation}
+        \label{eq:1.2}
+        m^2 = 2n^2.
+    \end{equation}
+
+    $m$ is even, $m = 2k$.
+    Then $(2k)^2 = 2n^2$, $2k^2 = n^2$, $k$ is even, $\gcd (m,n)=2\neq 1$,
+    contrary to our choice of $m$ and $n$. Hence p can't be a rational number.
+\end{proof}
+
+After proving $\sqrt{2}$ isn't a rational number, rudin use $\sqrt{2}$ to divide the rationals
+
+\mybox{
+    在证明 $\sqrt{2}$ 不是有理数后,
+    使用 $\sqrt{2}$ 将有理数集分成两部分.
+    引出了分划的概念?
+}
+
+\begin{align*}
+    A = \{p|p^2<2\} \\
+    B = \{p|p^2>2\}
+\end{align*}
+$A$ \emph{contains no largest number},\\
+$B$ \emph{contains no smallest number}.\\
+$\forall p\in A$, $\exists q\in A$, s.t. $p<q$,\\
+$\forall p\in B$, $\exists q\in B$, s.t. $p>q$,\\
+$\forall p>0$
+\begin{equation}
+    \label{eq:1.3}
+    q = p-\frac{p^2-2}{p+2} = \frac{2p+2}{p+2}
+\end{equation}
+
+Then
+\begin{equation}
+    \label{eq:1.4}
+    q^2 - 2 = \frac{2(p^2-2)}{(p+2)^2}
+\end{equation}
+
+If $p\in A$, $p^2<2$. \ref{eq:1.3} shows that $q>p$, \ref{eq:1.4} shows that $q^2<2$, $q\in A$.
+
+If $p\in B$, $p^2>2$. \ref{eq:1.3} shows that $q<p$, \ref{eq:1.4} shows that $q^2>2$, $q\in B$.
+
+
+\begin{myremark}
+    \label{myremark:1.2}
+    The purpose of the above discussion has been to show that
+    the rational number system has \myKeywordred{certain gaps},
+    in spite of the fact that between any two rationals there is another:
+    If $r<s$ then $r<(r+s)/2<s$.
+    The real number system fills these gaps.
+    This is the principal reason for the fundamental role
+    which it plays in analysis.
+\end{myremark}
+
+\mybox{
+    有理数的稠密性与实数的连续性.
+    在分析中, 考察极限等需要的是数系的连续性, 因此需要先建立实数系.
+    事实上, 我们是先有微积分, 后有实数理论的. \\
+    三次数学危机:无理数, 微积分基础, 集合论
+    实数理论是极限的基础.
+}
+
+In order to elucidate its structure, as well as that of the complex numbers,
+we start with a brief discussion of the general concepts of \myKeywordblue{ordered set} and \myKeywordblue{field}.
+
+% \mybox{
+%     rudin引入复数的方法非常怪, 对初学者非常不友好, 过于抽象了. 
+%     % 想起一个法国笑话, 问小学生$2+3$等于几, 回答 $2+3=3+2$ 加法是一个交换群（Abel 群）...
+% } 
+
+Here is some of the standard set-theoretic terminology that will be used throughout this book.
+
+% \mybox{接下来引入一些集合论的概念}
+
+\mybox{这里未经定义就使用了集合 Set 的概念
+
+    Set  \url{https://mathworld.wolfram.com/Set.html}
+
+    A set is a finite or infinite collection of objects
+    in which order has no significance,
+    and multiplicity is generally also ignored
+    (unlike a list or multiset).
+    Members of a set are often referred to as elements
+    and the notation $a \in A$ is used to denote that
+    $a$ is an element of a set $A$.
+    The study of sets and their properties is the object of set theory.
+
+    % Older words for set include aggregate and set class. 
+    % Russell also uses the unfortunate term manifold to refer to a set.
+
+    % Historically, 
+    % a single horizontal overbar was used to denote 
+    % a set stripped of any structure besides order, 
+    % and hence to represent the order type of the set. 
+    % A double overbar indicated stripping the order from the set 
+    % and hence represented the cardinal number of the set. 
+    % This practice was begun by set theory founder Georg Cantor.
+
+    % Symbols used to operate on sets include 
+    % intersection $\cap$ (which means "and" or intersection), 
+    % and union $\cup$ (which means "or" or union). 
+    % The symbol emptyset $\varnothing$ is used to denote 
+    % the set containing no elements, called the empty set.
+
+    % There are a number of different notations related to the theory of sets. 
+    % In the case of a finite set of elements,
+    % one often writes the collection inside curly braces, e.g.,
+    % \[A={1,2,3}\]
+}
+
+%  too long notes out side box
+
+% for the set of natural numbers less than or equal to three. Similar notation can be used for infinite sets provided that ellipses are used to signify infiniteness, e.g.,
+% \[B={3,4,5,...} 	\]
+
+% for the collection of natural numbers greater than or equal to three, or
+% \[C={...,-4,-2,0,2,4,...} 	\]
+
+% for the set of all even numbers.
+
+% In addition to the above notation, one can use so-called set builder notation to express sets and elements thereof. The general format for set builder notation is
+% \[{x:p(x)}, 	\]
+
+% where $x$ denotes an element and $p(x)$ denotes a property $p$ satisfied by $x$. $()$ can also be expanded so as to indicate construction of a set which is a subset of some ambient set $X$, e.g.,
+% \[{x \in X:p(x)}. 	\]
+
+
+
+% It is worth noting is that the "$:$" in $()$ and $()$ is sometimes replaced by a vertical line, e.g.,
+% \[{x \in X|p(x)}. 	\]
+% Also worth noting is that the sets in $()$, $()$, and $()$ can all be rewritten in set builder notation as subsets of the set Z of integers, namely
+% \begin{align*}
+%     A	&=	{n \in N:n<=3}	\\
+%     B	&=	{n \in N:n>=3}	\\
+%     C	&=	{n \in Z:n\text{ is even}},	
+% \end{align*}
+% respectively.
+
+% \mybox{
+
+% Other common notations related to set theory include $A^B$, which is used to denote the set of maps from $B$ to $A$ where $A$ and $B$ are arbitrary sets. 
+% For example, an element of $X^\N$ would be a map from the natural numbers $\N$ to the set $X$. 
+% Call such a function $f$, then $f(1)$, $f(2)$, etc., are elements of $X$, so call them $x_1, x_2$, etc. This now looks like a sequence of elements of $X$, so sequences are really just functions from $\N$ to $X$. This notation is standard in mathematics and is frequently used in symbolic dynamics to denote sequence spaces.
+
+% Let $E, F$, and $G$ be sets. Then operation on these sets using the intersection and union operators is commutative
+% \begin{align*}
+%     E \cap F &= F \cap E \\	
+%     E \cup F &= F \cup E, 	
+% \end{align*}
+
+% associative
+% \begin{align*}
+%     (E \cap F) \cap G &= E \cap (F \cap G) 	\\
+%     (E \cup F) \cup G &= E \cup (F \cup G), 	
+% \end{align*}
+
+% and distributive
+% \begin{align*}
+%     (E \cap F) \cup G &= (E \cup G) \cap (F \cup G) 	\\
+%     (E \cup F) \cap G &= (E \cap G) \cup (F \cap G). 	
+% \end{align*}
+
+% More generally, we have the infinite distributive laws
+% \begin{align*}
+%     A \cap ( \bigcup_{(\lambda \in \Lambda)}B_\lambda) &= \bigcup_{(\lambda \in \Lambda)}(A \cap B_\lambda) 	\\
+%     A \cup ( \bigcap_{(\lambda \in \Lambda)}B_\lambda) &= \bigcap_{(\lambda \in \Lambda)}(A \cup B_\lambda) 	
+% \end{align*}
+
+% where lambda runs through any index set $\Lambda$. The proofs follow trivially from the definitions of union and intersection.
+% }
+
+\begin{mydef}
+    \label{mydef:1.3}
+    If $A$ is any set (whose elements may be numbers or any other objects),
+    we write $x\in A$ to indicate that $x$ is a member (or an element) of $A$.
+    \mybox{
+        element 还没定义\\
+        object指代什么? 我个人认为集合理解的难点在于集合的集合.
+        % 这一点可以引出罗素悖论
+    }
+    If $x$ is not a member of $A$, we write: $x\notin A$.
+
+    \emph{empty set} $\varnothing$ contains no element, If a set has at least one element, it is called \emph{nonempty}.
+
+    $A,B$ are sets,
+    $\forall x\in A$, $x\in B$, we say that $A$ is a \emph{subset} of $B$, $A \subset B$ or $B \supset A$.
+    If $\exists x\in B$, $x\notin A$, A is a \emph{proper subset} of $B$, $A \subsetneqq B$.
+    Note that $A\subset A$ for every set $A$.
+
+    (Bernstein) If $A\subset B$ and $B\subset A$, we write $A = B$. Otherwise $A \neq B$.
+\end{mydef}
+\mybox{这条性质在证明集合相等时很常用}
+
+\begin{mydef}
+    \label{mydef:1.4}
+    Throughout Chap. \ref{chap:01}, the set of all rational numbers will be denoted by $\Q $.
+\end{mydef}

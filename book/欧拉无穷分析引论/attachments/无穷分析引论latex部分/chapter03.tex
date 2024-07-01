@@ -1,0 +1,565 @@
+\chapter{第三章 函数的换元变换}
+
+\section{$\S 46$}
+
+如果 $y$ 是 $z$ 的函数,而 $z$ 由一个新的变量 $x$ 决定,那么 $y$ 就也可以由 $x$ 决定. $y$ 本来是 $z$ 的函数, 现在引进一个新的变量 $x$, 使得 $y$ 和 $z$ 都由这个 $x$ 决定. 例如
+\[
+y=\frac{1-z^{2}}{1+z^{2}}
+\]
+令
+\[
+z=\frac{1-x}{1+x}
+\]
+将 $z$ 的这个表达式代入 $y$ 本来的表达式,得
+\[
+y=\frac{2 x}{1+x^{2}}
+\]
+每给定一个 $x$ 值, 都可以求出由它确定的 $z$ 值和 $y$ 值. 这样一来, 就可以独立地求出这个 $z$ 值和对应于这个 $z$ 值的 $y$ 值. 例如令 $x=\frac{1}{2}$, 则 $z=\frac{1}{3}, y=\frac{4}{5}$; 令原来的表达式 $\frac{1-z^{2}}{1+z^{2}}$ 中的 $z=\frac{1}{3}$, 我们也得到 $y=\frac{4}{5}$.
+
+我们在两种情况下引进新变量. 一是原表达式中根号下有 $z$, 我们要使新变量摆脱根 号, 即有理化. 一是 $y$ 和 $z$ 的关系由高次方程给出, $y$ 不能由 $z$ 显式表出, 我们要使 $y, z$ 都能 由新变量方便地表出. 换元的作用我们已经说得够清楚了, 通过下面讲的, 大家会更清 楚.
+
+\section{$\S 47$}
+
+如果 $y=\sqrt{a+b z}$, 为了使 $z$ 和 $y$ 的表达式都有理化, 我们用下面的方法求新变量 $x$. 令 $\sqrt{a+b z}=b x, y$ 和 $z$ 的表达式就都是有理的了. 首先由 $y=b x$ 得 $a+b z=b^{2} x^{2}$, 从而 $z=b x^{2}-\frac{a}{b}$. 这样我们就把 $y$ 和 $z$ 都表示成了 $x$ 的有理函数. 置 $y=\sqrt{a+b z}$ 中的 $z=b x^{2}-$ $\frac{a}{b}$, 我们就得到 $y=b x$.
+
+\section{$\S 48$}
+
+如果 $y=(a+b z)^{\frac{m}{n}}$, 为了有理地表示出这个 $y$, 我们用下面的方法求新变量 $x$.
+
+令 $y=x^{m}$, 则 $(a+b z)^{\frac{m}{n}}=x^{m}$, 从而 $(a+b z)^{\frac{1}{n}}=x$. 由此得 $a+b z=x^{n}$, 从而 $z=\frac{x^{n}-a}{b}$.
+
+这样换元公式为 $z=\frac{x^{n}-a}{b}$, 从而 $y=x^{m}$ 就使得 $y$ 和 $z$ 都由 $x$ 有理表出. 虽然 $y, z$ 本来都不 能由对方有理地表出, 但它们都是新变量 $x$ 的有理函数, $x$ 就是针对这一目的而引入的.
+
+\section{$\S 49$}
+
+设
+\[
+f=\left(\frac{a+b z}{f+g z}\right)^{\frac{m}{n}}
+\]
+做变量替换,使 $y$ 和 $z$ 的表达式都是有理的.
+
+看得出, 令 $y=x^{m}$ 就可以导出所要的代换, 事实上, 由
+\[
+\left(\frac{a+b z}{f+g z}\right)^{\frac{m}{n}}=x^{m}
+\]
+得
+\[
+\frac{a+b z}{f+g z}=x^{n}
+\]
+解出 $z$, 得
+\[
+z=\frac{a-f x^{n}}{g x^{n}-b}
+\]
+将这个 $z$ 代入原表达式, 得 $y=x^{m}$. 由此我们也看到, 如果
+\[
+\left(\frac{\alpha+\beta y}{\gamma+\delta y}\right)^{n}=\left(\frac{a+b z}{f+g z}\right)^{m}
+\]
+那么令左右端都等于 $x^{m n}$, 我们就分别得到 $y$ 和 $z$ 的有理表达式, 结果为
+\[
+y=\frac{\alpha-y x^{m}}{\delta x^{m}-\beta}, x=\frac{a-f x^{n}}{g x^{n}-b}
+\]
+这已经是容易处理的了.
+
+\section{$\S 50$}
+
+当 $y=\sqrt{(a+b z)(c+d z)}$ 时, 求 $y$ 和 $z$ 的有理表达式的求法. 
+
+令
+\[
+\sqrt{(a+b z)(c+d z)}=(a+b z) x
+\]
+两边平方得到 $z$ 的一个线性方程, 解出 $z$ 就得到 $z$ 的有理表达式. 具体地, 两边平方得
+\[
+c+d z=(a+b z) x^{2}
+\]
+解出 $z$, 得
+\[
+z=\frac{c-a x^{2}}{b x^{2}-d}
+\]
+将
+\[
+a+b z=\frac{b c-a d}{b x^{2}-d}
+\]
+代入
+\[
+y=\sqrt{(a+b z)(c+d z)}=(a+b z) x
+\]
+得到 $y$ 的有理表达式
+\[
+y=\frac{(b c-a d) x}{b x^{2}-d}
+\]
+这样我们用代换
+\[
+z=\frac{c-a x^{2}}{b x^{2}-d}
+\]
+就做到将无理函数
+\[
+y=\sqrt{(a+b z)(c+d z)}
+\]
+变换成了有理函数
+\[
+y=\frac{(b c-a d) x}{b x^{2}-d}
+\]
+例如
+\[
+y=\sqrt{a^{2}-z^{2}}=\sqrt{(a+z)(a-z)}
+\]
+这里 $b=+1, c=a, d=-1$. 采用代换
+\[
+z=\frac{a-a x^{2}}{1+x^{2}}
+\]
+得
+\[
+y=\frac{2 a x}{1+x^{2}}
+\]
+也即根号下为两个实线性因式时, 用这里的代换就可以把根号去掉. 如果根号下的两个 因式是虚的,我们可以用下一节的方法.
+
+\section{$\S 51$}
+
+$y=\sqrt{p+q z+r z^{2}}$, 求 $z$ 的代换,使 $y$ 的表达式为有理函数.
+
+这里 $z$ 的代换随 $p, r$ 为正或为负而不同. 我们先假定 $p$ 为正, 并令 $p=a^{2} . p$ 可以不是 
+
+完全平方数, 其方根的无理性不影响我们的代换.
+\[
+\begin{aligned}
+& \text { I } y=\sqrt{a^{2}+b z+c z^{2}} \\
+& \text { 令 } \quad \sqrt{a^{2}+b z+c z^{2}}=a+x z
+\end{aligned}
+\]
+两边平方得
+\[
+b+c z=2 a x+x^{2} z
+\]
+解出 $z$ 得
+\[
+z=\frac{b-2 a x}{x^{2}-c}
+\]
+将这个 $z$ 代入 $y=a+x z$ 中, 得
+\[
+y=a+x z=\frac{b x-a x^{2}-a c}{x^{2}-c}
+\]
+求得的 $y$ 和 $z$ 都是 $x$ 的有理函数.
+\[
+\text { II. } y=\sqrt{a^{2} z^{2}+b z+c}
+\]
+令
+\[
+\sqrt{a^{2} z^{2}+b z+c}=a z+x
+\]
+两边平方得
+\[
+b z+c=2 a x z+x^{2}
+\]
+解出 $z$ 得
+\[
+z=\frac{x^{2}-c}{b-2 a x}
+\]
+从而
+\[
+y=a z+x=\frac{-a c+b x-a x^{2}}{b-2 a x}
+\]
+III. $p$ 和 $r$ 同为负数
+
+若非 $q^{2}>4 p r$, 则 $y$ 恒为虚数; 若 $q^{2}>4 p r$, 则 $p+q z+r z^{2}$ 可分解为两个实线性因式 的积, 就成了上一节的情况. 但把这里的 $y$ 改写为
+\[
+y=\sqrt{a^{2}+(b+c z)(d+e z)}
+\]
+往往更方便. 此时我们令
+\[
+y=a+(b+c z) x
+\]
+两边平方得
+\[
+d+e z=2 a x+b x^{2}+c x^{2} z
+\]
+解出 $z$ 得
+\[
+z=\frac{d-2 a x-b x^{2}}{c x^{2}-e}
+\]
+从而
+\[
+y=\frac{-a e+(c d-b e) x-a c x^{2}}{c x^{2}-e}
+\]
+有时将 $y$ 改写成
+\[
+y=\sqrt{a^{2} z^{2}+(b+c z)(d+e z)}
+\]
+也带来方便. 此时我们令
+\[
+y=a z+(b+c z) x
+\]
+两边平方得
+\[
+d+e z=2 a x z+b x^{2}+c x^{2} z
+\]
+解出 $z$ 得
+\[
+z=\frac{b x^{2}-d}{e-2 a z-c x^{2}}
+\]
+从而
+\[
+y=\frac{-a d+(b e-c d) x-a b x^{2}}{e-2 a x-c x^{2}}
+\]
+例 1 考虑无理函数
+\[
+y=\sqrt{-1+3 z-z^{2}}
+\]
+将它改写成
+\[
+y=\sqrt{1-2+3 z-z^{2}}=\sqrt{1-(1-z)(2-z)}
+\]
+令
+\[
+y=1-(1-z) x
+\]
+两边平方得
+\[
+-2+z=-2 x+x^{2}-x^{2} z
+\]
+解出 $z$ 得
+\[
+z=\frac{2-2 x+x^{2}}{1+x^{2}}
+\]
+从而
+\[
+\begin{gathered}
+1-z=\frac{-1+2 x}{1+x^{2}} \\
+y=1-(1-z) x=\frac{1+x-x^{2}}{1+x^{2}}
+\end{gathered}
+\]
+上面我们用不定代数法 (或称丢番图法) 找到了我们所要的几种代换. 在另一些情 况下, 用有理代换变换不出有理表达式. 下面我们介绍用于另一些情况的其他种类的代 换.
+
+\section{$\S 52$}
+
+$y$ 为 $z$ 的函数, 它们的关系由方程
+\[
+a y^{\alpha}+b z^{\beta}+c y^{\gamma} z^{\delta}=0
+\]
+规定. 求一个新变量 $x$,使得 $y$ 和 $z$ 都能由新变量显式地表出. 
+
+由于没有求解方程
+\[
+a y^{\alpha}+b z^{\beta}+c y^{\gamma} z^{\delta}=0
+\]
+的通用方法, 所以既不能把 $y$ 表示成 $z$ 的函数, 也不能把 $z$ 表示成 $y$ 的函数. 这是一种不 便,下面我们提供一种克服这种不便的方法. 令
+\[
+y=x^{m} z^{n}
+\]
+则
+\[
+a x^{\alpha m} z^{\alpha n}+b z^{\beta}+c x^{\gamma m} z^{\gamma n+\delta}=0
+\]
+现在我们来决定 $n$, 使得可以解出 $z$. 决定的方法有三种:
+\[
+\mathrm{I} \text {. 令 } \alpha n=\beta \text {, 即 } n=\frac{\beta}{\alpha} \text {. 除方程以 } z^{\alpha n}=z^{\beta} \text { 得 }
+\]
+\[
+a x^{\alpha m}+b+c x^{\gamma m} z^{\gamma n-\beta+\delta}=0
+\]
+解出 $z$ 得
+\[
+\begin{aligned}
+& z=\left(\frac{-a x^{\alpha m}-b}{c x^{\gamma m}}\right)^{\frac{1}{\gamma n-\beta+\delta}} \\
+& z=\left(\frac{-a x^{\alpha m}-b}{c x^{\gamma m}}\right)^{\frac{\alpha}{\beta \gamma-\alpha \beta+\alpha \delta}}
+\end{aligned}
+\]
+从而
+\[
+y=x^{m}\left(\frac{-a x^{\alpha m}-b}{c x^{\gamma m}}\right)^{\frac{\beta}{\beta \gamma-\alpha \beta+\alpha \delta}}
+\]
+II. 令 $\beta=\gamma n+\delta$, 即 $n=\frac{\beta-\delta}{\gamma}$. 然后除方程以 $z^{\beta}$, 得
+\[
+a x^{\alpha m} z^{\alpha n-\beta}+b+c x^{\gamma m}=0
+\]
+解出 $z$ 得
+\[
+z=\left(\frac{-b-c x^{\gamma m}}{a x^{\alpha m}}\right)^{\frac{1}{\alpha n-\beta}}=\left(\frac{-b-c x^{\gamma m}}{a x^{\alpha m}}\right)^{\frac{\gamma}{\alpha \beta-\alpha \delta-\beta \gamma}}
+\]
+从而
+\[
+y=x^{m}\left(\frac{-b-c x^{\gamma m}}{a x^{\alpha m}}\right)^{\frac{\beta-\delta}{\alpha \beta-\alpha \delta-\beta \gamma}}
+\]
+III. 令 $\alpha n=\gamma n+\delta$, 即 $n=\frac{\delta}{\alpha-\gamma}$. 然后除方程以 $z^{\alpha n}$, 得
+\[
+a x^{\alpha m}+b z^{\beta-\alpha n}+c x^{\gamma m}=0
+\]
+解出 $z$ 得
+\[
+z=\left(\frac{-a x^{\alpha m}-c x^{\gamma m}}{b}\right)^{\frac{1}{\beta-\alpha n}}=\left(\frac{-a x^{\alpha m}-c x^{\gamma m}}{b}\right)^{\frac{\alpha-\gamma}{\alpha \beta-\beta \gamma-\alpha \delta}}
+\]
+从而
+\[
+y=x^{m}\left(\frac{-a x^{\alpha m}-c x^{\gamma m}}{b}\right)^{\frac{\delta}{\alpha \beta-\beta \gamma-\alpha \delta}}
+\]
+用这三种方法我们都求得了 $x$ 的函数 $y$ 和 $z$. 下一步是如何决定 $m$, 可指定它为任何 非零整数, 以使得表达式最为方便. 
+
+例 2 设函数 $y$ 由方程
+\[
+y^{3}+z^{3}-c y z=0
+\]
+规定. 试将 $y$ 和 $z$ 都表示成 $x$ 的函数.
+
+这里
+\[
+a=-1, b=-1, \alpha=3, \beta=3, \gamma=1, \delta=1
+\]
+用第一种方法,取 $m=1$, 则
+\[
+z=\left(\frac{x^{3}+1}{c x}\right)^{-1}, y=x\left(\frac{x^{3}+1}{c x}\right)^{-1}
+\]
+或
+\[
+z=\frac{c x}{1+x^{3}}, y=\frac{c x^{2}}{1+x^{3}}
+\]
+$y$ 和 $z$ 都是有理函数.
+
+用第二种方法得
+\[
+z=\left(\frac{c x-1}{x^{3}}\right)^{\frac{1}{3}}, y=x\left(\frac{c x-1}{x^{3}}\right)^{\frac{2}{3}}
+\]
+或
+\[
+z=\frac{1}{x} \sqrt[3]{c x-1}, y=\frac{1}{x} \sqrt[3]{(c x-1)^{2}}
+\]
+用第三种方法得
+\[
+z=\left(c x-x^{3}\right)^{\frac{2}{3}}, y=x\left(c x-x^{3}\right)^{\frac{1}{3}}
+\]
+\section{$\S 53$}
+
+前面我们使用的是反向推导法, 我们看到了,反向推导法可以用 $x$ 有理表示出由一 些方程联系起来的 $y$ 和 $z$.
+
+事实上, 假定结果为
+\[
+\begin{aligned}
+& z=\left(\frac{a x^{\alpha}+b x^{\beta}+c x^{\gamma}+\cdots}{A+B x^{\mu}+C x^{\gamma}+\cdots}\right)^{\frac{p}{r}} \\
+& y=\left(\frac{a x^{\alpha}+b x^{\beta}+c x^{\gamma}+\cdots}{A+B x^{\mu}+C x^{\gamma}+\cdots}\right)^{\frac{a}{r}}
+\end{aligned}
+\]
+则
+\[
+y^{p}=x^{p} z^{q} \text { 或 } x=y z^{-\frac{q}{p}}
+\]
+将这个 $x$ 代入
+\[
+z^{r: p}=\frac{a x^{\alpha}+b x^{\beta}+c x^{\gamma}+\cdots}{A+B x^{\mu}+C x^{\gamma}+\cdots}
+\]
+得
+\[
+z^{r: p}=\frac{a y^{\alpha} z^{-\frac{a q}{p}}+b y^{\beta} z^{-\frac{\beta q}{p}}+c y^{\gamma} z^{-\frac{m}{p}}+\cdots}{A+B y^{\mu} z^{-\frac{\mu q}{p}}+C y^{\gamma} z^{-\frac{q q}{p}}+\cdots}
+\]
+或
+\[
+A z^{\frac{\Gamma}{p}}+B y^{\mu} z^{\frac{(r-\mu q)}{p}}+C y^{\gamma} z^{\frac{(r-\gamma q)}{p}}+\cdots=a y^{\alpha} z^{-\frac{\alpha q}{p}}+b y^{\beta} z^{-\frac{\beta \alpha}{p}}+c y^{\gamma} z^{-\frac{m p}{p}}+\cdots
+\]
+两边乘 $z^{\frac{a q}{p}}$, 得
+\[
+\begin{gathered}
+A z^{\frac{(a q+r)}{p}}+B y^{\mu} z^{\frac{(a q-\mu q+r)}{p}}+C y^{v} z^{\frac{(\alpha q-\gamma q+r)}{p}}+\cdots=a y^{\alpha}+b y^{\beta} z^{\frac{(a q-\beta q)}{p}}+c y^{\gamma} z^{\frac{(a q-\gamma q)}{p}}+\cdots \\
+\frac{a q+r}{p}=m, \frac{\alpha q-\beta q}{p}=n, p=\alpha-\beta
+\end{gathered}
+\]
+则
+\[
+q=n, r=\alpha m-\beta m-\alpha n
+\]
+从而得到方程
+\[
+A z^{m}+B y^{\mu} z^{\frac{m-\mu n}{\alpha-\beta}}+C y^{\gamma} z^{\frac{m-\gamma n}{\alpha-\beta}}+\cdots=a y^{\alpha}+b y^{\beta} z^{n}+c y^{\gamma} z^{\frac{(\alpha-\gamma) n}{\alpha-\beta}}+\cdots
+\]
+解方程得
+\[
+\begin{aligned}
+& z=\left(\frac{a x^{\alpha}+b x^{\beta}+c x^{\gamma}+\cdots}{A+B x^{\mu}+C x^{\gamma}+\cdots}\right)^{\frac{\alpha-\beta}{\alpha m-\beta m-\alpha n}} \\
+& y=x\left(\frac{a x^{\alpha}+b x^{\beta}+c x^{\gamma}+\cdots}{A+B x^{\mu}+C x^{\gamma}+\cdots}\right)^{\frac{n}{\alpha-\beta m-\alpha n}}
+\end{aligned}
+\]
+或者令
+\[
+\frac{a q+r}{p}=m, \frac{a q-\mu q+r}{p}=n, p=\mu
+\]
+则
+\[
+m-n=\mu \frac{q}{p}=q, \frac{q}{p}=\frac{m-n}{\mu}, \frac{r}{p}=m-\frac{\alpha m-\alpha n}{\mu}, r=\mu m-\alpha m+\alpha n
+\]
+从而得到方程
+\[
+A z^{m}+B y^{\mu} z^{n}+C y^{\gamma} z^{\frac{m-\gamma(m-n)}{\mu}}+\cdots=a y^{\alpha}+b y^{\beta} z \frac{(\alpha-\beta)(m-n)}{\mu}+c y^{\gamma} z^{\frac{(\alpha-\gamma)(m-n)}{\mu}}+\cdots
+\]
+解方程得
+\[
+\begin{aligned}
+& z=\left(\frac{a x^{\alpha}+b x^{\beta}+c x^{\gamma}+\cdots}{A+B x^{\mu}+C x^{\gamma}+\cdots}\right)^{\frac{\mu}{\mu m-\alpha m+\alpha n}} \\
+& y=x\left(\frac{a x^{\alpha}+b x^{\beta}+c x^{\gamma}+\cdots}{A+B x^{\mu}+C x^{\gamma}+\cdots}\right)^{\frac{m-n}{\mu m-\alpha m+\alpha n}}
+\end{aligned}
+\]
+\section{$\S 54$}
+
+用新变量 $x$ 有理地表示依赖关系为
+\[
+a y^{2}+b y z+c z^{2}+d y+e z=0
+\]
+的 $y$ 和 $z$ 的一种方法.
+
+令方程中的 $y=x z$, 然后除以 $z$, 得
+\[
+a x^{2} z+b x z+c z+d x+e=0
+\]
+解出 $z$, 得
+\[
+z=\frac{-d x-e}{a x^{2}+b x+c}
+\]
+从而
+\[
+y=\frac{-d x^{2}-e x}{a x^{2}+b x+c}
+\]
+另外, $y$ 与 $z$ 的依赖关系为
+\[
+a y^{2}+b y z+c z^{2}+d y+e z+f=0
+\]
+时, 可用对一个变量加上或减去某个常数的方法, 使得 $f$ 消失, 成为刚讲过的形式, 也就可 以使用刚讲过的方法.
+
+\section{$\S 55$}
+
+用新变量 $x$ 有理地表示依赖关系为
+\[
+a y^{3}+b y^{2} z+c y z^{2}+d z^{3}+e y^{2}+f y z+g z^{2}=0
+\]
+的 $y$ 和 $z$ 的一种方法.
+
+令方程中的 $y=x z$, 然后除方程以 $z^{2}$, 得
+\[
+a x^{3} z+b x^{2} z+c x z+d z+e x^{2}+f x+g=0
+\]
+解出 $z$, 得
+\[
+z=\frac{-e x^{2}-f x-g}{a x^{3}+b x^{2}+c x+d}
+\]
+从而
+\[
+y=\frac{-e x^{3}-f x^{2}-g x}{a x^{3}+b x^{2}+c x+d}
+\]
+不难看出,本节所讲的用新变量有理地表示 $y$ 和 $z$ 的方法, 可以用到决定 $y, z$ 关系的 更多的高次方程上去. 虽然这些情况都包含在 $\S 53$ 之中, 但由于通用公式使用上的不 便,下面我们再考虑几类常见的重要情况.
+
+\section{$\S 56$}
+
+用新变量表示依赖关系为
+\[
+a y^{2}+b y z+c z^{2}=d
+\]
+的 $y$ 和 $z$ 的一种方法.
+
+令方程中的 $y=x z$, 得
+\[
+\left(a x^{2}+b x+c\right) z^{2}=d
+\]
+从而
+\[
+z=\sqrt{\frac{d}{a x^{2}+b x+c}}
+\]
+\[
+y=x \sqrt{\frac{d}{a x^{2}+b x+c}}
+\]
+类似地, 如果
+\[
+a y^{3}+b y^{2} z+c y z^{2}+d z^{3}=e y+f z
+\]
+那么令方程中的 $y=x z$, 得
+\[
+\left(a x^{3}+b x^{2}+c x+d\right) z^{2}=e x+f
+\]
+从而
+\[
+\begin{aligned}
+z & =\sqrt{\frac{e x+f}{a x^{3}+b x^{2}+c x+d}} \\
+z & =x \sqrt{\frac{e x+f}{a x^{3}+b x^{2}+c x+d}}
+\end{aligned}
+\]
+本节是下节的特例.
+
+\section{$\S 57$}
+
+用新变量 $x$ 表示依赖关系为
+\[
+a y^{m}+b y^{m-1} z+c y^{m-2} z^{2}+d y^{m-3} z^{3}+\cdots=\alpha y^{n}+\beta y^{n-1} z+\gamma y^{n-2} z^{2}+\delta y^{n-3} z^{3}+\cdots
+\]
+的 $y$ 和 $z$ 的一种方法.
+
+令方程中的 $y=x z$, 假定 $m$ 大于 $n$, 用 $z^{n}$ 除方程,得
+\[
+\left(a x^{m}+b x^{m-1}+c x^{m-2}+d x^{m-3}+\cdots\right) z^{m-n}=\alpha x^{n}+\beta x^{n-1}+\gamma x^{n-2}+\delta x^{n-3}+\cdots
+\]
+从而
+\[
+\begin{aligned}
+& z=\left(\frac{\alpha x^{n}+\beta x^{n-1}+\gamma x^{n-2}+\delta x^{n-3}+\cdots}{a x^{m}+b x^{m-1}+c x^{m-2}+d x^{m-3}+\cdots}\right)^{\frac{1}{m-n}} \\
+& y=x\left(\frac{\alpha x^{n}+\beta x^{n-1}+\gamma x^{n-2}+\delta x^{n-3}+\cdots}{a x^{m}+b x^{m-1}+c x^{m-2}+d x^{m-3}+\cdots}\right)^{\frac{1}{m-n}}
+\end{aligned}
+\]
+表示 $y, z$ 关系的方程, 只要各项中 $y, z$ 指数的和只有两种, 就可以应用这里的方法. 我们这里 $y, z$ 指数的和是 $m$ 和 $n$ 两种.
+
+\section{$\S 58$}
+
+表示 $y, z$ 关系的方程, 如果各项中 $y, z$ 指数的和只有成算术级数的高、中、低三种,则 可以用解二次方程的方法将这 $y, z$ 用新变量 $x$ 表示出来.
+
+令方程中的 $y=x z$, 再用 $z$ 的最低次幂除方程, 对结果应用二次方程的求根公式, 就可 以把 $z$ 用 $x$ 表示出来, 下面用例子作具体说明.
+
+例 3 设
+\[
+a y^{3}+b y^{2} z+c y z^{2}+d z^{3}=2 e y^{2}+2 f y z+2 g^{2}+h y+i z
+\]
+令方程中的 $y=x z$, 再除以 $z$ 得 
+\[
+\left(a x^{3}+b x^{2}+c x+d\right) z^{2}=2\left(e x^{2}+f x+g\right) z+h x+i
+\]
+这是 $z$ 的二次方程, 用求根公式得
+\[
+z=\frac{e x^{2}+f x+g \pm \sqrt{\left(e x^{2}+f x+g\right)^{2}+\left(a x^{3}+b x^{2}+c x+d\right)(b x+i)}}{a x^{3}+b x^{2}+c x+d}
+\]
+将这个 $z$ 代入 $y=x z$, 就得到 $y$ 的表达式.
+
+例 4 设
+\[
+y^{5}=2 a z^{3}+b y+c z
+\]
+令方程中的 $y=x z$, 再用 $z$ 除, 得
+\[
+x^{5} z^{4}=2 a z^{2}+b x+c
+\]
+从而
+\[
+z^{2}=\frac{a \pm \sqrt{a^{2}+b x^{6}+c x^{5}}}{x^{5}}
+\]
+最后得
+\[
+\begin{aligned}
+& z=\frac{\sqrt{a \pm \sqrt{a^{2}+b x^{6}+c x^{5}}}}{x^{2} \sqrt{x}} \\
+& y=\frac{\sqrt{a \pm \sqrt{a^{2}+b x^{6}+c x^{5}}}}{x \sqrt{x}}
+\end{aligned}
+\]
+例 5 设
+\[
+y^{10}=2 a y z^{6}+b y z^{3}+c z^{4}
+\]
+各项中 $y, z$ 指数的和为 $10,7,4$ 三种. 令方程中的 $y=x z$, 再用 $z^{4}$ 除, 得
+\[
+x^{10} z^{6}=2 a x z^{3}+b x+c
+\]
+或
+\[
+z^{6}=\frac{2 a x z^{3}+b x+c}{x^{10}}
+\]
+从而
+\[
+z^{3}=\frac{a x \pm x \sqrt{a^{2}+b x^{9}+c x^{8}}}{x^{10}}
+\]
+最后得
+\[
+\begin{aligned}
+& z=\frac{\sqrt[3]{a \pm \sqrt{a^{2}+b x^{9}+c x^{8}}}}{x^{3}} \\
+& y=\frac{\sqrt[3]{a \pm \sqrt{a^{2}+b x^{9}+c x^{8}}}}{x^{2}}
+\end{aligned}
+\]
+这几个例子已经把这种方法讲得很清楚了. 
+

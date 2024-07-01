@@ -1,0 +1,363 @@
+
+(4). $ a_n>0 $. $ \lim\limits_{n\rightarrow\infty}a_n = a $, $ a>0 $. 证明$ \lim\limits_{n\rightarrow\infty} \sqrt[n]{a_n}=1 $
+\begin{proof}
+	
+	$ \lim\limits_{n\rightarrow\infty}a_n = a $\\
+	$\forall \epsilon >0, \exists N \in \mathbb{N}^+. \forall n \geqslant N, |a_n-a| < \epsilon$.
+	\begin{equation*}
+		0<a-\epsilon<a_n<a+\epsilon
+	\end{equation*}
+	$ \therefore \sqrt[n]{a-\epsilon}<\sqrt[n]{a_n}<\sqrt[n]{a+\epsilon} $.\\
+	$ \lim\limits_{n\rightarrow\infty}\sqrt[n]{a-\epsilon} = 1 $,
+	$ \lim\limits_{n\rightarrow\infty}\sqrt[n]{a+\epsilon} = 1 $. $ \therefore  \lim\limits_{n\rightarrow\infty}\sqrt[n]{a_n} = 1  $.
+	
+\end{proof}
+
+%3. (1).
+$ \lim\limits_{n\rightarrow\infty}(1+x)(1+x^2)\dots(1+x^{2^n}) = \lim\limits_{n\rightarrow\infty}\prod_{i=1}^{2^n}(1+x^i) $, $ |x| <1 $.
+%\begin{solve}3.(1).
+\begin{align*}
+	&|x|<1,\quad 1>x^2>x^4>\dots>x^{2^n}>0&\\
+	&x\in(0,1)\quad 1<(1+x)(1+x^2)\dots(1+x^{2^n})<(1+x)^{n+1}\quad &\lim_{n\rightarrow\infty}(1+x)^{n+1}=1\\
+	&x\in(-1,0)\quad 0<(1+x)(1+x^2)\dots(1+x^{2^n})<(1+x)(1+x^2)^{n}\quad &\lim_{n\rightarrow\infty}(1+x)(1+x^2)^{n}=1\\
+\end{align*}
+%\end{solve}
+%\begin{solve}3.(1). another way
+\begin{align*}
+	&\lim_{n\rightarrow\infty} (1+x)(1+x^2)\dots(1+x^n)\\
+	=&\lim_{n\rightarrow\infty} \frac{(1-x)(1+x)(1+x^2)\dots(1+x^n)}{1-x}\\
+	=&\lim_{n\rightarrow\infty} \frac{(1-x^{2^{n+1}})}{1-x}\\
+	=&\frac{1}{1-x}
+\end{align*}
+%\end{solve}
+
+
+%\begin{solve}3. (2).
+\begin{align*}
+	&\lim_{n\rightarrow\infty}(1-\frac{1}{2^2})(1-\frac{1}{3^2})\dots(1-\frac{1}{n^2})\\
+	=&\lim_{n\rightarrow\infty}
+	\frac{1}{2}\cdot\frac{3}{2}\cdot
+	\frac{2}{3}\cdot\frac{4}{3}\cdot
+	\frac{3}{4}\cdot\frac{5}{4}\cdot
+	\frac{4}{5}\cdot\frac{6}{5}\cdot
+	\dots
+	\frac{n-1}{n}\cdot\frac{n+1}{n}\\
+	=&\lim_{n\rightarrow\infty}\frac{1}{2}\frac{n+1}{n}\\
+	=&\lim_{n\rightarrow\infty}\frac{1}{2}		 
+\end{align*}
+%\end{solve}
+
+%\begin{solve}3. (3).
+\begin{align*}
+	&\lim_{n\rightarrow\infty}\Big(1-\frac{1}{1+2}\Big)\Big(1-\frac{1}{1+2+3}\Big)\dots\Big(1-\frac{1}{1+2+\dots+n}\Big)\\
+	=&\lim_{n\rightarrow\infty}\Big(1-\frac{2}{3\times2}\Big)\Big(1-\frac{2}{4\times3}\Big)\dots\Big(1-\frac{2}{(n+1)\times{n}}\Big)\\
+	=&\lim_{n\rightarrow\infty}\Big(\frac{3\times2-2}{3\times2}\Big)\Big(\frac{4\times3-2}{4\times3}\Big)\dots\Big(\frac{(n+1)\times{n}-2}{(n+1)\times{n}}\Big)\\
+	=&\lim_{n\rightarrow\infty}\Big(\frac{4}{3\times2}\Big)\Big(\frac{10}{4\times3}\Big)\dots\Big(\frac{n^2+n-2}{(n+1)\times{n}}\Big)\\
+	=&\lim_{n\rightarrow\infty}\Big(\frac{1\times4}{3\times2}\Big)\Big(\frac{2\times5}{4\times3}\Big)\dots\Big(\frac{(n-2)\times(n+1)}{n\times(n-1)}\Big)\Big(\frac{(n-1)\times(n+2)}{(n+1)\times{n}}\Big)\\
+	=&\lim_{n\rightarrow\infty}\frac{1}{3}\times\frac{n+2}{n}\\
+	=&\frac{1}{3}
+\end{align*}	
+%\end{solve}
+
+\begin{align*}
+	&\lim_{n\rightarrow\infty}[\frac{1}{1\cdot2}+\frac{1}{2\cdot3}+\dots+\frac{1}{n\cdot(n+1)}]\\
+	=&\lim_{n\rightarrow\infty} \frac{1}{1}-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\dots+\frac{1}{n}-\frac{1}{n+1}\\
+	=&\lim_{n\rightarrow\infty}\frac{1}{1}-\frac{1}{n+1}\\
+	=&\lim_{n\rightarrow\infty}\frac{n}{n+1}\\
+	=&1
+\end{align*}
+
+%\begin{solve}
+3.(4).
+\begin{align*}
+	&\lim_{n\rightarrow\infty}\Big[\frac{1}{1\cdot2\cdot3}+\frac{1}{2\cdot3\cdot4} +\dots +\frac{1}{n\cdot(n+1)\cdot(n+2)} \Big]\\
+	=&\lim_{n\rightarrow\infty}\frac{1}{2}\Big(\frac{1}{1\cdot2}-\frac{1}{2\cdot3}\Big)+\frac{1}{2}\Big(\frac{1}{2\cdot3}-\frac{1}{3\cdot4}\Big)+\dots+\frac{1}{2}\Big(\frac{1}{n(n+1)}-\frac{1}{(n+1)(n+2)}\Big)\\
+	=&\lim_{n\rightarrow\infty}\frac{1}{2}\Big(\frac{1}{1\cdot2}-\frac{1}{(n+1)(n+2)}\Big)\\
+	=&\frac{1}{2}\times\frac{1}{2}\\
+	=&\frac{1}{4}
+\end{align*}
+%\end{solve}
+%\begin{solve}
+3.(5).
+\begin{align*}
+	&\lim_{n\rightarrow\infty}\sum_{k=1}^{n}\frac{1}{k(k+1)\dots(k+\gamma)},
+	\qquad \text{其中}\gamma\text{为正整数}\\
+	=&\lim_{n\rightarrow\infty} \sum_{k=1}^n \frac{1}{\gamma} \Big[\frac{1}{k(k+1)\dots(k+\gamma-1)}-\frac{1}{(k+1)(k+2)\dots(k+\gamma)}\Big]\\
+	=&\lim_{n\rightarrow\infty}\frac{1}{\gamma}
+	\Big[\sum_{k=1}^n \frac{1}{k(k+1)\dots(k+\gamma-1)}-\sum_{k=1}^n \frac{1}{(k+1)(k+2)\dots(k+\gamma)}\Big]\\
+	=&\lim_{n\rightarrow\infty} \frac{1}{\gamma}\Big[\frac{1}{\gamma^{\underline{\gamma}}}-\frac{1}{(n+\gamma)^{\underline{\gamma}}}\Big]\\
+	=&\lim_{n\rightarrow\infty} \frac{1}{\gamma}\Big[\frac{1}{\gamma!}-\frac{1}{(n+\gamma)^{\underline{\gamma}}}\Big]\\
+	=&\frac{1}{\gamma}\cdot\frac{1}{\gamma!}		
+\end{align*}	
+%\end{solve}
+其中 $ x^{\underline{n}} = x(x-1)(x-2)\dots(x-n+1) $, 称为下阶乘. 而$ x^{\overline{n}} = x(x+1)(x+2)\dots(x+n-1) $, 称为上阶乘. 
+% 公式下划线 上划线 \underline{text}  $\overline{text}$
+
+%\begin{qs}
+2.2.4-4
+$ S_n = a+3a^2+\dots+(2n-1)a^n $, $ |a|<1 $. 求$ \{S_n\} $的极限.
+%\end{qs}
+%\begin{solve}
+\begin{align*}
+	S_n-aS_n
+	&=a+3a^2+\dots+(2n-1)a^n\\
+	&\qquad-\;\,a^2-\dots+(2n-3)a^n-(2n-1)a^n+1\\
+	&=a+2a^2+\dots+2aa^n-(2n-1)a^{n+1}\\
+	&=2(a+a^2+\dots+a^n)-a-(2n-1)a^{n+1}\\
+	&=2\cdot{a}\frac{1-a^{n+1}}{1-a}-a-(2n-1)a^{n+1}
+\end{align*}
+$ |a|<1 $, $ \lim\limits_{n\rightarrow\infty}a_n=0 $\\
+$ \lim\limits_{n\rightarrow\infty}(S_n-aS_n) = (1-a)\lim\lim_{n\rightarrow\infty}S_n $
+\begin{align*}
+	\lim_{n\rightarrow\infty}(S_n-aS_n)
+	&=\lim_{n\rightarrow\infty}
+	2a\cdot\frac{1-a^{n+1}}{1-a}-a-(2n-1)a^{n+1}\\
+	&=2a\cdot\frac{1}{1-a}-a\\
+	&=a\Big(\frac{2}{1-a}-a\Big)\\
+	&=a\frac{1+a}{1-a}
+\end{align*}
+$ \therefore \lim\limits_{n\rightarrow\infty} S_n = \frac{a(a+1)}{(1-a)^2} $
+%\end{solve}
+
+%\begin{solve}
+2.2.4-5
+设 $ \lim\limits_{n\rightarrow\infty} x_n = A>0 $. 取$ \epsilon = \frac{A}{2} $, 则 $ \exists N\in\mathbb{N}_+ $. $ \forall n>N $. 成立 $ |x_n-A|<\frac{A}{2} $ 
+\begin{equation*}
+	A-\frac{A}{2}<x_n<A+\frac{A}{2}, \frac{A}{2}<x_n<\frac{3A}{2}
+\end{equation*}
+即$ x_n>\frac{A}{2} $.\\
+令$ m = \min\{x_1,x_2,\dots,x_N,\frac{A}{2}\} >0 $. 则$ m $为$ \{x_n\} $的正下界.\\
+不一定有最小数的例子 $ x_n = 1+\frac{1}{n} $. $ \lim\limits_{n\rightarrow\infty}x_n = 1 $, 下界 $ m=  \frac{1}{2} $. 但$ \{x_n\} $取不到下界.
+%\end{solve}
+
+\begin{proof}
+	2.2.4-6
+	$ \because\lim\limits_{n\rightarrow\infty} a_n = +\infty $. $ \forall M>0, \exists N\in\mathbb{N}_+, \forall n>N, a_n>M $.\\
+	$ m = \min\{a_1,a_2,\dots,a_N,M\} $, 但$ M $在数列$ \{a_n\} $中不一定取的到!\\
+	$ M=a_1+1 $, $ \exists N_1\in\mathbb{N}_+, \forall n>N_1, a_n>M>a_1 $\\
+	则 $ m = \min\{a_1,a_2,\dots,a_{N_1}\} $ 为数列的最小数.	
+\end{proof}
+
+\begin{proof}
+	2.2.4-7 构造数列\\
+	不妨设无界数列$ \{a_n\} $ 无上界.\\
+	$ \forall M\in\mathbb{R}, \exists N\in\mathbb{N}_+, \forall n_k>N, a_{n_k}>M $.\\
+	取$ M_1 = 1 $, 则$ \exists n_1\in\mathbb{N}_+ $ s.t. $ a_{n_1}>M_1 $.\\
+	取$ M_2 = \max\{a_n, 2\} $, $ \exists n_2\in\mathbb{N}_+ $ s.t. $ a_{n_2}>M_2 $.\\
+	以此类推，构造数列$ \{a_{n_k}\} $. s.t.$ a_{n_k}>k $. 即$ a_{n_k} $为无穷大量.
+\end{proof}
+
+\begin{proof}
+	2.2.4-8 证明$ \{a_n\}, a_n = \tan{n} $发散.\\
+	构造$ a_n $的发散子列即可.
+	已知$ \tan{\frac{\pi}{2}}=\infty $, $ \pi $是一个无理数,因此存在数列$ \{b_n\} $, $ \lim\limits_{n\rightarrow\infty} b_n = \frac{\pi}{2} $.
+\end{proof}
+
+
+\begin{proof}
+	2.2.4-8 证明$ \{a_n\}, a_n = \tan{n} $发散.参考别人的答案\\
+	由于 $ \{\sin{ 2n}\} $ 极限不存在, 又 
+	%	sin 2n =
+	%	2 sin n cos n
+	%	sin2 n + cos2 n
+	%	⇒ sin 2n =
+	%	2 tan n
+	%	1 + tan2 n
+	\begin{align*}
+		\sin{2n}	&=2\sin{n}\cos{n} = \frac{2\sin{n}\cos{n}}{\sin^2{n}+\cos^2{n}}\\
+		&=\frac{2\tan{n}}{\tan^{n}+1}
+	\end{align*}	
+	若 $ \{\tan n\} $ 极限存在 $ \rightarrow $  $ \{\sin{ 2n}\} $  极限存在, 矛盾.\\
+	故 $ \{\tan n\} $ 极限不存在.
+\end{proof}
+
+%\begin{qs}
+2.2.4-9 $ S_n = \frac{1}{1^p}+\frac{1}{2^p}+\dots+\frac{1}{n^p}, \quad n\in\mathbb{N}_+ $.
+$ S_n $在 1. $ p\leqslant 0 $, 2. $ 0<p<1 $情况下均发散
+%\end{qs}
+\begin{proof}
+	1. $ p\leqslant 0 $. $ \lim\limits_{n\rightarrow\infty} n^{-p}=\infty $, $ S_n $发散.\\
+	2. $ 0<p<1 $. $ \frac{1}{n^p}>\frac{1}{n} $. $ \because H_n = \sum_{k=1}^n \frac{1}{k} $(调和级数)发散, $ S_n>H_n $,$ \therefore \{S_n\} $也发散.
+\end{proof}
+
+\date{2021.5.11}
+ex2.3.5 $ 0<b<a $令$ a_0= a, b_0=b $递推公式 
+\begin{equation}\label{GaussAGineq}
+	a_n = \frac{a_{n-1}+b_{n-1}}{2}, b_n = \sqrt{a_{n-1}b_{n-1}}, \quad n\in\mathbb{N}_+
+\end{equation}
+定义数列{$ a_n $},{$ b_n $}. 证明这两个数列收敛于同一个极限 $ AG(a,b) $.\\
+
+由AG不等式 $ a>\frac{a+b}{2}>\sqrt{ab}>b>0 $, 
+利用单调有界数列收敛原则可以证明上述结论.
+
+\begin{equation}\label{AGineqAns}
+	AG(a,b)=\frac{\pi}{2G}
+\end{equation}
+如果令$ a_1 = \frac{a+b}{2}, b_1 = \sqrt{ab} $. 则
+\begin{equation}\label{GaussAGineqInt}
+	G = \int_{0}^{\frac{\pi}{2}}\frac{\text{d}\phi}{\sqrt{a^2\cos^2\phi+b^2\sin^2\phi}} 
+	= \int_{0}^{\frac{\pi}{2}}\frac{\text{d}\theta}{\sqrt{a_1^2\cos^2\theta+b_1^2\sin^2\theta}} 
+\end{equation}
+
+上面这个公式是怎么得到的:\\
+参考菲赫金哥尔茨 - 微积分学教程. 第二卷 315小节的 高斯公式, 蓝登变换.\\
+\begin{equation}\label{GaussAGineqInt001}
+	G = \int_{0}^{\frac{\pi}{2}}\frac{\text{d}\phi}{\sqrt{a^2\cos^2\phi+b^2\sin^2\phi}} \qquad (a>b>0)
+\end{equation}
+这里令
+\begin{equation}\label{LandenTf}
+	\sin\phi = \frac{2a\sin\theta}{(a+b)+(a-b)\sin^2\theta}
+\end{equation}
+$ \theta \in[0,\frac{\pi}{2}] \rightarrow  \phi \in[0,\frac{\pi}{2}] $,
+取微分
+\begin{equation}\label{AGdiff}
+	\cos\phi\text{d}\phi = 2a\frac{(a+b)-(a-b)\sin^2\theta}{[(a+b)+(a-b)\sin^2\theta]^2}\cos\theta\text{d}\theta
+\end{equation}
+但是
+\begin{equation}\label{AGcos}
+	\cos\phi = \frac{\sqrt{(a+b)^2-(a-b)^2\sin^2\theta}}{(a+b)+(a-b)\sin^2\theta}\cos\theta.
+\end{equation}
+(\ref{AGdiff}) / (\ref{AGcos}), 两式相除, 得到
+\begin{equation}
+	\text{d}\phi = 2a\frac{(a+b)-(a-b)\sin^2\theta}{(a+b)+(a-b)\sin^2\theta}\frac{\text{d}\theta}{\sqrt{(a+b)^2-(a-b)^2\sin^2\theta}}
+\end{equation}
+另一方面
+\begin{equation}
+	\sqrt{a^2\cos^2\phi+b^2\sin^2\phi} = a\frac{(a+b)-(a-b)\sin^2\theta}{(a+b)+(a-b)\sin^2\theta}
+\end{equation}
+因而
+\begin{equation}
+	\frac{\text{d}\phi}{\sqrt{a^2\cos^2\phi+b^2\sin^2\phi} }
+	= \frac{\text{d}\theta}{\sqrt{(\frac{a+b}{2})^2\cos^2\theta+ab\sin^2\theta}}.
+\end{equation}
+如果令$ a_1 = \frac{a+b}{2}, b_1 = \sqrt{ab} $, 则
+\begin{equation}\label{key}
+	G= \int_{0}^{\frac{\pi}{2}}\frac{\text{d}\phi}{\sqrt{a^2\cos^2\phi+b^2\sin^2\phi}}
+	=\int_{0}^{\frac{\pi}{2}}\frac{\text{d}\theta}{\sqrt{a_1^2\cos^2\theta+b_1^2\sin^2\theta}}
+\end{equation}
+反复应用该公式,得到
+\begin{equation}
+	G= \int_{0}^{\frac{\pi}{2}}\frac{\text{d}\phi}{\sqrt{a_n^2\cos^2\phi+b_n^2\sin^2\phi}},\qquad(n=1,2,3,\dots)
+\end{equation}
+\begin{equation}
+	\frac{\pi}{2a_n}<G<\frac{\pi}{2b_n}
+\end{equation}
+积分$ G $可以归结到第一类全椭圆积分 $ K(k) = (1+k_1)K(k_1) = \frac{\pi}{2}(1+k_1)(1+k_2)\dots(1+k_n) $
+\begin{equation}\label{ellipIntI}
+	\int_{0}^{\frac{pi}{2}}\frac{\text{d}\phi}{\sqrt{1-k^2\sin^2\phi}} 
+	= (1+k_1)\int_{0}^{\frac{pi}{2}}\frac{\text{d}\theta}{\sqrt{1-k_1^2\sin^2\theta}}
+\end{equation}
+其中\\ 
+$ a_1 = \frac{1+\sqrt{1-k^2}}{2} = \frac{1+k'}{2}, b_1 = \sqrt{k'} $\\
+$ k_1 = \frac{\sqrt{a_1^2-b_1^2}}{a_1} = \frac{1-k'}{1+k'}, \frac{1}{a_1} = 1+k_1 $
+
+
+\section{2.3 单调数列}
+\date{2021.05.12}
+\begin{example}2.3.6
+	\begin{align*}
+		\frac{a_{n+1}}{a_n}
+		&=\frac{\frac{1!+2!+\dots+(n+1)!}{(n+1)!}}{\frac{1!+2!+\dots+n!}{n!}}\\
+		&=\frac{1}{n+1}\frac{1!+2!+\dots+(n+1)!}{1!+2!+\dots+n!}\\
+		&=\frac{3+3!+\dots+(n+1)!}{(n+1)1!+(n+1)2!+\dots+(n+1)!}
+	\end{align*}
+\end{example}
+%\begin{solve}
+$ n>2 $时, 分母每一项大于等于分子对应项.. $ n>2 $后{$ a_n $}单调减少. 由于0是下界,因此$ a_n $单调有界, 数列收敛.
+\begin{align*}
+	a_{n+1}
+	&=\frac{1!+2!+\dots+(n+1)!}{(n+1)!}\\
+	&=\frac{1!+2!+\dots+n!}{n!}\frac{1}{n+1}+1\\
+	&=1+\frac{a_n}{n+1}
+\end{align*}
+设$ n\rightarrow\infty $时, $ a_n\rightarrow a $
+\begin{equation*}
+	a = 1+\Big(\frac{1}{n+1}\rightarrow0\Big) = 1+0,\qquad\therefore a = 1
+\end{equation*}
+$ \therefore \lim\limits_{n\rightarrow\infty}a_n = \lim\limits_{n\rightarrow\infty}\frac{1!+2!+\dots+n!}{n!} = 1 $
+%\end{solve}
+
+\subsection{2.3.2 练习题}
+%\begin{qs}
+证明, 若{$ x_n $}单调, 则{$ |x_n| $}至少从某项开始后单调, 又问: 反之如何?
+%\end{qs}
+\begin{proof}
+	分类讨论, 不妨设$ x_1 \geqslant 0 $\\
+	1. {$ x_n $}单调递增, {$ |x_n| $}从第一项开始单调.\\
+	2. {$ x_n $}单调递减, 且$ |x_n| \geqslant 0 $. {$ |x_n| $}从第一项开始单调.\\
+	3. {$ x_n $}单调递减, 且$ \exists N $ s.t.  $ x_n <0 $(第一个负数项). 则{$ |x_n| $}从第$ N $项($ x_N $)开始单调.\\
+	反之该结论不成立.\\
+	反例: $ x_n =\frac{(-1)^n}{n} $, {$ |x_n| $}单调递减.
+	但$ x_{2k} = \frac{1}{2k} >0 >x_{2k-1} = \frac{-1}{2k-1} $
+\end{proof}
+
+%\begin{qs}
+设{$ a_n $}单调增加, {$ b_n $}单调减少, 且有$ \lim\limits_{n\rightarrow\infty}(a_n-b_n)=0 $.\\
+证明: 数列{$ a_n $}和{$ b_n $}都收敛, 且极限相等.
+%\end{qs}
+\begin{proof}
+	$ \lim\limits_{n\rightarrow\infty}(a_n-b_n) = 0 $, $ \forall \epsilon > 0, \exists N\in\mathbb{N}_+, \text{s.t.} \forall n>N, |a_n-b_n-0|< \epsilon $.\\
+	$ b_n-\epsilon <a_n<b_n+\epsilon $, 同时有 $ a_n-\epsilon <b_n<a_n+\epsilon $.\\
+	{$ b_n $}单调减少, $ \therefore \exists N_2, \forall m<N_2 $, $ b_m>b_n+\epsilon $.\\
+	使用反证法证明$ b_m $是{$ a_n $}的上界.\\
+	假设$ b_m $不是{$ a_n $}的上界， 则存在$ a_{n}>b_m >b_{n}+\epsilon $, 这与$ |a_n-b_n|<\epsilon $矛盾.\\
+	$ \therefore b_m $是{$ a_n $}的上界,根据单调有界收敛准则, {$ a_n $}收敛. 同理可证{$ b_n $}收敛. $ \lim\limits_{n\rightarrow\infty}(a_n-b_n)=0 $. $ \therefore  $$ \lim\limits_{n\rightarrow\infty}a_n = \lim\limits_{n\rightarrow\infty}b_n $.
+\end{proof}
+
+%\begin{qs}
+按照极限定义证明:\\
+\begin{enumerate}
+	\item  单调增加有上界的数列的极限不小于数列中的任何一项.
+	\item  单调减少有下界的数列的极限不大于数列中的任何一项.
+\end{enumerate}
+%\end{qs}
+
+%\begin{qs}
+设 $ x_n = \frac{2}{3}\cdot \frac{3}{5}\cdots\frac{n+1}{2n+1} $, $ n\in\mathbb{N}_+ $, 求数列{$ x_n $}的极限.
+%\end{qs}
+%\begin{solve}
+\begin{equation}\label{2.3.2-4-001}
+	\frac{x_{n+1}}{x_n} = \frac{(n+1)+1}{2(n+1)+1} = \frac{n+2}{2n+3} < 1.\qquad (n>0)
+\end{equation}
+{$ x_n $}单调递减. $ \because x_n>0 $, $ \therefore  ${$ x_n $}有下界, {$ x_n $}收敛.\\
+\begin{equation*}
+	\lim_{n\rightarrow\infty}\frac{x_{n+1}}{x_n} = \lim_{n\rightarrow\infty} \frac{n+2}{2n+3}  =\frac{1}{2}
+\end{equation*}
+$ \Big(\frac{1}{2}\Big)^n < x_n < \Big(\frac{2}{3}\Big)^n $, 由夹逼定理, $ \lim\limits_{n\rightarrow\infty} x_n = 0 $
+%\end{solve}
+
+%\begin{qs}
+6. 在例题2.2.6的基础上证明: 当$ p>1 $时， 数列{$ S_n $}收敛. 其中
+\begin{equation*}
+	S_n=1+\frac{1}{2^p}+\frac{1}{3^p}+\frac{1}{4^p}+\dots++\frac{1}{n^p}, \quad n\in\mathbb{N}_+
+\end{equation*}
+($ S_n $就是p级数, 当$ p=1 $时为调和级数.)
+%\end{qs}
+\begin{proof}
+	{$ S_n $}单调递增, 记$ \frac{1}{2^{p-1}}  = r$, 则$ 0<r<1 $.
+	\begin{align*}
+		\frac{1}{2^p}+\frac{1}{3^p}&<\frac{1}{2^p}+\frac{1}{2^p} &= \frac{1}{2^{p-1}}&=r\\
+		\frac{1}{4^p}+\frac{1}{5^p}+\frac{1}{6^p}+\frac{1}{7^p}&<\frac{1}{4^p}+\frac{1}{4^p}+\frac{1}{4^p}+\frac{1}{4^p} &= \frac{1}{4^{p-1}}&=r^2\\
+		\frac{1}{(2^k)^p}+\dots+\frac{1}{(2^{k+1}-1)^p}&<\frac{1}{(2^k)^p}+\frac{1}{(2^k)^p}+\dots+\frac{1}{(2^k)^p} &= \frac{1}{(2^k)^{p-1}}&=r^k
+	\end{align*}
+\end{proof}
+由此可知
+\begin{equation*}
+	S_n\leqslant S_{2^n-1} <1+r+r^2+\dots+r^{n-1} = \frac{1-r^n}{1-r}<\frac{1}{1-r}
+\end{equation*}
+{$ {S_n} $}单调递增有上界，由单调有界收敛准则知{$ S_n $}收敛。
+
+%\begin{qs}
+7. 设$ 0<x_0<\frac{\pi}{2} $, $ x_n = \sin {x_{n-1}} $. $ n\in\mathbb{N}_+ $.\\
+证明{$ x_n $}收敛，并求其极限。
+%\end{qs}
+\begin{proof}
+	
+	$ x_0\in(0,\frac{\pi}{2}) $, $ \sin{x} $,\\
+	$ 0<x_1 = \sin{x_0}<x_0<\frac{\pi}{2} $.\\
+	$ 0<x_2=\sin{x_1}<x_1<\frac{\pi}{2} $.\\
+	$ 0<\dots<x_n<x_{n-1}<\dots<x_2<x_1<\frac{\pi}{2} $.\\
+	{$ x_n $}单调递减有下界，{$ x_n $}收敛。\\
+	$ a = \sin{a}, \quad a\in[0,\frac{\pi}{2}] $\\
+	解得$ a=0 $，$ \therefore \lim\limits_{n\rightarrow\infty} x_n = 0 $.
+\end{proof}

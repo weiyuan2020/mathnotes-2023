@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "017f0bef3805b7c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa4a289921e0e41f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d6aff0b2291aff9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "软件 c++ vcpkg gtest 202304291957.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aea2828b3ab516e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "软件 cmake vcpkg 202304191626.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b6f819586836a0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "软件 matlab 小波变换.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6e40eb05362ea963",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccd0f992ba9b51d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d989d94bdec54f63",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "小波",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "7f83a17dd9f573f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "f9d01ad647e81dfb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 292.5
+  },
+  "right": {
+    "id": "c6c181e3dd265718",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b9ff5eb4dd3169c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01f7d0d5a6e1122d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "软件 matlab 小波变换.md"
+              }
+            }
+          },
+          {
+            "id": "ab8ea2321a2e3017",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ec541c2280f8c765",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "软件 matlab 小波变换.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1a98497c93ecf0ee",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "软件 matlab 小波变换.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "8b6f819586836a0e",
+  "lastOpenFiles": [
+    "软件 doxygen 注释规范 202304251538.md",
+    "软件 doxygen 代码注释与文档生成 202304251052.md",
+    "软件 cmake vcpkg 202304191626.md",
+    "软件 c++ vcpkg gtest 202304291957.md",
+    "软件 cpp gtest 202304261345.md",
+    "直升机 诱导速度 202304052020 pitt-peters动态入流模型 公式.md",
+    "直升机 公式推导 202304051534 挥舞运动与摆振运动公式 kim1991.md",
+    "diary/2023-05-02.md",
+    "diary/2023-05-01.md",
+    "diary/2023-04-25.md",
+    "202304251337.md",
+    "直升机 欧拉角速度变化公式推导过程.md",
+    "程序 模型线性化代码分析.md",
+    "软件 matlab nlopt 202304201706.md",
+    "软件 matlab DCM 202304181543.md",
+    "diary/2023-04-22.md",
+    "2023-03-31.md",
+    "2023-04.md",
+    "2023-04-02.md",
+    "2023-04-01.md",
+    "2023-04-03.md",
+    "2023-04-05.md",
+    "202304061428.md",
+    "2023-04-06.md",
+    "2023-04-08.md",
+    "2023-04-07.md",
+    "文献搜索/发动机建模文献/attachments/发动机部件级模型彩图.png"
+  ]
+}

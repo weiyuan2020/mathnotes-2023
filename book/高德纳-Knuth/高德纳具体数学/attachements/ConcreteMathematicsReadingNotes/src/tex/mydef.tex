@@ -1,0 +1,117 @@
+\documentclass[openany,twoside,scheme=chinese,fontset=none]{ctexrep}
+\usepackage{geometry}
+\geometry{
+    paperheight=260mm,
+    paperwidth=185mm,
+    top=25mm,
+    bottom=15mm,
+    left=25mm, % 左侧留 5mm 装订线距离
+    right=15mm
+}
+
+\setmainfont{XITS}  % 英文字体， Times 风格
+
+\setCJKmainfont{Source Han Serif SC}[         % 方正书宋_GBK
+    BoldFont=Source Han Serif SC Bold,  % 思源宋体粗体
+    ItalicFont=FZKai-Z03                % 方正楷体_GBK
+    ]
+\setCJKsansfont{Source Han Sans SC}[             % 方正黑体_GBK
+    BoldFont=Source Han Sans SC Bold    % 思源黑体粗体
+    ]
+\setCJKmonofont{FZFangSong-Z02}         % 方正仿宋_GBK
+
+\setCJKfamilyfont{zhsong}{FZShuSong-Z01}
+\setCJKfamilyfont{zhxbs}{Source Han Serif SC Bold}
+\setCJKfamilyfont{zhdbs}{Source Han Serif SC Heavy}
+\setCJKfamilyfont{zhhei}{FZHei-B01}
+\setCJKfamilyfont{zhdh}{Source Han Sans SC Bold}
+\setCJKfamilyfont{zhfs}{FZFangSong-Z02}
+\setCJKfamilyfont{zhkai}{FZKai-Z03}
+
+\newcommand{\songti}{\CJKfamily{zhsong}}
+\newcommand{\xbsong}{\CJKfamily{zhxbs}}
+\newcommand{\dbsong}{\CJKfamily{zhdbs}}
+\newcommand{\heiti}{\CJKfamily{zhhei}}
+\newcommand{\dahei}{\CJKfamily{zhdh}}
+\newcommand{\fangsong}{\CJKfamily{zhfs}}
+\newcommand{\kaishu}{\CJKfamily{zhkai}}
+
+
+\usepackage{amsmath}
+\usepackage{amsthm} % amsthm 与 ntheorem 冲突
+\usepackage{amssymb}
+\usepackage{hyperref} % \url
+\usepackage{graphicx} % \includegraphics
+
+
+\usepackage{enumerate} % 罗列专用宏包
+\usepackage{fancybox} % 使用盒子
+ 
+
+
+\usepackage{xcolor} % 使用颜色 color
+\usepackage{booktabs} % 三线表宏包 toprule midrule bottomrule
+
+% \usepackage{ntheorem} % 调整定理格式
+% \theorembodyfont{\upshape} %正体
+% \theorembodyfont{\itshape} %斜体
+% 定理类环境默认的字体为斜体，可以通过 \theorembodyfont 来设置字体，其中 \upshape 为正体，\itshape 为斜体。\theorembodyfont 必须放在 newthorem 的上方。
+
+
+
+\theoremstyle{plain} % default
+\newtheorem{thm}{Theorem}[chapter] % 如果不采用章节号做前缀， 则不用[section]
+\newtheorem{myLemma}[thm]{Lemma}% 这句定义使得 lem 环境和 thm 共享编号
+
+\theoremstyle{definition} % definition
+\newtheorem{myDefinition}[thm]{Definition} % 这句定义使得 defn 环境和 thm 共享编号
+\newtheorem{myExample}[thm]{Example}% 这句定义使得 example 环境和thm 共享编号
+\newtheorem{myRemark}[thm]{Remark}
+\newtheorem{myProposition}[thm]{Proposition}
+\newtheorem{myNotation}[thm]{Notation}
+\newtheorem{exercise}{练习}
+\newtheorem{answer}{题目解答}
+\newtheorem{remark}{Remark}
+\newtheorem{case}{\normalfont\bfseries 案例} %
+\newtheorem{solve}{解}
+\newtheorem{Example}{例}
+\newtheorem{example}{例}
+\newtheorem{theorem}{定理}
+\newtheorem{definition}{定义}
+
+
+
+
+% 我的笔记环境
+\newcommand{\mybox}[1]{
+    % \fbox{mynotes:\\#1}
+    \vskip 2.5mm
+    \fbox{\parbox{120mm}{mynotes:\\#1}}
+    \vskip 2.5mm
+}
+
+
+
+\usepackage{mathtools} % xrightarrow
+
+\usepackage{tikz}       % tikz
+% \usepackage{colortbl}   % tikznode color 块上色
+
+
+
+% falling factorial power
+\newcommand{\fallingfactorial}[1]{%
+  ^{\underline{#1}}%
+}
+% rising factorial power
+\newcommand{\risingfactorial}[1]{%
+  ^{\overline{#1}}%
+}
+% tikz pic draw
+% \newcommand\y{\cellcolor{clight2}}
+\definecolor{clight2}{RGB}{212, 237, 244}%
+\newcommand\tikznode[3][]%
+{\tikz[remember picture,baseline=(#2.base)]
+	\node[minimum size=0pt,inner sep=0pt,#1](#2){#3};%
+}
+\tikzset{>=stealth}

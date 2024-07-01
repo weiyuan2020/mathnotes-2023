@@ -1,0 +1,81 @@
+% chap06sec03
+\section{Integration and differentiation}
+
+We still confine ourselves to real functions in this section. 
+We shall show that integration and differentiation are, in a certain sense, inverse operations.
+
+\begin{thm}
+    \label{thm:6.20}
+    Let $f \in \mathscr{R}$ on $[a,b]$ .
+    For $a \leq x \leq b$ , put
+    \begin{equation*}
+        F(x) = \int_{a}^{x} f(t) \d t.
+    \end{equation*}
+    Then $F$ is continuous on $[a, b ]$;
+    furthermore, if $f$ is continuous at a point $x_0$ of $[a, b ]$, 
+    then $F$ is differentiable at $x_0$ , and
+    \begin{equation*}
+        F'(x_0) = f(x_0).
+    \end{equation*}
+\end{thm}
+\mybox{变上限积分}
+% todo add proof
+
+\begin{thm}
+    \label{thm:6.21}
+    \myKeyword{The fundamental theorem of calculus}
+    If $f \in \mathscr{R}$ on $[a,b]$ 
+    and if there is a differentiable function $F$
+    such that $F' = f$, then
+    \begin{equation*}
+        \int_{a}^{b} f(x) \d x = F(b) - F(a).
+    \end{equation*}
+\end{thm}
+\mybox{牛顿-莱布尼茨公式（Newton-Leibniz formula）, 通常也被称为微积分基本定理}
+\begin{proof}
+    Let $\varepsilon > 0$ be given.
+    Choose a partition $P = \{x_0,...,x_n\}$ of $[a,b]$ 
+    so that $U(P,f) - L(P,f)<\varepsilon$.
+    The mean value theorem furnishes points $t_i \in [x_{i-1}, x_i]$
+    such that
+    \begin{equation*}
+        F(x_i) - F(x_{i-1}) = f(t_i) \Delta x_i
+    \end{equation*}
+    for $i = 1,...,n$ . Thus 
+    \begin{equation*}
+        \sum_{i=1}^{n} f(t_i) \Delta x_i = F(b) - F(a).
+    \end{equation*}
+
+    It now follows from Theorem \ref{thm:6.7}(c) that
+    \begin{equation*}
+        \left| F(b) - F(a) - \int_{a}^{b} f(x) \d x \right|  < \varepsilon.
+    \end{equation*}
+    Since this holds for every $\varepsilon > 0$,
+    the proof is complete.
+\end{proof}
+
+\begin{thm}
+    \label{thm:6.22}
+    \myKeyword{integration by parts}
+    Suppose $F$ and $G$ are differentiable functions on $[a,b]$,
+    $F' = f \in \mathscr{R}$, and $G' = g \in \mathscr{R}$.
+    Then 
+    \begin{equation*}
+        \int_{a}^{b} F(x)g(x) \d x = 
+        F(b)G(b) - F(a)G(a) -
+        \int_{a}^{b} f(x)G(x) \d x.
+    \end{equation*}
+\end{thm}
+\mybox{分部积分
+\begin{equation*}
+    \int_{a}^{b} F(x)g(x) \d x = 
+    F(x)G(x) \Bigg|_a^b
+    \int_{a}^{b} f(x)G(x) \d x.
+\end{equation*}
+}
+
+\begin{proof}
+    Put $H(x) = F(x)G(x)$ and apply Theorem \ref{thm:6.21} to $H$
+    and its derivative. 
+    Note that $H' \in \mathscr{R}$, by Theorem \ref{thm:6.13}.
+\end{proof}

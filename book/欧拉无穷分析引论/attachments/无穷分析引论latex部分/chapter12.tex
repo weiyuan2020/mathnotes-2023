@@ -1,0 +1,640 @@
+\chapter{第十二章 分解分数函数为实部分分式}
+
+\section{$\S 199$}
+
+第二章讲了, 分数函数可分解成其分母线性因式个数, 那么多个部分分式, 每一个因 式都是一个部分分式的分母. 自然, 线性因式是虚的, 由它作分母的部分分式也是虚的. 实分数函数分解成的虚部分分式是很少有用处的. 但我们讲过, 作为分数函数分母的整 函数, 不管它含有多少个虚线性因式, 我们都可以把它们表示成实二次因式. 这样, 在允 许部分分式的分母为实二次因式的条件之下, 我们可以把任何一个分数函数都分解为实 部分分式.
+
+\section{$\S 200$}
+
+记给定的分数函数为 $\frac{M}{N}, N$ 的实线性因式所对应的部分分式, 求法我们讲过了. 对于 $N$ 的虚线性因式, 我们改为考虑因式
+\[
+p^{2}-2 p q z \cos \varphi+q^{2} z^{2}
+\]
+这时的分数函数, 其形状为
+\[
+\frac{A+B z+C z^{2}+D z^{3}+E z^{4}+\cdots}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)\left(\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\cdots\right)}
+\]
+我们求的以 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 为分母的部分分式应该为
+\[
+\frac{\mathfrak{U}+\mathfrak{a} z}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}
+\]
+该分式的分母是二次的, 因而分子的次数不能大于 1 , 否则该分式含有一个整函数, 应该 分出去.
+
+\section{$\S 201$}
+
+为简单起见, 令分子
+\[
+A+B z+C z^{2}+\cdots=M
+\]
+令分母的第二因式 
+\[
+\alpha+\beta z+\gamma z^{2}+\cdots=Z
+\]
+记因式 $Z$ 产生的部分分式为 $\frac{Y}{Z}$,则
+\[
+Y=\frac{M-\mathscr{U} Z-a Z z}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}
+\]
+$Y$ 应该是 $z$ 的整函数, 因而必定 $M-\mathfrak{U} Z-a Z z$ 被 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 整除. 从而, 当
+\[
+p^{2}-2 p q z \cos \varphi+q^{2} z^{2}=0
+\]
+也即
+\[
+z=\frac{p}{q}(\cos \varphi+\sqrt{-1} \sin \varphi)
+\]
+或
+\[
+z=\frac{p}{q}(\cos \varphi-\sqrt{-1} \sin \varphi)
+\]
+时, $M-9 \mathfrak{Q} Z-a Z z$ 为零. 置 $\frac{p}{q}=f$, 则
+\[
+z^{n}=f^{n}(\cos n \varphi \pm \sqrt{-1} \sin n \varphi)
+\]
+将 $z^{n}$ 的这两个表达式代入,得到决定 $\mathfrak{A}$ 和 $a$ 的两个方程.
+
+\section{$\S 202$}
+
+方程 $M=\mathfrak{A} Z+\mathfrak{a} Z z$ 经过两种代入成为方程
+\[
+\begin{aligned}
+& \left.\begin{array}{rl}A+B f \cos \varphi+C f^{2} \cos 2 \varphi+D f^{3} \cos 3 \varphi+\cdots \pm \\& \left(B f \sin \varphi+C f^{2} \sin 2 \varphi+D f^{3} \sin 3 \varphi+\cdots\right) \sqrt{-1}\end{array}\right\}= \\
+& \left\{\begin{array}{l}\mathfrak{A}\left(\alpha+\beta f \cos \varphi+\gamma f^{2} \cos 2 \varphi+\delta f^{3} \cos 3 \varphi+\cdots\right) \pm \\\mathfrak{A}\left(\beta f \sin \varphi+\gamma f^{2} \sin 2 \varphi+\delta f^{3} \sin 3 \varphi+\cdots\right) \sqrt{-1}+ \\\mathfrak{a}\left(\alpha f \cos \varphi+\beta f^{2} \cos 2 \varphi+\gamma f^{3} \cos 3 \varphi+\cdots\right) \pm \\a\left(\alpha f \sin \varphi+\beta f^{2} \sin 2 \varphi+\gamma f^{3} \sin 3 \varphi+\cdots\right) \sqrt{-1}\end{array}\right.
+\end{aligned}
+\]
+为便于计算, 令
+\[
+\begin{aligned}
+& A+ \beta f \cos \varphi+C f^{2} \cos 2 \varphi+D f^{3} \cos 3 \varphi+\cdots=\mathfrak{B} \\
+& \beta f \sin \varphi+C f^{2} \sin 2 \varphi+D f^{3} \sin 3 \varphi+\cdots=\mathfrak{p} \\
+& \alpha+\beta f \cos \varphi+\gamma f^{2} \cos 2 \varphi+\delta f^{3} \cos 3 \varphi+\cdots=\Im \\
+& \beta f \sin \varphi+\gamma f^{2} \sin 2 \varphi+\delta f^{3} \sin 3 \varphi+\cdots=\mathfrak{q} \\
+& \alpha f \cos \varphi+\beta f^{2} \cos 2 \varphi+\gamma f^{3} \cos 3 \varphi+\cdots=\mathfrak{R} \\
+& a f \sin \varphi+\beta f^{2} \sin 2 \varphi+\gamma f^{3} \sin 3 \varphi+\cdots=\mathfrak{r}
+\end{aligned}
+\]
+在新的记号之下, 我们的方程成为
+\[
+\mathfrak{B}+\mathfrak{p} \sqrt{-1}=\mathfrak{U} \mathfrak{D}+\mathfrak{U} \mathfrak{q} \sqrt{-1}+\mathfrak{a} \mathfrak{R} \pm \mathfrak{a r} \sqrt{-1}
+\]
+%%08p141-160
+
+\section{$\S 203$}
+
+由于双重符号, 我们得到方程组
+\[
+\begin{gathered}
+\mathfrak{B}=\mathfrak{A} \cong+\mathfrak{a} \mathfrak{R} \\
+\mathfrak{p}=\mathfrak{U} \mathfrak{q}+\mathfrak{a} \mathfrak{r}
+\end{gathered}
+\]
+解为
+\[
+\begin{aligned}
+& \mathfrak{U}=\frac{\mathfrak{B r}-\mathfrak{p} \mathfrak{R}}{\mathfrak{D r}-\mathfrak{q} \mathfrak{R}} \\
+& \mathfrak{a}=\frac{\mathfrak{B} \mathfrak{q}-\mathfrak{p} \cong}{\mathfrak{q} \mathfrak{R}-\mathfrak{D r}}
+\end{aligned}
+\]
+这样一来, 我们就得到了分数函数
+\[
+\frac{M}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right) Z}
+\]
+的部分分式
+\[
+\frac{\mathfrak{U}+a z}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}
+\]
+的求法.
+
+记 $f=\frac{p}{q}$, 则:
+
+代换 $z^{n}=f^{n} \cos n \varphi$,使 $M=\mathfrak{B}$;
+
+代换 $z^{n}=f^{n} \sin n \varphi$,使 $M=\mathfrak{p}$;
+
+代换 $z^{n}=f^{n} \cos n \varphi$,使 $Z=\cong$;
+
+代换 $z^{n}=f^{n} \sin n \varphi$, 使 $Z=\mathfrak{q}$;
+
+代换 $z^{n}=f^{n} \cos n \varphi$,使 $z Z=\Re$;
+
+代换 $z^{n}=f^{n} \sin n \varphi$,使 $z Z=\mathfrak{r}$.
+
+有了 $\mathfrak{B}, \mathfrak{Q}, \mathfrak{R}, \mathfrak{p}, \mathfrak{q}, \mathfrak{r}$,也就有了
+
+\[
+\mathfrak{A}=\frac{\mathfrak{Br}-\mathfrak{pR}}{\mathfrak{Dr}-\mathfrak{qR}}, a=\frac{\mathfrak{pD}-\mathfrak{B q}}{\mathfrak{D r}-\mathfrak{qR}}
+\]
+
+例 1 设给定的分数函数为
+\[
+\frac{z^{2}}{\left(1-z+z^{2}\right)\left(1+z^{4}\right)}
+\]
+我们先求对应于因式 $1-z+z^{2}$ 的部分分式
+\[
+\frac{\mathfrak{U}+\mathfrak{a} z}{1-z+z^{2}}
+\]
+与通用表达式
+\[
+p^{2}-2 p q z \cos \varphi+q^{2} z^{2}
+\]
+相比较,这里 
+\[
+p=1, q=1, \cos \varphi=\frac{1}{2}
+\]
+从而
+\[
+\varphi=60^{\circ}=\frac{\pi}{3}
+\]
+由 $M=z^{2}, Z=1+z^{4}, f=1$, 我们得到
+\[
+\begin{gathered}
+\mathfrak{B}=\cos \frac{2 \pi}{3}=-\frac{1}{2}, \mathfrak{p}=\frac{\sqrt{3}}{2} \\
+\mathfrak{D}=1+\cos \frac{4 \pi}{3}=\frac{1}{2}, \mathfrak{q}=-\frac{\sqrt{3}}{2} \\
+\mathfrak{R}=\cos \frac{\pi}{3}+\cos \frac{5 \pi}{3}=1, \mathfrak{x}=0
+\end{gathered}
+\]
+由此得
+\[
+\mathfrak{A}=-1, a=0
+\]
+从而所求部分分式为
+\[
+\frac{-1}{1-z+z^{2}}
+\]
+所给函数等于求得的这个分式与下面这个分式的和
+\[
+\frac{1+z+z^{2}}{1+z^{4}}
+\]
+该分式分母 $1+z^{4}$ 的因式为
+\[
+1+z \sqrt{2}+z^{2} \text { 和 } 1-z \sqrt{2}+z^{2}
+\]
+求对应于这两个分母的部分分式时, $\varphi$ 相同, 都为 $\frac{\pi}{4}$, 一个的 $f=-1$, 另一个的 $f=+1$.
+
+例 2 我们来求这两个部分分式, 也即求分数函数
+\[
+\frac{1+z+z^{2}}{\left(1+z \sqrt{2}+z^{2}\right)\left(1-z \sqrt{2}+z^{2}\right)}
+\]
+的部分分式. 这里
+\[
+M=1+z+z^{2}
+\]
+对于第一个因式我们有
+\[
+f=-1, \varphi=\frac{\pi}{4}, Z=1-z \sqrt{2}+z^{2}
+\]
+从而
+\[
+\begin{gathered}
+\mathfrak{B}=1-\cos \frac{\pi}{4}+\cos \frac{2 \pi}{4}=\frac{\sqrt{2}-1}{\sqrt{2}} \\
+\mathfrak{p}=-\sin \frac{\pi}{4}+\sin \frac{2 \pi}{4}=\frac{\sqrt{2}-1}{\sqrt{2}} \\
+₫=1+\sqrt{2} \cos \frac{\pi}{4}+\cos \frac{2 \pi}{4}=2
+\end{gathered}
+\]
+\[
+\begin{aligned}
+& \text { Infinite analysio (无忩分析论). Fntroduction } \\
+& q=+\sqrt{2} \sin \frac{\pi}{4}+\sin \frac{2 \pi}{4}=2 \\
+& \mathfrak{R}=-\cos \frac{\pi}{4}-\sqrt{2} \cos \frac{2 \pi}{4}-\cos \frac{3 \pi}{4}=0 \\
+& \mathfrak{r}=-\sin \frac{\pi}{4}-\sqrt{2} \sin \frac{2 \pi}{4}-\sin \frac{3 \pi}{4}=-2 \sqrt{2}
+\end{aligned}
+\]
+继而
+\[
+\$ r-q \mathfrak{R}=-4 \sqrt{2}
+\]
+和
+\[
+\mathfrak{A}=\frac{\sqrt{2}-1}{2 \sqrt{2}}, \mathfrak{a}=0
+\]
+这样我们得到对应于因式 $1+z \sqrt{2}+z^{2}$ 的部分分式为
+\[
+\frac{(\sqrt{2}-1): 2 \sqrt{2}}{1+z \sqrt{2}+z^{2}}
+\]
+类似地,我们得到另一个部分分式为
+\[
+\frac{(\sqrt{2}+1): 2 \sqrt{2}}{1-z \sqrt{2}+z^{2}}
+\]
+现在我们看到,例 1 所给函数
+\[
+\frac{z^{2}}{\left(1-z+z^{2}\right)\left(1+z^{4}\right)}
+\]
+分解成了
+\[
+\frac{-1}{1-z+z^{2}}+\frac{(\sqrt{2}-1): 2 \sqrt{2}}{1+z \sqrt{2}+z^{2}}+\frac{(\sqrt{2}+1): 2 \sqrt{2}}{1-z \sqrt{2}+z^{2}}
+\]
+例 3 分解函数
+\[
+\frac{1+2 z+z^{2}}{\left(1-\frac{8}{5} z+z^{2}\right)\left(1+2 z+3 z^{2}\right)}
+\]
+为部分分式. 因式 $1-\frac{8}{5} z+z^{2}$ 产生的部分分式为
+\[
+\frac{\mathfrak{A}+a z}{1-\frac{8}{5}+z^{2}}
+\]
+这里
+\[
+p=1, q=1, \cos \varphi=\frac{4}{5}, f=1
+\]
+又
+\[
+M=1+2 z+z^{2}, Z=1+2 z+3 z^{2}
+\]
+由于这里角 $\varphi$ 与直角的比末知, 所以需计算 $\varphi$ 和其倍数的正弦和余弦. 由 $\cos \varphi$ 得到所需 
+
+结果
+\[
+\begin{gathered}
+\cos \varphi=\frac{4}{5}, \sin \varphi=\frac{3}{5} \\
+\cos 2 \varphi=\frac{7}{25}, \sin 2 \varphi=\frac{24}{25} \\
+\cos 3 \varphi=-\frac{44}{125}, \sin 3 \varphi=-\frac{117}{125}
+\end{gathered}
+\]
+从而
+\[
+\begin{gathered}
+\mathfrak{B}=1+2 \cdot \frac{4}{5}+\frac{7}{25}=\frac{72}{25} \\
+\mathfrak{p}=2 \cdot \frac{3}{5}+\frac{24}{25}=\frac{54}{25} \\
+\mathfrak{Q}=1+2 \cdot \frac{4}{5}+3 \frac{7}{25}=\frac{86}{25} \\
+\mathfrak{q}=2 \cdot \frac{3}{5}+3 \cdot \frac{24}{25}=\frac{102}{25} \\
+\mathfrak{R}=\frac{4}{5}+2 \cdot \frac{7}{25}-3 \cdot \frac{44}{125}=\frac{38}{125} \\
+\mathfrak{r}=\frac{3}{5}+2 \cdot \frac{24}{25}+3 \cdot \frac{117}{125}=\frac{666}{125}
+\end{gathered}
+\]
+由此得
+
+\[
+\mathfrak{D}r-\mathfrak{qR}=\frac{53400}{25 \cdot 125}=\frac{2136}{125}
+\]
+
+从而
+\[
+\mathfrak{A}=\frac{1836}{2136}=\frac{153}{178}, \mathfrak{a}=-\frac{540}{2136}=-\frac{45}{178}
+\]
+这样我们得到由 $1-\frac{8}{5} z+z^{2}$ 产生的部分分式为
+\[
+\frac{9(17-5 z): 178}{1-\frac{8}{5} z+z^{2}}
+\]
+对应于另一个因式的部分分式, 求法类似.
+
+我们有
+\[
+p=1, q=-\sqrt{3}, \cos \varphi=\frac{1}{\sqrt{3}}
+\]
+和
+\[
+f=-\frac{1}{\sqrt{3}}, M=1+2 z+z^{2}, Z=1-\frac{8}{5} z+z^{2}
+\]
+由 $\cos \varphi=\frac{1}{\sqrt{3}}$ 得所需结果 
+\[
+\begin{gathered}
+\cos \varphi=\frac{1}{\sqrt{3}}, \sin \varphi=\frac{\sqrt{2}}{\sqrt{3}} \\
+\cos 2 \varphi=-\frac{1}{3}, \sin 2 \varphi=\frac{2 \sqrt{2}}{3} \\
+\cos 3 \varphi=-\frac{5}{3 \sqrt{3}}, \sin 3 \varphi=\frac{\sqrt{2}}{3 \sqrt{3}}
+\end{gathered}
+\]
+利用这些结果, 我们得到
+\[
+\begin{gathered}
+\mathfrak{B}=1-\frac{2}{\sqrt{3}} \cdot \frac{1}{\sqrt{3}}+\frac{1}{3} \cdot\left(-\frac{1}{3}\right)=\frac{2}{9} \\
+\mathfrak{p}=-\frac{2}{\sqrt{3}} \cdot \frac{\sqrt{2}}{\sqrt{3}}+\frac{1}{3} \cdot \frac{2 \sqrt{2}}{3}=-\frac{4 \sqrt{2}}{3} \\
+\mathfrak{Q}=1+\frac{8}{5 \sqrt{3}} \cdot \frac{1}{\sqrt{3}}+\frac{1}{3} \cdot\left(-\frac{1}{3}\right)=\frac{64}{45} \\
+\mathfrak{q}=\frac{8}{5 \sqrt{3}} \cdot \frac{\sqrt{2}}{\sqrt{3}}+\frac{1}{3} \cdot \frac{2 \sqrt{2}}{3}=\frac{34 \sqrt{2}}{45} \\
+\mathfrak{R}=-\frac{1}{\sqrt{3}} \cdot \frac{1}{\sqrt{3}}-\frac{8}{5 \cdot 3}\left(-\frac{1}{3}\right)-\frac{1}{3 \sqrt{3}} \cdot\left(-\frac{5}{3 \sqrt{3}}\right)=\frac{4}{135} \\
+\mathfrak{x}=-\frac{1}{\sqrt{3}} \cdot \frac{\sqrt{2}}{\sqrt{3}}-\frac{8}{5 \cdot 3} \cdot \frac{2 \sqrt{2}}{3}-\frac{1}{3 \cdot 3 \sqrt{3}} \cdot \frac{\sqrt{2}}{3 \cdot \sqrt{3}}=-\frac{98 \sqrt{2}}{135}
+\end{gathered}
+\]
+从而
+\[
+\supseteq \mathfrak{x}-\mathfrak{R}=-\frac{712 \sqrt{2}}{675}
+\]
+继而
+\[
+\mathfrak{A}=\frac{100}{712}=\frac{25}{178}, \mathfrak{a}=\frac{540}{712}=\frac{135}{178}
+\]
+最后我们得到函数
+\[
+\frac{1+2 z+z^{2}}{\left(1-\frac{8}{5} z+z^{2}\right)\left(1+2 z+3 z^{2}\right)}
+\]
+的部分分式表示为
+\[
+\frac{9(17-5 z): 178}{1-\frac{8}{5} z+z^{2}}+\frac{5(5+27 z): 178}{1+2 z+3 z^{2}}
+\]
+\section{$\S 204$}
+
+$\Re$ 和 $\mathfrak{r}$ 的值可由 $\supseteq$ 和 $\mathfrak{q}$ 决定. 事实上,由
+\[
+\varsubsetneqq=\alpha+\beta f \cos \varphi+\gamma f^{2} \cos 2 \varphi+\delta f^{3} \cos 3 \varphi+\cdots
+\]
+$\mathfrak{q}=\beta f \sin \varphi+\gamma f^{2} \sin 2 \varphi+\delta f^{3} \sin 3 \varphi+\cdots$
+
+得
+\[
+₫ \cos \varphi-q \sin \varphi=\alpha \cos \varphi+\beta f \cos 2 \varphi+\gamma f^{2} \cos 3 \varphi+\cdots
+\]
+从而
+\[
+\mathfrak{R}=f(₫ \cos \varphi-\mathfrak{q} \sin \varphi)
+\]
+类似地
+\[
+Ð \sin \varphi+q \cos \varphi=\alpha \sin \varphi+\beta f \sin 2 \varphi+\gamma f^{2} \sin 3 \varphi+\cdots
+\]
+从而
+\[
+\mathfrak{x}=f(D \sin \varphi+\mathfrak{q} \cos \varphi)
+\]
+进一步, 得到
+\[
+\begin{aligned}
+& \varsubsetneqq \mathfrak{x}-\mathfrak{q} \mathfrak{R}=\left(D^{2}+\mathfrak{q}^{2}\right) f \sin \varphi
+\end{aligned}
+\]
+从而
+\[
+\begin{gathered}
+\mathfrak{A}=\frac{\mathfrak{B} \mathscr{D}+\mathfrak{p q}}{\mathfrak{D}^{2}+\mathfrak{q}^{2}}+\frac{\mathfrak{B} \mathscr{D}-\mathfrak{p q}}{\mathfrak{D}^{2}+\mathfrak{q}^{2}} \cdot \frac{\cos \varphi}{\sin \varphi} \\
+\alpha=-\frac{\mathfrak{B} \mathfrak{q}-\mathfrak{p} \rightrightarrows}{\mathfrak{D}^{2}+\mathfrak{q}^{2}} \cdot \frac{1}{f \sin \varphi}
+\end{gathered}
+\]
+这样,因式 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 产生的部分分式为
+
+\[
+\frac{(\mathfrak{BD}+\mathfrak{p q}) f \sin \varphi+(\mathfrak{BD}-\mathfrak{p q})(f \cos \varphi-z)}{\left(p^2-2 p q z \cos \varphi+q^2 z^2\right)\left(\mathfrak{Q}^2+\mathfrak{q}^2\right) f \sin \varphi}
+\]
+
+或者换 $f$ 为 $\frac{p}{q}$, 将它写成
+\[
+\frac{(\mathfrak{B} \cap+\mathfrak{p} \mathfrak{q}) p \sin \varphi+(\mathfrak{B} \mathfrak{q}-\mathfrak{p} \rightrightarrows)(p \cos \varphi-q z)}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)\left(\mathfrak{D}^{2}+\mathfrak{q}^{2}\right) p \sin \varphi}
+\]
+\section{$\S 205$}
+
+上节我们推出了分数函数
+\[
+\frac{M}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right) Z}
+\]
+分母的因式 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 所产生的部分分式. 所得表达式中的 $\mathfrak{B}, \mathfrak{p}, \mathfrak{D}, \mathfrak{q}$ 可以从 $M, Z$ 求出. 方法是对 $M, Z$ 做代换. 做代换 $z^{n}=\frac{p^{n}}{q^{n}} \cos n \varphi$, 得
+\[
+M=\mathfrak{B}, Z=\mathfrak{S}
+\]
+做代换 $z^{n}=\frac{p^{n}}{q^{n}}$, 得
+\[
+M=\mathfrak{p}, Z=\$
+\]
+注意, 代换之前应将 $M$ 和 $Z$ 展开, 即要使得它们的形状为
+\[
+\begin{aligned}
+M & =A+B z+C z^{2}+D z^{3}+E z^{4}+\cdots \\
+Z & =\alpha+\beta z+\gamma z^{2}+\delta z^{3}+\varepsilon z^{4}+\cdots
+\end{aligned}
+\]
+这样我们有
+\[
+\begin{gathered}
+\mathfrak{B}=A+B \frac{p}{q} \cos \varphi+C \frac{p^{2}}{q^{2}} \cos 2 \varphi+D \frac{p^{3}}{q^{3}} \cos 3 \varphi+\cdots \\
+\mathfrak{p}=B \frac{p}{q} \sin \varphi+C \frac{p^{2}}{q^{2}} \sin 2 \varphi+D \frac{p^{3}}{q^{3}} \sin 3 \varphi+\cdots \\
+\mathfrak{D}=\alpha+\beta \frac{p}{q} \cos \varphi+\gamma \frac{p^{2}}{q^{2}} \cos 2 \varphi+\delta \frac{p^{3}}{q^{3}} \cos 3 \varphi+\cdots \\
+\mathfrak{q}=\beta \frac{p}{q} \sin \varphi+\gamma \frac{p^{2}}{q^{2}} \sin 2 \varphi+\delta \frac{p^{3}}{q^{3}} \sin 3 \varphi+\cdots
+\end{gathered}
+\]
+
+\section{$\S 206$}
+
+如果 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$. 是 $Z$ 的因式,那么代换
+\[
+z^{n}=f^{n}(\cos n \varphi \pm \sqrt{-1} \sin n \varphi)
+\]
+使 $Z$ 为零,因而在这个代换之下, 从方程
+\[
+\boldsymbol{M}=\mathfrak{U} z+\mathfrak{a} Z z
+\]
+得不到任何东西. 所以前面讲的方法不能使用. 当 $\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{2}$ 或更高次幂为 函数 $\frac{M}{N}$ 分母的因式时, 我们求另外形状的部分分式. 先讨论
+\[
+N=\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{2} Z
+\]
+的情形. 此时我们设 $\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{2}$ 产生的部分分式为
+\[
+\frac{\mathfrak{A}+\mathfrak{a} z}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{2}}+\frac{\mathfrak{B}+\mathfrak{b} z}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}
+\]
+$\mathfrak{A}, \mathfrak{a}, \mathfrak{B}, \mathfrak{b}$ 待定.
+
+\section{$\S 207$}
+
+依前节所设, 表达式
+\[
+\frac{M-(\mathfrak{A}+a z) Z-(\mathfrak{B}+\mathfrak{b} z) Z\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{2}}
+\]
+应该是整函数,也即分子应被分母除得尽. 首先, 同于前面,表达式
+\[
+M-(\mathfrak{A}+a z) Z
+\]
+应被 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 除得尽, 因而照用前面的方法即可得到 $\mathfrak{U}$ 和 $a$.
+\[
+\text { 将 } z^{n}=\frac{p^{n}}{q^{n}} \cos n \varphi \text { 代入 } M \text { 和 } Z \text {, 得 }
+\]
+\[
+M=\mathfrak{B}, Z=\mathfrak{N}
+\]
+将 $z^{n}=\frac{p^{n}}{q^{n}} \sin n \varphi$ 代入 $M$ 和 $Z$, 得
+\[
+M=\mathfrak{p}, Z=n
+\]
+有了这几个值, 利用前面的规则, 我们得到
+\[
+\begin{gathered}
+\mathfrak{U}=\frac{\mathfrak{B} \mathfrak{N}+\mathfrak{p} \mathfrak{n}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}}+\frac{\mathfrak{B} \mathfrak{n}-\mathfrak{p} \mathfrak{R}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}} \cdot \frac{\cos \varphi}{\sin \varphi} \\
+\mathfrak{a}=-\frac{\mathfrak{B} \mathfrak{n}-\mathfrak{p} \mathfrak{R}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}} \cdot \frac{\mathfrak{q}}{p \sin \varphi}
+\end{gathered}
+\]
+\section{$\S 208$}
+
+求得了 $\mathfrak{U}$ 和 $\mathfrak{a}$,那么
+\[
+\frac{M-(\mathfrak{U}+\mathfrak{a}) Z}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}
+\]
+是一个整函数, 记它为 $P$, 则跟前面一样的表达式
+\[
+P-(\mathfrak{B}+\mathfrak{b} z) Z
+\]
+一样地被 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 整除, 从而将 $P$ 中的 $z^{n}$ 换为 $\frac{p^{n}}{q^{n}} \cos n \varphi$ 和 $\frac{p^{n}}{q^{n}} \sin n \varphi$, 记所得 为 $\mathfrak{R}$ 和 $r$, 得
+\[
+\begin{gathered}
+\mathfrak{B}=\frac{\mathfrak{R} \mathfrak{R}+\mathfrak{r} \mathfrak{n}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}}+\frac{\mathfrak{B} \mathfrak{n}-\mathfrak{r} \mathfrak{R}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}} \cdot \frac{\cos \varphi}{\sin \varphi} \\
+\mathfrak{b}=-\frac{\mathfrak{R} \mathfrak{n} \mathfrak{R}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}} \cdot \frac{q}{p \sin \varphi}
+\end{gathered}
+\]
+\section{$\S 209$}
+
+对应于
+\[
+\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k}
+\]
+的部分分式如何求, 从以上所讲, 我们已经可以得出结论, 记
+\[
+N=\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k} Z
+\]
+也即我们要将
+\[
+\frac{M}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k} Z}
+\]
+分解成部分分式, 假定因式 $\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k}$ 产生的部分分式为
+\[
+\begin{aligned}
+& \frac{\mathfrak{U}+\mathfrak{a} z}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k}}+\frac{\mathfrak{B}+\mathfrak{b} z}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k-1}}+ \\
+& \frac{\mathfrak{S}+c z}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k-2}}+\frac{\mathfrak{D}+\mathfrak{b} z}{\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k-3}}+\cdots
+\end{aligned}
+\]
+那么记 
+\[
+\begin{aligned}
+& z^{n}=\frac{p^{n}}{q^{n}} \cos n \varphi \text { 时, } M=\mathfrak{M}, Z=\mathfrak{N} \\
+& z^{n}=\frac{p^{n}}{q^{n}} \sin n \varphi \text { 时, } M=m, Z=n
+\end{aligned}
+\]
+则
+\[
+\begin{gathered}
+\mathfrak{U}=\frac{\mathfrak{M} \mathfrak{R}+\mathfrak{M} \mathfrak{R}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}}+\frac{\mathfrak{M} \mathfrak{n}-\mathfrak{M} \mathfrak{N}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}} \cdot \frac{\cos \varphi}{\sin \varphi} \\
+\mathfrak{a}=-\frac{\mathfrak{M} \mathfrak{n}-\mathfrak{n} \mathfrak{N}}{\mathfrak{N}^{2}+\mathfrak{n}^{2}} \cdot \frac{q}{p \sin \varphi}
+\end{gathered}
+\]
+首先, 令
+\[
+\frac{M-(\mathfrak{Q}+a z) Z}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}=P
+\]
+记
+\[
+\begin{aligned}
+z^{n} & =\frac{p^{n}}{q^{n}} \cos n \varphi \text { 时, } P=\mathfrak{B} \\
+z^{n} & =\frac{p^{n}}{q^{n}} \sin n \varphi \text { 时, } P=\mathfrak{p}
+\end{aligned}
+\]
+则
+\[
+\begin{aligned}
+& \mathfrak{B}=\frac{\mathfrak{B} \mathfrak{M}+\mathfrak{n} \mathfrak{N}}{\mathfrak{N}^{2}+\mathfrak{n}^{2}}+\frac{\mathfrak{B} \mathfrak{n}-\mathfrak{p} \mathfrak{N}}{\mathfrak{N}^{2}+\mathfrak{n}^{2}} \cdot \frac{\cos \varphi}{\sin \varphi} \\
+& b=-\frac{\mathfrak{B} \mathfrak{n}-\mathfrak{p} \mathfrak{R}}{\mathfrak{N}^{2}+\mathfrak{n}^{2}} \cdot \frac{q}{p \sin \varphi}
+\end{aligned}
+\]
+其次, 令
+\[
+\frac{P-(\mathfrak{B}+\mathfrak{b} z) Z}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}=Q
+\]
+记
+\[
+\begin{aligned}
+& z^{n}=\frac{p^{n}}{q^{n}} \cos n \varphi \text { 时, } Q=\Im \\
+& z^{n}=\frac{p^{n}}{q^{n}} \sin n \varphi \text { 时, } Q=\mathfrak{q}
+\end{aligned}
+\]
+则
+
+\[
+\mathcal{c}=-\frac{\mathfrak{Dn}-\mathfrak{qR}}{\mathfrak{R}^2+\mathfrak{n}^2}\cdot\frac{q}{p\sin\varphi}
+\]
+\[
+
+再次, 令
+\[
+\frac{Q-(\mathfrak{C}+\mathfrak{c} z)}{p^{2}-2 p q z \cos \varphi+q^{2} z^{2}}=R
+\]
+记
+
+
+\[
+\begin{aligned}
+z^{n} & =\frac{p^{n}}{q^{n}} \cos n \varphi \text { 时, } R=\mathfrak{R} \\
+z^{n} & =\frac{p^{n}}{q^{n}} \sin n \varphi \text { 时, } R=\mathfrak{x}
+\end{aligned}
+\]
+则
+\[
+\begin{aligned}
+\mathfrak{S}= & \frac{\mathfrak{R} \mathfrak{N}+\mathfrak{R} \mathfrak{n}}{\mathfrak{R}^{2}+\mathfrak{n}^{2}}+\frac{\mathfrak{R} \mathfrak{n}-\mathfrak{r} \mathfrak{R}}{\mathfrak{N}^{2}+\mathfrak{n}^{2}} \cdot \frac{\cos \varphi}{\sin \varphi} \\
+& \mathfrak{b}=-\frac{\mathfrak{R} \mathfrak{n}-\mathfrak{N}}{\mathfrak{N}^{2}+\mathfrak{n}^{2}} \cdot \frac{q}{p \sin \varphi}
+\end{aligned}
+\]
+继续下去, 直至以 $p^{2}-2 p q z \cos \varphi+q^{2} z^{2}$ 为分母的那个部分分式的分子被确定.
+
+例 4 考虑分数函数
+\[
+\frac{z-z^{3}}{\left(1+z^{2}\right)^{4}\left(1+z^{4}\right)}
+\]
+记分母的因式 $\left(1+z^{2}\right)^{4}$ 产生的部分分式为
+\[
+\frac{\mathfrak{A}+\mathfrak{a} z}{\left(1+z^{2}\right)^{4}}+\frac{\mathfrak{B}+\mathfrak{b} z}{\left(1+z^{2}\right)^{3}}+\frac{\mathfrak{S}+\mathfrak{c} z}{\left(1+z^{2}\right)^{2}}+\frac{\mathfrak{D}+\mathfrak{D} z}{1+z^{2}}
+\]
+与一般形式比较, 得
+\[
+p=1, q=1, \cos \varphi=0, \varphi=\frac{\pi}{2}
+\]
+又
+\[
+M=z-z^{3}, Z=1+z^{4}
+\]
+从而
+\[
+\mathfrak{M}=0, \mathfrak{M}=2, \mathfrak{N}=2, \mathfrak{n}=0, \sin \varphi=1
+\]
+这样我们得到
+\[
+\mathfrak{U}=-\frac{4}{4} \cdot 0=0, \mathfrak{a}=1
+\]
+即
+\[
+\mathfrak{P}+\propto z=z
+\]
+从而
+\[
+P=\frac{z-z^{3}-z-z^{5}}{1+z^{2}}=-z^{3}
+\]
+继而
+\[
+\mathfrak{P}=0, \mathfrak{p}=1
+\]
+进而
+\[
+\mathfrak{B}=0, \mathfrak{b}=\frac{1}{2}
+\]
+这样, 我们有
+\[
+\mathfrak{B}+\mathfrak{b} z=\frac{1}{2} z \text { 和 } Q=\frac{-z^{3}-\frac{1}{2} z-\frac{1}{2} z^{5}}{1+z^{2}}=-\frac{1}{2} z-\frac{1}{2} z^{3}
+\]
+从而
+\[
+®=0, \mathfrak{q}=0
+\]
+继而
+\[
+\mathfrak{S}=, \mathfrak{C}=0
+\]
+由此得
+\[
+R=-\frac{\frac{1}{2} z+\frac{1}{2} z^{3}}{1+z^{2}}=-\frac{1}{2} z
+\]
+从而
+\[
+\Re=0, r=-\frac{1}{2}
+\]
+进而
+\[
+\text { D }=0, \mathfrak{b}=-\frac{1}{4}
+\]
+得所求部分分式为
+\[
+\frac{z}{\left(1+z^{2}\right)^{4}}+\frac{z}{2\left(1+z^{2}\right)^{3}}-\frac{z}{4\left(1+z^{3}\right)}
+\]
+剩下的那个分式的分子为
+\[
+S=\frac{R-(\mathfrak{D}+\mathfrak{b} z)}{1+z^{2}}=-\frac{1}{4} z+\frac{1}{4} z^{3}
+\]
+分式为
+\[
+\frac{-z+z^{3}}{4\left(1+z^{4}\right)}
+\]
+\section{$\S 210$}
+
+这个方法在得到因式 $\left(p^{2}-2 p q z \cos \varphi+q^{2} z^{2}\right)^{k}$ 产生的部分分式的同时, 还得到了以 $Z$ 为分母的那个分式 (两部分加起来等于题给的函数). 在求
+\[
+\frac{M}{\left(p^{2}-2 p q \cos \varphi+q^{2} z^{2}\right)^{K} Z}
+\]
+的由因式 $\left(p^{2}-2 p q \cos \varphi+q^{2} z^{2}\right)^{k}$ 产生的各个部分分式的过程中形成了序列 $P, Q, R, S$, $T, \cdots$. 这序列的最后一项, 就是剩下那个分式的分子, 分母为 $Z$. 如果 $K=1, \frac{P}{Z}$ 就是剩下 那个分式; 如果 $K=2, \frac{Q}{Z}$ 就是剩下那个公式; 如果 $K=3, \frac{R}{Z}$ 就是剩下那个分式, 类推. 得 到了以 $Z$ 为分母的那个分式, 我们要做的是再将它分解成部分分式. 
+

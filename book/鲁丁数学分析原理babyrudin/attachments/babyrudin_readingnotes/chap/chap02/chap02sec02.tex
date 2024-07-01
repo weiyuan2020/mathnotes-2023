@@ -1,0 +1,372 @@
+\section{Metric space}
+\mybox{metirc space 度量空间}
+\begin{mydef}\label{mydef:2.15}
+    set $X$ metric space $p\in X$, $p$ point.
+
+    $\forall p,q \in X$ associate a real number $d(p,q)$ (distance)
+    \begin{enumerate}[a.]
+        \item $d(p,q) > 0$ if $p \neq q$; $d(p,p)=0$,
+        \item $d(p,q) = d(q,p)$.
+        \item $d(p,q) \leq d(p,r) + d(r,q)$, $\forall r\in X$
+    \end{enumerate}
+\end{mydef}
+\mybox{对称性, 正定性, 三角不等式. }
+
+\begin{newexample}
+    the distance of the euclidean space $\R^k$ is defined by
+    \begin{equation}\label{eq:2.19}
+        d(\mathbf{x}, \mathbf{y}) = |\mathbf{x} - \mathbf{y}|
+        \qquad (\mathbf{x}, \mathbf{y}\in \R^k)
+    \end{equation}
+\end{newexample}
+
+It's important to observe that every subset $Y$ of metric space $X$ is a metric space in its own right, with the same distance function. For it is clear that if conditions (a) to (c) of Definition \ref{mydef:2.15} hold for $p, q, r \in X$, they also hold if we restrict $p, q, r$ to lie in $Y$.
+
+Thus every subset of a euclidean space is a metric space. Other examples
+are the spaces $l(K)$ and $L^2 (\mu)$, 
+which are discussed in Chaps. 7 and 11, respectively.
+
+% \mybox{
+%     使用 mathescr 命令输入英文花体字(报错,改用 mathcal)
+%     $\mathscr{l} (K)$ and $\mathscr{l}^2 (\mu)$
+
+%     Ralph Smith’s Formal Script Font (rsfs): Use the “mathrsfs” package.
+%     usepackage{mathrsfs}
+    
+%     $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+
+%     % $\mathscr{abcdefghijklmnopqrstuvwxyz}$
+
+%     % % $\mathrsfs{abcdefghijklmnopqrstuvwxyz}$
+%     % $\mathcal{abcdefghijklmnopqrstuvwxyz}$ % 小写字母打印出来是乱码
+%     $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+
+%     $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+% }
+
+\begin{mydef}
+    \label{mydef:2.17}
+By the \myKeywordblue{segment} $(a, b)$ we mean the set of all real numbers $x$
+such that $a < x <b$.
+
+By the \myKeywordblue{interval} $[a. b]$ we mean the set of all real numbers $x$ such that $a \leq x \leq b$
+
+Occasionally we shall also encounter ``half-open intervals'' $[a, b)$ and $(a, b]$; the first consists of all $x$ such that $a \leq x < b$, the second of all $x$ such that $a < x \leq b$
+\end{mydef}
+
+If $a_i <b_i$ for $i=1,...,k$, the set of all points $\mathbf{x} =(x_1, ..., x_k)$ in $\R^k$ whose coordinates satisfy the inequalities $a_i \leq x_i \leq _i (1 \leq i \leq k)$ is called a \myKeywordblue{$k$-cell}.\\
+Thus a $1$-cell is an interval, a $2$-cell is a rectangle, etc.
+
+If $\mathbf{x}\in \R^k$ and $r > 0$. the \myKeywordblue{open (or closed) ball} $B$ with center at $\mathbf{x}$ and radius $r$ is defined to be the set of all $\mathbf{y} \in \R^k$ such that $|\mathbf{y} - \mathbf{x}| <r$ (or $|\mathbf{y} - \mathbf{x}| \leq r$).
+
+We call a set $E \subset \R^k$ \myKeywordblue{convex} if
+
+\begin{equation*}
+    \lambda\mathbf{x} + (1 - \lambda)\mathbf{y} \in E
+\end{equation*}
+
+whenever $\mathbf{x} \in E$, $\mathbf{y} \in E$, and $0 < \lambda < 1$.
+
+For example, \myKeywordblue{balls are convex}. For if |y -x| <r, |z-x| <r, and
+$0 < \lambda <1$, we have
+\begin{align*}
+    |\lambda \mathbf{y} + (1-\lambda) \mathbf{z} - \mathbf{x}|
+    & = |\lambda (\mathbf{y} - \mathbf{x}) + (1 - \lambda)(\mathbf{z} - \mathbf{x})\\
+    & \leq \lambda |\mathbf{y} - \mathbf{x}| + (1 - \lambda)|\mathbf{z} - \mathbf{x}| < \lambda r + (1 - \lambda)r\\
+    & = r.
+\end{align*}
+
+The same proof applies to closed balls. It is also easy to see that $k$-cells are convex.
+% 32 PRINCIPLES OF MATHEMATICAL ANALYSIS
+
+\mybox{这里给出了 开区间, 闭区间, 半开区间以及凸集 convex 的定义
+
+凸性 Jensen 不等式.
+}
+
+\begin{mydef}\label{mydef:2.18}
+    Definition Let $X$ be a metric space. All points and sets mentioned below are understood to be elements and subsets of $X$.
+    \begin{enumerate}[(a)]
+        \item A \myKeywordblue{neighborhood} of $p$ is a set $N_r(p)$ consisting of all $q$ such that $d(p, q) < r$,for some $r > 0$. The number $r$ is called the \myKeywordblue{radius} of $N_r(p)$.
+        \item A point $p$ is a \myKeywordblue{limit point} of the set $E$ if \myKeywordblue{every} neighborhood of $p$ contains a point $q \neq p$ such that $q \in E$.
+        \item If $p \in E$ and $p$ is not a limit point of $E$, then $p$ is called an \myKeywordblue{isolated point} of $E$.
+        \item $E$ is \myKeywordblue{closed} if every limit point of $E$ is a point of $E$.
+        \item A point $p$ is an \myKeywordblue{interior} point of $E$ if there is a neighborhood $N$ of $p$ such that $N \subset E$.
+        \item $E$ is \myKeywordblue{open} if every point of $E$ is an interior point of $E$.
+        \item The \myKeywordblue{complement} of $E$ (denoted by $E^c$)is the set of all points $p \in X$ such that $p \not\in E$.
+        \item $E$ is \myKeywordblue{perfect} if $E$ is closed and if every point of $E$ is a limit point of $E$.
+        \item $E$ is \myKeywordblue{bounded} if there is a real number $M$ and a point $q \in X$ such that $d(p,q)< M$ for all $p \in E$.
+        \item $E$ is \myKeywordblue{dense} in $X$ if every point of $X$ is a limit point of $E$, or a point of $E$ (or both).
+    \end{enumerate}
+\end{mydef}
+
+Let us note that in $\R^1$ neighborhoods are segments, whereas in $\R^2$ neighborhoods are interiors of circles.
+
+\mybox{
+    neighbhoods 邻域, \\
+    limit point 极限点, 
+    isolated point 孤立点, 
+    interior point 内点. \\
+    closed set 闭集, open set 开集, closure set 补集.\\
+    perfect set 完全集, complete set 完备集, 
+    dense 稠密 (有理数集 $\Q $ 是稠密的, 与之对应 实数集 $\R$ 是连续的.)
+
+    这里闭集的定义是包含所有极限点的集合, 而开集的定义是所有点均为内点. 乍一看这两个定义是不相关的, 但后续会证明开集的补集是闭集, 闭集的补集是开集. 这种定义与过去的定义不冲突, 并且更容易理解空集既是开集也是闭集.
+}
+
+\begin{thm}
+    \label{thm:2.19}
+    Every neighborhood is an open set.
+\end{thm}
+\begin{proof}
+    Consider a neighborhood $E = N_r(p)$, 
+    and let $q$ be any point of $E$.
+    Then there is a positive real number $h$ such that
+    \begin{equation*}
+        d(p, q) = r - h.
+    \end{equation*}
+    For all points $s$ such that $d(q, s) < h$, we have then
+    \begin{equation*}
+        d(p, s) \leq d(p, q) + d(q, s) < r - h + h = r,
+    \end{equation*}
+    so that $s \in E$. 
+    Thus $q$ is an interior point of $E$.
+\end{proof}
+
+\begin{thm}
+    \label{thm:2.20}
+    If $p$ is a limit point of a set $E$, then every neighborhood of $p$ contains infinitely many points of $E$.
+\end{thm}
+
+\begin{proof}
+    Suppose there is a neighborhood $N$ of $p$ 
+    which contains only a finite number of points of $E$. 
+    Let $q_1, ... , q_n$ be those points of $N \cap E$,
+    which are distinct from $p$, and put
+    \begin{equation*}
+        r = \min_{1 \leq m \leq n} d(p, q_m)
+    \end{equation*}
+    [we use this notation to denote the smallest of the numbers 
+    $d(p, q_1), ..., d(p, q_n)$]. 
+    The minimum of a finite set of positive numbers is clearly positive, 
+    so that $r > 0$.
+
+    The neighborhood $N_r(p)$ contains no point $q$ of $E$ such that $q \neq p$,
+    so that $p$ is not a limit point of $E$. 
+    This contradiction establishes the theorem.
+\end{proof}
+
+\begin{myCorollary*}
+    A finite point set has no limit points.
+\end{myCorollary*}
+
+\begin{newexample}
+    \label{newexample:2.21}
+    Let us consider the following subsets of $\R^{2}$:
+    \begin{enumerate}[(a)]
+        \item The set of all complex $z$ such that $|z| < 1$.
+        \item The set of all complex $z$ such that $|z| \leq 1$.
+        \item A nonempty finite set.
+        \item The set of all integers.
+        \item The set consisting of the numbers $1/n(n=1,2,3,...)$. Let us note that this set $E$ has a limit point (namely, $z =0$) but that no point of $E$ is a limit point of $E$; we wish to stress the difference between having a limit point and containing one.
+        \item The set of all complex numbers (that is, $\R^{2}$).
+        \item The segment $(a,b)$.
+    \end{enumerate}
+\end{newexample}
+
+Let us note that (d),(e),(g)can be regarded also as subsets of $\R^{1}$.
+Some properties of these sets are tabulated below:
+
+\begin{center}
+    \begin{tabular}{lcccc}
+        & Closed & Open & Perfect & Bounded \\
+    (a) & No     & Yes  & No      & Yes     \\
+    (b) & Yes    & No   & Yes     & Yes     \\
+    (c) & Yes    & No   & No      & Yes     \\
+    (d) & Yes    & No   & No      & No      \\
+    (e) & No     & No   & No      & Yes     \\
+    (f) & Yes    & Yes  & Yes     & No      \\
+    (g) & No     &      & No      & Yes    
+    \end{tabular}
+\end{center}
+
+In (g), we left the second entry blank. 
+The reason is that the segment $(a,b)$ is not open 
+if we regard it as a subset of $\R^2$, 
+but it is an open subset of $\R^1$.
+
+\mybox{根据定义, 复数集既是闭集又是开集...}
+
+\begin{thm}
+    \label{thm:2.22}
+    Let $\{E_\alpha\}$ be a (finite or infinite) collection of sets $E_\alpha$. Then
+    \begin{equation}
+        \label{eq:2.20}
+        \left(\bigcup_{\alpha} E_{\alpha} \right)^c = \bigcap_{\alpha}( E_{\alpha}^c )
+    \end{equation}
+\end{thm}
+
+\begin{proof}
+    Let $A$ and $B$ be the left and right members of (\ref{eq:2.20}). 
+    If $x \in A$, then $X \not\in \cup_\alpha E_\alpha$, 
+    hence $x \not\in E_\alpha$ for any $\alpha$, 
+    hence $x \in E_\alpha^c$ for every $\alpha$, 
+    so that $x \in \cap E_\alpha^c$.
+    Thus $A \subset B$.
+
+    Conversely, if $x \in B$, then $x \in E_\alpha^c$ for every $\alpha$,
+    hence $x \not\in E_\alpha$ for any $\alpha$,
+    hence $x \not\in \cup_\alpha E_\alpha$, 
+    so that $x \in (\cup_\alpha E_\alpha)^c$. 
+    Thus $B \subset A$.
+
+    It follows that $A = B$.
+\end{proof}
+
+\begin{thm}
+    \label{thm:2.23}
+    A set $E$ is open if and only if its complement is closed.
+\end{thm}
+
+\begin{proof}
+    % Proof 
+    First, suppose $E^c$ is closed. Choose $x \in E$. Then $x \not\in E^c$, and $x$ is not a limit point of $E^c$. Hence there exists a neighborhood $N$ of $x$ such that $E^c \cap N$ is empty, that is, $N \subset E$. Thus $x$ is an interior point of $E$, and $E$ is open.
+    
+    Next, suppose $E$ is open. Let $x$ be a limit point of $E^c$. Then every neighborhood of $x$ contains a point of $E^c$, so that $x$ is not an interior point of $E$. Since $E$ is open, this means that $x \in E^c$. It follows that $E$ is closed.
+\end{proof}
+
+\begin{myCorollary*}
+    A set $F$ is closed if and only if its complement is open.
+\end{myCorollary*}
+
+\mybox{这里使用新的定义得到的开集与闭集保持了原有的性质: 开集的补集是闭集, 闭集的补集是开集}
+
+\begin{thm}
+    \label{thm:2.24}
+    \begin{enumerate}[(a)]
+        \item For any collection $\{G_\alpha\}$ of open sets,  $\cup_\alpha G_\alpha$ is open.
+        \item For any collection $\{F_\alpha\}$ of closed sets, $\cap_\alpha F_\alpha$ is closed.
+        \item For any finite collection $G_1, ..., G_n$ of open sets, $\cap_{i=1}^n G_i$ is open.
+        \item For any finite collection $F_1, ..., F_n$ of closed sets, $\cup_{i=1}^n F_i$ is closed.
+    \end{enumerate}
+\end{thm}
+
+\begin{proof}
+    Put 
+
+    By Theorem \ref{thm:2.22}
+    \begin{equation}
+        \label{eq:2.21}
+        \left( \bigcap_\alpha F_\alpha \right)^c = 
+        \bigcup_\alpha \left( F_\alpha^c \right),
+    \end{equation}
+\end{proof}
+
+\mybox{
+    无限开集的并仍是开集, 有限开集的交仍是开集\\
+    无限闭集的交仍是闭集, 有限闭集的并仍是闭集\\
+    下面给出一个反例
+}
+
+\begin{newexample}
+    In parts (c)and (d) of the preceding theorem, the finiteness of the collections is essential.
+    \begin{equation*}
+        G_n = \left(-\frac{1}{n}, \frac{1}{n} \; (n=1,2,3,\dots). \right)
+    \end{equation*}
+    $G = \cap_{n=1}^\infty G_n$
+    Then $G$ consists of a single point (namely, $x = 0$) and is therefore not an open subset of $\R$.
+    
+    Thus the intersection of an infinite collection of open sets need not be open. Similarly, the union of an infinite collection of closed sets need not be closed.
+\end{newexample}
+
+\begin{mydef}
+    \label{mydef:2.26}
+    If $X$ is a metric space, if $E \subset X$, and if $E'$ denotes the set of all limit points of $E$ in $X$, then the \myKeywordblue{closure} of $E$ is the set $\overline{E}=E \cup E'$.
+\end{mydef} 
+\mybox{
+    Closure 闭包
+
+The term "closure" has various meanings in mathematics.
+
+The topological closure of a subset $A$ of a topological space $X$ is the smallest closed subset of $X$ containing $A$.
+
+If $R$ is a binary relation on some set $A$, then $R$ has reflexive, symmetric and transitive closures, each of which is the smallest relation on $A$, with the indicated property, containing $R$. Consequently, given any relation $R$ on any set $A$, there is always a smallest equivalence relation on $A$ containing $R$.
+
+For some arbitrary property $P$ of relations, the relation $R$ need not have a $P$-closure, i.e., there need not be a smallest relation on $A$ with the property $P$, and containing $R$. 
+For example, it often happens that a relation does not have an antisymmetric closure.
+
+In algebra, the algebraic closure of a field $F$ is a field $\bar{F}$ which can be said to be obtained from $F$ by adjoining all elements algebraic over $F$.
+}
+
+\begin{thm}
+    \label{thm:2.27}
+    If $X$ is a metric space and $E \subset X$, then
+    \begin{enumerate}[(a)]
+        \item $E$ is closed,
+        \item $E = \overline{E}$ if and only if $E$ is closed,
+        \item $E \subset F$ for every closed set $F \subset X$ such that $E \subset F$.
+    \end{enumerate}
+\end{thm}
+By (a) and (c), $E$ 1s the smallest closed subset of $X$ that contains $E$.
+\begin{proof}
+    \begin{enumerate}[(a)]
+        \item If $p \in X$ and $p \not\in \overline{E}$ then $p$ is neither a point of $E$ nor a limit point of $E$. Hence $p$ has a neighborhood which does not intersect $E$. The complement of $E$ is therefore open. Hence $E$ is closed.
+        \item If $E = \overline{E}$, (a) implies that $E$ is closed. If $E$is closed, then $E' \subset E$ [by Definitions \ref{mydef:2.18}(d) and \ref{mydef:2.26}], hence $\overline{E} = E$.
+        \item If $F$ is closed and $F \supset E$, then $F \supset F'$, hence $F \supset E'$. Thus $F \supset \overline{E}$.
+    \end{enumerate}
+\end{proof}
+
+
+\begin{thm}
+    \label{thm:2.28}
+    Let $E$ be a nonempty set of real numbers which is bounded above.     Let $y = \sup E$. Then $y \in \overline{E}$. Hence $y \in E$ if $E$ is closed.
+\end{thm}
+Compare this with the examples in Sec. 1.9.
+\begin{proof}
+    If $y \in E$ then $y \in \overline{E}$. 
+    Assume $y \not\in E$. 
+    For every $h > 0$ there exists then a point $x \in E$ 
+    such that $y - h < x < y$, 
+    for otherwise $y - h$ would be an upper bound of $E$. 
+    Thus $y$ is a limit point of $E$. Hence $y \in \overline{E}$.
+\end{proof}
+
+\begin{myremark}
+    \label{myremark:2.29}
+    Suppose $E \subset Y \subset X$, where $X$ is a metric space. To say that $E$ is an open subset of $X$ means that to each point $p \in E$ there is associated a positive number $r$ such that the conditions $d(p,q) < r$ , $g \in X$ imply that $q \in E$. But we have already observed (Sec. 2.16) that $Y$ is also a metric space, so that our definitions may equally well be made within $Y$. To be quite explicit, let us say that 
+    
+    $E$ is \myKeywordblue{open relative to $Y$} if to each $p \in E$ there is associated an $r > 0$ such that $q \in E$ whenever $d(p,q) <r$ and $g \in Y$. 
+    
+    Example 2.21(g) showed that a set may be open relative to $Y$ without being an open subset of $X$. However, there is a simple relation between these concepts, which we now state.
+\end{myremark}
+\mybox{open relative to $Y$ 关于Y是开的} 
+
+\begin{thm}
+    \label{thm:2.30}
+    Suppose $Y \subset X$. A subset $E$ of $Y$ is open relative to $Y$ if and only if $E = Y \cap G$ for some open subset $G$ of $X$.
+\end{thm}
+\begin{proof}
+    Suppose $E$ is open relative to $Y$. 
+    To each $p \in E$ there is a positive number $r_P$ 
+    such that the conditions $d(p, q) < r_P$, 
+    $q \in Y$ imply that $q \in E$. 
+    Let $V_P$ be the set of all $q \in X$ 
+    such that $d(p, q) < r_P$, and define
+    \begin{equation*}
+        G = \bigcup_{p \in E} V_P.
+    \end{equation*}
+    Then $G$ is an open subset of $X$, by Theorems \ref{thm:2.19} and \ref{thm:2.24}. 
+
+    Since $p \in V_P$ for all $p \in E$, 
+    it is clear that $E \subset G \cap Y$.
+    
+    By our choice of $V_P$, 
+    we have $V_P \cap Y \subset E$ for every $p \in E$, 
+    so that $G \cap Y \subset E$. 
+    Thus $E = G \cap Y$, and one half of the theorem is proved.
+    
+    Conversely, if $G$ is open in $X$ and $E = G \cap Y$, 
+    every $p \in E$ has a neighborhood $V_P \subset G$. 
+    Then $V_P \cap Y \subset E$, 
+    so that $E$ is open relative to $Y$.
+\end{proof}

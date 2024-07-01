@@ -1,0 +1,98 @@
+% chap03sec03
+\section{Cauchy sequences}
+\begin{mydef}
+    \label{mydef:3.8}
+    A sequence $\{p_n\}$ in a metric space $X$ is said to be a \emph{Cauchy sequence} if for every $\varepsilon > 0$ there is an integer $N$ such that $d(p_n, p_m) <e$ if $n \geq N$ and $m \geq N$. 
+\end{mydef}
+
+% $\R^{1}$
+In our discussion of Cauchy sequences, as well as in other situations
+which will arise later, the following geometric concept will be useful.
+
+\begin{mydef}
+    \label{mydef:3.9}
+    % 3.9 Definition 
+    Let $E$ be a nonempty subset of a metric space $X$, and let $S$ be the set of all real numbers of the form $d(p, q)$, with $p \in E$ and $q \in E$. The sup of $S$ is called the \myKeywordblue{diameter} of $E$.    
+\end{mydef}
+
+If $\sequence{p_n}$ is a sequence in $X$ and if $E_N$ consists of the points $p_N, p_{N+1}, p_{N+2},\dots$, it is clear from the two preceding definitions that $\sequence{p_n}$ is a \myKeywordblue{Cauchy sequence} \emph{if and only if}
+
+\begin{equation*}
+    \lim_{N \to \infty} \diam E_N = 0.
+\end{equation*}
+
+\begin{thm}
+    \label{thm:3.10}
+    \begin{asparaenum}[(a)]
+        \item If $\overline{E}$ is the closure of a set $E$ in a metric space $X$, then 
+        \begin{equation*}
+            \diam E = \diam E.
+        \end{equation*}
+        \item If $K_n$ is a sequence of compact sets in $X$ such that $K_n \supset K_{n+1} $ $(n=1,2,3,...) $and if
+        \begin{equation*}
+            \lim_{n \to \infty} \diam K_n = 0,
+        \end{equation*}
+        then $\cap_1^\infty K_n$ consists of exactly one point.
+    \end{asparaenum}
+\end{thm}
+
+% https://blog.sciencenet.cn/blog-783377-668028.html
+% latex斜体变正体需在代码前加 rm
+% y=exp(log(x+1))
+% 代码:y=exp(log(x+1))
+% y=exp(log(x+1))
+% 代码:\rm y=exp(log(x+1))
+% y=exp(log(x+1))
+% 代码:y={rm exp}({rm log}(x+1))
+% {}可以控制作用域的范围
+
+\begin{thm}
+    \label{thm:3.11}
+    \begin{enumerate}[(a)]
+        \item In any metric space $X$, every convergent sequence is a Cauchy sequence.
+        \item If $X$ is a compact metric space and if $\sequence{p_n}$ is a Cauchy sequence in $X$, then $\sequence{p_n}$ converges to some point of $X$.
+        \item In $\R^{k}$, every Cauchy sequence converges.
+    \end{enumerate}
+\end{thm}
+
+Note: The difference between the definition of convergence and
+the definition of a Cauchy sequence is that the limit is explicitly involved
+in the former, but not in the latter. 
+Thus Theorem \ref{thm:3.11}(b) may enable us
+to decide whether or not a given sequence converges without knowledge
+of the limit to which it may converge.
+
+The fact (contained in Theorem \ref{thm:3.11}) that a sequence converges in
+$\R^{k}$ if and only if it is a Cauchy sequence is usually called the 
+\emph{Cauchy criterion} for convergence.
+
+\begin{mydef}
+    \label{mydef:3.12}
+    A metric space in which every Cauchy sequence converges is
+    said to be \emph{complete}.
+\end{mydef}
+
+
+Thus Theorem \ref{thm:3.11} says that \emph{all compact metric spaces and all Euclidean spaces are complete}. 
+Theorem \ref{thm:3.11} implies also that every closed subset $E$ of a complete metric space $X$ is complete. 
+(Every Cauchy sequence in $E$ is a Cauchy sequence in $X$. 
+hence it converges to some $p \in X$, and actually $p \in E$ since $E$ is closed.) 
+An example of a metric space which is not complete is the space of all
+rational numbers, with $d(x, y) = |x - y|$.
+
+Theorem \ref{thm:3.2}(c) and example (d) of Definition \ref{mydef:3.1} show that convergent sequences are bounded, but that bounded sequences in $\R^{k}$ need not converge. However, there is one important case in which convergence is equivalent to boundedness; this happens for monotonic sequences in $\R^{1}$.
+
+
+\begin{mydef}
+    \label{mydef:3.13}
+    A sequence $\sequence{s_n}$ of real numbers is said to be
+    \begin{enumerate}[(a)]
+        \item monotonically increasing if $s_n \leq s_{n+1}$ $(n=1,2,3,...)$;
+        \item monotonically decreasing if $s_n \geq s_{n+1}$ $(n=1,2,3,...)$.
+    \end{enumerate}
+\end{mydef}
+
+\begin{thm}
+    \label{thm:3.14}
+    Theorem Suppose $\sequence{s_n}$ is monotonic. Then $\sequence{s_n}$ converges if and only if it is bounded.
+\end{thm}

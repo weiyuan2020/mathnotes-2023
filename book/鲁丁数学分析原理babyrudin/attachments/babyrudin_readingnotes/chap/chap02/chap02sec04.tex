@@ -1,0 +1,125 @@
+% chap02sec04
+\section{Perfect sets}
+\mybox{perfect set 完全集 区别于 complete set 完备集}
+
+% 243 Theorem 
+\begin{thm}\label{thm:2.43}
+    Let $P$ be a nonempty perfect set in $\R^k$. Then P is uncountable.    
+\end{thm}
+\begin{proof}
+    Since $P$ has limit points, $P$ must be infinite. 
+    Suppose $P$ is countable, and denote the points of $P$ by $\mathbf{x}_{1}, \mathbf{x}_{2}, \mathbf{x}_{3},\dots$. 
+    We shall construct a sequence $\sequence{V_n}$ of neighborhoods, as follows.
+    
+    Let $V_{1}$, be any neighborhood of $\mathbf{x}_1$. 
+    If $V_{1}$ consists of all $\mathbf{y} \in \R^k$ 
+    such that $\left| \mathbf{y} - \mathbf{x}_1 \right| < r$, 
+    the closure $\overline{V}_{1}$ of $V_1$ is the set of all $\mathbf{y} \in \R^k$ 
+    such that $\left| \mathbf{y} - \mathbf{x}_1 \right| \leq r$.
+
+    Suppose $V_n$ has been constructed, 
+    so that $V_n \cap P$ is not empty. 
+    Since every point of $P$ is a limit point of $P$, 
+    there is a neighborhood $V_{n+1}$ such that 
+    \begin{inparaenum}[(i)]
+        \item $\overline{V}_{n+1} \subset V_n$,
+        \item $x_n \not\in \overline{V}_{n+1}$,
+        \item $V_{n+1} \cap P$ is not empty. 
+    \end{inparaenum}
+    By (iii), $V_{n+1}$ satisfies our induction hypothesis, 
+    and the construction can proceed.
+    
+    Put $K_n = \overline{V}_n \cap P$. 
+    Since $\overline{V}_n$ is closed and bounded, 
+    $\overline{V}_n$ is compact.
+    Since $x_n \not\in K_{n+1}$, 
+    no point of $P$ lies in $\cap_1^{\infty} K_n$.
+    Since $K_n \subset P$, 
+    this implies that $\cap_1^{\infty} K_n$ is empty. 
+    But each $K_n$ is nonempty, 
+    by (iii), and $K_n \supset K_{n+1}$,
+    by (i); this contradicts the Corollary to Theorem \ref{thm:2.36}.
+\end{proof}
+
+\begin{myCorollary*}
+	Every interval $[a, b] (a <b)$ is uncountable. In particular, the set
+	all real numbers is uncountable.
+\end{myCorollary*}
+
+
+\begin{mydef}
+    \label{mydef:2.44}
+	\myKeyword{The Cantor set} The set which we are now going to construct shows
+	that there exist perfect sets in $\R^{1}$ which contain no segment.
+\end{mydef}
+
+\mybox{
+    Cantor 构建的一个经典例子, $\R^{1}$ 中的一个无处稠密的完备集
+
+    康托三分集中有无穷多个点, 所有的点处于非均匀分布状态. 此点集具有自相似性, 其局部与整体是相似的, 所以是一个分形系统. 
+
+    康托三分集具有
+    \begin{enumerate}[(1)]
+        \item 自相似性；
+        \item 精细结构；
+        \item 无穷操作或迭代过程；
+    \end{enumerate}
+
+    康托尔集P具有的性质:
+    \begin{enumerate} [1]
+        \item P是完备集;
+        \item P没有内点;
+        \item P的基数为$c$;
+        \item P是不可数集;
+    \end{enumerate}
+    康托尔集是一个基数为$c$的疏朗完备集. 
+}
+
+Let $E_0$ be the interval $[0, 1]$. Remove the segment $(\frac{1}{3}, \frac{2}{3})$, and let $E_1$ be the union of the intervals
+\begin{equation*}
+    \left[0, \frac{1}{3}\right] \quad 
+    \left[\frac{2}{3}, 1\right]
+\end{equation*}
+
+Remove the middle thirds of these intervals, and let $E_2$ be the union of the intervals
+\begin{equation*}
+    \left[0, \frac{1}{9}\right] \quad 
+    \left[\frac{2}{9}, \frac{3}{9}\right] \quad 
+    \left[\frac{6}{9}, \frac{7}{9}\right] \quad 
+    \left[\frac{8}{9}, 1\right]
+\end{equation*}
+
+Continuing in this way, we obtain a sequence of compact sets $E_n$, such that
+
+(a) $E_1 \supset E_2 \supset E_3 \supset \dots$;
+
+(b) $E_n$ is the union of $2^n$ intervals, each of length $3^{-n}$.
+
+The set
+\begin{equation*}
+    P = \bigcap_{n=1}^{\infty} E_n
+\end{equation*}
+
+is called the \emph{Cantor set}. $P$ is clearly compact, and Theorem \ref{thm:2.36} shows that $P$ is not empty.
+% 42 PRINCIPLES OF MATHEMATICAL ANALYSIS
+
+No segment of the form
+\begin{equation}
+    \left(
+        \frac{3k+1}{3^m},
+        \frac{3k+2}{3^m}
+    \right)
+\end{equation}
+where $k$ and $m$ are positive integers, has a point in common with $P$. Since every segment $(\alpha, \beta)$ contains a segment of the form (24), if
+\begin{equation*}
+    3^{-m} < \frac{\beta - \alpha}{6},
+\end{equation*}
+$P$ contains no segment.
+
+To show that $P$ is perfect, it is enough to show that $P$ contains no isolated point. Let $x \in P$, and let S be any segment containing $x$. Let $I_n$ be that interval of $E_n$ which contains $x$. Choose n large enough, so that $I_n \subset S$. Let $x_n$ be an endpoint of $I_n$, such that $x_n \neq x$.
+
+It follows from the construction of $P$ that $x_n \in P$. Hence $x$ is a limit point of $P$, and $P$ is perfect.
+
+One of the most interesting properties of the Cantor set is that it provides
+us with an example of an uncountable set of measure zero (the concept of
+measure will be discussed in Chap. 11).

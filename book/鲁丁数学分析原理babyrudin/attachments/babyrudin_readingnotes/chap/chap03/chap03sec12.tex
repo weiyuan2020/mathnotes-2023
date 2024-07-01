@@ -1,0 +1,40 @@
+% chap03sec12
+\section{Absolute convergence}
+\mybox{绝对收敛}
+The series $\sum a_n$ i said to \emph{converge absolutely} if the series $\sum |a_n|$ converges.
+
+\begin{thm}
+    \label{thm:3.45}
+    if $\sum a_n$ converges absolutely,
+    then $\sum a_n$ converges.    
+\end{thm}
+
+\begin{proof}
+    The assertion follow from the inequality
+    \begin{equation*}
+        \left|\sum_{k=n}^{m}a_k\right|
+        \leq \sum_{k=n}^{m} |a_k|,
+    \end{equation*}
+    plus the Cauchy criterion.
+\end{proof}
+
+\begin{myremark}
+    \label{myremark:3.46}
+    For series of positive terms, absolute convergence is the same as convergence.
+
+    If $\sum a_n$ converges, but $\sum |a_n|$ diverges, we say that $\sum a_n$ converges \emph{nonabsolutely}.
+    For instance, the series
+    \begin{equation*}
+        \sum \frac{(-1)^n}{n}
+    \end{equation*}
+    converges nonabsolutely (Theorem \ref{thm:3.43}).
+
+    The comparison test, as well as the root and ratio tests, is really a test for absolute convergence, 
+    and therefore cannot give any information about nonabsolutely convergent series.
+    Summation by parts can sometimes be used to handle the latter.
+    In particular, power series converge absolutely in the interior of the circle of convergence.
+
+    We shall see that we may operate with absolutely convergent series very much as with finite sums.
+    We may multiply thm term by term and we may change the order in which the additions are carried out, without affecting the sum of series.
+    But for nonabsolutely convergent series this is no longer true, and more care has to be taken when dealing with them.
+\end{myremark}

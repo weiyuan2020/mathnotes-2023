@@ -1,0 +1,63 @@
+% chap03sec10
+\section{Power series}
+\mybox{幂级数}
+\begin{mydef}
+    \label{mydef:3.38}
+    Given a sequence $\sequence{c_n}$ of complex numbers, the series
+    \begin{equation}
+        \label{eq:3.19}
+        \sum_{n=0}^{\infty} c_n z^n
+    \end{equation}
+    is called a \emph{power series}. 
+    The numbers $c_n$ are called the \emph{coefficients} of the series;
+    $z$ is a complex number.
+\end{mydef}
+
+In general, the series will converge or diverge, depending on the choice of $z$.
+More specifically, with every power series there is associated a circle,
+the circle of convergence, such that (\ref{eq:3.19}) converges if $z$ is in the interior of the circle and 
+diverges if $z$ is in the exterior (to cover all cases, we have to consider the plane as the interior of a circle of infinite radius, and a point as a circle of radius zero).
+The behavior on the circle of convergence is much more varied and cannot be described so simply.
+
+\begin{thm}
+    \label{thm:3.39}
+    Given the power series $\sum c_n z^n$, put
+    \begin{equation*}
+        \alpha = \limsup_{n \to \infty} \sqrt[n]{|c_n|},\quad
+        R = \frac{1}{\alpha}.
+    \end{equation*}
+    (
+        If $\alpha = 0$, $R = +\infty$;
+        If $\alpha = +\infty$, $R = 0$.
+    ) 
+    Then $\sum c_n z^n$ converges of $|z| < R$, and diverges if $|z| > R$.
+\end{thm}
+\mybox{$z$取值使幂级数收敛的范围称为收敛域, $R$为收敛半径. }
+\begin{proof}
+    Put $a_n = c_n z^n$,
+    and apply the root test:
+    \begin{equation*}
+        \limsup_{n \to \infty} \sqrt[n]{|a_n|}
+        = |z| \limsup_{n \to \infty} \sqrt[n]{|c_n|}
+        = \frac{|z|}{R}.
+    \end{equation*}
+\end{proof}
+Note: $R$ is called the radius of convergence of $\sum c_n z^n$.
+
+
+\begin{newexample}
+    \begin{asparaenum}[(a)]
+    \item The series $\sum n^n z^n$ has $R = 0$.
+    \item The series $\sum z^n / n!$ has $R = +\infty$.
+    (In this case the ratio test is easier to apply than the root test.)
+    \item The series $\sum z^n$ has $R = 1$.
+    If $|z| = 1$, the series diverges, since $\sequence{z^n}$ does not tend to $0$ as $n \rightarrow \infty $.
+    \item The series $\sum z^n / n$ has $R = 1$.
+    It diverges if $z = 1$. It converges for all other $z$ with $|z|=1$.
+    % (The last assertion will be proved in Theorem \ref{thm:3.44})
+    (The last assertion will be proved in Theorem 3.44)
+    \item The series $\sum z^n / n^2$ has $R = 1$.
+    It converges for all $z$ with $z = 1$,
+    by the comparison test, since $|z^n/n^2| = 1/n^2$.
+    \end{asparaenum}
+\end{newexample}

@@ -1,0 +1,167 @@
+% chap05sec07
+\section{Differentiation of vector-valued functions}
+
+\begin{myremark}
+    Definition \ref{mydef:5.1} applies without any change to complex functions $f$ defined on $[a, b]$,
+    and Theorems \ref{thm:5.2} and \ref{thm:5.3}, as well as their proofs, remain valid.
+    If  $f_1$ and $f_2$ are the real and imaginary parts of $f$,
+    that is, if
+    \begin{equation*}
+        f(t) = f_1(t) + i f_2(t)
+    \end{equation*}
+    for $a \leq t \leq b$, where $f_1(t)$ and $f_2(t)$ are real,
+    then we clearly have
+    \begin{equation}
+        \label{eq:5.29}
+        f'(x) = f'_1(x) + i f'_2(x);
+    \end{equation}
+    also, $f$ is differentiable at $x$ if and only if both $f_1$ and $f_2$ are differentiable at $x$.
+\end{myremark}
+
+Passing to vector-valued functions in general,
+i.e., to functions $\mathbf{f}$ which map $[a, b]$ into some $\R^k$,
+we may still apply Definition \ref{mydef:5.1} to define $\mathbf{f}'(x)$.
+The term $\phi(t)$ in (\ref{eq:5.1}) is now, for each $t$, a point in $\R^k$,
+and the limit in (\ref{eq:5.2}) is taken with respect to the norm of $\R^k$.
+In other words, $\mathbf{f}'(x)$ is that point of $\R^k$
+(if there is one) for which
+\begin{equation}
+    \label{eq:5.30}
+    \lim_{t \to x} \left| \frac{\mathbf{f}(t) - \mathbf{f}(x)}{t-x} - \mathbf{f}'(x)\right|  = 0,
+\end{equation}
+and $\mathbf{f}'$ is again a function with values in $\R^k$.
+
+If $f_1, \dots, f_k$ are the components of $\mathbf{f}$,
+as defined in Theorem \ref{thm:4.10}, then
+\begin{equation}
+    \label{eq:5.31}
+    \mathbf{f}' = (f'_1,\dots,f'_k),
+\end{equation}
+and $\mathbf{f}$ is differentiable at a point $x$
+if and only if each of the functions $f_1, \dots, f_k$
+is differentiable at $x$.
+
+Theorem \ref{thm:5.2} is true in this context as well,
+and so is Theorem \ref{thm:5.3}(a) and (b),
+if $fg$ is replaced by the inner product $\mathbf{f} \cdot \mathbf{g}$ (see Definition \ref{mydef:4.3}).
+When we turn to the mean value theorem, however, and to one of its
+consequences, namely, L'Hospital's rule, the situation changes.
+The next two examples will show that each of these. results fails to be true for complex-valued functions.
+
+\begin{newexample}
+    Define, for real $x$,
+    \begin{equation}
+        \label{eq:5.32}
+        f(x) = e^{ix} = \cos x + i \sin x.
+    \end{equation}
+    (The last expression may be taken as the definition of the complex exponential $e^{ix}$; see Chap. \ref{chap:08} for a full discussion of these functions.)
+    then
+    \begin{equation}
+        \label{eq:5.33}
+        f(2 \pi) - f(0) = 1 - 1 = 0,
+    \end{equation}
+    but
+    \begin{equation}
+        f'(x) = ie^{ix},
+    \end{equation}
+    so that $\left| f'(x) \right| = 1$ for all real $x$.
+
+    Thus Theorem \ref{thm:5.10} fails to hold in this case.
+\end{newexample}
+
+\begin{newexample}
+    On the segment $(0, 1)$, define $f(x) = x$ and
+    \begin{equation}
+        g(x) - x + x^2 e^{i/x^2}.
+    \end{equation}
+    Since $\left| e^{it} \right| = 1$ for all real $t$, we see that
+    \begin{equation}
+        \label{eq:5.36}
+        \lim_{x \to 0} \frac{f(x)}{g(x)} = 1.
+    \end{equation}
+    Next
+    \begin{equation}
+        \label{eq:5.37}
+        g'(x) = 1 + \left\{ 2x - \frac{2i}{x} \right\}e^{t/x^2}
+        \quad (0 < x < 1),
+    \end{equation}
+    so that
+    \begin{equation}
+        \label{eq:5.38}
+        \left| g'(x) \right| \geq
+        \left| 2x - \frac{2i}{x} \right| -1 \geq
+        \frac{2}{x} - 1.
+    \end{equation}
+    Hence
+    \begin{equation}
+        \label{eq:5.39}
+        \left| \frac{f'(x)}{g'(x)} \right| =
+        \frac{1}{\left| g'(x) \right|} \leq
+        \frac{x}{2 - x}
+    \end{equation}
+    and so
+    \begin{equation}
+        \label{eq:5.40}
+        \lim_{x \to 0} \frac{f'(x)}{g'(x)} = 0
+    \end{equation}
+    By (\ref{eq:5.36}) and (\ref{eq:5.40}),
+    L'Hospital's rule fails in this case.
+    Note also that $g'(x) \neq 0$ on $(0, 1)$, by (\ref{eq:5.38}).
+
+    However, there is a consequence of the mean value theorem
+    which, for purposes of applications,
+    is almost as useful as Theorem \ref{thm:5.10},
+    and which remains true for vector-valued functions:
+    From Theorem \ref{thm:5.10} it follows that
+    \begin{equation}
+        \label{eq:5.41}
+        \left| f(b) - f(a) \right| \leq
+        (b-a) \sup_{a < x < b} \left| f'(x) \right| .
+    \end{equation}
+\end{newexample}
+\mybox{这里洛必达法则为什么失效了？是因为 $x=0$ 是奇点吗？}
+
+
+\begin{thm}
+    \label{thm:5.19}
+    Suppose $\mathbf{f}$ is a  continuous mapping of $[a, b]$ into $\R^k$
+    and $\mathbf{f}$ is differentiable in $(a, b)$.
+    Then there exists $x \in (a, b)$ such that
+    \begin{equation*}
+        \left| \mathbf{f}(b) - \mathbf{f}(a) \right| \leq
+        (b-a) \left| \mathbf{f}'(x) \right| .
+    \end{equation*}
+\end{thm}
+
+
+V. P. Havin translated the second edition of this book into Russian and added this proof to the original one.
+\begin{proof}
+    Put $\mathbf{z} = \mathbf{f}(b) - \mathbf{f}(a)$, and define
+    \begin{equation*}
+        \phi( t ) = \mathbf{z} \cdot \mathbf{f}( t)
+        \quad (a \leq t \leq b).
+    \end{equation*}
+    Then $\phi$ is a real-valued continuous function on $[a, b]$ which is differentiable in $(a, b)$.
+    The mean value theorem shows therefore that
+    \begin{equation*}
+        \phi(b) - \phi(a)
+        = (b - a)\phi'(x)
+        = (b - a)\mathbf{z} \cdot \mathbf{f}'(x)
+    \end{equation*}
+    for some $x \in (a, b)$.
+    On the other hand,
+    \begin{equation*}
+        \phi( b) - \phi( a)
+        = \mathbf{z} \cdot \mathbf{f}( b) - \mathbf{z} \cdot \mathbf{f}( a)
+        = \mathbf{z} \cdot \mathbf{z}
+        = \left|  \mathbf{z}  \right|^2
+    \end{equation*}
+
+    The Schwarz inequality now gives
+    \begin{equation*}
+        \left| \mathbf{z} \right|^2
+        = (b - a) \left| \mathbf{z} \cdot \mathbf{f}' ( x) \right|
+        \leq ( b - a) \left| \mathbf{z} \right| \left| \mathbf{f}'(x) \right| .
+    \end{equation*}
+    Hence $\left| \mathbf{z} \right| \leq (b - a) \left| f'(x) \right|$, which is the desired conclusion.
+\end{proof}

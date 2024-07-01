@@ -1,0 +1,84 @@
+\section{Euclidean space}
+\mybox{欧式空间}
+
+\begin{mydef}
+    \label{mydef:1.36}
+    For each positive integer $k$,
+    let $\R^k$ be the set of all ordered $k$-tuples
+    \begin{equation*}
+        \mathbf{x} = \left(x_1,x_2,\dots,x_k\right),
+    \end{equation*}
+    where $x_1,x_2,\dots,x_k$ are real numbers, called the \emph{coordinates} of $\mathbf{x}$.
+    The elements of $\R^k$ are called points, or vectors,
+    especially when $k > 1$. We shall denote vectors
+    by boldfaced letters.
+    If $\mathbf{y} = \left(y_1,y_2,\dots,y_k\right)$
+    and if $\alpha$ is a real number, put
+    \begin{align*}
+        \mathbf{x} + \mathbf{y} & = \left(x_1+y_1,x_2+y_2,\dots,x_k+y_k\right),         \\
+        \alpha\mathbf{x}        & = \left(\alpha x_1,\alpha x_2,\dots,\alpha x_k\right)
+    \end{align*}
+    so that $\mathbf{x} +\mathbf{y} \in \R^k$ and $\alpha\mathbf{x} \in \R^k$.
+    This defines addition of vectors,
+    as well as multiplication of a vector by a real number (a scalar).
+    These two operations satisfy the commutative, associative,
+    and distributive laws
+    (the proof is trivial, in view of the analogous laws for the real numbers)
+    and make $\R^k$ into a vector space over the \emph{real field}.
+    The zero element of $\R^k$ (sometimes called the origin or the null vector) is the point $\mathbf{0}$,
+    all of whose coordinates are $0$.
+
+    We also define the so-called ``inner product'' (or scalar product) of $\mathbf{x}$ and $\mathbf{y}$ by
+    \begin{equation*}
+        \mathbf{x}\cdot\mathbf{y} = \sum_{j=1}^{k}x_j y_j
+    \end{equation*}
+    and the norm of $\mathbf{x}$ by
+    \begin{equation*}
+        |x| = (x\cdot x)^{1/2} = \left( \sum_{1}^{k} x_j^2 \right)^{1/2}.
+    \end{equation*}
+
+    The structure now defined (the vector space $\R^k$ with the above inner product and norm) is called euclidean $k$-space.
+\end{mydef}
+
+\begin{thm}\label{thm:1.37}
+    Suppose $\mathbf{x}, \mathbf{y}, \mathbf{z}\in\R^k$, and $\alpha$ is real. Then
+    \begin{enumerate}[(a)]
+        \item $| \mathbf{x}| \geq 0$;
+        \item $| \mathbf{x}| = 0$ if and only if $\mathbf{x} =0$;
+        \item $| \alpha \mathbf{x}| = | \alpha||x|$
+        \item $|\mathbf{x}\cdot\mathbf{y}| \leq  |\mathbf{x}| | \mathbf{y}|$;
+        \item $|\mathbf{x}+\mathbf{y}| \leq | \mathbf{x} | + | \mathbf{y}|$;
+        \item $|\mathbf{x}-\mathbf{z}| \leq |\mathbf{x}-\mathbf{y}| + |\mathbf{y}-\mathbf{z}|$.
+    \end{enumerate}
+\end{thm}
+
+\mybox{(e) 为欧式空间中的三角不等式. }
+
+\begin{proof}
+    Proof (a), (b), and (c) are obvious, and (d) is an immediate consequence of the Schwarz inequality\ref{thm:1.35}.
+    By (d) we have
+    \begin{align*}
+        |\mathbf{x} + \mathbf{y}|^2
+         & = (\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})                                \\
+         & = \mathbf{x} \cdot \mathbf{x} + 2\mathbf{x} \cdot \mathbf{y} + \mathbf{y} \cdot \mathbf{y} \\
+         & \leq |\mathbf{x}|^2 + 2|\mathbf{x}||\mathbf{y}| + |\mathbf{y}|^2                           \\
+         & = \left(|\mathbf{x}| + |\mathbf{y}|\right)^2.
+    \end{align*}
+    so that (e) is proved. Finally,
+    (f) follows from (e) if we
+    replace $\mathbf{x}$ by $\mathbf{x}-\mathbf{y}$
+    and $\mathbf{y}$ by $\mathbf{y}-\mathbf{z}$.
+\end{proof}
+
+\begin{myremark}
+    \label{myremark:1.38}
+    Theorem \ref{thm:1.37} (a), (b), and (f) will allow us (see Chap. 2
+    % \ref{chap:02}
+    ) to
+    regard $\R^k$ as a metric space.
+
+    $\R^1$ (the set of all real numbers) is usually called the line,
+    or the real line.
+    Likewise, $\R^2$ is called the plane, or the complex plane (compare Definitions \ref{mydef:1.24} and \ref{mydef:1.36}).
+    In these two cases the norm is just the absolute value of the corresponding real or complex number.
+\end{myremark}

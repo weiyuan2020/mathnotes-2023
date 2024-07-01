@@ -1,0 +1,274 @@
+
+\section{Fields}
+\mybox{
+    域, 交换除环 <$\R,+,\times$> 
+    <$\R,+$>, <$\R\backslash\{0\},\times$>
+    都是交换群, 且满足分配律. 
+
+    则 <$\R,+,\times$> 是域. 
+}
+
+\begin{mydef}\label{mydef:1.12}
+% Axiom % 公理
+
+(A) Axioms for addition
+\begin{enumerate}[(\text{A}1)]
+    \item If $x\in F$  and $y \in F$, then their sum \(x + y\) is in F.
+    \item Addition is commutative: \(x + y=y+ x\) for all \(x, y \in F\).
+    \item Addition is associative: \((x+ y)+z = x + (y+ z)\) for all \(x, y, z \in F\).
+    \item $F$ contains an element $0$ such that $0 + x = x$ for every $x \in F$.
+    \item To every $x\in F$ corresponds an element $-x\in F$ such that
+\end{enumerate}
+\begin{equation*}
+    x+(-x)=0.
+\end{equation*}
+
+(M) Axioms for multiplication
+\begin{enumerate}[(\text{M}1)]
+    \item If $x\in F$ and $x\in F$, then their product $xy$ is in $F$.
+    \item Multiplication is commutative: $xy = yx$ for all $x, y \in  F$.
+    \item Multiplication is associative: $(xy)z = x(yz)$ for all $x, y, z \in  F$.
+    \item $F$ contains an element $1 \neq 0$ such that $1x = x$ for every $x \in F$.
+    \item If $x \in F$ and $x \neq 0$ then there exists an element $1/x \in F$ such that
+\end{enumerate}
+\begin{equation*}
+    x\cdot(1/x)=1.
+\end{equation*}
+
+
+(D) The distributive law
+\begin{equation*}
+    x(y+z)=xy+ xz
+\end{equation*}
+
+holds for all $x, y, z \in F$.
+\end{mydef}
+
+\begin{myremark}
+    \label{myremark:1.13}
+    \begin{enumerate}[(a)]
+        \item Our usual writes (in any filed) $x-y = x+(-y)$, $x/y=x\cdot (1/y)$.
+        \item The field axioms clearly hold in $\Q $, 
+        the set of all rational numbers, 
+        if addition and multiplication have their customary meaning. 
+        Thus $\Q $ is a field.
+        \item Although it is not our purpose to study fields 
+        (or any other algebraic structures) in detail, 
+        it is worthwhile to prove that some familiar properties of $\Q $ are consequences of the field axioms; 
+        once we do this, we will \underline{not need to do it} again for the real numbers and for the complex numbers.
+    \end{enumerate}
+\end{myremark}
+ 
+\mybox{
+    \begin{inparaenum}
+        \item 只定义了加法和乘法, 使用逆元分别表示减法和除法.
+        \item 全体有理数的集合是一个域.
+    \end{inparaenum}
+}
+
+
+\begin{myProposition}
+    \label{myProposition:1.14}
+    The axioms for addition imply the following statements.
+    \begin{enumerate}[(a)]
+        \item If $x+y=x+z$ then $y=z$.
+        \item If $x+y=x$ then $y=0$.
+        \item If $x+y=0$ then $y= -x$.
+        \item $-(-x)=x$.
+    \end{enumerate}
+\end{myProposition}
+
+Statement (a) is a cancellation law. 
+Note that (b) asserts the uniqueness of the element 
+whose existence is assumed in (A4), 
+and that (c) does the same for (A5).
+
+\mybox{
+    what is the difference between axiom and proposition?
+
+    An axiom is a proposition regarded as self-evidently true without proof. 
+    The word ``axiom'' is a slightly archaic synonym for postulate. 
+    Compare conjecture or hypothesis, 
+    both of which connote apparently true but not self-evident statements.
+    
+    A proposition is a mathematical statement such as 
+    ``3 is greater than 4,'' 
+    ``an infinite set exists,''
+    or 
+    ``7 is prime.''
+    
+    An axiom is a proposition that is assumed to be true. 
+    With sufficient information, m
+    athematical logic can often categorize a proposition as true or false, 
+    although there are various exceptions 
+    (e.g., 
+    ``This statement is false''
+    ).
+    
+    \url{https://www.nutritionmodels.com/terminology.html}
+}
+
+
+\begin{proof}
+    Proof(rudin)
+    If $x + y =x + z$, the axioms (A) give
+    \begin{align*}
+        y =0+y&=(-x+x)+y=-x+(x+y)\\
+        &=-x+(x+z)=(-x+x)+z=0+z=z
+    \end{align*}
+
+    This proves (a). Take $z = 0$ in (a) to obtain (b). 
+    Take $z= -x$ in (a) to obtain (c).
+    Since $-x + x = 0$, (c) (with $-x$ in place of $x$) gives (d).
+\end{proof}
+
+\mybox{
+    我自己证明上述四条性质时都是从定义开始的, 
+    而 rudin 这里在后一步的证明中都利用了刚推导出的结论, 
+    这一点需要借鉴.
+    }
+% THE REAL AND COMPLEX NUMBER SYSTEMS 7
+
+\begin{myProposition}
+    \label{myProposition:1.15}
+    The axioms for multiplication imply the following statements.
+    \begin{enumerate}[(a)]
+        \item If $x\neq0$ and $xy=xz$ then $y=z$.
+        \item If $x\neq0$ and $xy=x$ then $y=1$.
+        \item If $x\neq0$ and $xy=1$ then $y=1/x$.
+        \item If $x\neq0$ then $1/(1/x) = x$.
+    \end{enumerate}
+\end{myProposition}
+
+The proof is so similar to that of Proposition \ref{myProposition:1.14} that we omit it.
+
+
+\begin{proof}
+    \begin{asparaenum}[(a)]
+        \item ,
+        \begin{align*}
+            y&=1\cdot y=\left(\frac{1}{x}\cdot x\right)y =\frac{1}{x}\left( xy \right)\\
+            &=\frac{1}{x}(xz) =\left(\frac{1}{x}x\right)z = z
+        \end{align*}
+        \item (a)Let $z=1$. $y=z=1$.
+        \item (a)Let $z=\frac{1}{x}$. $y=z=\frac{1}{x}$.
+        \item (c)Let $x=\frac{1}{x'}$. $y=1/(1/x')$.
+    \end{asparaenum}
+\end{proof}
+
+\begin{myProposition}
+    \label{Proposition:1.16}
+    The field axioms imply the following statements, for any $x, y, z \in F$.
+    \begin{enumerate}[(a)]
+        \item $0x=0$.
+        \item If $x\neq 0$ and $y\neq 0$ then $xy\neq 0$.
+        \item $(-x)y=-(xy)=x(-y)$.
+        \item $(-x)(-y)=xy$.
+    \end{enumerate}
+\end{myProposition}
+
+\begin{proof}
+    $0x+0x=(0+0)x=0x$. Hence \ref{myProposition:1.14}(b) implies that $0x=0$, and (a) holds.
+
+    Next, assume $x \neq 0$, $y \neq 0$, but $xy =0$. Then (a) gives
+    \begin{equation*}
+        1=
+        \left(\frac{1}{y}\right)\left(\frac{1}{x}\right)xy=
+        \left(\frac{1}{y}\right)\left(\frac{1}{x}\right)0=0.
+    \end{equation*}
+
+    a contradiction. Thus (b) holds.
+
+    The first equality in (c) comes from
+    \begin{equation*}
+        (-x)y +xy=(-x+x)y=0y=0,
+    \end{equation*}
+
+    combined with \ref{myProposition:1.14}(c); 
+    the other half of (c) is proved in the same way.\\
+    Finally,
+    \begin{equation*}
+        (-x)(-y)=-[x(-y)]=-[-(xy)]=xy
+    \end{equation*}
+    by (c) and \ref{myProposition:1.14}(d).
+\end{proof}
+
+\begin{mydef}
+    \label{mydef:1.17}
+    An ordered field is a field $F$ which is also an ordered set, 
+    such that
+    \begin{enumerate}[(i)]
+        \item $x+y<x+z$ if $x,y,z\in F$ and $y<z$,
+        \item $xy>0$ if $x\in F$, $y\in F$, $x>0$, and $y>0$.
+    \end{enumerate}
+\end{mydef}
+
+If $x > 0$, we call $x$ positive; 
+
+if $x < 0$, $x$ is negative.
+
+For example, $\Q $ is an ordered field.
+
+All the familiar rules for working with inequalities apply in every ordered
+field: 
+Multiplication by positive [negative] quantities preserves [reverses] inequalities, no square is negative, etc. 
+The following proposition lists some of these.
+
+\mybox{
+    有序域$F$也是有序集, 
+    由于有理数域 $\Q $, 实数域 $\R$ 都是有序域, 
+    这里使用有理数域 $\Q $ 证明的有序集的性质也可以直接用于实数域 $\R$.}
+
+\begin{myProposition}
+    \label{myProposition:1.18}
+    The following statements are true in every ordered field.
+    \begin{enumerate}[(a)]
+        \item If $x>0$ then $-x <0$, and vice versa.
+        \item If $x>0$ and $y<z$ then $xy <xz$.
+        \item If $x<0$ and $y<z$ then $xy> xz$.
+        \item If $x \neq 0$ then $x^2 > 0$. In particular, $1 > 0$.
+        \item If $0<x<y$ then $0<l/y<l/x$.
+    \end{enumerate}
+\end{myProposition}
+
+\begin{proof}
+    \begin{asparaenum}[(a)]
+    \item $x>0$, $-x<0$. 
+    \begin{align*}
+        x   &> 0=(x+-x)\\
+        x+0 &> x+(-x)\\
+        (-x)&<0
+    \end{align*}
+
+    \item $x>0$, $y<z$, $xy<xz$.
+    \begin{align*}
+        y<z, z-y&>y-y=0\\
+        x(z-y)&>0\\
+        x(z-y)+xy&>0+xy\\
+        xz&>xy
+    \end{align*}
+
+    \item
+    \begin{align*}
+        (z-y) &>y-y=0\\
+        x<0,(-x)>0.\quad (-x)(z-y)&>0 \\
+        x(z-y) &<0\\
+        xz<xy    
+    \end{align*}
+
+    \item
+    \begin{align*}
+        x>0  && x^2    >0  \\
+        x<0  &&(-x)^2 >0, (-x)^2 = -[x(-x)] = -(-(x\cdot x)) =x^2, x^2>0
+    \end{align*}
+    $\because 1^2=1$, $1>0$.
+
+    \item
+    If $y>0$ and $v \leq 0$, then $yv \leq 0$. 
+    But $y \cdot (1/y)=1>0$. Hence $1/y > 0$.
+    Likewise, $1/x > 0$. 
+    If we multiply both sides of the inequality $x <y$ by
+    the positive quantity $(1/x)(1/y)$, we obtain $1/y <1/x$.
+    \end{asparaenum}
+\end{proof}
+

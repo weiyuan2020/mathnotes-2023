@@ -1,0 +1,39 @@
+% chap07sec04
+\section{Uniform convergence and differentiation}
+
+We have already seen, in Example \ref{newexample:7.6}, 
+that uniform convergence of $\sequence{f_n}$ implies
+nothing about the sequence $\sequence{f'_n}$. 
+Thus stronger hypotheses are required for the assertion that 
+$f'_n \rightarrow f'$ if $f_n \rightarrow f$.
+
+\begin{thm}
+    \label{thm:7.17}
+    Suppose $\sequence{f_n}$ is a sequence of functions, differentiable on $[a, b]$
+    and such that $\sequence{f_n(x_0)}$ converges for some point $x_0$ on $[a, b]$. 
+    If $\sequence{f'_n}$ converges uniformly on $[a, b ]$, 
+    then $\sequence{f_n}$ converges uniformly on $[a, b ]$, 
+    to a function $f$, and
+    \begin{equation}
+        \label{eq:7.27}
+        f'(x) = \lim_{n \to \infty} f'_n (x)
+        \quad 
+        (a \leq x \leq b).
+    \end{equation}
+\end{thm}
+
+% todo add proof
+
+\begin{myremark*}
+    If the continuity of the functions $f'_n$ is assumed in addition to
+    the above hypotheses, 
+    then a much shorter proof of (\ref{eq:7.27}) can be based on
+    Theorem \ref{thm:7.16} and the fundamental theorem of calculus.
+\end{myremark*}
+
+\begin{thm}
+    There exists a real continuous function on the real line which is
+    nowhere differentiable.
+\end{thm}
+
+% todo add proof
