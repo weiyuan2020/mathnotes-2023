@@ -21,6 +21,32 @@
             }
           },
           {
+            "id": "94a03436ec2c282b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Folder/2023高考数学北京卷压轴题 202306120846.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f8736c73af8f5a1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Folder/一道微分方程.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d2ea448933e204d2",
             "type": "leaf",
             "state": {
@@ -52,22 +78,9 @@
                 "file": "build-pdf/数学分析高等数学例题选解V6.pdf"
               }
             }
-          },
-          {
-            "id": "84c089a2e1e5adaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "book/鲁丁数学分析原理babyrudin/babyrudin目录.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "svg",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,8 +118,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "book/鲁丁数学分析原理babyrudin/babyrudin目录.md"
+                "file": "Folder/一道微分方程.md"
               }
             }
           },
@@ -136,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/鲁丁数学分析原理babyrudin/babyrudin目录.md",
+                "file": "Folder/一道微分方程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,11 +173,16 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "84c089a2e1e5adaa",
+  "active": "f8736c73af8f5a1c",
   "lastOpenFiles": [
+    "Folder/2023高考数学北京卷压轴题 202306120846.md",
+    "Folder/一道微分方程.md",
+    "我的数学分析积木/我的数学分析积木-阅读笔记.md",
+    "build-pdf/数学分析高等数学例题选解V6.pdf",
+    "mathematica/软件 mathematica 显示计算过程 202305051055.md",
+    "book/鲁丁数学分析原理babyrudin/babyrudin目录.md",
     "book/鲁丁数学分析原理babyrudin/attachments/StandardTori701.svg",
     "book/鲁丁数学分析原理babyrudin/attachments/function-mapping.svg",
-    "book/鲁丁数学分析原理babyrudin/babyrudin目录.md",
     "我的数学分析积木/我的数学分析积木.pdf",
     "Folder/富比尼定理 Fubini Theorem 202305111124.md",
     "book/鲁丁数学分析原理babyrudin/attachments/babyrudin_readingnotes/pic/function-mapping.svg",
@@ -176,13 +193,10 @@
     "attachments/chap01.线性空间与内积空间--202402130902-8.png",
     "attachments/chap01.线性空间与内积空间--202402130902-7.png",
     "attachments/chap01.线性空间与内积空间--202402130902-6.png",
-    "attachments/chap01.线性空间与内积空间--202402130902-5.png",
-    "我的数学分析积木/我的数学分析积木-阅读笔记.md",
     "费曼 求解复杂导数的方法.md",
     "费曼-相关方法总结.md",
     "费曼求导法.md",
     "费曼积分法练习.md",
-    "build-pdf/数学分析高等数学例题选解V6.pdf",
     "book/数学分析高等数学例题选解V6-阅读笔记.md",
     "book/欧拉无穷分析引论/欧拉无穷分析引论E101-目录.md",
     "我的数学分析积木/scibird-高斯经典文章及相关数学工作汇编.pdf",
@@ -206,8 +220,6 @@
     "book/马希文-数学花园漫游记/27不可能问题.md",
     "book/马希文-数学花园漫游记/26模糊数学.md",
     "book/马希文-数学花园漫游记/25无穷多的美妙特性.md",
-    "book/马希文-数学花园漫游记/24奇怪的无穷多.md",
-    "book/马希文-数学花园漫游记/23侦察员的策略.md",
-    "book/马希文-数学花园漫游记/22利用混合策略造成平衡点.md"
+    "book/马希文-数学花园漫游记/24奇怪的无穷多.md"
   ]
 }

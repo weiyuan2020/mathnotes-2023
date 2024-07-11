@@ -28,7 +28,7 @@
   "autoConvertHtml": false,
   "spellcheck": false,
   "autoPairBrackets": true,
-  "autoPairMarkdown": false,
-  "smartIndentList": false,
+  "autoPairMarkdown": true,
+  "smartIndentList": true,
   "useTab": false
 }
