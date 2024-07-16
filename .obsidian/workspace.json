@@ -39,7 +39,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Folder/一道微分方程.md",
+                "file": "Folder/一道微分方程xy''-y'=x.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a0cbb279e0bb290",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Folder/20240715一道求和极限问题lim sum(sqrt({k(k+1)}{n2+k})).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d9b4625562018234",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -80,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -138,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Folder/一道微分方程.md"
+                "file": "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md"
               }
             }
           },
@@ -148,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Folder/一道微分方程.md",
+                "file": "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,10 +199,13 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "f8736c73af8f5a1c",
+  "active": "d9b4625562018234",
   "lastOpenFiles": [
+    "巴塞尔问题 Basel problem solution of Euler.md",
+    "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
+    "Folder/20240715一道求和极限问题lim sum(sqrt({k(k+1)}{n2+k})).md",
+    "Folder/一道微分方程xy''-y'=x.md",
     "Folder/2023高考数学北京卷压轴题 202306120846.md",
-    "Folder/一道微分方程.md",
     "我的数学分析积木/我的数学分析积木-阅读笔记.md",
     "build-pdf/数学分析高等数学例题选解V6.pdf",
     "mathematica/软件 mathematica 显示计算过程 202305051055.md",
@@ -211,15 +240,12 @@
     "费曼积分法 留数定理 应用.md",
     "费曼 使用代数方法证明欧拉公式 自然底数因何自然.md",
     "Folder/arctan(1).md",
-    "巴塞尔问题 Basel problem solution of Euler.md",
     "朱升峰数值计算华东师大/朱升峰数值积分华东师大.md",
     "朱升峰数值计算华东师大/复合求积公式与 Romberg 算法.md",
     "马希文-数学花园漫游记/马希文数学花园漫游记.md",
     "book/马希文-数学花园漫游记/29和你告别.md",
     "book/马希文-数学花园漫游记/28等待着人们去试探.md",
     "book/马希文-数学花园漫游记/27不可能问题.md",
-    "book/马希文-数学花园漫游记/26模糊数学.md",
-    "book/马希文-数学花园漫游记/25无穷多的美妙特性.md",
-    "book/马希文-数学花园漫游记/24奇怪的无穷多.md"
+    "book/马希文-数学花园漫游记/26模糊数学.md"
   ]
 }
