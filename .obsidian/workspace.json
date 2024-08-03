@@ -73,6 +73,19 @@
             }
           },
           {
+            "id": "158254f5d1e08e1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Folder/元胞自动机Cellular Automaton，简称CA.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d2ea448933e204d2",
             "type": "leaf",
             "state": {
@@ -106,7 +119,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -164,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md"
+                "file": "Folder/元胞自动机Cellular Automaton，简称CA.md"
               }
             }
           },
@@ -174,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
+                "file": "Folder/元胞自动机Cellular Automaton，简称CA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,10 +212,11 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "d9b4625562018234",
+  "active": "158254f5d1e08e1b",
   "lastOpenFiles": [
-    "巴塞尔问题 Basel problem solution of Euler.md",
     "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
+    "Folder/元胞自动机Cellular Automaton，简称CA.md",
+    "巴塞尔问题 Basel problem solution of Euler.md",
     "Folder/20240715一道求和极限问题lim sum(sqrt({k(k+1)}{n2+k})).md",
     "Folder/一道微分方程xy''-y'=x.md",
     "Folder/2023高考数学北京卷压轴题 202306120846.md",
@@ -245,7 +259,6 @@
     "马希文-数学花园漫游记/马希文数学花园漫游记.md",
     "book/马希文-数学花园漫游记/29和你告别.md",
     "book/马希文-数学花园漫游记/28等待着人们去试探.md",
-    "book/马希文-数学花园漫游记/27不可能问题.md",
-    "book/马希文-数学花园漫游记/26模糊数学.md"
+    "book/马希文-数学花园漫游记/27不可能问题.md"
   ]
 }
