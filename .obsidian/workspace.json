@@ -54,7 +54,20 @@
             }
           },
           {
-            "id": "a903902dfd14577d",
+            "id": "95fd03ce762d6589",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f623f7aaa18d92b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -65,9 +78,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f761dd83f31d9563",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "book/梯度下降法/没有痛苦的共轭梯度下降法.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -96,7 +122,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "留数",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,8 +131,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -127,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md"
+                "file": "book/梯度下降法/没有痛苦的共轭梯度下降法.md"
               }
             }
           },
@@ -137,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md",
+                "file": "book/梯度下降法/没有痛苦的共轭梯度下降法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,8 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5,
-    "collapsed": true
+    "width": 261.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,19 +187,22 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "a903902dfd14577d",
+  "active": "f761dd83f31d9563",
   "lastOpenFiles": [
+    "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md",
+    "Folder/控制系统的能控性和能观性、可控性可观性可稳定性可检测性.md",
+    "build-pdf/数学分析高等数学例题选解V6.pdf",
+    "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
+    "Folder/【配方从而制造平方差】一种多项式因式分解的技巧.md",
+    "build-pdf/模态分析理论与应用.pdf",
     "费曼积分法 留数定理 应用.md",
     "留数.md",
-    "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md",
     "我的数学分析积木/我的数学分析积木-阅读笔记.md",
     "book/数学分析高等数学例题选解V6-阅读笔记.md",
-    "build-pdf/数学分析高等数学例题选解V6.pdf",
     "我的数学分析积木/我的数学分析积木.pdf",
     "Folder/2023高考数学北京卷压轴题 202306120846.md",
     "Folder/一道微分方程xy''-y'=x.md",
     "Folder/20240715一道求和极限问题lim sum(sqrt({k(k+1)}{n2+k})).md",
-    "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
     "Folder/元胞自动机Cellular Automaton，简称CA.md",
     "巴塞尔问题 Basel problem solution of Euler.md",
     "mathematica/软件 mathematica 显示计算过程 202305051055.md",
@@ -204,12 +231,8 @@
     "朱升峰数值计算华东师大/课件/No4-第九周 上机.pdf",
     "朱升峰数值计算华东师大/课件/No5-第十二周 上机.pdf",
     "朱升峰数值计算华东师大/课件/No6-第十五周 上机.pdf",
-    "朱升峰数值计算华东师大/课件/NumerInt1-第四章 数值积分与数值微分.pdf",
     "费曼 使用代数方法证明欧拉公式 自然底数因何自然.md",
     "Folder/arctan(1).md",
-    "朱升峰数值计算华东师大/朱升峰数值积分华东师大.md",
-    "朱升峰数值计算华东师大/复合求积公式与 Romberg 算法.md",
-    "马希文-数学花园漫游记/马希文数学花园漫游记.md",
-    "book/马希文-数学花园漫游记/29和你告别.md"
+    "朱升峰数值计算华东师大/朱升峰数值积分华东师大.md"
   ]
 }
