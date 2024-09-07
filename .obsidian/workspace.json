@@ -8,22 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f790bca86bddad95",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "224c7c26e5477564",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "9323c28d4dd19a37",
             "type": "leaf",
             "state": {
@@ -78,7 +62,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap3.md",
+                "file": "Folder/徐树方-数值线性代数/徐树方-数值线性代数.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2ae84588d68ea5f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -144,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap3.md"
+                "file": "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md"
               }
             }
           },
@@ -154,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap3.md",
+                "file": "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,8 +176,13 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "f761dd83f31d9563",
+  "active": "2ae84588d68ea5f6",
   "lastOpenFiles": [
+    "Folder/徐树方-数值线性代数/徐树方-数值线性代数.md",
+    "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md",
+    "Folder/徐树方-数值线性代数/第一章 线性方程组的直接解法.md",
+    "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap3.md",
+    "Folder/徐树方-数值线性代数",
     "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap2.md",
     "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap1.md",
     "Folder/应行仁-重修微积分/应行仁-重修微积分-chap10.md",
@@ -200,7 +202,6 @@
     "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap6.md",
     "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap5.md",
     "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap4.md",
-    "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap3.md",
     "Folder/应行仁-重修线性代数/应行仁-重修线性代数-chap10.md",
     "Folder/应行仁-重修线性代数/pic",
     "Folder/应行仁-重修线性代数",
@@ -219,12 +220,9 @@
     "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md",
     "Folder/控制系统的能控性和能观性、可控性可观性可稳定性可检测性.md",
     "build-pdf/数学分析高等数学例题选解V6.pdf",
-    "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
-    "Folder/【配方从而制造平方差】一种多项式因式分解的技巧.md",
     "build-pdf/模态分析理论与应用.pdf",
     "我的数学分析积木/我的数学分析积木.pdf",
     "我的数学分析积木/scibird-高斯经典文章及相关数学工作汇编.pdf",
-    "朱升峰数值计算华东师大/课件/No2-第四周 上机.pdf",
-    "朱升峰数值计算华东师大/课件/No1-第二周 上机.pdf"
+    "朱升峰数值计算华东师大/课件/No2-第四周 上机.pdf"
   ]
 }
