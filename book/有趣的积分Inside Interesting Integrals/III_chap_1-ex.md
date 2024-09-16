@@ -77,4 +77,4 @@ $$
 \fbox{$\log (a)-\log (b)\text{ if }\Re(a)>0\land \Re(b)>0$}
 $$
 
-%% todo%%
+%% todo %%

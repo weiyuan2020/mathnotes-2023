@@ -4,86 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "9e586c033fdd723a",
+        "id": "299ba461fa90eab2",
         "type": "tabs",
         "children": [
           {
-            "id": "9323c28d4dd19a37",
+            "id": "fb09dd665606ff96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "book/数学分析高等数学例题选解V6-阅读笔记.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76f7f004c9498204",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "build-pdf/数学分析高等数学例题选解V6.pdf"
-              }
-            }
-          },
-          {
-            "id": "95fd03ce762d6589",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f623f7aaa18d92b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f761dd83f31d9563",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Folder/徐树方-数值线性代数/徐树方-数值线性代数.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2ae84588d68ea5f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md",
+                "file": "Folder/李雅普诺夫稳定性第一法与第二法.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -141,7 +78,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md"
+                "file": "Folder/李雅普诺夫稳定性第一法与第二法.md"
               }
             }
           },
@@ -151,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md",
+                "file": "Folder/李雅普诺夫稳定性第一法与第二法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,8 +113,15 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "2ae84588d68ea5f6",
+  "active": "fb09dd665606ff96",
   "lastOpenFiles": [
+    "book/普林斯顿数学指南/Ⅶ.3小波及其应用.md",
+    "Folder/李雅普诺夫稳定性第一法与第二法.md",
+    "Folder/李雅普诺夫运动稳定性-李雅普诺夫一次近似理论.md",
+    "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md",
+    "book/数学分析高等数学例题选解V6-阅读笔记.md",
+    "build-pdf/数学分析高等数学例题选解V6.pdf",
+    "Folder/1加到100等于多少？从伯努利数到欧拉麦克劳林公式-泰勒猫爱丽丝.md",
     "Folder/徐树方-数值线性代数/徐树方-数值线性代数.md",
     "Folder/徐树方-数值线性代数/第二章 线性方程组的敏度分析与消去法的舍入误差分析.md",
     "Folder/徐树方-数值线性代数/第一章 线性方程组的直接解法.md",
@@ -211,15 +155,8 @@
     "Folder/应行仁-重修微积分/应行仁-重修微积分-chap6.md",
     "Folder/应行仁-重修微积分/应行仁-重修微积分-chap5.md",
     "Folder/应行仁-重修微积分/应行仁-重修微积分-chap4.md",
-    "Folder/应行仁-重修微积分/应行仁-重修微积分-chap2.md",
-    "Folder/应行仁-重修微积分/应行仁-重修微积分-chap3.md",
-    "Folder/应行仁-重修微积分/应行仁-重修微积分-chap1.md",
-    "book/梯度下降法/没有痛苦的共轭梯度下降法.md",
     "Folder/应行仁-重修微积分/pic",
     "Folder/应行仁-重修微积分",
-    "book/模态分析理论与应用/傅志方上海交大模态分析理论与应用.md",
-    "Folder/控制系统的能控性和能观性、可控性可观性可稳定性可检测性.md",
-    "build-pdf/数学分析高等数学例题选解V6.pdf",
     "build-pdf/模态分析理论与应用.pdf",
     "我的数学分析积木/我的数学分析积木.pdf",
     "我的数学分析积木/scibird-高斯经典文章及相关数学工作汇编.pdf",

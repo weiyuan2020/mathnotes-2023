@@ -219,7 +219,8 @@ ${ 1 \frac{1}{2} := 1 + \frac{1}{2} }$
 Is ${ \frac{1}{2} + \frac{1}{2} \geq 1 }$ ?
 ![[Conway2000OnNumbersandGames--1.png]]
 Is ${ 1 \geq \frac{1}{2} + \frac{1}{2} }$ ?
-%%todo!!!!%%
+%% todo %%
+
 
 考虑 ${ x = \{ -1|2 \} }$ 
 
@@ -307,7 +308,9 @@ ${ z =\{ 0,1,2,3,\dots|\omega,\omega-1,\omega-2,\dots \} = \{ n|\omega-n \} }$
 同样地，定义${ \omega /4, \omega /8,\dots }$  可以得到${ \omega /3 }$ 
 ${ \sqrt{ \omega } = \{ 0,1,2,3,\dots|\omega,\omega /2, \omega /4, \omega /8 ,\dots \} }$ 
 
-练习 %%todo%%
+练习
+%% todo %%
+
 1验证
 ${ \left\{  0| \frac{1}{\omega}  \right\} = \frac{1}{2\omega} }$ 
 ${ \left\{  \frac{1}{\omega}|1, \frac{1}{2}, \frac{1}{4},\dots  \right\} = \frac{2}{\omega} }$ 

@@ -257,6 +257,6 @@ $\lfloor x\rfloor$ means the integer part of x, ${x = \lfloor x\rfloor + \left\{
 
 
 
-<font color="#ff0000">todo</font>
+%% todo %%
 
 
